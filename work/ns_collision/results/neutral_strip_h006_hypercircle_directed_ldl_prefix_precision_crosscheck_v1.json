@@ -1,0 +1,31 @@
+{
+  "artifacts": {
+    "p50_audit": "work/ns_collision/results/neutral_strip_h006_hypercircle_directed_ldl_prefix_audit_v1.json",
+    "p50_audit_sha256": "f5a0f7ff672fcaef5f12a2e6ace06039dc91cbc39e1fd1fe9ca9aae78ebddf97",
+    "p50_checkpoint": "work/ns_collision/results/neutral_strip_h006_hypercircle_directed_ldl_prefix_checkpoint_v1.json",
+    "p50_checkpoint_sha256": "f31b654055f2683a66c20f06ccb2255eaeed48fe09fe7dffef59b67ee1c088e7",
+    "p80_audit": "work/ns_collision/results/neutral_strip_h006_hypercircle_directed_ldl_prefix_p80_audit_v1.json",
+    "p80_audit_sha256": "d4d0c7ef7f7861628d49585c346d9782567612b47ca9cdb05330e033f3fd2d93",
+    "p80_checkpoint": "work/ns_collision/results/neutral_strip_h006_hypercircle_directed_ldl_prefix_p80_checkpoint_v1.json",
+    "p80_checkpoint_sha256": "36b38d3cb84574ea8f28ea65da4f4286aef20535b1eecbf89fd7dac02f6e4615"
+  },
+  "checks": {
+    "lower_intervals_p80_nested_in_p50": true,
+    "p80_prefix_certified": true,
+    "pivot_intervals_p80_nested_in_p50": true,
+    "pivot_signs_equal": true,
+    "symbolic_coordinates_equal": true
+  },
+  "comparison": {
+    "p50_maximum_relative_radius_decimal": "7.9705831101496535969750527484872661277522158316282E-14",
+    "p50_minimum_margin_decimal": "0.9999999999999202387999618073",
+    "p50_pivots_with_nonzero_diagonal_terms": 0,
+    "p80_maximum_relative_radius_decimal": "7.9705831101496535969750527484872661179607573098848686466818734349888109620661850E-14",
+    "p80_minimum_margin_decimal": "0.9999999999999202387999618073",
+    "p80_pivots_with_nonzero_diagonal_terms": 0,
+    "pivot_count": 1024,
+    "symbolic_lower_entry_count": 2540
+  },
+  "kind": "hypercircle-directed-ldl-prefix-precision-crosscheck",
+  "status": "pass"
+}

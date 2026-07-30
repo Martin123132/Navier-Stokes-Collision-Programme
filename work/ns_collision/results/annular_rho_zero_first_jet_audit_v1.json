@@ -1,0 +1,568 @@
+{
+  "algorithm_revision": "annular-rho-zero-first-jet-v2",
+  "all_positive_checks_pass": true,
+  "asymptotic_viscous_pressure_certificate": {
+    "all_checks_pass": true,
+    "analytic_strict_negative_upper_bound": -1.0705252009222428e-10,
+    "finite_identity": "D_u g_pressure[nu Delta u_N] = nu a_N t_N B_heat,N",
+    "heat_multiplier": "|k_1|^2+|k_2|^2+|ell|^2 for every HHL monomial",
+    "heat_weighted_pressure_load_limit": -0.017493957024435965,
+    "optimal_coefficient_scale_over_N_limit": 0.004243672312027402,
+    "optimal_low_amplitude_over_N_limit": 0.0014065919385788297,
+    "ray_factor_sqrt_8_over_3q": 3.0169889330626027,
+    "remainder_guard": "This certificate concerns the viscous-pressure component. It does not yet prove that the viscous Fisher, Euler, or backward-weight components are o(N^5).",
+    "static_pressure_load_limit": -0.0014065919385788297,
+    "theorem": "For the static-optimal annular +++ restart family, the viscous velocity derivative of the pressure part has a strictly negative N^5 limit.",
+    "viscous_pressure_first_jet_over_N5_limit": -1.0442344590350905e-07,
+    "weighted_limit_proof": "After division by N^3 the high-high sum is a Riemann sum with heat weight converging uniformly to 2|xi|^2. The heat-weighted cross-pressure term is O(N^2)=o(N^3)."
+  },
+  "carrier_rows": [
+    {
+      "Euler_direction_divergence_residual": 7.626359151559133e-14,
+      "all_checks_pass": true,
+      "base_generator": 4.0077462505329936e-05,
+      "base_generator_residual": 3.1170812458958252e-19,
+      "coefficient_scale": 0.10305197080279369,
+      "dealias_factor": 6,
+      "dealiasing_reason": "The pressure linearization contains u times a quadratic velocity direction and has support through 3K. Six-times one-field support prevents intermediate FFT aliasing; the final means have support below the same grid length.",
+      "expected_algebraic_generator": 4.0077462505329624e-05,
+      "expected_viscous_pressure_contribution": -1.27141550217543,
+      "finite_difference_validation": null,
+      "first_derivative": -1.0710985455068993,
+      "first_derivative_over_N5": -1.0968049105990649e-07,
+      "first_jet_contributions": {
+        "velocity_Euler": 0.010995616307923927,
+        "velocity_viscous": -1.0915810395677827,
+        "weight_advection": 0.00034314110724203295,
+        "weight_antidiffusion": 0.009143736645717526
+      },
+      "generator_crossing_time": 3.74171570612704e-05,
+      "grid_point_count": 2520000,
+      "grid_shape": [
+        448,
+        75,
+        75
+      ],
+      "heat_weighted_pressure_HHL_load_over_N3": -0.019657601784911192,
+      "heat_weighted_pressure_HHL_loads": {
+        "combined": -307.1500278892374,
+        "maximum_imaginary_residual": 0.0,
+        "pressure_cross": 2.025364259701512e-05,
+        "pressure_high_high": -307.15004814288
+      },
+      "integrated_linearized_crossing_time": 7.48343141225408e-05,
+      "linearized_integrated_generator_on_window": -7.297667381635523e-09,
+      "low_amplitude": 0.0401680400630415,
+      "nonviscous_contribution_over_N5": 2.097407391834469e-09,
+      "parabolic_window": 0.00016,
+      "plus_vertex_high_Fisher": 0.00022337770015284247,
+      "rho_zero_pressure_HHL_load": -0.0401680400630415,
+      "runtime_seconds": 10.669115199998487,
+      "scaled_generator_crossing_time": 0.023385723163294,
+      "scaled_integrated_linearized_crossing_time": 0.046771446326588,
+      "scaled_window": 0.1,
+      "size": 25,
+      "static_optimizer_used": true,
+      "velocity_directional_subterms": {
+        "Euler": {
+          "pressure_direction": 0.011347757302998788,
+          "pressure_variation": -2.1949887581922174e-05,
+          "weighted_Fisher": -0.0003301911074929374
+        },
+        "viscous": {
+          "pressure_direction": -0.00033250120699436573,
+          "pressure_variation": -1.2710830009684366,
+          "weighted_Fisher": 0.17983446260764818
+        }
+      },
+      "viscous_contribution_over_N5": -1.1177789845174096e-07,
+      "viscous_direction_coefficient_residual": 3.460764741571864e-14,
+      "viscous_pressure_contribution": -1.271415502175431,
+      "viscous_pressure_contribution_over_N5": -1.3019294742276412e-07,
+      "viscous_pressure_replay_residual": 8.881784197001252e-16,
+      "viscous_weighted_Fisher_contribution_over_N5": 1.8415048971023174e-08,
+      "weight_antidiffusion_coefficient_residual": 2.6273547861757538e-18
+    },
+    {
+      "Euler_direction_divergence_residual": 1.5056766777442185e-13,
+      "all_checks_pass": true,
+      "base_generator": 7.700394107982071e-05,
+      "base_generator_residual": 1.4907779871675686e-19,
+      "coefficient_scale": 0.1281132004583275,
+      "dealias_factor": 6,
+      "dealiasing_reason": "The pressure linearization contains u times a quadratic velocity direction and has support through 3K. Six-times one-field support prevents intermediate FFT aliasing; the final means have support below the same grid length.",
+      "expected_algebraic_generator": 7.700394107982086e-05,
+      "expected_viscous_pressure_contribution": -2.7666931076854913,
+      "finite_difference_validation": null,
+      "first_derivative": -2.5419020013727405,
+      "first_derivative_over_N5": -1.2392782098032346e-07,
+      "first_jet_contributions": {
+        "velocity_Euler": 0.01802723456064005,
+        "velocity_viscous": -2.5702099500461313,
+        "weight_advection": 0.0004821404287381521,
+        "weight_antidiffusion": 0.009798573684012744
+      },
+      "generator_crossing_time": 3.0293827629167117e-05,
+      "grid_point_count": 4065600,
+      "grid_shape": [
+        525,
+        88,
+        88
+      ],
+      "heat_weighted_pressure_HHL_load_over_N3": -0.019349648099665943,
+      "heat_weighted_pressure_HHL_loads": {
+        "combined": -471.91856750275264,
+        "maximum_imaginary_residual": 0.0,
+        "pressure_cross": 1.3151544584977248e-05,
+        "pressure_high_high": -471.9185806542972
+      },
+      "integrated_linearized_crossing_time": 6.0587655258334234e-05,
+      "linearized_integrated_generator_on_window": -8.813298479742537e-09,
+      "low_amplitude": 0.04576147798420797,
+      "nonviscous_contribution_over_N5": 1.3801249590352518e-09,
+      "parabolic_window": 0.00011890606420927467,
+      "plus_vertex_high_Fisher": 0.00014546384829141812,
+      "rho_zero_pressure_HHL_load": -0.04576147798420797,
+      "runtime_seconds": 17.30848269999842,
+      "scaled_generator_crossing_time": 0.025477109036129545,
+      "scaled_integrated_linearized_crossing_time": 0.05095421807225909,
+      "scaled_window": 0.1,
+      "size": 29,
+      "static_optimizer_used": true,
+      "velocity_directional_subterms": {
+        "Euler": {
+          "pressure_direction": 0.018600493863739142,
+          "pressure_variation": -3.890866511858329e-05,
+          "weighted_Fisher": -0.0005343506379805087
+        },
+        "viscous": {
+          "pressure_direction": -0.0005365286832644741,
+          "pressure_variation": -2.7661565790022276,
+          "weighted_Fisher": 0.19648315763936064
+        }
+      },
+      "viscous_contribution_over_N5": -1.253079459393587e-07,
+      "viscous_direction_coefficient_residual": 3.673487170007459e-14,
+      "viscous_pressure_contribution": -2.766693107685492,
+      "viscous_pressure_contribution_over_N5": -1.34887280458325e-07,
+      "viscous_pressure_replay_residual": 8.881784197001252e-16,
+      "viscous_weighted_Fisher_contribution_over_N5": 9.579334518966277e-09,
+      "weight_antidiffusion_coefficient_residual": 1.792407003571785e-18
+    },
+    {
+      "Euler_direction_divergence_residual": 1.7872306847236554e-13,
+      "all_checks_pass": true,
+      "base_generator": 0.00012107968958230833,
+      "base_generator_residual": 2.846030702774449e-19,
+      "coefficient_scale": 0.14897497775882337,
+      "dealias_factor": 6,
+      "dealiasing_reason": "The pressure linearization contains u times a quadratic velocity direction and has support through 3K. Six-times one-field support prevents intermediate FFT aliasing; the final means have support below the same grid length.",
+      "expected_algebraic_generator": 0.00012107968958230804,
+      "expected_viscous_pressure_contribution": -5.257206621367605,
+      "finite_difference_validation": null,
+      "first_derivative": -5.016051248959881,
+      "first_derivative_over_N5": -1.2817173572167478e-07,
+      "first_jet_contributions": {
+        "velocity_Euler": 0.02672839986090561,
+        "velocity_viscous": -5.053381065225386,
+        "weight_advection": 0.0006260715855330871,
+        "weight_antidiffusion": 0.009975344819066341
+      },
+      "generator_crossing_time": 2.4138447470490892e-05,
+      "grid_point_count": 5704776,
+      "grid_shape": [
+        594,
+        98,
+        98
+      ],
+      "heat_weighted_pressure_HHL_load_over_N3": -0.019118348080051008,
+      "heat_weighted_pressure_HHL_loads": {
+        "combined": -687.0560749527931,
+        "maximum_imaginary_residual": 0.0,
+        "pressure_cross": 9.017948396070063e-06,
+        "pressure_high_high": -687.0560839707415
+      },
+      "integrated_linearized_crossing_time": 4.8276894940981785e-05,
+      "linearized_integrated_generator_on_window": -1.0029907598639399e-08,
+      "low_amplitude": 0.051362899586688465,
+      "nonviscous_contribution_over_N5": 9.538633294293233e-10,
+      "parabolic_window": 9.182736455463729e-05,
+      "plus_vertex_high_Fisher": 9.994594386957014e-05,
+      "rho_zero_pressure_HHL_load": -0.051362899586688465,
+      "runtime_seconds": 25.528314999995928,
+      "scaled_generator_crossing_time": 0.02628676929536458,
+      "scaled_integrated_linearized_crossing_time": 0.05257353859072916,
+      "scaled_window": 0.1,
+      "size": 33,
+      "static_optimizer_used": true,
+      "velocity_directional_subterms": {
+        "Euler": {
+          "pressure_direction": 0.027574798519935193,
+          "pressure_variation": -6.238061774665435e-05,
+          "weighted_Fisher": -0.0007840180412829288
+        },
+        "viscous": {
+          "pressure_direction": -0.0007860015922169805,
+          "pressure_variation": -5.256420619775392,
+          "weighted_Fisher": 0.2038255561422233
+        }
+      },
+      "viscous_contribution_over_N5": -1.291255990511041e-07,
+      "viscous_direction_coefficient_residual": 4.305875162560897e-14,
+      "viscous_pressure_contribution": -5.257206621367609,
+      "viscous_pressure_contribution_over_N5": -1.3433381444176654e-07,
+      "viscous_pressure_replay_residual": 3.552713678800501e-15,
+      "viscous_weighted_Fisher_contribution_over_N5": 5.208215390662445e-09,
+      "weight_antidiffusion_coefficient_residual": 1.764667889919051e-18
+    },
+    {
+      "Euler_direction_divergence_residual": 2.901752163754813e-13,
+      "all_checks_pass": true,
+      "base_generator": 0.00017377589991025445,
+      "base_generator_residual": 1.3552527156068805e-19,
+      "coefficient_scale": 0.16804260745598035,
+      "dealias_factor": 6,
+      "dealiasing_reason": "The pressure linearization contains u times a quadratic velocity direction and has support through 3K. Six-times one-field support prevents intermediate FFT aliasing; the final means have support below the same grid length.",
+      "expected_algebraic_generator": 0.0001737758999102546,
+      "expected_viscous_pressure_contribution": -9.183513168944016,
+      "finite_difference_validation": null,
+      "first_derivative": -8.927735121086119,
+      "first_derivative_over_N5": -1.2874568321917538e-07,
+      "first_jet_contributions": {
+        "velocity_Euler": 0.03744030530812942,
+        "velocity_viscous": -8.975920412413982,
+        "weight_advection": 0.0007809399092242388,
+        "weight_antidiffusion": 0.009964046110508929
+      },
+      "generator_crossing_time": 1.9464723981317386e-05,
+      "grid_point_count": 8131200,
+      "grid_shape": [
+        672,
+        110,
+        110
+      ],
+      "heat_weighted_pressure_HHL_load_over_N3": -0.018938268481841672,
+      "heat_weighted_pressure_HHL_loads": {
+        "combined": -959.2801134107262,
+        "maximum_imaginary_residual": 0.0,
+        "pressure_cross": 6.450372503755131e-06,
+        "pressure_high_high": -959.2801198610988
+      },
+      "integrated_linearized_crossing_time": 3.892944796263477e-05,
+      "linearized_integrated_generator_on_window": -1.1124313710357206e-08,
+      "low_amplitude": 0.05696970886595802,
+      "nonviscous_contribution_over_N5": 6.948736906932293e-10,
+      "parabolic_window": 7.304601899196495e-05,
+      "plus_vertex_high_Fisher": 7.159673226685327e-05,
+      "rho_zero_pressure_HHL_load": -0.05696970886595802,
+      "runtime_seconds": 35.782539399995585,
+      "scaled_generator_crossing_time": 0.0266472071304235,
+      "scaled_integrated_linearized_crossing_time": 0.053294414260847,
+      "scaled_window": 0.1,
+      "size": 37,
+      "static_optimizer_used": true,
+      "velocity_directional_subterms": {
+        "Euler": {
+          "pressure_direction": 0.038623541293655445,
+          "pressure_variation": -9.428351235140636e-05,
+          "weighted_Fisher": -0.0010889524731746225
+        },
+        "viscous": {
+          "pressure_direction": -0.001090749868461371,
+          "pressure_variation": -9.182422419075555,
+          "weighted_Fisher": 0.20759275653003498
+        }
+      },
+      "viscous_contribution_over_N5": -1.294405569098686e-07,
+      "viscous_direction_coefficient_residual": 5.884811231078238e-14,
+      "viscous_pressure_contribution": -9.183513168944017,
+      "viscous_pressure_contribution_over_N5": -1.3243422449838013e-07,
+      "viscous_pressure_replay_residual": 1.7763568394002505e-15,
+      "viscous_weighted_Fisher_contribution_over_N5": 2.9936675885114975e-09,
+      "weight_antidiffusion_coefficient_residual": 1.9289196278300536e-18
+    },
+    {
+      "Euler_direction_divergence_residual": 3.6607472646270284e-13,
+      "all_checks_pass": true,
+      "base_generator": 0.00023652703334780308,
+      "base_generator_residual": 5.963111948670274e-19,
+      "coefficient_scale": 0.18623007772527453,
+      "dealias_factor": 6,
+      "dealiasing_reason": "The pressure linearization contains u times a quadratic velocity direction and has support through 3K. Six-times one-field support prevents intermediate FFT aliasing; the final means have support below the same grid length.",
+      "expected_algebraic_generator": 0.00023652703334780368,
+      "expected_viscous_pressure_contribution": -15.095962151046328,
+      "finite_difference_validation": null,
+      "first_derivative": -14.824910030859632,
+      "first_derivative_over_N5": -1.2795957318555295e-07,
+      "first_jet_contributions": {
+        "velocity_Euler": 0.050444401506593295,
+        "velocity_viscous": -14.886164595845885,
+        "weight_advection": 0.0009493789000783612,
+        "weight_antidiffusion": 0.009860784579582409
+      },
+      "generator_crossing_time": 1.5954702784397802e-05,
+      "grid_point_count": 10761135,
+      "grid_shape": [
+        735,
+        121,
+        121
+      ],
+      "heat_weighted_pressure_HHL_load_over_N3": -0.018794101770018563,
+      "heat_weighted_pressure_HHL_loads": {
+        "combined": -1295.3082880914494,
+        "maximum_imaginary_residual": 0.0,
+        "pressure_cross": 4.772076425699212e-06,
+        "pressure_high_high": -1295.3082928635258
+      },
+      "integrated_linearized_crossing_time": 3.1909405568795604e-05,
+      "linearized_integrated_generator_on_window": -1.2161097788713364e-08,
+      "low_amplitude": 0.06258032717911707,
+      "nonviscous_contribution_over_N5": 5.287120107300433e-10,
+      "parabolic_window": 5.9488399762046407e-05,
+      "plus_vertex_high_Fisher": 5.302918855758107e-05,
+      "rho_zero_pressure_HHL_load": -0.06258032717911707,
+      "runtime_seconds": 50.38341709999804,
+      "scaled_generator_crossing_time": 0.026819855380572705,
+      "scaled_integrated_linearized_crossing_time": 0.05363971076114541,
+      "scaled_window": 0.1,
+      "size": 41,
+      "static_optimizer_used": true,
+      "velocity_directional_subterms": {
+        "Euler": {
+          "pressure_direction": 0.05203804412311638,
+          "pressure_variation": -0.0001366389804522659,
+          "weighted_Fisher": -0.001457003636070819
+        },
+        "viscous": {
+          "pressure_direction": -0.0014586370225217827,
+          "pressure_variation": -15.094503514023826,
+          "weighted_Fisher": 0.20979755520046292
+        }
+      },
+      "viscous_contribution_over_N5": -1.2848828519628298e-07,
+      "viscous_direction_coefficient_residual": 4.983416597693009e-14,
+      "viscous_pressure_contribution": -15.095962151046347,
+      "viscous_pressure_contribution_over_N5": -1.3029912961712207e-07,
+      "viscous_pressure_replay_residual": 1.9539925233402755e-14,
+      "viscous_weighted_Fisher_contribution_over_N5": 1.8108444208390963e-09,
+      "weight_antidiffusion_coefficient_residual": 1.949042537387348e-18
+    }
+  ],
+  "certification_flags": {
+    "Navier_Stokes_global_regularity_proved": false,
+    "asymptotic_N5_coefficient_certified": false,
+    "asymptotic_total_first_jet_N5_coefficient_certified": false,
+    "asymptotic_viscous_pressure_N5_coefficient_certified": true,
+    "critical_L3_controlled": false,
+    "exact_first_variation_formula_proved": true,
+    "finite_carrier_first_jet_computed": true,
+    "finite_carrier_first_jet_negative": true,
+    "finite_time_blowup_proved": false,
+    "rectangular_dealiasing_validated": true,
+    "required_N2_amplification_excluded": false,
+    "second_time_jet_needed": true
+  },
+  "heat_weighted_pressure_limit_certificate": {
+    "analytic_absolute_lower_bound": 0.001314420682333938,
+    "continuum_domain": "[2,3] x [-1/2,1/2] x [-1/2,1/2]",
+    "heat_weighted_pressure_load_limit": -0.017493957024435965,
+    "limit_formula": "B_heat,N/N^3 -> (sqrt(2)/10) integral_D S^2 |xi|^2 (V_y^2-V_z^2)",
+    "order_per_axis": 64,
+    "pointwise_margin": "|xi|^2(V_z^2-V_y^2)>=510/6859",
+    "profile_mass": "integral_D S^2=1/8",
+    "quadrature": "tensor Gauss-Legendre",
+    "raw_integral_of_S2_times_r2_times_Vy2_minus_Vz2": -0.12370095641764708,
+    "sign_and_margin_check": true,
+    "static_analytic_absolute_lower_bound": 0.00016430258529174225,
+    "static_limit_formula": "B_N/N -> (sqrt(2)/20) integral_D S^2 (V_y^2-V_z^2)",
+    "static_pointwise_margin": "V_z^2-V_y^2>=255/13718",
+    "static_pressure_load_limit": -0.0014065919385788297,
+    "static_raw_integral_of_S2_times_Vy2_minus_Vz2": -0.019892213962628445
+  },
+  "kind": "annular_rho_zero_first_jet_audit",
+  "padding_replay": {
+    "all_checks_pass": true,
+    "base_grid_shape": [
+      49,
+      7,
+      7
+    ],
+    "maximum_component_residual": 3.3306690738754696e-16,
+    "padded_grid_shape": [
+      66,
+      9,
+      9
+    ]
+  },
+  "prerequisite_audit": {
+    "all_checks_pass": true,
+    "rows": [
+      {
+        "actual_sha256": "9da360ccb3e6051561889a2efdb68d20950314860b57a5bc7e4e7c0df80cee2d",
+        "all_positive_checks_pass": true,
+        "expected_sha256": "9da360ccb3e6051561889a2efdb68d20950314860b57a5bc7e4e7c0df80cee2d",
+        "matches": true,
+        "path": "work/ns_collision/results/adjoint_replica_pressure_edge_gate_audit_v1.json"
+      },
+      {
+        "actual_sha256": "5313001d5a136babf1be6d99b66767db4161e526cd08158631cde2a68c942789",
+        "all_positive_checks_pass": true,
+        "expected_sha256": "5313001d5a136babf1be6d99b66767db4161e526cd08158631cde2a68c942789",
+        "matches": true,
+        "path": "work/ns_collision/results/annular_eight_vertex_heat_window_gate_audit_v1.json"
+      },
+      {
+        "actual_sha256": "2f32255887eb18ec0aa22dadfacf681b930434e73f0c457041d65a66e8c04e6d",
+        "all_positive_checks_pass": true,
+        "expected_sha256": "2f32255887eb18ec0aa22dadfacf681b930434e73f0c457041d65a66e8c04e6d",
+        "matches": true,
+        "path": "work/ns_collision/results/deficit_retaining_annular_restart_gate_audit_v1.json"
+      }
+    ]
+  },
+  "scaling_diagnostics": {
+    "all_first_derivatives_negative": true,
+    "all_heat_weighted_pressure_loads_negative": true,
+    "all_viscous_contributions_negative": true,
+    "component_diagnostics": {
+      "velocity_Euler": {
+        "largest_value_over_N5": 4.354052788818209e-10,
+        "log_coefficient": -14.372203306758815,
+        "log_log_exponent": 3.0700549928965493
+      },
+      "velocity_viscous": {
+        "largest_value_over_N5": -1.2848828519628298e-07,
+        "log_coefficient": -16.81968758354401,
+        "log_log_exponent": 5.264789861360345
+      },
+      "weight_advection": {
+        "largest_value_over_N5": 8.194459095705729e-12,
+        "log_coefficient": -14.549687969011337,
+        "log_log_exponent": 2.0476066344835537
+      },
+      "weight_antidiffusion": {
+        "largest_value_over_N5": 8.511227275251679e-11,
+        "log_coefficient": -5.1338049372542285,
+        "log_log_exponent": 0.14437842902944886
+      }
+    },
+    "largest_carrier_absolute_remainder_fraction": 0.01795527290507465,
+    "largest_carrier_remainder_over_absolute_viscous_pressure": 0.01795527290507465,
+    "largest_heat_weighted_pressure_load_over_N3": -0.018794101770018563,
+    "largest_total_over_N5": -1.2795957318555295e-07,
+    "largest_viscous_pressure_over_N5": -1.3029912961712207e-07,
+    "largest_viscous_weighted_Fisher_over_N5": 1.8108444208390963e-09,
+    "total_log_coefficient": -16.930926903923414,
+    "total_log_log_exponent": 5.294045547393618
+  },
+  "scope": "The exact restart-time first derivative of the smooth rho=0 pressure generator for the static-optimal annular +++ family. The finite rows are dealiased computations; asymptotic signs are not certified until the observed scaling is converted into an analytic or interval argument.",
+  "small_carrier_validation": {
+    "Euler_direction_divergence_residual": 3.12251156292207e-16,
+    "all_checks_pass": true,
+    "base_generator": -0.27505445945081136,
+    "base_generator_residual": 0.0,
+    "coefficient_scale": 0.9,
+    "dealias_factor": 6,
+    "dealiasing_reason": "The pressure linearization contains u times a quadratic velocity direction and has support through 3K. Six-times one-field support prevents intermediate FFT aliasing; the final means have support below the same grid length.",
+    "expected_algebraic_generator": -0.27505445945081136,
+    "expected_viscous_pressure_contribution": -0.6938988578085333,
+    "finite_difference_validation": {
+      "epsilon": 1e-06,
+      "maximum_absolute_residual": 3.131220838170634e-10,
+      "rows": {
+        "velocity_Euler": {
+          "absolute_residual": 3.5767035166944794e-11,
+          "analytic": -0.015681689621534024,
+          "central_difference": -0.01568168958576699
+        },
+        "velocity_viscous": {
+          "absolute_residual": 2.0802914946216333e-11,
+          "analytic": 5.036164023884668,
+          "central_difference": 5.036164023863865
+        },
+        "weight_advection": {
+          "absolute_residual": 5.2808415626492966e-11,
+          "analytic": 0.006311037578716308,
+          "central_difference": 0.006311037525907892
+        },
+        "weight_antidiffusion": {
+          "absolute_residual": 3.131220838170634e-10,
+          "analytic": 0.2806425283908124,
+          "central_difference": 0.2806425280776903
+        }
+      }
+    },
+    "first_derivative": 5.3074359002326625,
+    "first_derivative_over_N5": 0.021841300000957457,
+    "first_jet_contributions": {
+      "velocity_Euler": -0.015681689621534024,
+      "velocity_viscous": 5.036164023884668,
+      "weight_advection": 0.006311037578716308,
+      "weight_antidiffusion": 0.2806425283908124
+    },
+    "generator_crossing_time": null,
+    "grid_point_count": 2401,
+    "grid_shape": [
+      49,
+      7,
+      7
+    ],
+    "heat_weighted_pressure_HHL_load_over_N3": -0.04079358364541642,
+    "heat_weighted_pressure_HHL_loads": {
+      "combined": -1.1014267584262434,
+      "maximum_imaginary_residual": 0.0,
+      "pressure_cross": 0.006306660676360943,
+      "pressure_high_high": -1.1077334191026043
+    },
+    "integrated_linearized_crossing_time": null,
+    "linearized_integrated_generator_on_window": -0.002728541160550209,
+    "low_amplitude": 0.7,
+    "nonviscous_contribution_over_N5": 0.0011163451701563566,
+    "parabolic_window": 0.011111111111111112,
+    "plus_vertex_high_Fisher": 0.05363542869638552,
+    "rho_zero_pressure_HHL_load": -0.011215579440969115,
+    "runtime_seconds": 0.046462100006465334,
+    "scaled_generator_crossing_time": null,
+    "scaled_integrated_linearized_crossing_time": null,
+    "scaled_window": 0.1,
+    "size": 3,
+    "static_optimizer_used": false,
+    "velocity_directional_subterms": {
+      "Euler": {
+        "pressure_direction": 0.003293811167386186,
+        "pressure_variation": -0.011666766842597816,
+        "weighted_Fisher": -0.007308733946322394
+      },
+      "viscous": {
+        "pressure_direction": -0.012360049702292337,
+        "pressure_variation": -0.6815388081062412,
+        "weighted_Fisher": 5.730062881693201
+      }
+    },
+    "viscous_contribution_over_N5": 0.020724954830801102,
+    "viscous_direction_coefficient_residual": 1.2030379246485576e-15,
+    "viscous_pressure_contribution": -0.6938988578085336,
+    "viscous_pressure_contribution_over_N5": -0.0028555508551791503,
+    "viscous_pressure_replay_residual": 2.220446049250313e-16,
+    "viscous_weighted_Fisher_contribution_over_N5": 0.023580505685980253,
+    "weight_antidiffusion_coefficient_residual": 7.0462583992368e-18
+  },
+  "status": "annular_rho_zero_viscous_pressure_N5_limit_certified",
+  "symbolic_first_variation_certificate": {
+    "Navier_Stokes_velocity_directions": {
+      "Euler": "v_E=-(u dot grad)u-grad p",
+      "viscous": "v_nu=nu Delta u"
+    },
+    "all_checks_pass": true,
+    "backward_weight_directions": {
+      "advection": "mu_A=-u dot grad lambda",
+      "anti_diffusion": "mu_nu=-nu Delta lambda"
+    },
+    "generator": "g_0(u,lambda)=integral[p(u)u dot grad lambda-nu lambda|grad u|^2-nu lambda|grad lambda|^2]",
+    "pressure_linearization": "p'[u;v]=p[u,v]+p[v,u], Delta p'[u;v]=-partial_i partial_j(u_i v_j+v_i u_j)",
+    "velocity_directional_derivative": "D_u g[v]=integral[p'[u;v]u dot grad lambda+p v dot grad lambda-2nu lambda grad u:grad v]",
+    "velocity_symbolic_residual": "0",
+    "weight_directional_derivative": "D_lambda g[mu]=integral[p u dot grad mu-nu mu|grad u|^2-nu mu|grad lambda|^2-2nu lambda grad lambda dot grad mu]",
+    "weight_symbolic_residual": "0"
+  }
+}

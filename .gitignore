@@ -1,0 +1,23 @@
+# Python and test caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Local logs and resumable console captures
+*.log
+*.tmp
+
+# Locally built release packages
+/release-assets/
+
+# Large research data is preserved in the tagged GitHub release declared by
+# release-manifests/research-data-v1.json and restored to these exact paths.
+/work/ns_collision/results/*.npz
+/work/ns_collision/results/neutral_strip_h006_hypercircle_directed_ldl_transition32064*_audit_v1.json
+/work/ns_collision/results/neutral_strip_h006_hypercircle_directed_ldl_transition32064*_checkpoint_v1.json
+/work/ns_collision/results/neutral_strip_h006_hypercircle_directed_ldl_transition33280*_audit_v1.json
+/work/ns_collision/results/neutral_strip_h006_hypercircle_directed_ldl_transition33280*_checkpoint_v1.json

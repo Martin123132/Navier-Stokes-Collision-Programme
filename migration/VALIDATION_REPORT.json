@@ -1,0 +1,40 @@
+{
+  "kind": "navier_stokes_workspace_split_validation",
+  "schema_version": 1,
+  "validated_at": "2026-07-23T17:30:13+01:00",
+  "workspace_root": "C:\\Users\\ollet\\Documents\\Codex\\2026-07-03\\navier-stokes",
+  "status": "pass",
+  "checks": {
+    "source_snapshot": {
+      "file_count": 410,
+      "total_bytes": 461242314,
+      "tree_sha256": "3f0c4f87d6dcbc1bd61081b06f8ea7516c57b59b8a8a8e0f794665f4f328b70b",
+      "source_mismatches": 0,
+      "destination_mismatches": 0
+    },
+    "project_paths": {
+      "research_root": "C:\\Users\\ollet\\Documents\\Codex\\2026-07-03\\navier-stokes\\work\\ns_collision",
+      "research_readme": "C:\\Users\\ollet\\Documents\\Codex\\2026-07-03\\navier-stokes\\work\\ns_collision\\README.md",
+      "session_bookmark": "C:\\Users\\ollet\\Documents\\Codex\\2026-07-03\\navier-stokes\\work\\ns_collision\\results\\session_bookmark.json",
+      "runtime_policy": "C:\\Users\\ollet\\Documents\\Codex\\2026-07-03\\navier-stokes\\work\\ns_collision\\session_runtime_policy.json",
+      "migration_manifest": "C:\\Users\\ollet\\Documents\\Codex\\2026-07-03\\navier-stokes\\MIGRATION_MANIFEST.json",
+      "source_tree_hash_manifest": "C:\\Users\\ollet\\Documents\\Codex\\2026-07-03\\navier-stokes\\migration\\SOURCE_TREE_SHA256.json"
+    },
+    "checkpoint": {
+      "standalone_canonical_sha256": "53a19d5ed342fbd24d5bdb21e0c9dcf66c38a5bb53bcc93a312ac0c28036a3e1",
+      "expected_canonical_sha256": "53a19d5ed342fbd24d5bdb21e0c9dcf66c38a5bb53bcc93a312ac0c28036a3e1",
+      "rh_source_state": "removed_by_rh_owner"
+    },
+    "primary_artifacts": {
+      "declared": 163,
+      "missing": []
+    },
+    "json_parse": {
+      "files_checked": 29,
+      "invalid": []
+    },
+    "cross_workspace_runtime_references": [],
+    "reparse_points": []
+  },
+  "errors": []
+}

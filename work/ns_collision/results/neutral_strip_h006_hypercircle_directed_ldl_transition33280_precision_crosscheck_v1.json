@@ -1,0 +1,88 @@
+{
+  "all_checks_pass": true,
+  "artifacts": {
+    "higher_audit": "work/ns_collision/results/neutral_strip_h006_hypercircle_directed_ldl_transition33280_p80_audit_v1.json",
+    "higher_audit_sha256": "89a2cb2139a944e42057ec20cd4de031265046275009b05251ccc87de37933d5",
+    "higher_checkpoint": "work/ns_collision/results/neutral_strip_h006_hypercircle_directed_ldl_transition33280_p80_checkpoint_v1.json",
+    "higher_checkpoint_sha256": "ef80a4307549876c1a9c88da0d12eadfd4c062cce773284600b8fefc805d6102",
+    "lower_audit": "work/ns_collision/results/neutral_strip_h006_hypercircle_directed_ldl_transition33280_audit_v1.json",
+    "lower_audit_sha256": "6d7c45754193c75626d0f0293b30189764f464e4386bce462d3d4fd23a5a1932",
+    "lower_checkpoint": "work/ns_collision/results/neutral_strip_h006_hypercircle_directed_ldl_transition33280_checkpoint_v1.json",
+    "lower_checkpoint_sha256": "adc0c89e6d19f840c84d16dfc5952e8156c255d1bd4843d67640223beb72197d"
+  },
+  "checks": {
+    "audit_checkpoint_hashes_match": true,
+    "both_prefixes_certified": true,
+    "checkpoint_state_hashes_replay": true,
+    "common_contract_and_provenance_equal": true,
+    "endpoint_lengths_equal": true,
+    "full_inertia_claim_remains_false": true,
+    "interaction_structural_profiles_equal": true,
+    "lower_intervals_higher_nested_in_lower": true,
+    "pivot_intervals_higher_nested_in_lower": true,
+    "pivot_signs_equal": true,
+    "requested_precisions_match": true,
+    "symbolic_coordinates_equal": true
+  },
+  "comparison": {
+    "higher_interaction_profile": {
+      "block_counts": {
+        "edge_metric": 532,
+        "source_triangle": 0,
+        "state": 0,
+        "triangle_constraint": 1262
+      },
+      "first_pivot": 1738,
+      "last_pivot": 33279,
+      "maximum_cancellation_charge_index": 32849,
+      "maximum_cancellation_charge_upper_decimal": "422.55589915310525742567964383495086091506658983602581715979494413024201431586103",
+      "maximum_diagonal_term_count": 4,
+      "maximum_lower_interval_width_decimal": "3.8228082169630746115771113522223350139398224688545300802628621418504766E-7",
+      "maximum_lower_interval_width_index": 32849,
+      "maximum_off_diagonal_recurrence_term_count": 10,
+      "maximum_pivot_radius_to_margin_index": 32849,
+      "maximum_pivot_radius_to_margin_upper_decimal": "5.9196727264835606493920324435616489454410853108481671729707958816591938328141303E-10",
+      "maximum_symbolic_descendant_count": 6,
+      "minimum_pivot_margin_decimal": "0.003304358585502960725532827806",
+      "minimum_pivot_margin_index": 32849,
+      "negative_pivot_count": 1017,
+      "pivot_count": 1794,
+      "positive_pivot_count": 777
+    },
+    "higher_maximum_relative_radius_decimal": "5.9196727264835606493920324435616489454410853108481671729707958816591938328141303E-10",
+    "higher_minimum_margin_decimal": "0.003304358585502960725532827806",
+    "higher_precision": 80,
+    "lower_interaction_profile": {
+      "block_counts": {
+        "edge_metric": 532,
+        "source_triangle": 0,
+        "state": 0,
+        "triangle_constraint": 1262
+      },
+      "first_pivot": 1738,
+      "last_pivot": 33279,
+      "maximum_cancellation_charge_index": 32849,
+      "maximum_cancellation_charge_upper_decimal": "422.55589915310525742567964383495086091506658983603",
+      "maximum_diagonal_term_count": 4,
+      "maximum_lower_interval_width_decimal": "3.8228082169630746115771113522223350185047E-7",
+      "maximum_lower_interval_width_index": 32849,
+      "maximum_off_diagonal_recurrence_term_count": 10,
+      "maximum_pivot_radius_to_margin_index": 32849,
+      "maximum_pivot_radius_to_margin_upper_decimal": "5.9196727264835606493920324435616489525089540425489E-10",
+      "maximum_symbolic_descendant_count": 6,
+      "minimum_pivot_margin_decimal": "0.003304358585502960725532827806",
+      "minimum_pivot_margin_index": 32849,
+      "negative_pivot_count": 1017,
+      "pivot_count": 1794,
+      "positive_pivot_count": 777
+    },
+    "lower_maximum_relative_radius_decimal": "5.9196727264835606493920324435616489525089540425489E-10",
+    "lower_minimum_margin_decimal": "0.003304358585502960725532827806",
+    "lower_precision": 50,
+    "pivot_count": 33280,
+    "symbolic_lower_entry_count": 131628
+  },
+  "kind": "hypercircle-directed-ldl-transition33280-precision-crosscheck",
+  "scope": "Independent replay of stored interval endpoints and checkpoint integrity at two Decimal precisions. This comparison certifies no pivot beyond the two bounded input prefixes.",
+  "status": "pass"
+}

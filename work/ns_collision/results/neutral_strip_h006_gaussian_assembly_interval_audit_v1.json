@@ -1,0 +1,133 @@
+{
+  "assembled_error_bounds": {
+    "boundary": {
+      "assembled_nonzero_count": 256,
+      "frobenius_error_upper": 7.700474451276267e-13,
+      "maximum_entry_contribution_count": 2,
+      "maximum_entry_error_upper": 1.1646544513831305e-13,
+      "maximum_row_sum_error_upper": 1.689677450006086e-13
+    },
+    "boundary_mass": {
+      "assembled_nonzero_count": 256,
+      "frobenius_error_upper": 1.513206798977274e-16,
+      "maximum_entry_contribution_count": 2,
+      "maximum_entry_error_upper": 1.6523696698987665e-17,
+      "maximum_row_sum_error_upper": 3.175041989781824e-17
+    },
+    "mass": {
+      "assembled_nonzero_count": 105129,
+      "frobenius_error_upper": 3.896828313466214e-15,
+      "maximum_entry_contribution_count": 9,
+      "maximum_entry_error_upper": 1.2142378297362264e-16,
+      "maximum_row_sum_error_upper": 2.425851315800051e-16
+    },
+    "stiffness": {
+      "assembled_nonzero_count": 105129,
+      "frobenius_error_upper": 1.5879488529596315e-11,
+      "maximum_entry_contribution_count": 9,
+      "maximum_entry_error_upper": 3.778781758995954e-13,
+      "maximum_row_sum_error_upper": 7.918235556534263e-13
+    }
+  },
+  "below_normal_priority_set": true,
+  "checkpoint": {
+    "checkpoint_interval": 1024,
+    "contract_sha256": "6cbe6782e4ef04b484efc8da9cc1dca16d2d9590b3c56c3effc56614fab6fced",
+    "cpu_samples_percent": [],
+    "cpu_threshold_percent": 75.0,
+    "enabled": true,
+    "next_selected_position": 30954,
+    "parked_for_repeated_cpu_threshold_breach": false,
+    "path": "work\\ns_collision\\results\\neutral_strip_h006_gaussian_assembly_interval_checkpoint_v1.npz",
+    "resumed": true
+  },
+  "complete_mesh_audit": true,
+  "cross_check_quadrature_order": 24,
+  "elapsed_seconds": 3.1777772000059485,
+  "finite_element_assembly_interval_enclosed": true,
+  "form_bounds": {
+    "absolute_mass_error_relative_to_stored_mass_form": 5.492564204190142e-13,
+    "absolute_stiffness_error_in_stored_mass_form_units": 5.431182629562088e-09,
+    "exact_mass_lower_relative_to_stored_mass": 0.9999999999994507,
+    "stored_mass_row_lumped_coercivity_lower_used": 0.14999999999999333
+  },
+  "inner_boundary_vertex_count": 112,
+  "local_interval_checks": {
+    "all_local_enclosures_valid": true,
+    "maximum_determinant_interval_width": 8.673617379884035e-18,
+    "maximum_exact_interval_width": {
+      "mass": 3.371868756429919e-17,
+      "stiffness": 2.324807013565078e-13,
+      "weighted_area": 2.1380466841414147e-16
+    },
+    "minimum_determinant_lower": 0.0011222532900354307,
+    "minimum_exact_mass_entry_lower": 7.454056631710156e-09
+  },
+  "method": {
+    "geometry": "outward IEEE-754 intervals for binary vertex determinant, inverse edge map, and P1 gradient Gram",
+    "global_error": "entrywise sum of local exact-minus-q12 enclosures plus duplicate-summation roundoff",
+    "moments": "closed barycentric Dirichlet moments with ball-arithmetic generating-function convolution",
+    "remainder": "absolute probabilists-Hermite derivative bound times the unweighted barycentric moment",
+    "weight": "Gaussian Taylor recurrence about each triangle x-centroid"
+  },
+  "model": "directed interval audit of Gaussian-weighted P1 assembly on the stored binary polygon",
+  "quadrature_diagnostics": {
+    "maximum_absolute_q12_to_q24_difference": {
+      "mass": 4.87890977618477e-19,
+      "stiffness": 1.4432899320127035e-15,
+      "weighted_area": 1.3010426069826053e-18
+    },
+    "maximum_q12_distance_to_exact_interval": {
+      "mass": 0.0,
+      "stiffness": 0.0,
+      "weighted_area": 0.0
+    },
+    "maximum_q24_distance_to_exact_interval": {
+      "mass": 0.0,
+      "stiffness": 0.0,
+      "weighted_area": 0.0
+    },
+    "q24_containment_check_count": 2318,
+    "q24_containment_failure_count": 0,
+    "q24_is_diagnostic_not_part_of_the_proof": true,
+    "worst_rows": {
+      "q12_mass": null,
+      "q12_stiffness": null,
+      "q24_mass": null,
+      "q24_stiffness": null
+    }
+  },
+  "quadrature_order": 12,
+  "requested_triangle_count": 30954,
+  "selected_triangle_count": 30954,
+  "spacing": 0.06,
+  "state_count": 15211,
+  "stored_matrix_reconstruction": {
+    "all_four_matrix_fingerprints_match": true,
+    "expected_matrix_fingerprint_sha256": "c80fdc5aa494fe1118aec4c38045df76151b2ccde3fded18f4af1161de7efd48",
+    "expected_per_matrix_fingerprints_sha256": {
+      "boundary": "4102a74e02d736aec2b999230b454cd33172480059e82045a487521e1b50966b",
+      "boundary_mass": "a2424aea92826c8408abd5188216643a260d09ebb6f9fb33c06d83e271c2c151",
+      "mass": "6962499025001d6b768ac7aaa62c38173551ed94248ba0b27a2fffe140f269c8",
+      "stiffness": "de55b4a7910cec423f36b8760fc164e6154c7271227f739c84b0516d0fdf268f"
+    },
+    "fingerprints_match": true,
+    "reconstructed_matrix_fingerprint_sha256": "c80fdc5aa494fe1118aec4c38045df76151b2ccde3fded18f4af1161de7efd48",
+    "reconstructed_per_matrix_fingerprints_sha256": {
+      "boundary": "4102a74e02d736aec2b999230b454cd33172480059e82045a487521e1b50966b",
+      "boundary_mass": "a2424aea92826c8408abd5188216643a260d09ebb6f9fb33c06d83e271c2c151",
+      "mass": "6962499025001d6b768ac7aaa62c38173551ed94248ba0b27a2fffe140f269c8",
+      "stiffness": "de55b4a7910cec423f36b8760fc164e6154c7271227f739c84b0516d0fdf268f"
+    }
+  },
+  "taylor_area_degree": 22,
+  "taylor_mass_degree": 20,
+  "total_triangle_count": 30954,
+  "v1_initial_production_provenance": {
+    "initial_complete_pass_checkpoint_count": 31,
+    "initial_complete_pass_cpu_sample_maximum_percent": 74.8,
+    "initial_complete_pass_cpu_sample_minimum_percent": 29.1,
+    "initial_complete_pass_elapsed_seconds": 445.4341170999687,
+    "initial_complete_pass_parked_for_cpu": false
+  }
+}

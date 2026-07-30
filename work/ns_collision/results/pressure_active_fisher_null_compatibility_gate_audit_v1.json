@@ -1,0 +1,787 @@
+{
+  "all_positive_checks_pass": true,
+  "canonical_geometry": {
+    "compatible_weight": "lambda=phi_-(x_1)phi_+(x_2), obtained by summing the two vertices (-,+,-) and (-,+,+)",
+    "edge_form": "F_gamma(a,b)=|a|^2+|b|^2-2 gamma Re(b conjugate(a))",
+    "high_frequencies": "k_n=(n,1,0), n=N_0,...,N_1",
+    "inplane_polarization": "uhat_t(k_n)=beta_n(-1,n,0)/(n^2+1)",
+    "low_wave": "Uhat(0,-1,0)=Uhat(0,1,0)=e_1",
+    "reality": "uhat(-k_n)=conjugate(uhat(k_n))",
+    "shear_polarization": "uhat_s(k_n)=alpha_n e_3/sqrt(n^2+1)",
+    "weighted_Fisher": "E_lambda(h)=(1/4)sum_edges [F_gamma_s(alpha)+F_gamma_t(beta)], including both zero endpoints"
+  },
+  "certification_flags": {
+    "Navier_Stokes_global_regularity_proved": false,
+    "all_cross_shell_HHL_absorbed": false,
+    "arbitrary_low_field_and_partition_bound_proved": false,
+    "arbitrary_residue_chain_bound_proved": false,
+    "canonical_bound_constant": 0.5,
+    "canonical_two_polarization_complete_HHL_Fisher_bound_proved": true,
+    "constant_chain_null_compatible": true,
+    "critical_L3_controlled": false,
+    "cross_shell_modulated_wave_no_go_invalidated": false,
+    "first_Dirichlet_chain_null_compatible": true,
+    "full_signed_Fisher_interfaces_retained": true,
+    "multiband_absolute_Fisher_recombination_restored": false,
+    "pressure_active_phase_tilts_controlled": true,
+    "terminal_dual_supremum_controlled": false
+  },
+  "exact_edge_theorem": {
+    "coefficient_bounds": "|C_sigma(n)|<=(1/4)sqrt(1-gamma_sigma(n)^2), sigma in {s,t}",
+    "complete_HHL_form": "B_HHL=sum_n C_s(n) Im(alpha_(n+1) conjugate(alpha_n))+C_t(n) Im(beta_(n+1) conjugate(beta_n))",
+    "edge_bound": "|C_sigma Im(b conjugate(a))|<=F_gamma(a,b)/8",
+    "global_bound": "|B_HHL|<=E_lambda(h)/2",
+    "high_high_pressure_cancellation": "The +sin(theta_n)^2/2 high-high pressure coefficient cancels the -sin(theta_n)^2/2 anisotropic kinetic coefficient exactly before the cross-pressure term is added.",
+    "inplane_coefficient": "-(n**6 + 3*n**5 + 14*n**4 + 23*n**3 + 35*n**2 + 24*n + 4)/(4*(n**2 + 1)*(n**2 + 4)*(n**2 + 2*n + 2)*(n**2 + 2*n + 5))",
+    "null_compatibility": "Real constant and first Dirichlet chain data have zero skew product and hence zero complete HHL load. Complex phase tilts activate pressure but are paid by the same full signed Fisher edges.",
+    "shear_coefficient": "C_s(n)=-1/[4 sqrt((n^2+1)((n+1)^2+1))]",
+    "skew_lemma": "2 sqrt(1-gamma^2)|Im(b conjugate(a))|<=F_gamma(a,b)"
+  },
+  "generalized_spectral_replays": [
+    {
+      "all_checks_pass": true,
+      "certified_upper_bound": 0.5,
+      "chain_length": 8,
+      "inplane_maximum_absolute_eigenvalue": 0.13782361392511533,
+      "shear_maximum_absolute_eigenvalue": 0.1599453929884883,
+      "start_mode": 1,
+      "two_polarization_maximum": 0.1599453929884883
+    },
+    {
+      "all_checks_pass": true,
+      "certified_upper_bound": 0.5,
+      "chain_length": 16,
+      "inplane_maximum_absolute_eigenvalue": 0.1504840170249985,
+      "shear_maximum_absolute_eigenvalue": 0.17393150349760705,
+      "start_mode": 1,
+      "two_polarization_maximum": 0.17393150349760705
+    },
+    {
+      "all_checks_pass": true,
+      "certified_upper_bound": 0.5,
+      "chain_length": 32,
+      "inplane_maximum_absolute_eigenvalue": 0.15706892219196383,
+      "shear_maximum_absolute_eigenvalue": 0.18131327486876658,
+      "start_mode": 1,
+      "two_polarization_maximum": 0.18131327486876658
+    },
+    {
+      "all_checks_pass": true,
+      "certified_upper_bound": 0.5,
+      "chain_length": 64,
+      "inplane_maximum_absolute_eigenvalue": 0.16042633714765736,
+      "shear_maximum_absolute_eigenvalue": 0.18511055286596,
+      "start_mode": 1,
+      "two_polarization_maximum": 0.18511055286596
+    },
+    {
+      "all_checks_pass": true,
+      "certified_upper_bound": 0.5,
+      "chain_length": 128,
+      "inplane_maximum_absolute_eigenvalue": 0.16212133687739455,
+      "shear_maximum_absolute_eigenvalue": 0.18703693309979846,
+      "start_mode": 1,
+      "two_polarization_maximum": 0.18703693309979846
+    },
+    {
+      "all_checks_pass": true,
+      "certified_upper_bound": 0.5,
+      "chain_length": 8,
+      "inplane_maximum_absolute_eigenvalue": 0.03464661043224794,
+      "shear_maximum_absolute_eigenvalue": 0.03322297555611562,
+      "start_mode": 4,
+      "two_polarization_maximum": 0.03464661043224794
+    },
+    {
+      "all_checks_pass": true,
+      "certified_upper_bound": 0.5,
+      "chain_length": 16,
+      "inplane_maximum_absolute_eigenvalue": 0.04102514675928835,
+      "shear_maximum_absolute_eigenvalue": 0.03954854092638671,
+      "start_mode": 4,
+      "two_polarization_maximum": 0.04102514675928835
+    },
+    {
+      "all_checks_pass": true,
+      "certified_upper_bound": 0.5,
+      "chain_length": 32,
+      "inplane_maximum_absolute_eigenvalue": 0.045054199162708815,
+      "shear_maximum_absolute_eigenvalue": 0.04358952173530269,
+      "start_mode": 4,
+      "two_polarization_maximum": 0.045054199162708815
+    },
+    {
+      "all_checks_pass": true,
+      "certified_upper_bound": 0.5,
+      "chain_length": 64,
+      "inplane_maximum_absolute_eigenvalue": 0.04736165524081488,
+      "shear_maximum_absolute_eigenvalue": 0.04591967286959629,
+      "start_mode": 4,
+      "two_polarization_maximum": 0.04736165524081488
+    },
+    {
+      "all_checks_pass": true,
+      "certified_upper_bound": 0.5,
+      "chain_length": 128,
+      "inplane_maximum_absolute_eigenvalue": 0.04860356157607215,
+      "shear_maximum_absolute_eigenvalue": 0.047178465629496694,
+      "start_mode": 4,
+      "two_polarization_maximum": 0.04860356157607215
+    },
+    {
+      "all_checks_pass": true,
+      "certified_upper_bound": 0.5,
+      "chain_length": 8,
+      "inplane_maximum_absolute_eigenvalue": 0.0037921536982144,
+      "shear_maximum_absolute_eigenvalue": 0.0037711340705833115,
+      "start_mode": 16,
+      "two_polarization_maximum": 0.0037921536982144
+    },
+    {
+      "all_checks_pass": true,
+      "certified_upper_bound": 0.5,
+      "chain_length": 16,
+      "inplane_maximum_absolute_eigenvalue": 0.005542906773768484,
+      "shear_maximum_absolute_eigenvalue": 0.005517562451694149,
+      "start_mode": 16,
+      "two_polarization_maximum": 0.005542906773768484
+    },
+    {
+      "all_checks_pass": true,
+      "certified_upper_bound": 0.5,
+      "chain_length": 32,
+      "inplane_maximum_absolute_eigenvalue": 0.007242050786997516,
+      "shear_maximum_absolute_eigenvalue": 0.007215332055798849,
+      "start_mode": 16,
+      "two_polarization_maximum": 0.007242050786997516
+    },
+    {
+      "all_checks_pass": true,
+      "certified_upper_bound": 0.5,
+      "chain_length": 64,
+      "inplane_maximum_absolute_eigenvalue": 0.008585442677460845,
+      "shear_maximum_absolute_eigenvalue": 0.008559269015537713,
+      "start_mode": 16,
+      "two_polarization_maximum": 0.008585442677460845
+    },
+    {
+      "all_checks_pass": true,
+      "certified_upper_bound": 0.5,
+      "chain_length": 128,
+      "inplane_maximum_absolute_eigenvalue": 0.009476673310181817,
+      "shear_maximum_absolute_eigenvalue": 0.009451510524739842,
+      "start_mode": 16,
+      "two_polarization_maximum": 0.009476673310181817
+    }
+  ],
+  "kind": "pressure_active_fisher_null_compatibility_gate_audit",
+  "mandatory_adversary_replays": {
+    "Taylor_Green": {
+      "all_checks_pass": true,
+      "compatible_pressure_load": 0.0,
+      "component_weighted_Fisher_sum": 0.5,
+      "dyadic_shell_count": 1,
+      "physical_weighted_Fisher": 0.5,
+      "ratio": 1.0
+    },
+    "modulated_wave_HHL": {
+      "all_positive_checks_pass": true,
+      "analytic_limit": 0.006944444444444444,
+      "component_reconstruction_passes": true,
+      "last_carrier": 1024,
+      "last_complete_over_limit": 1.001431923446627,
+      "status": "cross_shell_carrier_decay_falsified"
+    },
+    "seed81": {
+      "all_checks_pass": true,
+      "component_weighted_Fisher_sum": 788.136006395655,
+      "dyadic_shell_count": 2,
+      "physical_weighted_Fisher": 787.1192752552946,
+      "ratio": 1.0012917116532696,
+      "stored_compatible_pressure_load": 1.280453496113644
+    }
+  },
+  "next_theorem_target": "Lift the edge calculation to arbitrary primitive partition steps and transverse residues, then assemble the finite low-wave/vertex matrix. The required statement is a uniform block Schur bound against the unsplit physical Fisher graph; the modulated-wave HHL adversary must remain an explicit block in that matrix.",
+  "positive_checks": {
+    "Taylor_Green_replay_passes": true,
+    "constant_and_Dirichlet_null_rows_vanish": true,
+    "every_sparse_row_obeys_half_Fisher_bound": true,
+    "generalized_chain_spectra_obey_half_Fisher_bound": true,
+    "modulated_wave_HHL_no_go_remains_live": true,
+    "phase_tilt_activates_pressure_load": true,
+    "prerequisite_hashes_and_results_pass": true,
+    "seed81_replay_passes": true,
+    "sparse_complete_symbol_reconstruction_passes": true,
+    "symbolic_coefficient_and_positive_polynomial_pass": true
+  },
+  "prerequisites": {
+    "all_checks_pass": true,
+    "rows": [
+      {
+        "actual_sha256": "d6c330cba935e2bc8bcac55e462adfb97d91f04b42ed92faf209cea598d35597",
+        "all_positive_checks_pass": true,
+        "expected_sha256": "d6c330cba935e2bc8bcac55e462adfb97d91f04b42ed92faf209cea598d35597",
+        "matches": true,
+        "path": "work/ns_collision/results/cross_shell_modulated_wave_gate_audit_v1.json"
+      },
+      {
+        "actual_sha256": "9a024a23381d62e7842d7d26406fcea2a5343a168f386d3bad85e5308cef99dd",
+        "all_positive_checks_pass": true,
+        "expected_sha256": "9a024a23381d62e7842d7d26406fcea2a5343a168f386d3bad85e5308cef99dd",
+        "matches": true,
+        "path": "work/ns_collision/results/balanced_annular_pressure_edge_gate_audit_v1.json"
+      },
+      {
+        "actual_sha256": "47b8704985671f0dac66ae38ff87a186acd6b938928828d3299a571337a7f087",
+        "all_positive_checks_pass": true,
+        "expected_sha256": "47b8704985671f0dac66ae38ff87a186acd6b938928828d3299a571337a7f087",
+        "matches": true,
+        "path": "work/ns_collision/results/multiband_weighted_fisher_recombination_no_go_audit_v1.json"
+      }
+    ]
+  },
+  "schema_version": 1,
+  "scope": "This is an exact compatibility theorem for one canonical pressure-active affine residue chain, both of its divergence-free polarizations, one fixed low wave, and one compatible two-vertex weight. It proves that the Fisher near-null does not obstruct this geometry. It does not yet cover arbitrary transverse residues, low fields, partition phases, cross-residue couplings, or the full multiband HHL operator.",
+  "sparse_symbol_replays": [
+    {
+      "all_checks_pass": true,
+      "analytic_loads": {
+        "combined": 0.0,
+        "kinetic": 0.0,
+        "pressure_cross": 0.0,
+        "pressure_high_high": 0.0
+      },
+      "chain_length": 4,
+      "complete_load_over_weighted_Fisher": 0.0,
+      "direct_flux_coefficient_residual": 2.797157557069881e-17,
+      "direct_weighted_Fisher": 0.6271614993518551,
+      "direct_weighted_Fisher_imaginary_residual": 0.0,
+      "expected_pressure_load_active": false,
+      "kind": "constant",
+      "maximum_component_load_residual": 0.0,
+      "maximum_divergence_residual": 0.0,
+      "maximum_imaginary_load_residual": 3.469446951953614e-18,
+      "pressure_coefficient_at_e1": [
+        -0.007684970037911214,
+        0.0
+      ],
+      "pressure_load_active": false,
+      "sparse_loads": {
+        "combined": 0.0,
+        "kinetic": 0.0,
+        "pressure_cross": 0.0,
+        "pressure_high_high": 0.0
+      },
+      "start_mode": 4,
+      "weighted_Fisher": 0.627161499351855
+    },
+    {
+      "all_checks_pass": true,
+      "analytic_loads": {
+        "combined": 0.0,
+        "kinetic": 0.0,
+        "pressure_cross": 0.0,
+        "pressure_high_high": 0.0
+      },
+      "chain_length": 4,
+      "complete_load_over_weighted_Fisher": 0.0,
+      "direct_flux_coefficient_residual": 3.3306690738754696e-16,
+      "direct_weighted_Fisher": 0.29982128255807694,
+      "direct_weighted_Fisher_imaginary_residual": 0.0,
+      "expected_pressure_load_active": false,
+      "kind": "first_dirichlet",
+      "maximum_component_load_residual": 0.0,
+      "maximum_divergence_residual": 2.7755575615628914e-17,
+      "maximum_imaginary_load_residual": 1.6263032587282567e-19,
+      "pressure_coefficient_at_e1": [
+        -0.005014306405079449,
+        0.0
+      ],
+      "pressure_load_active": false,
+      "sparse_loads": {
+        "combined": 0.0,
+        "kinetic": 0.0,
+        "pressure_cross": 0.0,
+        "pressure_high_high": 0.0
+      },
+      "start_mode": 4,
+      "weighted_Fisher": 0.2998212825580768
+    },
+    {
+      "all_checks_pass": true,
+      "analytic_loads": {
+        "combined": -0.010289088348672811,
+        "kinetic": -0.010570576852951617,
+        "pressure_cross": -0.0005521073794850243,
+        "pressure_high_high": 0.00083359588376383
+      },
+      "chain_length": 4,
+      "complete_load_over_weighted_Fisher": 0.013108555949408256,
+      "direct_flux_coefficient_residual": 2.8609792490763984e-17,
+      "direct_weighted_Fisher": 0.7849139438686437,
+      "direct_weighted_Fisher_imaginary_residual": 0.0,
+      "expected_pressure_load_active": true,
+      "kind": "tilted_constant",
+      "maximum_component_load_residual": 3.469446951953614e-18,
+      "maximum_divergence_residual": 2.7755575615628914e-17,
+      "maximum_imaginary_load_residual": 8.673617379884035e-19,
+      "pressure_coefficient_at_e1": [
+        -0.006923918754920878,
+        -0.0033343835350553206
+      ],
+      "pressure_load_active": true,
+      "sparse_loads": {
+        "combined": -0.010289088348672811,
+        "kinetic": -0.01057057685295162,
+        "pressure_cross": -0.0005521073794850237,
+        "pressure_high_high": 0.0008335958837638301
+      },
+      "start_mode": 4,
+      "weighted_Fisher": 0.784913943868644
+    },
+    {
+      "all_checks_pass": true,
+      "analytic_loads": {
+        "combined": -0.0068603792187281664,
+        "kinetic": -0.00703976643316972,
+        "pressure_cross": -0.00036451928858769443,
+        "pressure_high_high": 0.000543906503029248
+      },
+      "chain_length": 4,
+      "complete_load_over_weighted_Fisher": 0.01689003020331159,
+      "direct_flux_coefficient_residual": 3.191891195797325e-16,
+      "direct_weighted_Fisher": 0.4061792155577715,
+      "direct_weighted_Fisher_imaginary_residual": 0.0,
+      "expected_pressure_load_active": true,
+      "kind": "tilted_first_dirichlet",
+      "maximum_component_load_residual": 8.673617379884035e-19,
+      "maximum_divergence_residual": 1.3877787807814457e-17,
+      "maximum_imaginary_load_residual": 8.673617379884035e-19,
+      "pressure_coefficient_at_e1": [
+        -0.0045177339651002795,
+        -0.002175626012116992
+      ],
+      "pressure_load_active": true,
+      "sparse_loads": {
+        "combined": -0.006860379218728167,
+        "kinetic": -0.00703976643316972,
+        "pressure_cross": -0.00036451928858769465,
+        "pressure_high_high": 0.000543906503029248
+      },
+      "start_mode": 4,
+      "weighted_Fisher": 0.40617921555777137
+    },
+    {
+      "all_checks_pass": true,
+      "analytic_loads": {
+        "combined": 0.0,
+        "kinetic": 0.0,
+        "pressure_cross": 0.0,
+        "pressure_high_high": 0.0
+      },
+      "chain_length": 8,
+      "complete_load_over_weighted_Fisher": 0.0,
+      "direct_flux_coefficient_residual": 4.579669976578771e-16,
+      "direct_weighted_Fisher": 0.6253031514816823,
+      "direct_weighted_Fisher_imaginary_residual": 0.0,
+      "expected_pressure_load_active": false,
+      "kind": "constant",
+      "maximum_component_load_residual": 0.0,
+      "maximum_divergence_residual": 0.0,
+      "maximum_imaginary_load_residual": 1.3010426069826053e-18,
+      "pressure_coefficient_at_e1": [
+        -0.00107786845667497,
+        0.0
+      ],
+      "pressure_load_active": false,
+      "sparse_loads": {
+        "combined": 0.0,
+        "kinetic": 0.0,
+        "pressure_cross": 0.0,
+        "pressure_high_high": 0.0
+      },
+      "start_mode": 8,
+      "weighted_Fisher": 0.625303151481682
+    },
+    {
+      "all_checks_pass": true,
+      "analytic_loads": {
+        "combined": 0.0,
+        "kinetic": 0.0,
+        "pressure_cross": 0.0,
+        "pressure_high_high": 0.0
+      },
+      "chain_length": 8,
+      "complete_load_over_weighted_Fisher": 0.0,
+      "direct_flux_coefficient_residual": 7.632783294297951e-17,
+      "direct_weighted_Fisher": 0.1697768757902539,
+      "direct_weighted_Fisher_imaginary_residual": 0.0,
+      "expected_pressure_load_active": false,
+      "kind": "first_dirichlet",
+      "maximum_component_load_residual": 0.0,
+      "maximum_divergence_residual": 1.3877787807814457e-17,
+      "maximum_imaginary_load_residual": 4.336808689942018e-19,
+      "pressure_coefficient_at_e1": [
+        -0.0005773203031444894,
+        0.0
+      ],
+      "pressure_load_active": false,
+      "sparse_loads": {
+        "combined": 0.0,
+        "kinetic": 0.0,
+        "pressure_cross": 0.0,
+        "pressure_high_high": 0.0
+      },
+      "start_mode": 8,
+      "weighted_Fisher": 0.16977687579025405
+    },
+    {
+      "all_checks_pass": true,
+      "analytic_loads": {
+        "combined": -0.005569487971038516,
+        "kinetic": -0.005581044582452558,
+        "pressure_cross": -0.00010536078765070842,
+        "pressure_high_high": 0.00011691739906475191
+      },
+      "chain_length": 8,
+      "complete_load_over_weighted_Fisher": 0.0056041064391446835,
+      "direct_flux_coefficient_residual": 4.579669976578771e-16,
+      "direct_weighted_Fisher": 0.9938226604933196,
+      "direct_weighted_Fisher_imaginary_residual": 0.0,
+      "expected_pressure_load_active": true,
+      "kind": "tilted_constant",
+      "maximum_component_load_residual": 1.734723475976807e-18,
+      "maximum_divergence_residual": 1.4304896245381992e-17,
+      "maximum_imaginary_load_residual": 4.336808689942018e-19,
+      "pressure_coefficient_at_e1": [
+        -0.0009711259231581758,
+        -0.00046766959625900776
+      ],
+      "pressure_load_active": true,
+      "sparse_loads": {
+        "combined": -0.005569487971038514,
+        "kinetic": -0.005581044582452558,
+        "pressure_cross": -0.00010536078765070844,
+        "pressure_high_high": 0.00011691739906475194
+      },
+      "start_mode": 8,
+      "weighted_Fisher": 0.9938226604933198
+    },
+    {
+      "all_checks_pass": true,
+      "analytic_loads": {
+        "combined": -0.003236057771773063,
+        "kinetic": -0.003241623952841387,
+        "pressure_cross": -5.7056291880879144e-05,
+        "pressure_high_high": 6.26224729492033e-05
+      },
+      "chain_length": 8,
+      "complete_load_over_weighted_Fisher": 0.008246896997073769,
+      "direct_flux_coefficient_residual": 5.551115123125783e-17,
+      "direct_weighted_Fisher": 0.3923970158620032,
+      "direct_weighted_Fisher_imaginary_residual": 0.0,
+      "expected_pressure_load_active": true,
+      "kind": "tilted_first_dirichlet",
+      "maximum_component_load_residual": 4.336808689942018e-19,
+      "maximum_divergence_residual": 1.3877787807814457e-17,
+      "maximum_imaginary_load_residual": 4.336808689942018e-19,
+      "pressure_coefficient_at_e1": [
+        -0.0005201476199411721,
+        -0.00025048989179681316
+      ],
+      "pressure_load_active": true,
+      "sparse_loads": {
+        "combined": -0.0032360577717730626,
+        "kinetic": -0.003241623952841387,
+        "pressure_cross": -5.70562918808791e-05,
+        "pressure_high_high": 6.262247294920329e-05
+      },
+      "start_mode": 8,
+      "weighted_Fisher": 0.39239701586200326
+    },
+    {
+      "all_checks_pass": true,
+      "analytic_loads": {
+        "combined": 0.0,
+        "kinetic": 0.0,
+        "pressure_cross": 0.0,
+        "pressure_high_high": 0.0
+      },
+      "chain_length": 16,
+      "complete_load_over_weighted_Fisher": 0.0,
+      "direct_flux_coefficient_residual": 1.457167719820518e-16,
+      "direct_weighted_Fisher": 0.6250392426347651,
+      "direct_weighted_Fisher_imaginary_residual": 0.0,
+      "expected_pressure_load_active": false,
+      "kind": "constant",
+      "maximum_component_load_residual": 0.0,
+      "maximum_divergence_residual": 0.0,
+      "maximum_imaginary_load_residual": 4.336808689942018e-19,
+      "pressure_coefficient_at_e1": [
+        -0.00013952933930434818,
+        0.0
+      ],
+      "pressure_load_active": false,
+      "sparse_loads": {
+        "combined": 0.0,
+        "kinetic": 0.0,
+        "pressure_cross": 0.0,
+        "pressure_high_high": 0.0
+      },
+      "start_mode": 16,
+      "weighted_Fisher": 0.6250392426347646
+    },
+    {
+      "all_checks_pass": true,
+      "analytic_loads": {
+        "combined": 0.0,
+        "kinetic": 0.0,
+        "pressure_cross": 0.0,
+        "pressure_high_high": 0.0
+      },
+      "chain_length": 16,
+      "complete_load_over_weighted_Fisher": 0.0,
+      "direct_flux_coefficient_residual": 9.506284648352903e-16,
+      "direct_weighted_Fisher": 0.09047372951227915,
+      "direct_weighted_Fisher_imaginary_residual": 0.0,
+      "expected_pressure_load_active": false,
+      "kind": "first_dirichlet",
+      "maximum_component_load_residual": 0.0,
+      "maximum_divergence_residual": 6.938893903907228e-18,
+      "maximum_imaginary_load_residual": 2.168404344971009e-19,
+      "pressure_coefficient_at_e1": [
+        -6.514339685943156e-05,
+        0.0
+      ],
+      "pressure_load_active": false,
+      "sparse_loads": {
+        "combined": 0.0,
+        "kinetic": 0.0,
+        "pressure_cross": 0.0,
+        "pressure_high_high": 0.0
+      },
+      "start_mode": 16,
+      "weighted_Fisher": 0.09047372951227894
+    },
+    {
+      "all_checks_pass": true,
+      "analytic_loads": {
+        "combined": -0.0028678920789440114,
+        "kinetic": -0.0028682815051583243,
+        "pressure_cross": -1.4745451649180553e-05,
+        "pressure_high_high": 1.5134877863493274e-05
+      },
+      "chain_length": 16,
+      "complete_load_over_weighted_Fisher": 0.0020270949748006726,
+      "direct_flux_coefficient_residual": 6.245004513516506e-17,
+      "direct_weighted_Fisher": 1.4147793342667707,
+      "direct_weighted_Fisher_imaginary_residual": 0.0,
+      "expected_pressure_load_active": true,
+      "kind": "tilted_constant",
+      "maximum_component_load_residual": 4.336808689942018e-19,
+      "maximum_divergence_residual": 7.152448122690996e-18,
+      "maximum_imaginary_load_residual": 1.3010426069826053e-18,
+      "pressure_coefficient_at_e1": [
+        -0.00012571159087221122,
+        -6.05395114539731e-05
+      ],
+      "pressure_load_active": true,
+      "sparse_loads": {
+        "combined": -0.0028678920789440114,
+        "kinetic": -0.002868281505158324,
+        "pressure_cross": -1.4745451649180576e-05,
+        "pressure_high_high": 1.5134877863493274e-05
+      },
+      "start_mode": 16,
+      "weighted_Fisher": 1.4147793342667705
+    },
+    {
+      "all_checks_pass": true,
+      "analytic_loads": {
+        "combined": -0.0015118144544609417,
+        "kinetic": -0.0015119683901305303,
+        "pressure_cross": -6.912229482458848e-06,
+        "pressure_high_high": 7.066165152047288e-06
+      },
+      "chain_length": 16,
+      "complete_load_over_weighted_Fisher": 0.0028504709615291297,
+      "direct_flux_coefficient_residual": 9.471590178833367e-16,
+      "direct_weighted_Fisher": 0.530373568040115,
+      "direct_weighted_Fisher_imaginary_residual": 0.0,
+      "expected_pressure_load_active": true,
+      "kind": "tilted_first_dirichlet",
+      "maximum_component_load_residual": 6.505213034913027e-19,
+      "maximum_divergence_residual": 6.938893903907228e-18,
+      "maximum_imaginary_load_residual": 2.168404344971009e-19,
+      "pressure_coefficient_at_e1": [
+        -5.869217251976004e-05,
+        -2.8264660608189146e-05
+      ],
+      "pressure_load_active": true,
+      "sparse_loads": {
+        "combined": -0.0015118144544609413,
+        "kinetic": -0.0015119683901305297,
+        "pressure_cross": -6.912229482458875e-06,
+        "pressure_high_high": 7.066165152047287e-06
+      },
+      "start_mode": 16,
+      "weighted_Fisher": 0.5303735680401148
+    },
+    {
+      "all_checks_pass": true,
+      "analytic_loads": {
+        "combined": 0.0,
+        "kinetic": 0.0,
+        "pressure_cross": 0.0,
+        "pressure_high_high": 0.0
+      },
+      "chain_length": 32,
+      "complete_load_over_weighted_Fisher": 0.0,
+      "direct_flux_coefficient_residual": 7.355227538141662e-16,
+      "direct_weighted_Fisher": 0.6250049646383575,
+      "direct_weighted_Fisher_imaginary_residual": 0.0,
+      "expected_pressure_load_active": false,
+      "kind": "constant",
+      "maximum_component_load_residual": 0.0,
+      "maximum_divergence_residual": 0.0,
+      "maximum_imaginary_load_residual": 4.870439446712227e-21,
+      "pressure_coefficient_at_e1": [
+        -1.7652047268647458e-05,
+        0.0
+      ],
+      "pressure_load_active": false,
+      "sparse_loads": {
+        "combined": 0.0,
+        "kinetic": 0.0,
+        "pressure_cross": 0.0,
+        "pressure_high_high": 0.0
+      },
+      "start_mode": 32,
+      "weighted_Fisher": 0.6250049646383582
+    },
+    {
+      "all_checks_pass": true,
+      "analytic_loads": {
+        "combined": 0.0,
+        "kinetic": 0.0,
+        "pressure_cross": 0.0,
+        "pressure_high_high": 0.0
+      },
+      "chain_length": 32,
+      "complete_load_over_weighted_Fisher": 0.0,
+      "direct_flux_coefficient_residual": 2.6020852139652106e-17,
+      "direct_weighted_Fisher": 0.04669793852867262,
+      "direct_weighted_Fisher_imaginary_residual": 0.0,
+      "expected_pressure_load_active": false,
+      "kind": "first_dirichlet",
+      "maximum_component_load_residual": 0.0,
+      "maximum_divergence_residual": 3.469446951953614e-18,
+      "maximum_imaginary_load_residual": 1.0842021724855044e-19,
+      "pressure_coefficient_at_e1": [
+        -7.609114985792312e-06,
+        0.0
+      ],
+      "pressure_load_active": false,
+      "sparse_loads": {
+        "combined": 0.0,
+        "kinetic": 0.0,
+        "pressure_cross": 0.0,
+        "pressure_high_high": 0.0
+      },
+      "start_mode": 32,
+      "weighted_Fisher": 0.04669793852867285
+    },
+    {
+      "all_checks_pass": true,
+      "analytic_loads": {
+        "combined": -0.0014551661061339416,
+        "kinetic": -0.0014551785267112676,
+        "pressure_cross": -1.9023134906743174e-06,
+        "pressure_high_high": 1.9147340680001592e-06
+      },
+      "chain_length": 32,
+      "complete_load_over_weighted_Fisher": 0.0006446942602305197,
+      "direct_flux_coefficient_residual": 7.355227538141662e-16,
+      "direct_weighted_Fisher": 2.2571414015903093,
+      "direct_weighted_Fisher_imaginary_residual": 0.0,
+      "expected_pressure_load_active": true,
+      "kind": "tilted_constant",
+      "maximum_component_load_residual": 2.168404344971009e-19,
+      "maximum_divergence_residual": 4.9065389333867974e-18,
+      "maximum_imaginary_load_residual": 2.168404344971009e-19,
+      "pressure_coefficient_at_e1": [
+        -1.5903945043793296e-05,
+        -7.65893627200064e-06
+      ],
+      "pressure_load_active": true,
+      "sparse_loads": {
+        "combined": -0.0014551661061339418,
+        "kinetic": -0.0014551785267112676,
+        "pressure_cross": -1.9023134906743178e-06,
+        "pressure_high_high": 1.91473406800016e-06
+      },
+      "start_mode": 32,
+      "weighted_Fisher": 2.257141401590308
+    },
+    {
+      "all_checks_pass": true,
+      "analytic_loads": {
+        "combined": -0.0007234861460241773,
+        "kinetic": -0.0007234905349801121,
+        "pressure_cross": -8.209788594178412e-07,
+        "pressure_high_high": 8.25367815352754e-07
+      },
+      "chain_length": 32,
+      "complete_load_over_weighted_Fisher": 0.0007937469229180936,
+      "direct_flux_coefficient_residual": 2.6020852139652106e-17,
+      "direct_weighted_Fisher": 0.9114821426511952,
+      "direct_weighted_Fisher_imaginary_residual": 0.0,
+      "expected_pressure_load_active": true,
+      "kind": "tilted_first_dirichlet",
+      "maximum_component_load_residual": 2.168404344971009e-19,
+      "maximum_divergence_residual": 3.878959614448864e-18,
+      "maximum_imaginary_load_residual": 4.336808689942018e-19,
+      "pressure_coefficient_at_e1": [
+        -6.855575714488636e-06,
+        -3.3014712614110133e-06
+      ],
+      "pressure_load_active": true,
+      "sparse_loads": {
+        "combined": -0.0007234861460241771,
+        "kinetic": -0.0007234905349801121,
+        "pressure_cross": -8.209788594178353e-07,
+        "pressure_high_high": 8.253678153527533e-07
+      },
+      "start_mode": 32,
+      "weighted_Fisher": 0.9114821426511952
+    }
+  ],
+  "status": "canonical_pressure_active_chain_Fisher_compatibility_proved",
+  "symbolic_certificate": {
+    "all_checks_pass": true,
+    "all_numerator_coefficients_positive": true,
+    "derived_complete_matches_claimed": true,
+    "derived_cross_pressure_coefficient": "-(n**2 + n - 4)*(n**2 + n + 2)/(2*(n**2 + 1)*(n**2 + 4)*(n**2 + 2*n + 2)*(n**2 + 2*n + 5))",
+    "high_high_pressure_plus_anisotropic_kinetic": "0",
+    "inplane_bound_residual": "(n**12 + 6*n**11 + 29*n**10 + 90*n**9 + 261*n**8 + 570*n**7 + 1275*n**6 + 2142*n**5 + 3538*n**4 + 4024*n**3 + 4096*n**2 + 2368*n + 1184)/(16*(n**2 + 1)**2*(n**2 + 4)**2*(n**2 + 2*n + 2)**2*(n**2 + 2*n + 5)**2)",
+    "inplane_complete_coefficient": "-(n**6 + 3*n**5 + 14*n**4 + 23*n**3 + 35*n**2 + 24*n + 4)/(4*(n**2 + 1)*(n**2 + 4)*(n**2 + 2*n + 2)*(n**2 + 2*n + 5))",
+    "positive_denominator": "16*(n**2 + 1)**2*(n**2 + 4)**2*(n**2 + 2*n + 2)**2*(n**2 + 2*n + 5)**2",
+    "positive_numerator_coefficients_descending": [
+      1,
+      6,
+      29,
+      90,
+      261,
+      570,
+      1275,
+      2142,
+      3538,
+      4024,
+      4096,
+      2368,
+      1184
+    ],
+    "shear_coefficient_identity": "C_s(n)^2=(1-gamma_s(n)^2)/16",
+    "shear_identity_residual": "0"
+  }
+}

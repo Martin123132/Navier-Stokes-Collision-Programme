@@ -1,0 +1,327 @@
+% \bib, bibdiv, biblist are defined by the amsrefs package.
+\begin{bibdiv}
+\begin{biblist}
+
+\bib{CarboneBragg}{article}{
+      author={Carbone, M.},
+      author={Bragg, A.~D.},
+       title={Is vortex stretching the main cause of the turbulent energy
+  cascade?},
+        date={2020},
+        ISSN={0022-1120},
+     journal={J. Fluid Mech.},
+      volume={883},
+       pages={R2, 13},
+         url={https://doi.org/10.1017/jfm.2019.923},
+      review={\MR{4041093}},
+}
+
+\bib{ConstantinLaxMajda}{article}{
+      author={Constantin, P.},
+      author={Lax, P.~D.},
+      author={Majda, A.},
+       title={A simple one-dimensional model for the three-dimensional
+  vorticity equation},
+        date={1985},
+        ISSN={0010-3640},
+     journal={Comm. Pure Appl. Math.},
+      volume={38},
+      number={6},
+       pages={715\ndash 724},
+         url={https://doi.org/10.1002/cpa.3160380605},
+      review={\MR{812343}},
+}
+
+\bib{DeGregorio}{article}{
+      author={De~Gregorio, Salvatore},
+       title={On a one-dimensional model for the three-dimensional vorticity
+  equation},
+        date={1990},
+        ISSN={0022-4715},
+     journal={J. Statist. Phys.},
+      volume={59},
+      number={5-6},
+       pages={1251\ndash 1263},
+         url={https://doi.org/10.1007/BF01334750},
+      review={\MR{1063199}},
+}
+
+\bib{EGM}{article}{
+      author={Elgindi, Tarek~M.},
+      author={Ghoul, Tej-Eddine},
+      author={Masmoudi, Nader},
+       title={Stable self-similar blow-up for a family of nonlocal transport
+  equations},
+        date={2021},
+        ISSN={2157-5045,1948-206X},
+     journal={Anal. PDE},
+      volume={14},
+      number={3},
+       pages={891\ndash 908},
+         url={https://doi.org/10.2140/apde.2021.14.891},
+      review={\MR{4259877}},
+}
+
+\bib{ElgindiJeong}{article}{
+      author={Elgindi, Tarek~M.},
+      author={Jeong, In-Jee},
+       title={On the effects of advection and vortex stretching},
+        date={2020},
+        ISSN={0003-9527,1432-0673},
+     journal={Arch. Ration. Mech. Anal.},
+      volume={235},
+      number={3},
+       pages={1763\ndash 1817},
+         url={https://doi.org/10.1007/s00205-019-01455-9},
+      review={\MR{4065651}},
+}
+
+\bib{KatoFujita}{article}{
+      author={Fujita, Hiroshi},
+      author={Kato, Tosio},
+       title={On the {N}avier-{S}tokes initial value problem. {I}},
+        date={1964},
+        ISSN={0003-9527},
+     journal={Arch. Rational Mech. Anal.},
+      volume={16},
+       pages={269\ndash 315},
+         url={http://dx.doi.org/10.1007/BF00276188},
+      review={\MR{0166499}},
+}
+
+\bib{Hou2018}{article}{
+      author={Hou, Thomas~Y.},
+      author={Jin, Tianling},
+      author={Liu, Pengfei},
+       title={Potential singularity for a family of models of the axisymmetric
+  incompressible flow},
+        date={2018},
+        ISSN={0938-8974},
+     journal={J. Nonlinear Sci.},
+      volume={28},
+      number={6},
+       pages={2217\ndash 2247},
+         url={https://doi.org/10.1007/s00332-017-9370-9},
+      review={\MR{3867642}},
+}
+
+\bib{HouLei}{article}{
+      author={Hou, Thomas~Y.},
+      author={Lei, Zhen},
+       title={On the stabilizing effect of convection in three-dimensional
+  incompressible flows},
+        date={2009},
+        ISSN={0010-3640},
+     journal={Comm. Pure Appl. Math.},
+      volume={62},
+      number={4},
+       pages={501\ndash 564},
+         url={https://doi.org/10.1002/cpa.20254},
+      review={\MR{2492706}},
+}
+
+\bib{HouEtAl}{article}{
+      author={Hou, Thomas~Y.},
+      author={Lei, Zhen},
+      author={Luo, Guo},
+      author={Wang, Shu},
+      author={Zou, Chen},
+       title={On finite time singularity and global regularity of an
+  axisymmetric model for the 3{D} {E}uler equations},
+        date={2014},
+        ISSN={0003-9527},
+     journal={Arch. Ration. Mech. Anal.},
+      volume={212},
+      number={2},
+       pages={683\ndash 706},
+         url={https://doi.org/10.1007/s00205-013-0717-6},
+      review={\MR{3176355}},
+}
+
+\bib{HQWW}{article}{
+      author={Huang, De},
+      author={Qin, Xiang},
+      author={Wang, Xiuyuan},
+      author={Wei, Dongyi},
+       title={Self-similar finite-time blowups with smooth profiles of the
+  generalized {C}onstantin-{L}ax-{M}ajda model},
+        date={2024},
+        ISSN={0003-9527,1432-0673},
+     journal={Arch. Ration. Mech. Anal.},
+      volume={248},
+      number={2},
+       pages={Paper No. 22, 65},
+         url={https://doi.org/10.1007/s00205-024-01971-3},
+      review={\MR{4721709}},
+}
+
+\bib{JiaStewartSverak}{article}{
+      author={Jia, H.},
+      author={Stewart, S.},
+      author={Sverak, V.},
+       title={On the {D}e {G}regorio modification of the
+  {C}onstantin-{L}ax-{M}ajda model},
+        date={2019},
+        ISSN={0003-9527},
+     journal={Arch. Ration. Mech. Anal.},
+      volume={231},
+      number={2},
+       pages={1269\ndash 1304},
+         url={https://doi.org/10.1007/s00205-018-1298-1},
+      review={\MR{3900823}},
+}
+
+\bib{Leray}{article}{
+      author={Leray, Jean},
+       title={Sur le mouvement d'un liquide visqueux emplissant l'espace},
+        date={1934},
+        ISSN={0001-5962},
+     journal={Acta Math.},
+      volume={63},
+      number={1},
+       pages={193\ndash 248},
+         url={http://dx.doi.org/10.1007/BF02547354},
+      review={\MR{1555394}},
+}
+
+\bib{Lieb}{article}{
+      author={Lieb, Elliott~H.},
+       title={Sharp constants in the {H}ardy-{L}ittlewood-{S}obolev and related
+  inequalities},
+        date={1983},
+        ISSN={0003-486X},
+     journal={Ann. of Math. (2)},
+      volume={118},
+      number={2},
+       pages={349\ndash 374},
+         url={https://doi.org/10.2307/2007032},
+      review={\MR{717827}},
+}
+
+\bib{MillerAlmost2D}{article}{
+      author={Miller, Evan},
+       title={Global regularity for solutions of the three dimensional
+  {N}avier-{S}tokes equation with almost two dimensional initial data},
+        date={2020},
+        ISSN={0951-7715,1361-6544},
+     journal={Nonlinearity},
+      volume={33},
+      number={10},
+       pages={5272\ndash 5323},
+         url={https://doi.org/10.1088/1361-6544/ab9246},
+      review={\MR{4143973}},
+}
+
+\bib{MillerStrain}{article}{
+      author={Miller, Evan},
+       title={A regularity criterion for the {N}avier-{S}tokes equation
+  involving only the middle eigenvalue of the strain tensor},
+        date={2020},
+        ISSN={0003-9527},
+     journal={Arch. Ration. Mech. Anal.},
+      volume={235},
+      number={1},
+       pages={99\ndash 139},
+         url={https://doi.org/10.1007/s00205-019-01419-z},
+      review={\MR{4062474}},
+}
+
+\bib{MillerEigen}{article}{
+      author={Miller, Evan},
+       title={Global regularity for solutions of the {N}avier-{S}tokes equation
+  sufficiently close to being eigenfunctions of the {L}aplacian},
+        date={2021},
+        ISSN={2330-1511},
+     journal={Proc. Amer. Math. Soc. Ser. B},
+      volume={8},
+       pages={129\ndash 144},
+         url={https://doi.org/10.1090/bproc/62},
+      review={\MR{4273161}},
+}
+
+\bib{MillerStrainModel}{article}{
+      author={Miller, Evan},
+       title={Finite-time blowup for a {N}avier-{S}tokes model equation for the
+  self-amplification of strain},
+        date={2023},
+        ISSN={2157-5045,1948-206X},
+     journal={Anal. PDE},
+      volume={16},
+      number={4},
+       pages={997\ndash 1032},
+         url={https://doi.org/10.2140/apde.2023.16.997},
+      review={\MR{4605202}},
+}
+
+\bib{MillerSawyer}{article}{
+      author={Miller, Evan},
+      author={Sawyer, Eric},
+       title={A {H}elmholtz-type decomposition for the space of symmetric
+  matrices},
+        date={2023},
+        ISSN={2330-0000},
+     journal={Trans. Amer. Math. Soc. Ser. B},
+      volume={10},
+       pages={1449\ndash 1493},
+         url={https://doi.org/10.1090/btran/167},
+      review={\MR{4672124}},
+}
+
+\bib{NeuPen1}{incollection}{
+      author={Neustupa, Ji\v{r}\'{\i}},
+      author={Penel, Patrick},
+       title={Anisotropic and geometric criteria for interior regularity of
+  weak solutions to the 3{D} {N}avier-{S}tokes equations},
+        date={2001},
+   booktitle={Mathematical fluid mechanics, recent results and open questions},
+      editor={Neustupa, J.},
+      editor={Penel, P.},
+      series={Adv. Math. Fluid Mech.},
+   publisher={Birkh\"{a}user, Basel},
+       pages={237\ndash 265},
+      review={\MR{1865056}},
+}
+
+\bib{NeuPen2}{article}{
+      author={Neustupa, Ji\v{r}\'{\i}},
+      author={Penel, Patrick},
+       title={The role of eigenvalues and eigenvectors of the symmetrized
+  gradient of velocity in the theory of the {N}avier-{S}tokes equations},
+        date={2003},
+        ISSN={1631-073X},
+     journal={C. R. Math. Acad. Sci. Paris},
+      volume={336},
+      number={10},
+       pages={805\ndash 810},
+         url={https://doi.org/10.1016/S1631-073X(03)00174-2},
+      review={\MR{1990019}},
+}
+
+\bib{Sobolev}{book}{
+      author={Sobolev, S.~L.},
+       title={Some applications of functional analysis in mathematical
+  physics},
+      series={Translations of Mathematical Monographs},
+   publisher={American Mathematical Society, Providence, RI},
+        date={1991},
+      volume={90},
+        ISBN={0-8218-4549-7},
+        note={Translated from the third Russian edition by Harold H. McFaden,
+  With comments by V. P. Palamodov},
+      review={\MR{1125990}},
+}
+
+\bib{Talenti}{article}{
+      author={Talenti, Giorgio},
+       title={Best constant in {S}obolev inequality},
+        date={1976},
+        ISSN={0003-4622},
+     journal={Ann. Mat. Pura Appl. (4)},
+      volume={110},
+       pages={353\ndash 372},
+         url={https://doi.org/10.1007/BF02418013},
+      review={\MR{0463908}},
+}
+
+\end{biblist}
+\end{bibdiv}

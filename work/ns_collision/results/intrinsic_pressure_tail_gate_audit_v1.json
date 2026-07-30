@@ -1,0 +1,119 @@
+{
+  "all_positive_checks_pass": true,
+  "assumption_scope": "Smooth periodic divergence-free velocity. The positive conditional tail theorem additionally assumes an L-infinity velocity amplitude and a strictly positive lower bound on the deterministic terminal weight. The zero-face result concerns uniform weighted singular-integral localization, not every possible signed pressure-edge argument.",
+  "certification_flags": {
+    "Navier_Stokes_global_regularity_proved": false,
+    "critical_signed_bound_proved": false,
+    "dyadic_high_pressure_tail_identity_derived": true,
+    "exceptional_set_upgrade_proved": false,
+    "fixed_frequency_tail_absorption_falsified_by_scaling": true,
+    "floor_free_signed_pressure_edge_bound_proved": false,
+    "intrinsic_frequency_necessity_reconfirmed": true,
+    "intrinsic_scale_pressure_tail_bound_proved": false,
+    "low_regularity_passage_proved": false,
+    "positive_floor_intrinsic_absorption_derived": true,
+    "uniform_arbitrary_weight_CZ_localization_available": false,
+    "unweighted_L2_pressure_tail_bound_derived": true,
+    "zero_face_full_terminal_supremum_preserved": false
+  },
+  "dyadic_tail_decomposition": {
+    "absorption_ratio": "U**2/(lambda_**m*nu)",
+    "all_checks_pass": true,
+    "comparable_weight_floor": "lambda_*>=theta||u||_infinity",
+    "conditional_absorption_threshold": "m>=||u||_infinity^2/(nu lambda_*)",
+    "derivative_tail_chain": "||Q_m p||_2<=m^(-1)||grad p||_2<=m^(-1)||grad(u tensor u)||_2<=2m^(-1)||u||_infinity||grad u||_2",
+    "intrinsic_threshold_under_comparability": "U/(nu*theta)",
+    "local_Reynolds_form": "If lambda_*>=theta U, absorption follows from U/(nu m)<=theta.",
+    "pressure_formula": "p=-R_i R_j(u_i u_j), with the zero Fourier mode fixed to zero",
+    "sharp_support_identity": "For u=u_<+u_> with supp(u_<) inside |k|<m/2, Q_m p=-R_iR_j Q_m[u_<i u_>j+u_>i u_<j+u_>i u_>j]; the low-low term is exactly absent.",
+    "tail_flux_after_Young": "U**2*(A**2 + B**2)/m",
+    "tail_flux_bound": "|int Q_m p u dot grad lambda|<=2||u||_infinity^2 m^(-1)||grad u||_2||grad lambda||_2",
+    "tail_product_bound_symbolic": "2*A*B*U**2/m",
+    "weighted_Fisher_floor": "lambda_**nu*(A**2 + B**2)",
+    "young_gap_factorization": "U**2*(A - B)**2/m"
+  },
+  "kind": "intrinsic_pressure_tail_gate_audit",
+  "next_theorem_target": "Formulate a signed dyadic pressure-flux Carleson estimate on the balanced intrinsic cover. Sum antisymmetric neighboring edge transfers first, then charge only coefficient differences. Test whether the Lipschitz radius and 2:1 balance make that mismatch square-summable without an A2 weight floor. A candidate must survive the co-scaled Taylor-Green tail family and the zero-face weight limit.",
+  "positive_checks": {
+    "dyadic_tail_algebra_passes": true,
+    "tail_scaling_family_passes": true,
+    "zero_face_weight_gate_passes": true
+  },
+  "route_decision": "Keep the conditional unweighted tail theorem as a local calibration, but do not insert a fictitious positive floor or a uniform weighted Calderon-Zygmund constant. The live route must retain antisymmetric pressure transfer across the dyadic partition and control neighboring coefficient mismatch before absolute values, or derive new structure for the propagated terminal optimizer.",
+  "schema_version": 1,
+  "status": "intrinsic_tail_scaling_certified_arbitrary_weight_absolute_route_blocked",
+  "taylor_green_amplitude_frequency_gate": {
+    "Euler_pressure_balance_residual": [
+      "0",
+      "0"
+    ],
+    "all_checks_pass": true,
+    "base_pressure": "p=(cos(2x)+cos(2y))/4",
+    "base_velocity": "u=(sin(x)cos(y),-cos(x)sin(y),0)",
+    "coscaled_fields": "u_(a,n)=a u(nx), p_(a,n)=a^2 p(nx), lambda_(a,n)=a lambda(nx)",
+    "divergence_residual": "0",
+    "example_parameters": {
+      "L": 1.0,
+      "beta": 1.0,
+      "minimum_weight_lower_bound": 0.5,
+      "ratio_coefficient": 0.023809523809523808
+    },
+    "fixed_frequency_universal_absorption_possible": false,
+    "intrinsic_frequency_keeps_ratio_scale_invariant": true,
+    "normalized_pressure_tail_flux": "beta/32",
+    "normalized_weight_Fisher": "5*L*beta**2/16",
+    "normalized_weighted_velocity_Fisher": "L",
+    "positive_terminal_weight": "lambda=L-beta(u dot grad p), with lambda>=L-beta/2",
+    "pressure_modes": "All nonzero pressure modes have |k|=2, so Q_1 p=p.",
+    "pressure_tail_to_Fisher_ratio": "a*beta/(2*L*n*nu*(5*beta**2 + 16))",
+    "pressure_transport": "-cos(x)*cos(3*y)/4 + cos(3*x)*cos(y)/4",
+    "pressure_transport_energy": "1/32",
+    "pressure_transport_gradient_energy": "5/16",
+    "pressure_transport_residual": "0",
+    "ratio_divided_by_local_Reynolds": "beta/(2*L*(5*beta**2 + 16))",
+    "scaled_pressure_tail_flux": "a**4*beta*n/32",
+    "scaled_total_Fisher": "a**3*n**2*nu*(5*L*beta**2/16 + L)"
+  },
+  "zero_face_weight_gate": {
+    "all_checks_pass": true,
+    "asymptotic": "[w_epsilon]_(A2)~1/(2sqrt(epsilon)) and the explicit weighted singular-integral norm lower bound grows like epsilon^(-1/4)/sqrt(2)",
+    "explicit_test_function": "f_epsilon=1/w_epsilon",
+    "interpretation": "The full terminal-weight class contains zero-face limits with unbounded weighted singular-integral constants. Therefore the unweighted pressure-tail theorem cannot be localized by a uniform weighted Calderon-Zygmund step. This is a route no-go, not a pressure-specific counterexample to every possible signed edge estimate.",
+    "minimum_weight": "epsilon",
+    "operator_norm_lower_bound_squared": "(-sqrt(epsilon)*sqrt(epsilon + 1) + epsilon + 1/2)/(sqrt(epsilon)*sqrt(epsilon + 1))",
+    "periodic_Hilbert_transform": "H f_epsilon=(sin x)/(2 sqrt(epsilon(epsilon+1)) w_epsilon)",
+    "rows": [
+      {
+        "epsilon": 0.1,
+        "explicit_Hilbert_norm_lower_bound": 0.8994821106984738,
+        "whole_circle_A2_lower_bound": 1.8090680674665816
+      },
+      {
+        "epsilon": 0.01,
+        "explicit_Hilbert_norm_lower_bound": 2.018586057137754,
+        "whole_circle_A2_lower_bound": 5.074689670070945
+      },
+      {
+        "epsilon": 0.0001,
+        "explicit_Hilbert_norm_lower_bound": 7.000535671469854,
+        "whole_circle_A2_lower_bound": 50.00749968752188
+      },
+      {
+        "epsilon": 1e-06,
+        "explicit_Hilbert_norm_lower_bound": 22.338324690980915,
+        "whole_circle_A2_lower_bound": 500.0007499996876
+      },
+      {
+        "epsilon": 1e-08,
+        "explicit_Hilbert_norm_lower_bound": 70.70360722763726,
+        "whole_circle_A2_lower_bound": 5000.000075
+      }
+    ],
+    "weight_family": "w_epsilon(x)=epsilon+sin(x/2)^2",
+    "weighted_input_norm_squared": "1/(sqrt(epsilon)*sqrt(epsilon + 1))",
+    "weighted_output_norm_squared": "(-sqrt(epsilon)*sqrt(epsilon + 1) + epsilon + 1/2)/(epsilon*(epsilon + 1))",
+    "whole_circle_A2_characteristic_lower_bound": "(epsilon + 1/2)/(sqrt(epsilon)*sqrt(epsilon + 1))",
+    "whole_circle_average_reciprocal_weight": "1/(sqrt(epsilon)*sqrt(epsilon + 1))",
+    "whole_circle_average_weight": "epsilon + 1/2"
+  }
+}

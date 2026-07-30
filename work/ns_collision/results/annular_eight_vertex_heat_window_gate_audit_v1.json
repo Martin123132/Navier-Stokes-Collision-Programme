@@ -1,0 +1,1549 @@
+{
+  "algorithm_revision": "annular-eight-vertex-heat-window-v1",
+  "all_positive_checks_pass": true,
+  "analytic_theorem_certificate": {
+    "all_checks_pass": true,
+    "eight_vertex_response_theorem": "For every N and time, the eight complete HHL vertex loads of a common flux sum to zero because sum_v grad Phi_v=0. For the annular family, however, the leading pressure load vector has six nonzero Walsh coordinates; only the pure-x coordinate vanishes. Thus equal weights cancel exactly, but the response vector and nonconstant compatible weighted loads survive at order N.",
+    "exact_Walsh_incidence": {
+      "all_matrices_over_Q_sqrt2": true,
+      "certificate_passes": true,
+      "equal_weight_sum": 0,
+      "surviving_characters": [
+        "y",
+        "xy",
+        "z",
+        "xz",
+        "yz",
+        "xyz"
+      ],
+      "zero_character": "x"
+    },
+    "heat_window_persistence_theorem": {
+      "analytic_pressure_margin": "T exp(-19nu T) 51sqrt(2)/438976",
+      "continuum_certificate_passes": true,
+      "equal_weight_cancellation_at_each_time": true,
+      "heat_field": "hhat_N(t,k)=exp(-nu|k|^2 t) hhat_N(0,k)",
+      "integrated_Fisher_scaling": "integral_0^(T/N^2) E_+++(t)dt = O(N^-5)",
+      "integrated_load_scaling": "integral_0^(T/N^2) B_+++(t)dt = -Theta(N^-1)",
+      "pressure_limit": "B_+++(tau/N^2)/N tends to (sqrt(2)/20) integral_D S^2 exp(-2nu tau|xi|^2) (Vy^2-Vz^2), which is strictly negative for every tau.",
+      "ratio_scaling": "absolute integrated load / integrated Fisher is at least order N^4",
+      "scaled_time": "tau=N^2 t"
+    },
+    "small_amplitude_Navier_Stokes_shadowing_lemma": {
+      "proof_basis": "Insert the heat evolution in the mild Duhamel formula; the bilinear Leray term is locally bounded in H^s and gives an O_N(epsilon^2) remainder on the fixed window.",
+      "scope": "This excludes rescue by nonlinear phase evolution for a universal homogeneous one-vertex estimate valid down to arbitrarily small amplitudes. It does not exclude large-amplitude compensation, delayed estimates, nonhomogeneous errors, or the exact equal-weight sum.",
+      "statement": "For fixed N and smooth datum f_N=U+h_N, the mild solution with initial datum epsilon f_N satisfies u_epsilon(t)=epsilon exp(nu t Delta)f_N+O_N(epsilon^2) in C([0,T/N^2];H^s), s>5/2. The localized HHL flux is cubic and the Fisher form is quadratic, so after dividing a homogeneous low-times-Fisher trajectory estimate by epsilon^3 and sending epsilon to zero, that estimate would imply the heat-window estimate falsified above."
+    },
+    "vertex_Fisher_scaling_theorem": {
+      "consequence": "The +++ vertex retains E_+++=O(N^-3), while the global partition sum is dominated by E_---=Theta(N^3). Global dissipation can pay the family, but that payment is not a local +++ Fisher-Schur estimate.",
+      "formula": "If r(v) is the number of minus signs, then E_v(h_N)=Theta(N^(2r(v)-3)).",
+      "mechanism": "After the alternating gauge, a plus sign gives a zero-boundary difference operator and a minus sign gives a zero-boundary sum operator. The exact tensor identity is E_v=(1/32)||T_v1 T_v2 T_v3 F_N||_2^2.",
+      "partition_identity": "sum_v E_v=mean |grad h_N|^2 exactly"
+    }
+  },
+  "certification_flags": {
+    "Navier_Stokes_global_regularity_proved": false,
+    "all_vertex_Fisher_partition_identity_proved": true,
+    "annular_leading_response_vector_survives_proved": true,
+    "arbitrary_weighted_eight_vertex_flux_controlled": false,
+    "critical_L3_controlled": false,
+    "cross_shell_HHL_absorbed": false,
+    "exact_equal_weight_eight_vertex_cancellation_proved": true,
+    "heat_viscosity_preserves_local_N4_obstruction_proved": true,
+    "large_amplitude_phase_compensation_excluded": false,
+    "nonconstant_compatible_weights_can_retain_order_N_load": true,
+    "six_nonzero_Walsh_channels_proved": true,
+    "small_amplitude_NS_shadowing_transfer_proved": true,
+    "terminal_dual_supremum_controlled": false,
+    "vertex_dependent_Fisher_scaling_classified": true
+  },
+  "continuum_response_certificate": {
+    "all_checks_pass": true,
+    "analytic_plus_heat_integral_absolute_lower_bound": 2.4574510816795115e-06,
+    "equal_weight_heat_integrated_limit_sum": 1.2197274440461925e-19,
+    "equal_weight_static_limit_sum": 2.5478751053409354e-18,
+    "heat_integrated_covariance_matrix": [
+      [
+        6.0309509498719215e-06,
+        2.443300732692024e-23,
+        -6.043593792514577e-21
+      ],
+      [
+        2.1361017584720427e-23,
+        3.284122790538865e-08,
+        -3.360555252833198e-24
+      ],
+      [
+        -6.020380104895997e-21,
+        2.996742973442913e-24,
+        0.0011426566394542982
+      ]
+    ],
+    "heat_integrated_pressure_limit_by_Walsh_character": {
+      "x": 0.0,
+      "xy": 6.76831950108096e-05,
+      "xyz": -0.0001615914072142024,
+      "xz": 0.00013430606400694335,
+      "y": -0.0001615914072142024,
+      "yz": 0.00020198925901775296,
+      "z": -0.0001615914072142024
+    },
+    "heat_integrated_pressure_limit_by_vertex": {
+      "+++": -8.07957036071012e-05,
+      "++-": -0.00010702072079968433,
+      "+-+": 2.6225017192583146e-05,
+      "+--": 0.0001615914072142024,
+      "-++": -0.0001615914072142024,
+      "-+-": -0.0002969577972358216,
+      "--+": -0.00043020353522808905,
+      "---": 0.0008887527396781132
+    },
+    "nonzero_heat_integrated_Walsh_characters": [
+      "y",
+      "xy",
+      "z",
+      "xz",
+      "yz",
+      "xyz"
+    ],
+    "nonzero_static_Walsh_characters": [
+      "y",
+      "xy",
+      "z",
+      "xz",
+      "yz",
+      "xyz"
+    ],
+    "plus_vertex_heat_integrated_limit": -8.07957036071012e-05,
+    "plus_vertex_static_limit": -0.0014065919385788078,
+    "positive_selector_static_limit": 0.0187423311030748,
+    "positive_static_vertex_selector": [
+      "---",
+      "+--",
+      "+-+"
+    ],
+    "quadrature_order_per_axis": 64,
+    "scaled_heat_window": 0.1,
+    "sign_certificates": {
+      "reason": "Parity kills covariance off-diagonals. Pointwise Vz^2>Vy^2, Vx^2-2Vy^2+Vz^2>0, and 2Vz^2-Vx^2-Vy^2>0 on the continuum box; positive heat weights preserve every sign.",
+      "x_zero": true,
+      "xy_xz_yz_positive": true,
+      "y_z_xyz_negative": true
+    },
+    "static_covariance_matrix": [
+      [
+        0.00010432320922752116,
+        7.043149289535995e-22,
+        -1.0625814179292016e-19
+      ],
+      [
+        6.410479279006835e-22,
+        5.645269352767831e-07,
+        -1.219657722059358e-22
+      ],
+      [
+        -1.0839491693329573e-19,
+        -1.0613555392148975e-22,
+        0.019892778489563407
+      ]
+    ],
+    "static_pressure_limit_by_Walsh_character": {
+      "x": 0.0,
+      "xy": 0.0011782739878036586,
+      "xyz": -0.0028131838771576156,
+      "xz": 0.0023382058586433603,
+      "y": -0.0028131838771576156,
+      "yz": 0.0035164798464470187,
+      "z": -0.0028131838771576156
+    },
+    "static_pressure_limit_by_vertex": {
+      "+++": -0.0014065919385788078,
+      "++-": -0.0018632278401291055,
+      "+-+": 0.00045663590155029806,
+      "+--": 0.0028131838771576156,
+      "-++": -0.0028131838771576156,
+      "-+-": -0.005169731852764932,
+      "--+": -0.007489595594444336,
+      "---": 0.015472511324366885
+    },
+    "static_vertex_l1_norm": 0.03748466220614959,
+    "viscosity": 1.0
+  },
+  "dictionary_replay": {
+    "all_checks_pass": true,
+    "component_vertex_loads_checked": 32,
+    "component_vs_direct_flux_residual": 2.118352371637509e-16,
+    "dictionary_equal_weight_load_imaginary_residual": 0.0,
+    "dictionary_equal_weight_load_sum": -6.938893903907228e-18,
+    "maximum_dictionary_vs_Walsh_load_residual": 3.469446951953614e-17,
+    "maximum_dictionary_vs_mixed_Fisher_residual": 2.1316282072803006e-14,
+    "maximum_direct_polynomial_load_residual": 2.42861286636753e-17,
+    "size": 3,
+    "vertices_checked": 8
+  },
+  "exact_incidence_certificate": {
+    "Walsh_matrix_table_exact_match": true,
+    "all_checks_pass": true,
+    "equal_weight_pressure_cancellation_exact": true,
+    "equal_weight_pressure_matrix_sum": [
+      [
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "every_vertex_kinetic_leading_matrix_exactly_zero": true,
+    "matrix_coefficient_field": "Q(sqrt(2))",
+    "nonzero_leading_Walsh_masks": [
+      "y",
+      "xy",
+      "z",
+      "xz",
+      "yz",
+      "xyz"
+    ],
+    "plus_vertex_matches_predecessor": true,
+    "pressure_Walsh_matrices_over_sqrt2": {
+      "x": [
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "xy": [
+        [
+          "1/24",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "-1/12",
+          "1/24"
+        ],
+        [
+          "0",
+          "1/24",
+          "1/24"
+        ]
+      ],
+      "xyz": [
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1/10",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-1/10"
+        ]
+      ],
+      "xz": [
+        [
+          "-1/24",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "-1/24",
+          "-1/24"
+        ],
+        [
+          "0",
+          "-1/24",
+          "1/12"
+        ]
+      ],
+      "y": [
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1/10",
+          "-1/20"
+        ],
+        [
+          "0",
+          "-1/20",
+          "-1/10"
+        ]
+      ],
+      "yz": [
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "-1/8",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1/8"
+        ]
+      ],
+      "z": [
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1/10",
+          "1/20"
+        ],
+        [
+          "0",
+          "1/20",
+          "-1/10"
+        ]
+      ]
+    },
+    "pressure_vertex_matrices_over_sqrt2": {
+      "+++": [
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1/20",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-1/20"
+        ]
+      ],
+      "++-": [
+        [
+          "1/12",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "-1/60",
+          "-1/60"
+        ],
+        [
+          "0",
+          "-1/60",
+          "-1/15"
+        ]
+      ],
+      "+-+": [
+        [
+          "-1/12",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1/15",
+          "1/60"
+        ],
+        [
+          "0",
+          "1/60",
+          "1/60"
+        ]
+      ],
+      "+--": [
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "-1/10",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1/10"
+        ]
+      ],
+      "-++": [
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1/10",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-1/10"
+        ]
+      ],
+      "-+-": [
+        [
+          "-1/12",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "4/15",
+          "-11/60"
+        ],
+        [
+          "0",
+          "-11/60",
+          "-11/60"
+        ]
+      ],
+      "--+": [
+        [
+          "1/12",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "11/60",
+          "11/60"
+        ],
+        [
+          "0",
+          "11/60",
+          "-4/15"
+        ]
+      ],
+      "---": [
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "-11/20",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "11/20"
+        ]
+      ]
+    },
+    "pure_x_Walsh_matrix_exactly_zero": true,
+    "six_other_Walsh_matrices_exactly_nonzero": true,
+    "vertex_order": [
+      "---",
+      "--+",
+      "-+-",
+      "-++",
+      "+--",
+      "+-+",
+      "++-",
+      "+++"
+    ]
+  },
+  "heat_window_rows": [
+    {
+      "all_checks_pass": true,
+      "maximum_equal_weight_vertex_sum_during_quadrature": 1.0191500421363742e-17,
+      "plus_vertex_dynamic_ratio_over_size_to_fourth": 0.0027215809090691324,
+      "scaled_Fisher_integrals_N5_times_physical_integral": {
+        "+++": 0.08840483349958823,
+        "++-": 0.48504197907279634,
+        "+-+": 0.49954503656456845,
+        "+--": 2.741233409644163,
+        "-++": 0.5087228492415596,
+        "-+-": 2.7995859444905467,
+        "--+": 2.8792505029406383,
+        "---": 15.84592770337749
+      },
+      "scaled_load_integrals_N_times_physical_integral": {
+        "+++": -0.00024060090712191463,
+        "++-": -0.000181495333717138,
+        "+-+": -0.00010744620166974992,
+        "+--": 0.0005375132285461958,
+        "-++": -0.00048305069471536445,
+        "-+-": -4.2902898776872226e-05,
+        "--+": -0.0013151970023235772,
+        "---": 0.0018331798097784206
+      },
+      "scaled_window": 0.1,
+      "size": 3,
+      "time_quadrature_order": 10
+    },
+    {
+      "all_checks_pass": true,
+      "maximum_equal_weight_vertex_sum_during_quadrature": 1.1926223897340549e-17,
+      "plus_vertex_dynamic_ratio_over_size_to_fourth": 0.001230528303620878,
+      "scaled_Fisher_integrals_N5_times_physical_integral": {
+        "+++": 0.12839181572383984,
+        "++-": 1.7006259195900284,
+        "+-+": 1.7431266145419633,
+        "+--": 23.09124667392296,
+        "-++": 1.768532647820654,
+        "-+-": 23.477184429647394,
+        "--+": 24.038544470860128,
+        "---": 319.1250459323404
+      },
+      "scaled_load_integrals_N_times_physical_integral": {
+        "+++": -0.00015798976320146102,
+        "++-": -0.00018543992201942465,
+        "+-+": 8.276430174733266e-06,
+        "+--": 0.0003386082422199179,
+        "-++": -0.0003272238998988156,
+        "-+-": -0.00024913227961708193,
+        "--+": -0.0009988455657011495,
+        "---": 0.0015717467580432815
+      },
+      "scaled_window": 0.1,
+      "size": 5,
+      "time_quadrature_order": 10
+    },
+    {
+      "all_checks_pass": true,
+      "maximum_equal_weight_vertex_sum_during_quadrature": 1.214306433183765e-17,
+      "plus_vertex_dynamic_ratio_over_size_to_fourth": 0.0007161860040864466,
+      "scaled_Fisher_integrals_N5_times_physical_integral": {
+        "+++": 0.16514421289263947,
+        "++-": 6.307352574531487,
+        "+-+": 6.441909155517837,
+        "+--": 246.0535382266918,
+        "-++": 6.520142586954674,
+        "-+-": 249.4377253426131,
+        "--+": 254.5553637528542,
+        "---": 9738.70322918461
+      },
+      "scaled_load_integrals_N_times_physical_integral": {
+        "+++": -0.00011827397392958091,
+        "++-": -0.00015429320452118813,
+        "+-+": 3.186454485444028e-05,
+        "+--": 0.00024174039772966374,
+        "-++": -0.00023815934028508686,
+        "-+-": -0.000332542708804914,
+        "--+": -0.0007089822695418798,
+        "---": 0.0012786465544985456
+      },
+      "scaled_window": 0.1,
+      "size": 9,
+      "time_quadrature_order": 10
+    },
+    {
+      "all_checks_pass": true,
+      "maximum_equal_weight_vertex_sum_during_quadrature": 1.214306433183765e-17,
+      "plus_vertex_dynamic_ratio_over_size_to_fourth": 0.0005191934095863248,
+      "scaled_Fisher_integrals_N5_times_physical_integral": {
+        "+++": 0.19125319112134487,
+        "++-": 24.045225799394576,
+        "+-+": 24.505716233890805,
+        "+--": 3081.135169430069,
+        "-++": 24.7700840357182,
+        "-+-": 3118.44417720262,
+        "--+": 3176.074886579743,
+        "---": 399863.45070392464
+      },
+      "scaled_load_integrals_N_times_physical_integral": {
+        "+++": -9.929739639255606e-05,
+        "++-": -0.00013131289464917345,
+        "+-+": 3.134079872961854e-05,
+        "+--": 0.00019953586406747117,
+        "-++": -0.00019858245389558666,
+        "-+-": -0.00033682410440740666,
+        "--+": -0.0005542713407694906,
+        "---": 0.0010894115273171235
+      },
+      "scaled_window": 0.1,
+      "size": 17,
+      "time_quadrature_order": 10
+    },
+    {
+      "all_checks_pass": true,
+      "maximum_equal_weight_vertex_sum_during_quadrature": 3.9898639947466563e-17,
+      "plus_vertex_dynamic_ratio_over_size_to_fourth": 0.0004347584025383277,
+      "scaled_Fisher_integrals_N5_times_physical_integral": {
+        "+++": 0.20695183629296496,
+        "++-": 93.3963934458631,
+        "+-+": 95.07430735150723,
+        "+--": 42908.49548577303,
+        "-++": 96.03200149923816,
+        "-+-": 43391.07787496912,
+        "--+": 44144.782152201966,
+        "---": 19946772.751399323
+      },
+      "scaled_load_integrals_N_times_physical_integral": {
+        "+++": -8.997404974910295e-05,
+        "++-": -0.00011912942613183775,
+        "+-+": 2.904582544262321e-05,
+        "+--": 0.00018012318315702126,
+        "-++": -0.00017990981373905825,
+        "-+-": -0.000323340719032022,
+        "--+": -0.00048607466865296977,
+        "---": 0.0009892596687053462
+      },
+      "scaled_window": 0.1,
+      "size": 33,
+      "time_quadrature_order": 10
+    }
+  ],
+  "kind": "annular_eight_vertex_heat_window_gate_audit",
+  "next_theorem_target": "Insert the exact six-channel load vector and the vertex Fisher scaling E_v~N^(2r(v)-3) into the twelve-edge compatible coefficient graph. Derive the sharp weighted edge inequality for admissible nonnegative adaptive coefficients. Determine whether borrowing neighboring Fisher energy necessarily pays the retained load, or construct a coefficient sequence whose edge variation preserves a divergent normalized objective.",
+  "numerical_summary": {
+    "continuum_plus_heat_integrated_limit": -8.07957036071012e-05,
+    "continuum_plus_static_limit": -0.0014065919385788078,
+    "dynamic_ratio_over_size_to_fourth_rows": [
+      0.0027215809090691324,
+      0.001230528303620878,
+      0.0007161860040864466,
+      0.0005191934095863248,
+      0.0004347584025383277
+    ],
+    "finite_rows_are_proof": false,
+    "largest_plus_ratio_over_size_to_fourth": 0.00039474070717571754,
+    "largest_plus_vertex_load_over_Fisher": 7046.368336028543,
+    "largest_static_size": 65,
+    "numerical_checks_pass": true
+  },
+  "prerequisite_audit": {
+    "all_checks_pass": true,
+    "rows": [
+      {
+        "actual_sha256": "067625c4b44aa6085ff2b59cbbcef351253dcbd5b1fb9f0eac641fdd7a48682c",
+        "all_positive_checks_pass": true,
+        "expected_sha256": "067625c4b44aa6085ff2b59cbbcef351253dcbd5b1fb9f0eac641fdd7a48682c",
+        "matches": true,
+        "path": "work/ns_collision/results/compatible_eight_cell_cubic_graph_audit_v1.json"
+      },
+      {
+        "actual_sha256": "52f79c57cd3bb99d8b6048f8797ab75f4cc1640436bb8ed1cf3bdac5cfaef513",
+        "all_positive_checks_pass": true,
+        "expected_sha256": "52f79c57cd3bb99d8b6048f8797ab75f4cc1640436bb8ed1cf3bdac5cfaef513",
+        "matches": true,
+        "path": "work/ns_collision/results/dyadic_three_shell_atlas_audit_v1.json"
+      },
+      {
+        "actual_sha256": "16579e713c5bacb7b19bb9e3d63f059b9f0915588013e40aa49fdb8bf0bfea0b",
+        "all_positive_checks_pass": true,
+        "expected_sha256": "16579e713c5bacb7b19bb9e3d63f059b9f0915588013e40aa49fdb8bf0bfea0b",
+        "matches": true,
+        "path": "work/ns_collision/results/separable_annular_pressure_schur_no_go_audit_v1.json"
+      }
+    ]
+  },
+  "route_decision": "The annular family is globally conservative but locally adverse. Do not seek a local estimate by summing absolute vertex loads or by invoking heat damping alone. The remaining viable static structure must charge coefficient edge variation against the strongly asymmetric neighboring Fisher energies; otherwise the programme must use a genuinely nonhomogeneous large-amplitude or delayed-time mechanism.",
+  "scope": "This certifies exact global eight-cell cancellation and shows why it does not repair the local +++ Fisher-Schur estimate: six signed Walsh channels and nonconstant weighted loads survive, including through a fixed parabolic heat window. The perturbative shadowing lemma transfers the obstruction to universal homogeneous trajectory inequalities near zero. It does not control adaptive coefficient variation, prove large-amplitude phase cancellation, absorb cross-shell terms, control critical L3, or prove Navier-Stokes regularity.",
+  "static_family_rows": [
+    {
+      "Fisher_scaling_diagnostics": {
+        "+++": {
+          "negative_sign_count": 0,
+          "predicted_size_exponent": -3,
+          "scaled_Fisher": 1.448156574802409
+        },
+        "++-": {
+          "negative_sign_count": 1,
+          "predicted_size_exponent": -1,
+          "scaled_Fisher": 0.8849005280474872
+        },
+        "+-+": {
+          "negative_sign_count": 1,
+          "predicted_size_exponent": -1,
+          "scaled_Fisher": 0.9102992205743693
+        },
+        "+--": {
+          "negative_sign_count": 2,
+          "predicted_size_exponent": 1,
+          "scaled_Fisher": 0.55632313062521
+        },
+        "-++": {
+          "negative_sign_count": 1,
+          "predicted_size_exponent": -1,
+          "scaled_Fisher": 0.9350754053227578
+        },
+        "-+-": {
+          "negative_sign_count": 2,
+          "predicted_size_exponent": 1,
+          "scaled_Fisher": 0.5723117982769702
+        },
+        "--+": {
+          "negative_sign_count": 2,
+          "predicted_size_exponent": 1,
+          "scaled_Fisher": 0.5883019101751971
+        },
+        "---": {
+          "negative_sign_count": 3,
+          "predicted_size_exponent": 3,
+          "scaled_Fisher": 0.36008769269550356
+        }
+      },
+      "all_checks_pass": true,
+      "global_Fisher_partition_residual": 1.7763568394002505e-15,
+      "global_unweighted_Fisher_energy": 15.836905366688653,
+      "maximum_imaginary_load_residual": 0.0,
+      "plus_vertex_Fisher_times_size_cubed": 1.448156574802409,
+      "plus_vertex_absolute_load_over_Fisher": 0.21925374630467834,
+      "plus_vertex_complete_load_over_size": -0.003919922892113324,
+      "plus_vertex_ratio_over_size_to_fourth": 0.002706836374131831,
+      "size": 3,
+      "sum_of_complete_vertex_loads": 6.5052130349130266e-18,
+      "sum_of_vertex_Fisher_energies": 15.83690536668865,
+      "vertex_Fisher_energies": {
+        "+++": 0.05363542869638552,
+        "++-": 0.29496684268249573,
+        "+-+": 0.30343307352478976,
+        "+--": 1.6689693918756299,
+        "-++": 0.3116918017742526,
+        "-+-": 1.7169353948309105,
+        "--+": 1.764905730525591,
+        "---": 9.722367702778596
+      },
+      "vertex_component_loads": {
+        "combined": {
+          "+++": -0.011759768676339974,
+          "++-": -0.008987319733146641,
+          "+-+": -0.004953982978004632,
+          "+--": 0.026094796645659106,
+          "-++": -0.023791896402179345,
+          "-+-": -0.00214440393586357,
+          "--+": -0.06507007283574169,
+          "---": 0.09061264791561675
+        },
+        "kinetic": {
+          "+++": -0.0005441892353708578,
+          "++-": 0.00508481484424607,
+          "+-+": -0.013163737794241882,
+          "+--": 0.009007855147326809,
+          "-++": -0.0031249797308726306,
+          "-+-": 0.028730513510339013,
+          "--+": -0.07536387917466597,
+          "---": 0.04937360243323946
+        },
+        "pressure_cross": {
+          "+++": 7.30835915625501e-05,
+          "++-": -6.568381252991607e-05,
+          "+-+": 0.0002530971210890149,
+          "+--": -0.00025151460391392813,
+          "-++": 0.0003874676675849412,
+          "-+-": -0.0003671253091988534,
+          "--+": 0.0013648690917957519,
+          "---": -0.0013941937463895606
+        },
+        "pressure_high_high": {
+          "+++": -0.01128866303253167,
+          "++-": -0.014006450764862791,
+          "+-+": 0.007956657695148237,
+          "+--": 0.017338456102246224,
+          "-++": -0.021054384338891653,
+          "-+-": -0.03050779213700373,
+          "--+": 0.008928937247128529,
+          "---": 0.042633239228766856
+        }
+      },
+      "walsh_component_loads": {
+        "combined": {
+          "x": 9.843131454196445e-05,
+          "xy": 0.0011988716675971104,
+          "xyz": -0.013219862200571534,
+          "xz": 0.017938623081352145,
+          "y": -0.011670847186882383,
+          "yz": 0.020288944870689135,
+          "z": -0.026393930223066412
+        },
+        "kinetic": {
+          "x": 9.618574049003424e-05,
+          "xy": -0.005362412783137827,
+          "xyz": -0.009542424938092754,
+          "xz": 0.016099047228491432,
+          "y": 0.0075365398470853984,
+          "yz": 0.013678072153580694,
+          "z": -0.023049196483787837
+        },
+        "pressure_cross": {
+          "x": 2.2455740519302016e-06,
+          "xy": -5.481218890293654e-06,
+          "xyz": 0.00020482819256138011,
+          "xz": -0.00035878458573421223,
+          "y": 6.9355343546804705e-06,
+          "yz": -0.0002962892727889993,
+          "z": 0.0005196293680080645
+        },
+        "pressure_high_high": {
+          "x": 0.0,
+          "xy": 0.006566765669625231,
+          "xyz": -0.003882265455040161,
+          "xz": 0.0021983604385949233,
+          "y": -0.01921432256832246,
+          "yz": 0.0069071619898974385,
+          "z": -0.003864363107286639
+        }
+      }
+    },
+    {
+      "Fisher_scaling_diagnostics": {
+        "+++": {
+          "negative_sign_count": 0,
+          "predicted_size_exponent": -3,
+          "scaled_Fisher": 2.1553833700848672
+        },
+        "++-": {
+          "negative_sign_count": 1,
+          "predicted_size_exponent": -1,
+          "scaled_Fisher": 1.1440875266033264
+        },
+        "+-+": {
+          "negative_sign_count": 1,
+          "predicted_size_exponent": -1,
+          "scaled_Fisher": 1.1715785970528643
+        },
+        "+--": {
+          "negative_sign_count": 2,
+          "predicted_size_exponent": 1,
+          "scaled_Fisher": 0.6219402137869988
+        },
+        "-++": {
+          "negative_sign_count": 1,
+          "predicted_size_exponent": -1,
+          "scaled_Fisher": 1.1981647183066042
+        },
+        "-+-": {
+          "negative_sign_count": 2,
+          "predicted_size_exponent": 1,
+          "scaled_Fisher": 0.6367418967172583
+        },
+        "--+": {
+          "negative_sign_count": 2,
+          "predicted_size_exponent": 1,
+          "scaled_Fisher": 0.6516806528713968
+        },
+        "---": {
+          "negative_sign_count": 3,
+          "predicted_size_exponent": 3,
+          "scaled_Fisher": 0.34633641245685653
+        }
+      },
+      "all_checks_pass": true,
+      "global_Fisher_partition_residual": 0.0,
+      "global_unweighted_Fisher_energy": 53.563874609338576,
+      "maximum_imaginary_load_residual": 0.0,
+      "plus_vertex_Fisher_times_size_cubed": 2.1553833700848672,
+      "plus_vertex_absolute_load_over_Fisher": 0.7654287459301443,
+      "plus_vertex_complete_load_over_size": -0.002639667823940397,
+      "plus_vertex_ratio_over_size_to_fourth": 0.0012246859934882308,
+      "size": 5,
+      "sum_of_complete_vertex_loads": -7.37257477290143e-18,
+      "sum_of_vertex_Fisher_energies": 53.563874609338576,
+      "vertex_Fisher_energies": {
+        "+++": 0.017243066960678937,
+        "++-": 0.2288175053206653,
+        "+-+": 0.2343157194105729,
+        "+--": 3.109701068934994,
+        "-++": 0.23963294366132087,
+        "-+-": 3.183709483586292,
+        "--+": 3.258403264356984,
+        "---": 43.292051557107065
+      },
+      "vertex_component_loads": {
+        "combined": {
+          "+++": -0.013198339119701984,
+          "++-": -0.015528716691739445,
+          "+-+": 0.0008653463610807165,
+          "+--": 0.028149167963206198,
+          "-++": -0.02740534220783877,
+          "-+-": -0.020936832831366162,
+          "--+": -0.08381879444414712,
+          "---": 0.13187351097050656
+        },
+        "kinetic": {
+          "+++": -0.0001409678012092914,
+          "++-": 0.0017755575541131558,
+          "+-+": -0.0047756817835260265,
+          "+--": 0.003420589577075631,
+          "-++": -0.0019442061208264298,
+          "-+-": 0.024000632272151254,
+          "--+": -0.06552451989410618,
+          "---": 0.04318859619632789
+        },
+        "pressure_cross": {
+          "+++": 7.117515672158788e-06,
+          "++-": -5.487303669429918e-06,
+          "+-+": 8.568391341097029e-05,
+          "+--": -7.935315902168408e-05,
+          "-++": 9.078259408821882e-05,
+          "-+-": -7.934317017928547e-05,
+          "--+": 0.0010981523419129747,
+          "---": -0.0011175527322139231
+        },
+        "pressure_high_high": {
+          "+++": -0.013064488834164853,
+          "++-": -0.01729878694218317,
+          "+-+": 0.005555344231195773,
+          "+--": 0.024807931545152248,
+          "-++": -0.025551918681100558,
+          "-+-": -0.04485812193333813,
+          "--+": -0.019392426891953925,
+          "---": 0.0898024675063926
+        }
+      },
+      "walsh_component_loads": {
+        "combined": {
+          "x": 7.186462821137097e-05,
+          "xy": 0.004831915178729504,
+          "xyz": -0.022451199608002268,
+          "xz": 0.024650921345129785,
+          "y": -0.01926730771266159,
+          "yz": 0.029854749401543004,
+          "z": -0.03088928235265179
+        },
+        "kinetic": {
+          "x": 6.98743866133672e-05,
+          "xy": -0.005175333486218607,
+          "xyz": -0.009561066461522147,
+          "xz": 0.015568144720935956,
+          "y": 0.005922753976057172,
+          "yz": 0.01113100296284195,
+          "z": -0.018096343899916982
+        },
+        "pressure_cross": {
+          "x": 1.990241598003769e-06,
+          "xy": -4.4425445745548866e-06,
+          "xyz": 0.000236643382096041,
+          "xz": -0.0002760236183275199,
+          "y": 3.267408977915553e-06,
+          "yz": -0.0002747514453688074,
+          "z": 0.0003204340912710807
+        },
+        "pressure_high_high": {
+          "x": 0.0,
+          "xy": 0.010011691209522666,
+          "xyz": -0.013126776528576163,
+          "xz": 0.00935880024252135,
+          "y": -0.025193329097696678,
+          "yz": 0.018998497884069862,
+          "z": -0.01311337254400589
+        }
+      }
+    },
+    {
+      "Fisher_scaling_diagnostics": {
+        "+++": {
+          "negative_sign_count": 0,
+          "predicted_size_exponent": -3,
+          "scaled_Fisher": 2.8202761236835987
+        },
+        "++-": {
+          "negative_sign_count": 1,
+          "predicted_size_exponent": -1,
+          "scaled_Fisher": 1.3317371169639403
+        },
+        "+-+": {
+          "negative_sign_count": 1,
+          "predicted_size_exponent": -1,
+          "scaled_Fisher": 1.3591390676497255
+        },
+        "+--": {
+          "negative_sign_count": 2,
+          "predicted_size_exponent": 1,
+          "scaled_Fisher": 0.6418280635583175
+        },
+        "-++": {
+          "negative_sign_count": 1,
+          "predicted_size_exponent": -1,
+          "scaled_Fisher": 1.3856423029785756
+        },
+        "-+-": {
+          "negative_sign_count": 2,
+          "predicted_size_exponent": 1,
+          "scaled_Fisher": 0.654872838328357
+        },
+        "--+": {
+          "negative_sign_count": 2,
+          "predicted_size_exponent": 1,
+          "scaled_Fisher": 0.6680694782092819
+        },
+        "---": {
+          "negative_sign_count": 3,
+          "predicted_size_exponent": 3,
+          "scaled_Fisher": 0.3157467221890687
+        }
+      },
+      "all_checks_pass": true,
+      "global_Fisher_partition_residual": 2.842170943040401e-14,
+      "global_unweighted_Fisher_energy": 248.31910908684375,
+      "maximum_imaginary_load_residual": 0.0,
+      "plus_vertex_Fisher_times_size_cubed": 2.8202761236835987,
+      "plus_vertex_absolute_load_over_Fisher": 4.680940322451651,
+      "plus_vertex_complete_load_over_size": -0.002012123796341746,
+      "plus_vertex_ratio_over_size_to_fourth": 0.0007134492184806662,
+      "size": 9,
+      "sum_of_complete_vertex_loads": -1.0408340855860843e-17,
+      "sum_of_vertex_Fisher_energies": 248.31910908684372,
+      "vertex_Fisher_energies": {
+        "+++": 0.003868691527686692,
+        "++-": 0.14797079077377112,
+        "+-+": 0.1510154519610806,
+        "+--": 5.776452572024857,
+        "-++": 0.15396025588650838,
+        "-+-": 5.893855544955213,
+        "--+": 6.012625303883537,
+        "---": 230.17936047583106
+      },
+      "vertex_component_loads": {
+        "combined": {
+          "+++": -0.018109114167075713,
+          "++-": -0.023626330513671943,
+          "+-+": 0.004954565429062422,
+          "+--": 0.03693830740936473,
+          "-++": -0.03649310949980274,
+          "-+-": -0.05099458503820453,
+          "--+": -0.10869025710574945,
+          "---": 0.1960205234860772
+        },
+        "kinetic": {
+          "+++": -1.4427988097819524e-05,
+          "++-": 0.00038710768860028577,
+          "+-+": -0.0011028264702466655,
+          "+--": 0.0008833686246927863,
+          "-++": -0.0005707587748983204,
+          "-+-": 0.015005077907148404,
+          "--+": -0.043413024788196475,
+          "---": 0.028825483800997802
+        },
+        "pressure_cross": {
+          "+++": 4.30233526502166e-07,
+          "++-": -1.8510028846870475e-07,
+          "+-+": 1.7232365811495767e-05,
+          "+--": -1.3271196318618965e-05,
+          "-++": 1.5807051859963853e-05,
+          "-+-": -1.0922496891617995e-05,
+          "--+": 0.0006345041304964055,
+          "---": -0.0006435949881956616
+        },
+        "pressure_high_high": {
+          "+++": -0.0180951164125044,
+          "++-": -0.024013253101983753,
+          "+-+": 0.006040159533497597,
+          "+--": 0.036068209980990557,
+          "-++": -0.03593815777676437,
+          "-+-": -0.06598874044846131,
+          "--+": -0.06591173644804939,
+          "---": 0.1678386346732751
+        }
+      },
+      "walsh_component_loads": {
+        "combined": {
+          "x": 3.93570394198743e-05,
+          "xy": 0.011398705424895027,
+          "xyz": -0.03521391222541624,
+          "xz": 0.03296784742746485,
+          "y": -0.03230578480468873,
+          "yz": 0.044589151807140875,
+          "z": -0.03958447883589137
+        },
+        "kinetic": {
+          "x": 3.830546373714674e-05,
+          "xy": -0.003553715321674051,
+          "xyz": -0.006884751561113275,
+          "xz": 0.01067832681245043,
+          "y": 0.0037017497081881373,
+          "yz": 0.007280916415673612,
+          "z": -0.01127525950535982
+        },
+        "pressure_cross": {
+          "x": 1.0515756827275656e-06,
+          "xy": -2.211431115305665e-06,
+          "xyz": 0.00015268516770316768,
+          "xz": -0.00015921372143732043,
+          "y": 1.28242205159483e-06,
+          "yz": -0.00016015722478195365,
+          "z": 0.00016699344542359183
+        },
+        "pressure_high_high": {
+          "x": 0.0,
+          "xy": 0.014954632177684384,
+          "xyz": -0.028481845832006136,
+          "xz": 0.02244873433645174,
+          "y": -0.03600881693492846,
+          "yz": 0.037468392616249215,
+          "z": -0.02847621277595514
+        }
+      }
+    },
+    {
+      "Fisher_scaling_diagnostics": {
+        "+++": {
+          "negative_sign_count": 0,
+          "predicted_size_exponent": -3,
+          "scaled_Fisher": 3.3002441312205484
+        },
+        "++-": {
+          "negative_sign_count": 1,
+          "predicted_size_exponent": -1,
+          "scaled_Fisher": 1.4374514400561877
+        },
+        "+-+": {
+          "negative_sign_count": 1,
+          "predicted_size_exponent": -1,
+          "scaled_Fisher": 1.4640688726668998
+        },
+        "+--": {
+          "negative_sign_count": 2,
+          "predicted_size_exponent": 1,
+          "scaled_Fisher": 0.637718868105818
+        },
+        "-++": {
+          "negative_sign_count": 1,
+          "predicted_size_exponent": -1,
+          "scaled_Fisher": 1.4898623616209903
+        },
+        "-+-": {
+          "negative_sign_count": 2,
+          "predicted_size_exponent": 1,
+          "scaled_Fisher": 0.6493823307221854
+        },
+        "--+": {
+          "negative_sign_count": 2,
+          "predicted_size_exponent": 1,
+          "scaled_Fisher": 0.6611824440578089
+        },
+        "---": {
+          "negative_sign_count": 3,
+          "predicted_size_exponent": 3,
+          "scaled_Fisher": 0.2881935278522878
+        }
+      },
+      "all_checks_pass": true,
+      "global_Fisher_partition_residual": 0.0,
+      "global_unweighted_Fisher_energy": 1449.2746126323023,
+      "maximum_imaginary_load_residual": 0.0,
+      "plus_vertex_Fisher_times_size_cubed": 3.3002441312205484,
+      "plus_vertex_absolute_load_over_Fisher": 43.21446457062047,
+      "plus_vertex_complete_load_over_size": -0.0017075739404823758,
+      "plus_vertex_ratio_over_size_to_fourth": 0.0005174083711955134,
+      "size": 17,
+      "sum_of_complete_vertex_loads": -2.7755575615628914e-17,
+      "sum_of_vertex_Fisher_energies": 1449.2746126323023,
+      "vertex_Fisher_energies": {
+        "+++": 0.0006717370509302968,
+        "++-": 0.08455596706212869,
+        "+-+": 0.08612169839217057,
+        "+--": 10.841220757798906,
+        "-++": 0.08763896244829354,
+        "-+-": 11.039499622277152,
+        "--+": 11.240101548982752,
+        "---": 1415.89480233829
+      },
+      "vertex_component_loads": {
+        "combined": {
+          "+++": -0.02902875698820039,
+          "++-": -0.03838695052720915,
+          "+-+": 0.009196141728238374,
+          "+--": 0.05829663311647471,
+          "-++": -0.05806775020482017,
+          "-+-": -0.09850389011790686,
+          "--+": -0.16209419235567862,
+          "---": 0.3185887653491021
+        },
+        "kinetic": {
+          "+++": -8.474621787303666e-07,
+          "++-": 6.427174402028125e-05,
+          "+-+": -0.0001888182749894267,
+          "+--": 0.00020053830126719947,
+          "-++": -0.00010999290788928152,
+          "-+-": 0.008178708351453477,
+          "--+": -0.024396729424593804,
+          "---": 0.016252869672910286
+        },
+        "pressure_cross": {
+          "+++": 1.944288569985039e-08,
+          "++-": 1.2489462517446692e-08,
+          "+-+": 2.6209782182276837e-06,
+          "+--": -7.298893822151396e-07,
+          "-++": 2.3515065839769984e-06,
+          "-+-": -3.2112267241923563e-07,
+          "--+": 0.00031757602058799016,
+          "---": -0.0003215294256837778
+        },
+        "pressure_high_high": {
+          "+++": -0.029027928968907348,
+          "++-": -0.038451234760691955,
+          "+-+": 0.009382339025009564,
+          "+--": 0.05809682470458974,
+          "-++": -0.05796010880351486,
+          "-+-": -0.1066822773466879,
+          "--+": -0.1380150389516728,
+          "---": 0.3026574251018756
+        }
+      },
+      "walsh_component_loads": {
+        "combined": {
+          "x": 1.926683232588838e-05,
+          "xy": 0.022269716369503485,
+          "xyz": -0.05783255158632779,
+          "xz": 0.050063064992808305,
+          "y": -0.05599683695953414,
+          "yz": 0.07244722281813906,
+          "z": -0.0599986394551152
+        },
+        "kinetic": {
+          "x": 1.8786077029830918e-05,
+          "xy": -0.002020108867460492,
+          "xyz": -0.004004582558512965,
+          "xz": 0.006060478071798901,
+          "y": 0.0020330349313514365,
+          "yz": 0.004085641901027368,
+          "z": -0.006174097017412811
+        },
+        "pressure_cross": {
+          "x": 4.807552960574603e-07,
+          "xy": -9.803681868925768e-07,
+          "xyz": 7.913611285476391e-05,
+          "xz": -7.980253181306737e-05,
+          "y": 5.15579064943765e-07,
+          "yz": -7.997209139907902e-05,
+          "z": 8.064198706897368e-05
+        },
+        "pressure_high_high": {
+          "x": 0.0,
+          "xy": 0.02429080560515087,
+          "xyz": -0.053907105140669584,
+          "xz": 0.044082389452822474,
+          "y": -0.05803038746995052,
+          "yz": 0.06844155300851078,
+          "z": -0.053905184424771366
+        }
+      }
+    },
+    {
+      "Fisher_scaling_diagnostics": {
+        "+++": {
+          "negative_sign_count": 0,
+          "predicted_size_exponent": -3,
+          "scaled_Fisher": 3.5917573848407423
+        },
+        "++-": {
+          "negative_sign_count": 1,
+          "predicted_size_exponent": -1,
+          "scaled_Fisher": 1.4900809908869932
+        },
+        "+-+": {
+          "negative_sign_count": 1,
+          "predicted_size_exponent": -1,
+          "scaled_Fisher": 1.516004642576996
+        },
+        "+--": {
+          "negative_sign_count": 2,
+          "predicted_size_exponent": 1,
+          "scaled_Fisher": 0.6289564678103882
+        },
+        "-++": {
+          "negative_sign_count": 1,
+          "predicted_size_exponent": -1,
+          "scaled_Fisher": 1.5411642678677877
+        },
+        "-+-": {
+          "negative_sign_count": 2,
+          "predicted_size_exponent": 1,
+          "scaled_Fisher": 0.6397683923008054
+        },
+        "--+": {
+          "negative_sign_count": 2,
+          "predicted_size_exponent": 1,
+          "scaled_Fisher": 0.6507032192212283
+        },
+        "---": {
+          "negative_sign_count": 3,
+          "predicted_size_exponent": 3,
+          "scaled_Fisher": 0.2701245223277496
+        }
+      },
+      "all_checks_pass": true,
+      "global_Fisher_partition_residual": 0.0,
+      "global_unweighted_Fisher_energy": 9770.943980907807,
+      "maximum_imaginary_load_residual": 0.0,
+      "plus_vertex_Fisher_times_size_cubed": 3.5917573848407423,
+      "plus_vertex_absolute_load_over_Fisher": 513.9071600476998,
+      "plus_vertex_complete_load_over_size": -0.0015564526112817453,
+      "plus_vertex_ratio_over_size_to_fourth": 0.0004333401297790492,
+      "size": 33,
+      "sum_of_complete_vertex_loads": -1.3877787807814457e-17,
+      "sum_of_vertex_Fisher_energies": 9770.943980907807,
+      "vertex_Fisher_energies": {
+        "+++": 9.994594386957014e-05,
+        "++-": 0.04515396942081798,
+        "+-+": 0.04593953462354533,
+        "+--": 20.755563437742808,
+        "-++": 0.046701947511145085,
+        "-+-": 21.112356945926578,
+        "--+": 21.473206234300534,
+        "---": 9707.464958892337
+      },
+      "vertex_component_loads": {
+        "combined": {
+          "+++": -0.0513629361722976,
+          "++-": -0.06800772198273308,
+          "+-+": 0.016599208532372005,
+          "+--": 0.10280847226153084,
+          "-++": -0.10271096712957467,
+          "-+-": -0.18459768258915416,
+          "--+": -0.2775117663245874,
+          "---": 0.5647833934044441
+        },
+        "kinetic": {
+          "+++": -3.658560909981647e-08,
+          "++-": 9.26254925578761e-06,
+          "+-+": -2.751012219720718e-05,
+          "+--": 5.443038130572918e-05,
+          "-++": -1.7013693143717243e-05,
+          "-+-": 0.004225687936674634,
+          "--+": -0.012739048406785301,
+          "---": 0.008494227940499173
+        },
+        "pressure_cross": {
+          "+++": 7.411662140844405e-10,
+          "++-": 3.263939131817106e-09,
+          "+-+": 3.5311681730474956e-07,
+          "+--": 5.192941942918015e-07,
+          "-++": 3.218725228556562e-07,
+          "-+-": 5.717871706204544e-07,
+          "--+": 0.0001536203131825988,
+          "---": -0.00015539038899301736
+        },
+        "pressure_high_high": {
+          "+++": -0.05136290032785472,
+          "++-": -0.068016987795928,
+          "+-+": 0.016626365537751917,
+          "+--": 0.10275352258603081,
+          "-++": -0.10269427530895382,
+          "-+-": -0.18882394231299937,
+          "--+": -0.2649263382309847,
+          "---": 0.556444555852938
+        }
+      },
+      "walsh_component_loads": {
+        "combined": {
+          "x": 9.255659718038062e-06,
+          "xy": 0.041975242231206494,
+          "xyz": -0.10266597820612708,
+          "xz": 0.08635549579384108,
+          "y": -0.10166982696843987,
+          "yz": 0.12837949059102566,
+          "z": -0.10374661527352191
+        },
+        "kinetic": {
+          "x": 9.036555688802449e-06,
+          "xy": -0.0010588986256598598,
+          "xyz": -0.002114741668603509,
+          "xz": 0.0031730922923418753,
+          "y": 0.0010544750517944013,
+          "yz": 0.0021329020107630214,
+          "z": -0.0031959022019338312
+        },
+        "pressure_cross": {
+          "x": 2.1910402923561317e-07,
+          "xy": -4.4151767626816543e-07,
+          "xyz": 3.8678033928431284e-05,
+          "xz": -3.861618595971952e-05,
+          "y": 2.2441619970550303e-07,
+          "yz": -3.8637120277413954e-05,
+          "z": 3.857401092224332e-05
+        },
+        "pressure_high_high": {
+          "x": 0.0,
+          "xy": 0.04303458237454262,
+          "xyz": -0.100589914571452,
+          "xz": 0.08322101968745893,
+          "y": -0.10272452643643398,
+          "yz": 0.12628522570054004,
+          "z": -0.10058928708251033
+        }
+      }
+    },
+    {
+      "Fisher_scaling_diagnostics": {
+        "+++": {
+          "negative_sign_count": 0,
+          "predicted_size_exponent": -3,
+          "scaled_Fisher": 3.7525961755774184
+        },
+        "++-": {
+          "negative_sign_count": 1,
+          "predicted_size_exponent": -1,
+          "scaled_Fisher": 1.5154148931719602
+        },
+        "+-+": {
+          "negative_sign_count": 1,
+          "predicted_size_exponent": -1,
+          "scaled_Fisher": 1.5408950695578032
+        },
+        "+--": {
+          "negative_sign_count": 2,
+          "predicted_size_exponent": 1,
+          "scaled_Fisher": 0.6222835108796989
+        },
+        "-++": {
+          "negative_sign_count": 1,
+          "predicted_size_exponent": -1,
+          "scaled_Fisher": 1.5656471795618214
+        },
+        "-+-": {
+          "negative_sign_count": 2,
+          "predicted_size_exponent": 1,
+          "scaled_Fisher": 0.632625257033228
+        },
+        "--+": {
+          "negative_sign_count": 2,
+          "predicted_size_exponent": 1,
+          "scaled_Fisher": 0.6430815930697975
+        },
+        "---": {
+          "negative_sign_count": 3,
+          "predicted_size_exponent": 3,
+          "scaled_Fisher": 0.25985150450290034
+        }
+      },
+      "all_checks_pass": true,
+      "global_Fisher_partition_residual": 0.0,
+      "global_unweighted_Fisher_energy": 71485.15991827028,
+      "maximum_imaginary_load_residual": 0.0,
+      "plus_vertex_Fisher_times_size_cubed": 3.7525961755774184,
+      "plus_vertex_absolute_load_over_Fisher": 7046.368336028543,
+      "plus_vertex_complete_load_over_size": -0.0014813024680923232,
+      "plus_vertex_ratio_over_size_to_fourth": 0.00039474070717571754,
+      "size": 65,
+      "sum_of_complete_vertex_loads": -7.979727989493313e-17,
+      "sum_of_vertex_Fisher_energies": 71485.15991827028,
+      "vertex_Fisher_energies": {
+        "+++": 1.3664437598825374e-05,
+        "++-": 0.02331407527956862,
+        "+-+": 0.023706077993196975,
+        "+--": 40.44842820718043,
+        "-++": 0.024086879685566484,
+        "-+-": 41.12064170715982,
+        "--+": 41.800303549536835,
+        "---": 71361.719424109
+      },
+      "vertex_component_loads": {
+        "combined": {
+          "+++": -0.096284660426001,
+          "++-": -0.12751452940470517,
+          "+-+": 0.031215739310936495,
+          "+--": 0.19260141278033863,
+          "-++": -0.19256172438332717,
+          "-+-": -0.35178078603115603,
+          "--+": -0.5147262805581004,
+          "---": 1.0590508287120146
+        },
+        "kinetic": {
+          "+++": -1.3454251010055254e-09,
+          "++-": 1.2431437078944577e-06,
+          "+-+": -3.703162641779066e-06,
+          "+--": 2.0011916175236888e-05,
+          "-++": -2.360771197866031e-06,
+          "-+-": 0.0021407456079197383,
+          "--+": -0.0064711898649746115,
+          "---": 0.0043152544764364885
+        },
+        "pressure_cross": {
+          "+++": 2.5693104761512475e-11,
+          "++-": 4.733719056451154e-10,
+          "+-+": 4.5421205971365945e-08,
+          "+--": 3.6578848171317145e-07,
+          "-++": 4.2153825349350396e-08,
+          "-+-": 3.731201978296234e-07,
+          "--+": 7.464626050573628e-05,
+          "---": -7.547324328161019e-05
+        },
+        "pressure_high_high": {
+          "+++": -0.096284659106269,
+          "++-": -0.12751577302178496,
+          "+-+": 0.031219397052372325,
+          "+--": 0.19258103507568164,
+          "-++": -0.19255940576595465,
+          "-+-": -0.3539219047592736,
+          "--+": -0.5083297369536316,
+          "---": 1.0548110474788597
+        }
+      },
+      "walsh_component_loads": {
+        "combined": {
+          "x": 4.490565142236555e-06,
+          "xy": 0.08013133958080201,
+          "xyz": -0.1925475785587297,
+          "xz": 0.16055028039144853,
+          "y": -0.19203542506129734,
+          "yz": 0.24070146417075627,
+          "z": -0.19308923151412302
+        },
+        "kinetic": {
+          "x": 4.387637954062819e-06,
+          "xy": -0.0005386733975638325,
+          "xyz": -0.0010776084215761844,
+          "xz": 0.0016130738940723366,
+          "y": 0.0005349066587511664,
+          "yz": 0.0010832260689971895,
+          "z": -0.0016193137860598394
+        },
+        "pressure_cross": {
+          "x": 1.0292718817373601e-07,
+          "xy": -2.0662092771587782e-07,
+          "xyz": 1.8846298719595957e-05,
+          "xz": -1.876366904617611e-05,
+          "y": 1.0394327204734512e-07,
+          "yz": -1.8766318820360726e-05,
+          "z": 1.8683465307540437e-05
+        },
+        "pressure_high_high": {
+          "x": 0.0,
+          "xy": 0.08067021959929356,
+          "xyz": -0.19148881643587312,
+          "xz": 0.15895597016642238,
+          "y": -0.19257043566332055,
+          "yz": 0.23963700442057945,
+          "z": -0.19148860119337072
+        }
+      }
+    }
+  ],
+  "status": "eight_vertex_cancellation_and_local_heat_persistence_certified"
+}

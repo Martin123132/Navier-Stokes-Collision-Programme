@@ -1,0 +1,1605 @@
+{
+  "all_positive_checks_pass": true,
+  "assumption_scope": "Smooth real periodic divergence-free finite-Fourier fields, frequency-one compatible loads, and the explicit lacunary block architecture. Global least costs outside this architecture are not computed.",
+  "certification_flags": {
+    "Navier_Stokes_global_regularity_proved": false,
+    "critical_L3_cost_carrier_coercive": false,
+    "critical_signed_bound_proved": false,
+    "exceptional_set_upgrade_proved": false,
+    "explicit_block_H1_cost_grows_quadratically": true,
+    "explicit_family_gradient_energy_partition_stencil_silent": true,
+    "explicit_family_vertex_weighted_Fisher_is_one_eighth": true,
+    "global_H1_least_cost_coercivity_proved": false,
+    "global_critical_L3_least_cost_computed": false,
+    "high_carrier_fixed_load_L2_bounded": true,
+    "high_carrier_fixed_load_L3_upper_bounded": true,
+    "load_realization_amplitude_scaling_derived": true,
+    "load_realization_spatial_scaling_derived": true,
+    "low_regularity_passage_proved": false,
+    "pressure_L32_remainder_absorbed": false,
+    "single_block_H1_minimum_derived": true,
+    "single_block_L2_minimum_derived": true
+  },
+  "exact_scaling": {
+    "all_checks_pass": true,
+    "amplitude_homogeneity": {
+      "H1_squared_for_tau_b": "tau^(2/3)",
+      "L2_squared_for_tau_b": "tau^(2/3)",
+      "L3_cubed_for_tau_b": "tau"
+    },
+    "coscaling": "For integer m>=1, u_(a,m)(x)=a u(mx), p_(a,m)(x)=a^2p(mx), and Phi_(v,m)(x)=Phi_v(mx)",
+    "fixed_load_H1_seminorm_squared": "B**(2/3)*m**(4/3)",
+    "fixed_load_L2_squared": "B**(2/3)/m**(2/3)",
+    "fixed_load_L3_cubed": "B/m",
+    "fixed_load_amplitude": "B**(1/3)/m**(1/3)",
+    "interpretation": "The critical dimensionless realization cost is m||u||_3^3/|b|. It is invariant under amplitude and integer spatial coscaling.",
+    "load_scaling": "b_m[u_(a,m)]=a^3 m b_1[u]",
+    "velocity_H1_seminorm_squared_scaling": "a^2 m^2",
+    "velocity_L2_squared_scaling": "a^2",
+    "velocity_L3_cubed_scaling": "a^3"
+  },
+  "high_carrier_realization_family": {
+    "H1_over_M2_ratio_over_sample": 1.0001002882901748,
+    "all_checks_pass": true,
+    "bounded_L2_ratio_over_sample": 1.0006763132412575,
+    "bounded_L3_upper_ratio_over_sample": 1.0011070032689742,
+    "carrier_family": "For base carrier M, block S uses N_S=M 4^index(S), unit polarizations, and exact L2-optimal amplitudes.",
+    "carrier_rows": [
+      {
+        "H1_minimum_over_carrier_squared": 753664217.5595689,
+        "H1_squared_block_minimum": 48234509923.81241,
+        "L2_squared_block_minimum": 104.30022530369065,
+        "L3_cubed_upper_bound": 6536.814303845907,
+        "L_infinity_coefficient_bound": 62.67306024328024,
+        "carrier_base": 8,
+        "minimum_normalized_coupling": 0.14588819852085394
+      },
+      {
+        "H1_minimum_over_carrier_squared": 753623894.078894,
+        "H1_squared_block_minimum": 192927716884.19687,
+        "L2_squared_block_minimum": 104.27000915816434,
+        "L3_cubed_upper_bound": 6534.636798515874,
+        "L_infinity_coefficient_bound": 62.670338779808304,
+        "carrier_base": 16,
+        "minimum_normalized_coupling": 0.14597377030566058
+      },
+      {
+        "H1_minimum_over_carrier_squared": 753603746.2423916,
+        "H1_squared_block_minimum": 771690236152.209,
+        "L2_squared_block_minimum": 104.29929552454034,
+        "L3_cubed_upper_bound": 6537.732610461762,
+        "L_infinity_coefficient_bound": 62.68242347738115,
+        "carrier_base": 32,
+        "minimum_normalized_coupling": 0.1460165586649482
+      },
+      {
+        "H1_minimum_over_carrier_squared": 753593675.7975607,
+        "H1_squared_block_minimum": 3086719696066.8086,
+        "L2_squared_block_minimum": 104.32494744425914,
+        "L3_cubed_upper_bound": 6540.3182162137555,
+        "L_infinity_coefficient_bound": 62.69179497749807,
+        "carrier_base": 64,
+        "minimum_normalized_coupling": 0.1460379534610568
+      },
+      {
+        "H1_minimum_over_carrier_squared": 753588641.4432234,
+        "H1_squared_block_minimum": 12346796301405.771,
+        "L2_squared_block_minimum": 104.34052834602406,
+        "L3_cubed_upper_bound": 6541.87066281339,
+        "L_infinity_coefficient_bound": 62.697312027389884,
+        "carrier_base": 128,
+        "minimum_normalized_coupling": 0.14604865101319525
+      }
+    ],
+    "conclusion": "Fixed bad loads admit a high-carrier sequence with bounded L2 and bounded critical L3 cost, so those costs are not carrier-coercive. The block-optimal H1 cost grows like M^2. Because the gradient energy is stencil-silent, every vertex weight sees exactly one eighth of that H1 cost.",
+    "direct_sparse_rows": [
+      {
+        "block_L2_minimum_residual": 0.0,
+        "carrier_base": 8,
+        "costs": {
+          "H1_squared": 59232029240.42149,
+          "L2_squared": 104.30022530369065,
+          "L3_cubed_upper_bound": 6536.814303845907,
+          "coefficient_l1": 62.67306024328024
+        },
+        "maximum_load_residual": 3.422262473407045e-13,
+        "maximum_relative_divergence_residual": 2.876978016530208e-17,
+        "quadratic_stencil_silence": {
+          "all_checks_pass": true,
+          "consequence": "|grad u|^2 has no nonzero partition-stencil Fourier mode, so mean[Phi_v |grad u|^2]=||grad u||_2^2/8 for every vertex.",
+          "nonzero_stencil_pair_count": 0,
+          "nonzero_stencil_pairs": []
+        },
+        "velocity_mode_count": 42,
+        "vertex_weighted_H1_squared": 7404003655.052687
+      },
+      {
+        "block_L2_minimum_residual": 0.0,
+        "carrier_base": 128,
+        "costs": {
+          "H1_squared": 15161988208638.15,
+          "L2_squared": 104.34052834602406,
+          "L3_cubed_upper_bound": 6541.87066281339,
+          "coefficient_l1": 62.697312027389884
+        },
+        "maximum_load_residual": 2.320366121466577e-12,
+        "maximum_relative_divergence_residual": 8.168854059444822e-17,
+        "quadratic_stencil_silence": {
+          "all_checks_pass": true,
+          "consequence": "|grad u|^2 has no nonzero partition-stencil Fourier mode, so mean[Phi_v |grad u|^2]=||grad u||_2^2/8 for every vertex.",
+          "nonzero_stencil_pair_count": 0,
+          "nonzero_stencil_pairs": []
+        },
+        "velocity_mode_count": 42,
+        "vertex_weighted_H1_squared": 1895248526079.7688
+      }
+    ]
+  },
+  "kind": "pressure_load_realization_cost_audit",
+  "next_theorem_target": "Derive a rigorous high-carrier absorption threshold for the full pressure minus velocity-Fisher minus weight-Fisher functional, including arbitrary compatible coefficients. Then isolate the compact carrier band below that threshold and test whether graph cancellation, intrinsic 2:1 balance, or a finite-dimensional sharp inequality controls it without a positive weight floor.",
+  "normalized_coupling_limits": {
+    "all_checks_pass": true,
+    "interpretation": "Every normalized geometric coupling tends to a nonzero constant as its carrier tends to infinity. Fixed low loads therefore require bounded coefficient amplitudes.",
+    "minimum_limit_normalized_coupling": 0.1460593486680443,
+    "rows": [
+      {
+        "limit_is_strictly_positive": true,
+        "limit_normalized_coupling": 0.17888543819998318,
+        "limit_normalized_coupling_squared": "4/125",
+        "normalized_coupling_squared": "64*N**2*(N - 1)**2*(N + 1)**2/(25*(4*N**2 + 1)**2*(5*N**2 - 2*N + 1))",
+        "subset_wave": [
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "limit_is_strictly_positive": true,
+        "limit_normalized_coupling": 1.4310835055998654,
+        "limit_normalized_coupling_squared": "256/125",
+        "normalized_coupling_squared": "16*N**2*(2*N - 1)**2*(2*N + 1)**2/(25*(N**2 + 1)**2*(5*N**2 - 4*N + 1))",
+        "subset_wave": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "limit_is_strictly_positive": true,
+        "limit_normalized_coupling": 0.8,
+        "limit_normalized_coupling_squared": "16/25",
+        "normalized_coupling_squared": "16*N**2/(5*(5*N**2 + 1))",
+        "subset_wave": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "limit_is_strictly_positive": true,
+        "limit_normalized_coupling": 1.2521980673998823,
+        "limit_normalized_coupling_squared": "196/125",
+        "normalized_coupling_squared": "N**2*(2*N - 3)**2*(14*N**3 - 21*N**2 + 14*N - 6)**2/(25*(N**2 - 2*N + 2)**2*(2*N**2 - 2*N + 1)**2*(5*N**2 - 6*N + 2))",
+        "subset_wave": [
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "limit_is_strictly_positive": true,
+        "limit_normalized_coupling": 0.4770278351999551,
+        "limit_normalized_coupling_squared": "256/1125",
+        "normalized_coupling_squared": "4*N**2*(16*N**2 - 5*N + 18)**2/(225*(2*N**2 + 1)**2*(5*N**2 - 2*N + 2))",
+        "subset_wave": [
+          1,
+          0,
+          1
+        ]
+      },
+      {
+        "limit_is_strictly_positive": true,
+        "limit_normalized_coupling": 0.1460593486680443,
+        "limit_normalized_coupling_squared": "8/375",
+        "normalized_coupling_squared": "8*N**2*(N**2 - 10*N + 12)**2/(75*(N**2 + 2)**2*(5*N**2 - 4*N + 2))",
+        "subset_wave": [
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "limit_is_strictly_positive": true,
+        "limit_normalized_coupling": 1.2415044636783765,
+        "limit_normalized_coupling_squared": "578/375",
+        "normalized_coupling_squared": "8*N**2*(34*N**4 - 147*N**3 + 253*N**2 - 213*N + 99)**2/(75*(N**2 - 2*N + 3)**2*(4*N**2 - 4*N + 3)**2*(5*N**2 - 6*N + 3))",
+        "subset_wave": [
+          1,
+          1,
+          1
+        ]
+      }
+    ]
+  },
+  "positive_checks": {
+    "amplitude_and_spatial_scaling_passes": true,
+    "high_carrier_cost_family_passes": true,
+    "normalized_coupling_limits_pass": true,
+    "seed81_cost_benchmark_passes": true,
+    "single_block_cost_optimization_passes": true,
+    "uniform_lacunary_support_passes": true
+  },
+  "route_decision": "Critical L3 size alone cannot exclude high-carrier bad loads: the explicit realization family keeps an L3 upper bound uniform. High carriers are nevertheless expensive to the velocity Fisher term within this block architecture, quadratically in carrier ratio, and the compatible vertex weights see this cost exactly. Retain velocity Fisher before optimizing pressure; the next theorem must determine whether a general high-carrier estimate can reduce the unresolved sign problem to frequencies comparable with the partition frequency.",
+  "schema_version": 1,
+  "seed81_cost_benchmark": {
+    "all_checks_pass": true,
+    "cosine_with_Hamming_ray": 0.2921660136231393,
+    "load_Euclidean_norm": 4.196176831607055,
+    "load_over_L3_cubed": 0.003475348306783674,
+    "sampled_velocity_L3_cubed": 1207.4118796715616,
+    "scope": "The L3 value uses the exact stored 20^3 trigonometric grid. It is a resolved benchmark, not an interval enclosure.",
+    "source": "seed-81 finite-Fourier pressure adversary",
+    "velocity_H1_squared": 567.0369975365949,
+    "velocity_L2_squared": 100.00000000000001
+  },
+  "single_block_optimization": {
+    "H1_optimizer": "|a|x=|b|y=|k|z=(P|a||b||k|)^(1/3)",
+    "H1_product_residual": "0",
+    "L2_optimizer": "x=y=z=P^(1/3)",
+    "all_checks_pass": true,
+    "critical_L3_upper_bound": "For the L2 optimizer, ||u||_infinity<=6P^(1/3), hence ||u||_3^3<=||u||_infinity||u||_2^2<=36P.",
+    "exact_H1_minimum": "6*A**(2/3)*B**(2/3)*C**(2/3)*P**(2/3)",
+    "exact_L2_minimum": "6*P**(2/3)",
+    "normalized_block_constraint": "|kappa|xyz=gamma, so xyz=P=gamma/|kappa|",
+    "real_field_H1_squared": "2(|a|^2x^2+|b|^2y^2+|k|^2z^2)",
+    "real_field_L2_squared": "2(x^2+y^2+z^2)"
+  },
+  "status": "explicit_block_critical_carrier_noncoercivity_and_quadratic_Fisher_growth_certified",
+  "uniform_lacunary_support": {
+    "all_checks_pass": true,
+    "carrier_floor": 8,
+    "cubic_finite_correction_bound_per_coordinate": 3,
+    "invalid_leading_zero_pair_count": 0,
+    "invalid_leading_zero_triple_count": 0,
+    "leading_signed_mode_count": 42,
+    "leading_zero_pair_count": 21,
+    "leading_zero_pairs": [
+      {
+        "correction_output": [
+          0,
+          0,
+          0
+        ],
+        "modes": [
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "owners": [
+          [
+            0,
+            "first",
+            -1
+          ],
+          [
+            0,
+            "first",
+            1
+          ]
+        ],
+        "valid_opposite_mode_pair": true
+      },
+      {
+        "correction_output": [
+          0,
+          0,
+          0
+        ],
+        "modes": [
+          [
+            0,
+            -2,
+            0
+          ],
+          [
+            0,
+            2,
+            0
+          ]
+        ],
+        "owners": [
+          [
+            0,
+            "second",
+            -1
+          ],
+          [
+            0,
+            "second",
+            1
+          ]
+        ],
+        "valid_opposite_mode_pair": true
+      },
+      {
+        "correction_output": [
+          0,
+          0,
+          0
+        ],
+        "modes": [
+          [
+            1,
+            2,
+            0
+          ],
+          [
+            -1,
+            -2,
+            0
+          ]
+        ],
+        "owners": [
+          [
+            0,
+            "third",
+            -1
+          ],
+          [
+            0,
+            "third",
+            1
+          ]
+        ],
+        "valid_opposite_mode_pair": true
+      },
+      {
+        "correction_output": [
+          0,
+          0,
+          0
+        ],
+        "modes": [
+          [
+            -4,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            0
+          ]
+        ],
+        "owners": [
+          [
+            1,
+            "first",
+            -1
+          ],
+          [
+            1,
+            "first",
+            1
+          ]
+        ],
+        "valid_opposite_mode_pair": true
+      },
+      {
+        "correction_output": [
+          0,
+          0,
+          0
+        ],
+        "modes": [
+          [
+            0,
+            -8,
+            0
+          ],
+          [
+            0,
+            8,
+            0
+          ]
+        ],
+        "owners": [
+          [
+            1,
+            "second",
+            -1
+          ],
+          [
+            1,
+            "second",
+            1
+          ]
+        ],
+        "valid_opposite_mode_pair": true
+      },
+      {
+        "correction_output": [
+          0,
+          0,
+          0
+        ],
+        "modes": [
+          [
+            4,
+            8,
+            0
+          ],
+          [
+            -4,
+            -8,
+            0
+          ]
+        ],
+        "owners": [
+          [
+            1,
+            "third",
+            -1
+          ],
+          [
+            1,
+            "third",
+            1
+          ]
+        ],
+        "valid_opposite_mode_pair": true
+      },
+      {
+        "correction_output": [
+          0,
+          0,
+          0
+        ],
+        "modes": [
+          [
+            -16,
+            0,
+            0
+          ],
+          [
+            16,
+            0,
+            0
+          ]
+        ],
+        "owners": [
+          [
+            2,
+            "first",
+            -1
+          ],
+          [
+            2,
+            "first",
+            1
+          ]
+        ],
+        "valid_opposite_mode_pair": true
+      },
+      {
+        "correction_output": [
+          0,
+          0,
+          0
+        ],
+        "modes": [
+          [
+            0,
+            -32,
+            0
+          ],
+          [
+            0,
+            32,
+            0
+          ]
+        ],
+        "owners": [
+          [
+            2,
+            "second",
+            -1
+          ],
+          [
+            2,
+            "second",
+            1
+          ]
+        ],
+        "valid_opposite_mode_pair": true
+      },
+      {
+        "correction_output": [
+          0,
+          0,
+          0
+        ],
+        "modes": [
+          [
+            16,
+            32,
+            0
+          ],
+          [
+            -16,
+            -32,
+            0
+          ]
+        ],
+        "owners": [
+          [
+            2,
+            "third",
+            -1
+          ],
+          [
+            2,
+            "third",
+            1
+          ]
+        ],
+        "valid_opposite_mode_pair": true
+      },
+      {
+        "correction_output": [
+          0,
+          0,
+          0
+        ],
+        "modes": [
+          [
+            -64,
+            0,
+            0
+          ],
+          [
+            64,
+            0,
+            0
+          ]
+        ],
+        "owners": [
+          [
+            3,
+            "first",
+            -1
+          ],
+          [
+            3,
+            "first",
+            1
+          ]
+        ],
+        "valid_opposite_mode_pair": true
+      },
+      {
+        "correction_output": [
+          0,
+          0,
+          0
+        ],
+        "modes": [
+          [
+            0,
+            -128,
+            0
+          ],
+          [
+            0,
+            128,
+            0
+          ]
+        ],
+        "owners": [
+          [
+            3,
+            "second",
+            -1
+          ],
+          [
+            3,
+            "second",
+            1
+          ]
+        ],
+        "valid_opposite_mode_pair": true
+      },
+      {
+        "correction_output": [
+          0,
+          0,
+          0
+        ],
+        "modes": [
+          [
+            64,
+            128,
+            0
+          ],
+          [
+            -64,
+            -128,
+            0
+          ]
+        ],
+        "owners": [
+          [
+            3,
+            "third",
+            -1
+          ],
+          [
+            3,
+            "third",
+            1
+          ]
+        ],
+        "valid_opposite_mode_pair": true
+      },
+      {
+        "correction_output": [
+          0,
+          0,
+          0
+        ],
+        "modes": [
+          [
+            -256,
+            0,
+            0
+          ],
+          [
+            256,
+            0,
+            0
+          ]
+        ],
+        "owners": [
+          [
+            4,
+            "first",
+            -1
+          ],
+          [
+            4,
+            "first",
+            1
+          ]
+        ],
+        "valid_opposite_mode_pair": true
+      },
+      {
+        "correction_output": [
+          0,
+          0,
+          0
+        ],
+        "modes": [
+          [
+            0,
+            -512,
+            0
+          ],
+          [
+            0,
+            512,
+            0
+          ]
+        ],
+        "owners": [
+          [
+            4,
+            "second",
+            -1
+          ],
+          [
+            4,
+            "second",
+            1
+          ]
+        ],
+        "valid_opposite_mode_pair": true
+      },
+      {
+        "correction_output": [
+          0,
+          0,
+          0
+        ],
+        "modes": [
+          [
+            256,
+            512,
+            0
+          ],
+          [
+            -256,
+            -512,
+            0
+          ]
+        ],
+        "owners": [
+          [
+            4,
+            "third",
+            -1
+          ],
+          [
+            4,
+            "third",
+            1
+          ]
+        ],
+        "valid_opposite_mode_pair": true
+      },
+      {
+        "correction_output": [
+          0,
+          0,
+          0
+        ],
+        "modes": [
+          [
+            -1024,
+            0,
+            0
+          ],
+          [
+            1024,
+            0,
+            0
+          ]
+        ],
+        "owners": [
+          [
+            5,
+            "first",
+            -1
+          ],
+          [
+            5,
+            "first",
+            1
+          ]
+        ],
+        "valid_opposite_mode_pair": true
+      },
+      {
+        "correction_output": [
+          0,
+          0,
+          0
+        ],
+        "modes": [
+          [
+            0,
+            -2048,
+            0
+          ],
+          [
+            0,
+            2048,
+            0
+          ]
+        ],
+        "owners": [
+          [
+            5,
+            "second",
+            -1
+          ],
+          [
+            5,
+            "second",
+            1
+          ]
+        ],
+        "valid_opposite_mode_pair": true
+      },
+      {
+        "correction_output": [
+          0,
+          0,
+          0
+        ],
+        "modes": [
+          [
+            1024,
+            2048,
+            0
+          ],
+          [
+            -1024,
+            -2048,
+            0
+          ]
+        ],
+        "owners": [
+          [
+            5,
+            "third",
+            -1
+          ],
+          [
+            5,
+            "third",
+            1
+          ]
+        ],
+        "valid_opposite_mode_pair": true
+      },
+      {
+        "correction_output": [
+          0,
+          0,
+          0
+        ],
+        "modes": [
+          [
+            -4096,
+            0,
+            0
+          ],
+          [
+            4096,
+            0,
+            0
+          ]
+        ],
+        "owners": [
+          [
+            6,
+            "first",
+            -1
+          ],
+          [
+            6,
+            "first",
+            1
+          ]
+        ],
+        "valid_opposite_mode_pair": true
+      },
+      {
+        "correction_output": [
+          0,
+          0,
+          0
+        ],
+        "modes": [
+          [
+            0,
+            -8192,
+            0
+          ],
+          [
+            0,
+            8192,
+            0
+          ]
+        ],
+        "owners": [
+          [
+            6,
+            "second",
+            -1
+          ],
+          [
+            6,
+            "second",
+            1
+          ]
+        ],
+        "valid_opposite_mode_pair": true
+      },
+      {
+        "correction_output": [
+          0,
+          0,
+          0
+        ],
+        "modes": [
+          [
+            4096,
+            8192,
+            0
+          ],
+          [
+            -4096,
+            -8192,
+            0
+          ]
+        ],
+        "owners": [
+          [
+            6,
+            "third",
+            -1
+          ],
+          [
+            6,
+            "third",
+            1
+          ]
+        ],
+        "valid_opposite_mode_pair": true
+      }
+    ],
+    "leading_zero_triple_count": 14,
+    "leading_zero_triples": [
+      {
+        "correction_output": [
+          -1,
+          0,
+          0
+        ],
+        "expected_correction_output": [
+          -1,
+          0,
+          0
+        ],
+        "modes": [
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            -2,
+            0
+          ],
+          [
+            1,
+            2,
+            0
+          ]
+        ],
+        "owners": [
+          [
+            0,
+            "first",
+            -1
+          ],
+          [
+            0,
+            "second",
+            -1
+          ],
+          [
+            0,
+            "third",
+            -1
+          ]
+        ],
+        "valid_single_block_zero": true
+      },
+      {
+        "correction_output": [
+          1,
+          0,
+          0
+        ],
+        "expected_correction_output": [
+          1,
+          0,
+          0
+        ],
+        "modes": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            -1,
+            -2,
+            0
+          ]
+        ],
+        "owners": [
+          [
+            0,
+            "first",
+            1
+          ],
+          [
+            0,
+            "second",
+            1
+          ],
+          [
+            0,
+            "third",
+            1
+          ]
+        ],
+        "valid_single_block_zero": true
+      },
+      {
+        "correction_output": [
+          0,
+          -1,
+          0
+        ],
+        "expected_correction_output": [
+          0,
+          -1,
+          0
+        ],
+        "modes": [
+          [
+            -4,
+            0,
+            0
+          ],
+          [
+            0,
+            -8,
+            0
+          ],
+          [
+            4,
+            8,
+            0
+          ]
+        ],
+        "owners": [
+          [
+            1,
+            "first",
+            -1
+          ],
+          [
+            1,
+            "second",
+            -1
+          ],
+          [
+            1,
+            "third",
+            -1
+          ]
+        ],
+        "valid_single_block_zero": true
+      },
+      {
+        "correction_output": [
+          0,
+          1,
+          0
+        ],
+        "expected_correction_output": [
+          0,
+          1,
+          0
+        ],
+        "modes": [
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            8,
+            0
+          ],
+          [
+            -4,
+            -8,
+            0
+          ]
+        ],
+        "owners": [
+          [
+            1,
+            "first",
+            1
+          ],
+          [
+            1,
+            "second",
+            1
+          ],
+          [
+            1,
+            "third",
+            1
+          ]
+        ],
+        "valid_single_block_zero": true
+      },
+      {
+        "correction_output": [
+          0,
+          0,
+          -1
+        ],
+        "expected_correction_output": [
+          0,
+          0,
+          -1
+        ],
+        "modes": [
+          [
+            -16,
+            0,
+            0
+          ],
+          [
+            0,
+            -32,
+            0
+          ],
+          [
+            16,
+            32,
+            0
+          ]
+        ],
+        "owners": [
+          [
+            2,
+            "first",
+            -1
+          ],
+          [
+            2,
+            "second",
+            -1
+          ],
+          [
+            2,
+            "third",
+            -1
+          ]
+        ],
+        "valid_single_block_zero": true
+      },
+      {
+        "correction_output": [
+          0,
+          0,
+          1
+        ],
+        "expected_correction_output": [
+          0,
+          0,
+          1
+        ],
+        "modes": [
+          [
+            16,
+            0,
+            0
+          ],
+          [
+            0,
+            32,
+            0
+          ],
+          [
+            -16,
+            -32,
+            0
+          ]
+        ],
+        "owners": [
+          [
+            2,
+            "first",
+            1
+          ],
+          [
+            2,
+            "second",
+            1
+          ],
+          [
+            2,
+            "third",
+            1
+          ]
+        ],
+        "valid_single_block_zero": true
+      },
+      {
+        "correction_output": [
+          -1,
+          -1,
+          0
+        ],
+        "expected_correction_output": [
+          -1,
+          -1,
+          0
+        ],
+        "modes": [
+          [
+            -64,
+            0,
+            0
+          ],
+          [
+            0,
+            -128,
+            0
+          ],
+          [
+            64,
+            128,
+            0
+          ]
+        ],
+        "owners": [
+          [
+            3,
+            "first",
+            -1
+          ],
+          [
+            3,
+            "second",
+            -1
+          ],
+          [
+            3,
+            "third",
+            -1
+          ]
+        ],
+        "valid_single_block_zero": true
+      },
+      {
+        "correction_output": [
+          1,
+          1,
+          0
+        ],
+        "expected_correction_output": [
+          1,
+          1,
+          0
+        ],
+        "modes": [
+          [
+            64,
+            0,
+            0
+          ],
+          [
+            0,
+            128,
+            0
+          ],
+          [
+            -64,
+            -128,
+            0
+          ]
+        ],
+        "owners": [
+          [
+            3,
+            "first",
+            1
+          ],
+          [
+            3,
+            "second",
+            1
+          ],
+          [
+            3,
+            "third",
+            1
+          ]
+        ],
+        "valid_single_block_zero": true
+      },
+      {
+        "correction_output": [
+          -1,
+          0,
+          -1
+        ],
+        "expected_correction_output": [
+          -1,
+          0,
+          -1
+        ],
+        "modes": [
+          [
+            -256,
+            0,
+            0
+          ],
+          [
+            0,
+            -512,
+            0
+          ],
+          [
+            256,
+            512,
+            0
+          ]
+        ],
+        "owners": [
+          [
+            4,
+            "first",
+            -1
+          ],
+          [
+            4,
+            "second",
+            -1
+          ],
+          [
+            4,
+            "third",
+            -1
+          ]
+        ],
+        "valid_single_block_zero": true
+      },
+      {
+        "correction_output": [
+          1,
+          0,
+          1
+        ],
+        "expected_correction_output": [
+          1,
+          0,
+          1
+        ],
+        "modes": [
+          [
+            256,
+            0,
+            0
+          ],
+          [
+            0,
+            512,
+            0
+          ],
+          [
+            -256,
+            -512,
+            0
+          ]
+        ],
+        "owners": [
+          [
+            4,
+            "first",
+            1
+          ],
+          [
+            4,
+            "second",
+            1
+          ],
+          [
+            4,
+            "third",
+            1
+          ]
+        ],
+        "valid_single_block_zero": true
+      },
+      {
+        "correction_output": [
+          0,
+          -1,
+          -1
+        ],
+        "expected_correction_output": [
+          0,
+          -1,
+          -1
+        ],
+        "modes": [
+          [
+            -1024,
+            0,
+            0
+          ],
+          [
+            0,
+            -2048,
+            0
+          ],
+          [
+            1024,
+            2048,
+            0
+          ]
+        ],
+        "owners": [
+          [
+            5,
+            "first",
+            -1
+          ],
+          [
+            5,
+            "second",
+            -1
+          ],
+          [
+            5,
+            "third",
+            -1
+          ]
+        ],
+        "valid_single_block_zero": true
+      },
+      {
+        "correction_output": [
+          0,
+          1,
+          1
+        ],
+        "expected_correction_output": [
+          0,
+          1,
+          1
+        ],
+        "modes": [
+          [
+            1024,
+            0,
+            0
+          ],
+          [
+            0,
+            2048,
+            0
+          ],
+          [
+            -1024,
+            -2048,
+            0
+          ]
+        ],
+        "owners": [
+          [
+            5,
+            "first",
+            1
+          ],
+          [
+            5,
+            "second",
+            1
+          ],
+          [
+            5,
+            "third",
+            1
+          ]
+        ],
+        "valid_single_block_zero": true
+      },
+      {
+        "correction_output": [
+          -1,
+          -1,
+          -1
+        ],
+        "expected_correction_output": [
+          -1,
+          -1,
+          -1
+        ],
+        "modes": [
+          [
+            -4096,
+            0,
+            0
+          ],
+          [
+            0,
+            -8192,
+            0
+          ],
+          [
+            4096,
+            8192,
+            0
+          ]
+        ],
+        "owners": [
+          [
+            6,
+            "first",
+            -1
+          ],
+          [
+            6,
+            "second",
+            -1
+          ],
+          [
+            6,
+            "third",
+            -1
+          ]
+        ],
+        "valid_single_block_zero": true
+      },
+      {
+        "correction_output": [
+          1,
+          1,
+          1
+        ],
+        "expected_correction_output": [
+          1,
+          1,
+          1
+        ],
+        "modes": [
+          [
+            4096,
+            0,
+            0
+          ],
+          [
+            0,
+            8192,
+            0
+          ],
+          [
+            -4096,
+            -8192,
+            0
+          ]
+        ],
+        "owners": [
+          [
+            6,
+            "first",
+            1
+          ],
+          [
+            6,
+            "second",
+            1
+          ],
+          [
+            6,
+            "third",
+            1
+          ]
+        ],
+        "valid_single_block_zero": true
+      }
+    ],
+    "quadratic_finite_correction_bound_per_coordinate": 2,
+    "uniform_cubic_argument": "Every actual mode is M times its integer leading mode plus a correction with coordinates at most one. If a triple has nonzero leading sum, M>=8 leaves some output coordinate at least 5 in magnitude. If its leading sum is zero, the finite certificate says it is one signed block triple and its output is exactly the intended +/- subset wave.",
+    "uniform_quadratic_argument": "A pair with nonzero leading sum has some output coordinate at least M-2>=6 in magnitude. Every zero-leading pair consists of one mode and its exact conjugate opposite, whose actual sum is zero. Thus |grad u|^2 has no nonzero partition-stencil mode for every M>=8."
+  }
+}

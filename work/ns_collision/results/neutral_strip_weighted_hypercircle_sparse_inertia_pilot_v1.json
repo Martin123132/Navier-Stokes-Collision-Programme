@@ -1,0 +1,159 @@
+{
+  "all_sparse_inertia_pilot_checks_pass": true,
+  "below_normal_priority_set": true,
+  "certification_flags": {
+    "coarse_Schur_complement_inertia_identity_validated": true,
+    "continuum_spectrum_below_60_captured": false,
+    "full_mesh_threshold_inertia_certified": false,
+    "full_mesh_threshold_pencil_structure_inventoried": true,
+    "global_weighted_Ritz_projection_constant_certified": false,
+    "kappa_h_verified_upper_bound": false
+  },
+  "checks": {
+    "all_coarse_Schur_inertia_rows_match": true,
+    "coarse_candidate_correctly_fails": true,
+    "existing_weighted_P1_stiffness_form_enclosed": true,
+    "fixed_beta_preserves_floating_continuum_headroom": true,
+    "full_dimension_matches_123816": true,
+    "full_topology_counts_reconstruct": true
+  },
+  "coarse_dense_identity": {
+    "coarse_kappa_h": 0.2316506434954726,
+    "edge_count": 505,
+    "pencil_dimension": 1264,
+    "quadrature_order": 12,
+    "rows": [
+      {
+        "Q_minus_beta_squared_W_inertia": {
+          "minimum_absolute_eigenvalue": 4.70719508840644e-05,
+          "negative": 0,
+          "positive": 316,
+          "sign_tolerance": 2.567437383488648e-10,
+          "zero_or_unresolved": 0
+        },
+        "Schur_complement_inertia_counts_match": true,
+        "beta": 0.045,
+        "beta_relative_to_coarse_kappa": 0.1942580401287747,
+        "direct_threshold_pencil_inertia": {
+          "minimum_absolute_eigenvalue": 4.7041839414303494e-05,
+          "negative": 316,
+          "positive": 948,
+          "sign_tolerance": 5.639308566172372e-08,
+          "zero_or_unresolved": 0
+        },
+        "label": "production_candidate",
+        "predicted_threshold_pencil_inertia": {
+          "negative": 316,
+          "positive": 948,
+          "zero_or_unresolved": 0
+        }
+      },
+      {
+        "Q_minus_beta_squared_W_inertia": {
+          "minimum_absolute_eigenvalue": 0.000196678411057282,
+          "negative": 304,
+          "positive": 12,
+          "sign_tolerance": 2.3763131074179327e-10,
+          "zero_or_unresolved": 0
+        },
+        "Schur_complement_inertia_counts_match": true,
+        "beta": 0.1853205147963781,
+        "beta_relative_to_coarse_kappa": 0.8,
+        "direct_threshold_pencil_inertia": {
+          "minimum_absolute_eigenvalue": 1.8438990062159377e-06,
+          "negative": 620,
+          "positive": 644,
+          "sign_tolerance": 5.639308566172367e-08,
+          "zero_or_unresolved": 0
+        },
+        "label": "deliberate_failure",
+        "predicted_threshold_pencil_inertia": {
+          "negative": 620,
+          "positive": 644,
+          "zero_or_unresolved": 0
+        }
+      },
+      {
+        "Q_minus_beta_squared_W_inertia": {
+          "minimum_absolute_eigenvalue": 0.0020693029311808753,
+          "negative": 316,
+          "positive": 0,
+          "sign_tolerance": 6.717822224258722e-10,
+          "zero_or_unresolved": 0
+        },
+        "Schur_complement_inertia_counts_match": true,
+        "beta": 0.2779807721945671,
+        "beta_relative_to_coarse_kappa": 1.2,
+        "direct_threshold_pencil_inertia": {
+          "minimum_absolute_eigenvalue": 0.00015903743218985221,
+          "negative": 632,
+          "positive": 632,
+          "sign_tolerance": 5.6393085661723875e-08,
+          "zero_or_unresolved": 0
+        },
+        "label": "deliberate_pass",
+        "predicted_threshold_pencil_inertia": {
+          "negative": 632,
+          "positive": 632,
+          "zero_or_unresolved": 0
+        }
+      }
+    ],
+    "spacing": 0.6,
+    "state_count": 127,
+    "triangle_count": 316
+  },
+  "elapsed_seconds": 37.46417529997416,
+  "full_mesh_structural_inventory": {
+    "dimension": 123816,
+    "divergence_nnz": 92862,
+    "edge_count": 46697,
+    "expected_inertia_if_kappa_below_beta": {
+      "negative": 61908,
+      "positive": 61908,
+      "zero": 0
+    },
+    "p1_load_nnz": 91124,
+    "p1_stiffness_nnz": 105129,
+    "reconstructed_topology_counts_match": true,
+    "rt_mass_nnz": 232421,
+    "state_count": 15211,
+    "threshold_pencil_nnz": 798384,
+    "triangle_count": 30954
+  },
+  "interval_entry_inventory": {
+    "P1_stiffness_A": "Reuse the completed directed Gaussian-weighted P1 stiffness contribution intervals.",
+    "RT_mass_P_and_source_mass_W": "New local analytic enclosures for polynomial moments against exp(+x^2/2).",
+    "area_D_and_load_B": "New directed determinant enclosures from binary mesh vertices; B entries are D/3.",
+    "beta_squared_W": "Use the exact decimal beta=0.045 and directed products with the W intervals.",
+    "divergence_N": "Exact integer entries {-1,+1}; topology and orientation are already checked.",
+    "factorization": "A verified symmetric-indefinite sparse LDL or equivalent inertia method is still required; SuperLU is used here only for a central fill probe.",
+    "geometry_budget": "Outward-enclose C_data and alpha before confirming that the fixed-beta headroom remains positive."
+  },
+  "kind": "neutral-strip-weighted-hypercircle-sparse-inertia-pilot",
+  "medium_sparse_resource_probe": {
+    "central_L_plus_U_nnz": 1038256,
+    "central_factor_fill_ratio": 5.2411230804955125,
+    "dimension": 30968,
+    "factor_seconds": 0.1379728999454528,
+    "minimum_absolute_central_U_diagonal": 9.43929988072309e-07,
+    "pencil_nnz": 198098,
+    "row_and_column_permutations_equal": true,
+    "spacing": 0.12
+  },
+  "premises": {
+    "assembly_result": "work/ns_collision/results/neutral_strip_h006_gaussian_assembly_interval_audit_v1.json",
+    "assembly_result_sha256": "c4da43d4589edad78c1413c4b8914e59b31143487784623677f849061304ba3a",
+    "hypercircle_result": "work/ns_collision/results/neutral_strip_h006_weighted_hypercircle_pilot_v1.json",
+    "hypercircle_result_sha256": "23aa5c22eaf495142cc6271c2d77b5368fd320600f557a989dbb40490a2a519f"
+  },
+  "production_candidate": {
+    "beta": 0.045,
+    "beta_over_observed_full_mesh_kappa": 1.902394246139348,
+    "beta_squared": 0.002025,
+    "floating_combined_C_h_if_kappa_below_beta": 0.08299017542532933,
+    "floating_continuum_target": 0.08557115750643675,
+    "floating_geometry_headroom": 0.002580982081107422,
+    "observed_full_mesh_kappa_h": 0.023654402914286256
+  }
+}

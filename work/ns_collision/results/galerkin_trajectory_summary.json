@@ -1,0 +1,94 @@
+{
+  "all_sampled_positive_channel_integrals_are_positive": true,
+  "duplicate_record_count": 8,
+  "duplicate_rows_are_identical": true,
+  "marginal_positive_reynolds": [
+    4.0
+  ],
+  "maximum_differential_identity_residual": 8.526512829121202e-14,
+  "maximum_primitive_balance_residual": 3.2497889783655864e-06,
+  "maximum_relative_energy_balance_residual": 1.4210854715202005e-15,
+  "negative_channel_loses_cumulative_sign": true,
+  "negative_channel_transition_bracket": {
+    "lower_endpoint_primitive": 2.6342743586791695e-05,
+    "lower_integrated_defect": -1.7079351703909494e-06,
+    "lower_integrated_transfer_from_balance": 2.4634808416400745e-05,
+    "lower_reynolds": 0.922,
+    "upper_endpoint_primitive": 2.9089926571749013e-05,
+    "upper_integrated_defect": 0.000282629783049549,
+    "upper_integrated_transfer_from_balance": 0.000311719709621298,
+    "upper_reynolds": 0.94
+  },
+  "positive_channel_table": [
+    {
+      "boundary_energy_fraction": 6.000090899543969e-07,
+      "defect_sign_changes": 1,
+      "defect_to_viscous_palinstrophy_ratio": 0.001424928779990229,
+      "integrated_defect": 0.0007118439663329669,
+      "marginal": false,
+      "maximum_mode": 3,
+      "ratio_over_weak_prediction": 0.998557542146413,
+      "relative_change_from_previous_mode": 0.0016069360013846947,
+      "resolved": true,
+      "reynolds": 0.25
+    },
+    {
+      "boundary_energy_fraction": 9.53351612898399e-06,
+      "defect_sign_changes": 1,
+      "defect_to_viscous_palinstrophy_ratio": 0.0055938976284613294,
+      "integrated_defect": 0.01130988189972376,
+      "marginal": false,
+      "maximum_mode": 3,
+      "ratio_over_weak_prediction": 0.9800189218813617,
+      "relative_change_from_previous_mode": 0.006425145137428745,
+      "resolved": true,
+      "reynolds": 0.5
+    },
+    {
+      "boundary_energy_fraction": 0.00014838218865281694,
+      "defect_sign_changes": 0,
+      "defect_to_viscous_palinstrophy_ratio": 0.020828270959643198,
+      "integrated_defect": 0.17606322970627497,
+      "marginal": false,
+      "maximum_mode": 3,
+      "ratio_over_weak_prediction": 0.9122485343075988,
+      "relative_change_from_previous_mode": 0.025647691765188715,
+      "resolved": true,
+      "reynolds": 1.0
+    },
+    {
+      "boundary_energy_fraction": 4.998810800272128e-05,
+      "defect_sign_changes": 0,
+      "defect_to_viscous_palinstrophy_ratio": 0.06740186866024606,
+      "integrated_defect": 2.541124894717482,
+      "marginal": false,
+      "maximum_mode": 4,
+      "ratio_over_weak_prediction": 0.7380264066810956,
+      "relative_change_from_previous_mode": 0.004700281457015462,
+      "resolved": true,
+      "reynolds": 2.0
+    },
+    {
+      "boundary_energy_fraction": 0.0012431350005322208,
+      "defect_sign_changes": 0,
+      "defect_to_viscous_palinstrophy_ratio": 0.1601467626942079,
+      "integrated_defect": 29.74684347435372,
+      "marginal": true,
+      "maximum_mode": 4,
+      "ratio_over_weak_prediction": 0.4383874741240184,
+      "relative_change_from_previous_mode": 0.040593639254354885,
+      "resolved": false,
+      "reynolds": 4.0
+    }
+  ],
+  "raw_record_count": 41,
+  "resolved_positive_reynolds": [
+    0.25,
+    0.5,
+    1.0,
+    2.0
+  ],
+  "unique_record_count": 33,
+  "validation_checks_pass": true,
+  "weak_ratio_coefficient": 0.022831794380959964
+}

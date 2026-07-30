@@ -1,0 +1,358 @@
+{
+  "all_current_stage_checks_pass": true,
+  "artifacts": {
+    "Gaussian_assembly_checkpoint": {
+      "bytes": 17383670,
+      "path": "work/ns_collision/results/neutral_strip_h006_gaussian_assembly_interval_checkpoint_v1.npz",
+      "sha256": "60276e13ecb0de15099fea1bd7369597e589a9e95f0193bd133e48f0c0c4fcd5"
+    },
+    "Gaussian_assembly_result": {
+      "bytes": 5816,
+      "path": "work/ns_collision/results/neutral_strip_h006_gaussian_assembly_interval_audit_v1.json",
+      "sha256": "c4da43d4589edad78c1413c4b8914e59b31143487784623677f849061304ba3a"
+    },
+    "complete_assembly_result": {
+      "bytes": 4751,
+      "path": "work/ns_collision/results/neutral_strip_h006_positive_exponential_complete_assembly_v1.json",
+      "sha256": "5635769654495fec95ea2bc2106e262f39ea514b7bfca053d09bcab719d41a71"
+    },
+    "interval_matrix_archive": {
+      "bytes": 11441700,
+      "path": "work/ns_collision/results/neutral_strip_h006_positive_exponential_assembly_matrices_v1.npz",
+      "sha256": "c2ab8e9f0ffaa217abdc8b6c48dccc54e57e98daeb353f21df8be60906bd376b"
+    }
+  },
+  "certificate": {
+    "absolute_L_inverse_infinity_norm_upper_decimal": "25943.9086483624975342221925773839837471438921435837749798718",
+    "absolute_L_inverse_one_norm_upper_decimal": "12539.5556774071658512021556152204414642709938516437903582761",
+    "decimal_precision": 60,
+    "dimension": 64039,
+    "elapsed_seconds": 18.465881099924445,
+    "identity_factor_permutations": true,
+    "interval_family_inertia_certified": true,
+    "maximum_residual_entry_coordinate": [
+      63821,
+      63821
+    ],
+    "maximum_residual_entry_upper_decimal": "9.453109352527095233710448203E-13",
+    "method": "directed residual around exact binary64 L D L^T reference, with positive absolute-triangular inverse recurrences",
+    "minimum_absolute_reference_diagonal_decimal": "0.0008150796928894088466677203542",
+    "proof_basis": {
+      "conclusion": "Weyl sign preservation plus Sylvester inertia",
+      "interval_pivot_divisions_used": false,
+      "inverse_majorant": "|L^-1| <= (I - |L-I|)^-1 for unit lower triangular L",
+      "reference_congruence": "A = L (D + L^-1 (A - L D L^T) L^-T) L^T",
+      "sign_gate": "directed transformed-residual bound is strictly smaller than every absolute reference diagonal",
+      "spectral_bound": "||L^-1 E L^-T||_2 <= ||L^-1||_1 ||L^-1||_inf ||E||_inf for symmetric E"
+    },
+    "reference_D_sha256": "b49e713816953e6ca0fac37f8c20b2874a68b39aae0221bcb04b1e99c5dc5093",
+    "reference_L_nnz": 102583,
+    "reference_L_sha256": "2db82676cbd04c99bbed7e21d9b0e50d4ca0df0cf029b8554ce5e80fb7a4de7b",
+    "reference_diagonal_signs": {
+      "negative": 32491,
+      "positive": 31548,
+      "zero": 0
+    },
+    "reference_factor_sha256": "32ea6f48c751cbc7d9e3709068dffc209b7a5d733f7df5a50eb0c855f27a29fb",
+    "reference_product_lower_entry_count": 102602,
+    "residual_infinity_norm_upper_decimal": "1.12916954414389781875363678520284E-12",
+    "residual_lower_entry_count": 102602,
+    "transformed_bound_to_minimum_diagonal_upper_decimal": "0.450688666856612095107488918894266815751503815812788110930772",
+    "transformed_residual_two_norm_upper_decimal": "0.000367347180170224482038838582152368770817270511339806605268264",
+    "validated_assumptions": {
+      "input_center_exactly_symmetric": true,
+      "input_radius_exactly_symmetric_nonnegative": true,
+      "order_and_inverse_positions_form_a_permutation": true,
+      "positive_congruence_scale": true,
+      "reference_D_finite_and_nonzero": true,
+      "reference_L_unit_lower_triangular": true
+    }
+  },
+  "certification_flags": {
+    "continuum_spectrum_below_60_captured": false,
+    "full_123816_pivot_inertia_certified": false,
+    "independent_bounded_prefix_inertia_certified": true,
+    "navier_stokes_regularity_certified": false,
+    "standalone_bounded_prefix_inertia_certified": true
+  },
+  "checks": {
+    "argsort_permutation_semantics_verified": true,
+    "central_LDL_relation_verified": true,
+    "central_nnz_matches": true,
+    "dimension_matches": true,
+    "frozen_hashes_match": true,
+    "full_inertia_claim_remains_false": true,
+    "input_pattern_contained_in_factor_envelope": true,
+    "ordered_prefix_family_is_hash_bound": true,
+    "radius_nnz_matches": true,
+    "radius_pattern_contained_in_center": true,
+    "reference_factor_hashes_recorded": true,
+    "residual_certificate_decision_recorded": true,
+    "row_and_column_permutations_equal": true,
+    "source_artifacts_are_hash_bound": true,
+    "standalone_contract_hash_recorded": true,
+    "standalone_mode_uses_no_directed_audit": true
+  },
+  "directed_LDL_dependency": {
+    "audit_loaded": false,
+    "required": false,
+    "sign_comparison_used_for_certification": false
+  },
+  "kind": "hypercircle-standalone-congruence-residual-inertia",
+  "next_required_step": "Replay this exact standalone contract at higher Decimal precision and require all upper bounds to nest.",
+  "preparation": {
+    "central_LDL_relation_relative_infinity_residual": 6.559176562535337e-13,
+    "factor_L_nnz": 2815586,
+    "factor_U_nnz": 2815008,
+    "factor_pattern_diagnostics": {
+      "L_entries_missing_from_U_transpose": 4502,
+      "U_transpose_entries_missing_from_L": 3924,
+      "factor_structures_are_transposes": false,
+      "numerical_factor_pattern_is_not_used_for_symbolic_certification": true,
+      "symmetric_factor_envelope_nnz": 2819510,
+      "symmetric_factor_envelope_sha256": "38b5db08bce2db7b60ab260b183a89d1d4f66f28aa4ce5f5e40605cbad218c87"
+    },
+    "first_input_graph_dependent_pivot": 1738,
+    "hashes": {
+      "U_diagonal_sha256": "c3cf0559f421039b208855c6ba2a3bab9d887d4a8459ffc71c76b381bdfbf140",
+      "factor_pattern_sha256": "dc941205f68286d3f318a58670fd0ddf14bf63afdaf48202dcc9e0291238103b",
+      "order_sha256": "5f8adf72fa6fe8e3ea62d716c6a2f34df7252fa0a45bd5cafb55fbf7001d5f13",
+      "raw_permutation_sha256": "fc613374bffd7bba84293e3c302e56d0ef945a0530443b04dde5ba079adb36db",
+      "scale_sha256": "bef73a763a5ee24b85651a3c761b940b0fde2f8e04294a7d7e9b0c085c7ca9c2"
+    },
+    "initial_input_graph_independent_pivot_count": 1738,
+    "input_pattern_entries_missing_from_factor_envelope": 0,
+    "matrix_inventory": {
+      "Gaussian_stiffness": {
+        "contract": {
+          "algorithm_version": 2,
+          "area_degree": 22,
+          "cross_check_order": 24,
+          "cross_check_stride": 257,
+          "inner_count": 112,
+          "mass_degree": 20,
+          "mesh_fingerprint_sha256": "174d325adf2b1a7f6c70a023982060bc492dbb279d267e4cdc2a2a85e9270835",
+          "quadrature_order": 12,
+          "selected_triangle_count": 30954,
+          "spacing": 0.06,
+          "state_count": 15211,
+          "total_triangle_count": 30954
+        },
+        "contribution_count": 270960,
+        "fingerprint_sha256": "de55b4a7910cec423f36b8760fc164e6154c7271227f739c84b0516d0fdf268f",
+        "maximum_contribution_count": 9,
+        "nnz": 105129
+      },
+      "beta": "0.045",
+      "beta_squared": "0.002025",
+      "beta_squared_binary_interval": [
+        0.0020249999999999995,
+        0.0020250000000000008
+      ],
+      "central_exactly_symmetric": true,
+      "central_infinity_norm": 9679.63547316441,
+      "central_nnz": 798384,
+      "central_storage_bytes": 10075876,
+      "dimension": 123816,
+      "edge_count": 46697,
+      "mesh_fingerprint_sha256": "174d325adf2b1a7f6c70a023982060bc492dbb279d267e4cdc2a2a85e9270835",
+      "radius_exactly_symmetric": true,
+      "radius_infinity_norm": 9.76561535541853e-10,
+      "radius_maximum_entry": 5.026177183155168e-10,
+      "radius_nnz": 612660,
+      "radius_storage_bytes": 7847188,
+      "state_count": 15211,
+      "triangle_count": 30954
+    },
+    "permutation_semantics_relative_infinity_residual": 9.93186068259115e-12,
+    "preparation_checks": {
+      "argsort_permutation_semantics_verified": true,
+      "central_LDL_relation_verified": true,
+      "central_nnz_matches": true,
+      "dimension_matches": true,
+      "frozen_hashes_match": true,
+      "input_pattern_contained_in_factor_envelope": true,
+      "radius_nnz_matches": true,
+      "radius_pattern_contained_in_center": true,
+      "row_and_column_permutations_equal": true
+    },
+    "radius_pattern_entries_missing_from_center": 0,
+    "scale_inventory": {
+      "history": [
+        {
+          "iteration": 1,
+          "maximum_row_maximum": 5922.310557222585,
+          "minimum_row_maximum": 0.0005611266450177155,
+          "row_maximum_ratio": 10554320.686438994
+        },
+        {
+          "iteration": 2,
+          "maximum_row_maximum": 1.0000000000000004,
+          "minimum_row_maximum": 0.01759276605876883,
+          "row_maximum_ratio": 56.84154479514417
+        },
+        {
+          "iteration": 3,
+          "maximum_row_maximum": 1.0000000000000007,
+          "minimum_row_maximum": 0.13263772487029787,
+          "row_maximum_ratio": 7.539333179741044
+        },
+        {
+          "iteration": 4,
+          "maximum_row_maximum": 1.0000000000000007,
+          "minimum_row_maximum": 0.3641946249882031,
+          "row_maximum_ratio": 2.7457846200569063
+        },
+        {
+          "iteration": 5,
+          "maximum_row_maximum": 1.0000000000000007,
+          "minimum_row_maximum": 0.6034853974937613,
+          "row_maximum_ratio": 1.6570409228672984
+        },
+        {
+          "iteration": 6,
+          "maximum_row_maximum": 1.0000000000000007,
+          "minimum_row_maximum": 0.7768432258144247,
+          "row_maximum_ratio": 1.2872610158267437
+        },
+        {
+          "iteration": 7,
+          "maximum_row_maximum": 1.0000000000000007,
+          "minimum_row_maximum": 0.8813871032721233,
+          "row_maximum_ratio": 1.1345752578946646
+        },
+        {
+          "iteration": 8,
+          "maximum_row_maximum": 1.0000000000000007,
+          "minimum_row_maximum": 0.9388221893799292,
+          "row_maximum_ratio": 1.0651644276329664
+        },
+        {
+          "iteration": 9,
+          "maximum_row_maximum": 1.0000000000000007,
+          "minimum_row_maximum": 0.9689283716456697,
+          "row_maximum_ratio": 1.032068034401302
+        },
+        {
+          "iteration": 10,
+          "maximum_row_maximum": 1.0000000000000007,
+          "minimum_row_maximum": 0.9843415929674361,
+          "row_maximum_ratio": 1.0159074930333485
+        }
+      ],
+      "iterations": 10,
+      "maximum_final_row_maximum": 1.0000000000000007,
+      "maximum_scale": 931.1772607173484,
+      "minimum_final_row_maximum": 0.9921399059444368,
+      "minimum_scale": 0.012994345544209014,
+      "scale_ratio": 71660.18923764357,
+      "scale_sha256": "bef73a763a5ee24b85651a3c761b940b0fde2f8e04294a7d7e9b0c085c7ca9c2"
+    }
+  },
+  "runtime": {
+    "baseline_cpu_mean_percent": 55.58,
+    "baseline_cpu_samples_percent": [
+      41.9,
+      47.7,
+      80.1,
+      66.1,
+      42.1
+    ],
+    "below_normal_priority_set": true,
+    "periodic_cpu_samples_percent": [
+      25.5,
+      22.2,
+      19.5,
+      37.6,
+      48.6,
+      39.8,
+      17.7,
+      36.5,
+      33.3,
+      23.2,
+      20.8,
+      17.6,
+      24.9,
+      54.7,
+      54.7,
+      52.8,
+      51.0,
+      44.2,
+      46.7,
+      45.6,
+      54.4,
+      39.4,
+      39.6,
+      47.9,
+      49.5,
+      60.1,
+      48.2,
+      42.5,
+      44.8,
+      41.5,
+      36.8,
+      46.4,
+      53.4,
+      77.6,
+      73.1,
+      36.6,
+      42.4,
+      43.8,
+      31.7,
+      33.0,
+      46.2,
+      52.6,
+      63.5,
+      43.8
+    ]
+  },
+  "scope": "Hash-bound congruence-residual certificate for exactly the reported leading prefix. It uses no directed-LDL result and certifies no later pivot, full inertia, continuum transfer, or Navier-Stokes statement.",
+  "standalone_contract": {
+    "contract": {
+      "algorithm_version": 1,
+      "frozen_preparation_hashes": {
+        "U_diagonal_sha256": "c3cf0559f421039b208855c6ba2a3bab9d887d4a8459ffc71c76b381bdfbf140",
+        "factor_pattern_sha256": "dc941205f68286d3f318a58670fd0ddf14bf63afdaf48202dcc9e0291238103b",
+        "order_sha256": "5f8adf72fa6fe8e3ea62d716c6a2f34df7252fa0a45bd5cafb55fbf7001d5f13",
+        "raw_permutation_sha256": "fc613374bffd7bba84293e3c302e56d0ef945a0530443b04dde5ba079adb36db",
+        "scale_sha256": "bef73a763a5ee24b85651a3c761b940b0fde2f8e04294a7d7e9b0c085c7ca9c2"
+      },
+      "full_dimension": 123816,
+      "interval_family": "stored exact binary64 center plus/minus nonnegative radius, followed by the frozen positive Ruiz diagonal congruence",
+      "maximum_pivots": 64039,
+      "ordered_center_prefix_nnz": 106891,
+      "ordered_center_prefix_sha256": "48896cce01b639362ed0fa2e4f8b33b3cd7a97fdef5ad3ee5a6f0ac74804535c",
+      "ordered_original_indices_sha256": "fd20cde82123a366ac7ae80e6ab2d70092b776125fe3f0e4b23b82ad460dcb49",
+      "ordered_positive_scale_sha256": "5c974ae1f553b353315b3af0cc0763d1d8c8d087f05b30eba7d82a883ee39572",
+      "ordered_radius_prefix_nnz": 99955,
+      "ordered_radius_prefix_sha256": "6ff20fd6fd7f6d603391305e1376b992175658e52da92bb893824dddd79013ec",
+      "reference_rule": "natural-order zero-threshold SuperLU of the scaled binary64 central prefix, interpreted exactly as L D L^T",
+      "source_artifacts": {
+        "Gaussian_assembly_checkpoint": {
+          "bytes": 17383670,
+          "path": "work/ns_collision/results/neutral_strip_h006_gaussian_assembly_interval_checkpoint_v1.npz",
+          "sha256": "60276e13ecb0de15099fea1bd7369597e589a9e95f0193bd133e48f0c0c4fcd5"
+        },
+        "Gaussian_assembly_result": {
+          "bytes": 5816,
+          "path": "work/ns_collision/results/neutral_strip_h006_gaussian_assembly_interval_audit_v1.json",
+          "sha256": "c4da43d4589edad78c1413c4b8914e59b31143487784623677f849061304ba3a"
+        },
+        "complete_assembly_result": {
+          "bytes": 4751,
+          "path": "work/ns_collision/results/neutral_strip_h006_positive_exponential_complete_assembly_v1.json",
+          "sha256": "5635769654495fec95ea2bc2106e262f39ea514b7bfca053d09bcab719d41a71"
+        },
+        "interval_matrix_archive": {
+          "bytes": 11441700,
+          "path": "work/ns_collision/results/neutral_strip_h006_positive_exponential_assembly_matrices_v1.npz",
+          "sha256": "c2ab8e9f0ffaa217abdc8b6c48dccc54e57e98daeb353f21df8be60906bd376b"
+        }
+      },
+      "validation_mode": "standalone_hash_bound"
+    },
+    "contract_sha256": "d3a44126895de026efaf34072da37f44da871a11f99e9c2906a830ade2c19a7c"
+  },
+  "status": "standalone_prefix_inertia_certified",
+  "validation_mode": "standalone_hash_bound"
+}

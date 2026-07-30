@@ -1,0 +1,164 @@
+{
+  "all_current_stage_checks_pass": true,
+  "artifacts": {
+    "prior_componentwise_audit": {
+      "path": "work/ns_collision/results/neutral_strip_h006_hypercircle_componentwise_state_region64064_audit_v1.json",
+      "sha256": "7600950181f4e6f4f1383e4fc50326c20053294ee9a00c614cff6610ff728e91"
+    },
+    "prior_componentwise_crosscheck": {
+      "path": "work/ns_collision/results/neutral_strip_h006_hypercircle_standalone_componentwise_residual_precision_crosscheck64064_v1.json",
+      "sha256": "2981d9463f030e94765f50f5785b7c3484106b5810af319f1c036883beab96c4"
+    },
+    "prior_componentwise_precision_100": {
+      "path": "work/ns_collision/results/neutral_strip_h006_hypercircle_standalone_componentwise_residual64064_p100_v1.json",
+      "sha256": "14cd3b418e03f524e0a42063f85a8a259482dc447521f4c03a44a5c2ff6d22d1"
+    },
+    "symbolic_transition_map": {
+      "path": "work/ns_collision/results/neutral_strip_h006_hypercircle_symbolic_transition_map123816_v1.json",
+      "sha256": "f38096e4867f1214cdaeaaf05d5e320b4f97d9d3fc739af221bb2993d00d7aa6"
+    },
+    "target_componentwise_crosscheck": {
+      "path": "work/ns_collision/results/neutral_strip_h006_hypercircle_standalone_componentwise_residual_precision_crosscheck64128_v1.json",
+      "sha256": "78d5998ca91ed48e5483a0d74b4b211d06805148d5c42d2dd208b472118730f6"
+    },
+    "target_componentwise_precision_100": {
+      "path": "work/ns_collision/results/neutral_strip_h006_hypercircle_standalone_componentwise_residual64128_p100_v1.json",
+      "sha256": "a5f8d0e6fdfd689b56cfb483185d4fdb2d297c7171af0f984103f287e23f80a1"
+    },
+    "target_componentwise_precision_60": {
+      "path": "work/ns_collision/results/neutral_strip_h006_hypercircle_standalone_componentwise_residual64128_v1.json",
+      "sha256": "6a01d7d124a0b011667878f2a7c8726033b1aad9d22141c04364f2b61e07433f"
+    },
+    "target_separated_precision_100": {
+      "path": "work/ns_collision/results/neutral_strip_h006_hypercircle_standalone_residual64128_p100_v1.json",
+      "sha256": "e08a4bc2f98b615b0ab9d8b82f7188fc145e581cdbfdbe22ea9742f33aadee11"
+    },
+    "target_separated_precision_60": {
+      "path": "work/ns_collision/results/neutral_strip_h006_hypercircle_standalone_residual64128_v1.json",
+      "sha256": "557e2ad62698db93951568b289c8d675e541b46f573793d869aba2f00602eaff"
+    }
+  },
+  "certificate": {
+    "bound_to_minimum_diagonal_ratio_upper_decimal": "0.2703660803399452631695734468829414885268421861045665361754415560298095070065403761353971823917966726",
+    "componentwise_bound_growth_from_64064": "1",
+    "componentwise_bound_upper_decimal": "0.0002203699017311958240943378080037968377590791457944902975237838204360380894510129361261432258894975246",
+    "controlling_pivots": {
+      "componentwise_maximum_row_sum": 64040,
+      "q_transpose_one_maximum": 62917,
+      "residual_propagation_maximum": 32273
+    },
+    "improvement_over_separated_bound_lower_decimal": "353.4078933534263129895800723921100661505304704104024761830834425418381987375240140552182487060448195",
+    "minimum_absolute_reference_diagonal_decimal": "0.0008150796928894088466677203542",
+    "minimum_absolute_reference_diagonal_index": 63629,
+    "safety_factor_lower_decimal": "3.698688824954107608538081082842701070491221219993072613915558518646028297933196925988268336422895284"
+  },
+  "certification_flags": {
+    "continuum_spectrum_below_60_captured": false,
+    "full_123816_pivot_inertia_certified": false,
+    "navier_stokes_regularity_certified": false,
+    "standalone_componentwise_64128_inertia_certified": true,
+    "standalone_componentwise_64256_inertia_certified": false,
+    "weighted_global_Ritz_projection_constant_certified": false
+  },
+  "checks": {
+    "all_target_constructions_validate": true,
+    "both_factors_use_identity_permutations": true,
+    "componentwise_control_metrics_are_exactly_flat": true,
+    "componentwise_results_bind_the_separated_replays": true,
+    "componentwise_target_closes_at_both_precisions": true,
+    "extension_adds_exactly_64_negative_pivots": true,
+    "full_and_continuum_claims_remain_false": true,
+    "leading_reference_factor_is_bitwise_unchanged": true,
+    "no_symbolic_transition_is_crossed": true,
+    "ordered_source_prefixes_are_bitwise_nested": true,
+    "prior_componentwise_checkpoint_passes": true,
+    "reconstructed_factor_hashes_match": true,
+    "reconstructed_signs_match_certificates": true,
+    "separated_target_fails_only_the_closure_gate": true,
+    "source_and_preparation_provenance_is_constant": true,
+    "stored_contracts_reconstruct_exactly": true,
+    "target_precision_crosscheck_passes": true
+  },
+  "extension": {
+    "added_pivot_count": 64,
+    "added_reference_signs": {
+      "negative": 64,
+      "positive": 0,
+      "zero": 0
+    },
+    "incremental_block_profile": {
+      "edge_metric": {
+        "first_pivot": 64064,
+        "last_pivot": 64127,
+        "minimum_absolute_reference_diagonal_decimal": "3.023306950212673704925236962",
+        "pivot_count": 64,
+        "signs": {
+          "negative": 64,
+          "positive": 0,
+          "zero": 0
+        }
+      },
+      "source_triangle": {
+        "first_pivot": null,
+        "last_pivot": null,
+        "minimum_absolute_reference_diagonal_decimal": null,
+        "pivot_count": 0,
+        "signs": {
+          "negative": 0,
+          "positive": 0,
+          "zero": 0
+        }
+      },
+      "state": {
+        "first_pivot": null,
+        "last_pivot": null,
+        "minimum_absolute_reference_diagonal_decimal": null,
+        "pivot_count": 0,
+        "signs": {
+          "negative": 0,
+          "positive": 0,
+          "zero": 0
+        }
+      },
+      "triangle_constraint": {
+        "first_pivot": null,
+        "last_pivot": null,
+        "minimum_absolute_reference_diagonal_decimal": null,
+        "pivot_count": 0,
+        "signs": {
+          "negative": 0,
+          "positive": 0,
+          "zero": 0
+        }
+      }
+    },
+    "last_certified_pivot": 64127,
+    "ordered_center_nnz_growth": 320,
+    "ordered_radius_nnz_growth": 64,
+    "prior_maximum_pivots": 64064,
+    "reference_L_nnz_growth": 192,
+    "reference_signs": {
+      "negative": 32564,
+      "positive": 31564,
+      "zero": 0
+    },
+    "target_maximum_pivots": 64128
+  },
+  "kind": "hypercircle-standalone-componentwise-growth64128-audit",
+  "next_boundary": {
+    "crosses_new_symbolic_transition": false,
+    "full_run_admitted": false,
+    "increment_from_current": 128,
+    "next_symbolic_transition_pivot": 76921,
+    "recommended_bounded_pivot_count": 64256,
+    "selection_rule": "Double the last local increment after an exact precision-100 control-metric plateau, while remaining strictly before the next symbolic transition."
+  },
+  "next_required_step": "Test exactly 64,256 pivots and no farther: first produce the separated precision-60 reference, then run the componentwise precision-60 certificate. Replay both at precision 100 only if the componentwise ratio remains strictly below one.",
+  "runtime": {
+    "baseline_cpu_mean_percent": null,
+    "baseline_cpu_samples_percent": [],
+    "below_normal_priority_set": true
+  },
+  "scope": "Audit of the hash-bound componentwise extension from 64,064 through 64,128 pivots. It certifies no later prefix, full inertia, continuum transfer, or Navier-Stokes regularity statement.",
+  "status": "componentwise_prefix64128_certified"
+}

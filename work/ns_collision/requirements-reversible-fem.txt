@@ -1,0 +1,2 @@
+triangle==20250106
+mpmath==1.3.0

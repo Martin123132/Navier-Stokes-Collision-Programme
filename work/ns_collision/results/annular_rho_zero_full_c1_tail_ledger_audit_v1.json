@@ -1,0 +1,1806 @@
+{
+  "algorithm_revision": "annular-rho-zero-full-c1-tail-ledger-v1",
+  "all_positive_checks_pass": true,
+  "atomic_contraction_bound": {
+    "all_checks_pass": true,
+    "dependent_high_coefficient": "1/(2N)",
+    "dependent_high_first_difference": "4/N^2",
+    "kernel_bound": "400N^2",
+    "kernel_first_difference_bound": "280N",
+    "other_three_high_coefficients": "(1/(2N))^3=1/(8N^3)",
+    "per_atomic_contraction_bound": "|atomic tail contraction|<=375840N^6",
+    "per_atomic_contraction_constant": 375840,
+    "per_q_monomial_calculation": "8*(1/8)*(4*400+(1/2)*280)=1740",
+    "per_q_monomial_constant": 1740,
+    "q_monomial_count_bound": 216,
+    "resonant_tuple_count": "Choose three of four packet waves; the fourth is fixed. Hence at most (2N^3)^3=8N^9 tuples.",
+    "tuple_count_constant": 8,
+    "vertex_residual_l1_times_low_l1": "(1/2)*2=1"
+  },
+  "certification_flags": {
+    "Navier_Stokes_global_regularity_proved": false,
+    "continuum_limit_formula_proved": true,
+    "continuum_limit_negative_certified": false,
+    "continuum_limit_nonzero_certified": false,
+    "critical_L3_controlled": false,
+    "finite_time_blowup_proved": false,
+    "four_high_N9_coefficient_certified": false,
+    "fourteen_atomic_tail_rows_checked": true,
+    "full_c1_over_N7_convergence_proved": true,
+    "full_c1_remainder_ledger_complete": true,
+    "outer_pressure_projector_held_fixed_in_every_tail_row": true,
+    "single_zero_extended_packet_difference_used": true,
+    "ten_omitted_form_permutation_groups_expanded": true,
+    "uniform_second_jet_Taylor_bound_proved": false,
+    "zero_extension_C2_or_higher_used": false
+  },
+  "coefficient_expansion_certificate": {
+    "all_checks_pass": true,
+    "computed_blocks": {
+      "6S[u,E,E;Phi]": {
+        "S[H,V,W;Phi]": -24,
+        "S[U,V,V;Phi]": -6
+      },
+      "6S[u,u,B(u,E);Phi]": {
+        "S[G,H,U;Phi]": -12,
+        "S[G1,H,H;Phi]": 6
+      },
+      "6S[u,u,E;A]": {
+        "S[H,H,V;AU]": -6,
+        "S[H,H,W;AH]": -12,
+        "S[H,U,V;AH]": -12
+      },
+      "S[u,u,u;lambda2]": {
+        "S[H,H,H;L1]": 1,
+        "S[H,H,U;L0]": -3
+      }
+    },
+    "expected_blocks": {
+      "6S[u,E,E;Phi]": {
+        "S[H,V,W;Phi]": -24,
+        "S[U,V,V;Phi]": -6
+      },
+      "6S[u,u,B(u,E);Phi]": {
+        "S[G,H,U;Phi]": -12,
+        "S[G1,H,H;Phi]": 6
+      },
+      "6S[u,u,E;A]": {
+        "S[H,H,V;AU]": -6,
+        "S[H,H,W;AH]": -12,
+        "S[H,U,V;AH]": -12
+      },
+      "S[u,u,u;lambda2]": {
+        "S[H,H,H;L1]": 1,
+        "S[H,H,U;L0]": -3
+      }
+    },
+    "notation": {
+      "AH": "C(H,Phi)",
+      "AU": "C(U,Phi)",
+      "G": "B(H,V)",
+      "G1": "-B(U,V)-2B(H,W)",
+      "L0": "C(V,Phi)+C(H,AH)",
+      "L1": "-2C(W,Phi)-C(U,AH)-C(H,AU)",
+      "V": "B(H,H)",
+      "W": "B(H,U)"
+    }
+  },
+  "finite_decomposition_replay": {
+    "all_checks_pass": true,
+    "diagnostic_only": "Finite tail sizes corroborate the exact decomposition but are not used to choose or prove the analytic constant.",
+    "maximum_replay_residual": 1.3089529460330596e-13,
+    "rows": [
+      {
+        "reconstructed_full_tail": -0.07132233737562874,
+        "replay_residual": 0.0,
+        "seven_nonleading_form_sum": -0.07306172338560418,
+        "size": 5,
+        "stored_full_minus_D_N": -0.07132233737562874,
+        "tail_over_N6": -4.564629592040239e-06,
+        "tail_over_N7": -9.129259184080478e-07,
+        "three_nonleading_permutation_sum": 0.0017393860099754466
+      },
+      {
+        "reconstructed_full_tail": -0.11554443251326854,
+        "replay_residual": 8.326672684688674e-17,
+        "seven_nonleading_form_sum": -0.11933973229624054,
+        "size": 7,
+        "stored_full_minus_D_N": -0.11554443251326862,
+        "tail_over_N6": -9.82111471523503e-07,
+        "tail_over_N7": -1.4030163878907188e-07,
+        "three_nonleading_permutation_sum": 0.0037952997829719948
+      },
+      {
+        "reconstructed_full_tail": -0.16877512079767604,
+        "replay_residual": 5.551115123125783e-17,
+        "seven_nonleading_form_sum": -0.17551526044832683,
+        "size": 9,
+        "stored_full_minus_D_N": -0.16877512079767598,
+        "tail_over_N6": -3.175801656207857e-07,
+        "tail_over_N7": -3.528668506897619e-08,
+        "three_nonleading_permutation_sum": 0.006740139650650789
+      },
+      {
+        "reconstructed_full_tail": -0.30228053807080757,
+        "replay_residual": 3.1086244689504383e-15,
+        "seven_nonleading_form_sum": -0.31765875332706317,
+        "size": 13,
+        "stored_full_minus_D_N": -0.3022805380708107,
+        "tail_over_N6": -6.262533654652809e-08,
+        "tail_over_N7": -4.81733358050216e-09,
+        "three_nonleading_permutation_sum": 0.0153782152562556
+      },
+      {
+        "reconstructed_full_tail": -0.47202816232625644,
+        "replay_residual": 3.985700658404312e-14,
+        "seven_nonleading_form_sum": -0.49967136947798274,
+        "size": 17,
+        "stored_full_minus_D_N": -0.4720281623262963,
+        "tail_over_N6": -1.955574574748171e-08,
+        "tail_over_N7": -1.150337985145983e-09,
+        "three_nonleading_permutation_sum": 0.0276432071517263
+      },
+      {
+        "reconstructed_full_tail": -0.6781334386052825,
+        "replay_residual": 1.787459069646502e-14,
+        "seven_nonleading_form_sum": -0.7216320170714247,
+        "size": 21,
+        "stored_full_minus_D_N": -0.6781334386053004,
+        "tail_over_N6": -7.906775200959601e-09,
+        "tail_over_N7": -3.765131048076e-10,
+        "three_nonleading_permutation_sum": 0.043498578466142135
+      },
+      {
+        "reconstructed_full_tail": -0.920647074896482,
+        "replay_residual": 1.3089529460330596e-13,
+        "seven_nonleading_form_sum": -0.9835732022062474,
+        "size": 25,
+        "stored_full_minus_D_N": -0.9206470748963511,
+        "tail_over_N6": -3.770970418775454e-09,
+        "tail_over_N7": -1.5083881675101817e-10,
+        "three_nonleading_permutation_sum": 0.06292612730976543
+      },
+      {
+        "reconstructed_full_tail": -1.1995935601452505,
+        "replay_residual": 8.060219158778636e-14,
+        "seven_nonleading_form_sum": -1.285510138649362,
+        "size": 29,
+        "stored_full_minus_D_N": -1.1995935601453311,
+        "tail_over_N6": -2.0167224750512616e-09,
+        "tail_over_N7": -6.954215431211248e-11,
+        "three_nonleading_permutation_sum": 0.08591657850411138
+      }
+    ],
+    "sizes": [
+      5,
+      7,
+      9,
+      13,
+      17,
+      21,
+      25,
+      29
+    ]
+  },
+  "full_limit_certificate": {
+    "all_checks_pass": true,
+    "combined_bound": "|c_1,N/N^7-L_EE|<=35578960/N for odd N>=128",
+    "combined_constant": 35578960,
+    "conclusion": "c_1,N/N^7 -> L_EE",
+    "continuum_sign_certified": false,
+    "predecessor_leading_bound": "|N^-7 D_N-L_EE|<=250000/N for odd N>=128"
+  },
+  "kind": "annular_rho_zero_full_c1_tail_ledger_audit",
+  "leading_exception_certificate": {
+    "all_checks_pass": true,
+    "false_generalization_guard": "The one-difference lemma is not asserted for a contraction with zero high leaves on the test side.",
+    "reason": "These are precisely the two contractions for which the vertex shift cannot be absorbed on the test side. Moving it would difference the bounded degree-zero pressure projector, which gives no carrier gain. They are therefore excluded from the tail lemma and handled by the continuum fixed-output gate.",
+    "rows": [
+      {
+        "classification": "retained_in_D_N",
+        "expression": "-2T(V,V,U;Phi)",
+        "outer_pressure_output": "bounded and changed by the vertex shift",
+        "test_side_high_leaf_count": 0
+      },
+      {
+        "classification": "retained_in_D_N",
+        "expression": "-4T(G,H,U;Phi)",
+        "outer_pressure_output": "bounded and changed by the vertex shift",
+        "test_side_high_leaf_count": 0
+      }
+    ]
+  },
+  "operator_lipschitz_certificate": {
+    "Euler_Lipschitz_derivation": {
+      "radial_extension_identity": "min(|r|,|s|)|r/|r|-s/|s||<=2|r-s|",
+      "resulting_constant": "1+3*2=7",
+      "unit_sphere_symbol_Lipschitz_bound": 3,
+      "unit_sphere_symbol_bound": 1
+    },
+    "Euler_global_Lipschitz_bound": "|b_r(x,y)-b_s(x,y)|<=7|r-s||x||y|",
+    "Euler_size_bound": "|b_r(x,y)|<=|r||x||y|",
+    "Euler_symbol": "b_r(x,y)=-(i/2)P_r[(r dot x)y+(r dot y)x], b_0=0",
+    "all_checks_pass": true,
+    "bounded_and_dyadic_output_conclusion": "No pressure-shell logarithm is needed. The only degree-zero pressure symbol is held fixed. Every shifted internal Euler symbol is the globally Lipschitz degree-one map b_r, including at r=0.",
+    "coordinate_expansion_count": 27,
+    "kernel_bound_constant": 400,
+    "kernel_first_difference_constant": 280,
+    "maximum_degree_one_factors": 2,
+    "maximum_high_degree": 2,
+    "maximum_intermediate_radius": "4*(4N)+|ell|+|q|<20N for N>=5",
+    "maximum_q_dependent_derivative_factors": 3,
+    "outer_pressure_handling": "The vertex difference is absorbed by a high leaf on the test side, so r is fixed and only ||Q_r||<=1 is used.",
+    "outer_pressure_symbol": "Q_r=r tensor r/|r|^2 for r!=0 and Q_0=0",
+    "q_monomial_count_bound": 216,
+    "q_or_high_expansion_count": 8,
+    "support_radius_constant": 20
+  },
+  "packet_first_difference_certificate": {
+    "all_checks_pass": true,
+    "boundary_reason": "At a packet face the sine factor itself is at most pi/N, so the same first-difference bound holds after zero extension.",
+    "certified_first_difference_bound": "|Delta_j[(-1)^sum(k) hhat_N(k)]|<=4/N^2",
+    "coefficient_bound": "|hhat_N(k)|<=1/(2N)",
+    "derived_first_difference_constant": 3.0707963267948966,
+    "four_high_resonance": "If four packet waves plus the low wave and a vertex mode sum to zero, exactly two packet waves have each carrier sign. Their four parity factors multiply to (-1)^(q1+q2+q3).",
+    "multiplier_derivative_bound": "|grad_k(P_k e3/|k|)|<=6/|k|^2<=3/(2N^2)",
+    "parity_gauge": "For odd N, alpha(k)=-(-1)^(k1+k2+k3) on both signs of the packet.",
+    "positive_support": "k=(2N+a-1,b-(N+1)/2,c-(N+1)/2), 1<=a,b,c<=N",
+    "reality_extension": "K_N=K_N^+ union (-K_N^+)",
+    "sine_first_difference_bound": "|Delta_j product sin(pi n_i/(N+1))|<=pi/N",
+    "support_cardinality": "2N^3",
+    "support_radius": "|k|<sqrt(19/2)N<4N",
+    "zero_extension_regularities_not_used": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "zero_extension_regularities_used": [
+      "bounded",
+      "Lipschitz"
+    ]
+  },
+  "prerequisite_audit": {
+    "all_checks_pass": true,
+    "rows": [
+      {
+        "actual_sha256": "ef89d9b9f39ace8b886a4d40bdd7fed6aa908ffcd2ea2e41ca179a3bb82705c7",
+        "all_positive_checks_pass": true,
+        "expected_sha256": "ef89d9b9f39ace8b886a4d40bdd7fed6aa908ffcd2ea2e41ca179a3bb82705c7",
+        "matches": true,
+        "path": "work/ns_collision/results/annular_rho_zero_inviscid_second_jet_branch_audit_v1.json"
+      },
+      {
+        "actual_sha256": "6b29ef28146f86d87ba4eeb22de596083d8b18fa451394b5f3ade69b1353d072",
+        "all_positive_checks_pass": true,
+        "expected_sha256": "6b29ef28146f86d87ba4eeb22de596083d8b18fa451394b5f3ade69b1353d072",
+        "matches": true,
+        "path": "work/ns_collision/results/annular_rho_zero_fixed_output_continuum_gate_audit_v1.json"
+      }
+    ]
+  },
+  "route_decision": {
+    "continuum_interval_sign_gate_open": true,
+    "next_action": "Construct a deterministic interval enclosure for the cancelling continuum pieces L_VV and L_GH. Do not use inverse-N fits as a sign certificate. Only after the joint interval excludes zero may the optimized N^9 coefficient and parabolic-window obligations be resumed.",
+    "tail_gate_closed": true
+  },
+  "scope": "A carrier-uniform Fourier proof for the complete difference between the four-high amplitude-one coefficient c_1,N and the two fixed-output contractions D_N. It proves full c_1,N/N^7 convergence to the predecessor functional L_EE. It does not certify the sign of L_EE, an optimized N^9 law, a parabolic Taylor window, blowup, or global regularity.",
+  "status": "annular_full_c1_over_N7_convergence_certified_sign_pending",
+  "tail_theorem": {
+    "D_N": "-2T(V,V,U;Phi)-4T(G,H,U;Phi)",
+    "all_checks_pass": true,
+    "checkpoint_inequality": "|c_1,N-D_N|<=35328960N^6 log(2+N)",
+    "constant_is_explicit": true,
+    "inequality": "|c_1,N-D_N|<=35328960N^6",
+    "pressure_shell_logarithm_needed": false,
+    "valid_for": "odd N>=5"
+  },
+  "termwise_tail_ledger": {
+    "absolute_atomic_coefficient_mass": 94,
+    "all_checks_pass": true,
+    "certified_tail_bound": "|c_1,N-D_N|<=35328960N^6 for odd N>=5",
+    "checkpoint_target_implied": "|c_1,N-D_N|<=35328960N^6 log(2+N)",
+    "full_tail_constant": 35328960,
+    "maximum_actual_coordinate_monomial_mass": 48,
+    "nonleading_permutation_count": 3,
+    "per_atomic_contraction_constant": 375840,
+    "row_count": 14,
+    "rows": [
+      {
+        "absolute_coefficient": 4,
+        "bound_constant": 1503360,
+        "category": "nonleading_permutation",
+        "coefficient": -4,
+        "expression": "-4T(V,U,V;Phi)",
+        "high_velocity_leaf_count": 4,
+        "low_shear_leaf_count": 1,
+        "maximum_bounded_frequency_factors": 0,
+        "maximum_coordinate_monomial_mass": 3,
+        "maximum_high_frequency_degree": 2,
+        "maximum_q_polynomial_degree": 1,
+        "minimum_test_side_high_leaf_count": 2,
+        "one_difference_eligible": true,
+        "outer_pressure_output_held_fixed": true,
+        "structural_permutation_profiles": [
+          {
+            "coordinate_monomial_mass": 3,
+            "kernel_terms": [
+              [
+                1,
+                2,
+                0
+              ]
+            ],
+            "maximum_bounded_frequency_factors": 0,
+            "maximum_high_degree": 2,
+            "maximum_q_degree": 1,
+            "pressure_pair": [
+              "V",
+              "U"
+            ],
+            "test_scalar": "Phi",
+            "test_side_high_leaves": 2,
+            "test_vector": "V",
+            "total_high_leaves": 4,
+            "total_low_leaves": 1
+          }
+        ]
+      },
+      {
+        "absolute_coefficient": 4,
+        "bound_constant": 1503360,
+        "category": "nonleading_permutation",
+        "coefficient": -4,
+        "expression": "-4T(G,U,H;Phi)",
+        "high_velocity_leaf_count": 4,
+        "low_shear_leaf_count": 1,
+        "maximum_bounded_frequency_factors": 0,
+        "maximum_coordinate_monomial_mass": 3,
+        "maximum_high_frequency_degree": 2,
+        "maximum_q_polynomial_degree": 1,
+        "minimum_test_side_high_leaf_count": 1,
+        "one_difference_eligible": true,
+        "outer_pressure_output_held_fixed": true,
+        "structural_permutation_profiles": [
+          {
+            "coordinate_monomial_mass": 3,
+            "kernel_terms": [
+              [
+                1,
+                2,
+                0
+              ]
+            ],
+            "maximum_bounded_frequency_factors": 0,
+            "maximum_high_degree": 2,
+            "maximum_q_degree": 1,
+            "pressure_pair": [
+              "G",
+              "U"
+            ],
+            "test_scalar": "Phi",
+            "test_side_high_leaves": 1,
+            "test_vector": "H",
+            "total_high_leaves": 4,
+            "total_low_leaves": 1
+          }
+        ]
+      },
+      {
+        "absolute_coefficient": 4,
+        "bound_constant": 1503360,
+        "category": "nonleading_permutation",
+        "coefficient": -4,
+        "expression": "-4T(H,U,G;Phi)",
+        "high_velocity_leaf_count": 4,
+        "low_shear_leaf_count": 1,
+        "maximum_bounded_frequency_factors": 0,
+        "maximum_coordinate_monomial_mass": 3,
+        "maximum_high_frequency_degree": 2,
+        "maximum_q_polynomial_degree": 1,
+        "minimum_test_side_high_leaf_count": 3,
+        "one_difference_eligible": true,
+        "outer_pressure_output_held_fixed": true,
+        "structural_permutation_profiles": [
+          {
+            "coordinate_monomial_mass": 3,
+            "kernel_terms": [
+              [
+                1,
+                2,
+                0
+              ]
+            ],
+            "maximum_bounded_frequency_factors": 0,
+            "maximum_high_degree": 2,
+            "maximum_q_degree": 1,
+            "pressure_pair": [
+              "H",
+              "U"
+            ],
+            "test_scalar": "Phi",
+            "test_side_high_leaves": 3,
+            "test_vector": "G",
+            "total_high_leaves": 4,
+            "total_low_leaves": 1
+          }
+        ]
+      },
+      {
+        "absolute_coefficient": 24,
+        "bound_constant": 9020160,
+        "category": "nonleading_form",
+        "coefficient": -24,
+        "expression": "-24S(V,W,H;Phi)",
+        "high_velocity_leaf_count": 4,
+        "low_shear_leaf_count": 1,
+        "maximum_bounded_frequency_factors": 0,
+        "maximum_coordinate_monomial_mass": 3,
+        "maximum_high_frequency_degree": 2,
+        "maximum_q_polynomial_degree": 1,
+        "minimum_test_side_high_leaf_count": 1,
+        "one_difference_eligible": true,
+        "outer_pressure_output_held_fixed": true,
+        "structural_permutation_profiles": [
+          {
+            "coordinate_monomial_mass": 3,
+            "kernel_terms": [
+              [
+                1,
+                2,
+                0
+              ]
+            ],
+            "maximum_bounded_frequency_factors": 0,
+            "maximum_high_degree": 2,
+            "maximum_q_degree": 1,
+            "pressure_pair": [
+              "V",
+              "W"
+            ],
+            "test_scalar": "Phi",
+            "test_side_high_leaves": 1,
+            "test_vector": "H",
+            "total_high_leaves": 4,
+            "total_low_leaves": 1
+          },
+          {
+            "coordinate_monomial_mass": 3,
+            "kernel_terms": [
+              [
+                1,
+                2,
+                0
+              ]
+            ],
+            "maximum_bounded_frequency_factors": 0,
+            "maximum_high_degree": 2,
+            "maximum_q_degree": 1,
+            "pressure_pair": [
+              "V",
+              "H"
+            ],
+            "test_scalar": "Phi",
+            "test_side_high_leaves": 1,
+            "test_vector": "W",
+            "total_high_leaves": 4,
+            "total_low_leaves": 1
+          },
+          {
+            "coordinate_monomial_mass": 3,
+            "kernel_terms": [
+              [
+                1,
+                2,
+                0
+              ]
+            ],
+            "maximum_bounded_frequency_factors": 0,
+            "maximum_high_degree": 2,
+            "maximum_q_degree": 1,
+            "pressure_pair": [
+              "W",
+              "H"
+            ],
+            "test_scalar": "Phi",
+            "test_side_high_leaves": 2,
+            "test_vector": "V",
+            "total_high_leaves": 4,
+            "total_low_leaves": 1
+          }
+        ]
+      },
+      {
+        "absolute_coefficient": 6,
+        "bound_constant": 2255040,
+        "category": "nonleading_form",
+        "coefficient": -6,
+        "expression": "-6S(V,H,H;AU)",
+        "high_velocity_leaf_count": 4,
+        "low_shear_leaf_count": 1,
+        "maximum_bounded_frequency_factors": 1,
+        "maximum_coordinate_monomial_mass": 12,
+        "maximum_high_frequency_degree": 1,
+        "maximum_q_polynomial_degree": 2,
+        "minimum_test_side_high_leaf_count": 1,
+        "one_difference_eligible": true,
+        "outer_pressure_output_held_fixed": true,
+        "structural_permutation_profiles": [
+          {
+            "coordinate_monomial_mass": 12,
+            "kernel_terms": [
+              [
+                2,
+                1,
+                0
+              ],
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "maximum_bounded_frequency_factors": 1,
+            "maximum_high_degree": 1,
+            "maximum_q_degree": 2,
+            "pressure_pair": [
+              "V",
+              "H"
+            ],
+            "test_scalar": "AU",
+            "test_side_high_leaves": 1,
+            "test_vector": "H",
+            "total_high_leaves": 4,
+            "total_low_leaves": 1
+          },
+          {
+            "coordinate_monomial_mass": 12,
+            "kernel_terms": [
+              [
+                2,
+                1,
+                0
+              ],
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "maximum_bounded_frequency_factors": 1,
+            "maximum_high_degree": 1,
+            "maximum_q_degree": 2,
+            "pressure_pair": [
+              "V",
+              "H"
+            ],
+            "test_scalar": "AU",
+            "test_side_high_leaves": 1,
+            "test_vector": "H",
+            "total_high_leaves": 4,
+            "total_low_leaves": 1
+          },
+          {
+            "coordinate_monomial_mass": 12,
+            "kernel_terms": [
+              [
+                2,
+                1,
+                0
+              ],
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "maximum_bounded_frequency_factors": 1,
+            "maximum_high_degree": 1,
+            "maximum_q_degree": 2,
+            "pressure_pair": [
+              "H",
+              "H"
+            ],
+            "test_scalar": "AU",
+            "test_side_high_leaves": 2,
+            "test_vector": "V",
+            "total_high_leaves": 4,
+            "total_low_leaves": 1
+          }
+        ]
+      },
+      {
+        "absolute_coefficient": 12,
+        "bound_constant": 4510080,
+        "category": "nonleading_form",
+        "coefficient": -12,
+        "expression": "-12S(V,H,U;AH)",
+        "high_velocity_leaf_count": 4,
+        "low_shear_leaf_count": 1,
+        "maximum_bounded_frequency_factors": 0,
+        "maximum_coordinate_monomial_mass": 12,
+        "maximum_high_frequency_degree": 2,
+        "maximum_q_polynomial_degree": 2,
+        "minimum_test_side_high_leaf_count": 1,
+        "one_difference_eligible": true,
+        "outer_pressure_output_held_fixed": true,
+        "structural_permutation_profiles": [
+          {
+            "coordinate_monomial_mass": 12,
+            "kernel_terms": [
+              [
+                2,
+                1,
+                0
+              ],
+              [
+                1,
+                2,
+                0
+              ]
+            ],
+            "maximum_bounded_frequency_factors": 0,
+            "maximum_high_degree": 2,
+            "maximum_q_degree": 2,
+            "pressure_pair": [
+              "V",
+              "H"
+            ],
+            "test_scalar": "AH",
+            "test_side_high_leaves": 1,
+            "test_vector": "U",
+            "total_high_leaves": 4,
+            "total_low_leaves": 1
+          },
+          {
+            "coordinate_monomial_mass": 12,
+            "kernel_terms": [
+              [
+                2,
+                1,
+                0
+              ],
+              [
+                1,
+                2,
+                0
+              ]
+            ],
+            "maximum_bounded_frequency_factors": 0,
+            "maximum_high_degree": 2,
+            "maximum_q_degree": 2,
+            "pressure_pair": [
+              "V",
+              "U"
+            ],
+            "test_scalar": "AH",
+            "test_side_high_leaves": 2,
+            "test_vector": "H",
+            "total_high_leaves": 4,
+            "total_low_leaves": 1
+          },
+          {
+            "coordinate_monomial_mass": 12,
+            "kernel_terms": [
+              [
+                2,
+                1,
+                0
+              ],
+              [
+                1,
+                2,
+                0
+              ]
+            ],
+            "maximum_bounded_frequency_factors": 0,
+            "maximum_high_degree": 2,
+            "maximum_q_degree": 2,
+            "pressure_pair": [
+              "H",
+              "U"
+            ],
+            "test_scalar": "AH",
+            "test_side_high_leaves": 3,
+            "test_vector": "V",
+            "total_high_leaves": 4,
+            "total_low_leaves": 1
+          }
+        ]
+      },
+      {
+        "absolute_coefficient": 12,
+        "bound_constant": 4510080,
+        "category": "nonleading_form",
+        "coefficient": -12,
+        "expression": "-12S(W,H,H;AH)",
+        "high_velocity_leaf_count": 4,
+        "low_shear_leaf_count": 1,
+        "maximum_bounded_frequency_factors": 0,
+        "maximum_coordinate_monomial_mass": 12,
+        "maximum_high_frequency_degree": 2,
+        "maximum_q_polynomial_degree": 2,
+        "minimum_test_side_high_leaf_count": 2,
+        "one_difference_eligible": true,
+        "outer_pressure_output_held_fixed": true,
+        "structural_permutation_profiles": [
+          {
+            "coordinate_monomial_mass": 12,
+            "kernel_terms": [
+              [
+                2,
+                1,
+                0
+              ],
+              [
+                1,
+                2,
+                0
+              ]
+            ],
+            "maximum_bounded_frequency_factors": 0,
+            "maximum_high_degree": 2,
+            "maximum_q_degree": 2,
+            "pressure_pair": [
+              "W",
+              "H"
+            ],
+            "test_scalar": "AH",
+            "test_side_high_leaves": 2,
+            "test_vector": "H",
+            "total_high_leaves": 4,
+            "total_low_leaves": 1
+          },
+          {
+            "coordinate_monomial_mass": 12,
+            "kernel_terms": [
+              [
+                2,
+                1,
+                0
+              ],
+              [
+                1,
+                2,
+                0
+              ]
+            ],
+            "maximum_bounded_frequency_factors": 0,
+            "maximum_high_degree": 2,
+            "maximum_q_degree": 2,
+            "pressure_pair": [
+              "W",
+              "H"
+            ],
+            "test_scalar": "AH",
+            "test_side_high_leaves": 2,
+            "test_vector": "H",
+            "total_high_leaves": 4,
+            "total_low_leaves": 1
+          },
+          {
+            "coordinate_monomial_mass": 12,
+            "kernel_terms": [
+              [
+                2,
+                1,
+                0
+              ],
+              [
+                1,
+                2,
+                0
+              ]
+            ],
+            "maximum_bounded_frequency_factors": 0,
+            "maximum_high_degree": 2,
+            "maximum_q_degree": 2,
+            "pressure_pair": [
+              "H",
+              "H"
+            ],
+            "test_scalar": "AH",
+            "test_side_high_leaves": 2,
+            "test_vector": "W",
+            "total_high_leaves": 4,
+            "total_low_leaves": 1
+          }
+        ]
+      },
+      {
+        "absolute_coefficient": 6,
+        "bound_constant": 2255040,
+        "category": "G1_atomic",
+        "coefficient": -6,
+        "expression": "-6S(B(U,V),H,H;Phi)",
+        "high_velocity_leaf_count": 4,
+        "low_shear_leaf_count": 1,
+        "maximum_bounded_frequency_factors": 0,
+        "maximum_coordinate_monomial_mass": 3,
+        "maximum_high_frequency_degree": 2,
+        "maximum_q_polynomial_degree": 1,
+        "minimum_test_side_high_leaf_count": 1,
+        "one_difference_eligible": true,
+        "outer_pressure_output_held_fixed": true,
+        "structural_permutation_profiles": [
+          {
+            "coordinate_monomial_mass": 3,
+            "kernel_terms": [
+              [
+                1,
+                2,
+                0
+              ]
+            ],
+            "maximum_bounded_frequency_factors": 0,
+            "maximum_high_degree": 2,
+            "maximum_q_degree": 1,
+            "pressure_pair": [
+              "B(U,V)",
+              "H"
+            ],
+            "test_scalar": "Phi",
+            "test_side_high_leaves": 1,
+            "test_vector": "H",
+            "total_high_leaves": 4,
+            "total_low_leaves": 1
+          },
+          {
+            "coordinate_monomial_mass": 3,
+            "kernel_terms": [
+              [
+                1,
+                2,
+                0
+              ]
+            ],
+            "maximum_bounded_frequency_factors": 0,
+            "maximum_high_degree": 2,
+            "maximum_q_degree": 1,
+            "pressure_pair": [
+              "B(U,V)",
+              "H"
+            ],
+            "test_scalar": "Phi",
+            "test_side_high_leaves": 1,
+            "test_vector": "H",
+            "total_high_leaves": 4,
+            "total_low_leaves": 1
+          },
+          {
+            "coordinate_monomial_mass": 3,
+            "kernel_terms": [
+              [
+                1,
+                2,
+                0
+              ]
+            ],
+            "maximum_bounded_frequency_factors": 0,
+            "maximum_high_degree": 2,
+            "maximum_q_degree": 1,
+            "pressure_pair": [
+              "H",
+              "H"
+            ],
+            "test_scalar": "Phi",
+            "test_side_high_leaves": 2,
+            "test_vector": "B(U,V)",
+            "total_high_leaves": 4,
+            "total_low_leaves": 1
+          }
+        ]
+      },
+      {
+        "absolute_coefficient": 12,
+        "bound_constant": 4510080,
+        "category": "G1_atomic",
+        "coefficient": -12,
+        "expression": "-12S(B(H,W),H,H;Phi)",
+        "high_velocity_leaf_count": 4,
+        "low_shear_leaf_count": 1,
+        "maximum_bounded_frequency_factors": 0,
+        "maximum_coordinate_monomial_mass": 3,
+        "maximum_high_frequency_degree": 2,
+        "maximum_q_polynomial_degree": 1,
+        "minimum_test_side_high_leaf_count": 1,
+        "one_difference_eligible": true,
+        "outer_pressure_output_held_fixed": true,
+        "structural_permutation_profiles": [
+          {
+            "coordinate_monomial_mass": 3,
+            "kernel_terms": [
+              [
+                1,
+                2,
+                0
+              ]
+            ],
+            "maximum_bounded_frequency_factors": 0,
+            "maximum_high_degree": 2,
+            "maximum_q_degree": 1,
+            "pressure_pair": [
+              "B(H,W)",
+              "H"
+            ],
+            "test_scalar": "Phi",
+            "test_side_high_leaves": 1,
+            "test_vector": "H",
+            "total_high_leaves": 4,
+            "total_low_leaves": 1
+          },
+          {
+            "coordinate_monomial_mass": 3,
+            "kernel_terms": [
+              [
+                1,
+                2,
+                0
+              ]
+            ],
+            "maximum_bounded_frequency_factors": 0,
+            "maximum_high_degree": 2,
+            "maximum_q_degree": 1,
+            "pressure_pair": [
+              "B(H,W)",
+              "H"
+            ],
+            "test_scalar": "Phi",
+            "test_side_high_leaves": 1,
+            "test_vector": "H",
+            "total_high_leaves": 4,
+            "total_low_leaves": 1
+          },
+          {
+            "coordinate_monomial_mass": 3,
+            "kernel_terms": [
+              [
+                1,
+                2,
+                0
+              ]
+            ],
+            "maximum_bounded_frequency_factors": 0,
+            "maximum_high_degree": 2,
+            "maximum_q_degree": 1,
+            "pressure_pair": [
+              "H",
+              "H"
+            ],
+            "test_scalar": "Phi",
+            "test_side_high_leaves": 2,
+            "test_vector": "B(H,W)",
+            "total_high_leaves": 4,
+            "total_low_leaves": 1
+          }
+        ]
+      },
+      {
+        "absolute_coefficient": 3,
+        "bound_constant": 1127520,
+        "category": "L0_atomic",
+        "coefficient": -3,
+        "expression": "-3S(H,H,U;C(V,Phi))",
+        "high_velocity_leaf_count": 4,
+        "low_shear_leaf_count": 1,
+        "maximum_bounded_frequency_factors": 0,
+        "maximum_coordinate_monomial_mass": 12,
+        "maximum_high_frequency_degree": 2,
+        "maximum_q_polynomial_degree": 2,
+        "minimum_test_side_high_leaf_count": 2,
+        "one_difference_eligible": true,
+        "outer_pressure_output_held_fixed": true,
+        "structural_permutation_profiles": [
+          {
+            "coordinate_monomial_mass": 12,
+            "kernel_terms": [
+              [
+                2,
+                1,
+                0
+              ],
+              [
+                1,
+                2,
+                0
+              ]
+            ],
+            "maximum_bounded_frequency_factors": 0,
+            "maximum_high_degree": 2,
+            "maximum_q_degree": 2,
+            "pressure_pair": [
+              "H",
+              "H"
+            ],
+            "test_scalar": "C(V,Phi)",
+            "test_side_high_leaves": 2,
+            "test_vector": "U",
+            "total_high_leaves": 4,
+            "total_low_leaves": 1
+          },
+          {
+            "coordinate_monomial_mass": 12,
+            "kernel_terms": [
+              [
+                2,
+                1,
+                0
+              ],
+              [
+                1,
+                2,
+                0
+              ]
+            ],
+            "maximum_bounded_frequency_factors": 0,
+            "maximum_high_degree": 2,
+            "maximum_q_degree": 2,
+            "pressure_pair": [
+              "H",
+              "U"
+            ],
+            "test_scalar": "C(V,Phi)",
+            "test_side_high_leaves": 3,
+            "test_vector": "H",
+            "total_high_leaves": 4,
+            "total_low_leaves": 1
+          },
+          {
+            "coordinate_monomial_mass": 12,
+            "kernel_terms": [
+              [
+                2,
+                1,
+                0
+              ],
+              [
+                1,
+                2,
+                0
+              ]
+            ],
+            "maximum_bounded_frequency_factors": 0,
+            "maximum_high_degree": 2,
+            "maximum_q_degree": 2,
+            "pressure_pair": [
+              "H",
+              "U"
+            ],
+            "test_scalar": "C(V,Phi)",
+            "test_side_high_leaves": 3,
+            "test_vector": "H",
+            "total_high_leaves": 4,
+            "total_low_leaves": 1
+          }
+        ]
+      },
+      {
+        "absolute_coefficient": 3,
+        "bound_constant": 1127520,
+        "category": "L0_atomic",
+        "coefficient": -3,
+        "expression": "-3S(H,H,U;C(H,AH))",
+        "high_velocity_leaf_count": 4,
+        "low_shear_leaf_count": 1,
+        "maximum_bounded_frequency_factors": 0,
+        "maximum_coordinate_monomial_mass": 48,
+        "maximum_high_frequency_degree": 2,
+        "maximum_q_polynomial_degree": 3,
+        "minimum_test_side_high_leaf_count": 2,
+        "one_difference_eligible": true,
+        "outer_pressure_output_held_fixed": true,
+        "structural_permutation_profiles": [
+          {
+            "coordinate_monomial_mass": 48,
+            "kernel_terms": [
+              [
+                3,
+                0,
+                0
+              ],
+              [
+                2,
+                1,
+                0
+              ],
+              [
+                2,
+                1,
+                0
+              ],
+              [
+                1,
+                2,
+                0
+              ]
+            ],
+            "maximum_bounded_frequency_factors": 0,
+            "maximum_high_degree": 2,
+            "maximum_q_degree": 3,
+            "pressure_pair": [
+              "H",
+              "H"
+            ],
+            "test_scalar": "C(H,AH)",
+            "test_side_high_leaves": 2,
+            "test_vector": "U",
+            "total_high_leaves": 4,
+            "total_low_leaves": 1
+          },
+          {
+            "coordinate_monomial_mass": 48,
+            "kernel_terms": [
+              [
+                3,
+                0,
+                0
+              ],
+              [
+                2,
+                1,
+                0
+              ],
+              [
+                2,
+                1,
+                0
+              ],
+              [
+                1,
+                2,
+                0
+              ]
+            ],
+            "maximum_bounded_frequency_factors": 0,
+            "maximum_high_degree": 2,
+            "maximum_q_degree": 3,
+            "pressure_pair": [
+              "H",
+              "U"
+            ],
+            "test_scalar": "C(H,AH)",
+            "test_side_high_leaves": 3,
+            "test_vector": "H",
+            "total_high_leaves": 4,
+            "total_low_leaves": 1
+          },
+          {
+            "coordinate_monomial_mass": 48,
+            "kernel_terms": [
+              [
+                3,
+                0,
+                0
+              ],
+              [
+                2,
+                1,
+                0
+              ],
+              [
+                2,
+                1,
+                0
+              ],
+              [
+                1,
+                2,
+                0
+              ]
+            ],
+            "maximum_bounded_frequency_factors": 0,
+            "maximum_high_degree": 2,
+            "maximum_q_degree": 3,
+            "pressure_pair": [
+              "H",
+              "U"
+            ],
+            "test_scalar": "C(H,AH)",
+            "test_side_high_leaves": 3,
+            "test_vector": "H",
+            "total_high_leaves": 4,
+            "total_low_leaves": 1
+          }
+        ]
+      },
+      {
+        "absolute_coefficient": 2,
+        "bound_constant": 751680,
+        "category": "L1_atomic",
+        "coefficient": -2,
+        "expression": "-2S(H,H,H;C(W,Phi))",
+        "high_velocity_leaf_count": 4,
+        "low_shear_leaf_count": 1,
+        "maximum_bounded_frequency_factors": 0,
+        "maximum_coordinate_monomial_mass": 12,
+        "maximum_high_frequency_degree": 2,
+        "maximum_q_polynomial_degree": 2,
+        "minimum_test_side_high_leaf_count": 2,
+        "one_difference_eligible": true,
+        "outer_pressure_output_held_fixed": true,
+        "structural_permutation_profiles": [
+          {
+            "coordinate_monomial_mass": 12,
+            "kernel_terms": [
+              [
+                2,
+                1,
+                0
+              ],
+              [
+                1,
+                2,
+                0
+              ]
+            ],
+            "maximum_bounded_frequency_factors": 0,
+            "maximum_high_degree": 2,
+            "maximum_q_degree": 2,
+            "pressure_pair": [
+              "H",
+              "H"
+            ],
+            "test_scalar": "C(W,Phi)",
+            "test_side_high_leaves": 2,
+            "test_vector": "H",
+            "total_high_leaves": 4,
+            "total_low_leaves": 1
+          },
+          {
+            "coordinate_monomial_mass": 12,
+            "kernel_terms": [
+              [
+                2,
+                1,
+                0
+              ],
+              [
+                1,
+                2,
+                0
+              ]
+            ],
+            "maximum_bounded_frequency_factors": 0,
+            "maximum_high_degree": 2,
+            "maximum_q_degree": 2,
+            "pressure_pair": [
+              "H",
+              "H"
+            ],
+            "test_scalar": "C(W,Phi)",
+            "test_side_high_leaves": 2,
+            "test_vector": "H",
+            "total_high_leaves": 4,
+            "total_low_leaves": 1
+          },
+          {
+            "coordinate_monomial_mass": 12,
+            "kernel_terms": [
+              [
+                2,
+                1,
+                0
+              ],
+              [
+                1,
+                2,
+                0
+              ]
+            ],
+            "maximum_bounded_frequency_factors": 0,
+            "maximum_high_degree": 2,
+            "maximum_q_degree": 2,
+            "pressure_pair": [
+              "H",
+              "H"
+            ],
+            "test_scalar": "C(W,Phi)",
+            "test_side_high_leaves": 2,
+            "test_vector": "H",
+            "total_high_leaves": 4,
+            "total_low_leaves": 1
+          }
+        ]
+      },
+      {
+        "absolute_coefficient": 1,
+        "bound_constant": 375840,
+        "category": "L1_atomic",
+        "coefficient": -1,
+        "expression": "-S(H,H,H;C(U,AH))",
+        "high_velocity_leaf_count": 4,
+        "low_shear_leaf_count": 1,
+        "maximum_bounded_frequency_factors": 0,
+        "maximum_coordinate_monomial_mass": 48,
+        "maximum_high_frequency_degree": 2,
+        "maximum_q_polynomial_degree": 3,
+        "minimum_test_side_high_leaf_count": 2,
+        "one_difference_eligible": true,
+        "outer_pressure_output_held_fixed": true,
+        "structural_permutation_profiles": [
+          {
+            "coordinate_monomial_mass": 48,
+            "kernel_terms": [
+              [
+                3,
+                0,
+                0
+              ],
+              [
+                2,
+                1,
+                0
+              ],
+              [
+                2,
+                1,
+                0
+              ],
+              [
+                1,
+                2,
+                0
+              ]
+            ],
+            "maximum_bounded_frequency_factors": 0,
+            "maximum_high_degree": 2,
+            "maximum_q_degree": 3,
+            "pressure_pair": [
+              "H",
+              "H"
+            ],
+            "test_scalar": "C(U,AH)",
+            "test_side_high_leaves": 2,
+            "test_vector": "H",
+            "total_high_leaves": 4,
+            "total_low_leaves": 1
+          },
+          {
+            "coordinate_monomial_mass": 48,
+            "kernel_terms": [
+              [
+                3,
+                0,
+                0
+              ],
+              [
+                2,
+                1,
+                0
+              ],
+              [
+                2,
+                1,
+                0
+              ],
+              [
+                1,
+                2,
+                0
+              ]
+            ],
+            "maximum_bounded_frequency_factors": 0,
+            "maximum_high_degree": 2,
+            "maximum_q_degree": 3,
+            "pressure_pair": [
+              "H",
+              "H"
+            ],
+            "test_scalar": "C(U,AH)",
+            "test_side_high_leaves": 2,
+            "test_vector": "H",
+            "total_high_leaves": 4,
+            "total_low_leaves": 1
+          },
+          {
+            "coordinate_monomial_mass": 48,
+            "kernel_terms": [
+              [
+                3,
+                0,
+                0
+              ],
+              [
+                2,
+                1,
+                0
+              ],
+              [
+                2,
+                1,
+                0
+              ],
+              [
+                1,
+                2,
+                0
+              ]
+            ],
+            "maximum_bounded_frequency_factors": 0,
+            "maximum_high_degree": 2,
+            "maximum_q_degree": 3,
+            "pressure_pair": [
+              "H",
+              "H"
+            ],
+            "test_scalar": "C(U,AH)",
+            "test_side_high_leaves": 2,
+            "test_vector": "H",
+            "total_high_leaves": 4,
+            "total_low_leaves": 1
+          }
+        ]
+      },
+      {
+        "absolute_coefficient": 1,
+        "bound_constant": 375840,
+        "category": "L1_atomic",
+        "coefficient": -1,
+        "expression": "-S(H,H,H;C(H,AU))",
+        "high_velocity_leaf_count": 4,
+        "low_shear_leaf_count": 1,
+        "maximum_bounded_frequency_factors": 1,
+        "maximum_coordinate_monomial_mass": 48,
+        "maximum_high_frequency_degree": 1,
+        "maximum_q_polynomial_degree": 3,
+        "minimum_test_side_high_leaf_count": 2,
+        "one_difference_eligible": true,
+        "outer_pressure_output_held_fixed": true,
+        "structural_permutation_profiles": [
+          {
+            "coordinate_monomial_mass": 48,
+            "kernel_terms": [
+              [
+                3,
+                0,
+                0
+              ],
+              [
+                2,
+                1,
+                0
+              ],
+              [
+                2,
+                0,
+                1
+              ],
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "maximum_bounded_frequency_factors": 1,
+            "maximum_high_degree": 1,
+            "maximum_q_degree": 3,
+            "pressure_pair": [
+              "H",
+              "H"
+            ],
+            "test_scalar": "C(H,AU)",
+            "test_side_high_leaves": 2,
+            "test_vector": "H",
+            "total_high_leaves": 4,
+            "total_low_leaves": 1
+          },
+          {
+            "coordinate_monomial_mass": 48,
+            "kernel_terms": [
+              [
+                3,
+                0,
+                0
+              ],
+              [
+                2,
+                1,
+                0
+              ],
+              [
+                2,
+                0,
+                1
+              ],
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "maximum_bounded_frequency_factors": 1,
+            "maximum_high_degree": 1,
+            "maximum_q_degree": 3,
+            "pressure_pair": [
+              "H",
+              "H"
+            ],
+            "test_scalar": "C(H,AU)",
+            "test_side_high_leaves": 2,
+            "test_vector": "H",
+            "total_high_leaves": 4,
+            "total_low_leaves": 1
+          },
+          {
+            "coordinate_monomial_mass": 48,
+            "kernel_terms": [
+              [
+                3,
+                0,
+                0
+              ],
+              [
+                2,
+                1,
+                0
+              ],
+              [
+                2,
+                0,
+                1
+              ],
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "maximum_bounded_frequency_factors": 1,
+            "maximum_high_degree": 1,
+            "maximum_q_degree": 3,
+            "pressure_pair": [
+              "H",
+              "H"
+            ],
+            "test_scalar": "C(H,AU)",
+            "test_side_high_leaves": 2,
+            "test_vector": "H",
+            "total_high_leaves": 4,
+            "total_low_leaves": 1
+          }
+        ]
+      }
+    ],
+    "seven_form_atomic_row_count": 11,
+    "structural_profile_count": 14
+  },
+  "vertex_stencil_certificate": {
+    "all_checks_pass": true,
+    "combined_low_and_residual_l1": "1",
+    "interpretation": "Every coordinate monomial q^alpha with |alpha|<=3 leaves at least one exact first-difference factor. No repeated difference of the zero-extended packet is used.",
+    "low_shear_fourier_l1": "2",
+    "maximum_q_polynomial_degree": 3,
+    "maximum_residual_stencil_l1": "1/2",
+    "multiindex_count": 20,
+    "multiindex_rows": [
+      {
+        "factored_axis": 0,
+        "multiindex": [
+          0,
+          0,
+          0
+        ],
+        "residual_l1": "1/2"
+      },
+      {
+        "factored_axis": 0,
+        "multiindex": [
+          0,
+          0,
+          1
+        ],
+        "residual_l1": "1/4"
+      },
+      {
+        "factored_axis": 0,
+        "multiindex": [
+          0,
+          0,
+          2
+        ],
+        "residual_l1": "1/4"
+      },
+      {
+        "factored_axis": 0,
+        "multiindex": [
+          0,
+          0,
+          3
+        ],
+        "residual_l1": "1/4"
+      },
+      {
+        "factored_axis": 0,
+        "multiindex": [
+          0,
+          1,
+          0
+        ],
+        "residual_l1": "1/4"
+      },
+      {
+        "factored_axis": 0,
+        "multiindex": [
+          0,
+          1,
+          1
+        ],
+        "residual_l1": "1/8"
+      },
+      {
+        "factored_axis": 0,
+        "multiindex": [
+          0,
+          1,
+          2
+        ],
+        "residual_l1": "1/8"
+      },
+      {
+        "factored_axis": 0,
+        "multiindex": [
+          0,
+          2,
+          0
+        ],
+        "residual_l1": "1/4"
+      },
+      {
+        "factored_axis": 0,
+        "multiindex": [
+          0,
+          2,
+          1
+        ],
+        "residual_l1": "1/8"
+      },
+      {
+        "factored_axis": 0,
+        "multiindex": [
+          0,
+          3,
+          0
+        ],
+        "residual_l1": "1/4"
+      },
+      {
+        "factored_axis": 0,
+        "multiindex": [
+          1,
+          0,
+          0
+        ],
+        "residual_l1": "1/2"
+      },
+      {
+        "factored_axis": 0,
+        "multiindex": [
+          1,
+          0,
+          1
+        ],
+        "residual_l1": "1/4"
+      },
+      {
+        "factored_axis": 0,
+        "multiindex": [
+          1,
+          0,
+          2
+        ],
+        "residual_l1": "1/4"
+      },
+      {
+        "factored_axis": 0,
+        "multiindex": [
+          1,
+          1,
+          0
+        ],
+        "residual_l1": "1/4"
+      },
+      {
+        "factored_axis": 0,
+        "multiindex": [
+          1,
+          1,
+          1
+        ],
+        "residual_l1": "1/8"
+      },
+      {
+        "factored_axis": 0,
+        "multiindex": [
+          1,
+          2,
+          0
+        ],
+        "residual_l1": "1/4"
+      },
+      {
+        "factored_axis": 1,
+        "multiindex": [
+          2,
+          0,
+          0
+        ],
+        "residual_l1": "1/4"
+      },
+      {
+        "factored_axis": 1,
+        "multiindex": [
+          2,
+          0,
+          1
+        ],
+        "residual_l1": "1/8"
+      },
+      {
+        "factored_axis": 1,
+        "multiindex": [
+          2,
+          1,
+          0
+        ],
+        "residual_l1": "1/4"
+      },
+      {
+        "factored_axis": 0,
+        "multiindex": [
+          3,
+          0,
+          0
+        ],
+        "residual_l1": "1/2"
+      }
+    ],
+    "one_dimensional_rows": [
+      {
+        "coefficients_at_minus1_0_plus1": [
+          "-1/4",
+          "1/2",
+          "-1/4"
+        ],
+        "first_difference_quotient_l1": "1/2",
+        "l1_norm": "1",
+        "power": 0,
+        "sum": "0"
+      },
+      {
+        "coefficients_at_minus1_0_plus1": [
+          "1/4",
+          "0",
+          "-1/4"
+        ],
+        "first_difference_quotient_l1": "1/2",
+        "l1_norm": "1/2",
+        "power": 1,
+        "sum": "0"
+      },
+      {
+        "coefficients_at_minus1_0_plus1": [
+          "-1/4",
+          "0",
+          "-1/4"
+        ],
+        "first_difference_quotient_l1": null,
+        "l1_norm": "1/2",
+        "power": 2,
+        "sum": "-1/2"
+      },
+      {
+        "coefficients_at_minus1_0_plus1": [
+          "1/4",
+          "0",
+          "-1/4"
+        ],
+        "first_difference_quotient_l1": "1/2",
+        "l1_norm": "1/2",
+        "power": 3,
+        "sum": "0"
+      }
+    ],
+    "signed_weight": "(-1)^sum(q) Phihat(q), the tensor product of (-1/4,1/2,-1/4)"
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "Fourier_duality_replay": {
+    "H_minus_one_norm_squared": "208810759517323/226229221112895",
+    "H_one_norm_squared": "329117069828/10097235225",
+    "all_checks_pass": true,
+    "cauchy_ratio": 0.13113262521615676,
+    "mode_count": 6,
+    "pairing": "-15972773/22207185"
+  },
+  "all_positive_checks_pass": true,
+  "certification_flags": {
+    "Navier_Stokes_global_regularity_proved": false,
+    "all_pressure_paraproducts_controlled": false,
+    "critical_L3_bound_proved": false,
+    "fixed_smooth_partition_pressure_tail_uniform_in_time": true,
+    "floor_free_far_carrier_pressure_edge_tail_vanishes": true,
+    "near_carrier_signed_pressure_edge_absorbed": false,
+    "scale_family_far_carrier_diagonalization_proved": true,
+    "terminal_dual_supremum_controlled": false
+  },
+  "generated_at_utc": "2026-07-27T22:46:34.643875+00:00",
+  "kind": "floor_free_pressure_edge_tail_gate_audit",
+  "positive_checks": {
+    "Fourier_H_minus_one_H_one_duality": true,
+    "direct_H_minus_one_prerequisite": true,
+    "scale_adapted_far_carrier_decay": true,
+    "weight_product_chain": true
+  },
+  "prerequisite": {
+    "actual_sha256": "709d06bcd8528bed257001bdf543ae72fe8032af0d3af9bb63ad3e2a46a75ece",
+    "all_checks_pass": true,
+    "expected_sha256": "709d06bcd8528bed257001bdf543ae72fe8032af0d3af9bb63ad3e2a46a75ece",
+    "path": "work/ns_collision/results/direct_h_minus_one_stress_tail_gate_audit_v1.json",
+    "tail_constant": 155
+  },
+  "scale_adapted_partition_family": {
+    "all_checks_pass": true,
+    "audited_choice": "epsilon=1/2, hence K_m=m^5",
+    "general_choice": "If L_lambda_m<=C m^2 and K_m=m^(4+2 epsilon), then L_lambda_m/sqrt(K_m)<=C m^(-epsilon).",
+    "maximum_identity_residual": 0.0,
+    "monotone_decay": true,
+    "rows": [
+      {
+        "W2_infinity_cost_model": 1,
+        "expected_m_minus_half": 1.0,
+        "far_carrier_cutoff_K": 1,
+        "partition_frequency_m": 1,
+        "residual": 0.0,
+        "tail_factor_m2_over_sqrt_K": 1.0
+      },
+      {
+        "W2_infinity_cost_model": 4,
+        "expected_m_minus_half": 0.7071067811865475,
+        "far_carrier_cutoff_K": 32,
+        "partition_frequency_m": 2,
+        "residual": 0.0,
+        "tail_factor_m2_over_sqrt_K": 0.7071067811865475
+      },
+      {
+        "W2_infinity_cost_model": 16,
+        "expected_m_minus_half": 0.5,
+        "far_carrier_cutoff_K": 1024,
+        "partition_frequency_m": 4,
+        "residual": 0.0,
+        "tail_factor_m2_over_sqrt_K": 0.5
+      },
+      {
+        "W2_infinity_cost_model": 64,
+        "expected_m_minus_half": 0.35355339059327373,
+        "far_carrier_cutoff_K": 32768,
+        "partition_frequency_m": 8,
+        "residual": 0.0,
+        "tail_factor_m2_over_sqrt_K": 0.35355339059327373
+      },
+      {
+        "W2_infinity_cost_model": 256,
+        "expected_m_minus_half": 0.25,
+        "far_carrier_cutoff_K": 1048576,
+        "partition_frequency_m": 16,
+        "residual": 0.0,
+        "tail_factor_m2_over_sqrt_K": 0.25
+      },
+      {
+        "W2_infinity_cost_model": 1024,
+        "expected_m_minus_half": 0.17677669529663687,
+        "far_carrier_cutoff_K": 33554432,
+        "partition_frequency_m": 32,
+        "residual": 0.0,
+        "tail_factor_m2_over_sqrt_K": 0.17677669529663687
+      },
+      {
+        "W2_infinity_cost_model": 4096,
+        "expected_m_minus_half": 0.125,
+        "far_carrier_cutoff_K": 1073741824,
+        "partition_frequency_m": 64,
+        "residual": 0.0,
+        "tail_factor_m2_over_sqrt_K": 0.125
+      },
+      {
+        "W2_infinity_cost_model": 16384,
+        "expected_m_minus_half": 0.08838834764831843,
+        "far_carrier_cutoff_K": 34359738368,
+        "partition_frequency_m": 128,
+        "residual": 0.0,
+        "tail_factor_m2_over_sqrt_K": 0.08838834764831843
+      }
+    ]
+  },
+  "schema_version": 1,
+  "scope": "The theorem covers only the low-output comparable high-high stress contribution to pressure. It removes arbitrarily far carrier beats for each smooth partition scale. Near-carrier, HHL, non-low-output, and terminal-supremum terms remain open.",
+  "status": "floor_free_far_carrier_pressure_edge_tail_certified",
+  "theorem": {
+    "Galerkin_uniform": true,
+    "energy_only_bound": "<=(sqrt(155)/2) C_selector L_lambda E_0^(3/2)/(nu sqrt(K))",
+    "requires_positive_weight_floor": false,
+    "trajectory_bound": "|integral_0^T <p_K^(HH,lo),u dot grad lambda>dt| <=sqrt(155) C_selector L_lambda sqrt(E_*) D_T/sqrt(K)",
+    "uniform_in_terminal_time": true
+  },
+  "weight_product_certificate": {
+    "all_checks_pass": true,
+    "floor_free": "No lower bound on lambda is used; only its first two bounded spatial derivatives enter.",
+    "mean_removal": "The conserved spatial mean of u is removed by a Galilean translation, so ||u||_2<=C_P||grad u||_2.",
+    "pressure_multiplier": "The double-Riesz pressure contraction has Fourier operator norm one from the stress Frobenius norm to the scalar pressure.",
+    "product_rule": "For g=u dot grad lambda, ||g||_(H^1)<=L_lambda||grad u||_2, where L_lambda=(1+C_P)||grad lambda||_infinity+C_P||grad^2 lambda||_infinity.",
+    "time_duality": "|integral <p_K,g>dt|<=||p_K||_(L2_t H^-1)||g||_(L2_t H^1)."
+  }
+}

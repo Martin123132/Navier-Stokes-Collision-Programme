@@ -1,0 +1,278 @@
+{
+  "all_positive_checks_pass": true,
+  "certification_flags": {
+    "H_minus_1_high_high_stress_Galerkin_passage_proved": true,
+    "Navier_Stokes_global_regularity_proved": false,
+    "actual_high_high_stress_H_minus_1_tail_vanishes": true,
+    "complete_cubic_local_energy_passage_proved": false,
+    "dense_HHH_spatial_forcing_disproved": false,
+    "prior_pulse_admissible_as_actual_Reynolds_stress": false,
+    "prior_scalar_envelope_no_go_remains_logically_valid": true,
+    "suitable_weak_solution_closure_proved": false
+  },
+  "dyadic_overlap": {
+    "all_checks_pass": true,
+    "comparable_log2_offsets": [
+      -2,
+      -1,
+      0,
+      1,
+      2
+    ],
+    "energy_overlap_constant": 5,
+    "first_moment_overlap_constant": {
+      "exact": "31/4",
+      "numeric": 7.75
+    },
+    "high_tail_first_moment_constant": {
+      "exact": "31",
+      "numeric": 31.0
+    },
+    "identities": {
+      "final_squared_tail": "(sum H^(1/2)A_H^2)^2 <=155 E_* D_inst/K",
+      "high_tail_conversion": "J>=K/4 implies J<=4J^2/K",
+      "sum_H_A_H_squared": "at most 5 sum_J a_J^2",
+      "sum_H_H_A_H_squared": "at most (31/4) sum_J J a_J^2"
+    },
+    "integrated_squared_tail_constant": {
+      "exact": "155",
+      "numeric": 155.0
+    },
+    "second_moment_overlap_constant": {
+      "exact": "341/16",
+      "numeric": 21.3125
+    }
+  },
+  "endpoint_pulse_admissibility": {
+    "actual_stress_channel_bound": "Every Fourier coefficient of a unit-energy Reynolds stress is bounded independently of H by Fourier Cauchy-Schwarz.",
+    "all_checks_pass": true,
+    "conclusion": "The pulse remains a valid counterexample to deduction from the scalar forcing envelope alone, but it is not admissible as the evolution of an actual unit-energy Reynolds stress.",
+    "exact_pulse_end_response": "H^(1/2)(1-e^(-1))",
+    "first_audited_carrier_violating_unit_bound": 4,
+    "model": "dot c+H^2 c=H^(5/2) 1_[0,H^(-2)]",
+    "rows": [
+      {
+        "H": 4,
+        "forcing_amplitude": 32.0,
+        "pulse_duration": 0.0625,
+        "response_at_pulse_end": 1.2642411176571153,
+        "violates_unit_stress_channel_bound": true
+      },
+      {
+        "H": 8,
+        "forcing_amplitude": 181.01933598375618,
+        "pulse_duration": 0.015625,
+        "response_at_pulse_end": 1.7879069347004124,
+        "violates_unit_stress_channel_bound": true
+      },
+      {
+        "H": 16,
+        "forcing_amplitude": 1024.0,
+        "pulse_duration": 0.00390625,
+        "response_at_pulse_end": 2.5284822353142307,
+        "violates_unit_stress_channel_bound": true
+      },
+      {
+        "H": 32,
+        "forcing_amplitude": 5792.618751480198,
+        "pulse_duration": 0.0009765625,
+        "response_at_pulse_end": 3.575813869400825,
+        "violates_unit_stress_channel_bound": true
+      },
+      {
+        "H": 64,
+        "forcing_amplitude": 32768.0,
+        "pulse_duration": 0.000244140625,
+        "response_at_pulse_end": 5.056964470628461,
+        "violates_unit_stress_channel_bound": true
+      },
+      {
+        "H": 256,
+        "forcing_amplitude": 1048576.0,
+        "pulse_duration": 1.52587890625e-05,
+        "response_at_pulse_end": 10.113928941256923,
+        "violates_unit_stress_channel_bound": true
+      },
+      {
+        "H": 1024,
+        "forcing_amplitude": 33554432.0,
+        "pulse_duration": 9.5367431640625e-07,
+        "response_at_pulse_end": 20.227857882513845,
+        "violates_unit_stress_channel_bound": true
+      },
+      {
+        "H": 4096,
+        "forcing_amplitude": 1073741824.0,
+        "pulse_duration": 5.960464477539063e-08,
+        "response_at_pulse_end": 40.45571576502769,
+        "violates_unit_stress_channel_bound": true
+      }
+    ]
+  },
+  "finite_sequence_replay": {
+    "all_checks_pass": true,
+    "maximum_cauchy_ratio": 0.9278705416304083,
+    "maximum_energy_overlap_ratio": 0.9333333333333333,
+    "maximum_final_tail_ratio": 0.04186290924145356,
+    "maximum_first_moment_tail_ratio": 0.22558593771009328,
+    "rows": [
+      {
+        "cauchy_ratio": 0.12535370979533966,
+        "cutoff": 4,
+        "energy_overlap_ratio": 0.49231826806101264,
+        "final_tail_ratio": 4.159999435391821e-07,
+        "first_moment_tail_ratio": 6.740779629073914e-06,
+        "sequence": 0
+      },
+      {
+        "cauchy_ratio": 0.2774174070776709,
+        "cutoff": 32,
+        "energy_overlap_ratio": 0.18254774023602172,
+        "final_tail_ratio": 2.7256072238777454e-06,
+        "first_moment_tail_ratio": 5.382116599744786e-05,
+        "sequence": 0
+      },
+      {
+        "cauchy_ratio": 0.5229126085964269,
+        "cutoff": 512,
+        "energy_overlap_ratio": 0.07402287036473439,
+        "final_tail_ratio": 3.302873813582614e-05,
+        "first_moment_tail_ratio": 0.0008532905705323564,
+        "sequence": 0
+      },
+      {
+        "cauchy_ratio": 0.8049735162596454,
+        "cutoff": 8192,
+        "energy_overlap_ratio": 0.02797429079964203,
+        "final_tail_ratio": 0.0002867137086489392,
+        "first_moment_tail_ratio": 0.012732326912792611,
+        "sequence": 0
+      },
+      {
+        "cauchy_ratio": 0.11206251327326713,
+        "cutoff": 4,
+        "energy_overlap_ratio": 0.5698487034566917,
+        "final_tail_ratio": 4.6237430760357025e-07,
+        "first_moment_tail_ratio": 7.24058691545065e-06,
+        "sequence": 1
+      },
+      {
+        "cauchy_ratio": 0.24382094169937127,
+        "cutoff": 32,
+        "energy_overlap_ratio": 0.18415582099096484,
+        "final_tail_ratio": 2.5884293019720495e-06,
+        "first_moment_tail_ratio": 5.76474169364465e-05,
+        "sequence": 1
+      },
+      {
+        "cauchy_ratio": 0.5132636565761316,
+        "cutoff": 512,
+        "energy_overlap_ratio": 0.05660212017639776,
+        "final_tail_ratio": 2.634413762856809e-05,
+        "first_moment_tail_ratio": 0.0009067984599263433,
+        "sequence": 1
+      },
+      {
+        "cauchy_ratio": 0.8191836265339923,
+        "cutoff": 8192,
+        "energy_overlap_ratio": 0.017591808764587092,
+        "final_tail_ratio": 0.000189595228534654,
+        "first_moment_tail_ratio": 0.01315635685680099,
+        "sequence": 1
+      },
+      {
+        "cauchy_ratio": 0.409861708107844,
+        "cutoff": 4,
+        "energy_overlap_ratio": 0.9333333333333333,
+        "final_tail_ratio": 4.815280963705856e-05,
+        "first_moment_tail_ratio": 0.00012587732647161682,
+        "sequence": 2
+      },
+      {
+        "cauchy_ratio": 0.5069466702770934,
+        "cutoff": 32,
+        "energy_overlap_ratio": 0.7333333333333333,
+        "final_tail_ratio": 0.00037421017896492213,
+        "first_moment_tail_ratio": 0.0010065883407430615,
+        "sequence": 2
+      },
+      {
+        "cauchy_ratio": 0.697395779638189,
+        "cutoff": 512,
+        "energy_overlap_ratio": 0.4666666666666667,
+        "final_tail_ratio": 0.005203119915339138,
+        "first_moment_tail_ratio": 0.015987396255123798,
+        "sequence": 2
+      },
+      {
+        "cauchy_ratio": 0.9278705416304083,
+        "cutoff": 8192,
+        "energy_overlap_ratio": 0.2,
+        "final_tail_ratio": 0.04186290924145356,
+        "first_moment_tail_ratio": 0.22558593771009328,
+        "sequence": 2
+      },
+      {
+        "cauchy_ratio": 0.36108046978026426,
+        "cutoff": 4,
+        "energy_overlap_ratio": 0.8615384615384616,
+        "final_tail_ratio": 3.911527914729237e-06,
+        "first_moment_tail_ratio": 1.2573835223930435e-05,
+        "sequence": 3
+      },
+      {
+        "cauchy_ratio": 0.45260074137170375,
+        "cutoff": 32,
+        "energy_overlap_ratio": 0.6747252747252748,
+        "final_tail_ratio": 3.0713755837924274e-05,
+        "first_moment_tail_ratio": 0.00010057514969779765,
+        "sequence": 3
+      },
+      {
+        "cauchy_ratio": 0.5986842455715915,
+        "cutoff": 512,
+        "energy_overlap_ratio": 0.47692307692307695,
+        "final_tail_ratio": 0.00045852051092328417,
+        "first_moment_tail_ratio": 0.0016058781931010348,
+        "sequence": 3
+      },
+      {
+        "cauchy_ratio": 0.7998899210956261,
+        "cutoff": 8192,
+        "energy_overlap_ratio": 0.2571428571428571,
+        "final_tail_ratio": 0.005060902597580477,
+        "first_moment_tail_ratio": 0.02460499546302791,
+        "sequence": 3
+      }
+    ]
+  },
+  "generated_at_utc": "2026-07-27T20:34:37.908696+00:00",
+  "kind": "direct_h_minus_one_stress_tail_gate_audit",
+  "physical_space_product_certificate": {
+    "all_checks_pass": true,
+    "finite_pair_overlap_step": "The canonical factorized smooth comparable-pair selector is a finite sum of uniform product multipliers. The same estimate holds for any extension with a uniform L2 times L3 to L6/5 bilinear-multiplier bound, so ||C_H||_(H^-1)<=C H^(1/2)A_H^2.",
+    "holder_step": "||u_J tensor u_J'||_(6/5) <=||u_J||_2 ||u_J'||_3.",
+    "leray_payment": "The first factor is at most 5E_*. The time integral of the second is at most 31D/K. Therefore the squared L2_t H^-1 tail is at most 155 C^2 E_*D/K.",
+    "shell_Bernstein_step": "For J' comparable to H, ||u_J'||_3<=C H^(1/2)||u_J'||_2.",
+    "sobolev_duality": "H^1(T^3) embeds in L^6(T^3), hence L^(6/5)(T^3) embeds continuously in H^(-1)(T^3).",
+    "time_shell_summation": "Cauchy-Schwarz gives (sum_(H>=K) H^(1/2)A_H^2)^2 <=(sum A_H^2)(sum H A_H^2).",
+    "uniformity": "All constants are independent of the smooth Galerkin cutoff. Orthogonal low-output projection is contractive in H^-1; the canonical smooth bounded Fourier cutoff has the same uniform H^-1 bound."
+  },
+  "positive_checks": {
+    "exact_dyadic_overlap_constants": true,
+    "finite_sequence_replay": true,
+    "old_endpoint_pulse_classified": true,
+    "physical_space_product_chain": true
+  },
+  "prerequisites": {
+    "scale_uniform_low_output_tail_result": "work/ns_collision/results/scale_uniform_low_output_tail_gate_audit_v1.json",
+    "scale_uniform_low_output_tail_sha256": "3622a76234d31dcf298e0326b1be75f888fb925926df69fd65e45a9c80c6b657"
+  },
+  "schema_version": 1,
+  "status": "direct_H_minus_one_high_high_stress_tail_certified",
+  "theorem": {
+    "Galerkin_uniform": true,
+    "tail_bound": "||sum_(H>=K) C_H||_(L2_t H_x^(-1))^2 <=155 C_selector^2 E_* D/K",
+    "tail_limit": "zero as K tends to infinity"
+  }
+}

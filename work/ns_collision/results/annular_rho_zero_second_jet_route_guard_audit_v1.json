@@ -1,0 +1,883 @@
+{
+  "algorithm_revision": "annular-rho-zero-second-jet-route-guard-v1",
+  "all_positive_checks_pass": true,
+  "certification_flags": {
+    "Navier_Stokes_acceleration_retained": true,
+    "Navier_Stokes_global_regularity_proved": false,
+    "all_second_jet_channels_above_N7_excluded": false,
+    "backward_weight_second_derivative_retained": true,
+    "critical_L3_controlled": false,
+    "exact_second_variation_formula_proved": true,
+    "finite_parabolic_window_controlled": false,
+    "finite_time_blowup_proved": false,
+    "full_second_jet_N7_coefficient_certified": false,
+    "pressure_Hessian_retained": true,
+    "pure_heat_pressure_N7_coefficient_positive": true,
+    "pure_heat_pressure_N7_limit_certified": true,
+    "required_N2_amplification_excluded": false,
+    "tenfold_second_jet_dealiasing_validated": true,
+    "uniform_second_jet_Taylor_bound_proved": false
+  },
+  "finite_second_heat_load_rows": [
+    {
+      "all_checks_pass": true,
+      "optimal_coefficient_scale": 0.10305197080279369,
+      "optimal_low_amplitude": 0.0401680400630415,
+      "pure_heat_pressure_second_jet": 9947.220549669348,
+      "pure_heat_pressure_second_jet_over_N7": 1.629752614857826e-06,
+      "runtime_seconds": 0.5014410000003409,
+      "second_heat_pressure_load_over_N5": -0.2460734513272971,
+      "second_heat_weighted_pressure_loads": {
+        "combined": -2403061.048118136,
+        "maximum_imaginary_residual": 0.0,
+        "pressure_cross": 0.1490060032087399,
+        "pressure_high_high": -2403061.197124139
+      },
+      "size": 25
+    },
+    {
+      "all_checks_pass": true,
+      "optimal_coefficient_scale": 0.14897497775882337,
+      "optimal_low_amplitude": 0.051362899586688465,
+      "pure_heat_pressure_second_jet": 71911.8663875701,
+      "pure_heat_pressure_second_jet_over_N7": 1.687341473886762e-06,
+      "runtime_seconds": 1.5978828000079375,
+      "second_heat_pressure_load_over_N5": -0.24014193121611782,
+      "second_heat_weighted_pressure_loads": {
+        "combined": -9398048.85392174,
+        "maximum_imaginary_residual": 0.0,
+        "pressure_cross": 0.1162127854714754,
+        "pressure_high_high": -9398048.970134525
+      },
+      "size": 33
+    },
+    {
+      "all_checks_pass": true,
+      "optimal_coefficient_scale": 0.22139324286685313,
+      "optimal_low_amplitude": 0.07380925973694195,
+      "pure_heat_pressure_second_jet": 1080912.773370739,
+      "pure_heat_pressure_second_jet_over_N7": 1.5937422606844785e-06,
+      "runtime_seconds": 5.810325500002364,
+      "second_heat_pressure_load_over_N5": -0.23417203905579398,
+      "second_heat_weighted_pressure_loads": {
+        "combined": -66147805.04112313,
+        "maximum_imaginary_residual": 0.0,
+        "pressure_cross": 0.08067116975325916,
+        "pressure_high_high": -66147805.1217943
+      },
+      "size": 49
+    },
+    {
+      "all_checks_pass": true,
+      "optimal_coefficient_scale": 0.2900612726050615,
+      "optimal_low_amplitude": 0.09628465908057585,
+      "pure_heat_pressure_second_jet": 7491217.4012625525,
+      "pure_heat_pressure_second_jet_over_N7": 1.528125082799338e-06,
+      "runtime_seconds": 16.02206990000559,
+      "second_heat_pressure_load_over_N5": -0.23117388550182355,
+      "second_heat_weighted_pressure_loads": {
+        "combined": -268228892.0925893,
+        "maximum_imaginary_residual": 0.0,
+        "pressure_cross": 0.06177040199327166,
+        "pressure_high_high": -268228892.1543597
+      },
+      "size": 65
+    }
+  ],
+  "fixed_amplitude_second_small_carrier_row": {
+    "all_checks_pass": true,
+    "base_generator": -0.16090191533566664,
+    "coefficient_scale": 0.8,
+    "dealias_factor": 10,
+    "expected_pure_velocity_heat_pressure_second_derivative": 533.540178795291,
+    "finite_difference_validation": null,
+    "grid_point_count": 63504,
+    "grid_shape": [
+      144,
+      21,
+      21
+    ],
+    "low_amplitude": 0.6,
+    "maximum_velocity_divergence_residual": 6.308247106170033e-12,
+    "plus_vertex_high_Fisher": 0.017243066960678937,
+    "pure_heat_pressure_replay_residual": 0.0,
+    "pure_heat_pressure_second_derivative_over_N7": 0.006829314288579725,
+    "rho_zero_pressure_HHL_load": -0.013057371318492696,
+    "runtime_seconds": 0.8942276000016136,
+    "second_heat_pressure_load_over_N5": -0.355693452530194,
+    "second_heat_weighted_pressure_loads": {
+      "combined": -1111.5420391568564,
+      "maximum_imaginary_residual": 0.0,
+      "pressure_cross": 0.4897851775228066,
+      "pressure_high_high": -1112.0318243343793
+    },
+    "second_variation": {
+      "channels": {
+        "2H_lambda_lambda[A,D]": {
+          "multiplicity": 2.0,
+          "subterms": {
+            "first_weight_direction": -1.0677574834495691e-18,
+            "mixed_weight_gradient": 4.469021804450202e-19,
+            "second_weight_direction": 7.451465573459206e-19
+          },
+          "value": 1.242912543413717e-19
+        },
+        "2H_u_lambda[E,A]": {
+          "multiplicity": 2.0,
+          "subterms": {
+            "pressure_direction": -0.0027931429001146514,
+            "pressure_variation": -0.0016859694405234069,
+            "weighted_Fisher": 0.055223254341856334
+          },
+          "value": 0.050744142001218275
+        },
+        "2H_u_lambda[E,D]": {
+          "multiplicity": 2.0,
+          "subterms": {
+            "pressure_direction": -0.051746999173381214,
+            "pressure_variation": 0.001288734209165913,
+            "weighted_Fisher": -0.3792472141389746
+          },
+          "value": -0.4297054791031899
+        },
+        "2H_u_lambda[V,A]": {
+          "multiplicity": 2.0,
+          "subterms": {
+            "pressure_direction": -0.30808744970216695,
+            "pressure_variation": -1.6977837547576942,
+            "weighted_Fisher": -0.014146020740179255
+          },
+          "value": -2.0200172252000406
+        },
+        "2H_u_lambda[V,D]": {
+          "multiplicity": 2.0,
+          "subterms": {
+            "pressure_direction": -0.011331324234608423,
+            "pressure_variation": -0.26841457928278506,
+            "weighted_Fisher": -153.3827672784526
+          },
+          "value": -153.66251318196998
+        },
+        "2H_uu[E,V]": {
+          "multiplicity": 2.0,
+          "subterms": {
+            "pressure_first_variation_first": 0.026073101234922184,
+            "pressure_first_variation_second": -3.3299831951094454,
+            "pressure_second_variation": 2.575194562783558,
+            "weighted_Fisher": -2.259721929465372
+          },
+          "value": -2.9884374605563373
+        },
+        "D_lambda[lambda2_0A]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure": 0.002654151368432495,
+            "velocity_Fisher": -0.03041272684700259,
+            "weight_Fisher_cross": 0.006883203631212452,
+            "weight_Fisher_direction": 0.0019807690097166193
+          },
+          "value": -0.018894602837641022
+        },
+        "D_lambda[lambda2_0D]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure": -0.02178664850034449,
+            "velocity_Fisher": -0.0018599120811150511,
+            "weight_Fisher_cross": -3.8330876503695133e-19,
+            "weight_Fisher_direction": -2.991731467135612e-19
+          },
+          "value": -0.02364656058145954
+        },
+        "D_lambda[lambda2_DA]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure": 0.14848822653633217,
+            "velocity_Fisher": 0.010806199337173207,
+            "weight_Fisher_cross": 1.3623414146182181e-18,
+            "weight_Fisher_direction": -2.0585909730034673e-19
+          },
+          "value": 0.15929442587350537
+        },
+        "D_lambda[lambda2_DD]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure": 0.0013138182272662542,
+            "velocity_Fisher": -3.0187894853858634,
+            "weight_Fisher_cross": -0.06975000000000003,
+            "weight_Fisher_direction": -0.010500000000000004
+          },
+          "value": -3.0977256671585973
+        },
+        "D_lambda[lambda2_E0]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure": -0.0007397190552539786,
+            "velocity_Fisher": 0.0028666781111481325,
+            "weight_Fisher_cross": -7.547607174456925e-08,
+            "weight_Fisher_direction": 2.5158690581372734e-08
+          },
+          "value": 0.0021269087385129906
+        },
+        "D_lambda[lambda2_V0]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure": -0.15951985058645032,
+            "velocity_Fisher": -0.010043071724239927,
+            "weight_Fisher_cross": -6.258815866965956e-19,
+            "weight_Fisher_direction": -2.589628771771878e-19
+          },
+          "value": -0.16956292231069026
+        },
+        "D_u[u2_EE]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure_direction": -0.007624416955100891,
+            "pressure_variation": -0.1309217158949332,
+            "weighted_Fisher": 0.08607728651916384
+          },
+          "value": -0.052468846330870254
+        },
+        "D_u[u2_EV]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure_direction": -1.6699206767646526,
+            "pressure_variation": 1.4639204730045048,
+            "weighted_Fisher": 2.4300700291528887
+          },
+          "value": 2.224069825392741
+        },
+        "D_u[u2_VE]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure_direction": -0.012642535597081318,
+            "pressure_variation": 1.2995993581379734,
+            "weighted_Fisher": -1.1369598883663594
+          },
+          "value": 0.14999693417453272
+        },
+        "D_u[u2_VV]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure_direction": -0.02629521379735895,
+            "pressure_variation": 262.43370713463486,
+            "weighted_Fisher": -614.6262324050726
+          },
+          "value": -352.21882048423515
+        },
+        "H_lambda_lambda[A,A]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "first_weight_direction": -0.0015297980306020853,
+            "mixed_weight_gradient": -0.01527871382898281,
+            "second_weight_direction": -0.0015297980306020853
+          },
+          "value": -0.01833830989018698
+        },
+        "H_lambda_lambda[D,D]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "first_weight_direction": -0.028500000000000008,
+            "mixed_weight_gradient": -0.06225000000000003,
+            "second_weight_direction": -0.028500000000000008
+          },
+          "value": -0.11925000000000005
+        },
+        "H_uu[E,E]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure_first_variation_first": -0.008779824411144712,
+            "pressure_first_variation_second": -0.008779824411144712,
+            "pressure_second_variation": 0.04158923083080397,
+            "weighted_Fisher": -0.13792218398247863
+          },
+          "value": -0.11389260197396409
+        },
+        "H_uu[V,V]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure_first_variation_first": 3.509401484117919,
+            "pressure_first_variation_second": 3.509401484117919,
+            "pressure_second_variation": 264.11396390621775,
+            "weighted_Fisher": -666.6347451132438
+          },
+          "value": -395.5019782387902
+        }
+      },
+      "decomposition_residual": 7.958078640513122e-13,
+      "direct_chain_rule_blocks": {
+        "2D_u_lambda": {
+          "multiplicity": 2.0,
+          "subterms": {
+            "pressure_direction": -0.373958916010271,
+            "pressure_variation": -1.9665955692718393,
+            "weighted_Fisher": -153.72093725899057
+          },
+          "value": -156.06149174427267
+        },
+        "D_lambda_acceleration": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure": -0.029590022010017866,
+            "velocity_Fisher": -3.047432318589902,
+            "weight_Fisher_cross": -0.06286687184485931,
+            "weight_Fisher_direction": -0.008519205831592802
+          },
+          "value": -3.148408418276372
+        },
+        "D_lambda_lambda": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "first_weight_direction": -0.03002979803060209,
+            "mixed_weight_gradient": -0.07752871382898284,
+            "second_weight_direction": -0.03002979803060209
+          },
+          "value": -0.13758830989018703
+        },
+        "D_u_acceleration": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure_direction": -1.7164828431141939,
+            "pressure_variation": 265.0663052498824,
+            "weighted_Fisher": -613.247044977767
+          },
+          "value": -349.8972225709988
+        },
+        "D_uu": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure_first_variation_first": 1.8486666127695146,
+            "pressure_first_variation_second": 1.8486666127695146,
+            "pressure_second_variation": 266.730747699832,
+            "weighted_Fisher": -669.0323892266915
+          },
+          "value": -398.6043083013205
+        }
+      },
+      "direct_second_derivative": -907.8490193447585,
+      "expanded_second_derivative": -907.8490193447577,
+      "pure_velocity_heat_pressure_second_derivative": 533.540178795291,
+      "velocity_direction_divergence_residuals": {
+        "E": 1.2513880393116512e-15,
+        "EE": 3.808937994477775e-14,
+        "EV": 3.946930931385381e-13,
+        "V": 1.7763568394002505e-15,
+        "VE": 6.308247106170033e-12,
+        "VV": 6.821210263296962e-13
+      }
+    },
+    "size": 5,
+    "static_optimizer_used": false
+  },
+  "kind": "annular_rho_zero_second_jet_route_guard_audit",
+  "padding_replay": {
+    "all_checks_pass": true,
+    "base_grid_shape": [
+      81,
+      11,
+      11
+    ],
+    "maximum_channel_residual": 4.263256414560601e-14,
+    "padded_grid_shape": [
+      98,
+      14,
+      14
+    ],
+    "total_second_derivative_residual": 2.2737367544323206e-13
+  },
+  "prerequisite_audit": {
+    "all_checks_pass": true,
+    "rows": [
+      {
+        "actual_sha256": "e07d6511f0ca52484065ba58674594bd9b0a828f4b0525e26caa136153ebcdaf",
+        "all_positive_checks_pass": true,
+        "expected_sha256": "e07d6511f0ca52484065ba58674594bd9b0a828f4b0525e26caa136153ebcdaf",
+        "matches": true,
+        "path": "work/ns_collision/results/annular_rho_zero_first_jet_audit_v1.json"
+      },
+      {
+        "actual_sha256": "582a6a4997928b8cd7b67f1d9fd58b5fef6326ee6ffa42bede33a5d9854f36c9",
+        "all_positive_checks_pass": true,
+        "expected_sha256": "582a6a4997928b8cd7b67f1d9fd58b5fef6326ee6ffa42bede33a5d9854f36c9",
+        "matches": true,
+        "path": "work/ns_collision/results/annular_rho_zero_first_jet_remainder_gate_audit_v1.json"
+      }
+    ]
+  },
+  "pure_heat_pressure_asymptotic_certificate": {
+    "all_checks_pass": true,
+    "analytic_strict_positive_lower_bound": 8.564201607377943e-10,
+    "finite_identity": "D_uu g_pressure[v_nu,v_nu]+D_u g_pressure[nu Delta v_nu]=-nu^2 a_N t_N B_(2),N",
+    "first_jet_N5_limit": -1.0442344590350905e-07,
+    "optimizer_limits": {
+      "a_N_over_N": "|b_0|/nu",
+      "t_N_over_N": "|b_0| sqrt(8/(3q))/nu"
+    },
+    "pure_heat_pressure_second_jet_over_N7_limit": 1.3259462572683687e-06,
+    "pure_heat_quadratic_slope_turnaround_scale_N2t": 0.07875390524396945,
+    "second_heat_multiplier": "(|k_1|^2+|k_2|^2+|ell|^2)^2 for every HHL monomial",
+    "second_heat_pressure_load_over_N5_limit": -0.22213447028743452,
+    "theorem": "The pure velocity-heat pressure component of the second restart jet has a strictly positive N^7 limit.",
+    "turnaround_guard": "The turnaround scale uses only the negative first coefficient and positive pure-heat curvature. It is not a prediction for the full flow because nonlinear second-jet channels, including a possible scale above N^7, have not yet been bounded."
+  },
+  "scope": "The exact restart-time second derivative of the rho=0 generator, including Navier-Stokes acceleration, pressure Hessians, and backward-weight acceleration. The pure velocity-heat pressure N7 limit is certified. The full N7 coefficient and any finite parabolic window remain open.",
+  "second_heat_pressure_limit_certificate": {
+    "all_checks_pass": true,
+    "analytic_absolute_lower_bounds": {
+      "first_heat": 0.001314420682333938,
+      "second_heat": 0.010515365458671504,
+      "static": 0.00016430258529174225
+    },
+    "continuum_domain": "[2,3] x [-1/2,1/2] x [-1/2,1/2]",
+    "general_limit_formula": "B_(m),N/N^(2m+1) -> (sqrt(2)/20) 2^m integral_D S^2 |xi|^(2m)(V_y^2-V_z^2)",
+    "order_per_axis": 64,
+    "pointwise_sign": "V_z^2-V_y^2>=255/13718 and |xi|^4>=16 on D",
+    "predecessor_replay_residuals": {
+      "first_heat": 0.0,
+      "static": 0.0
+    },
+    "pressure_load_limits": {
+      "first_heat_B1_over_N3": -0.017493957024435965,
+      "second_heat_B2_over_N5": -0.22213447028743452,
+      "static_B0_over_N": -0.0014065919385788297
+    },
+    "profile_mass": "integral_D S^2=1/8",
+    "quadrature": "tensor Gauss-Legendre",
+    "raw_integrals": {
+      "first_heat_m1": -0.12370095641764708,
+      "second_heat_m2": -0.785363951377633,
+      "static_m0": -0.019892213962628445
+    },
+    "second_heat_strict_negative_upper_bound": -0.010515365458671504
+  },
+  "second_jet_power_route_guard": {
+    "all_channels_above_N7_excluded": false,
+    "all_checks_pass": true,
+    "certified_N7_channel": "double_velocity_heat_pressure",
+    "full_N7_coefficient_certified": false,
+    "large_carrier_FFT_authorized": false,
+    "next_required_proof": "Project the combined inviscid pressure/transport sector onto its low-amplitude branches. Resolve the four-high coefficient at its candidate N7 fixed-amplitude scale before assigning any full second-jet leading power.",
+    "rows": [
+      {
+        "can_affect_full_N7_coefficient": true,
+        "channel_group": "double_velocity_heat_pressure",
+        "exact_components": "H_uu[V,V]_pressure + D_u[u2_VV]_pressure",
+        "route_power": 7,
+        "status": "certified_positive_N7_limit"
+      },
+      {
+        "can_affect_full_N7_coefficient": false,
+        "channel_group": "double_velocity_heat_weighted_Fisher",
+        "exact_components": "H_uu[V,V]_Fisher + D_u[u2_VV]_Fisher",
+        "route_power": 5,
+        "status": "subcritical_route_from_compatible_triple-difference count; full bound deferred"
+      },
+      {
+        "can_affect_full_N7_coefficient": false,
+        "channel_group": "one_heat_one_Euler_velocity",
+        "exact_components": "2H_uu[E,V] + D_u[u2_EV] + D_u[u2_VE]",
+        "route_power": 6,
+        "status": "predecessor O(N4) route plus one high Laplacian; projector-stencil proof deferred"
+      },
+      {
+        "can_affect_full_N7_coefficient": false,
+        "channel_group": "velocity_heat_weight_transport",
+        "exact_components": "2H_u_lambda[V,A or D] and corresponding lambda2 terms",
+        "route_power": 6,
+        "status": "one high Laplacian route; compatible-stencil proof deferred"
+      },
+      {
+        "can_affect_full_N7_coefficient": true,
+        "channel_group": "pure_nonlinear_velocity_pressure",
+        "exact_components": "H_uu[E,E] + D_u[u2_EE], pressure subterms",
+        "route_power": 9,
+        "status": "unresolved route guard: the four-high/one-low amplitude branch is permitted c_1,N at fixed-output N7 scale, producing optimized N9 after a_N t_N; a finite-output proof is required"
+      },
+      {
+        "can_affect_full_N7_coefficient": true,
+        "channel_group": "pure_weight_transport_and_mixed_pressure",
+        "exact_components": "H_u_lambda[E,A], H_lambda_lambda[A,A], and lambda2 transport terms",
+        "route_power": 7,
+        "status": "unresolved route guard: low-output incidence and compatible differences must be counted"
+      },
+      {
+        "can_affect_full_N7_coefficient": false,
+        "channel_group": "fixed_weight_antidiffusion_only",
+        "exact_components": "D-weight directions without velocity heat or transport",
+        "route_power": 5,
+        "status": "the weight has fixed Fourier support, so -nu Delta lambda supplies no carrier N2"
+      }
+    ],
+    "rule": "A high velocity Laplacian can add two carrier powers; backward anti-diffusion of the fixed weight cannot. Route powers are triage flags, not proved asymptotic bounds. In particular, differentiating the four-high Euler pressure branch is not controlled by adding two powers to the prior first-jet total bound.",
+    "unresolved_possible_N7_channel_groups": [
+      "pure_nonlinear_velocity_pressure",
+      "pure_weight_transport_and_mixed_pressure"
+    ]
+  },
+  "second_jet_support_ledger": {
+    "all_checks_pass": true,
+    "field_support_rows": [
+      {
+        "field": "u",
+        "support_radius": "K"
+      },
+      {
+        "field": "lambda",
+        "support_radius": "L=1"
+      },
+      {
+        "field": "u_E",
+        "support_radius": "2K"
+      },
+      {
+        "field": "u_nu",
+        "support_radius": "K"
+      },
+      {
+        "field": "lambda_A",
+        "support_radius": "K+L"
+      },
+      {
+        "field": "lambda_nu",
+        "support_radius": "L"
+      },
+      {
+        "field": "D E[u_E]",
+        "support_radius": "3K"
+      },
+      {
+        "field": "D E[u_nu]",
+        "support_radius": "2K"
+      },
+      {
+        "field": "nu Delta u_E",
+        "support_radius": "2K"
+      },
+      {
+        "field": "nu Delta u_nu",
+        "support_radius": "K"
+      },
+      {
+        "field": "lambda_2",
+        "support_radius": "2K+L"
+      }
+    ],
+    "implemented_dealias_factor": 10,
+    "maximum_second_jet_integrand_support": "5K+O(L)",
+    "maximum_velocity_acceleration_support": "3K",
+    "maximum_weight_acceleration_support": "2K+L",
+    "reason": "Every epsilon^2 coefficient contains either two first directions or one acceleration. Pressure contributes one bilinear convolution, so no exact second-jet mean exceeds five carrier radii. A ten-times one-field grid separates positive and negative support before the zero-mode mean.",
+    "required_rectangular_grid_rule": "each grid length exceeds ten times the corresponding one-field carrier maximum"
+  },
+  "small_carrier_validation": {
+    "all_checks_pass": true,
+    "base_generator": -0.2750544594508113,
+    "coefficient_scale": 0.9,
+    "dealias_factor": 10,
+    "expected_pure_velocity_heat_pressure_second_derivative": 71.39450539475054,
+    "finite_difference_validation": {
+      "Richardson_extrapolation": -531.7852520507945,
+      "absolute_residual": 1.187072484754026e-08,
+      "analytic_second_derivative": -531.7852520626652,
+      "coarse_central_second_difference": -531.7989844863536,
+      "coarse_to_fine_change": 0.010299326669269249,
+      "epsilon": 0.0002,
+      "fine_central_second_difference": -531.7886851596843,
+      "relative_residual": 2.2322403266161697e-11
+    },
+    "grid_point_count": 9801,
+    "grid_shape": [
+      81,
+      11,
+      11
+    ],
+    "low_amplitude": 0.7,
+    "maximum_velocity_divergence_residual": 9.82944206236452e-13,
+    "plus_vertex_high_Fisher": 0.05363542869638552,
+    "pure_heat_pressure_replay_residual": 1.4210854715202004e-14,
+    "pure_heat_pressure_second_derivative_over_N7": 0.032644949883287845,
+    "rho_zero_pressure_HHL_load": -0.011215579440969115,
+    "runtime_seconds": 0.1814139000052819,
+    "second_heat_pressure_load_over_N5": -0.4663564269041122,
+    "second_heat_weighted_pressure_loads": {
+      "combined": -113.32461173769927,
+      "maximum_imaginary_residual": 0.0,
+      "pressure_cross": 0.5903360988262882,
+      "pressure_high_high": -113.91494783652556
+    },
+    "second_variation": {
+      "channels": {
+        "2H_lambda_lambda[A,D]": {
+          "multiplicity": 2.0,
+          "subterms": {
+            "first_weight_direction": -2.4184533798333936e-18,
+            "mixed_weight_gradient": -4.666992002301444e-18,
+            "second_weight_direction": -3.556174276025508e-18
+          },
+          "value": -1.0641619658160346e-17
+        },
+        "2H_u_lambda[E,A]": {
+          "multiplicity": 2.0,
+          "subterms": {
+            "pressure_direction": -0.0017081976358515759,
+            "pressure_variation": -0.012153977714090072,
+            "weighted_Fisher": 0.13598876507333388
+          },
+          "value": 0.12212658972339223
+        },
+        "2H_u_lambda[E,D]": {
+          "multiplicity": 2.0,
+          "subterms": {
+            "pressure_direction": -0.009528519424370009,
+            "pressure_variation": 0.0007230313434569783,
+            "weighted_Fisher": -0.22832756242188812
+          },
+          "value": -0.23713305050280115
+        },
+        "2H_u_lambda[V,A]": {
+          "multiplicity": 2.0,
+          "subterms": {
+            "pressure_direction": -0.13104127611448638,
+            "pressure_variation": -0.795565901184563,
+            "weighted_Fisher": -0.24396927926268036
+          },
+          "value": -1.1705764565617298
+        },
+        "2H_u_lambda[V,D]": {
+          "multiplicity": 2.0,
+          "subterms": {
+            "pressure_direction": -0.019214099536478527,
+            "pressure_variation": -0.4065022181667736,
+            "weighted_Fisher": -68.01858538641864
+          },
+          "value": -68.44430170412188
+        },
+        "2H_uu[E,V]": {
+          "multiplicity": 2.0,
+          "subterms": {
+            "pressure_first_variation_first": 0.042186958805830004,
+            "pressure_first_variation_second": -0.6296584429672707,
+            "pressure_second_variation": 1.0290258828349461,
+            "weighted_Fisher": -0.99276512983897
+          },
+          "value": -0.5512107311654646
+        },
+        "D_lambda[lambda2_0A]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure": 4.1881375265894417e-05,
+            "velocity_Fisher": -0.06920100758186423,
+            "weight_Fisher_cross": 0.013291699382111874,
+            "weight_Fisher_direction": 0.003865387932161684
+          },
+          "value": -0.05200203889232478
+        },
+        "D_lambda[lambda2_0D]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure": -0.00954592684397955,
+            "velocity_Fisher": -0.005412985666431496,
+            "weight_Fisher_cross": -9.147077771501009e-19,
+            "weight_Fisher_direction": -5.309836167666995e-19
+          },
+          "value": -0.014958912510411046
+        },
+        "D_lambda[lambda2_DA]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure": 0.061235599571897906,
+            "velocity_Fisher": 0.0778392893563525,
+            "weight_Fisher_cross": -3.3076739433786932e-18,
+            "weight_Fisher_direction": 1.6141901949707664e-19
+          },
+          "value": 0.1390748889282504
+        },
+        "D_lambda[lambda2_DD]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure": -0.002772076558427117,
+            "velocity_Fisher": -1.2340565709596236,
+            "weight_Fisher_cross": -0.09931201171875001,
+            "weight_Fisher_direction": -0.014950195312500003
+          },
+          "value": -1.3510908545493008
+        },
+        "D_lambda[lambda2_E0]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure": -0.0010191264459570577,
+            "velocity_Fisher": -0.00045833208847720705,
+            "weight_Fisher_cross": -1.0186642593150488e-06,
+            "weight_Fisher_direction": 3.395547531026431e-07
+          },
+          "value": -0.0014781376439404771
+        },
+        "D_lambda[lambda2_V0]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure": -0.06615859206066846,
+            "velocity_Fisher": -0.08009958986886775,
+            "weight_Fisher_cross": 3.0018273801210743e-18,
+            "weight_Fisher_direction": 3.8514011669477935e-19
+          },
+          "value": -0.1462581819295362
+        },
+        "D_u[u2_EE]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure_direction": -0.0037611441455029353,
+            "pressure_variation": -0.015901418227968013,
+            "weighted_Fisher": 0.10344391139389633
+          },
+          "value": 0.08378134902042539
+        },
+        "D_u[u2_EV]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure_direction": -0.31758960732655717,
+            "pressure_variation": 0.6401004344856289,
+            "weighted_Fisher": 1.1891017811377596
+          },
+          "value": 1.5116126082968313
+        },
+        "D_u[u2_VE]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure_direction": -0.009138598683602178,
+            "pressure_variation": 0.5386181738340535,
+            "weighted_Fisher": -0.4870097321685244
+          },
+          "value": 0.04246984298192696
+        },
+        "D_u[u2_VV]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure_direction": -0.04900943379469419,
+            "pressure_variation": 34.125314316591734,
+            "weighted_Fisher": -254.80934692432385
+          },
+          "value": -220.7330420415268
+        },
+        "H_lambda_lambda[A,A]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "first_weight_direction": -0.0029612689900784623,
+            "mixed_weight_gradient": -0.030103089755282565,
+            "second_weight_direction": -0.0029612689900784623
+          },
+          "value": -0.03602562773543949
+        },
+        "H_lambda_lambda[D,D]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "first_weight_direction": -0.040579101562500004,
+            "mixed_weight_gradient": -0.08863330078125,
+            "second_weight_direction": -0.040579101562500004
+          },
+          "value": -0.16979150390625
+        },
+        "H_uu[E,E]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure_first_variation_first": -0.004675674801281749,
+            "pressure_first_variation_second": -0.004675674801281749,
+            "pressure_second_variation": 0.005114636060477166,
+            "weighted_Fisher": -0.2533305952454838
+          },
+          "value": -0.2575673087875701
+        },
+        "H_uu[V,V]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure_first_variation_first": 1.26998703731965,
+            "pressure_first_variation_second": 1.26998703731965,
+            "pressure_second_variation": 34.778226437314196,
+            "weighted_Fisher": -277.837081303736
+          },
+          "value": -240.5188807917825
+        }
+      },
+      "decomposition_residual": 1.1368683772161603e-13,
+      "direct_chain_rule_blocks": {
+        "2D_u_lambda": {
+          "multiplicity": 2.0,
+          "subterms": {
+            "pressure_direction": -0.16149209271118653,
+            "pressure_variation": -1.2134990657219689,
+            "weighted_Fisher": -68.35489346302984
+          },
+          "value": -69.729884621463
+        },
+        "D_lambda_acceleration": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure": -0.01821824096186839,
+            "velocity_Fisher": -1.3113891968089113,
+            "weight_Fisher_cross": -0.08602133100089744,
+            "weight_Fisher_direction": -0.011084467825585212
+          },
+          "value": -1.4267132365972623
+        },
+        "D_lambda_lambda": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "first_weight_direction": -0.043540370552578464,
+            "mixed_weight_gradient": -0.1187363905365326,
+            "second_weight_direction": -0.043540370552578464
+          },
+          "value": -0.20581713164168952
+        },
+        "D_u_acceleration": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure_direction": -0.37949878395035647,
+            "pressure_variation": 35.288131506683435,
+            "weighted_Fisher": -254.00381096396075
+          },
+          "value": -219.09517824122767
+        },
+        "D_uu": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure_first_variation_first": 0.9715756204376478,
+            "pressure_first_variation_second": 0.9715756204376478,
+            "pressure_second_variation": 35.81236695620964,
+            "weighted_Fisher": -279.0831770288205
+          },
+          "value": -241.32765883173556
+        }
+      },
+      "direct_second_derivative": -531.7852520626652,
+      "expanded_second_derivative": -531.7852520626651,
+      "pure_velocity_heat_pressure_second_derivative": 71.39450539475052,
+      "velocity_direction_divergence_residuals": {
+        "E": 1.019761552132115e-15,
+        "EE": 8.470371087977627e-15,
+        "EV": 2.5494530481905275e-14,
+        "V": 8.881784197001252e-16,
+        "VE": 9.82944206236452e-13,
+        "VV": 2.842170943040401e-14
+      }
+    },
+    "size": 3,
+    "static_optimizer_used": false
+  },
+  "status": "annular_rho_zero_second_jet_route_guard_certified",
+  "symbolic_second_variation_certificate": {
+    "all_checks_pass": true,
+    "coupled_accelerations": {
+      "velocity": "u_2=-P[(u_1 dot grad)u+(u dot grad)u_1]+nu Delta u_1",
+      "weight": "lambda_2=-u_1 dot grad lambda-u dot grad lambda_1-nu Delta lambda_1"
+    },
+    "generator": "g(u,lambda)=integral[p(u)u dot grad lambda-nu lambda|grad u|^2-nu lambda|grad lambda|^2]",
+    "mixed_Hessian": "D_u_lambda g[v,mu]=integral[p'[u;v]u dot grad mu+p v dot grad mu-2nu mu grad u:grad v]",
+    "pressure_second_variation": "p''[v,w]=p[v,w]+p[w,v]",
+    "second_chain_rule": "g''=D_uu g[u_1,u_1]+2D_u_lambda g[u_1,lambda_1]+D_lambda_lambda g[lambda_1,lambda_1]+D_u g[u_2]+D_lambda g[lambda_2]",
+    "symbolic_residuals": {
+      "mixed_Hessian": "0",
+      "velocity_Hessian": "0",
+      "weight_Hessian": "0"
+    },
+    "velocity_Hessian": "D_uu g[v,w]=integral[p''[v,w]u dot grad lambda+p'[u;v]w dot grad lambda+p'[u;w]v dot grad lambda-2nu lambda grad v:grad w]",
+    "weight_Hessian": "D_lambda_lambda g[mu,eta]=-2nu integral[mu grad lambda dot grad eta+eta grad lambda dot grad mu+lambda grad mu dot grad eta]"
+  }
+}

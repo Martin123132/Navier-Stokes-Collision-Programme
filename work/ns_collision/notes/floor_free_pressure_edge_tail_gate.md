@@ -1,0 +1,187 @@
+# Floor-free far-carrier pressure-edge tail gate
+
+Status: certified. The production audit and all five focused tests pass. This
+stage reconnects the direct `H^(-1)` stress-tail theorem to the signed
+projected-replica pressure edge. It does not claim control of the complete
+pressure flux.
+
+## 1. Roadmap correction
+
+The previous checkpoint named construction of a time-integrated signed triad
+measure as the next task. That construction already exists:
+
+```text
+J_s(u)=sum_alpha d_alpha(u)/Lambda_alpha,
+
+partial_t J_s=-nu D_s+X_s.
+```
+
+The corpus subsequently built two more heat primitives, proved the quartic,
+quintic, and sextic transfers sign-indefinite, and identified the infinite
+hierarchy as a small-Reynolds Neumann resolvent under the available bounds.
+Repeating that construction would not advance the proof.
+
+The live collision-like route is path-dependent replica geometry. Its critical
+obstruction is the partition pressure edge
+
+```text
+integral_0^T integral p u dot grad lambda dx dt.       (1.1)
+```
+
+Weights in the terminal dual problem may approach zero, so a weighted
+Calderon-Zygmund estimate with a positive floor is unavailable.
+
+## 2. Input theorem
+
+Let `C_H` be the comparable high-high Reynolds-stress shell with its
+low-output cutoff, and define
+
+```text
+R_K=sum_(H>=K) C_H.                                  (2.1)
+```
+
+The direct endpoint theorem gives
+
+```text
+||R_K||_(L2_t H_x^-1)^2
+ <=155 C_selector^2 E_* D_T/K,                      (2.2)
+
+E_*=sup_t ||u(t)||_2^2,
+
+D_T=integral_0^T ||grad u(t)||_2^2 dt.              (2.3)
+```
+
+Let
+
+```text
+p_K^(HH,lo)=-R_i R_j (R_K)_ij.                      (2.4)
+```
+
+The double-Riesz contraction has Fourier operator norm one from the tensor
+Frobenius norm to the scalar pressure. Therefore (2.2) also bounds
+`p_K^(HH,lo)` in `L2_t H_x^(-1)`.
+
+## 3. Floor-free pressure pairing
+
+Remove the conserved spatial mean of `u` by a Galilean translation. On the
+torus,
+
+```text
+||u||_2<=C_P||grad u||_2.                           (3.1)
+```
+
+For a smooth, possibly time-dependent partition weight, put
+
+```text
+g=u dot grad lambda,
+
+L_lambda
+ =(1+C_P)||grad lambda||_infinity
+   +C_P||grad^2 lambda||_infinity.                  (3.2)
+```
+
+The product rule and (3.1) give, pointwise in time,
+
+```text
+||g||_(H^1)<=L_lambda||grad u||_2.                  (3.3)
+```
+
+If `L_lambda` denotes the time supremum of (3.2), then
+
+```text
+||u dot grad lambda||_(L2_t H_x^1)
+ <=L_lambda sqrt(D_T).                              (3.4)
+```
+
+No reciprocal weight and no lower bound on `lambda` appears.
+
+## 4. Uniform time-integrated theorem
+
+Sobolev duality, (2.2), and (3.4) yield
+
+```text
+absolute_value(
+ integral_0^T <p_K^(HH,lo),u dot grad lambda>dt)
+
+ <=sqrt(155) C_selector L_lambda
+    sqrt(E_*) D_T/sqrt(K).                          (4.1)
+```
+
+For a Leray energy-class trajectory,
+
+```text
+E_*<=E_0,
+
+D_T<=E_0/(2nu).                                    (4.2)
+```
+
+Consequently,
+
+```text
+absolute_value(
+ integral_0^T <p_K^(HH,lo),u dot grad lambda>dt)
+
+ <=[sqrt(155)/2] C_selector L_lambda
+    E_0^(3/2)/(nu sqrt(K)).                         (4.3)
+```
+
+The right side is independent of `T` and uniform over the smooth Galerkin
+approximations. For every fixed smooth partition weight, the far-carrier
+low-output high-high pressure edge therefore vanishes as `K` tends to
+infinity, even when the weight has zero faces.
+
+## 5. Scale-adapted partition family
+
+Suppose a partition at frequency `m>=1` obeys
+
+```text
+L_(lambda_m)<=C m^2.                                (5.1)
+```
+
+Choose
+
+```text
+K_m=m^(4+2epsilon),       epsilon>0.                (5.2)
+```
+
+Then (4.3) has scale factor
+
+```text
+m^2/sqrt(K_m)=m^(-epsilon).                         (5.3)
+```
+
+Thus a diagonal far-carrier cutoff can be removed along an increasing
+partition family. The production audit replays the concrete choice
+`epsilon=1/2`, `K_m=m^5`.
+
+This is not a critical Carleson estimate. The polynomial separation in (5.2)
+shows exactly how much remains to be recovered before the terminal dual
+supremum can be taken uniformly.
+
+## 6. Scope
+
+Established:
+
+- a floor-free, time-integrated pressure-edge estimate;
+- uniform removal of low-output comparable high-high carriers above `K`;
+- an energy-only bound independent of the terminal time;
+- a diagonal removal theorem for smooth scale-adapted partitions.
+
+Not established:
+
+- control of near-carrier pressure interactions;
+- HHL and non-low-output pressure paraproducts;
+- uniform control of the full terminal dual supremum;
+- a critical `L3` velocity estimate;
+- exceptional-set removal or global regularity.
+
+The surviving analytic obstruction is now narrower: prove a signed
+near-carrier partition-edge estimate on the balanced annular range, using the
+existing Hamming/vertex commutator identities and replica Fisher
+dissipation. The arbitrarily remote high-high beat cannot be cited as the
+remaining obstruction for a fixed smooth edge.
+
+The deterministic certificate is generated by
+`scripts/floor_free_pressure_edge_tail_gate_audit.py`. The production result
+is `results/floor_free_pressure_edge_tail_gate_audit_v1.json`, with SHA-256
+`3cffc4a951b4b9806a505093ca3fff2a5475341427117bb0339d76b4acfc6f44`.

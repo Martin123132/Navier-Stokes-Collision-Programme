@@ -1,0 +1,28 @@
+{
+  "configuration": {
+    "expected_count": 519,
+    "pattern": "test_*.py",
+    "start_directory": "work/ns_collision/tests",
+    "test_engine": "pytest"
+  },
+  "discovered_test_count": 519,
+  "duration_seconds": 1098.1176063000166,
+  "errors": [],
+  "exit_code": 0,
+  "expected_count_matched": true,
+  "failures": [],
+  "finished_at_utc": "2026-07-30T17:38:32.929858+00:00",
+  "kind": "navier_stokes_full_regression_checkpoint",
+  "passed_count": 519,
+  "pytest_exit_code": 0,
+  "runtime": {
+    "active_worker_count": 1,
+    "below_normal_priority_set": true
+  },
+  "schema_version": 2,
+  "skipped_count": 0,
+  "started_at_utc": "2026-07-30T17:20:14.804128+00:00",
+  "successful": true,
+  "tests_run": 519,
+  "unexpected_successes": []
+}

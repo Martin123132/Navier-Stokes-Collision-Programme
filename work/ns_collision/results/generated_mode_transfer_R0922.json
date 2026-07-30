@@ -1,0 +1,25 @@
+{
+  "decomposition_checks_pass": true,
+  "endpoint_primitive": 2.6342743586791695e-05,
+  "final_time": 2.0,
+  "heat_scale": 0.5,
+  "integral_sum_residual": 4.506215279392878e-19,
+  "integrated_components": {
+    "difference_mode_increment": 0.005031532920806493,
+    "difference_sum_interaction": -0.00010555895872070513,
+    "higher_generation_remainder": 0.0025083229906839254,
+    "seed": -0.007456643932763537,
+    "sum_mode_increment": 4.7024361374973086e-05
+  },
+  "integrated_defect": -1.7079351703909494e-06,
+  "integrated_total_transfer": 2.4677381381149336e-05,
+  "maximum_boundary_energy_fraction": 3.0911305913370666e-06,
+  "maximum_decomposition_residual": 0.0,
+  "maximum_mode": 3,
+  "primitive_balance_residual": -4.2572964748590773e-08,
+  "reynolds": 0.922,
+  "samples": 101,
+  "sign": -1,
+  "underresolved_warning": false,
+  "viscosity": 1.0
+}

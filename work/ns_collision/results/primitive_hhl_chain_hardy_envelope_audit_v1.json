@@ -1,0 +1,1276 @@
+{
+  "Hardy_certificate": {
+    "axial_Fisher_identity": "After the vertex-phase gauge, E_lambda,chain=lambda0 sum_edges ||D_(j+1)-D_j||_F^2.",
+    "finite_spectral_rows": [
+      {
+        "all_checks_pass": true,
+        "chain_length": 16,
+        "orthogonal_sine_phase_generalized_eigenvalue": 0.6457581696630832,
+        "orthogonal_sine_phase_limit": 0.6666666666666666,
+        "raw_Hardy_certified_upper_bound": 4.0,
+        "raw_Hardy_generalized_eigenvalue": 1.564396553947526
+      },
+      {
+        "all_checks_pass": true,
+        "chain_length": 64,
+        "orthogonal_sine_phase_generalized_eigenvalue": 0.6611442588942655,
+        "orthogonal_sine_phase_limit": 0.6666666666666666,
+        "raw_Hardy_certified_upper_bound": 4.0,
+        "raw_Hardy_generalized_eigenvalue": 2.0753792057120446
+      },
+      {
+        "all_checks_pass": true,
+        "chain_length": 256,
+        "orthogonal_sine_phase_generalized_eigenvalue": 0.6652661897250338,
+        "orthogonal_sine_phase_limit": 0.6666666666666666,
+        "raw_Hardy_certified_upper_bound": 4.0,
+        "raw_Hardy_generalized_eigenvalue": 2.473097031101913
+      },
+      {
+        "all_checks_pass": true,
+        "chain_length": 1024,
+        "orthogonal_sine_phase_generalized_eigenvalue": 0.666315281242156,
+        "orthogonal_sine_phase_limit": 0.6666666666666666,
+        "raw_Hardy_certified_upper_bound": 4.0,
+        "raw_Hardy_generalized_eigenvalue": 2.772966290442392
+      },
+      {
+        "all_checks_pass": true,
+        "chain_length": 4096,
+        "orthogonal_sine_phase_generalized_eigenvalue": 0.6665787407910141,
+        "orthogonal_sine_phase_limit": 0.6666666666666666,
+        "raw_Hardy_certified_upper_bound": 4.0,
+        "raw_Hardy_generalized_eigenvalue": 2.999221824722414
+      },
+      {
+        "all_checks_pass": true,
+        "chain_length": 16384,
+        "orthogonal_sine_phase_generalized_eigenvalue": 0.6666446802217744,
+        "orthogonal_sine_phase_limit": 0.6666666666666666,
+        "raw_Hardy_certified_upper_bound": 4.0,
+        "raw_Hardy_generalized_eigenvalue": 3.171872387460215
+      }
+    ],
+    "matrix_valued_inequality": "sum_j ||X_j||^2/j^2<=4 sum_j ||X_j-X_(j-1)||^2, X_0=0",
+    "multi_coordinate_floor": "For p>=2, E_lambda,chain>=2 lambda0(1-2^(1-p))sum||D_j||_F^2.",
+    "orthogonal_phase_interpretation": "The low sine wave polarized perpendicular to the canonical velocity plane creates a weighted velocity-mass pairing. Its exact finite-chain generalized norm tends to 2/3, so it is a Hardy-controlled block, not a no-go.",
+    "velocity_conversion": "D_j=k_j tensor uhat_j and |k_j|>=jm imply sum|uhat_j|^2<=(4/(m^2 lambda0))E_lambda,chain."
+  },
+  "all_positive_checks_pass": true,
+  "certification_flags": {
+    "Navier_Stokes_global_regularity_proved": false,
+    "all_cross_shell_HHL_absorbed": false,
+    "arbitrary_low_polarization_and_phase_within_chain_controlled": true,
+    "arbitrary_transverse_residue_within_chain_controlled": true,
+    "canonical_sharp_half_bound_invalidated": false,
+    "critical_L3_controlled": false,
+    "finite_low_wave_vertex_Schur_bound_proved": false,
+    "modulated_wave_HHL_no_go_invalidated": false,
+    "multiband_absolute_Fisher_recombination_restored": false,
+    "multiple_primitive_steps_charged_to_unsplit_Fisher": false,
+    "multiple_residue_chains_jointly_assembled": false,
+    "terminal_dual_supremum_controlled": false,
+    "translated_compatible_vertex_within_chain_controlled": true,
+    "uniform_isolated_primitive_chain_envelope_proved": true,
+    "uniform_primitive_chain_constant": 108.0
+  },
+  "co_scaling_stress": {
+    "all_checks_pass": true,
+    "family_spreads": {
+      "axial_canonical_pressure_active": 0.004087702950016713,
+      "axial_oblique_residue": 0.0003051142363554695,
+      "axial_overlapping_low_support": 0.0031023266272836303,
+      "axial_parallel_residue_disjoint_low": 0.0008406379911061492,
+      "planar_diagonal_disjoint_low": 0.00027867046528010363,
+      "planar_diagonal_overlapping_low": 0.002238404203462883,
+      "three_coordinate_step": 0.0006496086852606424
+    },
+    "maximum_within_family_spread": 0.004087702950016713,
+    "normalized_quantity": "m |B_HHL|/(|Uhat| E_lambda)",
+    "note": "The random coefficient draws differ by scale, so this is a bounded co-scaling stress rather than an equality replay."
+  },
+  "kind": "primitive_hhl_chain_hardy_envelope_audit",
+  "mandatory_adversary_replays": {
+    "Taylor_Green": {
+      "all_checks_pass": true,
+      "compatible_pressure_load": 0.0,
+      "component_weighted_Fisher_sum": 0.5,
+      "dyadic_shell_count": 1,
+      "physical_weighted_Fisher": 0.5,
+      "ratio": 1.0
+    },
+    "canonical_pressure_active_chain": {
+      "all_positive_checks_pass": true,
+      "canonical_bound_constant": 0.5,
+      "maximum_sparse_ratio": 0.01689003020331159,
+      "status": "canonical_pressure_active_chain_Fisher_compatibility_proved"
+    },
+    "modulated_wave_HHL": {
+      "all_positive_checks_pass": true,
+      "analytic_limit": 0.006944444444444444,
+      "component_reconstruction_passes": true,
+      "last_carrier": 1024,
+      "last_complete_over_limit": 1.001431923446627,
+      "status": "cross_shell_carrier_decay_falsified"
+    },
+    "seed81": {
+      "all_checks_pass": true,
+      "component_weighted_Fisher_sum": 788.136006395655,
+      "dyadic_shell_count": 2,
+      "physical_weighted_Fisher": 787.1192752552946,
+      "ratio": 1.0012917116532696,
+      "stored_compatible_pressure_load": 1.280453496113644
+    }
+  },
+  "next_theorem_target": "Construct the finite primitive-step/low-wave incidence matrix for one compatible tensor vertex, retain the shared Fisher matrix once, and compute the exact Schur row budget. Test whether the six-partner incidence structure keeps the joint constant finite without absolute-value duplication.",
+  "positive_checks": {
+    "Taylor_Green_replay_passes": true,
+    "canonical_chain_replay_passes": true,
+    "co_scaling_stress_passes": true,
+    "exact_complete_symbol_and_Hardy_budget_pass": true,
+    "finite_Hardy_spectra_stay_below_four": true,
+    "modulated_wave_HHL_no_go_remains_live": true,
+    "orthogonal_sine_phase_block_stays_below_two_thirds": true,
+    "prerequisite_hashes_and_results_pass": true,
+    "primitive_sparse_atlas_passes": true,
+    "resonant_partner_degree_is_six": true,
+    "seed81_replay_passes": true
+  },
+  "prerequisites": {
+    "all_checks_pass": true,
+    "rows": [
+      {
+        "actual_sha256": "e39e238dcd78aabfb8c089b20f29b8ecab5bf1d8b9f505932317ef1700eff5da",
+        "all_positive_checks_pass": true,
+        "expected_sha256": "e39e238dcd78aabfb8c089b20f29b8ecab5bf1d8b9f505932317ef1700eff5da",
+        "matches": true,
+        "path": "work/ns_collision/results/pressure_active_fisher_null_compatibility_gate_audit_v1.json"
+      },
+      {
+        "actual_sha256": "47b8704985671f0dac66ae38ff87a186acd6b938928828d3299a571337a7f087",
+        "all_positive_checks_pass": true,
+        "expected_sha256": "47b8704985671f0dac66ae38ff87a186acd6b938928828d3299a571337a7f087",
+        "matches": true,
+        "path": "work/ns_collision/results/multiband_weighted_fisher_recombination_no_go_audit_v1.json"
+      },
+      {
+        "actual_sha256": "d6c330cba935e2bc8bcac55e462adfb97d91f04b42ed92faf209cea598d35597",
+        "all_positive_checks_pass": true,
+        "expected_sha256": "d6c330cba935e2bc8bcac55e462adfb97d91f04b42ed92faf209cea598d35597",
+        "matches": true,
+        "path": "work/ns_collision/results/cross_shell_modulated_wave_gate_audit_v1.json"
+      }
+    ]
+  },
+  "primitive_sparse_atlas": [
+    {
+      "all_checks_pass": true,
+      "claimed_chain_constant": 108.0,
+      "component_loads": {
+        "combined": 0.0010765709598063193,
+        "kinetic": 0.0010670789289047493,
+        "pressure_cross": 9.492030901569266e-06,
+        "pressure_high_high": 0.0
+      },
+      "component_vs_direct_flux_residual": 5.822472142146867e-16,
+      "direct_complete_load": 0.0010765709598063193,
+      "direct_complete_load_imaginary_residual": 4.336808689942018e-19,
+      "label": "axial_parallel_residue_disjoint_low",
+      "maximum_divergence_residual": 0.0,
+      "maximum_load_imaginary_residual": 4.336808689942018e-19,
+      "normalized_m_times_load_over_U_Fisher": 0.0002890229443853999,
+      "partition_scale_m": 1,
+      "primitive_low_wave": [
+        0,
+        1,
+        0
+      ],
+      "primitive_residue": [
+        0,
+        0,
+        0
+      ],
+      "primitive_step": [
+        1,
+        0,
+        0
+      ],
+      "step_support_size": 1,
+      "translation": [
+        0.19,
+        -0.27,
+        0.31
+      ],
+      "vertex": [
+        -1,
+        -1,
+        1
+      ],
+      "weighted_Fisher": 3.724863304868825,
+      "weighted_Fisher_imaginary_residual": 8.673617379884035e-19
+    },
+    {
+      "all_checks_pass": true,
+      "claimed_chain_constant": 108.0,
+      "component_loads": {
+        "combined": 0.0010088837684593998,
+        "kinetic": 0.0010274847146106063,
+        "pressure_cross": -1.860094615120607e-05,
+        "pressure_high_high": 0.0
+      },
+      "component_vs_direct_flux_residual": 2.5907268972605967e-16,
+      "direct_complete_load": 0.0010088837684593998,
+      "direct_complete_load_imaginary_residual": 2.168404344971009e-19,
+      "label": "axial_parallel_residue_disjoint_low",
+      "maximum_divergence_residual": 0.0,
+      "maximum_load_imaginary_residual": 2.168404344971009e-19,
+      "normalized_m_times_load_over_U_Fisher": 0.0005911982071169069,
+      "partition_scale_m": 2,
+      "primitive_low_wave": [
+        0,
+        1,
+        0
+      ],
+      "primitive_residue": [
+        0,
+        0,
+        0
+      ],
+      "primitive_step": [
+        1,
+        0,
+        0
+      ],
+      "step_support_size": 1,
+      "translation": [
+        0.095,
+        -0.135,
+        0.155
+      ],
+      "vertex": [
+        -1,
+        -1,
+        1
+      ],
+      "weighted_Fisher": 3.4130136266123605,
+      "weighted_Fisher_imaginary_residual": 8.673617379884035e-18
+    },
+    {
+      "all_checks_pass": true,
+      "claimed_chain_constant": 108.0,
+      "component_loads": {
+        "combined": 0.0013783806388193466,
+        "kinetic": 0.0013414077228689016,
+        "pressure_cross": 3.6972915950445005e-05,
+        "pressure_high_high": 0.0
+      },
+      "component_vs_direct_flux_residual": 2.0077878659971858e-16,
+      "direct_complete_load": 0.0013783806388193466,
+      "direct_complete_load_imaginary_residual": 5.421010862427522e-19,
+      "label": "axial_parallel_residue_disjoint_low",
+      "maximum_divergence_residual": 0.0,
+      "maximum_load_imaginary_residual": 6.505213034913027e-19,
+      "normalized_m_times_load_over_U_Fisher": 0.001129660935491549,
+      "partition_scale_m": 4,
+      "primitive_low_wave": [
+        0,
+        1,
+        0
+      ],
+      "primitive_residue": [
+        0,
+        0,
+        0
+      ],
+      "primitive_step": [
+        1,
+        0,
+        0
+      ],
+      "step_support_size": 1,
+      "translation": [
+        0.0475,
+        -0.0675,
+        0.0775
+      ],
+      "vertex": [
+        -1,
+        -1,
+        1
+      ],
+      "weighted_Fisher": 4.8806879852654985,
+      "weighted_Fisher_imaginary_residual": 7.19910242530375e-17
+    },
+    {
+      "all_checks_pass": true,
+      "claimed_chain_constant": 108.0,
+      "component_loads": {
+        "combined": 0.0031524468964860136,
+        "kinetic": 0.0018200181769805405,
+        "pressure_cross": 0.0003897460918719069,
+        "pressure_high_high": 0.0009426826276335673
+      },
+      "component_vs_direct_flux_residual": 1.2869730969111293e-16,
+      "direct_complete_load": 0.0031524468964860127,
+      "direct_complete_load_imaginary_residual": 0.0,
+      "label": "axial_canonical_pressure_active",
+      "maximum_divergence_residual": 5.551115123125783e-17,
+      "maximum_load_imaginary_residual": 1.3010426069826053e-18,
+      "normalized_m_times_load_over_U_Fisher": 0.00036075172899290367,
+      "partition_scale_m": 1,
+      "primitive_low_wave": [
+        0,
+        1,
+        0
+      ],
+      "primitive_residue": [
+        0,
+        1,
+        0
+      ],
+      "primitive_step": [
+        1,
+        0,
+        0
+      ],
+      "step_support_size": 1,
+      "translation": [
+        0.19,
+        -0.27,
+        0.31
+      ],
+      "vertex": [
+        1,
+        1,
+        -1
+      ],
+      "weighted_Fisher": 8.738549653764862,
+      "weighted_Fisher_imaginary_residual": 1.0408340855860843e-17
+    },
+    {
+      "all_checks_pass": true,
+      "claimed_chain_constant": 108.0,
+      "component_loads": {
+        "combined": -0.0003168745238473216,
+        "kinetic": -0.0003058970916310455,
+        "pressure_cross": 5.831515255836999e-05,
+        "pressure_high_high": -6.929258477464615e-05
+      },
+      "component_vs_direct_flux_residual": 1.8981206424792634e-16,
+      "direct_complete_load": -0.00031687452384732183,
+      "direct_complete_load_imaginary_residual": 9.75781955236954e-19,
+      "label": "axial_canonical_pressure_active",
+      "maximum_divergence_residual": 2.7755575615628914e-17,
+      "maximum_load_imaginary_residual": 8.673617379884035e-19,
+      "normalized_m_times_load_over_U_Fisher": 0.00016988593350586727,
+      "partition_scale_m": 2,
+      "primitive_low_wave": [
+        0,
+        1,
+        0
+      ],
+      "primitive_residue": [
+        0,
+        1,
+        0
+      ],
+      "primitive_step": [
+        1,
+        0,
+        0
+      ],
+      "step_support_size": 1,
+      "translation": [
+        0.095,
+        -0.135,
+        0.155
+      ],
+      "vertex": [
+        1,
+        1,
+        -1
+      ],
+      "weighted_Fisher": 3.7304386220578745,
+      "weighted_Fisher_imaginary_residual": 2.0816681711721685e-17
+    },
+    {
+      "all_checks_pass": true,
+      "claimed_chain_constant": 108.0,
+      "component_loads": {
+        "combined": -0.0022854130799327397,
+        "kinetic": -0.002375918565492522,
+        "pressure_cross": 4.806706486220891e-05,
+        "pressure_high_high": 4.24384206975733e-05
+      },
+      "component_vs_direct_flux_residual": 2.3617111492198777e-16,
+      "direct_complete_load": -0.0022854130799327397,
+      "direct_complete_load_imaginary_residual": 1.0842021724855044e-19,
+      "label": "axial_canonical_pressure_active",
+      "maximum_divergence_residual": 3.1031676915590914e-17,
+      "maximum_load_imaginary_residual": 1.0842021724855044e-19,
+      "normalized_m_times_load_over_U_Fisher": 0.00425758888352258,
+      "partition_scale_m": 4,
+      "primitive_low_wave": [
+        0,
+        1,
+        0
+      ],
+      "primitive_residue": [
+        0,
+        1,
+        0
+      ],
+      "primitive_step": [
+        1,
+        0,
+        0
+      ],
+      "step_support_size": 1,
+      "translation": [
+        0.0475,
+        -0.0675,
+        0.0775
+      ],
+      "vertex": [
+        1,
+        1,
+        -1
+      ],
+      "weighted_Fisher": 2.1471430356064523,
+      "weighted_Fisher_imaginary_residual": 2.6020852139652106e-18
+    },
+    {
+      "all_checks_pass": true,
+      "claimed_chain_constant": 108.0,
+      "component_loads": {
+        "combined": -0.002094840403960319,
+        "kinetic": -0.004581799310579776,
+        "pressure_cross": -0.00045337921080328066,
+        "pressure_high_high": 0.0029403381174227384
+      },
+      "component_vs_direct_flux_residual": 2.031330821370476e-16,
+      "direct_complete_load": -0.002094840403960318,
+      "direct_complete_load_imaginary_residual": 3.2526065174565133e-19,
+      "label": "axial_oblique_residue",
+      "maximum_divergence_residual": 5.721958498152797e-17,
+      "maximum_load_imaginary_residual": 5.421010862427522e-19,
+      "normalized_m_times_load_over_U_Fisher": 0.0005753627052256648,
+      "partition_scale_m": 1,
+      "primitive_low_wave": [
+        0,
+        1,
+        0
+      ],
+      "primitive_residue": [
+        0,
+        1,
+        2
+      ],
+      "primitive_step": [
+        1,
+        0,
+        0
+      ],
+      "step_support_size": 1,
+      "translation": [
+        0.19,
+        -0.27,
+        0.31
+      ],
+      "vertex": [
+        -1,
+        1,
+        -1
+      ],
+      "weighted_Fisher": 3.640904050495757,
+      "weighted_Fisher_imaginary_residual": 1.3877787807814457e-17
+    },
+    {
+      "all_checks_pass": true,
+      "claimed_chain_constant": 108.0,
+      "component_loads": {
+        "combined": -0.0009716101581674641,
+        "kinetic": -0.0007590880375687216,
+        "pressure_cross": -9.823830934073912e-05,
+        "pressure_high_high": -0.00011428381125800361
+      },
+      "component_vs_direct_flux_residual": 8.455776084155501e-17,
+      "direct_complete_load": -0.0009716101581674641,
+      "direct_complete_load_imaginary_residual": 1.0842021724855044e-19,
+      "label": "axial_oblique_residue",
+      "maximum_divergence_residual": 1.1188630228279524e-16,
+      "maximum_load_imaginary_residual": 2.168404344971009e-19,
+      "normalized_m_times_load_over_U_Fisher": 0.00027024846887019533,
+      "partition_scale_m": 2,
+      "primitive_low_wave": [
+        0,
+        1,
+        0
+      ],
+      "primitive_residue": [
+        0,
+        1,
+        2
+      ],
+      "primitive_step": [
+        1,
+        0,
+        0
+      ],
+      "step_support_size": 1,
+      "translation": [
+        0.095,
+        -0.135,
+        0.155
+      ],
+      "vertex": [
+        -1,
+        1,
+        -1
+      ],
+      "weighted_Fisher": 7.190495193030263,
+      "weighted_Fisher_imaginary_residual": 1.3877787807814457e-17
+    },
+    {
+      "all_checks_pass": true,
+      "claimed_chain_constant": 108.0,
+      "component_loads": {
+        "combined": 0.0007887598068519773,
+        "kinetic": 0.000425289147844705,
+        "pressure_cross": 0.00014853858858314268,
+        "pressure_high_high": 0.00021493207042413016
+      },
+      "component_vs_direct_flux_residual": 3.689053137185132e-16,
+      "direct_complete_load": 0.0007887598068519774,
+      "direct_complete_load_imaginary_residual": 3.1170812458958252e-19,
+      "label": "axial_oblique_residue",
+      "maximum_divergence_residual": 1.5700924586837752e-16,
+      "maximum_load_imaginary_residual": 4.2012834183813297e-19,
+      "normalized_m_times_load_over_U_Fisher": 0.00047349496539136427,
+      "partition_scale_m": 4,
+      "primitive_low_wave": [
+        0,
+        1,
+        0
+      ],
+      "primitive_residue": [
+        0,
+        1,
+        2
+      ],
+      "primitive_step": [
+        1,
+        0,
+        0
+      ],
+      "step_support_size": 1,
+      "translation": [
+        0.0475,
+        -0.0675,
+        0.0775
+      ],
+      "vertex": [
+        -1,
+        1,
+        -1
+      ],
+      "weighted_Fisher": 6.663300474166883,
+      "weighted_Fisher_imaginary_residual": 2.7755575615628914e-17
+    },
+    {
+      "all_checks_pass": true,
+      "claimed_chain_constant": 108.0,
+      "component_loads": {
+        "combined": 0.009780419987939491,
+        "kinetic": 0.009798128332555982,
+        "pressure_cross": 0.0002055410662968516,
+        "pressure_high_high": -0.00022324941091334427
+      },
+      "component_vs_direct_flux_residual": 3.8310298722988284e-16,
+      "direct_complete_load": 0.009780419987939494,
+      "direct_complete_load_imaginary_residual": 4.336808689942018e-19,
+      "label": "axial_overlapping_low_support",
+      "maximum_divergence_residual": 1.1102230246251565e-16,
+      "maximum_load_imaginary_residual": 8.673617379884035e-19,
+      "normalized_m_times_load_over_U_Fisher": 0.004017990626005366,
+      "partition_scale_m": 1,
+      "primitive_low_wave": [
+        1,
+        1,
+        0
+      ],
+      "primitive_residue": [
+        0,
+        0,
+        1
+      ],
+      "primitive_step": [
+        1,
+        0,
+        0
+      ],
+      "step_support_size": 1,
+      "translation": [
+        0.19,
+        -0.27,
+        0.31
+      ],
+      "vertex": [
+        1,
+        -1,
+        -1
+      ],
+      "weighted_Fisher": 2.4341569949512443,
+      "weighted_Fisher_imaginary_residual": 1.474514954580286e-17
+    },
+    {
+      "all_checks_pass": true,
+      "claimed_chain_constant": 108.0,
+      "component_loads": {
+        "combined": 0.007290713133500201,
+        "kinetic": 0.00793946446390792,
+        "pressure_cross": -0.00024484694687816676,
+        "pressure_high_high": -0.00040390438352955443
+      },
+      "component_vs_direct_flux_residual": 2.3768402189299714e-16,
+      "direct_complete_load": 0.007290713133500202,
+      "direct_complete_load_imaginary_residual": 0.0,
+      "label": "axial_overlapping_low_support",
+      "maximum_divergence_residual": 2.1510571102112408e-16,
+      "maximum_load_imaginary_residual": 2.6020852139652106e-18,
+      "normalized_m_times_load_over_U_Fisher": 0.0022238298751120046,
+      "partition_scale_m": 2,
+      "primitive_low_wave": [
+        1,
+        1,
+        0
+      ],
+      "primitive_residue": [
+        0,
+        0,
+        1
+      ],
+      "primitive_step": [
+        1,
+        0,
+        0
+      ],
+      "step_support_size": 1,
+      "translation": [
+        0.095,
+        -0.135,
+        0.155
+      ],
+      "vertex": [
+        1,
+        -1,
+        -1
+      ],
+      "weighted_Fisher": 6.556898272744897,
+      "weighted_Fisher_imaginary_residual": 3.642919299551295e-17
+    },
+    {
+      "all_checks_pass": true,
+      "claimed_chain_constant": 108.0,
+      "component_loads": {
+        "combined": -0.0007575977350656009,
+        "kinetic": -0.00063647905852223,
+        "pressure_cross": -0.00012001351507943676,
+        "pressure_high_high": -1.1051614639336273e-06
+      },
+      "component_vs_direct_flux_residual": 2.522338042503762e-16,
+      "direct_complete_load": -0.000757597735065664,
+      "direct_complete_load_imaginary_residual": 4.336808689942018e-19,
+      "label": "axial_overlapping_low_support",
+      "maximum_divergence_residual": 2.220446049250313e-16,
+      "maximum_load_imaginary_residual": 2.168404344971009e-19,
+      "normalized_m_times_load_over_U_Fisher": 0.0009156639987217359,
+      "partition_scale_m": 4,
+      "primitive_low_wave": [
+        1,
+        1,
+        0
+      ],
+      "primitive_residue": [
+        0,
+        0,
+        1
+      ],
+      "primitive_step": [
+        1,
+        0,
+        0
+      ],
+      "step_support_size": 1,
+      "translation": [
+        0.0475,
+        -0.0675,
+        0.0775
+      ],
+      "vertex": [
+        1,
+        -1,
+        -1
+      ],
+      "weighted_Fisher": 3.3095010227472303,
+      "weighted_Fisher_imaginary_residual": 3.469446951953614e-18
+    },
+    {
+      "all_checks_pass": true,
+      "claimed_chain_constant": 13.5,
+      "component_loads": {
+        "combined": -0.0010913537134970624,
+        "kinetic": -0.0011858733921996836,
+        "pressure_cross": 4.24699200925548e-05,
+        "pressure_high_high": 5.2049758610066586e-05
+      },
+      "component_vs_direct_flux_residual": 1.8253379971363983e-16,
+      "direct_complete_load": -0.0010913537134970626,
+      "direct_complete_load_imaginary_residual": 1.0842021724855044e-19,
+      "label": "planar_diagonal_disjoint_low",
+      "maximum_divergence_residual": 6.938893903907228e-17,
+      "maximum_load_imaginary_residual": 2.168404344971009e-19,
+      "normalized_m_times_load_over_U_Fisher": 0.00025146733455723907,
+      "partition_scale_m": 1,
+      "primitive_low_wave": [
+        0,
+        0,
+        1
+      ],
+      "primitive_residue": [
+        1,
+        -1,
+        1
+      ],
+      "primitive_step": [
+        1,
+        1,
+        0
+      ],
+      "step_support_size": 2,
+      "translation": [
+        0.19,
+        -0.27,
+        0.31
+      ],
+      "vertex": [
+        -1,
+        1,
+        1
+      ],
+      "weighted_Fisher": 4.339942264941167,
+      "weighted_Fisher_imaginary_residual": 0.0
+    },
+    {
+      "all_checks_pass": true,
+      "claimed_chain_constant": 13.5,
+      "component_loads": {
+        "combined": -0.0011362026049152275,
+        "kinetic": -0.001166088319774607,
+        "pressure_cross": -5.440127411343268e-06,
+        "pressure_high_high": 3.5325842270722695e-05
+      },
+      "component_vs_direct_flux_residual": 3.3070945967252003e-16,
+      "direct_complete_load": -0.001136202604915227,
+      "direct_complete_load_imaginary_residual": 1.3552527156068805e-20,
+      "label": "planar_diagonal_disjoint_low",
+      "maximum_divergence_residual": 1.9329521701561158e-16,
+      "maximum_load_imaginary_residual": 8.131516293641283e-20,
+      "normalized_m_times_load_over_U_Fisher": 0.0005301377998373427,
+      "partition_scale_m": 2,
+      "primitive_low_wave": [
+        0,
+        0,
+        1
+      ],
+      "primitive_residue": [
+        1,
+        -1,
+        1
+      ],
+      "primitive_step": [
+        1,
+        1,
+        0
+      ],
+      "step_support_size": 2,
+      "translation": [
+        0.095,
+        -0.135,
+        0.155
+      ],
+      "vertex": [
+        -1,
+        1,
+        1
+      ],
+      "weighted_Fisher": 4.286442525938871,
+      "weighted_Fisher_imaginary_residual": 6.071532165918825e-18
+    },
+    {
+      "all_checks_pass": true,
+      "claimed_chain_constant": 13.5,
+      "component_loads": {
+        "combined": -0.0003319471016649236,
+        "kinetic": -0.00035967173670991805,
+        "pressure_cross": 2.273373097178745e-05,
+        "pressure_high_high": 4.9909040732070485e-06
+      },
+      "component_vs_direct_flux_residual": 1.988099250272405e-16,
+      "direct_complete_load": -0.0003319471016649235,
+      "direct_complete_load_imaginary_residual": 8.131516293641283e-20,
+      "label": "planar_diagonal_disjoint_low",
+      "maximum_divergence_residual": 3.3422138886441676e-16,
+      "maximum_load_imaginary_residual": 1.3552527156068805e-19,
+      "normalized_m_times_load_over_U_Fisher": 0.00025396228598591403,
+      "partition_scale_m": 4,
+      "primitive_low_wave": [
+        0,
+        0,
+        1
+      ],
+      "primitive_residue": [
+        1,
+        -1,
+        1
+      ],
+      "primitive_step": [
+        1,
+        1,
+        0
+      ],
+      "step_support_size": 2,
+      "translation": [
+        0.0475,
+        -0.0675,
+        0.0775
+      ],
+      "vertex": [
+        -1,
+        1,
+        1
+      ],
+      "weighted_Fisher": 5.228289710438895,
+      "weighted_Fisher_imaginary_residual": 3.469446951953614e-18
+    },
+    {
+      "all_checks_pass": true,
+      "claimed_chain_constant": 13.5,
+      "component_loads": {
+        "combined": -0.0029589041591359753,
+        "kinetic": -0.0028254157024283437,
+        "pressure_cross": -4.878939393601303e-05,
+        "pressure_high_high": -8.469906277162156e-05
+      },
+      "component_vs_direct_flux_residual": 2.0955000055363631e-16,
+      "direct_complete_load": -0.002958904159135984,
+      "direct_complete_load_imaginary_residual": 0.0,
+      "label": "planar_diagonal_overlapping_low",
+      "maximum_divergence_residual": 1.5515838457795457e-16,
+      "maximum_load_imaginary_residual": 2.168404344971009e-19,
+      "normalized_m_times_load_over_U_Fisher": 0.00036965630225745436,
+      "partition_scale_m": 1,
+      "primitive_low_wave": [
+        1,
+        0,
+        1
+      ],
+      "primitive_residue": [
+        1,
+        -1,
+        1
+      ],
+      "primitive_step": [
+        1,
+        1,
+        0
+      ],
+      "step_support_size": 2,
+      "translation": [
+        0.19,
+        -0.27,
+        0.31
+      ],
+      "vertex": [
+        1,
+        1,
+        -1
+      ],
+      "weighted_Fisher": 8.004473726178185,
+      "weighted_Fisher_imaginary_residual": 1.734723475976807e-18
+    },
+    {
+      "all_checks_pass": true,
+      "claimed_chain_constant": 13.5,
+      "component_loads": {
+        "combined": 0.007263559862052333,
+        "kinetic": 0.007529803969242218,
+        "pressure_cross": -0.00021344101379269903,
+        "pressure_high_high": -5.280309339718722e-05
+      },
+      "component_vs_direct_flux_residual": 3.9938217267081225e-16,
+      "direct_complete_load": 0.0072635598620523455,
+      "direct_complete_load_imaginary_residual": 0.0,
+      "label": "planar_diagonal_overlapping_low",
+      "maximum_divergence_residual": 1.0007415106216802e-16,
+      "maximum_load_imaginary_residual": 4.336808689942018e-19,
+      "normalized_m_times_load_over_U_Fisher": 0.0024719247263053144,
+      "partition_scale_m": 2,
+      "primitive_low_wave": [
+        1,
+        0,
+        1
+      ],
+      "primitive_residue": [
+        1,
+        -1,
+        1
+      ],
+      "primitive_step": [
+        1,
+        1,
+        0
+      ],
+      "step_support_size": 2,
+      "translation": [
+        0.095,
+        -0.135,
+        0.155
+      ],
+      "vertex": [
+        1,
+        1,
+        -1
+      ],
+      "weighted_Fisher": 5.876845508082183,
+      "weighted_Fisher_imaginary_residual": 2.6020852139652106e-18
+    },
+    {
+      "all_checks_pass": true,
+      "claimed_chain_constant": 13.5,
+      "component_loads": {
+        "combined": 0.002328339213113761,
+        "kinetic": 0.002355514200065753,
+        "pressure_cross": -2.5578721673542003e-05,
+        "pressure_high_high": -1.5962652784501649e-06
+      },
+      "component_vs_direct_flux_residual": 1.6236353787160717e-16,
+      "direct_complete_load": 0.0023283392131138105,
+      "direct_complete_load_imaginary_residual": 1.0842021724855044e-19,
+      "label": "planar_diagonal_overlapping_low",
+      "maximum_divergence_residual": 4.440892098500626e-16,
+      "maximum_load_imaginary_residual": 1.0842021724855044e-19,
+      "normalized_m_times_load_over_U_Fisher": 0.0026080605057203373,
+      "partition_scale_m": 4,
+      "primitive_low_wave": [
+        1,
+        0,
+        1
+      ],
+      "primitive_residue": [
+        1,
+        -1,
+        1
+      ],
+      "primitive_step": [
+        1,
+        1,
+        0
+      ],
+      "step_support_size": 2,
+      "translation": [
+        0.0475,
+        -0.0675,
+        0.0775
+      ],
+      "vertex": [
+        1,
+        1,
+        -1
+      ],
+      "weighted_Fisher": 3.5709895656284734,
+      "weighted_Fisher_imaginary_residual": 6.071532165918825e-18
+    },
+    {
+      "all_checks_pass": true,
+      "claimed_chain_constant": 6.0,
+      "component_loads": {
+        "combined": -0.005806854954967669,
+        "kinetic": -0.006248079972878725,
+        "pressure_cross": 0.0004364777444422532,
+        "pressure_high_high": 4.747273468805151e-06
+      },
+      "component_vs_direct_flux_residual": 2.1138016631127878e-16,
+      "direct_complete_load": -0.0058068549549676685,
+      "direct_complete_load_imaginary_residual": 0.0,
+      "label": "three_coordinate_step",
+      "maximum_divergence_residual": 1.8044459848467814e-16,
+      "maximum_load_imaginary_residual": 2.710505431213761e-20,
+      "normalized_m_times_load_over_U_Fisher": 0.0010264066804324596,
+      "partition_scale_m": 1,
+      "primitive_low_wave": [
+        1,
+        0,
+        0
+      ],
+      "primitive_residue": [
+        1,
+        -1,
+        0
+      ],
+      "primitive_step": [
+        1,
+        1,
+        1
+      ],
+      "step_support_size": 3,
+      "translation": [
+        0.19,
+        -0.27,
+        0.31
+      ],
+      "vertex": [
+        -1,
+        -1,
+        -1
+      ],
+      "weighted_Fisher": 5.657460211113442,
+      "weighted_Fisher_imaginary_residual": 6.288372600415926e-18
+    },
+    {
+      "all_checks_pass": true,
+      "claimed_chain_constant": 6.0,
+      "component_loads": {
+        "combined": 0.0012567580321664463,
+        "kinetic": 0.0013084685383034842,
+        "pressure_cross": -3.649742050409219e-05,
+        "pressure_high_high": -1.5213085632945675e-05
+      },
+      "component_vs_direct_flux_residual": 2.893194259083379e-16,
+      "direct_complete_load": 0.0012567580321664463,
+      "direct_complete_load_imaginary_residual": 5.421010862427522e-20,
+      "label": "three_coordinate_step",
+      "maximum_divergence_residual": 1.1102230246251565e-16,
+      "maximum_load_imaginary_residual": 1.0842021724855044e-19,
+      "normalized_m_times_load_over_U_Fisher": 0.0007884197807720778,
+      "partition_scale_m": 2,
+      "primitive_low_wave": [
+        1,
+        0,
+        0
+      ],
+      "primitive_residue": [
+        1,
+        -1,
+        0
+      ],
+      "primitive_step": [
+        1,
+        1,
+        1
+      ],
+      "step_support_size": 3,
+      "translation": [
+        0.095,
+        -0.135,
+        0.155
+      ],
+      "vertex": [
+        -1,
+        -1,
+        -1
+      ],
+      "weighted_Fisher": 3.1880428746618654,
+      "weighted_Fisher_imaginary_residual": 1.734723475976807e-18
+    },
+    {
+      "all_checks_pass": true,
+      "claimed_chain_constant": 6.0,
+      "component_loads": {
+        "combined": 0.00038664222031983776,
+        "kinetic": 0.00043044536908675313,
+        "pressure_cross": -2.7327747074639572e-05,
+        "pressure_high_high": -1.6475401692275797e-05
+      },
+      "component_vs_direct_flux_residual": 3.199730250664566e-16,
+      "direct_complete_load": 0.0003866422203198379,
+      "direct_complete_load_imaginary_residual": 2.168404344971009e-19,
+      "label": "three_coordinate_step",
+      "maximum_divergence_residual": 1.3947004136484323e-16,
+      "maximum_load_imaginary_residual": 2.168404344971009e-19,
+      "normalized_m_times_load_over_U_Fisher": 0.0003767979951718172,
+      "partition_scale_m": 4,
+      "primitive_low_wave": [
+        1,
+        0,
+        0
+      ],
+      "primitive_residue": [
+        1,
+        -1,
+        0
+      ],
+      "primitive_step": [
+        1,
+        1,
+        1
+      ],
+      "step_support_size": 3,
+      "translation": [
+        0.0475,
+        -0.0675,
+        0.0775
+      ],
+      "vertex": [
+        -1,
+        -1,
+        -1
+      ],
+      "weighted_Fisher": 4.104504007708764,
+      "weighted_Fisher_imaginary_residual": 4.336808689942018e-19
+    }
+  ],
+  "proof_budget": {
+    "Hilbert_valued_discrete_Hardy_constant": 4,
+    "all_checks_pass": true,
+    "axial_chain_constant": 108.0,
+    "axial_chain_constant_exact": "108",
+    "maximum_resonant_partner_degree": 6,
+    "maximum_vertex_gradient_coefficient_over_m_lambda0": "1/2",
+    "multi_coordinate_step_rows": [
+      {
+        "Fisher_mass_floor_over_lambda0": "1",
+        "chain_constant": 13.5,
+        "chain_constant_exact": "27/2",
+        "step_support_size": 2
+      },
+      {
+        "Fisher_mass_floor_over_lambda0": "3/2",
+        "chain_constant": 6.0,
+        "chain_constant_exact": "6",
+        "step_support_size": 3
+      }
+    ],
+    "ordered_complete_HHL_term_bounds": {
+      "kinetic_anisotropic": "1",
+      "kinetic_scalar": "1/2",
+      "pressure_high_high": "1",
+      "total_per_ordered_high_pair": "9/2",
+      "two_ordered_cross_pressures": "2"
+    },
+    "positive_and_negative_chain_factor": 2,
+    "uniform_primitive_chain_constant": 108.0,
+    "velocity_mass_budget": "27 m lambda0 |Uhat| sum_n |uhat_n|^2",
+    "velocity_mass_budget_constant": 27.0
+  },
+  "resonance_count_certificate": {
+    "all_checks_pass": true,
+    "maximum_for_disjoint_support": 6,
+    "maximum_resonant_low_sign_offset_pairs": 6,
+    "offset_range": [
+      -3,
+      3
+    ],
+    "searched_low_waves_per_step": 26,
+    "searched_steps": 26,
+    "support_rows": [
+      {
+        "maximum_resonant_low_sign_offset_pairs": 6,
+        "step_support_size": 1
+      },
+      {
+        "maximum_resonant_low_sign_offset_pairs": 6,
+        "step_support_size": 2
+      },
+      {
+        "maximum_resonant_low_sign_offset_pairs": 4,
+        "step_support_size": 3
+      }
+    ],
+    "witness": {
+      "count": 6,
+      "low_wave": [
+        -1,
+        -1,
+        -1
+      ],
+      "resonances": [
+        {
+          "chain_offset": 0,
+          "low_sign": -1,
+          "weight_wave": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "chain_offset": 1,
+          "low_sign": -1,
+          "weight_wave": [
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "chain_offset": 2,
+          "low_sign": -1,
+          "weight_wave": [
+            -1,
+            1,
+            1
+          ]
+        },
+        {
+          "chain_offset": -2,
+          "low_sign": 1,
+          "weight_wave": [
+            1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "chain_offset": -1,
+          "low_sign": 1,
+          "weight_wave": [
+            0,
+            -1,
+            -1
+          ]
+        },
+        {
+          "chain_offset": 0,
+          "low_sign": 1,
+          "weight_wave": [
+            -1,
+            -1,
+            -1
+          ]
+        }
+      ],
+      "step": [
+        -1,
+        0,
+        0
+      ]
+    }
+  },
+  "schema_version": 1,
+  "scope": "This theorem closes the scalar isolated-chain envelope asked for before finite block assembly. It does not permit summing the constants over primitive steps or residue chains, because the same physical Fisher graph may be charged repeatedly and its signed cross-chain interfaces may cancel. The next gate must assemble all resonant low-wave, vertex, polarization, and primitive-step blocks before taking a Schur complement against the one unsplit physical Fisher matrix.",
+  "status": "uniform_primitive_HHL_chain_Hardy_envelope_proved",
+  "theorem": {
+    "axial_bound": "|B_chain|<=108 (|Uhat|/m) E_lambda,chain when p=1.",
+    "carrier_nonalias_condition": "Same-sign high pairs do not enter the partition support; N_0>=3 is a sufficient uniform condition.",
+    "complete_HHL_flux": "(|h|^2/2)U+(U dot h)h+p[h,h]U+(p[U,h]+p[h,U])h",
+    "low_wave": "ell in {-1,0,1}^3 minus {0}, with arbitrary complex Uhat perpendicular to ell.",
+    "one_sided_chain": "k_n=eta+n m q, eta dot q=0, n=N_0,...,N_1, N_0>=3, extended by zero at both ends.",
+    "partition": "A translated compatible tensor vertex at frequency m; nonnegative compatible mixtures follow by summation.",
+    "phase_scope": "The estimate is uniform in high-chain phases, low-wave phase, vertex signs, and common spatial translation.",
+    "primitive_step": "q in {-1,0,1}^3 minus {0}, with support size p.",
+    "three_coordinate_bound": "|B_chain|<=6(|Uhat|/m) E_lambda,chain when p=3.",
+    "two_coordinate_bound": "|B_chain|<=(27/2)(|Uhat|/m) E_lambda,chain when p=2.",
+    "uniform_bound": "|B_chain|<=108 (|Uhat|/m) E_lambda,chain."
+  }
+}

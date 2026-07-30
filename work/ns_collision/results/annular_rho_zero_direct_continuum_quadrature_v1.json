@@ -1,0 +1,1149 @@
+{
+  "algorithm_revision": "annular-rho-zero-direct-continuum-quadrature-v1",
+  "all_numerical_checks_pass": true,
+  "certification": {
+    "continuum_sign_interval_certified": false,
+    "continuum_sign_numerically_stable": true,
+    "next_action": "Use the sector diagnostics to construct a deterministic joint enclosure whose upper endpoint is negative.",
+    "reason": "No directed-rounding FFT bound or analytic tensor-trapezoid remainder has yet been supplied."
+  },
+  "continuum_profile": {
+    "extension": "a(-xi)=a(xi), zero outside D union -D",
+    "formula": "a=S*(-xz,-yz,x^2+y^2)/(x^2+y^2+z^2)^(3/2)",
+    "positive_domain": "[2,3] x [-1/2,1/2] x [-1/2,1/2]",
+    "scalar_profile": "S=sin(pi(x-2))*cos(pi*y)*cos(pi*z)"
+  },
+  "kind": "annular_rho_zero_direct_continuum_quadrature",
+  "normalization": {
+    "mesh_width": "h=1/N",
+    "quartic_lattice_factor": "h^11",
+    "reason": "three independent three-dimensional sums contribute h^9 and the two integer Euler symbols contribute h^-2"
+  },
+  "prerequisite": {
+    "path": "work/ns_collision/results/annular_rho_zero_full_c1_tail_ledger_audit_v1.json",
+    "sha256": "e8917ea3b781f72806bd2b560ccf65058027bb34bb15d997375a9d237020d773"
+  },
+  "rows": [
+    {
+      "all_numerical_checks_pass": true,
+      "combined_continuum_quadrature": -2.658690240168762e-07,
+      "combined_density_sectors": {
+        "mixed_sign_output": {
+          "maximum": 1.0322256143859897e-09,
+          "minimum": -7.728228222016254e-10,
+          "negative_count": 884,
+          "negative_mass": -1.9425363433057526e-08,
+          "positive_count": 4611,
+          "positive_mass": 1.7152467130254619e-07,
+          "signed_sum": 1.5209930786948866e-07
+        },
+        "negative_packet_output": {
+          "maximum": 4.20429451440113e-09,
+          "minimum": -6.266785111960463e-09,
+          "negative_count": 195,
+          "negative_mass": -3.931852767648104e-07,
+          "positive_count": 2397,
+          "positive_mass": 1.8419784072217626e-07,
+          "signed_sum": -2.0898743604263414e-07
+        },
+        "negative_same_sign_output": {
+          "maximum": 4.235211754176861e-14,
+          "minimum": -4.2675944033773396e-19,
+          "negative_count": 156,
+          "negative_mass": -7.445195148773616e-18,
+          "positive_count": 5028,
+          "positive_mass": 3.270106896930513e-12,
+          "signed_sum": 3.270099451735364e-12
+        },
+        "positive_packet_output": {
+          "maximum": 4.20429451440113e-09,
+          "minimum": -6.266785111960463e-09,
+          "negative_count": 195,
+          "negative_mass": -3.931852767648104e-07,
+          "positive_count": 2397,
+          "positive_mass": 1.8419784072217626e-07,
+          "signed_sum": -2.0898743604263404e-07
+        },
+        "positive_same_sign_output": {
+          "maximum": 4.235211754176861e-14,
+          "minimum": -4.2675944033773396e-19,
+          "negative_count": 156,
+          "negative_mass": -7.445195148773616e-18,
+          "positive_count": 5028,
+          "positive_mass": 3.2701068969305132e-12,
+          "signed_sum": 3.270099451735364e-12
+        }
+      },
+      "density_sum": -2.6586902401687617e-07,
+      "density_sum_absolute_replay_error": 5.293955920339377e-23,
+      "divergence_residuals": {
+        "a": 1.6653345369377348e-16,
+        "minus_g": 1.071353060770793e-15,
+        "minus_i_v": 1.8529765987423887e-15
+      },
+      "energy_trace_relative_residual": 2.819097008708626e-16,
+      "first_form_continuum_quadrature": 1.5210584806839212e-07,
+      "grid_point_count": 31752,
+      "grid_shape": [
+        98,
+        18,
+        18
+      ],
+      "maximum_divergence_residual": 1.8529765987423887e-15,
+      "mesh_width": 0.125,
+      "minus_g_pair_components_times_h11": [
+        -3.5519820891159895e-08,
+        -6.788279240538437e-09,
+        -2.9623169434112685e-06
+      ],
+      "origin_leray_cusp_replay": {
+        "covariance_matrix_trapezoid": [
+          [
+            0.0002081948120994967,
+            2.3822801641527197e-22,
+            5.959029028410263e-21
+          ],
+          [
+            2.3822801641527197e-22,
+            1.1240395697971624e-06,
+            -8.000809885714811e-24
+          ],
+          [
+            5.959029028410263e-21,
+            -8.000809885714811e-24,
+            0.0397857903726435
+          ]
+        ],
+        "identity": "v(rho)=P_rho*M*rho+O(|rho|^3), M=integral a tensor a",
+        "maximum_covariance_off_diagonal": 5.959029028410263e-21,
+        "maximum_residual_over_rho_cubed": 0.09324732866774092,
+        "rows": [
+          {
+            "absolute_residual": 2.738146174344944e-06,
+            "integer_direction": [
+              1,
+              1,
+              0
+            ],
+            "leading_cusp_velocity": [
+              1.2941923283106221e-05,
+              -1.2941923283106223e-05,
+              7.438785273155685e-22
+            ],
+            "quadrature_velocity": [
+              1.100576155534691e-05,
+              -1.1005761555346908e-05,
+              2.101750688665129e-20
+            ],
+            "residual_over_rho_cubed": 0.0004956574023063839,
+            "rho": [
+              0.125,
+              0.125,
+              0.0
+            ]
+          },
+          {
+            "absolute_residual": 0.0005123682594766371,
+            "integer_direction": [
+              1,
+              0,
+              1
+            ],
+            "leading_cusp_velocity": [
+              -0.002473599722534,
+              2.877840081619465e-23,
+              0.0024735997225340004
+            ],
+            "quadrature_velocity": [
+              -0.0021113006517933216,
+              5.227458622333746e-25,
+              0.0021113006517933216
+            ],
+            "residual_over_rho_cubed": 0.09274856210961371,
+            "rho": [
+              0.125,
+              0.0,
+              0.125
+            ]
+          },
+          {
+            "absolute_residual": 0.0005151235814725811,
+            "integer_direction": [
+              0,
+              1,
+              1
+            ],
+            "leading_cusp_velocity": [
+              7.746571306031918e-22,
+              -0.0024865416458171065,
+              0.0024865416458171065
+            ],
+            "quadrature_velocity": [
+              5.200052409063125e-21,
+              -0.0021222942682087437,
+              0.0021222942682087432
+            ],
+            "residual_over_rho_cubed": 0.09324732866774092,
+            "rho": [
+              0.0,
+              0.125,
+              0.125
+            ]
+          },
+          {
+            "absolute_residual": 0.000858397730873896,
+            "integer_direction": [
+              1,
+              1,
+              1
+            ],
+            "leading_cusp_velocity": [
+              -0.0016404385328339292,
+              -0.0016663223794001418,
+              0.003306760912234071
+            ],
+            "quadrature_velocity": [
+              -0.0012927771054228197,
+              -0.0013131123156486012,
+              0.0026058894210714213
+            ],
+            "residual_over_rho_cubed": 0.08458174480926854,
+            "rho": [
+              0.125,
+              0.125,
+              0.125
+            ]
+          },
+          {
+            "absolute_residual": 0.001651145351913939,
+            "integer_direction": [
+              2,
+              1,
+              1
+            ],
+            "leading_cusp_velocity": [
+              -0.0016404385328339292,
+              -0.0008461031129831771,
+              0.0041269801786510355
+            ],
+            "quadrature_velocity": [
+              -0.001041368383565885,
+              -0.0005369811454843737,
+              0.0026197179126161434
+            ],
+            "residual_over_rho_cubed": 0.05752126013663738,
+            "rho": [
+              0.25,
+              0.125,
+              0.125
+            ]
+          },
+          {
+            "absolute_residual": 0.0016661124772648433,
+            "integer_direction": [
+              1,
+              2,
+              1
+            ],
+            "leading_cusp_velocity": [
+              -0.0008072773431338585,
+              -0.001666322379400142,
+              0.004139922101934142
+            ],
+            "quadrature_velocity": [
+              -0.0005107237666050947,
+              -0.0010541363171114732,
+              0.002618996400828041
+            ],
+            "residual_over_rho_cubed": 0.05804267268811812,
+            "rho": [
+              0.125,
+              0.25,
+              0.125
+            ]
+          },
+          {
+            "absolute_residual": 0.0020982243350392902,
+            "integer_direction": [
+              1,
+              1,
+              2
+            ],
+            "leading_cusp_velocity": [
+              -0.003293818988950965,
+              -0.0033197028355171775,
+              0.003306760912234071
+            ],
+            "quadrature_velocity": [
+              -0.002085887723880472,
+              -0.002104819979819578,
+              0.002095353851850025
+            ],
+            "residual_over_rho_cubed": 0.07309623447803444,
+            "rho": [
+              0.125,
+              0.125,
+              0.25
+            ]
+          }
+        ]
+      },
+      "runtime_seconds": 0.059746499988250434,
+      "second_form_continuum_quadrature": -4.1797487208526834e-07,
+      "size": 8,
+      "velocity_energy_components_times_h11": [
+        1.2725751671301751e-06,
+        1.2927866937049707e-06,
+        3.4438882262507866e-06
+      ]
+    },
+    {
+      "all_numerical_checks_pass": true,
+      "combined_continuum_quadrature": -2.906753381816596e-07,
+      "combined_density_sectors": {
+        "mixed_sign_output": {
+          "maximum": 1.5940717351417163e-10,
+          "minimum": -9.976722728398958e-11,
+          "negative_count": 5458,
+          "negative_mass": -2.2336371116685788e-08,
+          "positive_count": 30446,
+          "positive_mass": 1.8940431782051995e-07,
+          "signed_sum": 1.6706794670383418e-07
+        },
+        "negative_packet_output": {
+          "maximum": 5.458693317378106e-10,
+          "minimum": -8.17474994152838e-10,
+          "negative_count": 1891,
+          "negative_mass": -4.249403699055775e-07,
+          "positive_count": 15533,
+          "positive_mass": 1.960648697885988e-07,
+          "signed_sum": -2.2887550011697875e-07
+        },
+        "negative_same_sign_output": {
+          "maximum": 5.57900412018579e-15,
+          "minimum": -4.904146975701888e-20,
+          "negative_count": 942,
+          "negative_mass": -3.576184691089626e-18,
+          "positive_count": 33906,
+          "positive_mass": 3.8576778080307005e-12,
+          "signed_sum": 3.857674231846009e-12
+        },
+        "positive_packet_output": {
+          "maximum": 5.458693317378106e-10,
+          "minimum": -8.17474994152838e-10,
+          "negative_count": 1891,
+          "negative_mass": -4.2494036990557754e-07,
+          "positive_count": 15533,
+          "positive_mass": 1.9606486978859877e-07,
+          "signed_sum": -2.2887550011697875e-07
+        },
+        "positive_same_sign_output": {
+          "maximum": 5.57900412018579e-15,
+          "minimum": -4.904146975701888e-20,
+          "negative_count": 942,
+          "negative_mass": -3.576184691089626e-18,
+          "positive_count": 33906,
+          "positive_mass": 3.8576778080307005e-12,
+          "signed_sum": 3.857674231846009e-12
+        }
+      },
+      "density_sum": -2.906753381816596e-07,
+      "density_sum_absolute_replay_error": 0.0,
+      "divergence_residuals": {
+        "a": 4.440892098500626e-16,
+        "minus_g": 4.0145183783680605e-15,
+        "minus_i_v": 4.553701733495424e-15
+      },
+      "energy_trace_relative_residual": 0.0,
+      "first_form_continuum_quadrature": 1.6707566205229785e-07,
+      "grid_point_count": 213444,
+      "grid_shape": [
+        196,
+        33,
+        33
+      ],
+      "maximum_divergence_residual": 4.553701733495424e-15,
+      "mesh_width": 0.0625,
+      "minus_g_pair_components_times_h11": [
+        -4.0926038325476874e-08,
+        -7.685290960321206e-09,
+        -3.2444736545638833e-06
+      ],
+      "origin_leray_cusp_replay": {
+        "covariance_matrix_trapezoid": [
+          [
+            0.0002086188236951822,
+            2.6800651846718097e-22,
+            -1.36054667152722e-20
+          ],
+          [
+            2.6800651846718097e-22,
+            1.1287469710488043e-06,
+            4.733794133745075e-22
+          ],
+          [
+            -1.36054667152722e-20,
+            4.733794133745075e-22,
+            0.03978557064735049
+          ]
+        ],
+        "identity": "v(rho)=P_rho*M*rho+O(|rho|^3), M=integral a tensor a",
+        "maximum_covariance_off_diagonal": 1.36054667152722e-20,
+        "maximum_residual_over_rho_cubed": 0.09694136535469998,
+        "rows": [
+          {
+            "absolute_residual": 3.57242253641935e-07,
+            "integer_direction": [
+              1,
+              1,
+              0
+            ],
+            "leading_cusp_velocity": [
+              6.484064897629169e-06,
+              -6.484064897629168e-06,
+              -8.207554563686057e-22
+            ],
+            "quadrature_velocity": [
+              6.2314564775525915e-06,
+              -6.2314564775525915e-06,
+              1.2399641485951427e-20
+            ],
+            "residual_over_rho_cubed": 0.0005173420443168292,
+            "rho": [
+              0.0625,
+              0.0625,
+              0.0
+            ]
+          },
+          {
+            "absolute_residual": 6.658345414806453e-05,
+            "integer_direction": [
+              1,
+              0,
+              1
+            ],
+            "leading_cusp_velocity": [
+              -0.0012367797444892284,
+              4.6336620740105527e-23,
+              0.0012367797444892284
+            ],
+            "quadrature_velocity": [
+              -0.0011896981325463084,
+              -1.5540145901190877e-22,
+              0.0011896981325463084
+            ],
+            "residual_over_rho_cubed": 0.0964231412591001,
+            "rho": [
+              0.0625,
+              0.0,
+              0.0625
+            ]
+          },
+          {
+            "absolute_residual": 6.694130548807716e-05,
+            "integer_direction": [
+              0,
+              1,
+              1
+            ],
+            "leading_cusp_velocity": [
+              -8.335912623003136e-22,
+              -0.0012432638093868575,
+              0.0012432638093868575
+            ],
+            "quadrature_velocity": [
+              1.2550747574632973e-21,
+              -0.001195929158334758,
+              0.001195929158334758
+            ],
+            "residual_over_rho_cubed": 0.09694136535469998,
+            "rho": [
+              0.0,
+              0.0625,
+              0.0625
+            ]
+          },
+          {
+            "absolute_residual": 0.00011482592750794782,
+            "integer_direction": [
+              1,
+              1,
+              1
+            ],
+            "leading_cusp_velocity": [
+              -0.0008201971197277329,
+              -0.0008331652495229912,
+              0.001653362369250724
+            ],
+            "quadrature_velocity": [
+              -0.0007736925410521716,
+              -0.0007859158372097713,
+              0.0015596083782619433
+            ],
+            "residual_over_rho_cubed": 0.09051447317389603,
+            "rho": [
+              0.0625,
+              0.0625,
+              0.0625
+            ]
+          },
+          {
+            "absolute_residual": 0.00024171672553277335,
+            "integer_direction": [
+              2,
+              1,
+              1
+            ],
+            "leading_cusp_velocity": [
+              -0.0008201971197277329,
+              -0.0004230666896591248,
+              0.0020634609291145904
+            ],
+            "quadrature_velocity": [
+              -0.000732502716449523,
+              -0.0003778023581672522,
+              0.0018428077910662983
+            ],
+            "residual_over_rho_cubed": 0.06736584702312279,
+            "rho": [
+              0.125,
+              0.0625,
+              0.0625
+            ]
+          },
+          {
+            "absolute_residual": 0.0002435439130174187,
+            "integer_direction": [
+              1,
+              2,
+              1
+            ],
+            "leading_cusp_velocity": [
+              -0.00040361449496623727,
+              -0.0008331652495229912,
+              0.0020699449940122195
+            ],
+            "quadrature_velocity": [
+              -0.00036026657126128663,
+              -0.000743678591996331,
+              0.0018476237552539489
+            ],
+            "residual_over_rho_cubed": 0.06787507960643649,
+            "rho": [
+              0.0625,
+              0.125,
+              0.0625
+            ]
+          },
+          {
+            "absolute_residual": 0.0003060148000606141,
+            "integer_direction": [
+              1,
+              1,
+              2
+            ],
+            "leading_cusp_velocity": [
+              -0.0016468783043530947,
+              -0.0016598464341483529,
+              0.0016533623692507244
+            ],
+            "quadrature_velocity": [
+              -0.0014707641391464913,
+              -0.0014826063408567532,
+              0.0014766852400016225
+            ],
+            "residual_over_rho_cubed": 0.08528555962462656,
+            "rho": [
+              0.0625,
+              0.0625,
+              0.125
+            ]
+          }
+        ]
+      },
+      "runtime_seconds": 0.6324709999898914,
+      "second_form_continuum_quadrature": -4.5775100023395744e-07,
+      "size": 16,
+      "velocity_energy_components_times_h11": [
+        1.3930326418920227e-06,
+        1.4151653268195525e-06,
+        3.7779719989877873e-06
+      ]
+    },
+    {
+      "all_numerical_checks_pass": true,
+      "combined_continuum_quadrature": -2.9718569206216996e-07,
+      "combined_density_sectors": {
+        "mixed_sign_output": {
+          "maximum": 2.03497172856254e-11,
+          "minimum": -1.3236648484993835e-11,
+          "negative_count": 41495,
+          "negative_mass": -2.296096410666885e-08,
+          "positive_count": 241602,
+          "positive_mass": 1.9389129543604783e-07,
+          "signed_sum": 1.7093033132937902e-07
+        },
+        "negative_packet_output": {
+          "maximum": 6.886678336635876e-11,
+          "minimum": -1.0411922753240124e-10,
+          "negative_count": 16638,
+          "negative_mass": -4.331639409417521e-07,
+          "positive_count": 127110,
+          "positive_mass": 1.9910190759133738e-07,
+          "signed_sum": -2.3406203335041473e-07
+        },
+        "negative_same_sign_output": {
+          "maximum": 7.058947472338578e-16,
+          "minimum": -6.285044577301171e-21,
+          "negative_count": 5008,
+          "negative_mass": -1.8868653690901146e-18,
+          "positive_count": 278132,
+          "positive_mass": 4.0216565270416846e-12,
+          "signed_sum": 4.0216546401763156e-12
+        },
+        "positive_packet_output": {
+          "maximum": 6.886678336635876e-11,
+          "minimum": -1.0411922753240124e-10,
+          "negative_count": 16638,
+          "negative_mass": -4.331639409417521e-07,
+          "positive_count": 127110,
+          "positive_mass": 1.9910190759133735e-07,
+          "signed_sum": -2.3406203335041473e-07
+        },
+        "positive_same_sign_output": {
+          "maximum": 7.058947472338578e-16,
+          "minimum": -6.285044577301171e-21,
+          "negative_count": 5008,
+          "negative_mass": -1.8868653690901146e-18,
+          "positive_count": 278132,
+          "positive_mass": 4.0216565270416846e-12,
+          "signed_sum": 4.0216546401763156e-12
+        }
+      },
+      "density_sum": -2.9718569206217007e-07,
+      "density_sum_absolute_replay_error": 1.0587911840678754e-22,
+      "divergence_residuals": {
+        "a": 1.3322676295501878e-15,
+        "minus_g": 7.886825509129104e-15,
+        "minus_i_v": 1.072139970502986e-14
+      },
+      "energy_trace_relative_residual": 1.257342698297819e-16,
+      "first_form_continuum_quadrature": 1.7093837463865932e-07,
+      "grid_point_count": 1677060,
+      "grid_shape": [
+        385,
+        66,
+        66
+      ],
+      "maximum_divergence_residual": 1.072139970502986e-14,
+      "mesh_width": 0.03125,
+      "minus_g_pair_components_times_h11": [
+        -4.2355822564622245e-08,
+        -7.926375042520119e-09,
+        -3.3180633950503213e-06
+      ],
+      "origin_leray_cusp_replay": {
+        "covariance_matrix_trapezoid": [
+          [
+            0.00020864470339015232,
+            -9.109326495740217e-23,
+            -1.8042877111312916e-21
+          ],
+          [
+            -9.109326495740217e-23,
+            1.1290347922021498e-06,
+            -5.158246601092396e-23
+          ],
+          [
+            -1.8042877111312916e-21,
+            -5.158246601092396e-23,
+            0.039785557819484986
+          ]
+        ],
+        "identity": "v(rho)=P_rho*M*rho+O(|rho|^3), M=integral a tensor a",
+        "maximum_covariance_off_diagonal": 1.8042877111312916e-21,
+        "maximum_residual_over_rho_cubed": 0.09788307672354699,
+        "rows": [
+          {
+            "absolute_residual": 4.511712792736815e-08,
+            "integer_direction": [
+              1,
+              1,
+              0
+            ],
+            "leading_cusp_velocity": [
+              3.2424323218429713e-06,
+              -3.2424323218429713e-06,
+              -5.799594303569424e-23
+            ],
+            "quadrature_velocity": [
+              3.210529694737868e-06,
+              -3.2105296947378686e-06,
+              4.4186710937952386e-21
+            ],
+            "residual_over_rho_cubed": 0.0005226926424900071,
+            "rho": [
+              0.03125,
+              0.03125,
+              0.0
+            ]
+          },
+          {
+            "absolute_residual": 8.403811888340012e-06,
+            "integer_direction": [
+              1,
+              0,
+              1
+            ],
+            "leading_cusp_velocity": [
+              -0.0006183892674389818,
+              -4.458616592760192e-24,
+              0.0006183892674389818
+            ],
+            "quadrature_velocity": [
+              -0.0006124468750649204,
+              -7.153333173956738e-26,
+              0.0006124468750649205
+            ],
+            "residual_over_rho_cubed": 0.09736015665662111,
+            "rho": [
+              0.03125,
+              0.0,
+              0.03125
+            ]
+          },
+          {
+            "absolute_residual": 8.44894864680459e-06,
+            "integer_direction": [
+              0,
+              1,
+              1
+            ],
+            "leading_cusp_velocity": [
+              -5.923065550277168e-23,
+              -0.0006216316997608247,
+              0.0006216316997608248
+            ],
+            "quadrature_velocity": [
+              -6.878582239864512e-22,
+              -0.0006156573908787723,
+              0.0006156573908787723
+            ],
+            "residual_over_rho_cubed": 0.09788307672354699,
+            "rho": [
+              0.0,
+              0.03125,
+              0.03125
+            ]
+          },
+          {
+            "absolute_residual": 1.4598679783541682e-05,
+            "integer_direction": [
+              1,
+              1,
+              1
+            ],
+            "leading_cusp_velocity": [
+              -0.0004100978900780925,
+              -0.00041658275472177843,
+              0.000826680644799871
+            ],
+            "quadrature_velocity": [
+              -0.00040418543894452357,
+              -0.00041057555923931706,
+              0.0008147609981838407
+            ],
+            "residual_over_rho_cubed": 0.09206226073289729,
+            "rho": [
+              0.03125,
+              0.03125,
+              0.03125
+            ]
+          },
+          {
+            "absolute_residual": 3.181037639821525e-05,
+            "integer_direction": [
+              2,
+              1,
+              1
+            ],
+            "leading_cusp_velocity": [
+              -0.0004100978900780925,
+              -0.0002115338096827322,
+              0.0010317295898389172
+            ],
+            "quadrature_velocity": [
+              -0.00039855746541172393,
+              -0.00020557629386806485,
+              0.0010026912246915128
+            ],
+            "residual_over_rho_cubed": 0.07092377891407678,
+            "rho": [
+              0.0625,
+              0.03125,
+              0.03125
+            ]
+          },
+          {
+            "absolute_residual": 3.199376322416482e-05,
+            "integer_direction": [
+              1,
+              2,
+              1
+            ],
+            "leading_cusp_velocity": [
+              -0.00020180651271720331,
+              -0.00041658275472177854,
+              0.0010349720221607603
+            ],
+            "quadrature_velocity": [
+              -0.00019611182206419336,
+              -0.00040482720315309186,
+              0.001005766228370377
+            ],
+            "residual_over_rho_cubed": 0.07133265451292481,
+            "rho": [
+              0.03125,
+              0.0625,
+              0.03125
+            ]
+          },
+          {
+            "absolute_residual": 4.014573982184371e-05,
+            "integer_direction": [
+              1,
+              1,
+              2
+            ],
+            "leading_cusp_velocity": [
+              -0.000823438212478028,
+              -0.000829923077121714,
+              0.000826680644799871
+            ],
+            "quadrature_velocity": [
+              -0.0008003416951591356,
+              -0.0008066634782953534,
+              0.0008035025867272447
+            ],
+            "residual_over_rho_cubed": 0.08950813847101291,
+            "rho": [
+              0.03125,
+              0.03125,
+              0.0625
+            ]
+          }
+        ]
+      },
+      "runtime_seconds": 3.673319299996365,
+      "second_form_continuum_quadrature": -4.681240667008293e-07,
+      "size": 32,
+      "velocity_energy_components_times_h11": [
+        1.4246555061246124e-06,
+        1.4473010008751315e-06,
+        3.864734678315183e-06
+      ]
+    },
+    {
+      "all_numerical_checks_pass": true,
+      "combined_continuum_quadrature": -2.9883445926209503e-07,
+      "combined_density_sectors": {
+        "mixed_sign_output": {
+          "maximum": 2.5551070295287354e-12,
+          "minimum": -1.6688043765008716e-12,
+          "negative_count": 320661,
+          "negative_mass": -2.3108304790553262e-08,
+          "positive_count": 1926958,
+          "positive_mass": 1.9501454354733423e-07,
+          "signed_sum": 1.7190623875678097e-07
+        },
+        "negative_packet_output": {
+          "maximum": 8.67695432063412e-12,
+          "minimum": -1.3059149109658711e-11,
+          "negative_count": 139334,
+          "negative_mass": -4.3534198377585695e-07,
+          "positive_count": 993226,
+          "positive_mass": 1.9996757099969071e-07,
+          "signed_sum": -2.3537441277616635e-07
+        },
+        "negative_same_sign_output": {
+          "maximum": 8.854505224147887e-17,
+          "minimum": -7.802754092751859e-22,
+          "negative_count": 27818,
+          "negative_mass": -1.1285005266077232e-18,
+          "positive_count": 2219878,
+          "positive_mass": 4.063767856774358e-12,
+          "signed_sum": 4.063766728273831e-12
+        },
+        "positive_packet_output": {
+          "maximum": 8.67695432063412e-12,
+          "minimum": -1.3059149109658711e-11,
+          "negative_count": 139332,
+          "negative_mass": -4.35341983775857e-07,
+          "positive_count": 993228,
+          "positive_mass": 1.999675709996907e-07,
+          "signed_sum": -2.3537441277616624e-07
+        },
+        "positive_same_sign_output": {
+          "maximum": 8.854505224147887e-17,
+          "minimum": -7.802754092751859e-22,
+          "negative_count": 27810,
+          "negative_mass": -1.1285005266077232e-18,
+          "positive_count": 2219886,
+          "positive_mass": 4.063767856774358e-12,
+          "signed_sum": 4.0637667282738305e-12
+        }
+      },
+      "density_sum": -2.9883445926209503e-07,
+      "density_sum_absolute_replay_error": 0.0,
+      "divergence_residuals": {
+        "a": 2.6645352591003757e-15,
+        "minus_g": 1.5709724808145783e-14,
+        "minus_i_v": 1.9695106733957604e-14
+      },
+      "energy_trace_relative_residual": 1.250273311974109e-16,
+      "first_form_continuum_quadrature": 1.7191436629023758e-07,
+      "grid_point_count": 13416480,
+      "grid_shape": [
+        770,
+        132,
+        132
+      ],
+      "maximum_divergence_residual": 1.9695106733957604e-14,
+      "mesh_width": 0.015625,
+      "minus_g_pair_components_times_h11": [
+        -4.271879087783623e-08,
+        -7.987739327861474e-09,
+        -3.3366846071644365e-06
+      ],
+      "origin_leray_cusp_replay": {
+        "covariance_matrix_trapezoid": [
+          [
+            0.00020864631141267282,
+            1.5379243457534753e-22,
+            1.1228715355348924e-21
+          ],
+          [
+            1.5379243457534753e-22,
+            1.1290526797686819e-06,
+            -1.770219672199882e-22
+          ],
+          [
+            1.1228715355348924e-21,
+            -1.770219672199882e-22,
+            0.03978555703143411
+          ]
+        ],
+        "identity": "v(rho)=P_rho*M*rho+O(|rho|^3), M=integral a tensor a",
+        "maximum_covariance_off_diagonal": 1.1228715355348924e-21,
+        "maximum_residual_over_rho_cubed": 0.09811965447316592,
+        "rows": [
+          {
+            "absolute_residual": 5.654024261959079e-09,
+            "integer_direction": [
+              1,
+              1,
+              0
+            ],
+            "leading_cusp_velocity": [
+              1.6212285838508135e-06,
+              -1.6212285838508137e-06,
+              1.4778899504920378e-23
+            ],
+            "quadrature_velocity": [
+              1.6172305849541891e-06,
+              -1.6172305849541891e-06,
+              -5.7331433270033e-22
+            ],
+            "residual_over_rho_cubed": 0.0005240257113783702,
+            "rho": [
+              0.015625,
+              0.015625,
+              0.0
+            ]
+          },
+          {
+            "absolute_residual": 1.0530165160936748e-06,
+            "integer_direction": [
+              1,
+              0,
+              1
+            ],
+            "leading_cusp_velocity": [
+              -0.0003091946150001675,
+              -3.6296144757251054e-25,
+              0.0003091946150001675
+            ],
+            "quadrature_velocity": [
+              -0.0003084500198809362,
+              3.571263484094915e-23,
+              0.00030845001988093624
+            ],
+            "residual_over_rho_cubed": 0.09759557146788109,
+            "rho": [
+              0.015625,
+              0.0,
+              0.015625
+            ]
+          },
+          {
+            "absolute_residual": 1.0586711585335786e-06,
+            "integer_direction": [
+              0,
+              1,
+              1
+            ],
+            "leading_cusp_velocity": [
+              1.99478745329725e-23,
+              -0.00031081584358401827,
+              0.0003108158435840183
+            ],
+            "quadrature_velocity": [
+              -4.8345634649022105e-22,
+              -0.0003100672500287726,
+              0.00031006725002877256
+            ],
+            "residual_over_rho_cubed": 0.09811965447316592,
+            "rho": [
+              0.0,
+              0.015625,
+              0.015625
+            ]
+          },
+          {
+            "absolute_residual": 1.8325869834633801e-06,
+            "integer_direction": [
+              1,
+              1,
+              1
+            ],
+            "leading_cusp_velocity": [
+              -0.00020504892427754444,
+              -0.00020829138144524606,
+              0.0004133403057227905
+            ],
+            "quadrature_velocity": [
+              -0.00020430672895283553,
+              -0.00020753729152281076,
+              0.0004118440204756464
+            ],
+            "residual_over_rho_cubed": 0.09245334684443056,
+            "rho": [
+              0.015625,
+              0.015625,
+              0.015625
+            ]
+          },
+          {
+            "absolute_residual": 4.051129891127335e-06,
+            "integer_direction": [
+              2,
+              1,
+              1
+            ],
+            "leading_cusp_velocity": [
+              -0.00020504892427754447,
+              -0.00010576691930647386,
+              0.0005158647678615627
+            ],
+            "quadrature_velocity": [
+              -0.00020357924357523264,
+              -0.00010500817351296597,
+              0.0005121666606634313
+            ],
+            "residual_over_rho_cubed": 0.0722585453636175,
+            "rho": [
+              0.03125,
+              0.015625,
+              0.015625
+            ]
+          },
+          {
+            "absolute_residual": 4.069754424561574e-06,
+            "integer_direction": [
+              1,
+              2,
+              1
+            ],
+            "leading_cusp_velocity": [
+              -0.00010090323355492142,
+              -0.0002082913814452461,
+              0.0005174859964454135
+            ],
+            "quadrature_velocity": [
+              -0.00010017882681949514,
+              -0.00020679602885270585,
+              0.0005137708845249069
+            ],
+            "residual_over_rho_cubed": 0.072590744461203,
+            "rho": [
+              0.015625,
+              0.03125,
+              0.015625
+            ]
+          },
+          {
+            "absolute_residual": 5.102992182914003e-06,
+            "integer_direction": [
+              1,
+              1,
+              2
+            ],
+            "leading_cusp_velocity": [
+              -0.0004117190771389397,
+              -0.00041496153430664134,
+              0.0004133403057227905
+            ],
+            "quadrature_velocity": [
+              -0.0004087838584373286,
+              -0.0004120043524754361,
+              0.00041039410545638236
+            ],
+            "residual_over_rho_cubed": 0.09102023436643418,
+            "rho": [
+              0.015625,
+              0.015625,
+              0.03125
+            ]
+          }
+        ]
+      },
+      "runtime_seconds": 31.463186699984362,
+      "second_form_continuum_quadrature": -4.7074882555233264e-07,
+      "size": 64,
+      "velocity_energy_components_times_h11": [
+        1.4326646222923628e-06,
+        1.4554406843518023e-06,
+        3.8866769680961025e-06
+      ]
+    }
+  ],
+  "scope": "Direct exact-box tensor-trapezoid evaluation of L_EE, including output-sector diagnostics",
+  "second_order_richardson_diagnostics": [
+    {
+      "certified_error_bound": null,
+      "coarse_fine_difference": 2.480631416478337e-08,
+      "coarse_size": 8,
+      "fine_size": 16,
+      "second_order_extrapolate": -2.989441095699207e-07
+    },
+    {
+      "certified_error_bound": null,
+      "coarse_fine_difference": 6.5103538805103695e-09,
+      "coarse_size": 16,
+      "fine_size": 32,
+      "second_order_extrapolate": -2.9935581002234007e-07
+    },
+    {
+      "certified_error_bound": null,
+      "coarse_fine_difference": 1.648767199925073e-09,
+      "coarse_size": 32,
+      "fine_size": 64,
+      "second_order_extrapolate": -2.993840483287367e-07
+    }
+  ],
+  "sign_convention": {
+    "cross_code_field": "-g",
+    "quadratic_code_field": "-i v",
+    "second_component": "sqrt(2)/10*h^11*(pair_z-pair_y)"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "assembled_error_bounds": {
+    "boundary": {
+      "assembled_nonzero_count": 0,
+      "frobenius_error_upper": 2.222758749485078e-162,
+      "maximum_entry_contribution_count": 0,
+      "maximum_entry_error_upper": 0.0,
+      "maximum_row_sum_error_upper": 5e-324
+    },
+    "boundary_mass": {
+      "assembled_nonzero_count": 0,
+      "frobenius_error_upper": 2.222758749485078e-162,
+      "maximum_entry_contribution_count": 0,
+      "maximum_entry_error_upper": 0.0,
+      "maximum_row_sum_error_upper": 5e-324
+    },
+    "mass": {
+      "assembled_nonzero_count": 275,
+      "frobenius_error_upper": 6.007696627467276e-17,
+      "maximum_entry_contribution_count": 1,
+      "maximum_entry_error_upper": 1.3534869228550433e-17,
+      "maximum_row_sum_error_upper": 2.6966255611696542e-17
+    },
+    "stiffness": {
+      "assembled_nonzero_count": 275,
+      "frobenius_error_upper": 2.4445207985824517e-13,
+      "maximum_entry_contribution_count": 1,
+      "maximum_entry_error_upper": 6.072712855599167e-14,
+      "maximum_row_sum_error_upper": 1.230085693464589e-13
+    }
+  },
+  "below_normal_priority_set": true,
+  "complete_mesh_audit": false,
+  "cross_check_quadrature_order": 24,
+  "elapsed_seconds": 3.3088322000112385,
+  "finite_element_assembly_interval_enclosed": false,
+  "form_bounds": {
+    "absolute_mass_error_relative_to_stored_mass_form": null,
+    "absolute_stiffness_error_in_stored_mass_form_units": null,
+    "exact_mass_lower_relative_to_stored_mass": null,
+    "stored_mass_row_lumped_coercivity_lower_used": null
+  },
+  "inner_boundary_vertex_count": 112,
+  "local_interval_checks": {
+    "all_local_enclosures_valid": true,
+    "maximum_determinant_interval_width": 4.7704895589362195e-18,
+    "maximum_exact_interval_width": {
+      "mass": 2.5587171270657905e-17,
+      "stiffness": 1.1535217225855376e-13,
+      "weighted_area": 1.6089560239684886e-16
+    },
+    "minimum_determinant_lower": 0.0012412175664029974,
+    "minimum_exact_mass_entry_lower": 1.136599184413312e-08
+  },
+  "method": {
+    "geometry": "outward IEEE-754 intervals for binary vertex determinant, inverse edge map, and P1 gradient Gram",
+    "global_error": "entrywise sum of local exact-minus-q12 enclosures plus duplicate-summation roundoff",
+    "moments": "closed barycentric Dirichlet moments with ball-arithmetic generating-function convolution",
+    "remainder": "absolute probabilists-Hermite derivative bound times the unweighted barycentric moment",
+    "weight": "Gaussian Taylor recurrence about each triangle x-centroid"
+  },
+  "model": "directed interval audit of Gaussian-weighted P1 assembly on the stored binary polygon",
+  "quadrature_diagnostics": {
+    "maximum_q12_distance_to_exact_interval": {
+      "mass": 0.0,
+      "stiffness": 0.0,
+      "weighted_area": 0.0
+    },
+    "maximum_q24_distance_to_exact_interval": {
+      "mass": 0.0,
+      "stiffness": 0.0,
+      "weighted_area": 0.0
+    },
+    "q24_containment_check_count": 608,
+    "q24_containment_failure_count": 0,
+    "q24_is_diagnostic_not_part_of_the_proof": true,
+    "worst_rows": {
+      "q12_mass": null,
+      "q12_stiffness": null,
+      "q24_mass": null,
+      "q24_stiffness": null
+    }
+  },
+  "quadrature_order": 12,
+  "selected_triangle_count": 32,
+  "spacing": 0.06,
+  "state_count": 15211,
+  "stored_matrix_reconstruction": {
+    "expected_matrix_fingerprint_sha256": "c80fdc5aa494fe1118aec4c38045df76151b2ccde3fded18f4af1161de7efd48",
+    "fingerprints_match": false,
+    "reconstructed_matrix_fingerprint_sha256": null
+  },
+  "taylor_area_degree": 22,
+  "taylor_mass_degree": 20,
+  "total_triangle_count": 30954
+}

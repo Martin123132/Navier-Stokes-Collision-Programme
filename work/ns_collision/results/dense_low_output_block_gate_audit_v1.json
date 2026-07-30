@@ -1,0 +1,229 @@
+{
+  "all_positive_checks_pass": true,
+  "central_interval_self_audit": {
+    "all_checks_pass": true,
+    "directed_interval": [
+      78.68926229162199,
+      78.68926229162608
+    ],
+    "exact_unit_channel_per_carrier": "12*sqrt(43)",
+    "interval_width": 4.092726157978177e-12,
+    "numeric_exact_unit_channel_per_carrier": 78.689262291624
+  },
+  "certification_flags": {
+    "H_minus_1_endpoint_for_actual_Navier_Stokes_falsified": false,
+    "H_minus_1_endpoint_for_actual_Navier_Stokes_proved": false,
+    "Navier_Stokes_global_regularity_proved": false,
+    "one_fixed_tensor_channel_positive_on_output_block": true,
+    "parabolic_time_persistence_proved": false,
+    "positive_volume_low_output_block_realized": true,
+    "simultaneous_spatial_H_5_2_output_scaling_proved": true,
+    "suitable_weak_solution_closure_proved": false
+  },
+  "configuration": {
+    "carrier_multiple_relative_to_offset_box": 4096,
+    "finite_radii": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "maximum_exhaustive_radius": 2,
+    "offset_spacing": 4,
+    "output_half_width": "1/2",
+    "physical_carrier": "R=16384M",
+    "sample_limit_per_representative_output": 512
+  },
+  "directed_interval_certificate": {
+    "all_checks_pass": true,
+    "carrier_multiple_relative_to_offset_box": 4096,
+    "channel_numerator_interval_per_carrier": [
+      6029.850988445586,
+      6354.364568092399
+    ],
+    "normalized_output_half_width": 0.5,
+    "physical_carrier": "R=16384M",
+    "physical_output_block": "4q with |q_i|<=floor(0.5M)",
+    "relaxed_domain": "x,y in [-1,1]^3, w in [-delta,delta]^3, and z=w-x-y in [-2-delta,2+delta]^3. This contains the true lattice polytope, which also requires z in [-1,1]^3.",
+    "unit_channel_interval_per_carrier": [
+      76.62863792138288,
+      80.75262600052086
+    ]
+  },
+  "exact_lattice_multiplicity": {
+    "all_checks_pass": true,
+    "maximum_inclusion_exclusion_residual": 0,
+    "maximum_interior_formula_residual": 0,
+    "one_dimensional_exact_formula_for_abs_q_le_M": "3M^2+3M+1-q^2",
+    "output_half_width": "1/2",
+    "rows": [
+      {
+        "M": 2,
+        "minimum_one_dimensional_triple_count": 18,
+        "minimum_three_dimensional_triple_count": 5832,
+        "minimum_triple_count_over_M6": 91.125,
+        "output_channel_count": 27,
+        "output_radius": 1
+      },
+      {
+        "M": 4,
+        "minimum_one_dimensional_triple_count": 57,
+        "minimum_three_dimensional_triple_count": 185193,
+        "minimum_triple_count_over_M6": 45.213134765625,
+        "output_channel_count": 125,
+        "output_radius": 2
+      },
+      {
+        "M": 8,
+        "minimum_one_dimensional_triple_count": 201,
+        "minimum_three_dimensional_triple_count": 8120601,
+        "minimum_triple_count_over_M6": 30.97763442993164,
+        "output_channel_count": 729,
+        "output_radius": 4
+      },
+      {
+        "M": 16,
+        "minimum_one_dimensional_triple_count": 753,
+        "minimum_three_dimensional_triple_count": 426957777,
+        "minimum_triple_count_over_M6": 25.448666632175446,
+        "output_channel_count": 4913,
+        "output_radius": 8
+      },
+      {
+        "M": 32,
+        "minimum_one_dimensional_triple_count": 2913,
+        "minimum_three_dimensional_triple_count": 24718462497,
+        "minimum_triple_count_over_M6": 23.02086213324219,
+        "output_channel_count": 35937,
+        "output_radius": 16
+      }
+    ],
+    "three_dimensional_count": "product_i (3M^2+3M+1-q_i^2)",
+    "uniform_one_dimensional_leading_lower": "11/4",
+    "uniform_three_dimensional_leading_lower": "(11/4)^3 M^6"
+  },
+  "finite_lattice_replay": {
+    "all_checks_pass": true,
+    "role": "The finite rows replay actual projected lattice symbols. The directed interval certificate, not sampling, proves the uniform continuum statement.",
+    "rows": [
+      {
+        "M": 1,
+        "all_checks_pass": true,
+        "carrier": 16384,
+        "certified_uniform_forcing_lower": 11990.007867093906,
+        "certified_uniform_forcing_lower_over_H_5_2": 3.489551561388043e-07,
+        "maximum_sampled_imaginary_residual": 0.0,
+        "maximum_sampled_unit_channel_per_carrier": 78.78174129076291,
+        "minimum_exact_triple_count_over_representative_outputs": 343,
+        "minimum_sampled_unit_channel_per_carrier": 78.5967772569767,
+        "normalization_coefficient": 0.024056259633008698,
+        "output_radius": 0,
+        "representative_coordinates": [
+          0
+        ],
+        "representative_output_count": 1,
+        "symbol_evaluation_mode": "exhaustive",
+        "symbol_evaluations": 343
+      },
+      {
+        "M": 2,
+        "all_checks_pass": true,
+        "carrier": 32768,
+        "certified_uniform_forcing_lower": 40931.10857002783,
+        "certified_uniform_forcing_lower_over_H_5_2": 2.105855996440331e-07,
+        "maximum_sampled_imaginary_residual": 0.0,
+        "maximum_sampled_unit_channel_per_carrier": 78.79825640600555,
+        "minimum_exact_triple_count_over_representative_outputs": 5832,
+        "minimum_sampled_unit_channel_per_carrier": 78.58030560830352,
+        "normalization_coefficient": 0.01118033933563633,
+        "output_radius": 1,
+        "representative_coordinates": [
+          -1,
+          0,
+          1
+        ],
+        "representative_output_count": 27,
+        "symbol_evaluation_mode": "exhaustive",
+        "symbol_evaluations": 166375
+      },
+      {
+        "M": 4,
+        "all_checks_pass": true,
+        "carrier": 65536,
+        "certified_uniform_forcing_lower": 184571.35149093874,
+        "certified_uniform_forcing_lower_over_H_5_2": 1.6786666628007765e-07,
+        "maximum_sampled_imaginary_residual": 0.0,
+        "maximum_sampled_unit_channel_per_carrier": 78.78913162634365,
+        "minimum_exact_triple_count_over_representative_outputs": 185193,
+        "minimum_sampled_unit_channel_per_carrier": 78.58942406159461,
+        "normalization_coefficient": 0.004629629439197166,
+        "output_radius": 2,
+        "representative_coordinates": [
+          -2,
+          -1,
+          0,
+          1,
+          2
+        ],
+        "representative_output_count": 125,
+        "symbol_evaluation_mode": "deterministic_sample",
+        "symbol_evaluations": 64000
+      },
+      {
+        "M": 8,
+        "all_checks_pass": true,
+        "carrier": 131072,
+        "certified_uniform_forcing_lower": 925185.9839226169,
+        "certified_uniform_forcing_lower_over_H_5_2": 1.487490597106513e-07,
+        "maximum_sampled_imaginary_residual": 0.0,
+        "maximum_sampled_unit_channel_per_carrier": 78.78913162634365,
+        "minimum_exact_triple_count_over_representative_outputs": 8120601,
+        "minimum_sampled_unit_channel_per_carrier": 78.58942406159461,
+        "normalization_coefficient": 0.0017833501180709334,
+        "output_radius": 4,
+        "representative_coordinates": [
+          -4,
+          -2,
+          0,
+          2,
+          4
+        ],
+        "representative_output_count": 125,
+        "symbol_evaluation_mode": "deterministic_sample",
+        "symbol_evaluations": 64000
+      }
+    ]
+  },
+  "kind": "dense_low_output_block_gate_audit",
+  "positive_checks": {
+    "central_symbol_reproduced": true,
+    "directed_interval_positive": true,
+    "exact_output_multiplicity": true,
+    "finite_lattice_replay": true,
+    "uniform_H_5_2_scaling": true
+  },
+  "prerequisites": {
+    "dense_continuum_positivity_result": "work/ns_collision/results/dense_spaced_continuum_positivity_audit_v1.json",
+    "dense_continuum_positivity_sha256": "36022e7657409dd29ce54ef21a3bb5d6e3c3e2768b900b1b5433869b17837d2d",
+    "scale_uniform_tail_result": "work/ns_collision/results/scale_uniform_low_output_tail_gate_audit_v1.json",
+    "scale_uniform_tail_sha256": "3622a76234d31dcf298e0326b1be75f888fb925926df69fd65e45a9c80c6b657"
+  },
+  "runtime": {
+    "below_normal_priority_set": true,
+    "worker_count": 1
+  },
+  "scaling_certificate": {
+    "all_checks_pass": true,
+    "base_vector_norm_square_sum": 99,
+    "explicit_H_5_2_constant": 3.888175349709732e-09,
+    "interior_triple_count_lower": "(11/4)^3 M^6",
+    "output_channel_count": "(2 floor(M/2)+1)^3, on the physical sublattice 4Z^3",
+    "real_packet_energy_upper": "198(2M+1)^3",
+    "spatial_endpoint_implication": "At one instant, one unit-energy divergence-free packet simultaneously supplies c H^(5/2) in O(H^3) low outputs. This realizes the spatial multiplicity in the H^(-1) envelope obstruction.",
+    "temporal_limit": "No lower bound on a parabolic-time forcing pulse follows. The unforced Navier-Stokes evolution may decorrelate the packet before time H^(-2).",
+    "uniform_fixed_channel_forcing_lower": "3.8881753497097319e-09 H^(5/2)",
+    "unit_energy_mode_coefficient_lower": "[198(2M+1)^3]^(-1/2)"
+  },
+  "schema_version": 1,
+  "status": "positive_volume_low_output_HHH_block_certified"
+}

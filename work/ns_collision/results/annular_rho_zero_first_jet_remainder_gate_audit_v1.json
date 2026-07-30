@@ -1,0 +1,608 @@
+{
+  "algorithm_revision": "annular-rho-zero-first-jet-remainder-v1",
+  "all_positive_checks_pass": true,
+  "certification_flags": {
+    "Euler_remainder_o_N5_proved": true,
+    "Navier_Stokes_global_regularity_proved": false,
+    "compatible_stencil_orders_proved": true,
+    "critical_L3_controlled": false,
+    "finite_parabolic_window_controlled": false,
+    "finite_time_blowup_proved": false,
+    "odd_high_incidence_channels_excluded": true,
+    "required_N2_amplification_excluded": false,
+    "second_time_jet_needed": true,
+    "total_first_jet_N5_limit_certified": true,
+    "total_first_jet_eventually_negative_proved": true,
+    "viscous_weighted_Fisher_o_N5_proved": true,
+    "weight_advection_remainder_o_N5_proved": true,
+    "weight_antidiffusion_remainder_o_N5_proved": true
+  },
+  "channel_parity_replay": {
+    "all_checks_pass": true,
+    "amplitudes": [
+      -0.7,
+      0.7
+    ],
+    "coefficient_scale": 0.9,
+    "maximum_parity_residual": 5.400411021150298e-16,
+    "residuals": {
+      "even_Euler_pressure_direction": 0.0,
+      "even_Euler_pressure_variation": 1.734723475976807e-18,
+      "even_weight_advection_pressure": 1.734723475976807e-18,
+      "even_weight_antidiffusion_velocity_Fisher": 0.0,
+      "even_weight_antidiffusion_weight_self": 0.0,
+      "odd_Euler_weighted_Fisher": 1.1275702593849246e-17,
+      "odd_weight_advection_velocity_Fisher": 5.400411021150298e-16,
+      "odd_weight_advection_weight_self": 6.444867830507525e-19,
+      "odd_weight_antidiffusion_pressure": 4.336808689942018e-19
+    },
+    "size": 5
+  },
+  "compatible_stencil_certificate": {
+    "all_checks_pass": true,
+    "factorization_residuals": {
+      "first_derivative": "0",
+      "second_derivative": "0",
+      "value": "0"
+    },
+    "interpretation": "The alternating annular packet moves the compatible vertex from z=-1 to z=1. Phi supplies six lattice differences, grad Phi supplies five, and every Hessian or Laplacian term supplies at least four. grad Delta Phi supplies at least three.",
+    "one_dimensional_vanishing_orders": {
+      "first_derivative": 1,
+      "second_derivative": 0,
+      "value": 2
+    },
+    "parity_gauged_first_derivative_stencil": "(1 - z)*(z + 1)/(4*z)",
+    "parity_gauged_second_derivative_stencil": "(-z**2 - 1)/(4*z)",
+    "parity_gauged_value_stencil": "-(z - 1)**2/(4*z)",
+    "tensor_difference_orders": {
+      "Laplacian_Phi": 4,
+      "Phi": 6,
+      "cross_Hessian_Phi": 4,
+      "diagonal_Hessian_Phi": 4,
+      "gradient_Laplacian_Phi": 3,
+      "gradient_Phi": 5
+    }
+  },
+  "kind": "annular_rho_zero_first_jet_remainder_gate_audit",
+  "optimizer_scaling_certificate": {
+    "all_checks_pass": true,
+    "optimal_coefficient_scale": "t_N=O(N)",
+    "optimal_coefficient_scale_over_N_limit": 0.004243672312027402,
+    "optimal_low_amplitude": "a_N=O(N)",
+    "optimal_low_amplitude_over_N_limit": 0.0014065919385788297,
+    "static_pressure_load": "B_N=b_0 N+o(N)",
+    "viscosity_normalization": 1.0,
+    "weighted_high_Fisher": "E_N=O(N^-3)"
+  },
+  "prerequisite_audit": {
+    "all_checks_pass": true,
+    "rows": [
+      {
+        "actual_sha256": "e07d6511f0ca52484065ba58674594bd9b0a828f4b0525e26caa136153ebcdaf",
+        "all_positive_checks_pass": true,
+        "expected_sha256": "e07d6511f0ca52484065ba58674594bd9b0a828f4b0525e26caa136153ebcdaf",
+        "matches": true,
+        "path": "work/ns_collision/results/annular_rho_zero_first_jet_audit_v1.json"
+      }
+    ]
+  },
+  "pure_high_finite_rows": [
+    {
+      "Euler_pressure": 0.0181753323919798,
+      "Euler_weighted_Fisher": 1.3598101594389234e-18,
+      "runtime_seconds": 0.36530990000028396,
+      "size": 9,
+      "weight_advection_pressure": 0.0016776288807553335,
+      "weight_advection_velocity_Fisher": 2.0287486351659035e-18,
+      "weight_advection_weight_self": -3.8122682907617417e-20,
+      "weight_antidiffusion_pressure": 6.120063765664707e-20,
+      "weight_antidiffusion_velocity_Fisher": 0.22067021201914916,
+      "weight_antidiffusion_weight_self": -0.08056640625000001
+    },
+    {
+      "Euler_pressure": 0.03390261696919664,
+      "Euler_weighted_Fisher": -7.212223735686671e-19,
+      "runtime_seconds": 1.328418299999612,
+      "size": 13,
+      "weight_advection_pressure": 0.002064718355606078,
+      "weight_advection_velocity_Fisher": 1.2998649308002956e-18,
+      "weight_advection_weight_self": 2.951380425589203e-22,
+      "weight_antidiffusion_pressure": 9.648236956574325e-21,
+      "weight_antidiffusion_velocity_Fisher": 0.162698932991641,
+      "weight_antidiffusion_weight_self": -0.08056640625
+    },
+    {
+      "Euler_pressure": 0.05446102492871265,
+      "Euler_weighted_Fisher": -8.758129621780285e-19,
+      "runtime_seconds": 4.902743400001782,
+      "size": 17,
+      "weight_advection_pressure": 0.0024699160470397323,
+      "weight_advection_velocity_Fisher": -8.840457657289636e-19,
+      "weight_advection_weight_self": 1.6960932536671766e-21,
+      "weight_antidiffusion_pressure": -1.6802063633242882e-19,
+      "weight_antidiffusion_velocity_Fisher": 0.12815070837490888,
+      "weight_antidiffusion_weight_self": -0.08056640624999999
+    },
+    {
+      "Euler_pressure": 0.07985444077242623,
+      "Euler_weighted_Fisher": -3.2665922610966698e-18,
+      "runtime_seconds": 5.61342020000302,
+      "size": 21,
+      "weight_advection_pressure": 0.0028824810430440615,
+      "weight_advection_velocity_Fisher": 1.5415950811321203e-18,
+      "weight_advection_weight_self": -1.0337247851855198e-20,
+      "weight_antidiffusion_pressure": 1.6602528912803845e-19,
+      "weight_antidiffusion_velocity_Fisher": 0.10550437135383764,
+      "weight_antidiffusion_weight_self": -0.08056640624999997
+    },
+    {
+      "Euler_pressure": 0.11008442477268714,
+      "Euler_weighted_Fisher": -4.017260098990948e-18,
+      "runtime_seconds": 9.685744199996407,
+      "size": 25,
+      "weight_advection_pressure": 0.003298790254736467,
+      "weight_advection_velocity_Fisher": -8.3241229474405745e-19,
+      "weight_advection_weight_self": 7.163515403219148e-21,
+      "weight_antidiffusion_pressure": 5.494960065515003e-20,
+      "weight_antidiffusion_velocity_Fisher": 0.08958464983091674,
+      "weight_antidiffusion_weight_self": -0.08056640624999997
+    }
+  ],
+  "pure_high_log_log_diagnostics": {
+    "Euler_pressure": 1.762941827027633,
+    "weight_advection_pressure": 0.6618104111845146,
+    "weight_antidiffusion_velocity_Fisher": -0.8828940904018361
+  },
+  "remainder_bound_ledger": {
+    "all_checks_pass": true,
+    "branch_power_formula": "optimized power = fixed-scale N power + low-amplitude power + coefficient-scale power, because a_N,t_N=O(N)",
+    "branch_rows": [
+      {
+        "branch": "HH",
+        "channel": "velocity_viscous_weighted_Fisher",
+        "coefficient_scale_power": 1,
+        "fixed_scale_N_power": -1,
+        "logarithmic_loss": false,
+        "low_amplitude_power": 0,
+        "optimized_power_upper_bound": 0
+      },
+      {
+        "branch": "LL",
+        "channel": "velocity_viscous_weighted_Fisher",
+        "coefficient_scale_power": 1,
+        "fixed_scale_N_power": 0,
+        "logarithmic_loss": false,
+        "low_amplitude_power": 2,
+        "optimized_power_upper_bound": 3
+      },
+      {
+        "branch": "HHHH compatible-gradient shell",
+        "channel": "Euler_pressure",
+        "coefficient_scale_power": 1,
+        "fixed_scale_N_power": 2,
+        "logarithmic_loss": true,
+        "low_amplitude_power": 0,
+        "optimized_power_upper_bound": 3
+      },
+      {
+        "branch": "HHLL mixed pressure/Euler",
+        "channel": "Euler_pressure",
+        "coefficient_scale_power": 1,
+        "fixed_scale_N_power": 1,
+        "logarithmic_loss": false,
+        "low_amplitude_power": 2,
+        "optimized_power_upper_bound": 4
+      },
+      {
+        "branch": "HHL",
+        "channel": "Euler_weighted_Fisher",
+        "coefficient_scale_power": 1,
+        "fixed_scale_N_power": 1,
+        "logarithmic_loss": false,
+        "low_amplitude_power": 1,
+        "optimized_power_upper_bound": 3
+      },
+      {
+        "branch": "LLL",
+        "channel": "Euler_weighted_Fisher",
+        "coefficient_scale_power": 1,
+        "fixed_scale_N_power": 0,
+        "logarithmic_loss": false,
+        "low_amplitude_power": 3,
+        "optimized_power_upper_bound": 4
+      },
+      {
+        "branch": "HHHH compatible-gradient shell",
+        "channel": "weight_advection_pressure",
+        "coefficient_scale_power": 1,
+        "fixed_scale_N_power": 2,
+        "logarithmic_loss": true,
+        "low_amplitude_power": 0,
+        "optimized_power_upper_bound": 3
+      },
+      {
+        "branch": "HHLL mixed pressure/transport",
+        "channel": "weight_advection_pressure",
+        "coefficient_scale_power": 1,
+        "fixed_scale_N_power": 1,
+        "logarithmic_loss": false,
+        "low_amplitude_power": 2,
+        "optimized_power_upper_bound": 4
+      },
+      {
+        "branch": "HHL",
+        "channel": "weight_advection_velocity_Fisher",
+        "coefficient_scale_power": 1,
+        "fixed_scale_N_power": 1,
+        "logarithmic_loss": false,
+        "low_amplitude_power": 1,
+        "optimized_power_upper_bound": 3
+      },
+      {
+        "branch": "LLL",
+        "channel": "weight_advection_velocity_Fisher",
+        "coefficient_scale_power": 1,
+        "fixed_scale_N_power": 0,
+        "logarithmic_loss": false,
+        "low_amplitude_power": 3,
+        "optimized_power_upper_bound": 4
+      },
+      {
+        "branch": "low field only",
+        "channel": "weight_advection_weight_self",
+        "coefficient_scale_power": 3,
+        "fixed_scale_N_power": 0,
+        "logarithmic_loss": false,
+        "low_amplitude_power": 1,
+        "optimized_power_upper_bound": 4
+      },
+      {
+        "branch": "HHL",
+        "channel": "weight_antidiffusion_pressure",
+        "coefficient_scale_power": 1,
+        "fixed_scale_N_power": 1,
+        "logarithmic_loss": false,
+        "low_amplitude_power": 1,
+        "optimized_power_upper_bound": 3
+      },
+      {
+        "branch": "HH compatible-Laplacian stencil",
+        "channel": "weight_antidiffusion_velocity_Fisher",
+        "coefficient_scale_power": 1,
+        "fixed_scale_N_power": 0,
+        "logarithmic_loss": false,
+        "low_amplitude_power": 0,
+        "optimized_power_upper_bound": 1
+      },
+      {
+        "branch": "LL",
+        "channel": "weight_antidiffusion_velocity_Fisher",
+        "coefficient_scale_power": 1,
+        "fixed_scale_N_power": 0,
+        "logarithmic_loss": false,
+        "low_amplitude_power": 2,
+        "optimized_power_upper_bound": 3
+      },
+      {
+        "branch": "fixed low stencil",
+        "channel": "weight_antidiffusion_weight_self",
+        "coefficient_scale_power": 3,
+        "fixed_scale_N_power": 0,
+        "logarithmic_loss": false,
+        "low_amplitude_power": 0,
+        "optimized_power_upper_bound": 3
+      }
+    ],
+    "coefficient_profile_lemma": "After parity gauging, N hhat_N(k) is the restriction of a uniformly C^6 function on a fixed compact annulus and vanishes on the lattice boundary. Each compatible stencil difference therefore costs O(N^-1) unless it lands on a pressure/Leray projector at output radius K, where it costs O(K^-1).",
+    "maximum_optimized_power_upper_bound": 4,
+    "pressure_shell_lemma": "For the pure HHHH branches, split the internal pressure output into K=0 and dyadic 1<=K<=CN. The zero/finite shell is bounded directly using q dot hhat=O(N^-1). On shell K, the fivefold gradient stencil gives O(N^2/K) after the exact pair count. The dyadic sum is O(N^2 log(2+N)) at fixed coefficient scale.",
+    "rows": [
+      {
+        "branches": [
+          "HHHH compatible-gradient shell",
+          "HHLL mixed pressure/Euler"
+        ],
+        "channel": "Euler_pressure",
+        "optimized_bound": "O(N^4)",
+        "optimized_power_upper_bound": 4
+      },
+      {
+        "branches": [
+          "HHL",
+          "LLL"
+        ],
+        "channel": "Euler_weighted_Fisher",
+        "optimized_bound": "O(N^4)",
+        "optimized_power_upper_bound": 4
+      },
+      {
+        "branches": [
+          "HH",
+          "LL"
+        ],
+        "channel": "velocity_viscous_weighted_Fisher",
+        "optimized_bound": "O(N^3)",
+        "optimized_power_upper_bound": 3
+      },
+      {
+        "branches": [
+          "HHHH compatible-gradient shell",
+          "HHLL mixed pressure/transport"
+        ],
+        "channel": "weight_advection_pressure",
+        "optimized_bound": "O(N^4)",
+        "optimized_power_upper_bound": 4
+      },
+      {
+        "branches": [
+          "HHL",
+          "LLL"
+        ],
+        "channel": "weight_advection_velocity_Fisher",
+        "optimized_bound": "O(N^4)",
+        "optimized_power_upper_bound": 4
+      },
+      {
+        "branches": [
+          "low field only"
+        ],
+        "channel": "weight_advection_weight_self",
+        "optimized_bound": "O(N^4)",
+        "optimized_power_upper_bound": 4
+      },
+      {
+        "branches": [
+          "HHL"
+        ],
+        "channel": "weight_antidiffusion_pressure",
+        "optimized_bound": "O(N^3)",
+        "optimized_power_upper_bound": 3
+      },
+      {
+        "branches": [
+          "HH compatible-Laplacian stencil",
+          "LL"
+        ],
+        "channel": "weight_antidiffusion_velocity_Fisher",
+        "optimized_bound": "O(N^3)",
+        "optimized_power_upper_bound": 3
+      },
+      {
+        "branches": [
+          "fixed low stencil"
+        ],
+        "channel": "weight_antidiffusion_weight_self",
+        "optimized_bound": "O(N^3)",
+        "optimized_power_upper_bound": 3
+      }
+    ],
+    "total_remainder_bound": "R_N=O(N^4)=o(N^5)",
+    "two_high_two_low_lemma": "The mixed pressure coefficient is O(a_N N^-2), the mixed Euler coefficient is O(a_N), and only O(N^3) high outputs occur. With the outer t_N gradient this is O(t_N a_N^2 N)=O(N^4). The same estimate covers the nested pressure variation after discrete summation by parts.",
+    "weighted_quadratic_lemma": "Phi, grad Phi, and Delta Phi act as six-, five-, and four-difference stencils on every high correlation. This gives the stated HHL Fisher bounds; all odd-high channels are absent by the x-support gap."
+  },
+  "scope": "Carrier-uniform asymptotic bounds for every non-pressure component of the exact rho=0 first generator jet on the static-optimal annular +++ family. This certifies the total restart-time N^5 limit, not a finite-window Taylor bound or Navier-Stokes regularity.",
+  "status": "annular_rho_zero_total_first_jet_N5_limit_certified",
+  "support_incidence_certificate": {
+    "all_checks_pass": true,
+    "allowed_high_leg_parity": "even",
+    "channel_polynomial_parity": {
+      "Euler_pressure_quartic": "even in low amplitude a",
+      "Euler_weighted_Fisher_cubic": "odd in a",
+      "weight_advection_pressure_quartic": "even in a",
+      "weight_advection_velocity_Fisher_cubic": "odd in a",
+      "weight_advection_weight_self_linear": "odd in a",
+      "weight_antidiffusion_pressure_cubic": "odd in a",
+      "weight_antidiffusion_velocity_Fisher_quadratic": "even in a",
+      "weight_antidiffusion_weight_self": "independent of a"
+    },
+    "forbidden_integrated_channels": {
+      "one_high_leg": true,
+      "three_high_legs": true
+    },
+    "low_x_support": "{0}",
+    "negative_high_x_interval": "[-3N+1,-2N]",
+    "one_high_gap_from_fixed_low_support": "at least 2N-3",
+    "positive_high_x_interval": "[2N,3N-1]",
+    "reason": "A sum of one high x-frequency and fixed low frequencies cannot return to zero. For three high legs, the closest two-plus/one-minus sum has magnitude N+1 before the bounded low shifts. Thus only zero, two, or four high legs survive.",
+    "three_high_gap_from_fixed_low_support": "at least N-2",
+    "valid_for": "N>=5 and every low test product used here"
+  },
+  "total_first_jet_limit_certificate": {
+    "all_checks_pass": true,
+    "analytic_strict_negative_upper_bound": -1.0705252009222428e-10,
+    "conclusion": "The complete restart-time generator derivative is negative for all sufficiently large N and has the same N^5 limit as the viscous-pressure component.",
+    "decomposition": "g'_N=V_pressure,nu(N)+R_N, V_pressure,nu(N)/N^5 -> c_*<0, R_N=O(N^4)",
+    "finite_negative_sizes": [
+      25,
+      29,
+      33,
+      37,
+      41
+    ],
+    "finite_window_guard": "A negative first derivative does not control a T/N^2 window. A second-jet or Taylor-remainder estimate is still required to exclude later N^2 amplification.",
+    "total_first_jet_over_N5_limit": -1.0442344590350905e-07
+  },
+  "two_high_two_low_finite_rows": [
+    {
+      "Euler_pressure_a2_coefficient": -0.048647960813667276,
+      "Euler_pressure_a2_coefficient_over_N": -0.005405328979296364,
+      "Euler_weighted_Fisher_a1_coefficient": -0.02930808380557096,
+      "all_checks_pass": true,
+      "runtime_seconds": 0.3975315999996383,
+      "size": 9,
+      "weight_advection_pressure_a2_coefficient": 0.008813874783450833,
+      "weight_advection_pressure_a2_coefficient_over_N": 0.000979319420383426,
+      "weight_advection_velocity_Fisher_a1_plus_a3": -0.0001131843375843198
+    },
+    {
+      "Euler_pressure_a2_coefficient": -0.0644683569186803,
+      "Euler_pressure_a2_coefficient_over_N": -0.004959104378360024,
+      "Euler_weighted_Fisher_a1_coefficient": -0.04396975049452483,
+      "all_checks_pass": true,
+      "runtime_seconds": 1.2967865000027814,
+      "size": 13,
+      "weight_advection_pressure_a2_coefficient": 0.01141698278338129,
+      "weight_advection_pressure_a2_coefficient_over_N": 0.0008782294448754838,
+      "weight_advection_velocity_Fisher_a1_plus_a3": -5.631633511151057e-05
+    },
+    {
+      "Euler_pressure_a2_coefficient": -0.08029212700910976,
+      "Euler_pressure_a2_coefficient_over_N": -0.004723066294653515,
+      "Euler_weighted_Fisher_a1_coefficient": -0.05648242492160526,
+      "all_checks_pass": true,
+      "runtime_seconds": 3.1080131999988225,
+      "size": 17,
+      "weight_advection_pressure_a2_coefficient": 0.014078702542810663,
+      "weight_advection_pressure_a2_coefficient_over_N": 0.0008281589731065096,
+      "weight_advection_velocity_Fisher_a1_plus_a3": -2.9131977288001528e-05
+    },
+    {
+      "Euler_pressure_a2_coefficient": -0.0961097316902766,
+      "Euler_pressure_a2_coefficient_over_N": -0.004576653890013172,
+      "Euler_weighted_Fisher_a1_coefficient": -0.06826674985643659,
+      "all_checks_pass": true,
+      "runtime_seconds": 5.750441900003352,
+      "size": 21,
+      "weight_advection_pressure_a2_coefficient": 0.016765680150573344,
+      "weight_advection_pressure_a2_coefficient_over_N": 0.0007983657214558735,
+      "weight_advection_velocity_Fisher_a1_plus_a3": -1.658333049790447e-05
+    },
+    {
+      "Euler_pressure_a2_coefficient": -0.11192249995555979,
+      "Euler_pressure_a2_coefficient_over_N": -0.004476899998222391,
+      "Euler_weighted_Fisher_a1_coefficient": -0.07976794973925054,
+      "all_checks_pass": true,
+      "runtime_seconds": 11.606061099999351,
+      "size": 25,
+      "weight_advection_pressure_a2_coefficient": 0.019465776423574405,
+      "weight_advection_pressure_a2_coefficient_over_N": 0.0007786310569429762,
+      "weight_advection_velocity_Fisher_a1_plus_a3": -1.0226590618356205e-05
+    }
+  ],
+  "two_high_two_low_log_log_diagnostics": {
+    "Euler_pressure_a2_coefficient": 0.815457597403702,
+    "Euler_weighted_Fisher_a1_coefficient": 0.975114566796266,
+    "weight_advection_pressure_a2_coefficient": 0.7756684396014154
+  },
+  "viscous_weighted_Fisher_theorem": {
+    "all_checks_pass": true,
+    "exact_identity": "R_F,nu(N)=2nu^2 t_N[P_N+a_N^2], P_N=(1/32)sum Delta_123 F_N:Delta_123(|k|^2 F_N)",
+    "finite_rows": [
+      {
+        "FFT_replay_residual": 1.8596235662471372e-15,
+        "all_checks_pass": true,
+        "high_field_contribution": 0.1795019197836815,
+        "low_field_exact_contribution": 0.0003325428239685615,
+        "mixed_difference_heat_pair": 0.8709290971600482,
+        "optimal_coefficient_scale": 0.10305197080279369,
+        "optimal_low_amplitude": 0.0401680400630415,
+        "predecessor_FFT_contribution": 0.17983446260764818,
+        "runtime_seconds": 0.453593300000648,
+        "size": 25,
+        "size_times_heat_pair": 21.773227429001203,
+        "total_viscous_weighted_Fisher_contribution": 0.17983446260765004,
+        "weighted_Fisher": 0.00022337770015284247
+      },
+      {
+        "FFT_replay_residual": 9.43689570931383e-16,
+        "all_checks_pass": true,
+        "high_field_contribution": 0.19594659063626027,
+        "low_field_exact_contribution": 0.0005365670031013181,
+        "mixed_difference_heat_pair": 0.7647400499529224,
+        "optimal_coefficient_scale": 0.1281132004583275,
+        "optimal_low_amplitude": 0.04576147798420797,
+        "predecessor_FFT_contribution": 0.19648315763936064,
+        "runtime_seconds": 0.7774113999985275,
+        "size": 29,
+        "size_times_heat_pair": 22.17746144863475,
+        "total_viscous_weighted_Fisher_contribution": 0.19648315763936158,
+        "weighted_Fisher": 0.00014546384829141812
+      },
+      {
+        "FFT_replay_residual": 6.6058269965196814e-15,
+        "all_checks_pass": true,
+        "high_field_contribution": 0.20303952022567584,
+        "low_field_exact_contribution": 0.0007860359165540636,
+        "mixed_difference_heat_pair": 0.6814551117247956,
+        "optimal_coefficient_scale": 0.14897497775882337,
+        "optimal_low_amplitude": 0.051362899586688465,
+        "predecessor_FFT_contribution": 0.2038255561422233,
+        "runtime_seconds": 1.2527126999993925,
+        "size": 33,
+        "size_times_heat_pair": 22.488018686918252,
+        "total_viscous_weighted_Fisher_contribution": 0.2038255561422299,
+        "weighted_Fisher": 9.994594386957014e-05
+      },
+      {
+        "FFT_replay_residual": 4.524158825347513e-15,
+        "all_checks_pass": true,
+        "high_field_contribution": 0.20650197592426714,
+        "low_field_exact_contribution": 0.0010907806057633264,
+        "mixed_difference_heat_pair": 0.6144333840402989,
+        "optimal_coefficient_scale": 0.16804260745598035,
+        "optimal_low_amplitude": 0.05696970886595802,
+        "predecessor_FFT_contribution": 0.20759275653003498,
+        "runtime_seconds": 1.9028020999976434,
+        "size": 37,
+        "size_times_heat_pair": 22.734035209491058,
+        "total_viscous_weighted_Fisher_contribution": 0.20759275653003045,
+        "weighted_Fisher": 7.159673226685327e-05
+      },
+      {
+        "FFT_replay_residual": 8.826273045769994e-15,
+        "all_checks_pass": true,
+        "high_field_contribution": 0.2083388904807401,
+        "low_field_exact_contribution": 0.0014586647197139685,
+        "mixed_difference_heat_pair": 0.5593588667993802,
+        "optimal_coefficient_scale": 0.18623007772527453,
+        "optimal_low_amplitude": 0.06258032717911707,
+        "predecessor_FFT_contribution": 0.20979755520046292,
+        "runtime_seconds": 2.4809883999987505,
+        "size": 41,
+        "size_times_heat_pair": 22.933713538774587,
+        "total_viscous_weighted_Fisher_contribution": 0.2097975552004541,
+        "weighted_Fisher": 5.302918855758107e-05
+      },
+      {
+        "FFT_replay_residual": null,
+        "all_checks_pass": true,
+        "high_field_contribution": 0.20998998979858818,
+        "low_field_exact_contribution": 0.0024122152380748,
+        "mixed_difference_heat_pair": 0.47424660996739876,
+        "optimal_coefficient_scale": 0.22139324286685313,
+        "optimal_low_amplitude": 0.07380925973694195,
+        "predecessor_FFT_contribution": null,
+        "runtime_seconds": 4.678336199998739,
+        "size": 49,
+        "size_times_heat_pair": 23.23808388840254,
+        "total_viscous_weighted_Fisher_contribution": 0.212402205036663,
+        "weighted_Fisher": 3.143080474434583e-05
+      },
+      {
+        "FFT_replay_residual": null,
+        "all_checks_pass": true,
+        "high_field_contribution": 0.2108690944990333,
+        "low_field_exact_contribution": 0.005378162717311318,
+        "mixed_difference_heat_pair": 0.3634906042526852,
+        "optimal_coefficient_scale": 0.2900612726050615,
+        "optimal_low_amplitude": 0.09628465908057585,
+        "predecessor_FFT_contribution": null,
+        "runtime_seconds": 10.764303799995105,
+        "size": 65,
+        "size_times_heat_pair": 23.62688927642454,
+        "total_viscous_weighted_Fisher_contribution": 0.2162472572163446,
+        "weighted_Fisher": 1.3664437598825374e-05
+      }
+    ],
+    "gauged_tensor": "F_N(a,b,c)=(-1)^(a+b+c) k_abc tensor hhat_N(k_abc)",
+    "high_field_bound": "2nu^2 t_N P_N=O(1)",
+    "low_field_exact_bound": "2nu^2 t_N a_N^2=O(N^3)",
+    "maximum_FFT_replay_residual": 8.826273045769994e-15,
+    "smooth_embedding_bounds": {
+      "Cauchy_pair": "P_N=O(N^-1)",
+      "sum_norm_Delta123_F_squared": "O(N^-3)",
+      "sum_norm_Delta123_k2F_squared": "O(N)"
+    },
+    "total_bound": "R_F,nu(N)=O(N^3)=o(N^5)"
+  }
+}

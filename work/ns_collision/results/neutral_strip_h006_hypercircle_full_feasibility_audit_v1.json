@@ -1,0 +1,160 @@
+{
+  "all_current_stage_checks_pass": true,
+  "artifacts": {
+    "continuum_dependency_audit": "work/ns_collision/results/neutral_strip_h006_continuum_ritz_dependency_audit_v1.json",
+    "continuum_dependency_audit_sha256": "fc9e1f5e313dd9e98a801648f91a532ccfc2d1dada5aa228f1799ef5729b38c1",
+    "directed_audit": "work/ns_collision/results/neutral_strip_h006_hypercircle_directed_ldl_transition32064_audit_v1.json",
+    "directed_audit_sha256": "4109dcc39fdce8b2c7dd272f9209c21420c21c8f2f0108bb8593c00cb880fee6",
+    "directed_crosscheck": "work/ns_collision/results/neutral_strip_h006_hypercircle_directed_ldl_transition32064_precision_crosscheck_v1.json",
+    "directed_crosscheck_sha256": "b00b555b5b87b5704036163f66ef7c020db3864cdc379db7d0a0dee9e130a064",
+    "directed_replay": "work/ns_collision/results/neutral_strip_h006_hypercircle_directed_ldl_transition32064_p80_audit_v1.json",
+    "directed_replay_sha256": "5a7ad3e28cfa5894904a0c42d665cf46394a8d9db22398744261fc6a0a1dcb11",
+    "residual_audit": "work/ns_collision/results/neutral_strip_h006_hypercircle_congruence_residual_pilot32064_v1.json",
+    "residual_audit_sha256": "a97cf12ab204c57cbf063e1047ccc658f59295f6cbe2bd8cccbcf4b301b8e4d2",
+    "residual_crosscheck": "work/ns_collision/results/neutral_strip_h006_hypercircle_congruence_residual_precision_crosscheck32064_v1.json",
+    "residual_crosscheck_sha256": "c6ef1c285058a0bbea8a676286e1dcca0d0e65268c3fc8ffff03b5bf02b889a4",
+    "residual_replay": "work/ns_collision/results/neutral_strip_h006_hypercircle_congruence_residual_pilot32064_p100_v1.json",
+    "residual_replay_sha256": "2733d99fa3d10018d954c10178e3f211973d141c721a93f788b22334e82ab0a1",
+    "symbolic_map": "work/ns_collision/results/neutral_strip_h006_hypercircle_symbolic_transition_map123816_v1.json",
+    "symbolic_map_sha256": "f38096e4867f1214cdaeaaf05d5e320b4f97d9d3fc739af221bb2993d00d7aa6"
+  },
+  "certification_flags": {
+    "bounded_32064_inertia_certified_by_two_routes": true,
+    "continuum_spectrum_below_60_captured": false,
+    "full_123816_pivot_inertia_certified": false,
+    "navier_stokes_regularity_certified": false,
+    "weighted_global_Ritz_projection_constant_certified": false
+  },
+  "checkpoint_storage_projection": {
+    "checkpoint_batch": 512,
+    "interpretation": "Capacity is ample, but repeated monolithic checkpoint rewrites are avoidable. A full launch requires chunked or append-only hash-chained state first.",
+    "precision_50": {
+      "empirical_bytes_per_lower_entry": 124.80230612309948,
+      "empirical_bytes_per_pivot_component": 1676.1588073852295,
+      "projected_checkpoint_write_count": 242,
+      "projected_cumulative_full_rewrite_GiB": 37.41938740425462,
+      "projected_cumulative_full_rewrite_bytes": 40178761284.40698,
+      "projected_full_checkpoint_MiB": 519.2578684016116,
+      "projected_full_checkpoint_bytes": 544481338.6170883,
+      "projection_is_diagnostic_not_storage_certificate": true,
+      "source_checkpoint": "work/ns_collision/results/neutral_strip_h006_hypercircle_directed_ldl_transition32064_checkpoint_v1.json",
+      "source_checkpoint_bytes": 69407649,
+      "source_completed_pivots": 32064,
+      "source_lower_entries": 125492
+    },
+    "precision_80": {
+      "empirical_bytes_per_lower_entry": 184.80230612309947,
+      "empirical_bytes_per_pivot_component": 2096.606536926148,
+      "projected_checkpoint_write_count": 242,
+      "projected_cumulative_full_rewrite_GiB": 50.00571493946826,
+      "projected_cumulative_full_rewrite_bytes": 53693227569.5287,
+      "projected_full_checkpoint_MiB": 723.3894488314882,
+      "projected_full_checkpoint_bytes": 758528814.6979265,
+      "projection_is_diagnostic_not_storage_certificate": true,
+      "source_checkpoint": "work/ns_collision/results/neutral_strip_h006_hypercircle_directed_ldl_transition32064_p80_checkpoint_v1.json",
+      "source_checkpoint_bytes": 90418391,
+      "source_completed_pivots": 32064,
+      "source_lower_entries": 125492
+    }
+  },
+  "checks": {
+    "continuum_dependency_audit_remains_fail_closed": true,
+    "directed_32064_pair_certified_and_nested": true,
+    "full_inertia_claim_remains_false": true,
+    "full_symbolic_map_passes_without_arithmetic_claim": true,
+    "regularity_claim_remains_false": true,
+    "residual_32064_pair_certified_and_nested": true,
+    "two_routes_report_same_32064_signs": true
+  },
+  "continuum_dependency_gates": {
+    "continuum_conormal_response_certified": false,
+    "dependency_order": [
+      "weighted global Ritz/solution-operator error",
+      "positive-time singular-source transfer",
+      "smoothed conormal-output transfer",
+      "polygon-to-circle domain perturbation",
+      "Navier-Stokes closure"
+    ],
+    "finite_full_inertia_would_not_prove_continuum_capture": true,
+    "polygon_to_circle_domain_transfer_certified": false,
+    "positive_time_point_source_transfer_certified": false,
+    "solution_operator_error_strict_threshold": 0.007322422996991409,
+    "weighted_Ritz_projection_constant_strict_threshold": 0.08557115750643675,
+    "weighted_global_Ritz_projection_constant_certified": false
+  },
+  "current_certified_boundary": {
+    "completed_pivots": 32064,
+    "directed_minimum_margin_decimal": "0.1464628437608216996667076129",
+    "fraction_of_full_dimension": 0.2589649156813336,
+    "negative": 31486,
+    "positive": 578,
+    "residual_bound_to_diagonal_ratio_upper_decimal": "8.43748828577460122046582638120655977291971071373360677754120E-11"
+  },
+  "full_symbolic_workload": {
+    "dimension": 123816,
+    "first_state_pivot": 63644,
+    "last_9128_pivots_common_term_fraction": 0.9539029282969126,
+    "last_9128_pivots_reference_pair_fraction": 0.9004938688115119,
+    "maximum_common_terms_at_one_lower_entry": 1409,
+    "maximum_descendants": 419,
+    "maximum_diagonal_terms_at_one_pivot": 1531,
+    "reference_product_pair_terms": 164571437,
+    "runtime_extrapolation_from_32064_rejected": true,
+    "symbolic_lower_entries": 2699822,
+    "total_diagonal_terms": 2699822,
+    "total_off_diagonal_common_terms": 159047977,
+    "workload_is_strongly_backloaded": true
+  },
+  "kind": "hypercircle-full-run-feasibility-and-dependency-audit",
+  "launch_decision": {
+    "first_state_entry_bounded_pivot_count": 63680,
+    "full_congruence_residual_launch_ready": false,
+    "full_directed_LDL_launch_ready": false,
+    "memory_or_disk_capacity_is_the_primary_blocker": false,
+    "next_directed_bounded_pivot_count": 33280,
+    "next_directed_transition_pivot": 33224,
+    "primary_engineering_blocker": "replace monolithic checkpoint rewrites and add bounded state-region pilots before the strongly backloaded tail",
+    "primary_mathematical_risk": "interval growth and absolute inverse-majorant growth after state variables enter at pivot 63644",
+    "recommended_sequence": [
+      "Certify the bounded 33280 transition with both routes.",
+      "Run an independent residual-only 63680 state-entry pilot.",
+      "Redesign full checkpoints as chunked hash-chained records.",
+      "Only then decide whether a full finite inertia run is scientifically justified."
+    ]
+  },
+  "representative_decimal_kernel_benchmark": [
+    {
+      "benchmark_result_finite": true,
+      "decimal_precision": 50,
+      "elapsed_seconds": 1.3234473000047728,
+      "excludes_set_intersections_divisions_IO_and_replay": true,
+      "full_common_term_kernel_lower_bound_minutes": 35.08193595531187,
+      "full_common_term_kernel_lower_bound_seconds": 2104.916157318712,
+      "representative_common_terms": 100000,
+      "representative_terms_per_second": 75560.2433127782
+    },
+    {
+      "benchmark_result_finite": true,
+      "decimal_precision": 80,
+      "elapsed_seconds": 1.19626120000612,
+      "excludes_set_intersections_divisions_IO_and_replay": true,
+      "full_common_term_kernel_lower_bound_minutes": 31.71048730409429,
+      "full_common_term_kernel_lower_bound_seconds": 1902.6292382456575,
+      "representative_common_terms": 100000,
+      "representative_terms_per_second": 83593.7836983164
+    }
+  ],
+  "runtime": {
+    "baseline_cpu_mean_percent": 56.6,
+    "baseline_cpu_samples_percent": [
+      52.1,
+      65.2,
+      66.3,
+      46.7,
+      52.7
+    ],
+    "below_normal_priority_set": true
+  },
+  "scope": "This audit measures symbolic work, empirical storage, and dependency gates. It does not run or certify full finite inertia, a Ritz constant, continuum spectral capture, or Navier-Stokes regularity.",
+  "status": "bounded_feasibility_characterized"
+}

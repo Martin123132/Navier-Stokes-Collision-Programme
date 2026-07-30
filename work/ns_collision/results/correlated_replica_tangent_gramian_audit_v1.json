@@ -1,0 +1,661 @@
+{
+  "all_positive_checks_pass": true,
+  "cases": {
+    "noncommuting_two_stage_strain": {
+      "all_case_checks_pass": true,
+      "checks": {
+        "Liouville_determinant": true,
+        "Schur_covariance_identity": true,
+        "cross_covariance_is_JB": true,
+        "cross_covariance_recovers_J": true,
+        "forward_Minkowski_determinant_floor": true,
+        "forward_inverse_congruence": true,
+        "incompressible_Gramian_determinant_balance": true,
+        "inverse_Minkowski_determinant_floor": true,
+        "radial_trace_bound_controls_J": true,
+        "radial_trace_bound_controls_inverse_J": true,
+        "spectral_bound_controls_J": true,
+        "spectral_bound_controls_inverse_J": true
+      },
+      "cross_covariance": [
+        [
+          2.570778489248934,
+          -1.4838885453812098,
+          0.0
+        ],
+        [
+          -1.5332047894070715,
+          5.247418363853062,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          3.144540791834566
+        ]
+      ],
+      "determinant_floor": 21.951999999999995,
+      "forward_Gramian": [
+        [
+          8.226500214767443,
+          -7.566660753762842,
+          0.0
+        ],
+        [
+          -7.566660753762842,
+          9.84576434503403,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.4853758937923947
+        ]
+      ],
+      "forward_eigenvalues": [
+        1.4262795189449204,
+        1.4853758937923947,
+        16.64598504085655
+      ],
+      "inverse_jacobian_operator_norm": 2.1170000166126743,
+      "inverse_time_Gramian": [
+        [
+          1.0428610115721384,
+          0.6547303357823087,
+          0.0
+        ],
+        [
+          0.6547303357823087,
+          5.490846363488915,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          6.656992908553013
+        ]
+      ],
+      "inverse_time_eigenvalues": [
+        0.9484889113768328,
+        5.585218463684221,
+        6.656992908553013
+      ],
+      "jacobian": [
+        [
+          2.8479935679249757,
+          -0.6098433845610085,
+          0.0
+        ],
+        [
+          -2.2376962987393485,
+          1.2224902261953552,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.47236655274101474
+        ]
+      ],
+      "jacobian_determinant": 0.9999999999999999,
+      "jacobian_operator_norm": 3.8313756757500443,
+      "name": "noncommuting_two_stage_strain",
+      "normalized_forward_radial_variance": 6.98487159056924,
+      "normalized_inverse_radial_variance": 4.710964387005024,
+      "radial_trace_J_bound_over_actual_squared": 2.6400284198091253,
+      "radial_trace_J_squared_bound": 38.75413764831546,
+      "radial_trace_inverse_J_squared_bound": 57.46014039575878,
+      "radial_trace_inverse_bound_over_actual_squared": 12.821090328656922,
+      "spectral_J_squared_bound": 17.5500048985213,
+      "spectral_inverse_J_squared_bound": 4.667383090151553,
+      "terminal_time": 1.0,
+      "trace_integral": 0.0,
+      "viscosity": 0.7
+    },
+    "planar_strain": {
+      "all_case_checks_pass": true,
+      "checks": {
+        "Liouville_determinant": true,
+        "Schur_covariance_identity": true,
+        "cross_covariance_is_JB": true,
+        "cross_covariance_recovers_J": true,
+        "forward_Minkowski_determinant_floor": true,
+        "forward_inverse_congruence": true,
+        "incompressible_Gramian_determinant_balance": true,
+        "inverse_Minkowski_determinant_floor": true,
+        "radial_trace_bound_controls_J": true,
+        "radial_trace_bound_controls_inverse_J": true,
+        "spectral_bound_controls_J": true,
+        "spectral_bound_controls_inverse_J": true
+      },
+      "cross_covariance": [
+        [
+          521.6675890263303,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          521.6675890263299,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          2.8000000000000003
+        ]
+      ],
+      "determinant_floor": 21.951999999999995,
+      "forward_Gramian": [
+        [
+          1555069.166088841,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.1749999803063402,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          2.8000000000000003
+        ]
+      ],
+      "forward_eigenvalues": [
+        0.1749999803063402,
+        2.8000000000000003,
+        1555069.166088841
+      ],
+      "inverse_jacobian_operator_norm": 2980.9579870417283,
+      "inverse_time_Gramian": [
+        [
+          0.17499998030634029,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1555069.16608884,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          2.8000000000000003
+        ]
+      ],
+      "inverse_time_eigenvalues": [
+        0.17499998030634029,
+        2.8000000000000003,
+        1555069.16608884
+      ],
+      "jacobian": [
+        [
+          2980.9579870417283,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.00033546262790251185,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "jacobian_determinant": 1.0,
+      "jacobian_operator_norm": 2980.9579870417283,
+      "name": "planar_strain",
+      "normalized_forward_radial_variance": 555382.9075317219,
+      "normalized_inverse_radial_variance": 555382.9075317215,
+      "radial_trace_J_bound_over_actual_squared": 4819542646.285704,
+      "radial_trace_J_squared_bound": 4.282698861319574e+16,
+      "radial_trace_inverse_J_squared_bound": 4.282698861319577e+16,
+      "radial_trace_inverse_bound_over_actual_squared": 4819542646.2857065,
+      "spectral_J_squared_bound": 8886110.520507872,
+      "spectral_inverse_J_squared_bound": 8886110.520507872,
+      "terminal_time": 1.0,
+      "trace_integral": 0.0,
+      "viscosity": 0.7
+    },
+    "rigid_rotation": {
+      "all_case_checks_pass": true,
+      "checks": {
+        "Liouville_determinant": true,
+        "Schur_covariance_identity": true,
+        "cross_covariance_is_JB": true,
+        "cross_covariance_recovers_J": true,
+        "forward_Minkowski_determinant_floor": true,
+        "forward_inverse_congruence": true,
+        "incompressible_Gramian_determinant_balance": true,
+        "inverse_Minkowski_determinant_floor": true,
+        "radial_trace_bound_controls_J": true,
+        "radial_trace_bound_controls_inverse_J": true,
+        "spectral_bound_controls_J": true,
+        "spectral_bound_controls_inverse_J": true
+      },
+      "cross_covariance": [
+        [
+          2.1109263121612707,
+          -1.8395624764126244,
+          0.0
+        ],
+        [
+          1.8395624764126242,
+          2.1109263121612707,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          2.8000000000000003
+        ]
+      ],
+      "determinant_floor": 21.951999999999995,
+      "forward_Gramian": [
+        [
+          2.8000000000000247,
+          -3.128548532618456e-17,
+          0.0
+        ],
+        [
+          -1.5953164111597568e-17,
+          2.8000000000000247,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          2.8000000000000003
+        ]
+      ],
+      "forward_eigenvalues": [
+        2.8000000000000003,
+        2.8000000000000247,
+        2.8000000000000247
+      ],
+      "inverse_jacobian_operator_norm": 1.0,
+      "inverse_time_Gramian": [
+        [
+          2.8000000000000234,
+          -2.2078536860128297e-17,
+          0.0
+        ],
+        [
+          -4.1524882435937016e-17,
+          2.8000000000000234,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          2.8000000000000003
+        ]
+      ],
+      "inverse_time_eigenvalues": [
+        2.8000000000000003,
+        2.8000000000000234,
+        2.8000000000000234
+      ],
+      "jacobian": [
+        [
+          0.7539022543433188,
+          -0.6569865987188017,
+          0.0
+        ],
+        [
+          0.6569865987188016,
+          0.7539022543433191,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "jacobian_determinant": 1.0000000000000382,
+      "jacobian_operator_norm": 1.000000000000019,
+      "name": "rigid_rotation",
+      "normalized_forward_radial_variance": 3.000000000000018,
+      "normalized_inverse_radial_variance": 3.000000000000017,
+      "radial_trace_J_bound_over_actual_squared": 6.74999999999986,
+      "radial_trace_J_squared_bound": 6.750000000000117,
+      "radial_trace_inverse_J_squared_bound": 6.750000000000121,
+      "radial_trace_inverse_bound_over_actual_squared": 6.750000000000121,
+      "spectral_J_squared_bound": 1.0000000000000087,
+      "spectral_inverse_J_squared_bound": 1.0000000000000082,
+      "terminal_time": 1.0,
+      "trace_integral": 0.0,
+      "viscosity": 0.7
+    },
+    "simple_shear": {
+      "all_case_checks_pass": true,
+      "checks": {
+        "Liouville_determinant": true,
+        "Schur_covariance_identity": true,
+        "cross_covariance_is_JB": true,
+        "cross_covariance_recovers_J": true,
+        "forward_Minkowski_determinant_floor": true,
+        "forward_inverse_congruence": true,
+        "incompressible_Gramian_determinant_balance": true,
+        "inverse_Minkowski_determinant_floor": true,
+        "radial_trace_bound_controls_J": true,
+        "radial_trace_bound_controls_inverse_J": true,
+        "spectral_bound_controls_J": true,
+        "spectral_bound_controls_inverse_J": true
+      },
+      "cross_covariance": [
+        [
+          -64.40000000000025,
+          16.799999999999997,
+          0.0
+        ],
+        [
+          -16.8,
+          2.8,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          2.8000000000000003
+        ]
+      ],
+      "determinant_floor": 21.951999999999995,
+      "forward_Gramian": [
+        [
+          137.1999999999998,
+          16.799999999999997,
+          0.0
+        ],
+        [
+          16.799999999999997,
+          2.8000000000000003,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          2.8000000000000003
+        ]
+      ],
+      "forward_eigenvalues": [
+        0.7318254896233007,
+        2.8000000000000003,
+        139.26817451037647
+      ],
+      "inverse_jacobian_operator_norm": 12.08276253029822,
+      "inverse_time_Gramian": [
+        [
+          137.1999999999997,
+          -16.8,
+          0.0
+        ],
+        [
+          -16.8,
+          2.8,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          2.8000000000000003
+        ]
+      ],
+      "inverse_time_eigenvalues": [
+        0.7318254896232976,
+        2.8000000000000003,
+        139.2681745103764
+      ],
+      "jacobian": [
+        [
+          1.0,
+          11.999999999999996,
+          0.0
+        ],
+        [
+          0.0,
+          0.9999999999999996,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "jacobian_determinant": 0.9999999999999996,
+      "jacobian_operator_norm": 12.082762530298217,
+      "name": "simple_shear",
+      "normalized_forward_radial_variance": 50.999999999999936,
+      "normalized_inverse_radial_variance": 50.99999999999991,
+      "radial_trace_J_bound_over_actual_squared": 227.15278023257912,
+      "radial_trace_J_squared_bound": 33162.74999999984,
+      "radial_trace_inverse_J_squared_bound": 33162.74999999986,
+      "radial_trace_inverse_bound_over_actual_squared": 227.15278023257915,
+      "spectral_J_squared_bound": 190.30243751425473,
+      "spectral_inverse_J_squared_bound": 190.30243751425385,
+      "terminal_time": 1.0,
+      "trace_integral": 0.0,
+      "viscosity": 0.7
+    },
+    "zero_flow": {
+      "all_case_checks_pass": true,
+      "checks": {
+        "Liouville_determinant": true,
+        "Schur_covariance_identity": true,
+        "cross_covariance_is_JB": true,
+        "cross_covariance_recovers_J": true,
+        "forward_Minkowski_determinant_floor": true,
+        "forward_inverse_congruence": true,
+        "incompressible_Gramian_determinant_balance": true,
+        "inverse_Minkowski_determinant_floor": true,
+        "radial_trace_bound_controls_J": true,
+        "radial_trace_bound_controls_inverse_J": true,
+        "spectral_bound_controls_J": true,
+        "spectral_bound_controls_inverse_J": true
+      },
+      "cross_covariance": [
+        [
+          2.8000000000000003,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          2.8000000000000003,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          2.8000000000000003
+        ]
+      ],
+      "determinant_floor": 21.951999999999995,
+      "forward_Gramian": [
+        [
+          2.8000000000000003,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          2.8000000000000003,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          2.8000000000000003
+        ]
+      ],
+      "forward_eigenvalues": [
+        2.8000000000000003,
+        2.8000000000000003,
+        2.8000000000000003
+      ],
+      "inverse_jacobian_operator_norm": 1.0,
+      "inverse_time_Gramian": [
+        [
+          2.8000000000000003,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          2.8000000000000003,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          2.8000000000000003
+        ]
+      ],
+      "inverse_time_eigenvalues": [
+        2.8000000000000003,
+        2.8000000000000003,
+        2.8000000000000003
+      ],
+      "jacobian": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "jacobian_determinant": 1.0,
+      "jacobian_operator_norm": 1.0,
+      "name": "zero_flow",
+      "normalized_forward_radial_variance": 3.0000000000000004,
+      "normalized_inverse_radial_variance": 3.0000000000000004,
+      "radial_trace_J_bound_over_actual_squared": 6.7500000000000036,
+      "radial_trace_J_squared_bound": 6.7500000000000036,
+      "radial_trace_inverse_J_squared_bound": 6.7500000000000036,
+      "radial_trace_inverse_bound_over_actual_squared": 6.7500000000000036,
+      "spectral_J_squared_bound": 1.0,
+      "spectral_inverse_J_squared_bound": 1.0,
+      "terminal_time": 1.0,
+      "trace_integral": 0.0,
+      "viscosity": 0.7
+    }
+  },
+  "certification_flags": {
+    "Leray_energy_controls_critical_forward_inverse_traces": false,
+    "Minkowski_determinant_floor_proved": true,
+    "Navier_Stokes_global_regularity_proved": false,
+    "common_noise_tangent_limit_derived_for_smooth_drift": true,
+    "conditional_cross_covariance_recovers_flow_Jacobian": true,
+    "conditional_forward_inverse_Gramian_congruence_proved": true,
+    "correlated_replica_Ito_homotopy_derived": true,
+    "critical_L3_continuation_bridge_proved": false,
+    "incompressible_Gramian_determinant_balance_proved": true,
+    "low_regularity_inverse_time_probe_justified": false,
+    "radial_noncollision_alone_controls_deformation": false,
+    "radial_trace_deformation_bound_proved": true
+  },
+  "kind": "correlated_replica_tangent_gramian_audit",
+  "next_theorem_target": "On every parabolic window, bound suitable moments of the dimensionless forward and inverse-time radial variances from Navier-Stokes structure without assuming a supercritical gradient norm.",
+  "parabolic_scaling_audit": {
+    "base_normalized_forward": 5.198353777584543,
+    "base_normalized_inverse": 4.244560321964517,
+    "checks": {
+      "Jacobian_is_scaling_invariant": true,
+      "forward_Gramian_scales_as_length_squared": true,
+      "inverse_Gramian_scales_as_length_squared": true,
+      "normalized_forward_radial_variance_is_critical": true,
+      "normalized_inverse_radial_variance_is_critical": true
+    },
+    "scale_factor": 3.7,
+    "scaled_normalized_forward": 5.19835377758454,
+    "scaled_normalized_inverse": 4.244560321964516
+  },
+  "positive_checks": {
+    "all_affine_and_noncommuting_cases_pass": true,
+    "all_parabolic_scaling_checks_pass": true,
+    "all_symbolic_checks_pass": true,
+    "cross_covariance_orientation_test_passes": true,
+    "one_sided_noncollision_counterexample_is_explicit": true,
+    "shear_nonnormality_loss_is_detected": true,
+    "time_dependent_stress_uses_noncommuting_generators": true
+  },
+  "quadrature_order_per_interval": 96,
+  "schema_version": 1,
+  "smooth_flow_theorem": {
+    "deformation_bounds": "||J||_2^2<=f b^2/4 and ||J^(-1)||_2^2<=b f^2/4",
+    "dimension_three_determinant_floor": "det(F)=det(B)>=(4nu T)^3",
+    "exact_congruence": "F=J B J^T",
+    "exact_cross_identity": "H=J B",
+    "exact_recovery": "J=H B^(-1)",
+    "forward_Gramian": "F=4nu integral_0^T Phi(T,s)Phi(T,s)^T ds",
+    "incompressible_determinant_identity": "det(F)=det(B)",
+    "inverse_time_Gramian": "B=4nu integral_0^T Phi(0,s)Phi(0,s)^T ds",
+    "normalized_radial_variances": "f=tr(F)/(4nu T), b=tr(B)/(4nu T)",
+    "shared_probe_cross_covariance": "H=4nu integral_0^T Phi(T,s)Phi(0,s)^T ds"
+  },
+  "status": "smooth_flow_correlation_to_deformation_identity_proved_critical_trace_estimate_open",
+  "stress_tests": {
+    "noncommuting_generator_commutator_norm": 3.7845704059658427,
+    "one_sided_noncollision": {
+      "conclusion": "strict covariance positivity and radial noncollision do not give a uniform deformation bound",
+      "deformation_exceeds_1000": true,
+      "maximum_deformation_norm": 2980.9579870417283,
+      "minimum_endpoint_covariance_eigenvalue": 0.1749999803063402,
+      "noncollision_covariance_remains_positive": true,
+      "planar_strength_time": 8.0
+    },
+    "rigid_rotation_orientation": {
+      "conclusion": "endpoint covariance tensors control amplification bounds, while the cross covariance retains the missing orientation",
+      "cross_covariance_retains_rotation": true,
+      "forward_is_isotropic": true,
+      "inverse_time_is_isotropic": true
+    },
+    "simple_shear_nonnormality": {
+      "actual_J_squared": 145.99315036357856,
+      "radial_trace_J_squared_bound": 33162.74999999984,
+      "shear_strength_time": 12.0,
+      "trace_bound_detects_shear_but_is_quantitatively_loose": true,
+      "trace_bound_over_actual_squared": 227.15278023257912
+    }
+  },
+  "symbolic_correlated_replica_audit": {
+    "all_symbolic_checks_pass": true,
+    "centre_drift_expansion": "[u(q+h*y/2)+u(q-h*y/2)]/2 =u(q)+h^2 D^2u(q)[y,y]/8+O(h^4|y|^4)",
+    "checks": {
+      "difference_driver_variance_is_2_one_minus_rho": true,
+      "driver_cross_variation_is_rho": true,
+      "each_driver_has_unit_quadratic_variation": true,
+      "log_gap_ito_source_is_4nu_d_minus_2_one_minus_rho": true,
+      "relative_SDE_covariance_is_4nu_one_minus_rho": true,
+      "squared_gap_ito_source_is_4nu_d_one_minus_rho": true,
+      "symmetric_centre_expansion_exact_for_cubics": true,
+      "symmetric_difference_tangent_expansion_exact_for_cubics": true
+    },
+    "log_squared_gap_ito_source_dimension_d": "4*nu*(2 - d)*(rho - 1)",
+    "relative_noise_covariance": "4*nu*(1 - rho)",
+    "squared_gap_ito_source_dimension_d": "4*d*nu*(1 - rho)",
+    "symmetric_driver_coupling": {
+      "W1": "sqrt((1+rho)/2) W_plus + sqrt((1-rho)/2) W_minus",
+      "W2": "sqrt((1+rho)/2) W_plus - sqrt((1-rho)/2) W_minus"
+    },
+    "tangent_drift_expansion": "[u(q+h*y/2)-u(q-h*y/2)]/h = Du(q)y+h^2 D^3u(q)[y,y,y]/24+O(h^4|y|^5)",
+    "three_dimensional_log_squared_gap_source": "4*nu*(1 - rho)"
+  }
+}

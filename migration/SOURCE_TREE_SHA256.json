@@ -1,0 +1,2064 @@
+{
+  "kind": "navier_stokes_source_tree_sha256_manifest",
+  "schema_version": 1,
+  "generated_at": "2026-07-23T17:23:53+01:00",
+  "algorithm": "sha256",
+  "tree_digest_encoding": "sha256 + space + byte_count + space + relative_posix_path + newline",
+  "source_root": "C:\\Users\\ollet\\Documents\\Codex\\2026-07-03\\l\\work\\ns_collision",
+  "destination_root": "C:\\Users\\ollet\\Documents\\Codex\\2026-07-03\\navier-stokes\\work\\ns_collision",
+  "file_count": 410,
+  "total_bytes": 461242314,
+  "tree_sha256": "3f0c4f87d6dcbc1bd61081b06f8ea7516c57b59b8a8a8e0f794665f4f328b70b",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 49440,
+      "sha256": "c58d3a0215e6cecc313bf10cfc7e1871fd7547fdbf4314a3f5c939e5de9e570c"
+    },
+    {
+      "path": "notes/adaptive_reynolds_envelope.md",
+      "bytes": 4869,
+      "sha256": "dea117312d0811c0e00eb6080cc4e4f2bb594115659768eb2a6116a669b7adbb"
+    },
+    {
+      "path": "notes/affine_exterior_axial_compensation.md",
+      "bytes": 3997,
+      "sha256": "8a264d5aa889782aabf596c5bf42a79b9c70c366ae57eba9654d792c4591b1da"
+    },
+    {
+      "path": "notes/affine_taper_residual_no_go.md",
+      "bytes": 3907,
+      "sha256": "f498faa9e07fb75144eb84fc1e68c2e99eb37d77e5fdd279fe68ed049aed9a2b"
+    },
+    {
+      "path": "notes/anisotropic_affine_exterior_tail_gate.md",
+      "bytes": 3638,
+      "sha256": "961b219458627e222ae57eb4a03959a824ec901ae7fc6e6740734a894daae6e5"
+    },
+    {
+      "path": "notes/anisotropic_poisson_transfer_pilot.md",
+      "bytes": 5636,
+      "sha256": "a694ee1e30492e9996eef547f690acb4ec4e4991eddb304296a9be27bb981a49"
+    },
+    {
+      "path": "notes/averaged_entry_trace_gate.md",
+      "bytes": 5915,
+      "sha256": "45498e48e0849ff0a5b5e76f90e32880c4af015aea4e37042120d66cbc084082"
+    },
+    {
+      "path": "notes/axial_form_to_boundary.md",
+      "bytes": 5350,
+      "sha256": "5a91dd7485c108c5ed8b4ec6ec3333150656b75b49329665cfb68606a05e29cb"
+    },
+    {
+      "path": "notes/axial_killing_buffered_visit.md",
+      "bytes": 3580,
+      "sha256": "ec9a75ca8e7bf8b1effd5a826c7e8ddcd3fa6927010c294df16602db6c1e34a0"
+    },
+    {
+      "path": "notes/branch_resolved_entry_renewal.md",
+      "bytes": 5577,
+      "sha256": "4bb8c52d1c0e51df7be0702be98b652c2e61a06eba3a407eff12156bb848b0ca"
+    },
+    {
+      "path": "notes/branching_transfer_operator.md",
+      "bytes": 4949,
+      "sha256": "f4bc64fd8027e9ae641d22bf1dc8cdee7bbb618020957842a0ac9892a119b670"
+    },
+    {
+      "path": "notes/buffered_visit_feynman_kac.md",
+      "bytes": 4480,
+      "sha256": "c2db75a31010873d6a9a9939aaaf76e116a87d7d57d24d6ce467f754654e8818"
+    },
+    {
+      "path": "notes/coherence_abort_renewal.md",
+      "bytes": 4074,
+      "sha256": "face9f412dd07335118f03f82e2b6fb287642e5415a44f878ecabb421acb357f"
+    },
+    {
+      "path": "notes/collision_coherence_generator.md",
+      "bytes": 8638,
+      "sha256": "e172283b5474a8d4350d71dc6fa60c041393e9060d7e6071934f2aff482392c6"
+    },
+    {
+      "path": "notes/collision_defect_dynamics.md",
+      "bytes": 9322,
+      "sha256": "c221315cf1d3e0ac6c551ef2af0888e04efa0c6ae6899fd1ed95204e11fdf32e"
+    },
+    {
+      "path": "notes/compact_affine_campanato_gate.md",
+      "bytes": 4854,
+      "sha256": "4d02e4e933ce9f2046a5361c0c3b734b887116b62bedfbe1f07608f9d66b8c60"
+    },
+    {
+      "path": "notes/continuous_cubic_localization_no_go.md",
+      "bytes": 4636,
+      "sha256": "986bb51430eb73256bb0f40f6d3e5c83d2f8401c6af997f89e46a6ec5752b6b2"
+    },
+    {
+      "path": "notes/critical_collar_transfer_gate.md",
+      "bytes": 9331,
+      "sha256": "8861f7f4f466c96fe59f3ed7496ee6e9a7179e3d8ea15881e7e0339057a5deb9"
+    },
+    {
+      "path": "notes/cubic_level_transfer.md",
+      "bytes": 5270,
+      "sha256": "5b99e22198505f2e81cc259026368314d43887ec2027aaa1c0e9a225f75fca73"
+    },
+    {
+      "path": "notes/cumulative_collision_rigidity.md",
+      "bytes": 10151,
+      "sha256": "6a45cc784321443980c8837eafa83c7ce02bc04d4a1387f1b92f7686ef61daf4"
+    },
+    {
+      "path": "notes/cylindrical_brownian_return_pilot.md",
+      "bytes": 4326,
+      "sha256": "1d190f87dd50e88b89415169ea6979382614d461bc4278d7a3e5b981b476ed78"
+    },
+    {
+      "path": "notes/divergence_free_shell_taper.md",
+      "bytes": 5888,
+      "sha256": "8f295118a1d0ec29e2a22a6992da5c3a607113b77c8ca9d62cc50c8f9aee5532"
+    },
+    {
+      "path": "notes/dyadic_gauge_transition.md",
+      "bytes": 4030,
+      "sha256": "1202e93b0f0bba8c4d20b15f435605417bb4b2e902a7426a24c33427e8f88650"
+    },
+    {
+      "path": "notes/exterior_return_tail_gate.md",
+      "bytes": 6148,
+      "sha256": "3aa52c7f54300b676efc887b2146065158dc53ac5bc0cee33693f0099a145cdb"
+    },
+    {
+      "path": "notes/finite_cylinder_kato_gate.md",
+      "bytes": 5349,
+      "sha256": "df233eee87fc3eec80672621c8538760fb355b6c97b5c513d462404355777778"
+    },
+    {
+      "path": "notes/finite_cylinder_mode_expansion.md",
+      "bytes": 4174,
+      "sha256": "8fe0501d98c5d24efa64a70059d99f27b83bee6c0548bd4a2651e41614011ba0"
+    },
+    {
+      "path": "notes/finite_cylinder_perturbation_margin.md",
+      "bytes": 5423,
+      "sha256": "8d99b9d299c7701986b7706a4fa24727562521980ec90fbdcdcedb488224f6a3"
+    },
+    {
+      "path": "notes/first_principles_collision_audit.md",
+      "bytes": 13582,
+      "sha256": "07045d0942b0e11c185808cd937c6f0b61a6d3aa0678a008404a742ba21f4e83"
+    },
+    {
+      "path": "notes/galerkin_collision_trajectory.md",
+      "bytes": 5335,
+      "sha256": "5ed32305a0fe3df8ae2752b1a22428693ab6247e31c245198e2ac6a07a29fb0d"
+    },
+    {
+      "path": "notes/gaussian_boundary_l2_transfer.md",
+      "bytes": 7118,
+      "sha256": "64ce48e6480b72977fd62de9d2cb4dae881ef0d0b6aaf303e50ac013ccef0878"
+    },
+    {
+      "path": "notes/general_affine_spectral_floor.md",
+      "bytes": 4134,
+      "sha256": "a38e72dc33b8404bfb12b4f9a23ea2913439a8f91105f0fd083056a9e3b99c61"
+    },
+    {
+      "path": "notes/geometric_wall_split_compatibility.md",
+      "bytes": 3164,
+      "sha256": "4a533f0acfd5717cd065b54c6103e1385dc2518be346e98d50b1f69784c026e6"
+    },
+    {
+      "path": "notes/geometry_triggered_migrating_child.md",
+      "bytes": 7451,
+      "sha256": "2d3bb9a165a92d226a844223775b8e9ce9642e40e20fbc071e415c0e95461e56"
+    },
+    {
+      "path": "notes/ground_state_visit_transform.md",
+      "bytes": 5812,
+      "sha256": "32e9b45b06667685073c5ac214a55182516524fc71cb40b4b78d8032d9e886b4"
+    },
+    {
+      "path": "notes/heat_scale_cubic_cancellation.md",
+      "bytes": 9130,
+      "sha256": "b35b74702bcf0e199d6f0cccf957b5feffd3e09ab8516cbedad05cfd9ec77fcf"
+    },
+    {
+      "path": "notes/helical_transfer_recurrence.md",
+      "bytes": 6906,
+      "sha256": "484423351b5de973df6fc2704c26988673c43412550fdf4db3400629d28fcd59"
+    },
+    {
+      "path": "notes/interaction_marked_localization_gate.md",
+      "bytes": 4701,
+      "sha256": "77b7b7e024e77ee46bef90b7cf3a46d1f507f3d9a4af906d64712573b9b302b9"
+    },
+    {
+      "path": "notes/interface_weight_no_go.md",
+      "bytes": 4691,
+      "sha256": "6d72205849447a75e84b198981a510ba98afa5e0c458f6ecb5b56468ac1215fe"
+    },
+    {
+      "path": "notes/intrinsic_radius_cover.md",
+      "bytes": 4678,
+      "sha256": "f9ea432d989eedc6458faff4f16fcf846111701f4901fda06fa6a1a14f0a2a11"
+    },
+    {
+      "path": "notes/leray_conditional_occupation_no_go.md",
+      "bytes": 3868,
+      "sha256": "2444cca841c4dba193b653ccdaa592f24079a501cd1589d37c1ebe34a55ce3b5"
+    },
+    {
+      "path": "notes/leray_mollified_cell_frame.md",
+      "bytes": 4591,
+      "sha256": "a02e0c5584d7b4ef3f83127b6442df86ed6ab05481fef83d3298bb818674ca40"
+    },
+    {
+      "path": "notes/localized_strain_tube.md",
+      "bytes": 7507,
+      "sha256": "e93e94c1c755c3a6fe5575397166dc19775733efcd6f08b35b9b2e3fb3ef541d"
+    },
+    {
+      "path": "notes/migrating_core_residual_budget.md",
+      "bytes": 4513,
+      "sha256": "e808e5443fb2893834880e565a935a0f1e9607fcc3506e433ef3802a86784e2c"
+    },
+    {
+      "path": "notes/monotone_dyadic_cover.md",
+      "bytes": 4425,
+      "sha256": "8d88397f0bbb20e0820dc4d72894d89b6974efa4a211a1605a0a7fd76ca8ff4b"
+    },
+    {
+      "path": "notes/moving_cubic_label_transport.md",
+      "bytes": 7737,
+      "sha256": "0ad16fd6a9130be42cec4262d69af649015ffc323ec67f6170edea7515d686d8"
+    },
+    {
+      "path": "notes/moving_strain_tube_robustness.md",
+      "bytes": 5171,
+      "sha256": "cb5f732583f8b003caf6fdb69adc826db5004e2912aea0be8403bf2dc1179eaa"
+    },
+    {
+      "path": "notes/navier_stokes_coherence_budget.md",
+      "bytes": 5600,
+      "sha256": "71faa6f23b45036a02e20d93cb9b7b6847c92353d400edee4ae0ed8bc4ac6ef7"
+    },
+    {
+      "path": "notes/neutral_strip_axial_patch_branch_pilot.md",
+      "bytes": 3919,
+      "sha256": "6cf302f22f09b351c3b21b79b87187667f104c10d99ecf2fbfa025b3925905d2"
+    },
+    {
+      "path": "notes/neutral_strip_boundary_density_discretization_no_go.md",
+      "bytes": 4024,
+      "sha256": "adcad52c6d75a93e93997c188ce60755f1d9c1aab8456f482857b08bb2c75e86"
+    },
+    {
+      "path": "notes/neutral_strip_branch_resolvent_pilot.md",
+      "bytes": 3744,
+      "sha256": "721bc02bb0e5e6db85800cbecec371560ecb624ff3bf3c69d3b6411e82eadd91"
+    },
+    {
+      "path": "notes/neutral_strip_common_circle_eigensystem_residual_audit.md",
+      "bytes": 5798,
+      "sha256": "9607ce888f5e0271979f23e0f8d7d80e5086408bb9c7a6910a92e9c658c70452"
+    },
+    {
+      "path": "notes/neutral_strip_common_circle_endpoint_roundoff_audit.md",
+      "bytes": 4374,
+      "sha256": "7111cd8521625fa7b8503bf2b95b6ec52fe2fae2b158ae89fbdce223f1081e4f"
+    },
+    {
+      "path": "notes/neutral_strip_common_circle_source_time_slab_certificate.md",
+      "bytes": 5369,
+      "sha256": "f7d5ba9745d3a9de00866f728ba5a7dd8fad62ef64f37e37d06559161c5c920e"
+    },
+    {
+      "path": "notes/neutral_strip_first_window_brownian_majorant.md",
+      "bytes": 6466,
+      "sha256": "49f4c0db543f665fe6742c57af009a1062e9d79c43ce881ab20c0a8b6783b069"
+    },
+    {
+      "path": "notes/neutral_strip_first_window_maximum_bridge_certificate.md",
+      "bytes": 4690,
+      "sha256": "13d9bb4ec38b409edd819528bfbfc768735571352967cb3221ea09dbedaa06f1"
+    },
+    {
+      "path": "notes/neutral_strip_gaussian_weighted_assembly_interval_audit.md",
+      "bytes": 6415,
+      "sha256": "9e88f4fbff03c4061dd51819bc5fe82d585e3e26fa82941d8561f86b9c5af36f"
+    },
+    {
+      "path": "notes/neutral_strip_parabolic_spectral_split.md",
+      "bytes": 7415,
+      "sha256": "7cf099679493a112a517864f96ac3d0d55bdce81a37eceaa65e7721c927755be"
+    },
+    {
+      "path": "notes/neutral_strip_return_density.md",
+      "bytes": 4466,
+      "sha256": "84d3b4d0a7918a7ca0a599c112efb87cf0fa5c5f7104dca9c3ec714f12c00fa8"
+    },
+    {
+      "path": "notes/neutral_strip_reversible_boundary_fem.md",
+      "bytes": 4799,
+      "sha256": "a5e67c9e49556280c34f082e9063094e94b84d21593d36d9830dfae0bf914f0d"
+    },
+    {
+      "path": "notes/neutral_strip_reversible_fem_consistency_gate.md",
+      "bytes": 4843,
+      "sha256": "d7d4ab023fa24b9c7d6601ee6dd9ed8008b7f05eecf40cc0bc51402a368ae13d"
+    },
+    {
+      "path": "notes/neutral_strip_reversible_finite_time_certificate.md",
+      "bytes": 5341,
+      "sha256": "e71d5fb7c1b11a270be776450d635641f28171db50aa7433ef6a332492007318"
+    },
+    {
+      "path": "notes/neutral_strip_reversible_spectral_tail_width.md",
+      "bytes": 4265,
+      "sha256": "fa1c755dfd1c3a4b391ccd6a5372e332a94843a59784f398c20d11e40eeb6344"
+    },
+    {
+      "path": "notes/neutral_strip_same_scale_width_sweep.md",
+      "bytes": 2334,
+      "sha256": "11e0a72d5fcd06f469a7f165b00de6340afb43ff87a8926e7de3a465fd05cd2a"
+    },
+    {
+      "path": "notes/neutral_strip_sparse_inertia_indexed_spectrum.md",
+      "bytes": 5510,
+      "sha256": "0b7b9fd15a2b0c203bfcbfac0f3e1c08b950c21d9b92d8db36df76a21ace792c"
+    },
+    {
+      "path": "notes/neutral_strip_storage_gate.md",
+      "bytes": 2893,
+      "sha256": "c2184e5474840e8c26a7a372d2a45804c3dd3ca663d8b16f2f6d08fdd17b93cb"
+    },
+    {
+      "path": "notes/neutral_strip_transient_conormal_low_block_gate.md",
+      "bytes": 16633,
+      "sha256": "c42268f585220eadbc845a964674ada54f511b64a0d770e01de15d9d92077fac"
+    },
+    {
+      "path": "notes/neutral_strip_x_exit_correction.md",
+      "bytes": 5284,
+      "sha256": "c1e666fcef6af25cb07c3fe11cf4cdb31bce7c8dcd2a7661180e5ee39b5179d1"
+    },
+    {
+      "path": "notes/nonautonomous_full_affine_form.md",
+      "bytes": 4054,
+      "sha256": "546213e1c2d77b13510c96c868aca8391edb9ba0046ebf50a679bc5dc0343427"
+    },
+    {
+      "path": "notes/nonautonomous_scalar_gain_gate.md",
+      "bytes": 5131,
+      "sha256": "253186365e705c904fb233378bbc7f89ee33f4fc8a3c6ac6497031bd2ad26e45"
+    },
+    {
+      "path": "notes/normal_form_resummation.md",
+      "bytes": 7401,
+      "sha256": "7bda527b86ad7c18ccad3e7a3692444737329a587ba61c0506adc65161629ca5"
+    },
+    {
+      "path": "notes/off_diagonal_form_transfer.md",
+      "bytes": 3682,
+      "sha256": "67621884e6c7d0d3874684f2ef8569e37d02720969f422a4e668de0852d4895e"
+    },
+    {
+      "path": "notes/poisson_cutoff_form_transfer.md",
+      "bytes": 6233,
+      "sha256": "4ea91b90b1431b8137427fce87ede42f23300a1ccb6426170269538f7d8acf24"
+    },
+    {
+      "path": "notes/pressure_collision_heat_split.md",
+      "bytes": 5601,
+      "sha256": "1d5cb7e8f8741be9379f4d258aca05de8c28ed3bb71ed9b0c6161e12045bfdd8"
+    },
+    {
+      "path": "notes/pressure_frame_pairing_obstruction.md",
+      "bytes": 5682,
+      "sha256": "897dc200ad4b27b875557ca41f15be3df86959fee42a0f715ce2ecc14e87b68a"
+    },
+    {
+      "path": "notes/pressure_partition_flux.md",
+      "bytes": 4680,
+      "sha256": "760d4cc02ec9b184a0ea1da78e9469f3090a20e1e0b43180420625e1d7758e5d"
+    },
+    {
+      "path": "notes/pressure_shell_commutator.md",
+      "bytes": 6331,
+      "sha256": "fb4ec1cc44b5389eb726e014fd94d7da6a28bd533fa3836af794a8de399ca4e5"
+    },
+    {
+      "path": "notes/protected_collar_partition_no_go.md",
+      "bytes": 2748,
+      "sha256": "5252692dd6aed08643120cef39c1db55c5540a4f51ddf99344af9037ab29c4a3"
+    },
+    {
+      "path": "notes/quadratic_partition_ims_budget.md",
+      "bytes": 5179,
+      "sha256": "56f2a92c2ee01757657417947bc5a7b938ccee2b15f08f074fd66e6b2fae8c78"
+    },
+    {
+      "path": "notes/radial_bellman_doob_perturbation.md",
+      "bytes": 4032,
+      "sha256": "769481d2104b36a1113f997a8146a50de31996f2b19cd77bb8926d9f61610704"
+    },
+    {
+      "path": "notes/radial_collar_trace_calibration.md",
+      "bytes": 5038,
+      "sha256": "7aa9a47b01b405c96e9074ffce91661434bb236b7578be5fb29ae010117aa523"
+    },
+    {
+      "path": "notes/radial_cubic_partition.md",
+      "bytes": 5881,
+      "sha256": "0b00443496f548034f2a635337cbe1888b9b041e8efeb3073d6f0f7e435272fa"
+    },
+    {
+      "path": "notes/radial_h1_payoff_supersolution.md",
+      "bytes": 5292,
+      "sha256": "32ba5b807c6ba26eabaac056a476bdec82158fcf3a1693fee64da9f7b3fa9912"
+    },
+    {
+      "path": "notes/radial_payoff_bellman_gate.md",
+      "bytes": 7099,
+      "sha256": "e39ab47344e659f32d75b44f5fc6020d3f27d820a80faef88028b20bca22096d"
+    },
+    {
+      "path": "notes/replica_correlation_bridge.md",
+      "bytes": 8612,
+      "sha256": "1b19d347a9c51107817bc06ce8637c8ba7067543a72f52155a64445bbb74e8da"
+    },
+    {
+      "path": "notes/reversible_shell_rigidity.md",
+      "bytes": 4919,
+      "sha256": "907cb62818a4df02ed91670f4df77f63ad3238476c2e27468e7370da16148916"
+    },
+    {
+      "path": "notes/rotating_affine_visit_pilot.md",
+      "bytes": 4860,
+      "sha256": "b33a7e09d9991eceac82c3fe836eff614723a1898cb0536e850f7f543dbc470b"
+    },
+    {
+      "path": "notes/second_heat_normal_form.md",
+      "bytes": 6900,
+      "sha256": "f4223acceb3c97946f6a6308a6582bf06ac463e6a3d46d88c73b0a5b465b9486"
+    },
+    {
+      "path": "notes/sectorial_poisson_transfer.md",
+      "bytes": 3996,
+      "sha256": "8237dca5695ed96317971000d9a8ebefd1d819397880cb5c7b207c6cf72f809f"
+    },
+    {
+      "path": "notes/shrinking_tube_renewal.md",
+      "bytes": 4350,
+      "sha256": "ba582ee237059ca238199e51445ddc6e10348adcfce71eb494ea6a8a56acdd45"
+    },
+    {
+      "path": "notes/split_entry_density_inheritance.md",
+      "bytes": 3806,
+      "sha256": "125ca483ea822f50c4c079cd21b77e78fa2ccce421777152817a1571b7dc90d1"
+    },
+    {
+      "path": "notes/stopping_time_moving_visit.md",
+      "bytes": 5197,
+      "sha256": "e545336f20048882975b3f9f14ad0aa0505770d6e548ab6037fdea69ca11b336"
+    },
+    {
+      "path": "notes/strain_eigenframe_geometry.md",
+      "bytes": 6235,
+      "sha256": "ff29659739098d1ad658822d061a8d29280e5bc28437e70c669e74dcded03cca"
+    },
+    {
+      "path": "notes/strain_tube_reentry_renewal.md",
+      "bytes": 5337,
+      "sha256": "807b50fe295917444f952db10cdea971f34b8e49e5a0d32df04fab7f8deda20e"
+    },
+    {
+      "path": "notes/third_heat_normal_form.md",
+      "bytes": 6701,
+      "sha256": "c8a1a2c02d242b924a5f15327fe0eae3bfd1b5627e52bbdfa80c59cc25be17a1"
+    },
+    {
+      "path": "notes/three_dimensional_leray_gate.md",
+      "bytes": 7884,
+      "sha256": "6d363ecc760ada75867d1c97ec08c1787d3baf9f91a3e03b7d591d60fd825a91"
+    },
+    {
+      "path": "notes/trajectory_collision_defect.md",
+      "bytes": 4680,
+      "sha256": "db7e598c864c13ccaa23b27efb10e687c9b2c5be110b1bc3f1e3c50633e25872"
+    },
+    {
+      "path": "notes/two_norm_generation_cycle.md",
+      "bytes": 4450,
+      "sha256": "0525712c92a87e0ad64f8dbebd736cc492218d058259a08c2814ad7d690c00bf"
+    },
+    {
+      "path": "notes/two_point_vorticity_collision_system.md",
+      "bytes": 9436,
+      "sha256": "412e8b0e21b9006a910e37a5ba66b854ba8d9134dc87fa1484447b9793db6e13"
+    },
+    {
+      "path": "notes/wall_migration_child_return_density.md",
+      "bytes": 4204,
+      "sha256": "9adcb3d47170f36aaacae7c112609bdbc7fc951aa0a4b864096e5d502fefa662"
+    },
+    {
+      "path": "notes/wall_stopping_trace_composition.md",
+      "bytes": 4541,
+      "sha256": "bfe740b7a209ec112f2226ff74560c4ad9388083e79f0042f7e977951e337c08"
+    },
+    {
+      "path": "notes/weighted_cylinder_buffer_condition.md",
+      "bytes": 4570,
+      "sha256": "da1d1d361fab84ac5854821a3659fd4da608dab77cafd9a6b1a73a8f5b2cc594"
+    },
+    {
+      "path": "notes/weighted_kernel_dynamic_l2.md",
+      "bytes": 3754,
+      "sha256": "b6f3c5c9a8156835a0926d7ac26d3d1dc0855142fb3faee348667ebb9e6b900d"
+    },
+    {
+      "path": "references/constantin_iyer/detsns.tex",
+      "bytes": 53787,
+      "sha256": "decc565e02c2466e1dcaf6cca2581a1e698e12ea250c9923dc4a74f05f5bb475"
+    },
+    {
+      "path": "references/constantin_iyer_0511067.tar",
+      "bytes": 16102,
+      "sha256": "980f7ae24f574d479cfcb38e78e727bff864a412285f30d336be948c14e0f375"
+    },
+    {
+      "path": "references/constantin_vicol_wu_lagrangian_analyticity.pdf",
+      "bytes": 333338,
+      "sha256": "8639f3f22acdc812a8f591ea642d76bf4492db75ec382e9dfec697fd46546d2b"
+    },
+    {
+      "path": "references/eyink_gupta_zaki_1912.06677.tar",
+      "bytes": 436093,
+      "sha256": "91fe9a8b49f5299aee38b4b7ba8ec98833cec04cd50925de0de7157d751f6452"
+    },
+    {
+      "path": "references/iyer_mattingly/particle_method.tex",
+      "bytes": 69145,
+      "sha256": "4bb39e6033996764731f52411a0b26cf3a73640d849cbbbce35c4a7f977dd4aa"
+    },
+    {
+      "path": "references/iyer_mattingly/wl2_2reals.eps",
+      "bytes": 56953,
+      "sha256": "2dbb6f4cc84b68a9b25dc4d81c036a07e9f11785f6ffe6c2387b798a685d98a4"
+    },
+    {
+      "path": "references/iyer_mattingly/wl2_8reals.eps",
+      "bytes": 54902,
+      "sha256": "831175d4b2a12cb18dc3770e7385cffcf4deb72701915c5e5898a8dcc92e846a"
+    },
+    {
+      "path": "references/iyer_mattingly_0803.1222.tar",
+      "bytes": 47507,
+      "sha256": "a36e53379c4f157f082e71ca2fa6e5cf601a07f737a1136f878eb1bd50ea01bb"
+    },
+    {
+      "path": "references/miller_strain_vorticity/00README.json",
+      "bytes": 213,
+      "sha256": "d1f6b1a71c9accb812ec5121d1fff7910c025ca7bb201948bacdb40941bc14e5"
+    },
+    {
+      "path": "references/miller_strain_vorticity/main.bbl",
+      "bytes": 9650,
+      "sha256": "7841ac930594141b9b091615c78463399f174aabdb81eea3263e07ee518f796e"
+    },
+    {
+      "path": "references/miller_strain_vorticity/main.tex",
+      "bytes": 75876,
+      "sha256": "0cba6377c9c312bae61b712dfab9447e2a7a656f31d072fded069b31a8c36591"
+    },
+    {
+      "path": "references/miller_strain_vorticity/source.tar",
+      "bytes": 18754,
+      "sha256": "a70b1db8b10b99cc54ea62d860d07f5ed88bb4e434a269698b3a5441043b6d97"
+    },
+    {
+      "path": "references/yu_filtered_vortex/00README.json",
+      "bytes": 252,
+      "sha256": "1c31ba475ac2442d4b963c6416ec2beb50f6fdf3bc1efc95ab935ce9d49634b9"
+    },
+    {
+      "path": "references/yu_filtered_vortex/filtered_vortex_stretching_submission_ready.tex",
+      "bytes": 94426,
+      "sha256": "5da18bcbcc468c7f0652450cba513c7a62971f5b696dfe82a3d37c89e9742ae2"
+    },
+    {
+      "path": "references/yu_filtered_vortex/source.tar",
+      "bytes": 27164,
+      "sha256": "f6f61bd6b46ac40d467d80085931376f8e07fd3fa40e0cc6ef7fc2c6f741c232"
+    },
+    {
+      "path": "requirements-reversible-fem.txt",
+      "bytes": 33,
+      "sha256": "4d6df073e3326f12971a3e8b4c633d0a634827b07ea2ecf0ea28a721716676bd"
+    },
+    {
+      "path": "results/galerkin_trajectory_summary.json",
+      "bytes": 3417,
+      "sha256": "ba629ad433a0e08c818e5bfa0a15efe08b685edb61bf4688dcb08a8c31199784"
+    },
+    {
+      "path": "results/galerkin_trajectory_sweep.jsonl",
+      "bytes": 43260,
+      "sha256": "282a1bc5406cc9ec8c617da39c346d2f0d7d1552c0e7726801a82606ef640fdd"
+    },
+    {
+      "path": "results/generated_mode_transfer_R0922.json",
+      "bytes": 886,
+      "sha256": "42cc8016d84d17d097b4d37aa56f9899507b11864f242ac1104adf8c59528e12"
+    },
+    {
+      "path": "results/generated_mode_transfer_R0940.json",
+      "bytes": 880,
+      "sha256": "8a86d13579a590b3e768ceb070c4cdd059f3d1be7c2aae237b7e849940f90c94"
+    },
+    {
+      "path": "results/helical_trajectory_channels.jsonl",
+      "bytes": 6348,
+      "sha256": "cd5bcdb5e45d00633853e411a9064d380e6750228dfa985263e60c223aa45dbd"
+    },
+    {
+      "path": "results/neutral_strip_common_circle_source_summary.json",
+      "bytes": 12714,
+      "sha256": "d05813852adeb2b044cb683ded68f0e44f462dba54a5b7eeff4979f83377d6c0"
+    },
+    {
+      "path": "results/neutral_strip_h006_exact_polygon_indexed_spectrum_transfer_v1.json",
+      "bytes": 84643,
+      "sha256": "352a5af82a6595f802ffb36ca875970bafb3f69e250727ed973f911e57a8b06f"
+    },
+    {
+      "path": "results/neutral_strip_h006_gaussian_assembly_interval_audit_v1.json",
+      "bytes": 5816,
+      "sha256": "c4da43d4589edad78c1413c4b8914e59b31143487784623677f849061304ba3a"
+    },
+    {
+      "path": "results/neutral_strip_h006_gaussian_assembly_interval_checkpoint_v1.npz",
+      "bytes": 17383670,
+      "sha256": "60276e13ecb0de15099fea1bd7369597e589a9e95f0193bd133e48f0c0c4fcd5"
+    },
+    {
+      "path": "results/neutral_strip_h006_gaussian_assembly_interval_pilot32_v1.json",
+      "bytes": 3722,
+      "sha256": "d2934163c9d6df09d2b8f2d006bac381255278f7943dc814e428d79e110413c8"
+    },
+    {
+      "path": "results/neutral_strip_h006_gaussian_assembly_interval_pilot512_v1.json",
+      "bytes": 3976,
+      "sha256": "836a24436fadb967e866141d00c7c23c8778b888396bc1e85b1cf8b41e560ef1"
+    },
+    {
+      "path": "results/neutral_strip_h006_gaussian_assembly_reconstruction_crosscheck_v1.json",
+      "bytes": 2312,
+      "sha256": "139856caaf2440a7ac9067d78cf983c9b2cf0e5a97ac6c408ca1187820e5263a"
+    },
+    {
+      "path": "results/neutral_strip_h006_q12_k240_binary64_sparse_inertia_negative_pivots_v1.npz",
+      "bytes": 656712,
+      "sha256": "493ae37dff63e5b1f83e58abfd51b58e5fdcc668bbdedcc0c098f8f1c34b3020"
+    },
+    {
+      "path": "results/neutral_strip_h006_q12_k240_binary64_sparse_inertia_negative_v1.json",
+      "bytes": 4248,
+      "sha256": "a62ce7c3cced14f68427eaec4415be7d4e00044349fe33f501ddf86e1da4f010"
+    },
+    {
+      "path": "results/neutral_strip_h006_q12_k240_decimal_p100_sparse_inertia_negative_pivots_v1.npz",
+      "bytes": 25300576,
+      "sha256": "0afad2f2532a107c5a3b3eb4bf92a51cdcf4cff01aa9960a5ea66b2c924fbc2e"
+    },
+    {
+      "path": "results/neutral_strip_h006_q12_k240_decimal_p100_sparse_inertia_negative_v1.json",
+      "bytes": 6290,
+      "sha256": "6b48e5c3e494f83a5f1438aafb3ebd80e8043c868e0046f1ce2bb29b92036833"
+    },
+    {
+      "path": "results/neutral_strip_h006_q12_k240_decimal_p180_sparse_inertia_negative_pivots_v1.npz",
+      "bytes": 45238848,
+      "sha256": "5279b057524ed26db7b25ef9da9e6c8d059602c6b9c96774a554aadd70932162"
+    },
+    {
+      "path": "results/neutral_strip_h006_q12_k240_decimal_p180_sparse_inertia_negative_row_checkpoint_v1.json",
+      "bytes": 6490,
+      "sha256": "90563d153e655b5e9cc8fd182ae8d809511957e14a821d659e4019ce610fa367"
+    },
+    {
+      "path": "results/neutral_strip_h006_q12_k240_decimal_p180_sparse_inertia_negative_row_checkpoint_v1.npz",
+      "bytes": 45238848,
+      "sha256": "5279b057524ed26db7b25ef9da9e6c8d059602c6b9c96774a554aadd70932162"
+    },
+    {
+      "path": "results/neutral_strip_h006_q12_k240_decimal_p180_sparse_inertia_negative_v1.json",
+      "bytes": 6923,
+      "sha256": "73ee738ccb82bbfd61434fe42738403fa1f81c3b1d3cb4774941856abbb050d8"
+    },
+    {
+      "path": "results/neutral_strip_h006_q12_k240_decimal_p50_sparse_inertia_negative_pivots_v1.npz",
+      "bytes": 13047837,
+      "sha256": "592d5627aa4a7dc8d898bfe7b69cb5415d36e208d3028602b541e8e5c40a17e2"
+    },
+    {
+      "path": "results/neutral_strip_h006_q12_k240_decimal_p50_sparse_inertia_negative_v1.json",
+      "bytes": 5891,
+      "sha256": "0894f5ab7af40e0fa16ed62c36a1629fbf352a4b8f17a39d46ec207f86f476db"
+    },
+    {
+      "path": "results/neutral_strip_h006_q12_k240_eigensystem_residual_audit_v1.json",
+      "bytes": 102113,
+      "sha256": "b564e5a718a26d8e613a3112167b278d2f2db81f22190d94e43afb6d480e0e85"
+    },
+    {
+      "path": "results/neutral_strip_h006_q12_k240_endpoint_roundoff_audit_v1.json",
+      "bytes": 320078,
+      "sha256": "d4505025e05e1c4c6dd8d90675222c5d0a6b74e2e8fadc7707d703ef2be5bec0"
+    },
+    {
+      "path": "results/neutral_strip_h006_q12_k240_source_time_slab_certificate_refined_v1.json",
+      "bytes": 10093,
+      "sha256": "2a0eac22d8c9d09445bd6f2cb4244ee110f4072635ad4aacff8ac44ae868dcab"
+    },
+    {
+      "path": "results/neutral_strip_h006_q12_k240_source_time_slab_certificate_v1.json",
+      "bytes": 10089,
+      "sha256": "e7ffdf12ca387accd5665ee7d16175de5c8c428844aa54793619c9119e2bf8da"
+    },
+    {
+      "path": "results/neutral_strip_h006_q12_k240_sparse_inertia_audit_v1.json",
+      "bytes": 6043,
+      "sha256": "228605f602dfa2bca6f18aadeda1e2398a1c96f500f2150fdea33bda9f4610b5"
+    },
+    {
+      "path": "results/neutral_strip_h006_q12_k240_sparse_inertia_p260_crosscheck_pivots_v1.npz",
+      "bytes": 64893316,
+      "sha256": "d3c8f161d3de55706b15e7d9bede499ac194658597722715203cd4e514629545"
+    },
+    {
+      "path": "results/neutral_strip_h006_q12_k240_sparse_inertia_p260_crosscheck_row_checkpoint_v1.json",
+      "bytes": 5688,
+      "sha256": "ea2bbb3e294b64c8d35d6ffe432e2e3891195bd7ec51ca7206aaa93c38710d09"
+    },
+    {
+      "path": "results/neutral_strip_h006_q12_k240_sparse_inertia_p260_crosscheck_row_checkpoint_v1.npz",
+      "bytes": 64893316,
+      "sha256": "d3c8f161d3de55706b15e7d9bede499ac194658597722715203cd4e514629545"
+    },
+    {
+      "path": "results/neutral_strip_h006_q12_k240_sparse_inertia_p260_crosscheck_v1.json",
+      "bytes": 6132,
+      "sha256": "dc822b1ed868fc9ac7751fbf7a65b56d0581da60220b382f056d5f54dcec2670"
+    },
+    {
+      "path": "results/neutral_strip_h006_q12_k240_sparse_inertia_pivots_v1.npz",
+      "bytes": 55158276,
+      "sha256": "08f396f8f384a57dadbfa8619086b0dd1e052a821647f5aa5ba280607b21727a"
+    },
+    {
+      "path": "results/neutral_strip_h006_q12_k240_sparse_inertia_precision_crosscheck_v1.json",
+      "bytes": 3568,
+      "sha256": "debc1b112b026c8cf5165fef047de603dbbac6dc56b085ed8f0a778daa0a208d"
+    },
+    {
+      "path": "results/neutral_strip_h006_q12_k240_sparse_inertia_row_checkpoint_v1.json",
+      "bytes": 5599,
+      "sha256": "71d470af6f2ea521d94620bcc3ae0829af319d88eea14ef91deca4afeb35a4bc"
+    },
+    {
+      "path": "results/neutral_strip_h006_q12_k240_sparse_inertia_row_checkpoint_v1.npz",
+      "bytes": 55158276,
+      "sha256": "08f396f8f384a57dadbfa8619086b0dd1e052a821647f5aa5ba280607b21727a"
+    },
+    {
+      "path": "results/neutral_strip_h006_q12_k241_reference_eigensystem_v1.npz",
+      "bytes": 29331118,
+      "sha256": "8994f7b90409db710a69bda72073dacf83722c790384d1f6bb4fcfc468e6c66e"
+    },
+    {
+      "path": "results/neutral_strip_h0075_q12_k241_reference_eigensystem_v1.npz",
+      "bytes": 18511182,
+      "sha256": "ff75b72244745c9717d204a0d9b791bd2ab2d16e4854a32e5a74670e15b3cb55"
+    },
+    {
+      "path": "results/neutral_strip_h009_q12_k241_reference_eigensystem_v1.npz",
+      "bytes": 12777310,
+      "sha256": "038071b903f90437c943fee29d78ea68eaaec2e8e01a80d3f475c7f23f520333"
+    },
+    {
+      "path": "results/neutral_strip_h012_q12_k240_source_time_slab_pilot_v1.json",
+      "bytes": 10092,
+      "sha256": "6b0fc285a391c86b56f3ff8f2ce5fdbd1dbfc7a1d6637fde12aa270fb0975eeb"
+    },
+    {
+      "path": "results/neutral_strip_h012_q12_k241_reference_eigensystem_v1.npz",
+      "bytes": 7211174,
+      "sha256": "377b5f88e99f2215e26ea9ec15ab189528b48be09917b443de383a367aaae6c5"
+    },
+    {
+      "path": "results/quartic_transfer_search.jsonl",
+      "bytes": 626,
+      "sha256": "483db445e384adac3116d228a0ad2d9b987a532b69088ebb9afc9924670600bd"
+    },
+    {
+      "path": "results/quartic_transfer_sweep_summary.json",
+      "bytes": 1626,
+      "sha256": "ded80713e6560b8775a53e03d58dd27fa7b2f0510dd0a580596581a20fcce8fe"
+    },
+    {
+      "path": "scripts/__pycache__/adaptive_reynolds_envelope_audit.cpython-313.pyc",
+      "bytes": 9109,
+      "sha256": "c8186f5bf88cccce7263652ea7d41fe986a9410fa5e061a51e0c8ab5bc1cb3d0"
+    },
+    {
+      "path": "scripts/__pycache__/adaptive_scale_barrier_audit.cpython-313.pyc",
+      "bytes": 5305,
+      "sha256": "db7f4e37b85e66c51391252671d376f6a953c377221dedd25677d35ea8306040"
+    },
+    {
+      "path": "scripts/__pycache__/affine_exterior_axial_compensation_audit.cpython-313.pyc",
+      "bytes": 10529,
+      "sha256": "a0d2f1d5ad35925f2071f7ddc7ac47f8b8c1aec5bfc5ffcb2189fedce37666e6"
+    },
+    {
+      "path": "scripts/__pycache__/affine_taper_residual_no_go_audit.cpython-313.pyc",
+      "bytes": 9833,
+      "sha256": "a61f92b5cb857e1f96d733b951cbd03996724c95dda51e147d88436b974d7907"
+    },
+    {
+      "path": "scripts/__pycache__/anisotropic_affine_exterior_tail_gate.cpython-313.pyc",
+      "bytes": 5184,
+      "sha256": "5292ee7e999da48e616bfce75a24afdc0dcb15dcfb4e76d5fa194a3e665a8d55"
+    },
+    {
+      "path": "scripts/__pycache__/anisotropic_poisson_transfer_pilot.cpython-313.pyc",
+      "bytes": 24327,
+      "sha256": "60d14ca647df3a8252893eebb56addb54e375fb88af97a21a7c5e3847990040c"
+    },
+    {
+      "path": "scripts/__pycache__/averaged_entry_trace_gate.cpython-313.pyc",
+      "bytes": 9695,
+      "sha256": "51305ecb1e44490ce2f19ba2728b6538a605b0f95401593a2940fa65b18c029f"
+    },
+    {
+      "path": "scripts/__pycache__/axial_form_to_boundary_audit.cpython-313.pyc",
+      "bytes": 11692,
+      "sha256": "b521aebc0fb3cc5e345aca7361eef5f886663447a65167f03f4b64fab4b7e051"
+    },
+    {
+      "path": "scripts/__pycache__/axial_killing_buffered_visit_audit.cpython-313.pyc",
+      "bytes": 10420,
+      "sha256": "591427db85f18e1e4e283aacd89486d692b02c11f49fb6bc1272e7d2ae8a7521"
+    },
+    {
+      "path": "scripts/__pycache__/backward_replica_audit.cpython-313.pyc",
+      "bytes": 2969,
+      "sha256": "e452aff387366a35ad46e6379d59d9996f34366b49b40fe5b4ba4ce36f878e97"
+    },
+    {
+      "path": "scripts/__pycache__/branch_resolved_entry_renewal_audit.cpython-313.pyc",
+      "bytes": 9408,
+      "sha256": "cd450beb55bb2a61bd7c479ce67a4bdd6077d8615a231b38420d4cec8ea854fa"
+    },
+    {
+      "path": "scripts/__pycache__/branching_transfer_operator_audit.cpython-313.pyc",
+      "bytes": 11657,
+      "sha256": "6718b847b089158a39d7d94f30ee36172a4f982c22b480c007187c4ac3fe6ed9"
+    },
+    {
+      "path": "scripts/__pycache__/buffered_visit_feynman_kac_audit.cpython-313.pyc",
+      "bytes": 9572,
+      "sha256": "054062dca7bf24882a309a0fceaa1604d141a4d158fe7f22d707ccd98db2a3f9"
+    },
+    {
+      "path": "scripts/__pycache__/coherence_abort_renewal_audit.cpython-313.pyc",
+      "bytes": 6667,
+      "sha256": "6fed877d02b622cc876b08ad9dfbc89c20c48eccce1e1ffee2f53bb9d0ab9e55"
+    },
+    {
+      "path": "scripts/__pycache__/collision_coherence_weight_audit.cpython-313.pyc",
+      "bytes": 7312,
+      "sha256": "0854916b79c6e47929c475b64e62c5cd6b73365a952b8ade51bf814a12cecae5"
+    },
+    {
+      "path": "scripts/__pycache__/compact_affine_campanato_gate_audit.cpython-313.pyc",
+      "bytes": 14126,
+      "sha256": "c5d6001e5a48e55db431d805284d6594931f03c9242d4a417eca55f139246f2a"
+    },
+    {
+      "path": "scripts/__pycache__/continuous_cubic_localization_no_go_audit.cpython-313.pyc",
+      "bytes": 6032,
+      "sha256": "122c1eb9a29f8667fbc1a9efbbfa49a730558fac60cc9741d98e06cac5d259f3"
+    },
+    {
+      "path": "scripts/__pycache__/critical_collar_transfer_audit.cpython-313.pyc",
+      "bytes": 10616,
+      "sha256": "9633de79255efff5ba57759ab376ca7d9f5b5b413f82b89d0bccbda179c605b1"
+    },
+    {
+      "path": "scripts/__pycache__/cubic_level_transfer_audit.cpython-313.pyc",
+      "bytes": 9866,
+      "sha256": "ba9728a49e8dfe3c7cde42b432d5d90691d4eedc3aa4627deeeb817ba0056f56"
+    },
+    {
+      "path": "scripts/__pycache__/cumulative_defect_audit.cpython-313.pyc",
+      "bytes": 5200,
+      "sha256": "6586f8435bd2a82639129c9f22163a5a968128ac07032426adfc9afbb1bf9a63"
+    },
+    {
+      "path": "scripts/__pycache__/cylindrical_brownian_return_pilot.cpython-313.pyc",
+      "bytes": 18935,
+      "sha256": "6c88e1aeea1a6e9685643cd9436c5b5652eae011ff3c0f33bf8359093e489294"
+    },
+    {
+      "path": "scripts/__pycache__/divergence_free_shell_taper_audit.cpython-313.pyc",
+      "bytes": 14403,
+      "sha256": "ed60a1a380ff8694a440743b473b8037f59da1dededf00895f7b82104c99f289"
+    },
+    {
+      "path": "scripts/__pycache__/divergence_free_taper_transfer_pilot.cpython-313.pyc",
+      "bytes": 27304,
+      "sha256": "15fe613badecb7fe3256bc63cb801fca46f67c362797f939464184b0261585f5"
+    },
+    {
+      "path": "scripts/__pycache__/dyadic_gauge_transition_audit.cpython-313.pyc",
+      "bytes": 5680,
+      "sha256": "d7f2fa68dd76f85881aa0513f43a2dfd06f3dce1c70e38634cb548679a556ae2"
+    },
+    {
+      "path": "scripts/__pycache__/exterior_return_tail_gate.cpython-313.pyc",
+      "bytes": 16570,
+      "sha256": "3c9cc4de3bc61b842109ad728dfecb57de649df42ce205ae8a04bc0041bdb559"
+    },
+    {
+      "path": "scripts/__pycache__/finite_cylinder_kato_gate_audit.cpython-313.pyc",
+      "bytes": 9391,
+      "sha256": "32217ea8b7c2b0c868b138b253c2435591da750bf6c53486277cbadb28af2bea"
+    },
+    {
+      "path": "scripts/__pycache__/finite_cylinder_mode_audit.cpython-313.pyc",
+      "bytes": 10389,
+      "sha256": "3b37d7f094f792d886ff8a7cb31551507973f3d54a51c754c2494d1d96c9dbad"
+    },
+    {
+      "path": "scripts/__pycache__/finite_cylinder_perturbation_margin_audit.cpython-313.pyc",
+      "bytes": 17356,
+      "sha256": "1e39abbfaf0640c14391fd5b8de75759b49136fc841e8ad89bc87fac279f13ee"
+    },
+    {
+      "path": "scripts/__pycache__/first_crossing_barrier_audit.cpython-313.pyc",
+      "bytes": 3713,
+      "sha256": "72bb212ab64705b3aeb17be9b71250d45cc8f2fc12f7efb73d2f29df2d0d06c5"
+    },
+    {
+      "path": "scripts/__pycache__/fourier_triad_collision_audit.cpython-313.pyc",
+      "bytes": 7280,
+      "sha256": "8f18b1ca1148ec7369601c5c7e9bbad6e1714b996e5a45198b548a2f965ab8b7"
+    },
+    {
+      "path": "scripts/__pycache__/galerkin_sweep_analysis.cpython-313.pyc",
+      "bytes": 9328,
+      "sha256": "11b771f26b248f1d9e006a891ac0dfce38bdfbc40db57a8261b2b03f458d81f6"
+    },
+    {
+      "path": "scripts/__pycache__/galerkin_trajectory_audit.cpython-313.pyc",
+      "bytes": 29212,
+      "sha256": "4c13553e5a62628d92e84d7b2c780726fab0c749419c0fe49356275c085cf44f"
+    },
+    {
+      "path": "scripts/__pycache__/gaussian_boundary_l2_transfer_audit.cpython-313.pyc",
+      "bytes": 12240,
+      "sha256": "4ad4d17b31dde7604e84053821660ef56aa98f7f09b457b4d9027c9a5dfd40ba"
+    },
+    {
+      "path": "scripts/__pycache__/general_affine_spectral_floor_audit.cpython-313.pyc",
+      "bytes": 6566,
+      "sha256": "6a7e3d9208798b6ea3702ca976c99f073d8e778432f2fa4ac4cbe4b59e7c79b7"
+    },
+    {
+      "path": "scripts/__pycache__/generated_mode_transfer_audit.cpython-313.pyc",
+      "bytes": 13773,
+      "sha256": "74472bab4fd27ec60519b40c402676f027da69fac9b0f68e25485cf87c44437f"
+    },
+    {
+      "path": "scripts/__pycache__/geometric_wall_split_compatibility_audit.cpython-313.pyc",
+      "bytes": 6001,
+      "sha256": "e35a557565980bf6403df3c9914823764c7f7487b398709c448034c636d09137"
+    },
+    {
+      "path": "scripts/__pycache__/geometry_triggered_migrating_child_pilot.cpython-313.pyc",
+      "bytes": 33055,
+      "sha256": "7ce11dd578f30a1da3deed540f1a1c8b9b358c70504545166092a4ecaf54aebc"
+    },
+    {
+      "path": "scripts/__pycache__/gram_boundary_audit.cpython-313.pyc",
+      "bytes": 3592,
+      "sha256": "5c80c33733cc737f707c36b832ce0db10de10e14568f2c2fb00761fa2a10ea22"
+    },
+    {
+      "path": "scripts/__pycache__/ground_state_visit_transform_audit.cpython-313.pyc",
+      "bytes": 10139,
+      "sha256": "514e683088248ccf64483f73c3da73e17819442a579fe2cb6b78e1b4b35f0083"
+    },
+    {
+      "path": "scripts/__pycache__/heat_scale_cubic_cancellation_audit.cpython-313.pyc",
+      "bytes": 9672,
+      "sha256": "d4b0cd40a75b7fe8d29558ecfe81d050de716bd12589456994621ae40453bca6"
+    },
+    {
+      "path": "scripts/__pycache__/helical_trajectory_channel_audit.cpython-313.pyc",
+      "bytes": 18228,
+      "sha256": "a9b6f8c46150440d55fd2fdc4d9d4470ed524ab20fa0ee0cb28a66b1dc94115f"
+    },
+    {
+      "path": "scripts/__pycache__/interaction_marked_localization_audit.cpython-313.pyc",
+      "bytes": 13242,
+      "sha256": "7d698667a2a69aeef69e10f4073374a971cfae980603728bc51200609ec58761"
+    },
+    {
+      "path": "scripts/__pycache__/interface_weight_no_go_audit.cpython-313.pyc",
+      "bytes": 8516,
+      "sha256": "b694b13e49c762f08fb4fcf750982b101396843cb7efd1a273fb8b7969998709"
+    },
+    {
+      "path": "scripts/__pycache__/intrinsic_radius_cover_audit.cpython-313.pyc",
+      "bytes": 8070,
+      "sha256": "9ea1497441f5cc8d7d410749400038c66380ffc7b6a0aa8b594b6d53d7853b69"
+    },
+    {
+      "path": "scripts/__pycache__/leray_conditional_occupation_no_go_audit.cpython-313.pyc",
+      "bytes": 5766,
+      "sha256": "7165ba12e5615627529b2df4b09d732cd2ecca3808cbedd6ef7e99b62ed34dee"
+    },
+    {
+      "path": "scripts/__pycache__/leray_mollified_cell_frame_audit.cpython-313.pyc",
+      "bytes": 10972,
+      "sha256": "66b1253b4788c2cb0a4356d9dace41e6aff3b7f118aee96e09628f6bb73d7faf"
+    },
+    {
+      "path": "scripts/__pycache__/localized_strain_tube_audit.cpython-313.pyc",
+      "bytes": 7822,
+      "sha256": "9fcf0a26994c66cbedf23cd7a83cf0a98bbf961c3f0b5776b2e578b91923e97f"
+    },
+    {
+      "path": "scripts/__pycache__/migrating_core_residual_budget_audit.cpython-313.pyc",
+      "bytes": 14923,
+      "sha256": "ebca7be0861c2d306962ac8f14cb03bac1d64683652eaf5b30ca0bbb4ba614b1"
+    },
+    {
+      "path": "scripts/__pycache__/monotone_dyadic_cover_audit.cpython-313.pyc",
+      "bytes": 11999,
+      "sha256": "b05dffcec78e0bbe38e5c1418d51efa3b268e6dcc9b8a44eafba4ff937250478"
+    },
+    {
+      "path": "scripts/__pycache__/moving_cubic_label_transport_audit.cpython-313.pyc",
+      "bytes": 23202,
+      "sha256": "1c0b64aa1ed2ea349d501996b76c014c8aa45ea64f914c37f46145359f19c999"
+    },
+    {
+      "path": "scripts/__pycache__/moving_strain_tube_audit.cpython-313.pyc",
+      "bytes": 6569,
+      "sha256": "d04617f26d157b960153fd0a56d7ab6946cf0ff921229be4a19a7a7f46628780"
+    },
+    {
+      "path": "scripts/__pycache__/navier_stokes_coherence_budget_audit.cpython-313.pyc",
+      "bytes": 10749,
+      "sha256": "33f995838496c191006b3c1c7e2ac9e9e70c6c3e2dad0c3c1c5706cddf8f86cf"
+    },
+    {
+      "path": "scripts/__pycache__/neutral_strip_axial_patch_branch_pilot.cpython-313.pyc",
+      "bytes": 16193,
+      "sha256": "c61662e44db278a95dc7aad672b2ca4b4068c89763c030c614c8608395c723e6"
+    },
+    {
+      "path": "scripts/__pycache__/neutral_strip_boundary_density_discretization_audit.cpython-313.pyc",
+      "bytes": 13845,
+      "sha256": "65efe5395597f9b71c7d73d1401d672b1086ee5aa5ed7371361c7454a70b3934"
+    },
+    {
+      "path": "scripts/__pycache__/neutral_strip_branch_resolvent_pilot.cpython-313.pyc",
+      "bytes": 20047,
+      "sha256": "6ffaa40b100f38e428bb6779bff35edde4e1039a8683dc7bf91ec2f0304ee839"
+    },
+    {
+      "path": "scripts/__pycache__/neutral_strip_common_circle_eigensystem_residual_audit.cpython-313.pyc",
+      "bytes": 27327,
+      "sha256": "6feb806aefc4bdb7064a54f2f7dcc91a2ed3f88f116dd410cb4385cf7e404069"
+    },
+    {
+      "path": "scripts/__pycache__/neutral_strip_common_circle_endpoint_roundoff_audit.cpython-313.pyc",
+      "bytes": 30873,
+      "sha256": "e5ba01313bb06e24ce0b8a90bcf82a3cff84ad0d8176c7618c8b8d821055289a"
+    },
+    {
+      "path": "scripts/__pycache__/neutral_strip_common_circle_source_time_slab_certificate.cpython-313.pyc",
+      "bytes": 29178,
+      "sha256": "a7478539945c71c2bca70ac31bde45d83631b6a89379e84ccdb85eca1b61c019"
+    },
+    {
+      "path": "scripts/__pycache__/neutral_strip_common_circle_sparse_inertia_audit.cpython-313.pyc",
+      "bytes": 46338,
+      "sha256": "e8ef4fd0afd7e5a3767d6c709a2338fceefae4fa9185f4baf254e73f5276f1c1"
+    },
+    {
+      "path": "scripts/__pycache__/neutral_strip_exact_polygon_indexed_spectrum_transfer.cpython-313.pyc",
+      "bytes": 13979,
+      "sha256": "0ba0a06b503aee65f503f78d372cb40f6141cbf9645d5fd0b3d34961cd7fa2c4"
+    },
+    {
+      "path": "scripts/__pycache__/neutral_strip_first_window_brownian_majorant_audit.cpython-313.pyc",
+      "bytes": 17467,
+      "sha256": "2786eb3d6f9f7ea03ffee83dbc69c23214b8a05abd4bdc28a30baa8ba8ecc8f1"
+    },
+    {
+      "path": "scripts/__pycache__/neutral_strip_first_window_maximum_bridge_certificate.cpython-313.pyc",
+      "bytes": 22347,
+      "sha256": "4b2c546fa5c2f6942d4a0007550cfdacff4e663fb74ec1f120388301159521f2"
+    },
+    {
+      "path": "scripts/__pycache__/neutral_strip_gaussian_assembly_reconstruction_crosscheck.cpython-313.pyc",
+      "bytes": 8864,
+      "sha256": "69a840a1172abff79482b9ac420a73f2ac7c126bb29c0a2cb5499b2b0fc0da0c"
+    },
+    {
+      "path": "scripts/__pycache__/neutral_strip_gaussian_weighted_assembly_interval_audit.cpython-313.pyc",
+      "bytes": 58685,
+      "sha256": "5dab9c7321251d1a6d8d9e3d68f52b5467214a785b5f323b35488bf54a26185b"
+    },
+    {
+      "path": "scripts/__pycache__/neutral_strip_parabolic_spectral_split_audit.cpython-313.pyc",
+      "bytes": 51048,
+      "sha256": "6dfc40872fde9b9fdda17bb30d5bec11488164c77af4e9302b034a382ccde1c0"
+    },
+    {
+      "path": "scripts/__pycache__/neutral_strip_return_density_pilot.cpython-313.pyc",
+      "bytes": 18114,
+      "sha256": "148c47463bd13cab0404bfe69fd4e343ff6206476ff8ec3c7f9d16608eb95507"
+    },
+    {
+      "path": "scripts/__pycache__/neutral_strip_reversible_boundary_fem_pilot.cpython-313.pyc",
+      "bytes": 31250,
+      "sha256": "aab128226903ef625ef074b41c8f7f218b7c89e5dd60d62c0a53983d0f4db232"
+    },
+    {
+      "path": "scripts/__pycache__/neutral_strip_reversible_fem_consistency_gate.cpython-313.pyc",
+      "bytes": 27670,
+      "sha256": "81a18bb1a04bf4f91d5ac625bd2d07d3ecd5345eb180fc97b27c4d4586c3e42c"
+    },
+    {
+      "path": "scripts/__pycache__/neutral_strip_reversible_finite_time_certificate.cpython-313.pyc",
+      "bytes": 36362,
+      "sha256": "69d200adef4da3bae9245a9765a5fd74c50af38b37718abc8f0f54c0da456353"
+    },
+    {
+      "path": "scripts/__pycache__/neutral_strip_reversible_spectral_tail_width_audit.cpython-313.pyc",
+      "bytes": 20312,
+      "sha256": "365772119cb55dbb45f1921ab5031f203b77801cd9d7798d37cdce1273be1d6a"
+    },
+    {
+      "path": "scripts/__pycache__/neutral_strip_same_scale_width_sweep.cpython-313.pyc",
+      "bytes": 10105,
+      "sha256": "40b28d8670dab18659637601e6df61c3b569922b0e81a8eea12682e4d36efb44"
+    },
+    {
+      "path": "scripts/__pycache__/neutral_strip_sparse_inertia_precision_crosscheck.cpython-313.pyc",
+      "bytes": 10873,
+      "sha256": "491ccd0733f6634f51dd18fcbe1232930825d6bf8b4634b953943a6776a9aab4"
+    },
+    {
+      "path": "scripts/__pycache__/neutral_strip_storage_gate.cpython-313.pyc",
+      "bytes": 5659,
+      "sha256": "5065466be5e0d8a3bf9a9039fa55e4a0b392fbffbae27418764dfc4fa2600b02"
+    },
+    {
+      "path": "scripts/__pycache__/neutral_strip_transient_conormal_low_block_gate.cpython-313.pyc",
+      "bytes": 23303,
+      "sha256": "ea59d7bdd780e356a0b76ae24b7d5a5964464297b04dad5f891250bfcbc0d543"
+    },
+    {
+      "path": "scripts/__pycache__/neutral_strip_x_exit_correction_audit.cpython-313.pyc",
+      "bytes": 14858,
+      "sha256": "d2b2b4b52fd597fd74dec3ba74d9501370d42995f67da8ee9e8c356e6f49f6fc"
+    },
+    {
+      "path": "scripts/__pycache__/newtonian_boundary_audit.cpython-313.pyc",
+      "bytes": 3276,
+      "sha256": "61bd9c31cf72673a5b72f5a950c93fda128fe13149fd75b4e8eb3f7d56285da8"
+    },
+    {
+      "path": "scripts/__pycache__/nonautonomous_full_affine_form_audit.cpython-313.pyc",
+      "bytes": 7989,
+      "sha256": "1f31eaca4ffdf53eb28cdecdde2f9c116ef093ff007bf8e1ed58ef8bec755542"
+    },
+    {
+      "path": "scripts/__pycache__/nonautonomous_scalar_gain_gate_audit.cpython-313.pyc",
+      "bytes": 7998,
+      "sha256": "3d431036b5e279121818072f4de73359ae40cb091a8ea20bf89bd1c8ed2a011a"
+    },
+    {
+      "path": "scripts/__pycache__/normal_form_resummation_audit.cpython-313.pyc",
+      "bytes": 9211,
+      "sha256": "64a7464b86f8156a198aa607cf2721b23d1f88aa925959663a32b9d6056b4cdc"
+    },
+    {
+      "path": "scripts/__pycache__/ns_trajectory_defect_audit.cpython-313.pyc",
+      "bytes": 16589,
+      "sha256": "ebcc3d54760300cf155e6c826fad15944c1f54317690c410bfa714b79c499d1b"
+    },
+    {
+      "path": "scripts/__pycache__/off_diagonal_form_transfer_audit.cpython-313.pyc",
+      "bytes": 10837,
+      "sha256": "ee72e7a80dfc157062f8f651ed77ccb27d197c46bfeea9188ad8877b7ada3ca5"
+    },
+    {
+      "path": "scripts/__pycache__/poisson_cutoff_form_transfer_audit.cpython-313.pyc",
+      "bytes": 15487,
+      "sha256": "7d9099b47d12c29b34d5aae2d3d2bb6693683e523f5e2b9918cab9b67a6a11ec"
+    },
+    {
+      "path": "scripts/__pycache__/pressure_collision_kernel_audit.cpython-313.pyc",
+      "bytes": 10089,
+      "sha256": "9f71f048c4bc16d88436a28e9cb1e75d702d5358aebabf9879ed99a37ec28760"
+    },
+    {
+      "path": "scripts/__pycache__/pressure_frame_pairing_audit.cpython-313.pyc",
+      "bytes": 19217,
+      "sha256": "c756ba770a375ecea70a7f0687fcdd38d980bcbefc088a27dde55757cc129d8e"
+    },
+    {
+      "path": "scripts/__pycache__/pressure_partition_flux_audit.cpython-313.pyc",
+      "bytes": 14829,
+      "sha256": "becddc02929150a0ba106e7df820a8eb5bfd8464de7d6e45d7e9b26f8d88b5f5"
+    },
+    {
+      "path": "scripts/__pycache__/pressure_shell_commutator_audit.cpython-313.pyc",
+      "bytes": 9587,
+      "sha256": "339c52247274d4624dd2505bf42146b7190ac240ed352e396392ba77d1a9294e"
+    },
+    {
+      "path": "scripts/__pycache__/protected_collar_partition_no_go_audit.cpython-313.pyc",
+      "bytes": 3753,
+      "sha256": "c4239a397d7d044c163ed20ca2929cbebbeae2d04e5fd2efa9692a0adb4b0c2a"
+    },
+    {
+      "path": "scripts/__pycache__/quadratic_partition_ims_budget_audit.cpython-313.pyc",
+      "bytes": 11235,
+      "sha256": "06074483c55e88d5ef1c67903166ba3d037e6888b2b2b9c13b8ecbc136c1281e"
+    },
+    {
+      "path": "scripts/__pycache__/quartic_transfer_audit.cpython-313.pyc",
+      "bytes": 12907,
+      "sha256": "e4a0f5e221b4d03600482256e578b61ca8fee5df34f891c4b50896ab3a071eb2"
+    },
+    {
+      "path": "scripts/__pycache__/quartic_transfer_counterexample.cpython-313.pyc",
+      "bytes": 14507,
+      "sha256": "8b3287fc83ba46aaa5058b213829716b2446847bc22588627d12639238ff7537"
+    },
+    {
+      "path": "scripts/__pycache__/quartic_transfer_helical_audit.cpython-313.pyc",
+      "bytes": 8816,
+      "sha256": "c72e29c7637397beeab3e44e8e92dcf1ae72cb585316f7e8f004e7f54dfc9601"
+    },
+    {
+      "path": "scripts/__pycache__/quartic_transfer_helical_matrix_audit.cpython-313.pyc",
+      "bytes": 12126,
+      "sha256": "6e66a68b850206d58e1fb667bfe4bec88b6fe351decae9e7e663762674aa840f"
+    },
+    {
+      "path": "scripts/__pycache__/quartic_transfer_optimizer.cpython-313.pyc",
+      "bytes": 21225,
+      "sha256": "c36229bd0d1fe162717afc1e422a3edc091d002a43cead1a841030a2c7f49b84"
+    },
+    {
+      "path": "scripts/__pycache__/radial_barrier_cutoff_energy_pilot.cpython-313.pyc",
+      "bytes": 10961,
+      "sha256": "72da204c8e09a72c9565b34973db63e333835e1d721995430636cccfe9427f22"
+    },
+    {
+      "path": "scripts/__pycache__/radial_bellman_doob_perturbation_audit.cpython-313.pyc",
+      "bytes": 5666,
+      "sha256": "48e27c5cdcbb7fd6b32beac6e454b19880cd7b6dc2e574ea446618fcb5202c2e"
+    },
+    {
+      "path": "scripts/__pycache__/radial_collar_frequency_pilot.cpython-313.pyc",
+      "bytes": 9715,
+      "sha256": "8e343729951ff01cf80e96400589599069ce23b62831616fc70e038d793717b3"
+    },
+    {
+      "path": "scripts/__pycache__/radial_collar_trace_pilot.cpython-313.pyc",
+      "bytes": 14424,
+      "sha256": "20e1630be328462302c32ef6955bb6e97d0135a43d9c210b96a7c8173444b30a"
+    },
+    {
+      "path": "scripts/__pycache__/radial_cubic_partition_audit.cpython-313.pyc",
+      "bytes": 16220,
+      "sha256": "06aee9cf0033698296408a42a753814623d89ad837a2c878343e1687e6d3c7ab"
+    },
+    {
+      "path": "scripts/__pycache__/radial_h1_payoff_interval_certificate.cpython-313.pyc",
+      "bytes": 22123,
+      "sha256": "a68cd84086ca2237d299f4605414b7dfd506f38ba99d98400b67f97eedadb893"
+    },
+    {
+      "path": "scripts/__pycache__/radial_h1_payoff_supersolution_pilot.cpython-313.pyc",
+      "bytes": 17353,
+      "sha256": "a56bf7d52d743e87f658ed049cd1c428f94fb3e89a7c42b18e7bcfa43aa02e3e"
+    },
+    {
+      "path": "scripts/__pycache__/radial_payoff_bellman_pilot.cpython-313.pyc",
+      "bytes": 11032,
+      "sha256": "c25720f68d55c20618899974b7364ccd8d7655ef4bc53ba9841d53ef75eb0f2b"
+    },
+    {
+      "path": "scripts/__pycache__/radial_payoff_interval_certificate.cpython-313.pyc",
+      "bytes": 26875,
+      "sha256": "370a04231d639dce9264329f1c5e77d17ef07152f60572d9a7b41c35ba53673d"
+    },
+    {
+      "path": "scripts/__pycache__/radial_payoff_supersolution_audit.cpython-313.pyc",
+      "bytes": 8362,
+      "sha256": "fb036d8072c0604b757e4ed561b9545725522750dd594d00553c3b89d722da4c"
+    },
+    {
+      "path": "scripts/__pycache__/reversible_shell_rigidity_audit.cpython-313.pyc",
+      "bytes": 6094,
+      "sha256": "5a7a0a7f4f873cb0e9574d98763fec4a4d1c910d7c6037f2d344b55033c5edf3"
+    },
+    {
+      "path": "scripts/__pycache__/rotating_affine_visit_pilot.cpython-313.pyc",
+      "bytes": 20452,
+      "sha256": "31d10d008c5bc7e92c750760dd6c73f66779a69356cf1083b5ecb56d9d32e723"
+    },
+    {
+      "path": "scripts/__pycache__/second_normal_form_audit.cpython-313.pyc",
+      "bytes": 26217,
+      "sha256": "26623cc517a2a84fbc82d608ac2e1da274af11c8d5e0f46f8b59866ef9690079"
+    },
+    {
+      "path": "scripts/__pycache__/sectorial_poisson_transfer_audit.cpython-313.pyc",
+      "bytes": 8349,
+      "sha256": "3ffd37ab6285360d25d09b0939aae1a339254a509a6cf6749bc23410ddcef8b5"
+    },
+    {
+      "path": "scripts/__pycache__/shrinking_tube_renewal_audit.cpython-313.pyc",
+      "bytes": 6689,
+      "sha256": "f92958aa2c40ad64a4abc8b2f0bc154a70c8ae695c22310b29fe8ee5d46fa9f0"
+    },
+    {
+      "path": "scripts/__pycache__/split_entry_density_inheritance_audit.cpython-313.pyc",
+      "bytes": 8279,
+      "sha256": "005d46d324797b439bd527fcbed6a39e1179522855116421ffbace2798fbb15e"
+    },
+    {
+      "path": "scripts/__pycache__/stopping_time_moving_visit_audit.cpython-313.pyc",
+      "bytes": 12784,
+      "sha256": "05f672eba45dda04ba726ecbb1eb9ced784e70e96fe1a1c925ef39906e4f3159"
+    },
+    {
+      "path": "scripts/__pycache__/strain_boundary_multiplier_audit.cpython-313.pyc",
+      "bytes": 5331,
+      "sha256": "9ef4a2d2530e89566b2e604f803cc65be11c5f7fc395af62233bfc6c8a4c5cd3"
+    },
+    {
+      "path": "scripts/__pycache__/strain_eigenframe_geometry_audit.cpython-313.pyc",
+      "bytes": 11531,
+      "sha256": "1d740124c9bd164cab02de054995186f1826d75e648b40c484a490ab52a5771b"
+    },
+    {
+      "path": "scripts/__pycache__/strain_tube_reentry_audit.cpython-313.pyc",
+      "bytes": 5154,
+      "sha256": "6580a340ba4db062f58945d5ce287d6a0d4f4c12d7b136a9f4c79e843797ec62"
+    },
+    {
+      "path": "scripts/__pycache__/third_normal_form_audit.cpython-313.pyc",
+      "bytes": 38147,
+      "sha256": "c6c87632caff2a5fbc01f788520af905e84bd16bd27bc04bdb038d1db44b4701"
+    },
+    {
+      "path": "scripts/__pycache__/three_dimensional_leray_gate_audit.cpython-313.pyc",
+      "bytes": 14926,
+      "sha256": "b12ab6aaa5f5d57ae35c4d9b0ded9508548e72642b8f9623181865214b65f6b6"
+    },
+    {
+      "path": "scripts/__pycache__/two_norm_generation_cycle_audit.cpython-313.pyc",
+      "bytes": 7417,
+      "sha256": "fae60d9a5e0db3e523af7d5da6bc742122cf1a7ea180640470ef59f9e3c78e71"
+    },
+    {
+      "path": "scripts/__pycache__/two_point_vorticity_audit.cpython-313.pyc",
+      "bytes": 6874,
+      "sha256": "05118c417dba62602657b26ccff72d40b3d6b11ac03cbd2e5d78ef4040902b76"
+    },
+    {
+      "path": "scripts/__pycache__/verify_collision_identities.cpython-312.pyc",
+      "bytes": 5967,
+      "sha256": "b888a1e6d1a2bd349c2b17268f96d0c1c04f395f5a5ab1677139f951963ce223"
+    },
+    {
+      "path": "scripts/__pycache__/verify_collision_identities.cpython-313.pyc",
+      "bytes": 5861,
+      "sha256": "8f51acc803b18dc9927f4ba77b97326bce606034f70364c43dd7ef9713439bc9"
+    },
+    {
+      "path": "scripts/__pycache__/wall_migration_child_return_density_pilot.cpython-313.pyc",
+      "bytes": 19720,
+      "sha256": "641d0eaf0531e521b7af6cb0e9d46834edb2d26e0c55a75d0b81acc1b4bbe631"
+    },
+    {
+      "path": "scripts/__pycache__/wall_stopping_trace_composition_audit.cpython-313.pyc",
+      "bytes": 11670,
+      "sha256": "3009f035762e5fb84ce7ee9e0714786fe49bd03ea78daf2346026f9706c924a5"
+    },
+    {
+      "path": "scripts/__pycache__/weak_generated_transfer_audit.cpython-313.pyc",
+      "bytes": 17302,
+      "sha256": "358d61f3085b4b8a074c5e678a515d65556582702dc7f63085c35e45b7216170"
+    },
+    {
+      "path": "scripts/__pycache__/weighted_cylinder_buffer_condition_audit.cpython-313.pyc",
+      "bytes": 18882,
+      "sha256": "b1ffea6c806003eba836a79262728422c0146a20cf594d6d3b35b57c54ad3b56"
+    },
+    {
+      "path": "scripts/__pycache__/weighted_kernel_dynamic_l2_audit.cpython-313.pyc",
+      "bytes": 8152,
+      "sha256": "51dea03e6d769cc19921e92a77de6ece8af71e0dfab9d841f8e2a16e065b8acb"
+    },
+    {
+      "path": "scripts/adaptive_reynolds_envelope_audit.py",
+      "bytes": 7666,
+      "sha256": "20dd53f841325e13370e7b7d2a22014b0d955329aecfa9f86a14d91819b41fd6"
+    },
+    {
+      "path": "scripts/adaptive_scale_barrier_audit.py",
+      "bytes": 3491,
+      "sha256": "a4270c5eeee6ae6eb3a2c5abc2e51931732dee3ea560d3b4ee5d90404742354e"
+    },
+    {
+      "path": "scripts/affine_exterior_axial_compensation_audit.py",
+      "bytes": 7603,
+      "sha256": "dede5d391993934d4c7fb3e21cbaa3ca59e8e53e0a773f7ccef369946f61f4a7"
+    },
+    {
+      "path": "scripts/affine_taper_residual_no_go_audit.py",
+      "bytes": 9263,
+      "sha256": "49bef1bd6be686623c37a43136982d9cc5b7b222f1a97fa62d99050de565151a"
+    },
+    {
+      "path": "scripts/anisotropic_affine_exterior_tail_gate.py",
+      "bytes": 5142,
+      "sha256": "e6687e510b59854c877eeabc62744d3095b70ca2fa71e503a065da0f2da07b11"
+    },
+    {
+      "path": "scripts/anisotropic_poisson_transfer_pilot.py",
+      "bytes": 22609,
+      "sha256": "e84875f1ccc40d628c99a5c2428fdd24dafbbf44296827a209a42101bd0fc1ee"
+    },
+    {
+      "path": "scripts/averaged_entry_trace_gate.py",
+      "bytes": 8535,
+      "sha256": "59a7cb4be2632b32d03076d9a2d86291563d5f539015558bf7aa72c4e9196002"
+    },
+    {
+      "path": "scripts/axial_form_to_boundary_audit.py",
+      "bytes": 10892,
+      "sha256": "4ffbd85bc43dc929c4c8d0a32e7fab87ded3b508ed7a8f8b17bdfab955dbcaa5"
+    },
+    {
+      "path": "scripts/axial_killing_buffered_visit_audit.py",
+      "bytes": 9265,
+      "sha256": "2027560ebfef8970a965d9108c8a993638381534e95bd3406e4d49cad4e175b2"
+    },
+    {
+      "path": "scripts/backward_replica_audit.py",
+      "bytes": 1558,
+      "sha256": "0d6645f2008ec9c4acf6562798d19fe2ac828253d3b78ec40cc9c9054ead3184"
+    },
+    {
+      "path": "scripts/branch_resolved_entry_renewal_audit.py",
+      "bytes": 10710,
+      "sha256": "aef36391c99e1558657afdd4e99eef248a8e558851e50d3888c86ceb61238236"
+    },
+    {
+      "path": "scripts/branching_transfer_operator_audit.py",
+      "bytes": 9257,
+      "sha256": "b963782b3e4e2743714e2f11ab5d705d952582e27a5e5ed51352b569015fc32e"
+    },
+    {
+      "path": "scripts/buffered_visit_feynman_kac_audit.py",
+      "bytes": 8226,
+      "sha256": "ce7c04ee893be5f9b4dfa7a8e4bd4b5fbea72ed2d8af19c43714c1f5c9bbd02d"
+    },
+    {
+      "path": "scripts/coherence_abort_renewal_audit.py",
+      "bytes": 5940,
+      "sha256": "f40880ab4789cd1a53917f0de103e586aecb78f911dc61f7fc006a17208ea923"
+    },
+    {
+      "path": "scripts/collision_coherence_weight_audit.py",
+      "bytes": 4976,
+      "sha256": "8e53a25e17031c8cd6548f405b9b9e64c04b5665300489a622d3f7398a71fe68"
+    },
+    {
+      "path": "scripts/compact_affine_campanato_gate_audit.py",
+      "bytes": 12221,
+      "sha256": "deed881b1b6413c169585e2520fae8dca1da6c66057354b8de3ffc6fe213e4cb"
+    },
+    {
+      "path": "scripts/continuous_cubic_localization_no_go_audit.py",
+      "bytes": 5949,
+      "sha256": "f7126ee3c1963c98824dde7b6d63035f816a26f71f62e8ccff400235f3c63c80"
+    },
+    {
+      "path": "scripts/critical_collar_transfer_audit.py",
+      "bytes": 9831,
+      "sha256": "a7d075d137fcde5f75f99966ec4694349f4bf123c7c6ac031970b153de4b1594"
+    },
+    {
+      "path": "scripts/cubic_level_transfer_audit.py",
+      "bytes": 8354,
+      "sha256": "fa9cd6a46b3c6ac22592fe95fd8f70319a3b6cb6c728d0971a18bb9dd23f1e92"
+    },
+    {
+      "path": "scripts/cumulative_defect_audit.py",
+      "bytes": 3495,
+      "sha256": "f559288683ff6aa7869b25987c61b49298b2824bc850c7a30b3d520c2f46749d"
+    },
+    {
+      "path": "scripts/cylindrical_brownian_return_pilot.py",
+      "bytes": 14336,
+      "sha256": "2dbca68fdfa8123d089cd58e18f2375279bcc0ebb8cb54f2318e1fa533117bb4"
+    },
+    {
+      "path": "scripts/divergence_free_shell_taper_audit.py",
+      "bytes": 11067,
+      "sha256": "8d866b9c236a0ddf1f74a6cd6fe4cba4a8f080ad883d205a51987e6c9099efc8"
+    },
+    {
+      "path": "scripts/divergence_free_taper_transfer_pilot.py",
+      "bytes": 23913,
+      "sha256": "b25b39dffa3265ab7b8f71e44ebde375a6e73a44349129023dd209da6f15174f"
+    },
+    {
+      "path": "scripts/dyadic_gauge_transition_audit.py",
+      "bytes": 5220,
+      "sha256": "9d7f6268f0e2dd80cb3d844e68662b6ea81f2a32e0991affbff44016a2a8c033"
+    },
+    {
+      "path": "scripts/exterior_return_tail_gate.py",
+      "bytes": 13955,
+      "sha256": "16498d833205129339e8c438c0ca70b7ee131c2a32be09dbb2df1c0aab4480ef"
+    },
+    {
+      "path": "scripts/finite_cylinder_kato_gate_audit.py",
+      "bytes": 7594,
+      "sha256": "ab5209485c1cbebd8b4cf6a893ca8043afb952617f9029209578737f0bbb8a1d"
+    },
+    {
+      "path": "scripts/finite_cylinder_mode_audit.py",
+      "bytes": 10144,
+      "sha256": "79ac96114b4ad9d4ef1845176c4b18eaf4bdb6e4513439258d9ba08b8604b342"
+    },
+    {
+      "path": "scripts/finite_cylinder_perturbation_margin_audit.py",
+      "bytes": 15049,
+      "sha256": "3b3b35398fa1e44e4e6453c4f8e0bf376d14fffec38eacb78a79c76093b002db"
+    },
+    {
+      "path": "scripts/first_crossing_barrier_audit.py",
+      "bytes": 2718,
+      "sha256": "49344f6ba500728cbe2422d20c39ccd7f46729b054e814a551598c9072362ed0"
+    },
+    {
+      "path": "scripts/fourier_triad_collision_audit.py",
+      "bytes": 4418,
+      "sha256": "dfad9764b33d10ac64e444604fead5eb20d881cacca8dfa5e1988f9ad85dac2a"
+    },
+    {
+      "path": "scripts/galerkin_sweep_analysis.py",
+      "bytes": 7118,
+      "sha256": "5a9d4d825345b6e16da9fcf5876e74ca162885c848d2f0e1d7ba82f912590f54"
+    },
+    {
+      "path": "scripts/galerkin_trajectory_audit.py",
+      "bytes": 19480,
+      "sha256": "d5580104bc7515aaf1f78b3b8acea88c98e9d320970e2e60d9efab19ae1337ea"
+    },
+    {
+      "path": "scripts/gaussian_boundary_l2_transfer_audit.py",
+      "bytes": 10165,
+      "sha256": "c181eeb49eeee797df89abcd03a59c9174fed8847e96aa04dcc22f7d70ca0163"
+    },
+    {
+      "path": "scripts/general_affine_spectral_floor_audit.py",
+      "bytes": 6035,
+      "sha256": "909d05c531ffb568afe506680222e22ec95c4b05d6f6c5d2dc8c9ed0a96ad9eb"
+    },
+    {
+      "path": "scripts/generated_mode_transfer_audit.py",
+      "bytes": 10032,
+      "sha256": "7ddf8eb8775b7c3fa55aa8e1ca138f9ce1b4d59364977e4a32bcb460d5d635be"
+    },
+    {
+      "path": "scripts/geometric_wall_split_compatibility_audit.py",
+      "bytes": 5746,
+      "sha256": "3a7fe2556be7d3d28018fc054afa1f2cf94e9d6fae075d64e99c0358b1fe47d4"
+    },
+    {
+      "path": "scripts/geometry_triggered_migrating_child_pilot.py",
+      "bytes": 32262,
+      "sha256": "c157017592a04a285f9a6257c952150bae119509cc2bd2e5aec59b224a2d78e7"
+    },
+    {
+      "path": "scripts/gram_boundary_audit.py",
+      "bytes": 2408,
+      "sha256": "f78836d7cd6e24859e5877f1a16efae9f40d4b8f9ac12d24deee8d8cc1a6686a"
+    },
+    {
+      "path": "scripts/ground_state_visit_transform_audit.py",
+      "bytes": 7706,
+      "sha256": "ae2064d44018b45e570bf38f0f598615d6d61a61966e71f1eabcb2bc1d56de9f"
+    },
+    {
+      "path": "scripts/heat_scale_cubic_cancellation_audit.py",
+      "bytes": 7274,
+      "sha256": "733783785ffc0194bc50dfd72af658f3168c89cf8eddaa5b7929da72937b829a"
+    },
+    {
+      "path": "scripts/helical_trajectory_channel_audit.py",
+      "bytes": 13664,
+      "sha256": "4e71509639efd4b4b4f0ff7b9afe68bdcef6cd6b09be70406f066128f1329529"
+    },
+    {
+      "path": "scripts/interaction_marked_localization_audit.py",
+      "bytes": 11084,
+      "sha256": "f2b87cb851e1cf54dc71bcd0e4c25980f8f6b272e5816e56712aa61a65816de5"
+    },
+    {
+      "path": "scripts/interface_weight_no_go_audit.py",
+      "bytes": 6493,
+      "sha256": "76ef7f3ba1f4887a282368942d0f2a23ee02e2ac2acd6c075887b41092d69daf"
+    },
+    {
+      "path": "scripts/intrinsic_radius_cover_audit.py",
+      "bytes": 6822,
+      "sha256": "d6f20e75ad78a888382bd30bb1a70e34656f696619c38a3fe8267873cc00e048"
+    },
+    {
+      "path": "scripts/leray_conditional_occupation_no_go_audit.py",
+      "bytes": 5746,
+      "sha256": "811ef704b32d7dfe0ae4e8bd232634515eefe787bf6948ade9df4fff4d7da450"
+    },
+    {
+      "path": "scripts/leray_mollified_cell_frame_audit.py",
+      "bytes": 8542,
+      "sha256": "50b901d02a940d937bbf2e44717d2b4a454cad2e9856491ef8ebfde7acd11504"
+    },
+    {
+      "path": "scripts/localized_strain_tube_audit.py",
+      "bytes": 5286,
+      "sha256": "122421086d76b09ed3ac19932be172dc312171eddd2f1a629b659a31b0d432d1"
+    },
+    {
+      "path": "scripts/migrating_core_residual_budget_audit.py",
+      "bytes": 14398,
+      "sha256": "89f701e999a77cdbcfa9c5f5640b055f276ded81eac9f1f95f2e3357dcedb95c"
+    },
+    {
+      "path": "scripts/monotone_dyadic_cover_audit.py",
+      "bytes": 8449,
+      "sha256": "3716d0e3819215b5bd069831e2bbbe3be9074519c601df52a4b689ea19adc804"
+    },
+    {
+      "path": "scripts/moving_cubic_label_transport_audit.py",
+      "bytes": 18974,
+      "sha256": "360ed4569f6791ae6a7387abab215fea19da5dc81d0550a42eb2805a3dbe77f7"
+    },
+    {
+      "path": "scripts/moving_strain_tube_audit.py",
+      "bytes": 5048,
+      "sha256": "484d7ff177dc0662cea4e9eaa1963d8053d7b3ce3ecd2680a9a5d52c82dd8cdd"
+    },
+    {
+      "path": "scripts/navier_stokes_coherence_budget_audit.py",
+      "bytes": 9435,
+      "sha256": "181636b8a26f4c042c262d71c2eb90a658fecb54459397494c97c9c3fbf6db5b"
+    },
+    {
+      "path": "scripts/neutral_strip_axial_patch_branch_pilot.py",
+      "bytes": 13993,
+      "sha256": "88ee3ba4c50265cb77c4287c27e234be5e62998c147ad469e2763449fbb18acd"
+    },
+    {
+      "path": "scripts/neutral_strip_boundary_density_discretization_audit.py",
+      "bytes": 11559,
+      "sha256": "7ae9fc589dadc85a3ea70f22c0f9e7df45c2f5a59a6d5d5623d06e5fda179f54"
+    },
+    {
+      "path": "scripts/neutral_strip_branch_resolvent_pilot.py",
+      "bytes": 19128,
+      "sha256": "1dc30af02d96c6979322f03fb435fc525a5f0592a299059007fcaa0bff836f1c"
+    },
+    {
+      "path": "scripts/neutral_strip_common_circle_eigensystem_residual_audit.py",
+      "bytes": 20716,
+      "sha256": "359ea4ad2af820beace028ba4124e9deead6f4cc601e902f51f76f9733aa5710"
+    },
+    {
+      "path": "scripts/neutral_strip_common_circle_endpoint_roundoff_audit.py",
+      "bytes": 20835,
+      "sha256": "d01022c4d079ff3f1caf426e8d0494f446456cfba935aef2da1773295248e328"
+    },
+    {
+      "path": "scripts/neutral_strip_common_circle_source_time_slab_certificate.py",
+      "bytes": 23822,
+      "sha256": "dea11a888514944421ba0615d5620b19a5ba543c27d5cd2ea60b5b445ac85093"
+    },
+    {
+      "path": "scripts/neutral_strip_common_circle_sparse_inertia_audit.py",
+      "bytes": 45252,
+      "sha256": "fb1053518daccd78277eca0b32ff4d50dbdd3f1bdbaf86d7699b59d947535348"
+    },
+    {
+      "path": "scripts/neutral_strip_exact_polygon_indexed_spectrum_transfer.py",
+      "bytes": 11880,
+      "sha256": "b3e76b802740058bef05d3fcf4b3aad723829e505a297d3a1eb5042f36da8ba7"
+    },
+    {
+      "path": "scripts/neutral_strip_first_window_brownian_majorant_audit.py",
+      "bytes": 13594,
+      "sha256": "da54f087cb71b1019ef193b36e2fab5b6f7bf57798498be2b9b25d6806ca6cce"
+    },
+    {
+      "path": "scripts/neutral_strip_first_window_maximum_bridge_certificate.py",
+      "bytes": 15518,
+      "sha256": "c28b81ae3766b060f51b77dfa8744558559d0f93a7cc9cef7fa8074db5b07bf9"
+    },
+    {
+      "path": "scripts/neutral_strip_gaussian_assembly_reconstruction_crosscheck.py",
+      "bytes": 6431,
+      "sha256": "15b2413887edc53b5a39e814b08aef77eb9451d2c096d5505469d20ea45b7cac"
+    },
+    {
+      "path": "scripts/neutral_strip_gaussian_weighted_assembly_interval_audit.py",
+      "bytes": 51283,
+      "sha256": "4d789820b98c08084392395ed5be552ceb84d54ec910bbbf077655e148e1d0d2"
+    },
+    {
+      "path": "scripts/neutral_strip_parabolic_spectral_split_audit.py",
+      "bytes": 52790,
+      "sha256": "420b9947f2131b2fcf1aacbde3788c78bcc1920e7e4cdea0950374abd86bc792"
+    },
+    {
+      "path": "scripts/neutral_strip_return_density_pilot.py",
+      "bytes": 15474,
+      "sha256": "59bcb988f9084b7b93c587d0d736384c008380c2e661b605c50108861f7e191b"
+    },
+    {
+      "path": "scripts/neutral_strip_reversible_boundary_fem_pilot.py",
+      "bytes": 24706,
+      "sha256": "f0c745972dd1dc7d217da3d95566ef3cc4ed81d125985809b6c0f6485c8bd543"
+    },
+    {
+      "path": "scripts/neutral_strip_reversible_fem_consistency_gate.py",
+      "bytes": 24738,
+      "sha256": "ea126c982dfc7c8a5cc45658272b21eca305a89d9ad24c11a6816365b1ab16f2"
+    },
+    {
+      "path": "scripts/neutral_strip_reversible_finite_time_certificate.py",
+      "bytes": 29505,
+      "sha256": "5596ef15591cde23e4aeb21e0ee2a5ff6139421c9e7560443b994e03759960fa"
+    },
+    {
+      "path": "scripts/neutral_strip_reversible_spectral_tail_width_audit.py",
+      "bytes": 15987,
+      "sha256": "9e7f4baf60b89525abe4e6df8071535e6d91bfe6d7311de615f460cae87abc8b"
+    },
+    {
+      "path": "scripts/neutral_strip_same_scale_width_sweep.py",
+      "bytes": 8303,
+      "sha256": "dfe69aebf702a0122fef16cd4bd6ecba013f3ab206ffabb877b1302a4c55dc35"
+    },
+    {
+      "path": "scripts/neutral_strip_sparse_inertia_precision_crosscheck.py",
+      "bytes": 10407,
+      "sha256": "5317e42a8d31a367ff65a4b77f8c8b1ca4409571ef7debc5787740551a5afab9"
+    },
+    {
+      "path": "scripts/neutral_strip_storage_gate.py",
+      "bytes": 5368,
+      "sha256": "ad86254628bd21829396641735c761e10e6ecd65bdbf7d652352555b572bd123"
+    },
+    {
+      "path": "scripts/neutral_strip_transient_conormal_low_block_gate.py",
+      "bytes": 32468,
+      "sha256": "5c90f9855b1f7f678abc97f955346845fceb1079c5b3833dfb91cdf84cf104eb"
+    },
+    {
+      "path": "scripts/neutral_strip_x_exit_correction_audit.py",
+      "bytes": 12211,
+      "sha256": "e7682347487819ee01dfb20564d1b16ae0d82b894d11f172d83624623764d2f1"
+    },
+    {
+      "path": "scripts/newtonian_boundary_audit.py",
+      "bytes": 1787,
+      "sha256": "2f46bdd84f3a160226e298823538570765a351774ba3d7d45cf6ba098ca674cc"
+    },
+    {
+      "path": "scripts/nonautonomous_full_affine_form_audit.py",
+      "bytes": 6516,
+      "sha256": "af0dc57ce35cd79726a71122c0ccf195336a1ea2478328cda726075a2df289d6"
+    },
+    {
+      "path": "scripts/nonautonomous_scalar_gain_gate_audit.py",
+      "bytes": 8607,
+      "sha256": "1821a8cef93c7ccb6a2e658a60bb1eb25db5e06426f286b4337c4c866212b25c"
+    },
+    {
+      "path": "scripts/normal_form_resummation_audit.py",
+      "bytes": 5367,
+      "sha256": "6ff6fcca7c280c289437e0da828796b6ea37f9f711a08dbffa82de3be8114647"
+    },
+    {
+      "path": "scripts/ns_trajectory_defect_audit.py",
+      "bytes": 10557,
+      "sha256": "1a9e3b3a623a703b70b9ac1a032c88d7e8324646de4eea903051ad57794bf18e"
+    },
+    {
+      "path": "scripts/off_diagonal_form_transfer_audit.py",
+      "bytes": 8944,
+      "sha256": "289f37f0bcb215a69e1c4cfc8d78cbb5ca2d04afbc773a1b3746b63ae0ff78cb"
+    },
+    {
+      "path": "scripts/poisson_cutoff_form_transfer_audit.py",
+      "bytes": 14720,
+      "sha256": "b5867fe11c8a8118bb2bb3ea245519980b444b51e1c074f0ec1cdf5febe0a22f"
+    },
+    {
+      "path": "scripts/pressure_collision_kernel_audit.py",
+      "bytes": 7346,
+      "sha256": "f4172410ff1fb69ce5b6f531babe1886ec2c3b121b432185056fb8cad1438629"
+    },
+    {
+      "path": "scripts/pressure_frame_pairing_audit.py",
+      "bytes": 16498,
+      "sha256": "b4e34f34145a5b0db899010ece72b32d3988a19e1f41e225683bddc08c0ce997"
+    },
+    {
+      "path": "scripts/pressure_partition_flux_audit.py",
+      "bytes": 12243,
+      "sha256": "37613e4b7ca1fe626374f6ad3cd0be6d3ecf66bd6052009bd0b3ed9da2ab0bd2"
+    },
+    {
+      "path": "scripts/pressure_shell_commutator_audit.py",
+      "bytes": 8246,
+      "sha256": "e1f916c2ab357c4afb2dc0c8d6d34af688fe7eb2683fc2999db1a8893b5c4f02"
+    },
+    {
+      "path": "scripts/protected_collar_partition_no_go_audit.py",
+      "bytes": 3571,
+      "sha256": "3c0fd57a05c6a4c89648e68f3954e9a441a092c6aae042757e24fdfa29329cfb"
+    },
+    {
+      "path": "scripts/quadratic_partition_ims_budget_audit.py",
+      "bytes": 9134,
+      "sha256": "c6a8d7805083b9c3ff9f1faac9367612a3f69cce555d99103a944688460a25ae"
+    },
+    {
+      "path": "scripts/quartic_transfer_audit.py",
+      "bytes": 8398,
+      "sha256": "560da5b6ce488d6f57f50245d6f6d343ea871a5a1bab980c7f8fe8e506b209ef"
+    },
+    {
+      "path": "scripts/quartic_transfer_counterexample.py",
+      "bytes": 9306,
+      "sha256": "68319aa05b4a96fd620b766585da35a1bbd3cb0892a53ef67c8610ccb3e4213d"
+    },
+    {
+      "path": "scripts/quartic_transfer_helical_audit.py",
+      "bytes": 5325,
+      "sha256": "32da79e62252b6436383b0d55748783780e52be6bc5d7475426fbbfde80c8f9f"
+    },
+    {
+      "path": "scripts/quartic_transfer_helical_matrix_audit.py",
+      "bytes": 7739,
+      "sha256": "54a89ed06ad110503317d5ea4068fa57d82e028e97031043d514ef00ef633b3a"
+    },
+    {
+      "path": "scripts/quartic_transfer_optimizer.py",
+      "bytes": 14779,
+      "sha256": "2c1fbbd719f5afb78793014f73d40d6c1add892ca1298bd7305d49bdbbfce361"
+    },
+    {
+      "path": "scripts/radial_barrier_cutoff_energy_pilot.py",
+      "bytes": 9101,
+      "sha256": "3cef6eb8f89907b86ff19f864a60bc5695d9c8e1f93d7fbfdc9ac8596fa2575e"
+    },
+    {
+      "path": "scripts/radial_bellman_doob_perturbation_audit.py",
+      "bytes": 5841,
+      "sha256": "b46dcbe70879ca20211f49699ee9f660755f0e395a5c99d67aa1cddb71010c26"
+    },
+    {
+      "path": "scripts/radial_collar_frequency_pilot.py",
+      "bytes": 8572,
+      "sha256": "a68bcc19ed79bcec8f3d3a628d9ab1657e05f2123503f8c8bc7b600e9dc3b94d"
+    },
+    {
+      "path": "scripts/radial_collar_trace_pilot.py",
+      "bytes": 12933,
+      "sha256": "af822c424547bbf29bd177f12f956d7f2ad91db249cd32274d11807fa4af8870"
+    },
+    {
+      "path": "scripts/radial_cubic_partition_audit.py",
+      "bytes": 13028,
+      "sha256": "957c23b4dff7fb81e3ca1e6da78acc5844fc7fd58ae48ed598c942ddb18215a9"
+    },
+    {
+      "path": "scripts/radial_h1_payoff_interval_certificate.py",
+      "bytes": 23020,
+      "sha256": "b305bc04a8017dedabf769570912c373ce548fb840e2f72f3cffc8ac22c303ff"
+    },
+    {
+      "path": "scripts/radial_h1_payoff_supersolution_pilot.py",
+      "bytes": 15468,
+      "sha256": "8f46e0daf6446c4044768d1abcadaaa09522ba4cd9d70b02f1ffcef2b0e9b56f"
+    },
+    {
+      "path": "scripts/radial_payoff_bellman_pilot.py",
+      "bytes": 10100,
+      "sha256": "501b91fe7dfe33834ab4a678c82a8ad9cb1c356a23f9eb4eb4f6ccfa16cd209b"
+    },
+    {
+      "path": "scripts/radial_payoff_interval_certificate.py",
+      "bytes": 31124,
+      "sha256": "6ee2eb66a4cff002068a311fcb7e8554d24f74d9e5f3f108156d406bd936e8b2"
+    },
+    {
+      "path": "scripts/radial_payoff_supersolution_audit.py",
+      "bytes": 9187,
+      "sha256": "66b2924a630313026c6b9d7e20b96e6328558b2d3fd4372526f3ef3a6e361818"
+    },
+    {
+      "path": "scripts/reversible_shell_rigidity_audit.py",
+      "bytes": 4913,
+      "sha256": "bbd36c97506cf885559f9b4b4d68b6560bf8cb04a232ab9ab883c5692ed012d9"
+    },
+    {
+      "path": "scripts/rotating_affine_visit_pilot.py",
+      "bytes": 16434,
+      "sha256": "e0fe6a84fb106192c5449e801cb6c370534155d90f2e83e312f4e2474599c120"
+    },
+    {
+      "path": "scripts/second_normal_form_audit.py",
+      "bytes": 20497,
+      "sha256": "758b5d42e004454c80d3c19950bdf6428e157d38bec90c56f50a1b6aa6dd02ec"
+    },
+    {
+      "path": "scripts/sectorial_poisson_transfer_audit.py",
+      "bytes": 8142,
+      "sha256": "d4ae3f3a96a495395f1ca1c023e03a4e308e51a80a5632c959918735ed369c87"
+    },
+    {
+      "path": "scripts/shrinking_tube_renewal_audit.py",
+      "bytes": 5782,
+      "sha256": "cff26aa0ba9fd66c3c3eb5baa855d2a941d43228eda185e2579d0fa3b9b21e74"
+    },
+    {
+      "path": "scripts/split_entry_density_inheritance_audit.py",
+      "bytes": 7892,
+      "sha256": "db8a2640c4f96ecd9ab56f83529e5eea59e45adefdfd492b5de7cc5261cd18e2"
+    },
+    {
+      "path": "scripts/stopping_time_moving_visit_audit.py",
+      "bytes": 10663,
+      "sha256": "62d541846984fe0882c725f41127ab3b6185a8241f4d27a34f8ca9f21651293e"
+    },
+    {
+      "path": "scripts/strain_boundary_multiplier_audit.py",
+      "bytes": 3378,
+      "sha256": "4239eef9b824946317623bff7f568a1ebe5a59c581d4441fae18d090a32272c6"
+    },
+    {
+      "path": "scripts/strain_eigenframe_geometry_audit.py",
+      "bytes": 9122,
+      "sha256": "37b5adbb3f80ef7339f773489c40a4f9fc116b85684737f6a92b9c520aa98a57"
+    },
+    {
+      "path": "scripts/strain_tube_reentry_audit.py",
+      "bytes": 3866,
+      "sha256": "d4ba17b64dafbf56811a31fb110d73d23410de26948fd3fce339a7f30355b6d6"
+    },
+    {
+      "path": "scripts/third_normal_form_audit.py",
+      "bytes": 23424,
+      "sha256": "1d150f6ed79e186a38ca2d1a7a9757827d680546532d31a127b1f076db583df0"
+    },
+    {
+      "path": "scripts/three_dimensional_leray_gate_audit.py",
+      "bytes": 10611,
+      "sha256": "ea49b657d620c20bbb9cb921e749207dc30280b4e11f5962fe083c53e227ea54"
+    },
+    {
+      "path": "scripts/two_norm_generation_cycle_audit.py",
+      "bytes": 6386,
+      "sha256": "4f1420c6d0e077dda5eb5f0ca8ad163c48a8985761b5710663e2d7e6d617f33b"
+    },
+    {
+      "path": "scripts/two_point_vorticity_audit.py",
+      "bytes": 3835,
+      "sha256": "52b626828f5ce8647003bfee30d1151181cd630cee2145f35328926b2e7f4f4e"
+    },
+    {
+      "path": "scripts/verify_collision_identities.py",
+      "bytes": 2657,
+      "sha256": "72c018318454d7dad495c705a0a79661f978084f194aa6021043f1627686a79a"
+    },
+    {
+      "path": "scripts/wall_migration_child_return_density_pilot.py",
+      "bytes": 17558,
+      "sha256": "67c13b01d2b7d02b556f4ebbd93e1cd8c908045fc617d0095e2da338595cfd80"
+    },
+    {
+      "path": "scripts/wall_stopping_trace_composition_audit.py",
+      "bytes": 11412,
+      "sha256": "d6e9b8c5328c211e7940a27edcc85c0a05b83653f55e6cdc785b1960040e8866"
+    },
+    {
+      "path": "scripts/weak_generated_transfer_audit.py",
+      "bytes": 12293,
+      "sha256": "ceedc85384fe0e2c7cf2e5612bed928b47d6e122e2bb13f7f86528374bd67a3f"
+    },
+    {
+      "path": "scripts/weighted_cylinder_buffer_condition_audit.py",
+      "bytes": 16125,
+      "sha256": "4f86ddd80a8143b9341124f129695c4cb95a8045d6042cf99c527d51a70e954d"
+    },
+    {
+      "path": "scripts/weighted_kernel_dynamic_l2_audit.py",
+      "bytes": 6931,
+      "sha256": "d5b7734246266acb75e6d7395f38dfb0bd5452074ac75a950518b362972f1608"
+    },
+    {
+      "path": "tests/__pycache__/test_collision_identities.cpython-312.pyc",
+      "bytes": 188013,
+      "sha256": "dc0ef81be292582155dbc61d68bb61983cac57dc4a4d0e1528543d89a8bf62be"
+    },
+    {
+      "path": "tests/__pycache__/test_collision_identities.cpython-313.pyc",
+      "bytes": 232045,
+      "sha256": "fc62203d1e536313e2030dcfd6232f9cecb80f7f6d010b43ccf83ab157185e6d"
+    },
+    {
+      "path": "tests/test_collision_identities.py",
+      "bytes": 189905,
+      "sha256": "768a09b37396df80fcb3c38a9643cb068d2f3f115f6dd61d87798b31f94c56b1"
+    }
+  ]
+}

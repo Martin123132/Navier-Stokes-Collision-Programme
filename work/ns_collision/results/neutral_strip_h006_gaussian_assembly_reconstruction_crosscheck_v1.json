@@ -1,0 +1,48 @@
+{
+  "all_expected_per_matrix_fingerprints_match": true,
+  "all_four_matrices_bitwise_equal": true,
+  "all_reconstruction_cross_checks_pass": true,
+  "below_normal_priority_set": true,
+  "checkpoint_next_triangle": 30954,
+  "checkpoint_path": "work\\ns_collision\\results\\neutral_strip_h006_gaussian_assembly_interval_checkpoint_v1.npz",
+  "elapsed_seconds": 86.92080160003388,
+  "mass_stiffness_pair_fingerprint_sha256": "c80fdc5aa494fe1118aec4c38045df76151b2ccde3fded18f4af1161de7efd48",
+  "matrix_rows": {
+    "boundary": {
+      "bitwise_equal": true,
+      "checkpoint_reconstruction_fingerprint_sha256": "4102a74e02d736aec2b999230b454cd33172480059e82045a487521e1b50966b",
+      "csr_structure_matches": true,
+      "data_bitwise_equal": true,
+      "maximum_absolute_difference": 0.0,
+      "original_q12_fingerprint_sha256": "4102a74e02d736aec2b999230b454cd33172480059e82045a487521e1b50966b"
+    },
+    "boundary_mass": {
+      "bitwise_equal": true,
+      "checkpoint_reconstruction_fingerprint_sha256": "a2424aea92826c8408abd5188216643a260d09ebb6f9fb33c06d83e271c2c151",
+      "csr_structure_matches": true,
+      "data_bitwise_equal": true,
+      "maximum_absolute_difference": 0.0,
+      "original_q12_fingerprint_sha256": "a2424aea92826c8408abd5188216643a260d09ebb6f9fb33c06d83e271c2c151"
+    },
+    "mass": {
+      "bitwise_equal": true,
+      "checkpoint_reconstruction_fingerprint_sha256": "6962499025001d6b768ac7aaa62c38173551ed94248ba0b27a2fffe140f269c8",
+      "csr_structure_matches": true,
+      "data_bitwise_equal": true,
+      "maximum_absolute_difference": 0.0,
+      "original_q12_fingerprint_sha256": "6962499025001d6b768ac7aaa62c38173551ed94248ba0b27a2fffe140f269c8"
+    },
+    "stiffness": {
+      "bitwise_equal": true,
+      "checkpoint_reconstruction_fingerprint_sha256": "de55b4a7910cec423f36b8760fc164e6154c7271227f739c84b0516d0fdf268f",
+      "csr_structure_matches": true,
+      "data_bitwise_equal": true,
+      "maximum_absolute_difference": 0.0,
+      "original_q12_fingerprint_sha256": "de55b4a7910cec423f36b8760fc164e6154c7271227f739c84b0516d0fdf268f"
+    }
+  },
+  "model": "independent original-q12 versus interval-checkpoint matrix reconstruction",
+  "quadrature_order": 12,
+  "spacing": 0.06,
+  "triangle_count": 30954
+}

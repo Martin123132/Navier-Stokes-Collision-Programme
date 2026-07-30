@@ -1,0 +1,168 @@
+{
+  "artifacts": {
+    "interaction2048_p50_audit": "work/ns_collision/results/neutral_strip_h006_hypercircle_directed_ldl_interaction2048_audit_v1.json",
+    "interaction2048_p50_audit_sha256": "1a625588c7eaa564a2e183a2f41da2c473a36b8665357613ad6ea332d6d6190d",
+    "interaction2048_p80_audit": "work/ns_collision/results/neutral_strip_h006_hypercircle_directed_ldl_interaction2048_p80_audit_v1.json",
+    "interaction2048_p80_audit_sha256": "030cb126fc30fc4a9489711650c2fddfed57283710d81196e700d40fd7e7da26",
+    "interaction2048_precision_crosscheck": "work/ns_collision/results/neutral_strip_h006_hypercircle_directed_ldl_interaction2048_precision_crosscheck_v1.json",
+    "interaction2048_precision_crosscheck_sha256": "288fc32e80fcf00f272d9509bc1131f38c7c67be7e57653861ea933f93b7f7b4"
+  },
+  "certification_flags": {
+    "any_new_pivot_sign_certified": false,
+    "continuum_spectrum_below_60_captured": false,
+    "full_123816_pivot_inertia_certified": false,
+    "symbolic_profile_validated": true
+  },
+  "contract": {
+    "checkpoints": [
+      2048,
+      2304,
+      2560,
+      3072,
+      4096,
+      6144,
+      8192
+    ],
+    "factor_pattern_sha256": "dc941205f68286d3f318a58670fd0ddf14bf63afdaf48202dcc9e0291238103b",
+    "maximum_pivots": 8192,
+    "order_sha256": "5f8adf72fa6fe8e3ea62d716c6a2f34df7252fa0a45bd5cafb55fbf7001d5f13",
+    "raw_permutation_sha256": "fc613374bffd7bba84293e3c302e56d0ef945a0530443b04dde5ba079adb36db",
+    "scale_sha256": "bef73a763a5ee24b85651a3c761b940b0fde2f8e04294a7d7e9b0c085c7ca9c2",
+    "script_sha256": "185d2595cede3b2e5ad4c249063f1a5ce84300a965a8088c49fa1ba3fd433bbb"
+  },
+  "first_block_pivots_within_scan": {
+    "edge_metric": 1206,
+    "source_triangle": 0,
+    "triangle_constraint": 1738
+  },
+  "kind": "hypercircle-directed-ldl-symbolic-boundary-scan",
+  "next_complexity_transition": {
+    "arithmetic_extension_launched": false,
+    "first_descendant_count_4_pivot": 2274,
+    "first_diagonal_term_count_4_pivot": 2270,
+    "first_off_diagonal_common_term_count_2_pivot": 2270,
+    "recommended_next_bounded_pivot_count": 2304
+  },
+  "profile": {
+    "arithmetic_signs_certified": false,
+    "checkpoints": {
+      "2048": {
+        "block_counts": {
+          "edge_metric": 532,
+          "source_triangle": 1206,
+          "state": 0,
+          "triangle_constraint": 310
+        },
+        "maximum_descendant_count": 3,
+        "maximum_diagonal_term_count": 2,
+        "maximum_off_diagonal_common_term_count": 1,
+        "symbolic_lower_entry_count": 5612
+      },
+      "2304": {
+        "block_counts": {
+          "edge_metric": 536,
+          "source_triangle": 1236,
+          "state": 0,
+          "triangle_constraint": 532
+        },
+        "maximum_descendant_count": 4,
+        "maximum_diagonal_term_count": 4,
+        "maximum_off_diagonal_common_term_count": 2,
+        "symbolic_lower_entry_count": 6410
+      },
+      "2560": {
+        "block_counts": {
+          "edge_metric": 536,
+          "source_triangle": 1492,
+          "state": 0,
+          "triangle_constraint": 532
+        },
+        "maximum_descendant_count": 4,
+        "maximum_diagonal_term_count": 4,
+        "maximum_off_diagonal_common_term_count": 2,
+        "symbolic_lower_entry_count": 7434
+      },
+      "3072": {
+        "block_counts": {
+          "edge_metric": 536,
+          "source_triangle": 2004,
+          "state": 0,
+          "triangle_constraint": 532
+        },
+        "maximum_descendant_count": 4,
+        "maximum_diagonal_term_count": 4,
+        "maximum_off_diagonal_common_term_count": 2,
+        "symbolic_lower_entry_count": 9482
+      },
+      "4096": {
+        "block_counts": {
+          "edge_metric": 536,
+          "source_triangle": 3028,
+          "state": 0,
+          "triangle_constraint": 532
+        },
+        "maximum_descendant_count": 4,
+        "maximum_diagonal_term_count": 4,
+        "maximum_off_diagonal_common_term_count": 2,
+        "symbolic_lower_entry_count": 13578
+      },
+      "6144": {
+        "block_counts": {
+          "edge_metric": 536,
+          "source_triangle": 5076,
+          "state": 0,
+          "triangle_constraint": 532
+        },
+        "maximum_descendant_count": 4,
+        "maximum_diagonal_term_count": 4,
+        "maximum_off_diagonal_common_term_count": 2,
+        "symbolic_lower_entry_count": 21770
+      },
+      "8192": {
+        "block_counts": {
+          "edge_metric": 536,
+          "source_triangle": 7124,
+          "state": 0,
+          "triangle_constraint": 532
+        },
+        "maximum_descendant_count": 4,
+        "maximum_diagonal_term_count": 4,
+        "maximum_off_diagonal_common_term_count": 2,
+        "symbolic_lower_entry_count": 29962
+      }
+    },
+    "first_pivot_by_descendant_count": {
+      "2": 0,
+      "3": 532,
+      "4": 2274
+    },
+    "first_pivot_by_diagonal_term_count": {
+      "0": 0,
+      "2": 1738,
+      "4": 2270
+    },
+    "first_pivot_by_off_diagonal_common_term_count": {
+      "0": 0,
+      "1": 1738,
+      "2": 2270
+    },
+    "maximum_descendant_count": 4,
+    "maximum_diagonal_term_count": 4,
+    "maximum_off_diagonal_common_term_count": 2,
+    "maximum_pivots": 8192,
+    "symbolic_lower_entry_count": 29962
+  },
+  "runtime": {
+    "baseline_cpu_mean_percent": 42.38,
+    "baseline_cpu_samples_percent": [
+      42.7,
+      32.3,
+      28.0,
+      51.6,
+      57.3
+    ],
+    "elapsed_seconds": 5.691198999993503
+  },
+  "scope": "Exact potential-fill scan under the frozen input graph and elimination order. It performs no interval arithmetic and certifies no pivot sign or inertia.",
+  "status": "pass"
+}

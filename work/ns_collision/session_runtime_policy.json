@@ -1,0 +1,62 @@
+{
+  "kind": "navier_stokes_workspace_session_runtime_policy",
+  "date": "2026-07-23",
+  "hard_reply_limit_seconds": 14400,
+  "no_new_long_stage_after_seconds": 11700,
+  "checkpoint_mode_after_seconds": 12600,
+  "report_reserve_seconds": 1800,
+  "atomic_finish_grace_seconds": 900,
+  "long_computation_requirements": {
+    "deterministic_resume": true,
+    "flush_before_exit": true,
+    "cancel_queued_work_at_checkpoint": true,
+    "wait_for_in_flight_atomic_units": true,
+    "validate_checkpoint_before_report": true
+  },
+  "process_policy": {
+    "leave_codex_processes_running_after_reply": false,
+    "never_touch_unrelated_user_processes": true,
+    "current_resource_mode": "day",
+    "resource_mode_switches": {
+      "going_to_bed": "night",
+      "back_for_today": "day"
+    },
+    "resource_modes": {
+      "day": {
+        "default_active_compute_workers": 1,
+        "hard_max_active_compute_workers": 2,
+        "two_worker_max_baseline_cpu_percent": 40,
+        "one_worker_max_baseline_cpu_percent": 60,
+        "sustained_total_cpu_park_percent": 75
+      },
+      "night": {
+        "default_active_compute_workers": 4,
+        "hard_max_active_compute_workers": 4,
+        "target_total_cpu_percent": 75,
+        "estimated_cpu_percent_per_active_worker": 12.5,
+        "adjust_workers_downward_for_baseline": true,
+        "sustained_total_cpu_park_percent": 85
+      }
+    },
+    "controller_must_remain_effectively_idle": true,
+    "preferred_priority_class": "below_normal",
+    "prelaunch_cpu_sample_seconds": 5,
+    "sustained_total_cpu_samples": 2,
+    "park_after_current_atomic_unit_on_cpu_limit": true
+  },
+  "goal_policy": {
+    "one_goal_turn_equals_one_reply_budget": true,
+    "later_goal_wake_starts_fresh_budget": true,
+    "paused_goal_allows_background_work": false
+  },
+  "bookmark": "work/ns_collision/results/session_bookmark.json",
+  "project_isolation": {
+    "workspace_root": ".",
+    "research_root": "work/ns_collision",
+    "preserved_source_root": "../l/work/ns_collision",
+    "rh_workspace_root": "../l",
+    "runtime_dependencies_on_rh": [],
+    "write_rh_bookmark": false,
+    "move_or_delete_preserved_source": false
+  }
+}

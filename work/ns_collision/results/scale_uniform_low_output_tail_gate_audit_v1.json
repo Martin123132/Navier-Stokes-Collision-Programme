@@ -1,0 +1,565 @@
+{
+  "Galerkin_passage": {
+    "all_checks_pass": true,
+    "compactness_mechanism": "The fixed-mode derivative bound gives finite-dimensional Arzela-Ascoli compactness. Uniform H^(-s) tails then give a diagonal Cauchy argument for the low-output stress series.",
+    "endpoint": "At s=1 the forced dyadic series is not summable from the certified coefficient envelope alone.",
+    "fixed_mode_coefficients_uniformly_equi_Lipschitz": true,
+    "fixed_mode_nonlinearity_bound": "|Nhat(k)|<=|k|E_* follows from uhat(a) dot (k-a)=uhat(a) dot k and Fourier Cauchy-Schwarz.",
+    "rates": [
+      {
+        "epsilon": 0.1,
+        "forced_tail_rate": "K^(-0.10)",
+        "initial_tail_rate": "K^(-0.60)",
+        "sobolev_exponent": 1.1
+      },
+      {
+        "epsilon": 0.25,
+        "forced_tail_rate": "K^(-0.25)",
+        "initial_tail_rate": "K^(-0.75)",
+        "sobolev_exponent": 1.25
+      },
+      {
+        "epsilon": 0.49,
+        "forced_tail_rate": "K^(-0.49)",
+        "initial_tail_rate": "K^(-0.99)",
+        "sobolev_exponent": 1.49
+      },
+      {
+        "epsilon": 0.5,
+        "forced_tail_rate": "sqrt(log_2(2K)/K)",
+        "initial_tail_rate": "sqrt(log_2(2K))/K",
+        "sobolev_exponent": 1.5
+      },
+      {
+        "epsilon": 0.75,
+        "forced_tail_rate": "K^(-1/2)",
+        "initial_tail_rate": "K^(-1)",
+        "sobolev_exponent": 1.75
+      }
+    ],
+    "theorem": "For every s>1, the complete low-output high-high stress tail tends to zero in L2_t H_x^(-s), uniformly over smooth Galerkin truncations with common Leray bounds."
+  },
+  "all_positive_checks_pass": true,
+  "certification_flags": {
+    "H_minus_1_endpoint_falsified_for_actual_Navier_Stokes": false,
+    "H_minus_1_endpoint_proved": false,
+    "H_minus_1_not_derivable_from_scalar_envelope_alone": true,
+    "H_minus_one_plus_epsilon_Galerkin_passage_proved": true,
+    "H_minus_s_tail_vanishes_for_every_s_gt_1": true,
+    "Navier_Stokes_global_regularity_proved": false,
+    "complete_suitable_weak_solution_passage_proved": false,
+    "fixed_mode_Galerkin_compactness_derived": true,
+    "three_dimensional_output_multiplicity_paid": true,
+    "uniform_low_output_channel_constant_extracted": true
+  },
+  "dyadic_tail_summation": {
+    "H_minus_1_finite_cutoff_rows": [
+      {
+        "extra_high_output_shells": 1,
+        "forced_H_minus_1_square_series": 2.99609375,
+        "increment_over_low_part": 1.0
+      },
+      {
+        "extra_high_output_shells": 2,
+        "forced_H_minus_1_square_series": 3.99609375,
+        "increment_over_low_part": 2.0
+      },
+      {
+        "extra_high_output_shells": 4,
+        "forced_H_minus_1_square_series": 5.99609375,
+        "increment_over_low_part": 4.0
+      },
+      {
+        "extra_high_output_shells": 8,
+        "forced_H_minus_1_square_series": 9.99609375,
+        "increment_over_low_part": 8.0
+      },
+      {
+        "extra_high_output_shells": 16,
+        "forced_H_minus_1_square_series": 17.99609375,
+        "increment_over_low_part": 16.0
+      },
+      {
+        "extra_high_output_shells": 32,
+        "forced_H_minus_1_square_series": 33.99609375,
+        "increment_over_low_part": 32.0
+      }
+    ],
+    "H_minus_1_high_output_increment_per_shell": 1.0,
+    "H_minus_1_infinite_series_diverges": true,
+    "all_checks_pass": true,
+    "coefficient_tail": "For J_q=max(K,8<q>), ||Rhat_K(q)||_L2t<=C[A/J_q+B/sqrt(J_q)].",
+    "forced_square_series": "F_s(K)=sum_Q Q^(3-2s)/max(K,Q)",
+    "initial_square_series": "I_s(K)=sum_Q Q^(3-2s)/max(K,Q)^2",
+    "maximum_forced_ratio": 9.074178267449078,
+    "maximum_initial_ratio": 3.9517012013231025,
+    "monotone_convergence_for_every_s_gt_1": true,
+    "piecewise_forced_rates": {
+      "1<s<3/2": "K^(2-2s)",
+      "s=3/2": "log_2(2K)/K",
+      "s>3/2": "K^(-1)"
+    },
+    "piecewise_initial_rates": {
+      "1<s<3/2": "K^(1-2s)",
+      "s=3/2": "log_2(2K)/K^2",
+      "s>3/2": "K^(-2)"
+    },
+    "rows": [
+      {
+        "cutoff": 16,
+        "forced_ratio": 8.927533505290125,
+        "forced_reference": 0.5743491774985172,
+        "forced_square_series": 5.127521525853838,
+        "initial_ratio": 2.97328381484049,
+        "initial_reference": 0.035896823593657326,
+        "initial_square_series": 0.10673144459520556,
+        "sobolev_exponent": 1.1
+      },
+      {
+        "cutoff": 256,
+        "forced_ratio": 9.058389175665472,
+        "forced_reference": 0.3298769776932232,
+        "forced_square_series": 2.9881540440375334,
+        "initial_ratio": 3.104139485215837,
+        "initial_reference": 0.0012885819441141532,
+        "initial_square_series": 0.00399993809266093,
+        "sobolev_exponent": 1.1
+      },
+      {
+        "cutoff": 4096,
+        "forced_ratio": 9.07262873535994,
+        "forced_reference": 0.18946457081379947,
+        "forced_square_series": 1.7189417094979154,
+        "initial_ratio": 3.1183790449103053,
+        "initial_reference": 4.625599873383776e-05,
+        "initial_square_series": 0.0001442437371529973,
+        "sobolev_exponent": 1.1
+      },
+      {
+        "cutoff": 65536,
+        "forced_ratio": 9.074178267449078,
+        "forced_reference": 0.10881882041201531,
+        "forced_square_series": 0.9874413752721534,
+        "initial_ratio": 3.1199285769994436,
+        "initial_reference": 1.660443426697011e-06,
+        "initial_square_series": 5.180464897442885e-06,
+        "sobolev_exponent": 1.1
+      },
+      {
+        "cutoff": 16,
+        "forced_ratio": 5.224873734152917,
+        "forced_reference": 0.25,
+        "forced_square_series": 1.3062184335382292,
+        "initial_ratio": 3.3575783324578485,
+        "initial_reference": 0.015625,
+        "initial_square_series": 0.05246216144465388,
+        "sobolev_exponent": 1.25
+      },
+      {
+        "cutoff": 256,
+        "forced_ratio": 5.6775387770978725,
+        "forced_reference": 0.0625,
+        "forced_square_series": 0.35484617356861703,
+        "initial_ratio": 3.810243375402804,
+        "initial_reference": 0.000244140625,
+        "initial_square_series": 0.0009302351990729501,
+        "sobolev_exponent": 1.25
+      },
+      {
+        "cutoff": 4096,
+        "forced_ratio": 5.790705037834112,
+        "forced_reference": 0.015625,
+        "forced_square_series": 0.090479766216158,
+        "initial_ratio": 3.9234096361390427,
+        "initial_reference": 3.814697265625e-06,
+        "initial_square_series": 1.4966620010906382e-05,
+        "sobolev_exponent": 1.25
+      },
+      {
+        "cutoff": 65536,
+        "forced_ratio": 5.818996603018171,
+        "forced_reference": 0.00390625,
+        "forced_square_series": 0.02273045548053973,
+        "initial_ratio": 3.9517012013231025,
+        "initial_reference": 5.960464477539063e-08,
+        "initial_square_series": 2.3553974636334792e-07,
+        "sobolev_exponent": 1.25
+      },
+      {
+        "cutoff": 16,
+        "forced_ratio": 1.2,
+        "forced_reference": 0.3125,
+        "forced_square_series": 0.375,
+        "initial_ratio": 1.0666666666666667,
+        "initial_reference": 0.01953125,
+        "initial_square_series": 0.020833333333333332,
+        "sobolev_exponent": 1.5
+      },
+      {
+        "cutoff": 256,
+        "forced_ratio": 1.1111111111111112,
+        "forced_reference": 0.03515625,
+        "forced_square_series": 0.0390625,
+        "initial_ratio": 1.0370370370370372,
+        "initial_reference": 0.0001373291015625,
+        "initial_square_series": 0.00014241536458333334,
+        "sobolev_exponent": 1.5
+      },
+      {
+        "cutoff": 4096,
+        "forced_ratio": 1.0769230769230769,
+        "forced_reference": 0.003173828125,
+        "forced_square_series": 0.00341796875,
+        "initial_ratio": 1.0256410256410258,
+        "initial_reference": 7.748603820800781e-07,
+        "initial_square_series": 7.947285970052084e-07,
+        "sobolev_exponent": 1.5
+      },
+      {
+        "cutoff": 65536,
+        "forced_ratio": 1.0588235294117647,
+        "forced_reference": 0.0002593994140625,
+        "forced_square_series": 0.000274658203125,
+        "initial_ratio": 1.0196078431372548,
+        "initial_reference": 3.958120942115784e-09,
+        "initial_square_series": 4.035731156667073e-09,
+        "sobolev_exponent": 1.5
+      },
+      {
+        "cutoff": 16,
+        "forced_ratio": 2.947389711949328,
+        "forced_reference": 0.0625,
+        "forced_square_series": 0.184211856996833,
+        "initial_ratio": 2.8643444802434694,
+        "initial_reference": 0.00390625,
+        "initial_square_series": 0.011188845625951052,
+        "sobolev_exponent": 1.75
+      },
+      {
+        "cutoff": 256,
+        "forced_ratio": 3.2975075997671532,
+        "forced_reference": 0.00390625,
+        "forced_square_series": 0.012880889061590442,
+        "initial_ratio": 3.2767462918406887,
+        "initial_reference": 1.52587890625e-05,
+        "initial_square_series": 4.999918047852613e-05,
+        "sobolev_exponent": 1.75
+      },
+      {
+        "cutoff": 4096,
+        "forced_ratio": 3.3850370717216096,
+        "forced_reference": 0.000244140625,
+        "forced_square_series": 0.0008264250663382836,
+        "initial_ratio": 3.379846744739994,
+        "initial_reference": 5.960464477539063e-08,
+        "initial_square_series": 2.0145456461548768e-07,
+        "sobolev_exponent": 1.75
+      },
+      {
+        "cutoff": 65536,
+        "forced_ratio": 3.406919439710224,
+        "forced_reference": 1.52587890625e-05,
+        "forced_square_series": 5.1985465083468995e-05,
+        "initial_ratio": 3.40562185796482,
+        "initial_reference": 2.3283064365386963e-10,
+        "initial_square_series": 7.929331292316364e-10,
+        "sobolev_exponent": 1.75
+      },
+      {
+        "cutoff": 16,
+        "forced_ratio": 1.9583333333333333,
+        "forced_reference": 0.0625,
+        "forced_square_series": 0.12239583333333333,
+        "initial_ratio": 1.9464285714285714,
+        "initial_reference": 0.00390625,
+        "initial_square_series": 0.007603236607142857,
+        "sobolev_exponent": 2.0
+      },
+      {
+        "cutoff": 256,
+        "forced_ratio": 1.9973958333333333,
+        "forced_reference": 0.00390625,
+        "forced_square_series": 0.007802327473958333,
+        "initial_ratio": 1.9966517857142858,
+        "initial_reference": 1.52587890625e-05,
+        "initial_square_series": 3.0466488429478238e-05,
+        "sobolev_exponent": 2.0
+      },
+      {
+        "cutoff": 4096,
+        "forced_ratio": 1.9998372395833333,
+        "forced_reference": 0.000244140625,
+        "forced_square_series": 0.0004882415135701497,
+        "initial_ratio": 1.9997907366071428,
+        "initial_reference": 5.960464477539063e-08,
+        "initial_square_series": 1.191968164805855e-07,
+        "sobolev_exponent": 2.0
+      },
+      {
+        "cutoff": 65536,
+        "forced_ratio": 1.9999898274739583,
+        "forced_reference": 1.52587890625e-05,
+        "forced_square_series": 3.0517422904570896e-05,
+        "initial_ratio": 1.9999869210379464,
+        "initial_reference": 2.3283064365386963e-10,
+        "initial_square_series": 4.65658242124586e-10,
+        "sobolev_exponent": 2.0
+      }
+    ]
+  },
+  "endpoint_channel_saturated_pulse": {
+    "H_minus_1_limit": "7/(2e)",
+    "H_minus_1_limit_value": 1.2875780441000482,
+    "all_checks_pass": true,
+    "endpoint_residual_strictly_decreases": true,
+    "exact_single_channel_identity": "||c_q||_L2t^2=1/(eH)",
+    "forcing_envelope_identity": "H^(-3)||H^(5/2)1_[0,H^(-2)]||_L2t^2=1",
+    "interpretation": "The scalar forcing envelope and exact viscous response alone do not imply H^(-1) tail compactness. This is an abstract channel-saturated relaxation model, not a Navier-Stokes solution or counterexample.",
+    "maximum_forcing_envelope_residual": 2.220446049250313e-16,
+    "maximum_response_identity_residual": 4.336808689942018e-19,
+    "model": "On every q in one dyadic output block Q=H/16, solve dot c_q+H^2c_q=H^(5/2)1_[0,H^(-2)] with c_q(0)=0.",
+    "rows": [
+      {
+        "H_minus_1_block_square": 1.0892680328435675,
+        "carrier": 64,
+        "distance_from_7_over_e": 0.19831001125648062,
+        "output_channel_count": 3032,
+        "output_scale": 4,
+        "single_channel_expected_L2_squared": 0.0057481162683037865,
+        "single_channel_response_L2_squared": 0.0057481162683037865,
+        "subcritical_rows": {
+          "0.1": {
+            "H_minus_1_plus_epsilon_square": 0.8255108013755936,
+            "renormalized_by_Q_to_2epsilon": 1.089268032843567
+          },
+          "0.25": {
+            "H_minus_1_plus_epsilon_square": 0.5446340164217838,
+            "renormalized_by_Q_to_2epsilon": 1.0892680328435675
+          },
+          "0.5": {
+            "H_minus_1_plus_epsilon_square": 0.2723170082108919,
+            "renormalized_by_Q_to_2epsilon": 1.0892680328435675
+          }
+        },
+        "weighted_forcing_envelope": 1.0
+      },
+      {
+        "H_minus_1_block_square": 1.1862674948711942,
+        "carrier": 128,
+        "distance_from_7_over_e": 0.10131054922885396,
+        "output_channel_count": 26416,
+        "output_scale": 8,
+        "single_channel_expected_L2_squared": 0.0028740581341518932,
+        "single_channel_response_L2_squared": 0.0028740581341518937,
+        "subcritical_rows": {
+          "0.1": {
+            "H_minus_1_plus_epsilon_square": 0.782644671887642,
+            "renormalized_by_Q_to_2epsilon": 1.1862674948711938
+          },
+          "0.25": {
+            "H_minus_1_plus_epsilon_square": 0.41940889496229966,
+            "renormalized_by_Q_to_2epsilon": 1.1862674948711942
+          },
+          "0.5": {
+            "H_minus_1_plus_epsilon_square": 0.14828343685889928,
+            "renormalized_by_Q_to_2epsilon": 1.1862674948711942
+          }
+        },
+        "weighted_forcing_envelope": 1.0000000000000002
+      },
+      {
+        "H_minus_1_block_square": 1.2363838835854675,
+        "carrier": 256,
+        "distance_from_7_over_e": 0.0511941605145807,
+        "output_channel_count": 220256,
+        "output_scale": 16,
+        "single_channel_expected_L2_squared": 0.0014370290670759466,
+        "single_channel_response_L2_squared": 0.0014370290670759466,
+        "subcritical_rows": {
+          "0.1": {
+            "H_minus_1_plus_epsilon_square": 0.7101160666097358,
+            "renormalized_by_Q_to_2epsilon": 1.236383883585467
+          },
+          "0.25": {
+            "H_minus_1_plus_epsilon_square": 0.30909597089636687,
+            "renormalized_by_Q_to_2epsilon": 1.2363838835854675
+          },
+          "0.5": {
+            "H_minus_1_plus_epsilon_square": 0.07727399272409172,
+            "renormalized_by_Q_to_2epsilon": 1.2363838835854675
+          }
+        },
+        "weighted_forcing_envelope": 1.0
+      },
+      {
+        "H_minus_1_block_square": 1.2618462423677197,
+        "carrier": 512,
+        "distance_from_7_over_e": 0.025731801732328474,
+        "output_channel_count": 1798336,
+        "output_scale": 32,
+        "single_channel_expected_L2_squared": 0.0007185145335379733,
+        "single_channel_response_L2_squared": 0.0007185145335379734,
+        "subcritical_rows": {
+          "0.1": {
+            "H_minus_1_plus_epsilon_square": 0.6309231211838594,
+            "renormalized_by_Q_to_2epsilon": 1.2618462423677188
+          },
+          "0.25": {
+            "H_minus_1_plus_epsilon_square": 0.2230650086982446,
+            "renormalized_by_Q_to_2epsilon": 1.26184624236772
+          },
+          "0.5": {
+            "H_minus_1_plus_epsilon_square": 0.03943269507399124,
+            "renormalized_by_Q_to_2epsilon": 1.2618462423677197
+          }
+        },
+        "weighted_forcing_envelope": 1.0000000000000002
+      },
+      {
+        "H_minus_1_block_square": 1.2746784628651242,
+        "carrier": 1024,
+        "distance_from_7_over_e": 0.012899581234923962,
+        "output_channel_count": 14532992,
+        "output_scale": 64,
+        "single_channel_expected_L2_squared": 0.00035925726676898665,
+        "single_channel_response_L2_squared": 0.00035925726676898665,
+        "subcritical_rows": {
+          "0.1": {
+            "H_minus_1_plus_epsilon_square": 0.5548360269343353,
+            "renormalized_by_Q_to_2epsilon": 1.2746784628651233
+          },
+          "0.25": {
+            "H_minus_1_plus_epsilon_square": 0.15933480785814053,
+            "renormalized_by_Q_to_2epsilon": 1.2746784628651242
+          },
+          "0.5": {
+            "H_minus_1_plus_epsilon_square": 0.019916850982267566,
+            "renormalized_by_Q_to_2epsilon": 1.2746784628651242
+          }
+        },
+        "weighted_forcing_envelope": 1.0
+      },
+      {
+        "H_minus_1_block_square": 1.2811198333903966,
+        "carrier": 2048,
+        "distance_from_7_over_e": 0.0064582107096515795,
+        "output_channel_count": 116851456,
+        "output_scale": 128,
+        "single_channel_expected_L2_squared": 0.00017962863338449333,
+        "single_channel_response_L2_squared": 0.00017962863338449335,
+        "subcritical_rows": {
+          "0.1": {
+            "H_minus_1_plus_epsilon_square": 0.4854536387887159,
+            "renormalized_by_Q_to_2epsilon": 1.2811198333903957
+          },
+          "0.25": {
+            "H_minus_1_plus_epsilon_square": 0.11323606521286618,
+            "renormalized_by_Q_to_2epsilon": 1.2811198333903968
+          },
+          "0.5": {
+            "H_minus_1_plus_epsilon_square": 0.010008748698362473,
+            "renormalized_by_Q_to_2epsilon": 1.2811198333903966
+          }
+        },
+        "weighted_forcing_envelope": 1.0000000000000002
+      },
+      {
+        "H_minus_1_block_square": 1.2843468337221748,
+        "carrier": 4096,
+        "distance_from_7_over_e": 0.003231210377873328,
+        "output_channel_count": 937166336,
+        "output_scale": 256,
+        "single_channel_expected_L2_squared": 8.981431669224666e-05,
+        "single_channel_response_L2_squared": 8.981431669224666e-05,
+        "subcritical_rows": {
+          "0.1": {
+            "H_minus_1_plus_epsilon_square": 0.42367645181813174,
+            "renormalized_by_Q_to_2epsilon": 1.2843468337221735
+          },
+          "0.25": {
+            "H_minus_1_plus_epsilon_square": 0.08027167710763593,
+            "renormalized_by_Q_to_2epsilon": 1.2843468337221748
+          },
+          "0.5": {
+            "H_minus_1_plus_epsilon_square": 0.0050169798192272455,
+            "renormalized_by_Q_to_2epsilon": 1.2843468337221748
+          }
+        },
+        "weighted_forcing_envelope": 1.0
+      },
+      {
+        "H_minus_1_block_square": 1.2859619126553499,
+        "carrier": 8192,
+        "distance_from_7_over_e": 0.0016161314446982988,
+        "output_channel_count": 7506758656,
+        "output_scale": 512,
+        "single_channel_expected_L2_squared": 4.490715834612333e-05,
+        "single_channel_response_L2_squared": 4.490715834612334e-05,
+        "subcritical_rows": {
+          "0.1": {
+            "H_minus_1_plus_epsilon_square": 0.3692955834140099,
+            "renormalized_by_Q_to_2epsilon": 1.2859619126553488
+          },
+          "0.25": {
+            "H_minus_1_plus_epsilon_square": 0.05683202429913879,
+            "renormalized_by_Q_to_2epsilon": 1.28596191265535
+          },
+          "0.5": {
+            "H_minus_1_plus_epsilon_square": 0.00251164436065498,
+            "renormalized_by_Q_to_2epsilon": 1.2859619126553499
+          }
+        },
+        "weighted_forcing_envelope": 1.0000000000000002
+      }
+    ]
+  },
+  "generated_at_utc": "2026-07-27T03:55:58.065645+00:00",
+  "lattice_Littlewood_Paley_count": {
+    "all_checks_pass": true,
+    "dyadic_block_definition": "Q<=|q|_infinity<2Q on the three-dimensional integer lattice",
+    "exact_count": "N_Q=(4Q-1)^3-(2Q-1)^3=56Q^3-36Q^2+6Q<=56Q^3",
+    "maximum_cubic_ratio": 51.59375,
+    "maximum_formula_residual": 0,
+    "rows": [
+      {
+        "brute_count": 26,
+        "count_over_scale_cubed": 26.0,
+        "expanded_count": 26,
+        "formula_count": 26,
+        "scale": 1
+      },
+      {
+        "brute_count": 316,
+        "count_over_scale_cubed": 39.5,
+        "expanded_count": 316,
+        "formula_count": 316,
+        "scale": 2
+      },
+      {
+        "brute_count": 3032,
+        "count_over_scale_cubed": 47.375,
+        "expanded_count": 3032,
+        "formula_count": 3032,
+        "scale": 4
+      },
+      {
+        "brute_count": 26416,
+        "count_over_scale_cubed": 51.59375,
+        "expanded_count": 26416,
+        "formula_count": 26416,
+        "scale": 8
+      }
+    ]
+  },
+  "low_output_definition": "R_K^lo=sum_(H>=K) P_(|q|_infinity<=H/8) C_H, with smooth finite-overlap pair-shell and output multipliers.",
+  "next_gate": "Determine whether the certified dense HHH packet can populate a positive-volume low-output block at the H^(5/2) rate, or whether the exact Navier-Stokes convolution supplies an endpoint cancellation absent from the channel-saturated relaxation model. Then test the surviving endpoint against the complete cubic local-energy defect.",
+  "prerequisites": {
+    "smooth_galerkin_shell_response_gate": "work/ns_collision/results/smooth_galerkin_shell_response_gate_audit_v1.json",
+    "smooth_galerkin_shell_response_gate_passed": true,
+    "smooth_galerkin_shell_response_gate_sha256": "a226f430ea1518c54780671abd3f17055333770737566e6badf4eb4a8931f0ad",
+    "smooth_galerkin_shell_response_gate_status": "exact_pair_rate_complete_dyadic_smooth_galerkin_stress_response_certified"
+  },
+  "schema": "ns_scale_uniform_low_output_tail_gate_audit_v1",
+  "scope": "The certified theorem concerns the low-output high-high Reynolds-stress series of smooth finite Fourier Galerkin solutions and its Galerkin limit in L2_t H_x^(-1-epsilon). It does not close the H^(-1) endpoint, all cubic local-energy defects, exceptional-set removal, or regularity.",
+  "status": "scale_uniform_H_minus_one_plus_epsilon_Galerkin_stress_tail_certified"
+}

@@ -1,0 +1,386 @@
+{
+  "all_positive_checks_pass": true,
+  "assumption_scope": "Classical smooth periodic Navier-Stokes with projected Weber replicas reset at the left endpoint. Smooth nonnegative terminal weights are used, with approximation needed at zeros of the exact |u(T)| optimizer.",
+  "backward_restart_dual": {
+    "all_checks_pass": true,
+    "backward_time_form": "mu_tau=u(T-tau) dot grad mu+nu Delta mu",
+    "backward_weight_equation": "lambda_t+u dot grad lambda+nu Delta lambda=0, lambda(T)=lambda_T>=0",
+    "general_generator_symbolic_residual": "0",
+    "penalty_identity": "integral lambda_T^3-integral lambda_s^3=6nu integral_s^T integral lambda |grad lambda|^2",
+    "positivity_preserved": true,
+    "reset_condition": "V_1(s)=V_2(s)=u(s), hence C_rho(s)=|u(s)|^2",
+    "restart_dual_inequality": "||u(T)||_3^3<=||u(s)||_3^3+sup_(lambda_T>=0) integral_s^T integral[-3lambda R_rho+(3/2)grad lambda dot F_rho-3nu(1-rho)lambda G_rho-3nu lambda|grad lambda|^2]",
+    "rho_zero_reduction": "||u(T)||_3^3<=||u(s)||_3^3+3 sup_(lambda_T>=0) integral_s^T integral[p u dot grad lambda-nu lambda|grad u|^2-nu lambda|grad lambda|^2]",
+    "rho_zero_symbolic_residual": "0",
+    "terminal_majorization": "C_rho(T)>=C_0(T)=|u(T)|^2 for 0<=rho<=1"
+  },
+  "certification_flags": {
+    "Navier_Stokes_global_regularity_proved": false,
+    "backward_adjoint_restart_dual_inequality_derived": true,
+    "backward_terminal_penalty_contraction_proved": true,
+    "conditional_partition_Fisher_identity_derived": true,
+    "critical_signed_replica_bound_proved": false,
+    "degenerate_edge_Young_budget_derived": true,
+    "edge_Young_remainder_absorbed_by_replica_dissipation": false,
+    "exceptional_set_upgrade_proved": false,
+    "finite_partition_represents_all_terminal_dual_weights": false,
+    "low_regularity_adjoint_replica_system_justified": false,
+    "positive_rho_cross_gradient_lower_bound_retained": true,
+    "positive_rho_improves_the_instantaneous_reset_generator": false,
+    "replica_reset_endpoint_used": true,
+    "rho_zero_is_instantaneously_best_at_reset": true,
+    "rho_zero_physical_pressure_form_derived": true,
+    "scalar_pressure_partition_edge_identity_derived": true,
+    "smooth_universal_flux_nonpositivity_falsified": true,
+    "universal_restart_dual_flux_is_nonpositive": false
+  },
+  "exact_periodic_shear": {
+    "all_checks_pass": true,
+    "backward_PDE_symbolic_residual": "0",
+    "backward_weight": "A*exp(-k**2*nu*(2*T - t))*sin(k*y) + c",
+    "identity_residual": 0.0,
+    "initial_physical_L3_cubed": 9.469999999999999,
+    "initial_propagated_dual": 9.190096425217607,
+    "parameters": {
+      "amplitude": 0.7,
+      "mean_speed": 2.0,
+      "terminal_time": 0.8,
+      "viscosity": 0.15,
+      "wave_number": 2.0
+    },
+    "reconstructed_terminal_dual": 8.562852542383414,
+    "terminal_condition_symbolic_residual": "0",
+    "terminal_physical_L3_cubed": 8.562852542383414,
+    "velocity": "u=(c+A exp(-nu k^2 t)sin(ky),0,0), c>A>0",
+    "velocity_fisher_time_integral": 1.0079416195739836,
+    "weight_fisher_time_integral": 0.3859336756131111
+  },
+  "high_amplitude_pressure_sign_falsifier": {
+    "all_checks_pass": true,
+    "instantaneous_reset_generator": "3 alpha^3[alpha P-(1-rho)D_u-D_lambda]",
+    "interpretation": "At reset, rho=0 has the most dissipation. Scaling the same smooth datum above the resolved threshold makes the exact instantaneous L3 generator positive. This falsifies universal nonpositivity, not regularity or a finite-time bound.",
+    "rho_one_sign_change_amplitude_range": [
+      41.01806815761224,
+      41.01823349788922
+    ],
+    "rho_zero_sign_change_amplitude_range": [
+      168.16718221550846,
+      168.16783205200585
+    ],
+    "rows": [
+      {
+        "grid_size": 48,
+        "pressure_work": 40.51233469441453,
+        "scaled_rho_zero_rows": [
+          {
+            "amplitude_scale": 1.0,
+            "rho_zero_rate_over_3_scale_cubed": -6772.358966896684
+          },
+          {
+            "amplitude_scale": 170.0,
+            "rho_zero_rate_over_3_scale_cubed": 74.22559645937031
+          },
+          {
+            "amplitude_scale": 200.0,
+            "rho_zero_rate_over_3_scale_cubed": 1289.595637291806
+          }
+        ],
+        "sign_change_amplitude_by_rho": {
+          "0.0": 168.1678272304162,
+          "0.5": 104.59303036415272,
+          "1.0": 41.01823349788922
+        },
+        "velocity_fisher": 5151.126897550966,
+        "weight_fisher": 1661.7444040401335
+      },
+      {
+        "grid_size": 64,
+        "pressure_work": 40.512286425572924,
+        "scaled_rho_zero_rows": [
+          {
+            "amplitude_scale": 1.0,
+            "rho_zero_rate_over_3_scale_cubed": -6772.35109323293
+          },
+          {
+            "amplitude_scale": 170.0,
+            "rho_zero_rate_over_3_scale_cubed": 74.22531268889406
+          },
+          {
+            "amplitude_scale": 200.0,
+            "rho_zero_rate_over_3_scale_cubed": 1289.5939054560818
+          }
+        ],
+        "sign_change_amplitude_by_rho": {
+          "0.0": 168.16783205200585,
+          "0.5": 104.59298918287004,
+          "1.0": 41.01814631373426
+        },
+        "velocity_fisher": 5151.124487550443,
+        "weight_fisher": 1661.7388921080606
+      },
+      {
+        "grid_size": 80,
+        "pressure_work": 40.51242606443026,
+        "scaled_rho_zero_rows": [
+          {
+            "amplitude_scale": 1.0,
+            "rho_zero_rate_over_3_scale_cubed": -6772.359436671524
+          },
+          {
+            "amplitude_scale": 170.0,
+            "rho_zero_rate_over_3_scale_cubed": 74.2405682171891
+          },
+          {
+            "amplitude_scale": 200.0,
+            "rho_zero_rate_over_3_scale_cubed": 1289.613350150096
+          }
+        ],
+        "sign_change_amplitude_by_rho": {
+          "0.0": 168.16746180297577,
+          "0.5": 104.5928066270933,
+          "1.0": 41.018151451210834
+        },
+        "velocity_fisher": 5151.127034769173,
+        "weight_fisher": 1661.7448279667817
+      },
+      {
+        "grid_size": 96,
+        "pressure_work": 40.51249223685267,
+        "scaled_rho_zero_rows": [
+          {
+            "amplitude_scale": 1.0,
+            "rho_zero_rate_over_3_scale_cubed": -6772.359171762323
+          },
+          {
+            "amplitude_scale": 170.0,
+            "rho_zero_rate_over_3_scale_cubed": 74.25201626577905
+          },
+          {
+            "amplitude_scale": 200.0,
+            "rho_zero_rate_over_3_scale_cubed": 1289.626783371359
+          }
+        ],
+        "sign_change_amplitude_by_rho": {
+          "0.0": 168.16718221550846,
+          "0.5": 104.59262518656035,
+          "1.0": 41.01806815761224
+        },
+        "velocity_fisher": 5151.127496193216,
+        "weight_fisher": 1661.7441678059597
+      }
+    ],
+    "source": "seed-81 smooth periodic finite-Fourier pressure adversary",
+    "source_parameters": {
+      "base_velocity_rms": 10.0,
+      "random_seed": 81,
+      "viscosity": 1.0
+    }
+  },
+  "kind": "adjoint_replica_pressure_edge_gate_audit",
+  "next_theorem_target": "Use the exact conditional edge form to seek a scale-adapted bound for sum_j mean[e_j^2/(A_j+B_j)] by nu^2(1-rho) integral lambda G_rho without imposing a global positive floor on lambda. If that bound fails, quantify a finite-time rho>0 cancellation in R_rho and F_rho, since rho>0 is provably worse at the reset instant. Any candidate must survive the amplitude-scaled seed-81 datum and preserve the full terminal dual supremum.",
+  "partition_pressure_edge_gate": {
+    "all_checks_pass": true,
+    "cell_pressure_fluxes": [
+      1.0615867159221917,
+      -1.7996150250960394,
+      0.008747154731770707,
+      1.9638874135458608,
+      0.6291130459876254,
+      0.527094416888702,
+      -2.906222784283815,
+      0.5154090623037031
+    ],
+    "center": [
+      3.455751918948772,
+      2.827433388230814,
+      5.026548245743669
+    ],
+    "coefficients": [
+      1.6,
+      1.2000000000000002,
+      1.8,
+      0.6000000000000001,
+      2.0,
+      1.4000000000000001,
+      0.8,
+      1.7000000000000002
+    ],
+    "conditional_weight_fisher": 0.12647778320312497,
+    "conditional_weighted_pressure_flux": 1.2804534961136416,
+    "degenerate_edge_young_bound": "P_j-nu D_j<=4/nu mean_other[e_j^2/(A+B)]",
+    "direct_weight_fisher": 0.126477783203125,
+    "direct_weighted_pressure_flux": 1.280453496113641,
+    "direction_rows": [
+      {
+        "conditional_pressure_flux": -0.17233383115983858,
+        "conditional_weight_fisher": 0.037505615234375005,
+        "direct_weight_fisher": 0.037505615234375005,
+        "direction": 0,
+        "edge_pressure_flux": -0.17233383115983902,
+        "edge_rows": [
+          {
+            "coefficient_difference": -0.3999999999999999,
+            "edge_flux": 0.45437492956635206,
+            "one_cell": "100",
+            "zero_cell": "000"
+          },
+          {
+            "coefficient_difference": -0.19999999999999996,
+            "edge_flux": -0.04821737244804814,
+            "one_cell": "101",
+            "zero_cell": "001"
+          },
+          {
+            "coefficient_difference": 1.0,
+            "edge_flux": 0.4338410658862474,
+            "one_cell": "110",
+            "zero_cell": "010"
+          },
+          {
+            "coefficient_difference": -1.1,
+            "edge_flux": 0.394607636099232,
+            "one_cell": "111",
+            "zero_cell": "011"
+          }
+        ],
+        "young_inequality_margin": 613.4590719213758,
+        "young_remainder_at_nu_one": 613.2492324749816
+      },
+      {
+        "conditional_pressure_flux": 0.9323092095766943,
+        "conditional_weight_fisher": 0.036447021484374995,
+        "direct_weight_fisher": 0.036447021484375,
+        "direction": 1,
+        "edge_pressure_flux": 0.9323092095766945,
+        "edge_rows": [
+          {
+            "coefficient_difference": -0.19999999999999996,
+            "edge_flux": -0.13178510978930036,
+            "one_cell": "010",
+            "zero_cell": "000"
+          },
+          {
+            "coefficient_difference": 0.6000000000000001,
+            "edge_flux": -1.012400756502852,
+            "one_cell": "011",
+            "zero_cell": "001"
+          },
+          {
+            "coefficient_difference": 1.2,
+            "edge_flux": 1.3214014316792901,
+            "one_cell": "110",
+            "zero_cell": "100"
+          },
+          {
+            "coefficient_difference": -0.30000000000000004,
+            "edge_flux": 0.24096358831534168,
+            "one_cell": "111",
+            "zero_cell": "101"
+          }
+        ],
+        "young_inequality_margin": 1645.0116309193306,
+        "young_remainder_at_nu_one": 1645.907493107423
+      },
+      {
+        "conditional_pressure_flux": 0.5204781176967859,
+        "conditional_weight_fisher": 0.052525146484374986,
+        "direct_weight_fisher": 0.052525146484375,
+        "direction": 2,
+        "edge_pressure_flux": 0.5204781176967858,
+        "edge_rows": [
+          {
+            "coefficient_difference": 0.3999999999999999,
+            "edge_flux": 0.7389968961451394,
+            "one_cell": "001",
+            "zero_cell": "000"
+          },
+          {
+            "coefficient_difference": 1.2,
+            "edge_flux": -0.5568790209437767,
+            "one_cell": "011",
+            "zero_cell": "010"
+          },
+          {
+            "coefficient_difference": 0.5999999999999999,
+            "edge_flux": -0.237913456125312,
+            "one_cell": "101",
+            "zero_cell": "100"
+          },
+          {
+            "coefficient_difference": -0.9000000000000001,
+            "edge_flux": -1.1509802867182768,
+            "one_cell": "111",
+            "zero_cell": "110"
+          }
+        ],
+        "young_inequality_margin": 1223.5113941140087,
+        "young_remainder_at_nu_one": 1223.979347085221
+      }
+    ],
+    "edge_weighted_pressure_flux": 1.2804534961136413,
+    "edge_young_upper_at_nu_one": 2696.016797412331,
+    "exact_conditional_edge_identity": "For direction j, lambda=A phi_+ +B phi_-, P_j=mean_other[(A-B)e_j] and D_j=mean_other[(A+B)(A-B)^2/16]",
+    "exact_dual_flux_at_nu_one": -785.9652995423842,
+    "interpretation": "Pressure is an antisymmetric edge transfer. The adjoint Fisher term gives an exact cubic edge penalty without a global positive weight floor. The chosen smooth positive edge weight has positive pressure transfer and, when scaled with the velocity, gives a second universal-sign falsifier without a |u| cusp. Young's bound leaves a reciprocal face-weight remainder; controlling that remainder by replica velocity dissipation is the open edge gate.",
+    "maximum_weight": 2.0,
+    "minimum_weight": 0.6000000000000001,
+    "partition": "eight tensor-product cells from (1+cos)/2 and (1-cos)/2",
+    "partition_pressure_flux_sum": -6.661338147750939e-16,
+    "pressure_gradient_reconstruction_residual": 1.1368683772161603e-13,
+    "smooth_partition_scaled_rate_over_3_scale_cubed_at_700": 109.07169424105082,
+    "smooth_partition_sign_change_amplitude": 614.8179183608784,
+    "unweighted_weight_gradient_energy": 0.09521484375,
+    "weighted_cell_pressure_flux": 1.2804534961136396,
+    "weighted_velocity_fisher": 787.1192752552947,
+    "young_remainder_at_nu_one": 3483.1360726676257
+  },
+  "periodic_ABC": {
+    "Delta_u_equals_minus_u_balance_residual": 2.77724273534119e-06,
+    "L3_cubed": 5.877191402571214,
+    "all_checks_pass": true,
+    "flow": "unit ABC Beltrami field with p=-|u|^2/2",
+    "grid_size": 64,
+    "instantaneous_L3_rate_at_nu_one": -17.631565875985437,
+    "pressure_work": -8.166357141042017e-19,
+    "speed_fisher": 0.9704816568734222,
+    "velocity_fisher": 4.906706968455056
+  },
+  "positive_checks": {
+    "ABC_pressure_and_Helmholtz_stress_passes": true,
+    "backward_restart_dual_algebra_passes": true,
+    "exact_shear_adjoint_identity_passes": true,
+    "pressure_partition_edge_and_Fisher_identities_pass": true,
+    "rho_zero_reset_ordering_passes": true,
+    "smooth_high_amplitude_sign_falsifier_is_resolved": true
+  },
+  "reset_rho_ordering": {
+    "all_checks_pass": true,
+    "interpretation": "Positive correlation can help only after pathwise separation changes R_rho and F_rho; it cannot improve the reset generator.",
+    "reset_formula": "Q_rho^dual-Q_0^dual=3nu rho integral lambda|grad u|^2>=0",
+    "rho_zero_is_instantaneously_optimal": true,
+    "rows": [
+      {
+        "dual_generator_excess_over_rho_zero": 0.0,
+        "rho": 0.0
+      },
+      {
+        "dual_generator_excess_over_rho_zero": 1.6200000000000003,
+        "rho": 0.25
+      },
+      {
+        "dual_generator_excess_over_rho_zero": 3.2400000000000007,
+        "rho": 0.5
+      },
+      {
+        "dual_generator_excess_over_rho_zero": 4.860000000000001,
+        "rho": 0.75
+      },
+      {
+        "dual_generator_excess_over_rho_zero": 6.480000000000001,
+        "rho": 1.0
+      }
+    ]
+  },
+  "schema_version": 1,
+  "status": "backward_restart_dual_derived_universal_flux_sign_falsified_edge_budget_open"
+}

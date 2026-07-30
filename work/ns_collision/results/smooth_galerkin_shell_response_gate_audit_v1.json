@@ -1,0 +1,574 @@
+{
+  "all_positive_checks_pass": true,
+  "certification_flags": {
+    "Navier_Stokes_global_regularity_proved": false,
+    "complete_HHH_HHL_weighted_forcing_square_proved": true,
+    "finite_low_channel_high_stress_tail_vanishes": true,
+    "heat_weighted_HHL_commutator_proved": true,
+    "initial_high_stress_heat_tail_controlled": true,
+    "scale_uniform_spatial_localization_proved": false,
+    "sharp_Galerkin_cutoff_leakage_paid": true,
+    "single_artificial_shell_rate_used": false,
+    "smooth_Galerkin_exact_pair_rates_retained": true,
+    "smooth_shell_filter_leakage_paid": true,
+    "suitable_weak_solution_passage_proved": false
+  },
+  "complete_weighted_forcing_square": {
+    "HHH_neighbor_square_constant": 21.3125,
+    "HHL_global_constant": 0.44642857142857145,
+    "all_checks_pass": true,
+    "derived_combined_constant": 102.77678571428571,
+    "envelope": "g_H=H^(5/2)A_H^3+A_H^2 sum_(L<=H/4)L^(5/2)a_L+H A_H^2 sum_(L<=H/4)L^(3/2)a_L. The last term pays a worst-case unpaired sharp Galerkin boundary contribution.",
+    "low_shell_cauchy_bound": "(sum_(L<=H/4)L^(5/2)a_L)^2 <=H^3 D_(<H)/56 for dyadic shells.",
+    "retained_integer_constant": 104.0,
+    "rows": [
+      {
+        "Galerkin_leakage_weighted_forcing_square": 6.747607515514381,
+        "HHH_weighted_forcing_square": 501.6489577355795,
+        "HHL_weighted_forcing_square": 0.28821034212959795,
+        "all_checks_pass": true,
+        "amplitudes": [
+          1.0,
+          0.5,
+          0.3333333333333333,
+          0.25,
+          0.2,
+          0.16666666666666666,
+          0.14285714285714285,
+          0.125,
+          0.1111111111111111,
+          0.1
+        ],
+        "analytic_bound": 3813300.08410808,
+        "comparable_shell_amplitudes": [
+          1.1666666666666667,
+          1.1931517552730295,
+          1.209797962930634,
+          0.7009913614937697,
+          0.5116610715641703,
+          0.4078123846121938,
+          0.3408175759191852,
+          0.29352447948242677,
+          0.24161713986729458,
+          0.19486066563661758
+        ],
+        "complete_forcing_L2_norms": [
+          8.982875035073551,
+          54.354691073549134,
+          361.9233584609747,
+          417.0549400645073,
+          917.7879295530256,
+          2601.923100230929,
+          8501.88999882726,
+          30467.483866066596,
+          96343.99245980501,
+          288373.470145058
+        ],
+        "complete_over_bound": 0.00016848504194524533,
+        "complete_weighted_forcing_square": 642.4840246207574,
+        "dissipation": 15266.321914840013,
+        "energy": 1.5497677311665408,
+        "label": "harmonic",
+        "low_derivative_envelopes": [
+          0.0,
+          0.0,
+          5.656854249492381,
+          21.65685424949238,
+          81.99663291074444,
+          337.99663291074444,
+          1496.5203832067841,
+          6957.853716540118,
+          33438.3965804496,
+          164510.3965804496
+        ],
+        "maximum_low_cauchy_ratio": 0.01632220072627869,
+        "maximum_unpaired_low_cauchy_ratio": 0.4850225485055527,
+        "shells": [
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+          512,
+          1024
+        ],
+        "unpaired_low_envelopes": [
+          0.0,
+          0.0,
+          2.8284271247461903,
+          6.82842712474619,
+          14.370899457402697,
+          30.370899457402697,
+          66.57476665415393,
+          151.90809998748728,
+          358.78734111178005,
+          870.78734111178
+        ]
+      },
+      {
+        "Galerkin_leakage_weighted_forcing_square": 16371.6062267618,
+        "HHH_weighted_forcing_square": 1937941.4875294997,
+        "HHL_weighted_forcing_square": 677.2418643794487,
+        "all_checks_pass": true,
+        "amplitudes": [
+          0.85,
+          0.2,
+          0.85,
+          0.2,
+          0.85,
+          0.2,
+          0.85,
+          0.2,
+          0.85,
+          0.2
+        ],
+        "analytic_bound": 373023325.45156246,
+        "comparable_shell_amplitudes": [
+          1.218605760695394,
+          1.2349089035228469,
+          1.4991664350564948,
+          1.2509996003196804,
+          1.4991664350564948,
+          1.2509996003196804,
+          1.4991664350564948,
+          1.2509996003196804,
+          1.2349089035228469,
+          0.8958236433584459
+        ],
+        "complete_forcing_L2_norms": [
+          10.236810636130766,
+          60.263554491914924,
+          663.9558727597508,
+          2122.607192776792,
+          21559.758048238888,
+          68342.02817091513,
+          691089.3658845412,
+          2188566.670386419,
+          12618368.462641135,
+          26351394.766794793
+        ],
+        "complete_over_bound": 0.006381050341980291,
+        "complete_weighted_forcing_square": 2380280.618439318,
+        "dissipation": 246764.65,
+        "energy": 3.8125,
+        "label": "alternating",
+        "low_derivative_envelopes": [
+          0.0,
+          0.0,
+          4.8083261120685235,
+          11.208326112068523,
+          165.07476169826128,
+          369.8747616982613,
+          5293.600700456429,
+          11847.20070045643,
+          169406.4307407178,
+          379121.63074071775
+        ],
+        "maximum_low_cauchy_ratio": 0.016708743122255044,
+        "maximum_unpaired_low_cauchy_ratio": 0.354010197516715,
+        "shells": [
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+          512,
+          1024
+        ],
+        "unpaired_low_envelopes": [
+          0.0,
+          0.0,
+          2.4041630560342617,
+          4.004163056034262,
+          23.237467504308356,
+          36.03746750430835,
+          189.9039030905011,
+          292.3039030905011,
+          1523.235387780043,
+          2342.435387780043
+        ]
+      },
+      {
+        "Galerkin_leakage_weighted_forcing_square": 30675.624782614705,
+        "HHH_weighted_forcing_square": 5598556.322146507,
+        "HHL_weighted_forcing_square": 1274.4207863184242,
+        "all_checks_pass": true,
+        "amplitudes": [
+          0.8098607842960549,
+          0.2026057920175375,
+          0.4072828926704034,
+          0.9286695881197851,
+          0.28971272854680796,
+          0.46514092363749493,
+          0.3501268349666997,
+          0.5745761203328564,
+          0.8190181895044604,
+          0.7381847738587409
+        ],
+        "analytic_bound": 1095669258.7955499,
+        "comparable_shell_amplitudes": [
+          0.9288718703683765,
+          1.313480169420238,
+          1.3450515308129476,
+          1.1703184222441236,
+          1.2046513616182566,
+          1.2710008915982338,
+          1.1932337814879774,
+          1.372876597716977,
+          1.2916787811668196,
+          1.2433202616996162
+        ],
+        "complete_forcing_L2_norms": [
+          4.533591885692802,
+          72.51377910024927,
+          481.9370489642167,
+          1742.2631752185696,
+          10859.14178244093,
+          76455.50424177761,
+          341567.0237813817,
+          2922347.421649739,
+          13664762.532278385,
+          70653284.41677
+        ],
+        "complete_over_bound": 0.0060530224979036375,
+        "complete_weighted_forcing_square": 6632110.673750866,
+        "dissipation": 772081.6396968345,
+        "energy": 3.693953773101196,
+        "label": "seeded_random",
+        "low_derivative_envelopes": [
+          0.0,
+          0.0,
+          4.581264419142371,
+          11.06464976370357,
+          84.79072855244343,
+          1035.7483867871033,
+          2713.9437707098355,
+          17955.68155646327,
+          82856.52218444782,
+          685343.2521385931
+        ],
+        "maximum_low_cauchy_ratio": 0.017602270315416547,
+        "maximum_unpaired_low_cauchy_ratio": 0.4599814512885849,
+        "shells": [
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+          512,
+          1024
+        ],
+        "unpaired_low_envelopes": [
+          0.0,
+          0.0,
+          2.2906322095711853,
+          3.9114785457114856,
+          13.127238394303967,
+          72.56209203397022,
+          125.0056977815556,
+          363.15785068395303,
+          870.1956680900823,
+          3223.659456973462
+        ]
+      },
+      {
+        "Galerkin_leakage_weighted_forcing_square": 52.57791594969748,
+        "HHH_weighted_forcing_square": 4984.700943999999,
+        "HHL_weighted_forcing_square": 2.958395373428046,
+        "all_checks_pass": true,
+        "amplitudes": [
+          0.0,
+          0.0,
+          1.0,
+          0.7,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "analytic_bound": 43739.877376,
+        "comparable_shell_amplitudes": [
+          1.0,
+          1.2206555615733703,
+          1.2206555615733703,
+          1.2206555615733703,
+          1.2206555615733703,
+          0.7,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "complete_forcing_L2_norms": [
+          5.656854249492381,
+          58.20085717581829,
+          329.2337662391268,
+          1862.4274296261854,
+          11884.074572731042,
+          13793.879271688362,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "complete_over_bound": 0.14063442666728782,
+        "complete_weighted_forcing_square": 6151.332577271232,
+        "dissipation": 189.44,
+        "energy": 1.49,
+        "label": "two_shell_concentration",
+        "low_derivative_envelopes": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          181.01933598375618,
+          897.8193359837561,
+          897.8193359837561,
+          897.8193359837561,
+          897.8193359837561,
+          897.8193359837561
+        ],
+        "maximum_low_cauchy_ratio": 0.016231785756235042,
+        "maximum_unpaired_low_cauchy_ratio": 0.3749914685238457,
+        "shells": [
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+          512,
+          1024
+        ],
+        "unpaired_low_envelopes": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          22.627416997969522,
+          67.42741699796952,
+          67.42741699796952,
+          67.42741699796952,
+          67.42741699796952,
+          67.42741699796952
+        ]
+      }
+    ],
+    "sharp_Galerkin_leakage_constant": 12.5,
+    "theorem": "sum_H H^(-3)||g_H||_(L2_t)^2 <=104 E_*^2 integral D(t)dt, before fixed multiplier and finite-low-channel constants.",
+    "unpaired_low_shell_cauchy_bound": "(sum_(L<=H/4)L^(3/2)a_L)^2 <=H D_(<H)/2 for dyadic shells."
+  },
+  "exact_pairwise_evolution": {
+    "all_checks_pass": true,
+    "distinct_pair_rate_count": 22,
+    "identity": "(d/dt+nu(|k|^2+|q-k|^2))(u_k tensor u_(q-k))=N_k tensor u_(q-k)+u_k tensor N_(q-k)",
+    "maximum_relative_residual": 2.6696013046432265e-14,
+    "rows": [
+      {
+        "pair_rate": 480.0,
+        "relative_residual": 9.644475449539164e-15,
+        "row": 0
+      },
+      {
+        "pair_rate": 221.0,
+        "relative_residual": 1.742793190585182e-14,
+        "row": 1
+      },
+      {
+        "pair_rate": 374.0,
+        "relative_residual": 6.30620182167188e-15,
+        "row": 2
+      },
+      {
+        "pair_rate": 53.0,
+        "relative_residual": 1.700387917684545e-15,
+        "row": 3
+      },
+      {
+        "pair_rate": 579.0,
+        "relative_residual": 2.6696013046432265e-14,
+        "row": 4
+      },
+      {
+        "pair_rate": 165.0,
+        "relative_residual": 4.0590971801035764e-15,
+        "row": 5
+      },
+      {
+        "pair_rate": 274.0,
+        "relative_residual": 9.677902756155868e-15,
+        "row": 6
+      },
+      {
+        "pair_rate": 435.0,
+        "relative_residual": 1.8981039261309017e-14,
+        "row": 7
+      },
+      {
+        "pair_rate": 432.0,
+        "relative_residual": 1.7264986961305724e-14,
+        "row": 8
+      },
+      {
+        "pair_rate": 165.0,
+        "relative_residual": 3.96520816929199e-15,
+        "row": 9
+      },
+      {
+        "pair_rate": 190.0,
+        "relative_residual": 4.3641352482428376e-15,
+        "row": 10
+      },
+      {
+        "pair_rate": 186.0,
+        "relative_residual": 4.109546849354675e-15,
+        "row": 11
+      },
+      {
+        "pair_rate": 405.0,
+        "relative_residual": 1.1808823431563833e-14,
+        "row": 12
+      },
+      {
+        "pair_rate": 364.0,
+        "relative_residual": 8.2838523864432e-15,
+        "row": 13
+      },
+      {
+        "pair_rate": 190.0,
+        "relative_residual": 5.283105800810685e-15,
+        "row": 14
+      },
+      {
+        "pair_rate": 115.0,
+        "relative_residual": 7.254802552800239e-15,
+        "row": 15
+      },
+      {
+        "pair_rate": 87.0,
+        "relative_residual": 2.2449681852230163e-15,
+        "row": 16
+      },
+      {
+        "pair_rate": 371.0,
+        "relative_residual": 8.793105978897493e-15,
+        "row": 17
+      },
+      {
+        "pair_rate": 360.0,
+        "relative_residual": 1.0492867038108112e-14,
+        "row": 18
+      },
+      {
+        "pair_rate": 396.0,
+        "relative_residual": 8.820508330688829e-15,
+        "row": 19
+      },
+      {
+        "pair_rate": 522.0,
+        "relative_residual": 9.424170604861446e-15,
+        "row": 20
+      },
+      {
+        "pair_rate": 242.0,
+        "relative_residual": 3.813379205321129e-15,
+        "row": 21
+      },
+      {
+        "pair_rate": 223.0,
+        "relative_residual": 8.131888589023691e-15,
+        "row": 22
+      },
+      {
+        "pair_rate": 183.0,
+        "relative_residual": 2.843295883732569e-15,
+        "row": 23
+      }
+    ],
+    "single_shell_scalar_rate_used": false
+  },
+  "generated_at_utc": "2026-07-27T02:13:14.237898+00:00",
+  "heat_weighted_HHL_commutator": {
+    "all_checks_pass": true,
+    "maximum_bound_ratio": 0.009192944273248536,
+    "maximum_rate_identity_residual": 0.0,
+    "maximum_selector_lipschitz_ratio": 0.015670687177904874,
+    "maximum_weight_decomposition_residual": 5.746414566916948e-14,
+    "proof_mechanism": "Compare both exact heat/filter weights with one common weight. Its paired forcing costs 18L. Selector differences cost (L/H) times an O(H) unpaired term. Rate differences cost nu*tau*HL times that O(H) term, hence L(nu H^2 tau)exp(-c nu H^2 tau), which is absorbed into a weaker exponential.",
+    "rate_difference_identities": "lambda_(a+c,b)-lambda_(a,b)=2a dot c+|c|^2; lambda_(b+c,a)-lambda_(a,b)=2b dot c+|c|^2",
+    "row_count": 1344,
+    "selector": "A symmetric 1/H-Lipschitz pair-shell selector is used in the replay. The theorem allows any smooth selector with the corresponding rescaled derivative bound.",
+    "theorem": "The exact pair-rate HHL response is bounded by (64+16C_chi)L exp(-nu H^2 tau) times the three input amplitudes. Here C_chi=1, so 80 is retained."
+  },
+  "next_gate": "Prove a scale-uniform low-output Littlewood-Paley or partition-space version of this response estimate and its stability under Galerkin limits. Only then test suitable-weak passage and defect-measure consequences.",
+  "prerequisites": {
+    "corrected_scalar_regeneration_gate": "work/ns_collision/results/scalar_local_energy_regeneration_gate_audit_v2.json",
+    "corrected_scalar_regeneration_gate_sha256": "316efc095ac8b03cb97c7902f41e1934bf32aa4958d1c123c9eb0edafbdd7755",
+    "nonlinear_stress_regeneration_gate": "work/ns_collision/results/nonlinear_stress_regeneration_gate_audit_v1.json",
+    "nonlinear_stress_regeneration_gate_sha256": "a78a6064db7e8c94e6fbbd9cc85469ec505fe4070e5b88d21f968120e20858e1"
+  },
+  "schema": "ns_smooth_galerkin_shell_response_gate_audit_v1",
+  "scope": "The theorem is for smooth finite Fourier Galerkin solutions, smooth static dyadic pair selectors, and any fixed finite set of low Fourier/tensor channels. Constants may depend on that channel set and multiplier family. It is not yet a scale-uniform physical-space localization theorem.",
+  "status": "exact_pair_rate_complete_dyadic_smooth_galerkin_stress_response_certified",
+  "summed_response_and_initial_stress": {
+    "all_checks_pass": true,
+    "complete_smooth_galerkin_tail": "The sum of the displayed forced and initial bounds tends to zero as H0 tends to infinity for every fixed finite set of low Fourier/tensor channels.",
+    "forced_response": "||sum_(H>=H0)C_H^F||_L2_t <=C E_*sqrt(D)/(nu sqrt(H0)).",
+    "initial_response": "||sum_(H>=H0)C_H^0||_L2_t <=C E(0)/(sqrt(nu)H0).",
+    "rows": [
+      {
+        "all_checks_pass": true,
+        "duhamel_cauchy_bound": 34.705327347870984,
+        "duhamel_dyadic_tail_bound": 34.72228573019153,
+        "duhamel_triangle_bound": 22.034138799963877,
+        "initial_energy_tail_bound": 0.6412984501396803,
+        "initial_exact_Gram_norm": 0.46344884629369687,
+        "initial_triangle_bound": 0.48185988876490204,
+        "label": "harmonic"
+      },
+      {
+        "all_checks_pass": true,
+        "duhamel_cauchy_bound": 2112.4141045107076,
+        "duhamel_dyadic_tail_bound": 2113.4463127836484,
+        "duhamel_triangle_bound": 289.8252945583723,
+        "initial_energy_tail_bound": 1.5776237251482639,
+        "initial_exact_Gram_norm": 0.3537825729388559,
+        "initial_triangle_bound": 0.4092648514647559,
+        "label": "alternating"
+      },
+      {
+        "all_checks_pass": true,
+        "duhamel_cauchy_bound": 3526.0694410461397,
+        "duhamel_dyadic_tail_bound": 3527.7924166881985,
+        "duhamel_triangle_bound": 320.84691896794504,
+        "initial_energy_tail_bound": 1.5285689474217425,
+        "initial_exact_Gram_norm": 0.3042466346788226,
+        "initial_triangle_bound": 0.3500187251929444,
+        "label": "seeded_random"
+      },
+      {
+        "all_checks_pass": true,
+        "duhamel_cauchy_bound": 107.38647395295585,
+        "duhamel_dyadic_tail_bound": 107.4389471903668,
+        "duhamel_triangle_bound": 44.444301043592574,
+        "initial_energy_tail_bound": 0.6165663870087641,
+        "initial_exact_Gram_norm": 0.12465813697073166,
+        "initial_triangle_bound": 0.1287961664137435,
+        "label": "two_shell_concentration"
+      }
+    ]
+  }
+}

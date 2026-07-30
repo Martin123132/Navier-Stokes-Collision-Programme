@@ -1,0 +1,296 @@
+{
+  "all_positive_checks_pass": true,
+  "annular_pressure_commutator_theorem": {
+    "Lambda_equals_2_theta_upper": 1.909859317102744,
+    "all_checks_pass": true,
+    "assumptions": "u is smooth and divergence free on T^3, supp u_hat is contained in {K<=|k|<=Lambda K}, Phi_v=psi_v^2 has partition frequency m, and T_H has matrix multiplier M_H with sup||partial_S M_H||<=L_|S|H^(-|S|) for |S|<=3.",
+    "commutator_constant": "C_ann=L_0+3L_1 theta+3L_2 theta^2+L_3 theta^3",
+    "convenient_strong_threshold": "K>=2sqrt(3)m",
+    "coordinate_degree": "L=floor(Lambda K)",
+    "dimensionless_bound": "If H=K and K>sqrt(3)m, then theta<=2(Lambda+1)/pi.",
+    "dimensionless_toggle": "theta=(m/(2H))C_(L,m)",
+    "exact_Walsh_collapse": "||psi_v T_H(u tensor u)||_2 <=C_ann||u||_infinity||psi_v u||_2",
+    "intrinsic_absorption_condition": "nu>=2 gamma C_ann ||u||_infinity/sqrt(K(K-sqrt(3)m)).",
+    "scope": "This is a per-vertex, floor-free theorem for the smooth high-output pressure of one annular velocity shell. It does not control the low-output high-high beat, sums of shells, or mixed low/high pressure paraproducts.",
+    "single_vertex_pressure_load_bound": "|mean[p_H u dot grad Phi_v]| <=2 gamma C_ann ||u||_infinity E_v/sqrt(K(K-sqrt(3)m)).",
+    "square_factor_input": "For K>sqrt(3)m, ||psi_v u||_2<=sqrt(E_v/[K(K-sqrt(3)m)]), E_v=mean[Phi_v|grad u|^2].",
+    "toggle_constant": "C_(L,m)=cot(pi/[2(ceil((2L+1)/m)+1)])",
+    "validity_threshold": "K>sqrt(3)m",
+    "zero_face_gradient_input": "||u grad psi_v||_2<=gamma(K,m)sqrt(E_v), gamma=1+sqrt(1+(3m^2/4)/[K(K-sqrt(3)m)])."
+  },
+  "assumption_scope": "Smooth periodic divergence-free velocity in one radial annulus, tensor-product vertex weights, and a C^3 smooth high-output double-Riesz multiplier.",
+  "certification_flags": {
+    "Navier_Stokes_global_regularity_proved": false,
+    "annular_Hamming_leakage_collapse_proved": true,
+    "critical_signed_bound_proved": false,
+    "cross_shell_paraproduct_summation_proved": false,
+    "exceptional_set_upgrade_proved": false,
+    "low_output_high_high_beat_controlled": false,
+    "low_regularity_passage_proved": false,
+    "mixed_low_high_paraproduct_controlled": false,
+    "sharp_high_output_cutoff_supported": false,
+    "sharp_residue_chain_toggle_inequality_proved": true,
+    "single_vertex_annular_high_output_pressure_bound_proved": true,
+    "single_vertex_annular_intrinsic_absorption_proved": true
+  },
+  "kind": "annular_vertex_commutator_gate_audit",
+  "next_theorem_target": "For one shell u_K, estimate the low pressure output P_<{K}[u_K tensor u_K] in the signed eight-cell load before absolute values. Determine whether divergence-free opposite-carrier cancellation and pressure-load conservation yield a summable gain; then add separated shell pairs.",
+  "positive_checks": {
+    "annular_pressure_commutator_theorem_passes": true,
+    "residue_chain_toggle_theorem_passes": true,
+    "shellized_counterexample_stress_passes": true,
+    "tensor_Hamming_collapse_passes": true
+  },
+  "residue_chain_toggle_theorem": {
+    "all_checks_pass": true,
+    "chain_forms": "On a chain of length N, sin is the zero-boundary difference matrix D/2 and cos is the zero-boundary sum matrix S/2.",
+    "residue_decomposition": "Multiplication connects coefficients whose indices differ by m, so Fourier space splits into residue chains modulo m.",
+    "rows": [
+      {
+        "all_checks_pass": true,
+        "coordinate_degree": 2,
+        "cotangent_upper_bound": 3.819718634205488,
+        "expected_maximum_chain_length": 5,
+        "maximum_chain_length": 5,
+        "numerical_difference_over_sum_norm": 3.732050807568878,
+        "numerical_sum_over_difference_norm": 3.732050807568878,
+        "partition_frequency": 1,
+        "residue_chain_lengths": [
+          5
+        ],
+        "sharp_toggle_constant": 3.7320508075688776
+      },
+      {
+        "all_checks_pass": true,
+        "coordinate_degree": 8,
+        "cotangent_upper_bound": 11.459155902616464,
+        "expected_maximum_chain_length": 17,
+        "maximum_chain_length": 17,
+        "numerical_difference_over_sum_norm": 11.43005230276135,
+        "numerical_sum_over_difference_norm": 11.43005230276135,
+        "partition_frequency": 1,
+        "residue_chain_lengths": [
+          17
+        ],
+        "sharp_toggle_constant": 11.430052302761343
+      },
+      {
+        "all_checks_pass": true,
+        "coordinate_degree": 8,
+        "cotangent_upper_bound": 6.366197723675814,
+        "expected_maximum_chain_length": 9,
+        "maximum_chain_length": 9,
+        "numerical_difference_over_sum_norm": 6.313751514675045,
+        "numerical_sum_over_difference_norm": 6.313751514675045,
+        "partition_frequency": 2,
+        "residue_chain_lengths": [
+          9,
+          8
+        ],
+        "sharp_toggle_constant": 6.313751514675044
+      },
+      {
+        "all_checks_pass": true,
+        "coordinate_degree": 17,
+        "cotangent_upper_bound": 8.276057040778557,
+        "expected_maximum_chain_length": 12,
+        "maximum_chain_length": 12,
+        "numerical_difference_over_sum_norm": 8.235740954498498,
+        "numerical_sum_over_difference_norm": 8.235740954498498,
+        "partition_frequency": 3,
+        "residue_chain_lengths": [
+          11,
+          12,
+          12
+        ],
+        "sharp_toggle_constant": 8.235740954498494
+      },
+      {
+        "all_checks_pass": true,
+        "coordinate_degree": 32,
+        "cotangent_upper_bound": 11.459155902616464,
+        "expected_maximum_chain_length": 17,
+        "maximum_chain_length": 17,
+        "numerical_difference_over_sum_norm": 11.43005230276135,
+        "numerical_sum_over_difference_norm": 11.43005230276135,
+        "partition_frequency": 4,
+        "residue_chain_lengths": [
+          17,
+          16,
+          16,
+          16
+        ],
+        "sharp_toggle_constant": 11.430052302761343
+      },
+      {
+        "all_checks_pass": true,
+        "coordinate_degree": 33,
+        "cotangent_upper_bound": 7.002817496043395,
+        "expected_maximum_chain_length": 10,
+        "maximum_chain_length": 10,
+        "numerical_difference_over_sum_norm": 6.955152771773471,
+        "numerical_sum_over_difference_norm": 6.955152771773471,
+        "partition_frequency": 7,
+        "residue_chain_lengths": [
+          9,
+          9,
+          10,
+          10,
+          10,
+          10,
+          9
+        ],
+        "sharp_toggle_constant": 6.9551527717734745
+      },
+      {
+        "all_checks_pass": true,
+        "coordinate_degree": 8,
+        "cotangent_upper_bound": 1.2732395447351628,
+        "expected_maximum_chain_length": 1,
+        "maximum_chain_length": 1,
+        "numerical_difference_over_sum_norm": 1.0,
+        "numerical_sum_over_difference_norm": 1.0,
+        "partition_frequency": 20,
+        "residue_chain_lengths": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "sharp_toggle_constant": 1.0000000000000002
+      }
+    ],
+    "setting": "f(x)=sum_(|n|<=L)a_n exp(inx), with the two half-frequency multipliers sin(mx/2) and cos(mx/2).",
+    "sharp_inequality": "Both ||cos(mx/2)f||<=C_(L,m)||sin(mx/2)f|| and its sine/cosine reverse hold, where C_(L,m)=cot(pi/[2(N_max+1)]) and N_max=ceil((2L+1)/m).",
+    "sharpness": "The first and last discrete Dirichlet sine eigenvectors attain the two orientations of the constant."
+  },
+  "route_decision": "Use a smooth Littlewood-Paley pressure output and decompose velocity into comparable annuli. The high-output self-shell term is now floor-free and intrinsically absorbable. The next obstruction is the low-output beat of a high-high shell pair, followed by cross-shell paraproduct summation.",
+  "schema_version": 1,
+  "shellized_counterexample_stress": {
+    "all_checks_pass": true,
+    "construction": "The previous broad-band curl-Fejer family is shifted farther into the positive octant so every velocity support lies in one radial annulus with maximum/minimum ratio below two.",
+    "interpretation": "The broad-band lower-carrier ratio grew by a factor above 69. In the shellized family the ratio remains bounded and decreases over the tested rows, as predicted by the exact residue-chain theorem. This is a stress test, not the proof.",
+    "ratio_variation_factor": 1.1200049151162093,
+    "rows": [
+      {
+        "all_checks_pass": true,
+        "diagonal_commutator_ratio": 0.00039560586029484496,
+        "expected_maximum_velocity_mode": 19.05255888325765,
+        "expected_minimum_velocity_mode": 12.12435565298214,
+        "grid_size": 54,
+        "maximum_product_coordinate_mode_upper": 22.0,
+        "maximum_relative_divergence_residual": 5.881205954063772e-16,
+        "maximum_velocity_mode": 19.05255888325765,
+        "minimum_velocity_mode": 12.12435565298214,
+        "nyquist": 27.0,
+        "order": 3,
+        "radial_shell_ratio": 1.5714285714285714,
+        "velocity_L_infinity": 3.65938919796093,
+        "weighted_pressure_norm": 1.382644097964917e-05,
+        "weighted_velocity_mass": 0.007683592764886172,
+        "zero_face_gradient_over_carrier": 0.0018671926159468688
+      },
+      {
+        "all_checks_pass": true,
+        "diagonal_commutator_ratio": 0.0003727535009689136,
+        "expected_maximum_velocity_mode": 25.980762113533157,
+        "expected_minimum_velocity_mode": 15.588457268119894,
+        "grid_size": 72,
+        "maximum_product_coordinate_mode_upper": 30.0,
+        "maximum_relative_divergence_residual": 1.1762411908127562e-15,
+        "maximum_velocity_mode": 25.980762113533157,
+        "minimum_velocity_mode": 15.588457268119896,
+        "nyquist": 36.0,
+        "order": 4,
+        "radial_shell_ratio": 1.6666666666666665,
+        "velocity_L_infinity": 3.658578856904282,
+        "weighted_pressure_norm": 3.6024310407456448e-06,
+        "weighted_velocity_mass": 0.002107260315140632,
+        "zero_face_gradient_over_carrier": 0.0005343060417464315
+      },
+      {
+        "all_checks_pass": true,
+        "diagonal_commutator_ratio": 0.0003623746832676783,
+        "expected_maximum_velocity_mode": 32.90896534380867,
+        "expected_minimum_velocity_mode": 19.05255888325765,
+        "grid_size": 90,
+        "maximum_product_coordinate_mode_upper": 38.0,
+        "maximum_relative_divergence_residual": 1.1762411908127574e-15,
+        "maximum_velocity_mode": 32.90896534380867,
+        "minimum_velocity_mode": 19.05255888325765,
+        "nyquist": 45.0,
+        "order": 5,
+        "radial_shell_ratio": 1.7272727272727273,
+        "velocity_L_infinity": 3.658203837419453,
+        "weighted_pressure_norm": 1.2900602256202305e-06,
+        "weighted_velocity_mass": 0.0007723211767134185,
+        "zero_face_gradient_over_carrier": 0.0002008387920339964
+      },
+      {
+        "all_checks_pass": true,
+        "diagonal_commutator_ratio": 0.00035670356568772983,
+        "expected_maximum_velocity_mode": 39.837168574084174,
+        "expected_minimum_velocity_mode": 22.516660498395403,
+        "grid_size": 108,
+        "maximum_product_coordinate_mode_upper": 46.0,
+        "maximum_relative_divergence_residual": 2.3524823816255137e-15,
+        "maximum_velocity_mode": 39.83716857408418,
+        "minimum_velocity_mode": 22.516660498395403,
+        "nyquist": 54.0,
+        "order": 6,
+        "radial_shell_ratio": 1.7692307692307696,
+        "velocity_L_infinity": 3.6580001370852773,
+        "weighted_pressure_norm": 5.610856416127831e-07,
+        "weighted_velocity_mass": 0.0003400769815805564,
+        "zero_face_gradient_over_carrier": 8.99324557038726e-05
+      },
+      {
+        "all_checks_pass": true,
+        "diagonal_commutator_ratio": 0.0003532179680245401,
+        "expected_maximum_velocity_mode": 46.76537180435968,
+        "expected_minimum_velocity_mode": 25.980762113533157,
+        "grid_size": 126,
+        "maximum_product_coordinate_mode_upper": 54.0,
+        "maximum_relative_divergence_residual": 2.352482381625515e-15,
+        "maximum_velocity_mode": 46.76537180435969,
+        "minimum_velocity_mode": 25.98076211353316,
+        "nyquist": 63.0,
+        "order": 7,
+        "radial_shell_ratio": 1.8,
+        "velocity_L_infinity": 3.657877316953473,
+        "weighted_pressure_norm": 2.783801528111108e-07,
+        "weighted_velocity_mass": 0.0001699706309090703,
+        "zero_face_gradient_over_carrier": 4.548921537995383e-05
+      }
+    ]
+  },
+  "status": "annular_diagonal_pressure_commutator_certified",
+  "tensor_Hamming_collapse": {
+    "all_checks_pass": true,
+    "example_coordinate_degree": 8,
+    "example_partition_frequency": 2,
+    "example_toggle_constant": 6.313751514675044,
+    "extremizing_tensor_ratios": {
+      "0": 1.0,
+      "1": 6.313751514675044,
+      "2": 39.86345818906141,
+      "3": 251.68796952137177
+    },
+    "proof": "Toggle one differing coordinate at a time. Factors in the other coordinates do not alter the active residue chains; apply the sharp one-dimensional inequality and sum the remaining Fourier slices.",
+    "three_dimensional_inequality": "If u has coordinate Fourier degree at most L, then M_w<=C_(L,m)^d M_v for d=Hamming(v,w).",
+    "vertex_mass": "M_v=||psi_v u||_2"
+  }
+}

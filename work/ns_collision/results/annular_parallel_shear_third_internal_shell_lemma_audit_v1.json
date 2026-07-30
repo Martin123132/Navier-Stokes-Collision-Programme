@@ -1,0 +1,971 @@
+{
+  "Euler_internal_shell_certificate": {
+    "Euler_symbol": "b_r(x,y)=-(i/2)P_r[(r.x)y+(r.y)x], b_0=0",
+    "all_checks_pass": true,
+    "conclusion": "After symbol size and shell multiplicity are combined, p differences on one internal Euler output gain at least min(p,4) carrier powers for 0<=p<=6.",
+    "derivative_majorants": {
+      "0": 24576,
+      "1": 25165824,
+      "2": 32212254720,
+      "3": 49478023249920,
+      "4": 88664617663856640,
+      "5": 181585136975578398720,
+      "6": 418372155591732630650880
+    },
+    "global_bounds": [
+      "|b_r(x,y)|<=|r||x||y|",
+      "|b_r(x,y)-b_s(x,y)|<=7|r-s||x||y|"
+    ],
+    "higher_difference_rule": "For |r|~K>=4p, p unit differences obey |Delta^p b_r|<=E_p K^(1-p)|x||y|. For K<4p, direct finite-shell counting is used.",
+    "rows": [
+      {
+        "combined_shell_gain": "4-4kappa",
+        "difference_order": 0,
+        "gain_at_kappa_0": 4,
+        "gain_at_kappa_1": 0,
+        "large_shell_symbol_bound": "C_0 K",
+        "minimum_gain_over_0_le_kappa_le_1": 0
+      },
+      {
+        "combined_shell_gain": "4+(1-4)kappa",
+        "difference_order": 1,
+        "gain_at_kappa_0": 4,
+        "gain_at_kappa_1": 1,
+        "large_shell_symbol_bound": "C_p K^(1-p)",
+        "minimum_gain_over_0_le_kappa_le_1": 1
+      },
+      {
+        "combined_shell_gain": "4+(2-4)kappa",
+        "difference_order": 2,
+        "gain_at_kappa_0": 4,
+        "gain_at_kappa_1": 2,
+        "large_shell_symbol_bound": "C_p K^(1-p)",
+        "minimum_gain_over_0_le_kappa_le_1": 2
+      },
+      {
+        "combined_shell_gain": "4+(3-4)kappa",
+        "difference_order": 3,
+        "gain_at_kappa_0": 4,
+        "gain_at_kappa_1": 3,
+        "large_shell_symbol_bound": "C_p K^(1-p)",
+        "minimum_gain_over_0_le_kappa_le_1": 3
+      },
+      {
+        "combined_shell_gain": "4+(4-4)kappa",
+        "difference_order": 4,
+        "gain_at_kappa_0": 4,
+        "gain_at_kappa_1": 4,
+        "large_shell_symbol_bound": "C_p K^(1-p)",
+        "minimum_gain_over_0_le_kappa_le_1": 4
+      },
+      {
+        "combined_shell_gain": "4+(5-4)kappa",
+        "difference_order": 5,
+        "gain_at_kappa_0": 4,
+        "gain_at_kappa_1": 5,
+        "large_shell_symbol_bound": "C_p K^(1-p)",
+        "minimum_gain_over_0_le_kappa_le_1": 4
+      },
+      {
+        "combined_shell_gain": "4+(6-4)kappa",
+        "difference_order": 6,
+        "gain_at_kappa_0": 4,
+        "gain_at_kappa_1": 6,
+        "large_shell_symbol_bound": "C_p K^(1-p)",
+        "minimum_gain_over_0_le_kappa_le_1": 4
+      }
+    ],
+    "shell_count_rule": "An internal output restricted to |r|~N^kappa has O(N^(3kappa)) choices instead of O(N^3), gaining 3(1-kappa) powers. Relative to a generic degree-one symbol, the differentiated symbol gains 1+(p-1)kappa powers."
+  },
+  "algorithm_revision": "annular-parallel-shear-third-internal-shell-lemma-v2-fixed-output-correction",
+  "all_positive_checks_pass": true,
+  "certification_flags": {
+    "Navier_Stokes_global_regularity_proved": false,
+    "all_dangerous_topologies_enumerated": true,
+    "all_high_pressure_four_gain_bound_certified": true,
+    "complete_restart_time_third_O_N11_proved": true,
+    "critical_L3_control_proved": false,
+    "exact_third_tree_expansion_certified": true,
+    "explicit_restart_C3_recorded": true,
+    "finite_time_blowup_proved": false,
+    "parabolic_window_curvature_persistence_proved": false,
+    "protected_four_high_O_N11_bound_certified": true,
+    "six_high_post_resonance_nested_shell_rank_certified": true,
+    "uniform_parabolic_window_third_O_N11_proved": false
+  },
+  "dangerous_topology_ledger": {
+    "all_checks_pass": true,
+    "expanded_pressure_exception_count": 30,
+    "maximum_protected_B_path_depth": 3,
+    "post_resonance_topology_failures": [],
+    "pressure_rows": [
+      {
+        "absolute_coefficient_assignment_mass": 156,
+        "assignment_count": 19,
+        "dependent_B_depth_distribution": {},
+        "fixed_bounded_B_node_count_distribution": {},
+        "heat_count": 0,
+        "high_leaf_count": 4,
+        "route": "exception"
+      },
+      {
+        "absolute_coefficient_assignment_mass": 1644,
+        "assignment_count": 281,
+        "dependent_B_depth_distribution": {
+          "0": 170,
+          "1": 84,
+          "2": 26,
+          "3": 1
+        },
+        "fixed_bounded_B_node_count_distribution": {
+          "0": 279,
+          "1": 2
+        },
+        "heat_count": 0,
+        "high_leaf_count": 4,
+        "route": "protected"
+      },
+      {
+        "absolute_coefficient_assignment_mass": 120,
+        "assignment_count": 20,
+        "dependent_B_depth_distribution": {
+          "0": 14,
+          "1": 5,
+          "2": 1
+        },
+        "fixed_bounded_B_node_count_distribution": {
+          "0": 20
+        },
+        "heat_count": 0,
+        "high_leaf_count": 6,
+        "route": "protected"
+      },
+      {
+        "absolute_coefficient_assignment_mass": 90,
+        "assignment_count": 11,
+        "dependent_B_depth_distribution": {},
+        "fixed_bounded_B_node_count_distribution": {},
+        "heat_count": 1,
+        "high_leaf_count": 4,
+        "route": "exception"
+      },
+      {
+        "absolute_coefficient_assignment_mass": 1410,
+        "assignment_count": 234,
+        "dependent_B_depth_distribution": {
+          "0": 162,
+          "1": 66,
+          "2": 6
+        },
+        "fixed_bounded_B_node_count_distribution": {
+          "0": 234
+        },
+        "heat_count": 1,
+        "high_leaf_count": 4,
+        "route": "protected"
+      },
+      {
+        "absolute_coefficient_assignment_mass": 244,
+        "assignment_count": 44,
+        "dependent_B_depth_distribution": {
+          "0": 32,
+          "1": 12
+        },
+        "fixed_bounded_B_node_count_distribution": {
+          "0": 44
+        },
+        "heat_count": 2,
+        "high_leaf_count": 4,
+        "route": "protected"
+      }
+    ],
+    "protected_four_high_maximum_fixed_bounded_B_nodes": 1,
+    "protected_four_high_rows_with_fixed_bounded_B_node": 4,
+    "protected_pressure_assignment_count": 579,
+    "protected_velocity_Fisher_assignment_count": 81,
+    "six_high_fixed_bounded_B_node_mass": 0,
+    "six_high_maximum_B_path_depth": 2,
+    "triangular_change_of_variables": "Before resonance elimination, dependent-path B outputs are strictly nested leaf sums. After eliminating the dependent leaf, their shell variables are complements of those sums. For the all-high pressure row every complement is nonempty and they are strictly nested, so the change to shell variables is block-triangular. Four-high rows may instead have a fixed bounded outer B output; those rows use the separate one-power bounded-symbol estimate.",
+    "velocity_Fisher_rows": [
+      {
+        "absolute_coefficient_assignment_mass": 300,
+        "assignment_count": 55,
+        "dependent_B_depth_distribution": {
+          "0": 46,
+          "1": 8,
+          "2": 1
+        },
+        "fixed_bounded_B_node_count_distribution": {
+          "0": 53,
+          "1": 2
+        },
+        "heat_count": 0,
+        "high_leaf_count": 4,
+        "route": "protected"
+      },
+      {
+        "absolute_coefficient_assignment_mass": 144,
+        "assignment_count": 26,
+        "dependent_B_depth_distribution": {
+          "0": 23,
+          "1": 3
+        },
+        "fixed_bounded_B_node_count_distribution": {
+          "0": 26
+        },
+        "heat_count": 1,
+        "high_leaf_count": 4,
+        "route": "protected"
+      }
+    ]
+  },
+  "difference_allocation_certificate": {
+    "all_checks_pass": true,
+    "all_high_pressure_minimum_gain": 4,
+    "difference_budget": 6,
+    "factor_order": "[packet profile, regular polynomial pool, one entry per nested Euler output]",
+    "fixed_bounded_output_route": {
+      "baseline_bounded_symbol_gain": 1,
+      "critical_allocation": "All six compatible differences may land on a B factor whose output is O(1) and independent of the free high carriers after resonance (it may still vary over the finite vertex stencil). Relative to the generic O(N) Euler symbol, bounded output supplies one carrier power; repeated differences are bounded but need not supply further powers.",
+      "dyadic_log_at_minimum": false,
+      "minimum_carrier_gain": 1,
+      "noncritical_terms": "If a difference lands on the packet, a regular factor, or a free internal shell, its additional gain leaves enough surplus to absorb any endpoint shell logarithm. Thus the only one-gain term has no shell sum and no logarithm."
+    },
+    "gain_rules": {
+      "fixed_bounded_Euler_output": "the O(1) output symbol gains one power relative to generic O(N), with no associated shell sum",
+      "free_Euler_output": "p differences plus shell counting gain min(p,4) powers",
+      "packet_profile": "p differences gain p powers",
+      "regular_polynomial": "p explicit vertex powers/differences gain p powers"
+    },
+    "protected_four_high_minimum_gain": 1,
+    "protected_four_high_single_factor_route": {
+      "dyadic_log_at_minimum": false,
+      "endpoint_log_exclusion": "The one-gain free-shell endpoint is p=1 at carrier scale and its dyadic sum is top-shell dominated. The fixed-output one-gain endpoint has no shell sum. A p=4 shell logarithm occurs only with at least four raw gains and can spend one of the three surplus powers.",
+      "minimum_carrier_gain": 1,
+      "proof_split": "Distribute the six compatible differences by the discrete Leibniz rule. If at least one reaches the packet profile or a regular polynomial factor, that factor gives at least one carrier power. Otherwise a path B factor receives at least one difference. If its post-resonance output is fixed, its O(1) size replaces a generic O(N) symbol. If it is free, one output-shell change of variables and the p>=1 Euler shell estimate give at least one power. Other path outputs are bounded crudely, so no independence between four-high shells is assumed."
+    },
+    "six_high_free_shell_minimum_over_realized_depths": 4,
+    "strictly_nested_free_shell_depth_rows": [
+      {
+        "B_path_depth": 0,
+        "allocation_count": 7,
+        "factor_count": 2,
+        "minimizing_allocations": [
+          [
+            0,
+            6
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "minimum_carrier_gain": 6
+      },
+      {
+        "B_path_depth": 1,
+        "allocation_count": 28,
+        "factor_count": 3,
+        "minimizing_allocations": [
+          [
+            0,
+            0,
+            6
+          ]
+        ],
+        "minimum_carrier_gain": 4
+      },
+      {
+        "B_path_depth": 2,
+        "allocation_count": 84,
+        "factor_count": 4,
+        "minimizing_allocations": [
+          [
+            0,
+            0,
+            0,
+            6
+          ],
+          [
+            0,
+            0,
+            6,
+            0
+          ]
+        ],
+        "minimum_carrier_gain": 4
+      },
+      {
+        "B_path_depth": 3,
+        "allocation_count": 210,
+        "factor_count": 5,
+        "minimizing_allocations": [
+          [
+            0,
+            0,
+            0,
+            0,
+            6
+          ],
+          [
+            0,
+            0,
+            0,
+            6,
+            0
+          ],
+          [
+            0,
+            0,
+            6,
+            0,
+            0
+          ]
+        ],
+        "minimum_carrier_gain": 4
+      }
+    ]
+  },
+  "explicit_constant_certificate": {
+    "C0_decimal": "27462193283702454823402264979111101430825525186042095003076399016855725320151587387213551112134946739990276371469388044226511297073596301649147763481166412862356755983391751008516052668527879937503789573185479072627494419114772239367365175965544642058168346610959909888568845774894110212711644068699458351481610324613605463883270423853238387050814994627653245270959623868216164873913868256061187319001196914750259200000000",
+    "C0_decimal_digits": 422,
+    "C0_leading_16_digits": "2746219328370245",
+    "Euler_difference_constant": "418372155591732630650880",
+    "Leibniz_allocation_constant": 531441,
+    "all_checks_pass": true,
+    "coefficient_mass": 1412,
+    "constant_is_deliberately_coarse": true,
+    "dyadic_log_absorption_constant": 32,
+    "explicit_bound": "|g_N'''(0)|<=C0 max(nu,nu^-1)^13 N^11 for odd N>=3",
+    "finite_shell_count_charged_per_factor": true,
+    "finite_shell_count_constant": 117649,
+    "frequency_radius_constant": 32,
+    "high_low_assignment_constant": 64,
+    "low_and_weight_l1_constant": 256,
+    "maximum_differential_order": 8,
+    "maximum_path_factor_count": 8,
+    "per_factor_local_constant": "56748025163487011065743627651456589353839493120",
+    "profile_difference_constant": "482350255110430271959333506034531439738880",
+    "regular_polynomial_constant": "6693954489467722090414080",
+    "resonant_tuple_constant": 32,
+    "viscosity_factor": "mu^13, mu=max(nu,nu^-1)"
+  },
+  "kind": "annular_parallel_shear_third_internal_shell_lemma_audit",
+  "packet_difference_certificate": {
+    "all_checks_pass": true,
+    "conclusion": "For every alpha in {0,1,2}^3, the zero-extended parity-gauged packet obeys ||Delta^alpha h_N||_1<=C_H N^(2-|alpha|).",
+    "multiplier_derivative_majorants": {
+      "0": 384,
+      "1": 24576,
+      "2": 1966080,
+      "3": 188743680,
+      "4": 21139292160,
+      "5": 2705829396480,
+      "6": 389639433093120
+    },
+    "one_dimensional_zero_extension": {
+      "0": {
+        "bound": "||s_N||_1<=2N",
+        "carrier_power": 1,
+        "constant": 2
+      },
+      "1": {
+        "bound": "||Delta s_N||_1<=2",
+        "carrier_power": 0,
+        "constant": 2
+      },
+      "2": {
+        "bound": "||Delta^2 s_N||_1<=4pi/N",
+        "carrier_power": -1,
+        "constant": 12.566370614359172
+      }
+    },
+    "smooth_multiplier": "m(k)=P_k(e_3)/|k| is homogeneous of degree -1 on |k|>=2N. Differentiating e_3/|k|-k k_3/|k|^3 gives |partial^alpha m(k)|<=M_|alpha| N^(-1-|alpha|).",
+    "tensor_multiindex_rows": [
+      {
+        "L1_carrier_power": 2,
+        "difference_order": 0,
+        "gain_from_base_L1_power": 0,
+        "multiindex": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "L1_carrier_power": 1,
+        "difference_order": 1,
+        "gain_from_base_L1_power": 1,
+        "multiindex": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "L1_carrier_power": 0,
+        "difference_order": 2,
+        "gain_from_base_L1_power": 2,
+        "multiindex": [
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "L1_carrier_power": 1,
+        "difference_order": 1,
+        "gain_from_base_L1_power": 1,
+        "multiindex": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "L1_carrier_power": 0,
+        "difference_order": 2,
+        "gain_from_base_L1_power": 2,
+        "multiindex": [
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "L1_carrier_power": -1,
+        "difference_order": 3,
+        "gain_from_base_L1_power": 3,
+        "multiindex": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "L1_carrier_power": 0,
+        "difference_order": 2,
+        "gain_from_base_L1_power": 2,
+        "multiindex": [
+          0,
+          2,
+          0
+        ]
+      },
+      {
+        "L1_carrier_power": -1,
+        "difference_order": 3,
+        "gain_from_base_L1_power": 3,
+        "multiindex": [
+          0,
+          2,
+          1
+        ]
+      },
+      {
+        "L1_carrier_power": -2,
+        "difference_order": 4,
+        "gain_from_base_L1_power": 4,
+        "multiindex": [
+          0,
+          2,
+          2
+        ]
+      },
+      {
+        "L1_carrier_power": 1,
+        "difference_order": 1,
+        "gain_from_base_L1_power": 1,
+        "multiindex": [
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "L1_carrier_power": 0,
+        "difference_order": 2,
+        "gain_from_base_L1_power": 2,
+        "multiindex": [
+          1,
+          0,
+          1
+        ]
+      },
+      {
+        "L1_carrier_power": -1,
+        "difference_order": 3,
+        "gain_from_base_L1_power": 3,
+        "multiindex": [
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "L1_carrier_power": 0,
+        "difference_order": 2,
+        "gain_from_base_L1_power": 2,
+        "multiindex": [
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "L1_carrier_power": -1,
+        "difference_order": 3,
+        "gain_from_base_L1_power": 3,
+        "multiindex": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "L1_carrier_power": -2,
+        "difference_order": 4,
+        "gain_from_base_L1_power": 4,
+        "multiindex": [
+          1,
+          1,
+          2
+        ]
+      },
+      {
+        "L1_carrier_power": -1,
+        "difference_order": 3,
+        "gain_from_base_L1_power": 3,
+        "multiindex": [
+          1,
+          2,
+          0
+        ]
+      },
+      {
+        "L1_carrier_power": -2,
+        "difference_order": 4,
+        "gain_from_base_L1_power": 4,
+        "multiindex": [
+          1,
+          2,
+          1
+        ]
+      },
+      {
+        "L1_carrier_power": -3,
+        "difference_order": 5,
+        "gain_from_base_L1_power": 5,
+        "multiindex": [
+          1,
+          2,
+          2
+        ]
+      },
+      {
+        "L1_carrier_power": 0,
+        "difference_order": 2,
+        "gain_from_base_L1_power": 2,
+        "multiindex": [
+          2,
+          0,
+          0
+        ]
+      },
+      {
+        "L1_carrier_power": -1,
+        "difference_order": 3,
+        "gain_from_base_L1_power": 3,
+        "multiindex": [
+          2,
+          0,
+          1
+        ]
+      },
+      {
+        "L1_carrier_power": -2,
+        "difference_order": 4,
+        "gain_from_base_L1_power": 4,
+        "multiindex": [
+          2,
+          0,
+          2
+        ]
+      },
+      {
+        "L1_carrier_power": -1,
+        "difference_order": 3,
+        "gain_from_base_L1_power": 3,
+        "multiindex": [
+          2,
+          1,
+          0
+        ]
+      },
+      {
+        "L1_carrier_power": -2,
+        "difference_order": 4,
+        "gain_from_base_L1_power": 4,
+        "multiindex": [
+          2,
+          1,
+          1
+        ]
+      },
+      {
+        "L1_carrier_power": -3,
+        "difference_order": 5,
+        "gain_from_base_L1_power": 5,
+        "multiindex": [
+          2,
+          1,
+          2
+        ]
+      },
+      {
+        "L1_carrier_power": -2,
+        "difference_order": 4,
+        "gain_from_base_L1_power": 4,
+        "multiindex": [
+          2,
+          2,
+          0
+        ]
+      },
+      {
+        "L1_carrier_power": -3,
+        "difference_order": 5,
+        "gain_from_base_L1_power": 5,
+        "multiindex": [
+          2,
+          2,
+          1
+        ]
+      },
+      {
+        "L1_carrier_power": -4,
+        "difference_order": 6,
+        "gain_from_base_L1_power": 6,
+        "multiindex": [
+          2,
+          2,
+          2
+        ]
+      }
+    ],
+    "uniform_profile_difference_constant": "482350255110430271959333506034531439738880"
+  },
+  "power_closure_certificate": {
+    "all_checks_pass": true,
+    "complete_restart_time_third_bound": "g_N'''(0)=O_nu(N^11)",
+    "dyadic_log_rule": "At the p=4 endpoint a shell sum can cost log(32N). For N>=3, log(32N)<=32N, so one deliberately coarse carrier power absorbs every such logarithm.",
+    "maximum_final_power": 11,
+    "rows": [
+      {
+        "certified_gain": 0,
+        "dyadic_log_absorption": 0,
+        "final_power_upper_bound": 10,
+        "naive_power": 10,
+        "route": "automatic zero/two-high rows",
+        "row_count": 22
+      },
+      {
+        "certified_gain": 0,
+        "dyadic_log_absorption": 0,
+        "final_power_upper_bound": 11,
+        "naive_power": 11,
+        "route": "bounded-output four-high pressure exceptions",
+        "row_count": 13
+      },
+      {
+        "certified_gain": 1,
+        "dyadic_log_absorption_at_minimum": 0,
+        "final_power_upper_bound": 11,
+        "naive_power": 12,
+        "reason": "A single packet, polynomial, fixed-output B, or free-output B factor supplies one carrier power. This route does not add gains across possibly correlated four-high shells, and its one-gain endpoint has no logarithm.",
+        "route": "protected four-high pressure/Fisher rows",
+        "row_count": 5
+      },
+      {
+        "certified_gain": 4,
+        "dyadic_log_absorption_at_minimum": 1,
+        "final_power_upper_bound": 11,
+        "naive_power": 14,
+        "reason": "Every dependent-path B output retains a nonempty free complement shell after resonance, and those shells are strictly nested.",
+        "route": "protected all-high pressure row",
+        "row_count": 1
+      }
+    ]
+  },
+  "prerequisite_audit": {
+    "all_checks_pass": true,
+    "rows": [
+      {
+        "actual_sha256": "ab1a95c7d4892122725a7dc0918eb3f1362fb998e9c580bf9b3fce4ea61bd2f2",
+        "expected_sha256": "ab1a95c7d4892122725a7dc0918eb3f1362fb998e9c580bf9b3fce4ea61bd2f2",
+        "passed": true,
+        "path": "work/ns_collision/results/annular_parallel_shear_third_jet_route_guard_audit_v1.json"
+      },
+      {
+        "actual_sha256": "ab0d58bb824520167a90083795f0913da1cc9ca7b50e5e785ae7192f9f14efbd",
+        "expected_sha256": "ab0d58bb824520167a90083795f0913da1cc9ca7b50e5e785ae7192f9f14efbd",
+        "passed": true,
+        "path": "work/ns_collision/results/annular_parallel_shear_phase_repair_audit_v1.json"
+      },
+      {
+        "actual_sha256": "e8917ea3b781f72806bd2b560ccf65058027bb34bb15d997375a9d237020d773",
+        "expected_sha256": "e8917ea3b781f72806bd2b560ccf65058027bb34bb15d997375a9d237020d773",
+        "passed": true,
+        "path": "work/ns_collision/results/annular_rho_zero_full_c1_tail_ledger_audit_v1.json"
+      },
+      {
+        "actual_sha256": "74722ffabf83612a51fdd0f3ab71e90c7b6fd68c5b4eb15b6b5ed040876e5046",
+        "expected_sha256": "74722ffabf83612a51fdd0f3ab71e90c7b6fd68c5b4eb15b6b5ed040876e5046",
+        "passed": true,
+        "path": "work/ns_collision/results/annular_parallel_shear_euler_transport_fisher_exclusion_audit_v1.json"
+      }
+    ]
+  },
+  "remaining_gate": "Propagate the restart-time bound along the actual coupled Navier-Stokes/adjoint trajectory on 0<=s<=T/N^2. A generic Sobolev estimate must not be allowed to lose more carrier powers than the certified N^11 budget. Only after a uniform constant is obtained may T be compared with c2/(2C3).",
+  "runtime_seconds": 0.024224499997217208,
+  "scope": "Restart-time depth-three compatible-difference and internal-output shell bound for the repaired parallel-shear third generator derivative.",
+  "static_optimizer_bound_certificate": {
+    "all_checks_pass": true,
+    "load_bound_reason": "There are at most 2N^3 signed high choices, each high coefficient is at most N^-1, the pressure projector has norm one, the four low coefficients have l1 mass four, and the Phi coefficients have l1 mass one. The constant 64 dominates the resulting 8sqrt(3).",
+    "low_Fisher_mass": "9/8",
+    "low_velocity_Fourier_l1_bound": "4a_N<=256 mu N",
+    "mu": "max(nu,nu^-1)",
+    "optimal_low_amplitude_bound": "a_N<=57 N/nu<=64 mu N",
+    "optimal_weight_scale_bound": "t_N<=183 N/nu<=256 mu N",
+    "raw_amplitude_constant": 57,
+    "raw_weight_constant": 183,
+    "static_load_bound": "|B_N|<=64N",
+    "weight_Fourier_l1_bound": "t_N<=256 mu N",
+    "weight_cubic_energy": "75/256"
+  },
+  "status": "passed",
+  "theorem": "For each fixed viscosity nu>0, the repaired parallel-shear static optimizer satisfies |g_N'''(0)|<=C0 max(nu,nu^-1)^13 N^11 for every odd N>=3, with the explicit integer C0 recorded here. The protected four-high rows gain at least one carrier power: fixed bounded B outputs give that power directly without a shell logarithm, and a single free output shell or regular factor also gives the needed power without assuming independent four-high shells. The all-high pressure row has no fixed dependent-path output and its strictly nested free shells give four powers; its possible dyadic logarithm is absorbed by one carrier power. The thirteen bounded-output pressure families retain their direct O(N^11) bound.",
+  "tree_expansion_certificate": {
+    "all_checks_pass": true,
+    "expected_total_mass": 1412,
+    "functional_rows": [
+      {
+        "absolute_coefficient_mass": 120,
+        "atom_count": 20,
+        "heat_count": 0,
+        "sector": "pressure"
+      },
+      {
+        "absolute_coefficient_mass": 300,
+        "atom_count": 49,
+        "heat_count": 1,
+        "sector": "pressure"
+      },
+      {
+        "absolute_coefficient_mass": 244,
+        "atom_count": 44,
+        "heat_count": 2,
+        "sector": "pressure"
+      },
+      {
+        "absolute_coefficient_mass": 64,
+        "atom_count": 13,
+        "heat_count": 3,
+        "sector": "pressure"
+      },
+      {
+        "absolute_coefficient_mass": 60,
+        "atom_count": 11,
+        "heat_count": 0,
+        "sector": "velocity_Fisher"
+      },
+      {
+        "absolute_coefficient_mass": 144,
+        "atom_count": 26,
+        "heat_count": 1,
+        "sector": "velocity_Fisher"
+      },
+      {
+        "absolute_coefficient_mass": 111,
+        "atom_count": 22,
+        "heat_count": 2,
+        "sector": "velocity_Fisher"
+      },
+      {
+        "absolute_coefficient_mass": 27,
+        "atom_count": 6,
+        "heat_count": 3,
+        "sector": "velocity_Fisher"
+      },
+      {
+        "absolute_coefficient_mass": 60,
+        "atom_count": 25,
+        "heat_count": 0,
+        "sector": "weight_self"
+      },
+      {
+        "absolute_coefficient_mass": 144,
+        "atom_count": 60,
+        "heat_count": 1,
+        "sector": "weight_self"
+      },
+      {
+        "absolute_coefficient_mass": 111,
+        "atom_count": 45,
+        "heat_count": 2,
+        "sector": "weight_self"
+      },
+      {
+        "absolute_coefficient_mass": 27,
+        "atom_count": 10,
+        "heat_count": 3,
+        "sector": "weight_self"
+      }
+    ],
+    "total_functional_absolute_coefficient_mass": 1412,
+    "velocity_state_rows": [
+      {
+        "absolute_coefficient_mass": 1,
+        "heat_count": 0,
+        "jet_order": 0,
+        "tree_count": 1
+      },
+      {
+        "absolute_coefficient_mass": 1,
+        "heat_count": 0,
+        "jet_order": 1,
+        "tree_count": 1
+      },
+      {
+        "absolute_coefficient_mass": 1,
+        "heat_count": 1,
+        "jet_order": 1,
+        "tree_count": 1
+      },
+      {
+        "absolute_coefficient_mass": 2,
+        "heat_count": 0,
+        "jet_order": 2,
+        "tree_count": 1
+      },
+      {
+        "absolute_coefficient_mass": 3,
+        "heat_count": 1,
+        "jet_order": 2,
+        "tree_count": 2
+      },
+      {
+        "absolute_coefficient_mass": 1,
+        "heat_count": 2,
+        "jet_order": 2,
+        "tree_count": 1
+      },
+      {
+        "absolute_coefficient_mass": 6,
+        "heat_count": 0,
+        "jet_order": 3,
+        "tree_count": 2
+      },
+      {
+        "absolute_coefficient_mass": 12,
+        "heat_count": 1,
+        "jet_order": 3,
+        "tree_count": 4
+      },
+      {
+        "absolute_coefficient_mass": 7,
+        "heat_count": 2,
+        "jet_order": 3,
+        "tree_count": 4
+      },
+      {
+        "absolute_coefficient_mass": 1,
+        "heat_count": 3,
+        "jet_order": 3,
+        "tree_count": 1
+      }
+    ],
+    "weight_state_rows": [
+      {
+        "absolute_coefficient_mass": 1,
+        "heat_count": 0,
+        "jet_order": 0,
+        "tree_count": 1
+      },
+      {
+        "absolute_coefficient_mass": 1,
+        "heat_count": 0,
+        "jet_order": 1,
+        "tree_count": 1
+      },
+      {
+        "absolute_coefficient_mass": 1,
+        "heat_count": 1,
+        "jet_order": 1,
+        "tree_count": 1
+      },
+      {
+        "absolute_coefficient_mass": 2,
+        "heat_count": 0,
+        "jet_order": 2,
+        "tree_count": 2
+      },
+      {
+        "absolute_coefficient_mass": 3,
+        "heat_count": 1,
+        "jet_order": 2,
+        "tree_count": 3
+      },
+      {
+        "absolute_coefficient_mass": 1,
+        "heat_count": 2,
+        "jet_order": 2,
+        "tree_count": 1
+      },
+      {
+        "absolute_coefficient_mass": 6,
+        "heat_count": 0,
+        "jet_order": 3,
+        "tree_count": 4
+      },
+      {
+        "absolute_coefficient_mass": 12,
+        "heat_count": 1,
+        "jet_order": 3,
+        "tree_count": 9
+      },
+      {
+        "absolute_coefficient_mass": 7,
+        "heat_count": 2,
+        "jet_order": 3,
+        "tree_count": 6
+      },
+      {
+        "absolute_coefficient_mass": 1,
+        "heat_count": 3,
+        "jet_order": 3,
+        "tree_count": 1
+      }
+    ]
+  }
+}

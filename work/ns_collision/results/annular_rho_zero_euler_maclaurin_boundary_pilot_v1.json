@@ -1,0 +1,116 @@
+{
+  "algorithm_revision": "annular-rho-zero-euler-maclaurin-boundary-pilot-v1",
+  "all_pilot_checks_pass": true,
+  "certification": {
+    "continuum_sign_interval_certified": false,
+    "face_correction_derived": true,
+    "h4_remainder_interval_certified": false,
+    "reason": "The explicit h^2 coefficient is a structural pilot. A directed enclosure of the h^4 remainder and FFT roundoff is still required."
+  },
+  "identity": {
+    "corrected_measure": "mu_h_star=mu_h-h^2*mu_2,h",
+    "face_measure": "mu_2=(1/12) sum_faces orientation*partial_normal(a)",
+    "one_dimensional_rule": "h sum f(kh)=integral f+h^2/12*(f'(b)-f'(a))+O(h^4)",
+    "quartic_correction": "c_2=D L[a](mu_2)",
+    "sixth_order_measure": "tensor product of S-h^2*A-h^4*C, including the h^4*A_j*A_k edge terms"
+  },
+  "kind": "annular_rho_zero_euler_maclaurin_boundary_pilot",
+  "prerequisite": {
+    "path": "work/ns_collision/results/annular_rho_zero_direct_continuum_quadrature_v1.json",
+    "sha256": "3aae498f94a1b63351368f7fb3c35b3a24242d58c16c462bd0e422d1af76686b"
+  },
+  "rows": [
+    {
+      "all_pilot_checks_pass": true,
+      "corrected_measure_first_component": 1.714944053700016e-07,
+      "corrected_measure_quartic_value": -2.9864387080570546e-07,
+      "corrected_measure_second_component": -4.70138276175707e-07,
+      "direct_quadrature": -2.658690240168762e-07,
+      "energy_trace_directional_relative_residual": 1.4790635156587934e-16,
+      "face_corrected_value": -2.9687949888678487e-07,
+      "face_correction_c2": 1.984670391674153e-06,
+      "face_correction_first_component": -1.1749060775392704e-06,
+      "face_correction_second_component": 3.159576469213424e-06,
+      "grid_shape": [
+        98,
+        18,
+        18
+      ],
+      "linearized_vs_full_corrected_measure_difference": 1.7643719189205914e-09,
+      "runtime_seconds": 0.3240286000072956,
+      "sixth_order_corrected_first_component": 1.7175915546681153e-07,
+      "sixth_order_corrected_quartic_value": -2.990784108622165e-07,
+      "sixth_order_corrected_second_component": -4.7083756632902805e-07,
+      "size": 8
+    },
+    {
+      "all_pilot_checks_pass": true,
+      "corrected_measure_first_component": 1.7220540255270242e-07,
+      "corrected_measure_quartic_value": -2.993448961805718e-07,
+      "corrected_measure_second_component": -4.7155029873327423e-07,
+      "direct_quadrature": -2.906753381816596e-07,
+      "energy_trace_directional_relative_residual": 1.3402174639829248e-16,
+      "face_corrected_value": -2.9922663480702105e-07,
+      "face_correction_c2": 2.1891319360925355e-06,
+      "face_correction_first_component": -1.2955238643333425e-06,
+      "face_correction_second_component": 3.484655800425878e-06,
+      "grid_shape": [
+        196,
+        33,
+        33
+      ],
+      "linearized_vs_full_corrected_measure_difference": 1.18261373550763e-10,
+      "runtime_seconds": 2.640892800001893,
+      "sixth_order_corrected_first_component": 1.7222211979674585e-07,
+      "sixth_order_corrected_quartic_value": -2.993723256764166e-07,
+      "sixth_order_corrected_second_component": -4.7159444547316243e-07,
+      "size": 16
+    },
+    {
+      "all_pilot_checks_pass": true,
+      "corrected_measure_first_component": 1.722388959181125e-07,
+      "corrected_measure_quartic_value": -2.9938355994357757e-07,
+      "corrected_measure_second_component": -4.7162245586169005e-07,
+      "direct_quadrature": -2.9718569206216996e-07,
+      "energy_trace_directional_relative_residual": 2.615830128818198e-16,
+      "face_corrected_value": -2.9937604006775973e-07,
+      "face_correction_c2": 2.2429163577239304e-06,
+      "face_correction_first_component": -1.3272338127588371e-06,
+      "face_correction_second_component": 3.5701501704827677e-06,
+      "grid_shape": [
+        385,
+        66,
+        66
+      ],
+      "linearized_vs_full_corrected_measure_difference": 7.519875817837972e-12,
+      "runtime_seconds": 18.988012699992396,
+      "sixth_order_corrected_first_component": 1.7223994321727292e-07,
+      "sixth_order_corrected_quartic_value": -2.993852780436759e-07,
+      "sixth_order_corrected_second_component": -4.716252212609488e-07,
+      "size": 32
+    },
+    {
+      "all_pilot_checks_pass": true,
+      "corrected_measure_first_component": 1.7224063473431442e-07,
+      "corrected_measure_quartic_value": -2.9938584245968927e-07,
+      "corrected_measure_second_component": -4.716264771940037e-07,
+      "direct_quadrature": -2.9883445926209503e-07,
+      "energy_trace_directional_relative_residual": 1.2999807272217133e-16,
+      "face_corrected_value": -2.993853704442639e-07,
+      "face_correction_c2": 2.256532202163529e-06,
+      "face_correction_first_component": -1.3352656645508784e-06,
+      "face_correction_second_component": 3.5917978667144077e-06,
+      "grid_shape": [
+        770,
+        132,
+        132
+      ],
+      "linearized_vs_full_corrected_measure_difference": 4.720154253880532e-13,
+      "runtime_seconds": 139.9772734999715,
+      "sixth_order_corrected_first_component": 1.7224070022835332e-07,
+      "sixth_order_corrected_quartic_value": -2.993859498977249e-07,
+      "sixth_order_corrected_second_component": -4.7162665012607823e-07,
+      "size": 64
+    }
+  ]
+}

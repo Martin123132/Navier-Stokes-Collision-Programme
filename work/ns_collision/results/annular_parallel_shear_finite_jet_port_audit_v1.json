@@ -1,0 +1,4593 @@
+{
+  "algorithm_revision": "annular-parallel-shear-finite-jet-port-v1",
+  "all_positive_checks_pass": true,
+  "carrier_power_ledger": {
+    "all_noninviscid_second_channels_o_N9_certified": false,
+    "continuum_constants": {
+      "beta_0": 0.0011545988274271606,
+      "beta_1": 0.014358876443453603,
+      "beta_2": 0.18231326692566646
+    },
+    "first_total_N5_limit_certified": true,
+    "first_total_limit": "g'_N/N^5 -> -4.839802238667534e-08/nu < 0",
+    "optimizer_limits": {
+      "a_N_over_N": "0.0010263100688241427/nu",
+      "t_N_over_N": "0.003284192220237257/nu"
+    },
+    "parallel_c1_tail_bound": "|c1_parallel,N-D_parallel,N|<=70,657,920 N^6",
+    "rows": [
+      {
+        "channel_group": "first_velocity_heat_pressure",
+        "coefficient": "-4.839802238667534e-08/nu",
+        "optimized_power": 5,
+        "status": "certified_strict_negative_N5_limit"
+      },
+      {
+        "channel_group": "first_all_other_channels",
+        "coefficient": null,
+        "optimized_power": 4,
+        "status": "power port uses the same compatible stencils, fixed low support, smooth annular multiplier, and finite low l1 mass as the predecessor remainder theorem"
+      },
+      {
+        "channel_group": "second_inviscid_pressure_HHHHL",
+        "coefficient": "-(1024 beta_0^2/(405 nu^2))*(sqrt(3)/10)||v_y||_2^2",
+        "optimized_power": 9,
+        "status": "certified strict negative by the fourteen-profile c1 tail theorem and the parallel-shear square identity"
+      },
+      {
+        "channel_group": "second_inviscid_pressure_HHLLL",
+        "coefficient": null,
+        "optimized_power": 7,
+        "status": "certified O(N7): two high coefficients, one free N3 lattice sum, and at most two high multipliers give c3_N=O(N3), while a_N^3 t_N=O(N4)"
+      },
+      {
+        "channel_group": "second_double_velocity_heat_pressure",
+        "coefficient": 6.145050142888524e-07,
+        "optimized_power": 7,
+        "status": "certified_strict_positive_N7_limit"
+      },
+      {
+        "channel_group": "second_viscosity_bearing_quartic_Fisher_and_mixed_projector_channels",
+        "coefficient": null,
+        "optimized_power": 9,
+        "status": "open exclusion gate: finite projection and predecessor route counts suggest sub-N9 behavior, but a uniform compatible-difference/projector-shell bound has not yet been supplied for every row"
+      }
+    ],
+    "second_double_heat_pressure_limit": "6.145050142888524e-07 > 0",
+    "second_inviscid_pressure_N9_limit_certified": true,
+    "second_inviscid_pressure_limit": "J''_inv,N/N^9 -> -(1024 beta_0^2/(405 nu^2))*(sqrt(3)/10)||v_y||_2^2 < 0",
+    "total_second_N9_limit_certified": false,
+    "why_total_second_remains_open": "The negative N9 inviscid-pressure coefficient is rigorous, but assigning it to the complete second jet requires a uniform o(N9) theorem for all viscosity-bearing quartic Fisher and mixed pressure-projector channels."
+  },
+  "certification_flags": {
+    "Navier_Stokes_global_regularity_proved": false,
+    "critical_L3_control_proved": false,
+    "finite_time_blowup_proved": false,
+    "parallel_complete_finite_first_jet_ported": true,
+    "parallel_complete_finite_second_jet_ported": true,
+    "parallel_complete_second_N9_limit_certified": false,
+    "parallel_first_total_N5_limit_negative": true,
+    "parallel_mixed_polarization_channels_enumerated": true,
+    "parallel_second_inviscid_pressure_N9_limit_negative": true,
+    "uniform_second_jet_Taylor_remainder_proved": false
+  },
+  "continuum_heat_constants": {
+    "all_constants_positive": true,
+    "beta": {
+      "0": 0.0011545988274271606,
+      "1": 0.014358876443453603,
+      "2": 0.18231326692566646
+    },
+    "formula": "beta_m=(10sqrt(3))^-1 integral_D (2|xi|^2)^m |b(xi)|^2 dxi",
+    "profile": "b=S*(x^2+y^2)/(x|xi|^3)*(-z,0,x)",
+    "quadrature_order": 64
+  },
+  "finite_heat_weighted_HHL_rows": [
+    {
+      "all_heat_load_checks_pass": true,
+      "power_zero_static_pressure_residual": 1.734723475976807e-18,
+      "powers": {
+        "0": {
+          "combined": -0.01077711000507751,
+          "component_additivity_relative_residual": 3.469446951953614e-18,
+          "component_additivity_residual": 3.469446951953614e-18,
+          "components": {
+            "xy": {
+              "combined": -0.00011514039777184156,
+              "maximum_imaginary_residual": 0.0,
+              "pressure_cross": -1.8267233091498278e-06,
+              "pressure_high_high": -0.00011331367446269173
+            },
+            "yz": {
+              "combined": -0.010661969607305673,
+              "maximum_imaginary_residual": 0.0,
+              "pressure_cross": 5.679461285342156e-06,
+              "pressure_high_high": -0.010667649068591016
+            }
+          },
+          "continuum_limit": -0.0011545988274271606,
+          "maximum_imaginary_residual": 0.0,
+          "normalized_combined": -0.002155422001015502,
+          "pressure_cross": 3.852737976192342e-06,
+          "pressure_high_high": -0.010780962743053703
+        },
+        "1": {
+          "combined": -3.0777298184408153,
+          "component_additivity_relative_residual": 2.885823227167089e-16,
+          "component_additivity_residual": 8.881784197001252e-16,
+          "components": {
+            "xy": {
+              "combined": -0.02063956528293915,
+              "maximum_imaginary_residual": 0.0,
+              "pressure_cross": -0.0005167767540351143,
+              "pressure_high_high": -0.020122788528904034
+            },
+            "yz": {
+              "combined": -3.057090253157875,
+              "maximum_imaginary_residual": 0.0,
+              "pressure_cross": 0.0014364203567530736,
+              "pressure_high_high": -3.058526673514628
+            }
+          },
+          "continuum_limit": -0.014358876443453603,
+          "maximum_imaginary_residual": 0.0,
+          "normalized_combined": -0.02462183854752652,
+          "pressure_cross": 0.0009196436027179618,
+          "pressure_high_high": -3.078649462043533
+        },
+        "2": {
+          "combined": -913.7178743775315,
+          "component_additivity_relative_residual": 1.2442225429711e-16,
+          "component_additivity_residual": 1.1368683772161603e-13,
+          "components": {
+            "xy": {
+              "combined": -6.098269863796256,
+              "maximum_imaginary_residual": 0.0,
+              "pressure_cross": -0.14778216073906447,
+              "pressure_high_high": -5.950487703057192
+            },
+            "yz": {
+              "combined": -907.6196045137353,
+              "maximum_imaginary_residual": 0.0,
+              "pressure_cross": 0.3919478078421774,
+              "pressure_high_high": -908.0115523215775
+            }
+          },
+          "continuum_limit": -0.18231326692566646,
+          "maximum_imaginary_residual": 0.0,
+          "normalized_combined": -0.2923897198008101,
+          "pressure_cross": 0.24416564710311361,
+          "pressure_high_high": -913.9620400246347
+        }
+      },
+      "size": 5
+    },
+    {
+      "all_heat_load_checks_pass": true,
+      "power_zero_static_pressure_residual": 1.734723475976807e-18,
+      "powers": {
+        "0": {
+          "combined": -0.014886758732086149,
+          "component_additivity_relative_residual": 3.469446951953614e-18,
+          "component_additivity_residual": 3.469446951953614e-18,
+          "components": {
+            "xy": {
+              "combined": -0.00011186123691459122,
+              "maximum_imaginary_residual": 0.0,
+              "pressure_cross": -2.1106260895616327e-07,
+              "pressure_high_high": -0.00011165017430563506
+            },
+            "yz": {
+              "combined": -0.014774897495171553,
+              "maximum_imaginary_residual": 0.0,
+              "pressure_cross": 3.4269863280550655e-07,
+              "pressure_high_high": -0.014775240193804358
+            }
+          },
+          "continuum_limit": -0.0011545988274271606,
+          "maximum_imaginary_residual": 0.0,
+          "normalized_combined": -0.0016540843035651276,
+          "pressure_cross": 1.3163602384935006e-07,
+          "pressure_high_high": -0.014886890368109997
+        },
+        "1": {
+          "combined": -14.313253012182491,
+          "component_additivity_relative_residual": 0.0,
+          "component_additivity_residual": 0.0,
+          "components": {
+            "xy": {
+              "combined": -0.08941398841871022,
+              "maximum_imaginary_residual": 0.0,
+              "pressure_cross": -0.00019086531652926994,
+              "pressure_high_high": -0.08922312310218095
+            },
+            "yz": {
+              "combined": -14.22383902376378,
+              "maximum_imaginary_residual": 0.0,
+              "pressure_cross": 0.0002947858761840243,
+              "pressure_high_high": -14.224133809639964
+            }
+          },
+          "continuum_limit": -0.014358876443453603,
+          "maximum_imaginary_residual": 0.0,
+          "normalized_combined": -0.019634091923432774,
+          "pressure_cross": 0.00010392055965475697,
+          "pressure_high_high": -14.313356932742145
+        },
+        "2": {
+          "combined": -14164.063318807626,
+          "component_additivity_relative_residual": 1.2842285173425677e-16,
+          "component_additivity_residual": 1.8189894035458565e-12,
+          "components": {
+            "xy": {
+              "combined": -87.44386892998216,
+              "maximum_imaginary_residual": 0.0,
+              "pressure_cross": -0.17930847377954162,
+              "pressure_high_high": -87.26456045620262
+            },
+            "yz": {
+              "combined": -14076.619449877646,
+              "maximum_imaginary_residual": 0.0,
+              "pressure_cross": 0.2712658290757721,
+              "pressure_high_high": -14076.890715706722
+            }
+          },
+          "continuum_limit": -0.18231326692566646,
+          "maximum_imaginary_residual": 0.0,
+          "normalized_combined": -0.23986965602817364,
+          "pressure_cross": 0.09195735529623139,
+          "pressure_high_high": -14164.155276162923
+        }
+      },
+      "size": 9
+    },
+    {
+      "all_heat_load_checks_pass": true,
+      "power_zero_static_pressure_residual": 1.3877787807814457e-17,
+      "powers": {
+        "0": {
+          "combined": -0.023850722810827688,
+          "component_additivity_relative_residual": 3.469446951953614e-18,
+          "component_additivity_residual": 3.469446951953614e-18,
+          "components": {
+            "xy": {
+              "combined": -0.00014866651718766877,
+              "maximum_imaginary_residual": 0.0,
+              "pressure_cross": -1.2558106688011789e-08,
+              "pressure_high_high": -0.00014865395908098076
+            },
+            "yz": {
+              "combined": -0.023702056293640014,
+              "maximum_imaginary_residual": 0.0,
+              "pressure_cross": 1.5458497875957225e-08,
+              "pressure_high_high": -0.023702071752137892
+            }
+          },
+          "continuum_limit": -0.0011545988274271606,
+          "maximum_imaginary_residual": 0.0,
+          "normalized_combined": -0.0014029836947545699,
+          "pressure_cross": 2.900391187944589e-09,
+          "pressure_high_high": -0.023850725711218875
+        },
+        "1": {
+          "combined": -83.65158796913119,
+          "component_additivity_relative_residual": 1.6988146979882848e-16,
+          "component_additivity_residual": 1.4210854715202004e-14,
+          "components": {
+            "xy": {
+              "combined": -0.4884074864240102,
+              "maximum_imaginary_residual": 0.0,
+              "pressure_cross": -4.0785929838122945e-05,
+              "pressure_high_high": -0.4883667004941721
+            },
+            "yz": {
+              "combined": -83.16318048270719,
+              "maximum_imaginary_residual": 0.0,
+              "pressure_cross": 4.9023807995284e-05,
+              "pressure_high_high": -83.16322950651518
+            }
+          },
+          "continuum_limit": -0.014358876443453603,
+          "maximum_imaginary_residual": 0.0,
+          "normalized_combined": -0.017026580087346057,
+          "pressure_cross": 8.237878157167991e-06,
+          "pressure_high_high": -83.65159620700935
+        },
+        "2": {
+          "combined": -300624.1380079023,
+          "component_additivity_relative_residual": 3.8724542413116104e-16,
+          "component_additivity_residual": 1.1641532182693481e-10,
+          "components": {
+            "xy": {
+              "combined": -1731.3397906687344,
+              "maximum_imaginary_residual": 0.0,
+              "pressure_cross": -0.13886408897384683,
+              "pressure_high_high": -1731.2009265797606
+            },
+            "yz": {
+              "combined": -298892.79821723345,
+              "maximum_imaginary_residual": 0.0,
+              "pressure_cross": 0.1652875442905355,
+              "pressure_high_high": -298892.96350477776
+            }
+          },
+          "continuum_limit": -0.18231326692566646,
+          "maximum_imaginary_residual": 0.0,
+          "normalized_combined": -0.2117284613928743,
+          "pressure_cross": 0.026423455316646027,
+          "pressure_high_high": -300624.16443135764
+        }
+      },
+      "size": 17
+    },
+    {
+      "all_heat_load_checks_pass": true,
+      "power_zero_static_pressure_residual": 4.163336342344337e-17,
+      "powers": {
+        "0": {
+          "combined": -0.032992043896424156,
+          "component_additivity_relative_residual": 1.3877787807814457e-17,
+          "component_additivity_residual": 1.3877787807814457e-17,
+          "components": {
+            "xy": {
+              "combined": -0.0001938620904090617,
+              "maximum_imaginary_residual": 0.0,
+              "pressure_cross": -2.0397925969944033e-09,
+              "pressure_high_high": -0.0001938600506164647
+            },
+            "yz": {
+              "combined": -0.03279818180601508,
+              "maximum_imaginary_residual": 0.0,
+              "pressure_cross": 2.3195531406994286e-09,
+              "pressure_high_high": -0.03279818412556822
+            }
+          },
+          "continuum_limit": -0.0011545988274271606,
+          "maximum_imaginary_residual": 0.0,
+          "normalized_combined": -0.0013196817558569663,
+          "pressure_cross": 2.7976054370629585e-10,
+          "pressure_high_high": -0.0329920441761847
+        },
+        "1": {
+          "combined": -252.22197768588063,
+          "component_additivity_relative_residual": 0.0,
+          "component_additivity_residual": 0.0,
+          "components": {
+            "xy": {
+              "combined": -1.4267532959646418,
+              "maximum_imaginary_residual": 0.0,
+              "pressure_cross": -1.4388014950940387e-05,
+              "pressure_high_high": -1.4267389079496908
+            },
+            "yz": {
+              "combined": -250.795224389916,
+              "maximum_imaginary_residual": 0.0,
+              "pressure_cross": 1.6107539225110323e-05,
+              "pressure_high_high": -250.79524049745524
+            }
+          },
+          "continuum_limit": -0.014358876443453603,
+          "maximum_imaginary_residual": 0.0,
+          "normalized_combined": -0.01614220657189636,
+          "pressure_cross": 1.7195242741838146e-06,
+          "pressure_high_high": -252.2219794054049
+        },
+        "2": {
+          "combined": -1973162.2864207516,
+          "component_additivity_relative_residual": 0.0,
+          "component_additivity_residual": 0.0,
+          "components": {
+            "xy": {
+              "combined": -11008.273873617616,
+              "maximum_imaginary_residual": 0.0,
+              "pressure_cross": -0.10664822886514003,
+              "pressure_high_high": -11008.167225388752
+            },
+            "yz": {
+              "combined": -1962154.012547134,
+              "maximum_imaginary_residual": 0.0,
+              "pressure_cross": 0.11863278643551212,
+              "pressure_high_high": -1962154.1311799204
+            }
+          },
+          "continuum_limit": -0.18231326692566646,
+          "maximum_imaginary_residual": 0.0,
+          "normalized_combined": -0.20205181812948497,
+          "pressure_cross": 0.011984557570315246,
+          "pressure_high_high": -1973162.2984053092
+        }
+      },
+      "size": 25
+    },
+    {
+      "all_heat_load_checks_pass": true,
+      "power_zero_static_pressure_residual": 6.938893903907228e-18,
+      "powers": {
+        "0": {
+          "combined": -0.042179911070715045,
+          "component_additivity_relative_residual": 2.0816681711721685e-17,
+          "component_additivity_residual": 2.0816681711721685e-17,
+          "components": {
+            "xy": {
+              "combined": -0.00024091113329991943,
+              "maximum_imaginary_residual": 0.0,
+              "pressure_cross": -5.367910029637514e-10,
+              "pressure_high_high": -0.00024091059650891648
+            },
+            "yz": {
+              "combined": -0.04193899993741515,
+              "maximum_imaginary_residual": 0.0,
+              "pressure_cross": 5.88653820709987e-10,
+              "pressure_high_high": -0.04193900052606897
+            }
+          },
+          "continuum_limit": -0.0011545988274271606,
+          "maximum_imaginary_residual": 0.0,
+          "normalized_combined": -0.0012781791233550013,
+          "pressure_cross": 5.186281774665911e-11,
+          "pressure_high_high": -0.042179911122577865
+        },
+        "1": {
+          "combined": -564.1306273256786,
+          "component_additivity_relative_residual": 4.0305146437647117e-16,
+          "component_additivity_residual": 2.2737367544323206e-13,
+          "components": {
+            "xy": {
+              "combined": -3.1339035436479996,
+              "maximum_imaginary_residual": 0.0,
+              "pressure_cross": -6.614018740785238e-06,
+              "pressure_high_high": -3.133896929629259
+            },
+            "yz": {
+              "combined": -560.9967237820304,
+              "maximum_imaginary_residual": 0.0,
+              "pressure_cross": 7.169147189400871e-06,
+              "pressure_high_high": -560.9967309511776
+            }
+          },
+          "continuum_limit": -0.014358876443453603,
+          "maximum_imaginary_residual": 0.0,
+          "normalized_combined": -0.01569776629450646,
+          "pressure_cross": 5.551284486156327e-07,
+          "pressure_high_high": -564.130627880807
+        },
+        "2": {
+          "combined": -7715988.458155986,
+          "component_additivity_relative_residual": 2.414007173976649e-16,
+          "component_additivity_residual": 1.862645149230957e-09,
+          "components": {
+            "xy": {
+              "combined": -42277.23921233305,
+              "maximum_imaginary_residual": 0.0,
+              "pressure_cross": -0.08573085890628818,
+              "pressure_high_high": -42277.153481474146
+            },
+            "yz": {
+              "combined": -7673711.218943655,
+              "maximum_imaginary_residual": 0.0,
+              "pressure_cross": 0.09248615724584397,
+              "pressure_high_high": -7673711.311429812
+            }
+          },
+          "continuum_limit": -0.18231326692566646,
+          "maximum_imaginary_residual": 0.0,
+          "normalized_combined": -0.1971613893887813,
+          "pressure_cross": 0.00675529833966948,
+          "pressure_high_high": -7715988.464911284
+        }
+      },
+      "size": 33
+    },
+    {
+      "all_heat_load_checks_pass": true,
+      "power_zero_static_pressure_residual": 2.0816681711721685e-17,
+      "powers": {
+        "0": {
+          "combined": -0.06060362902346099,
+          "component_additivity_relative_residual": 0.0,
+          "component_additivity_residual": 0.0,
+          "components": {
+            "xy": {
+              "combined": -0.00033673864644950547,
+              "maximum_imaginary_residual": 0.0,
+              "pressure_cross": -7.829352349763531e-11,
+              "pressure_high_high": -0.00033673856815598195
+            },
+            "yz": {
+              "combined": -0.06026689037701148,
+              "maximum_imaginary_residual": 0.0,
+              "pressure_cross": 8.301064289419336e-11,
+              "pressure_high_high": -0.06026689046002212
+            }
+          },
+          "continuum_limit": -0.0011545988274271606,
+          "maximum_imaginary_residual": 0.0,
+          "normalized_combined": -0.0012368087555808364,
+          "pressure_cross": 4.71711939719332e-12,
+          "pressure_high_high": -0.06060362902817811
+        },
+        "1": {
+          "combined": -1794.400792801971,
+          "component_additivity_relative_residual": 5.068514823562606e-16,
+          "component_additivity_residual": 9.094947017729282e-13,
+          "components": {
+            "xy": {
+              "combined": -9.772800694533435,
+              "maximum_imaginary_residual": 0.0,
+              "pressure_cross": -2.132879222169204e-06,
+              "pressure_high_high": -9.772798561654213
+            },
+            "yz": {
+              "combined": -1784.6279921074365,
+              "maximum_imaginary_residual": 0.0,
+              "pressure_cross": 2.2440480557869846e-06,
+              "pressure_high_high": -1784.6279943514846
+            }
+          },
+          "continuum_limit": -0.014358876443453603,
+          "maximum_imaginary_residual": 0.0,
+          "normalized_combined": -0.015252155078257962,
+          "pressure_cross": 1.1116883359696406e-07,
+          "pressure_high_high": -1794.4007929131399
+        },
+        "2": {
+          "combined": -54302784.001178704,
+          "component_additivity_relative_residual": 4.116131834103812e-16,
+          "component_additivity_residual": 2.2351741790771484e-08,
+          "components": {
+            "xy": {
+              "combined": -291731.5477078215,
+              "maximum_imaginary_residual": 0.0,
+              "pressure_cross": -0.06118711387512121,
+              "pressure_high_high": -291731.4865207076
+            },
+            "yz": {
+              "combined": -54011052.45347086,
+              "maximum_imaginary_residual": 0.0,
+              "pressure_cross": 0.06417481923813284,
+              "pressure_high_high": -54011052.51764568
+            }
+          },
+          "continuum_limit": -0.18231326692566646,
+          "maximum_imaginary_residual": 0.0,
+          "normalized_combined": -0.19223908711796092,
+          "pressure_cross": 0.002987705362329507,
+          "pressure_high_high": -54302784.00416641
+        }
+      },
+      "size": 49
+    }
+  ],
+  "fixed_amplitude_N5_jet_row": {
+    "base_generator": -0.3419900308294758,
+    "coefficient_scale": 0.8,
+    "dealias_factor": 10,
+    "family_maximum_divergence_residual": 0.0,
+    "finite_difference_validation": null,
+    "first_variation": {
+      "channels": {
+        "D_lambda[A]": {
+          "subterms": {
+            "pressure": 0.0034823028104642643,
+            "velocity_Fisher": 0.00014224907959934136,
+            "weight_self": 1.0070050109978744e-18
+          },
+          "value": 0.0036245518900636067
+        },
+        "D_lambda[D]": {
+          "subterms": {
+            "pressure": 0.00040734531881317045,
+            "velocity_Fisher": 0.18840420974669167,
+            "weight_self": -0.041250000000000016
+          },
+          "value": 0.14756155506550483
+        },
+        "D_u[E]": {
+          "subterms": {
+            "pressure_direction": 0.005856917923970151,
+            "pressure_variation": -0.005790156982415113,
+            "weighted_Fisher": 0.001590510438282803
+          },
+          "value": 0.0016572713798378407
+        },
+        "D_u[V]": {
+          "subterms": {
+            "pressure_direction": -0.010146350040726887,
+            "pressure_variation": -1.4671639628108657,
+            "weighted_Fisher": 5.344720204995137
+          },
+          "value": 3.8674098921435442
+        }
+      },
+      "decomposition_residual": 0.0,
+      "direct_first_derivative": 4.020253270478951,
+      "expanded_first_derivative": 4.020253270478951
+    },
+    "grid_point_count": 63504,
+    "grid_shape": [
+      144,
+      21,
+      21
+    ],
+    "heat_identity_replay": {
+      "all_heat_identity_checks_pass": true,
+      "components": {
+        "xy": {
+          "amplitude": 0.6,
+          "first_heat_load": {
+            "combined": -0.02063956528293915,
+            "maximum_imaginary_residual": 0.0,
+            "pressure_cross": -0.0005167767540351143,
+            "pressure_high_high": -0.020122788528904034
+          },
+          "second_heat_load": {
+            "combined": -6.098269863796256,
+            "maximum_imaginary_residual": 0.0,
+            "pressure_cross": -0.14778216073906447,
+            "pressure_high_high": -5.950487703057192
+          }
+        },
+        "yz": {
+          "amplitude": 0.6,
+          "first_heat_load": {
+            "combined": -3.057090253157875,
+            "maximum_imaginary_residual": 0.0,
+            "pressure_cross": 0.0014364203567530736,
+            "pressure_high_high": -3.058526673514628
+          },
+          "second_heat_load": {
+            "combined": -907.6196045137353,
+            "maximum_imaginary_residual": 0.0,
+            "pressure_cross": 0.3919478078421774,
+            "pressure_high_high": -908.0115523215775
+          }
+        }
+      },
+      "first_velocity_heat_pressure": {
+        "actual": -1.4773103128515925,
+        "expected": -1.4773103128515908,
+        "residual": 1.7763568394002505e-15
+      },
+      "second_double_velocity_heat_pressure": {
+        "actual": 438.58457970121555,
+        "expected": 438.58457970121515,
+        "residual": 3.979039320256561e-13
+      }
+    },
+    "maximum_velocity_divergence_residual": 3.1470936125124497e-10,
+    "runtime_seconds": 1.8053534000064246,
+    "second_variation": {
+      "channels": {
+        "2H_lambda_lambda[A,D]": {
+          "multiplicity": 2.0,
+          "subterms": {
+            "first_weight_direction": 2.685346695994332e-18,
+            "mixed_weight_gradient": 4.47557782665722e-19,
+            "second_weight_direction": -1.118894456664305e-19
+          },
+          "value": 3.0210150329936235e-18
+        },
+        "2H_u_lambda[E,A]": {
+          "multiplicity": 2.0,
+          "subterms": {
+            "pressure_direction": -0.0010612496468564035,
+            "pressure_variation": -0.011243205038391739,
+            "weighted_Fisher": 0.2175443099890472
+          },
+          "value": 0.20523985530379907
+        },
+        "2H_u_lambda[E,D]": {
+          "multiplicity": 2.0,
+          "subterms": {
+            "pressure_direction": -0.05198532861547047,
+            "pressure_variation": -0.01679273034131495,
+            "weighted_Fisher": -0.6157305874292268
+          },
+          "value": -0.6845086463860123
+        },
+        "2H_u_lambda[V,A]": {
+          "multiplicity": 2.0,
+          "subterms": {
+            "pressure_direction": -0.30468926185512935,
+            "pressure_variation": -1.9976962353066057,
+            "weighted_Fisher": -0.018192882226938965
+          },
+          "value": -2.320578379388674
+        },
+        "2H_u_lambda[V,D]": {
+          "multiplicity": 2.0,
+          "subterms": {
+            "pressure_direction": -0.004228759900254459,
+            "pressure_variation": -0.21595524770009353,
+            "weighted_Fisher": -152.80002637144858
+          },
+          "value": -153.02021037904893
+        },
+        "2H_uu[E,V]": {
+          "multiplicity": 2.0,
+          "subterms": {
+            "pressure_first_variation_first": 0.017759415094445678,
+            "pressure_first_variation_second": -3.3353953884302214,
+            "pressure_second_variation": 3.33107620407284,
+            "weighted_Fisher": -9.940298496786603
+          },
+          "value": -9.926858266049539
+        },
+        "D_lambda[lambda2_0A]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure": 0.012188017705560023,
+            "velocity_Fisher": -0.11003075212154995,
+            "weight_Fisher_cross": 0.02055200642357748,
+            "weight_Fisher_direction": 0.00508574713625167
+          },
+          "value": -0.07220498085616077
+        },
+        "D_lambda[lambda2_0D]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure": -0.025593684518779795,
+            "velocity_Fisher": -0.0017695293886233212,
+            "weight_Fisher_cross": -5.594472283321524e-19,
+            "weight_Fisher_direction": 5.594472283321524e-19
+          },
+          "value": -0.027363213907403115
+        },
+        "D_lambda[lambda2_DA]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure": 0.14650048244676234,
+            "velocity_Fisher": 0.024167834001540805,
+            "weight_Fisher_cross": -4.47557782665722e-19,
+            "weight_Fisher_direction": 1.5664522393300268e-18
+          },
+          "value": 0.17066831644830313
+        },
+        "D_lambda[lambda2_DD]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure": 0.0012586012910123586,
+            "velocity_Fisher": -3.1631797994841864,
+            "weight_Fisher_cross": -0.06975000000000003,
+            "weight_Fisher_direction": -0.010500000000000004
+          },
+          "value": -3.2421711981931742
+        },
+        "D_lambda[lambda2_E0]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure": -0.0010033076167378994,
+            "velocity_Fisher": -0.0008149793042597577,
+            "weight_Fisher_cross": -4.540601071809297e-07,
+            "weight_Fisher_direction": 1.513533690611514e-07
+          },
+          "value": -0.0018185896277357768
+        },
+        "D_lambda[lambda2_V0]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure": -0.16234013828825106,
+            "velocity_Fisher": -0.02493982609816239,
+            "weight_Fisher_cross": -7.832261196650134e-19,
+            "weight_Fisher_direction": -1.4545627936635963e-18
+          },
+          "value": -0.18727996438641345
+        },
+        "D_u[u2_EE]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure_direction": -0.0066768491697506965,
+            "pressure_variation": -0.6789277365939401,
+            "weighted_Fisher": 2.5340848442438593
+          },
+          "value": 1.8484802584801685
+        },
+        "D_u[u2_EV]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure_direction": -1.67296457995493,
+            "pressure_variation": 0.016291014240577648,
+            "weighted_Fisher": 4.459598876626763
+          },
+          "value": 2.8029253109124106
+        },
+        "D_u[u2_VE]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure_direction": -0.017013960384702036,
+            "pressure_variation": 1.4538022511741386,
+            "weighted_Fisher": -0.14869442232550065
+          },
+          "value": 1.288093868463936
+        },
+        "D_u[u2_VV]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure_direction": -0.0023638433236578393,
+            "pressure_variation": 215.05337705340932,
+            "weighted_Fisher": -615.8579109697346
+          },
+          "value": -400.8068977596489
+        },
+        "H_lambda_lambda[A,A]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "first_weight_direction": -0.004668552306005085,
+            "mixed_weight_gradient": -0.0413332374211189,
+            "second_weight_direction": -0.004668552306005085
+          },
+          "value": -0.05067034203312907
+        },
+        "H_lambda_lambda[D,D]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "first_weight_direction": -0.028500000000000008,
+            "mixed_weight_gradient": -0.06225000000000003,
+            "second_weight_direction": -0.028500000000000008
+          },
+          "value": -0.11925000000000005
+        },
+        "H_uu[E,E]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure_first_variation_first": -0.0082239642836029,
+            "pressure_first_variation_second": -0.0082239642836029,
+            "pressure_second_variation": 0.6199763665711541,
+            "weighted_Fisher": -2.7262723053620737
+          },
+          "value": -2.1227438673581256
+        },
+        "H_uu[V,V]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure_first_variation_first": 2.9039224131876713,
+            "pressure_first_variation_second": 2.9039224131876713,
+            "pressure_second_variation": 217.72572166475456,
+            "weighted_Fisher": -667.8481295710479
+          },
+          "value": -444.31456307991806
+        }
+      },
+      "decomposition_residual": 5.684341886080801e-13,
+      "direct_chain_rule_blocks": {
+        "2D_u_lambda": {
+          "multiplicity": 2.0,
+          "subterms": {
+            "pressure_direction": -0.3619646000177105,
+            "pressure_variation": -2.241687418386395,
+            "weighted_Fisher": -153.21640553111632
+          },
+          "value": -155.82005754952044
+        },
+        "D_lambda_acceleration": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure": -0.028990028980434027,
+            "velocity_Fisher": -3.2765670523952353,
+            "weight_Fisher_cross": -0.04919844763652973,
+            "weight_Fisher_direction": -0.005414101510379271
+          },
+          "value": -3.360169630522578
+        },
+        "D_lambda_lambda": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "first_weight_direction": -0.03316855230600509,
+            "mixed_weight_gradient": -0.1035832374211189,
+            "second_weight_direction": -0.03316855230600509
+          },
+          "value": -0.16992034203312908
+        },
+        "D_u_acceleration": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure_direction": -1.699019232833041,
+            "pressure_variation": 215.84454258223013,
+            "weighted_Fisher": -609.0129216711895
+          },
+          "value": -394.8673983217924
+        },
+        "D_uu": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure_first_variation_first": 1.2368804622361769,
+            "pressure_first_variation_second": 1.2368804622361769,
+            "pressure_second_variation": 221.67677423539863,
+            "weighted_Fisher": -680.5147003731967
+          },
+          "value": -456.3641652133257
+        }
+      },
+      "direct_second_derivative": -1010.5817110571942,
+      "expanded_second_derivative": -1010.5817110571936,
+      "pure_velocity_heat_pressure_second_derivative": 438.5845797012156,
+      "velocity_direction_divergence_residuals": {
+        "E": 6.805760028776839e-14,
+        "EE": 2.7575665254723475e-12,
+        "EV": 7.624490460971771e-13,
+        "V": 1.7763568394002505e-15,
+        "VE": 3.1470936125124497e-10,
+        "VV": 4.547473508864641e-13
+      }
+    },
+    "size": 5,
+    "static_objective_replay": {
+      "equal_low_amplitudes": true,
+      "expected_rho_zero_generator": -0.34199003082947566,
+      "high_weighted_Fisher": 0.017235054539891062,
+      "low_weighted_Fisher_mass": 1.125,
+      "pressure_HHL_load": -0.010777110005077509,
+      "pressure_cross": 3.852737976192386e-06,
+      "pressure_high_high": -0.010780962743053703,
+      "replay_residual": 1.6653345369377348e-16
+    },
+    "viscosity": 1.0,
+    "xy_amplitude": 0.6,
+    "yz_amplitude": 0.6
+  },
+  "kind": "annular_parallel_shear_finite_jet_port_audit",
+  "next_theorem_target": "Close the o(N9) exclusion for every viscosity-bearing quartic second-jet channel. Start with H_uu[E,E] and D_u[u2_EE] weighted-Fisher terms, then the E-A transported-weight and mixed pressure-projector rows. Use the six/five/four compatible weight stencils and a finite/dyadic internal-output split.",
+  "padding_replay": {
+    "all_padding_checks_pass": true,
+    "base_generator_residual": 1.1102230246251565e-16,
+    "base_grid_shape": [
+      81,
+      11,
+      11
+    ],
+    "first_derivative_residual": 0.0,
+    "maximum_subterm_residual": 1.1368683772161603e-13,
+    "maximum_subterm_residual_key": "second::H_uu[V,V]::weighted_Fisher",
+    "padded_grid_shape": [
+      98,
+      14,
+      14
+    ],
+    "second_derivative_residual": 1.1368683772161603e-13,
+    "size": 3
+  },
+  "parallel_shear_structural_certificate": {
+    "Euler_identity": "(U dot grad)U=r f(r dot grad f)=0 and p[U,U]=0",
+    "all_structural_checks_pass": true,
+    "checks": {
+      "arbitrary_two_amplitude_low_field_is_Euler_stationary": true,
+      "arbitrary_two_amplitude_low_field_is_parallel": true,
+      "both_low_modes_have_squared_frequency_two": true,
+      "common_direction_perpendicular_to_xy_wave": true,
+      "common_direction_perpendicular_to_yz_wave": true
+    },
+    "factorization": "U=r f and r dot grad f=0",
+    "heat_identity": "Delta U=-2U for every (a_yz,a_xy)",
+    "low_field": "U(a_yz,a_xy)=2r[a_yz sin(ell_yz.x)-a_xy sin(ell_xy.x)]",
+    "quartic_support_rule": "For N>=5, HHHH and HHLL can survive; HHHL and HLLL vanish by first-coordinate incidence; LLLL cancels in the combined inviscid pressure jet by low Euler stationarity.",
+    "quintic_support_rule": "The inviscid pressure second jet retains only HHHHL and HHLLL; HHHHH, HHHLL, HLLLL vanish by incidence and LLLLL vanishes by stationarity.",
+    "symbolic_amplitudes": [
+      "a_yz",
+      "a_xy"
+    ]
+  },
+  "prerequisite_audit": {
+    "all_checks_pass": true,
+    "rows": [
+      {
+        "actual_sha256": "ab0d58bb824520167a90083795f0913da1cc9ca7b50e5e785ae7192f9f14efbd",
+        "expected_sha256": "ab0d58bb824520167a90083795f0913da1cc9ca7b50e5e785ae7192f9f14efbd",
+        "matches": true,
+        "path": "work/ns_collision/results/annular_parallel_shear_phase_repair_audit_v1.json",
+        "predecessor_pass_value": true
+      },
+      {
+        "actual_sha256": "7c985480afc51a084eefa0e2fb614fd3b900e9d2e347a6effb0c99b7259c693d",
+        "expected_sha256": "7c985480afc51a084eefa0e2fb614fd3b900e9d2e347a6effb0c99b7259c693d",
+        "matches": true,
+        "path": "work/ns_collision/results/annular_rho_zero_second_jet_route_guard_audit_v1.json",
+        "predecessor_pass_value": true
+      },
+      {
+        "actual_sha256": "582a6a4997928b8cd7b67f1d9fd58b5fef6326ee6ffa42bede33a5d9854f36c9",
+        "expected_sha256": "582a6a4997928b8cd7b67f1d9fd58b5fef6326ee6ffa42bede33a5d9854f36c9",
+        "matches": true,
+        "path": "work/ns_collision/results/annular_rho_zero_first_jet_remainder_gate_audit_v1.json",
+        "predecessor_pass_value": true
+      },
+      {
+        "actual_sha256": "af0039698cdbd5442be629b23ea259e97556c978a0f0d91e94e9e0d658b1f32f",
+        "expected_sha256": "af0039698cdbd5442be629b23ea259e97556c978a0f0d91e94e9e0d658b1f32f",
+        "matches": true,
+        "path": "work/ns_collision/results/annular_two_shear_full_c1_port_audit_v1.json",
+        "predecessor_pass_value": true
+      }
+    ]
+  },
+  "route_decision": "Do not yet assign the negative N9 coefficient to the complete second jet. First prove a uniform o(N9) compatible-difference and pressure-projector shell bound for every viscosity-bearing quartic Fisher and mixed channel. Only after that exclusion may the heat-window Taylor remainder be rebuilt.",
+  "runtime_seconds": 120.67453390001901,
+  "scope": "This audit certifies the finite chain-rule port, de-aliasing, two-amplitude channel polynomial, heat-weighted HHL identities, the total first-jet N5 sign, and the inviscid-pressure N9 sign. It does not certify the complete second-jet N9 asymptotic, a uniform Taylor remainder, dynamic adjoint optimization, critical L3 control, blowup, or global regularity.",
+  "small_carrier_finite_jet_validation": {
+    "base_generator": -0.5518548312622972,
+    "coefficient_scale": 0.9,
+    "dealias_factor": 10,
+    "family_maximum_divergence_residual": 0.0,
+    "finite_difference_validation": {
+      "epsilon": 0.0002,
+      "first": {
+        "Richardson": 6.43690935925247,
+        "absolute_residual": 7.238654120556021e-13,
+        "analytic": 6.436909359253194,
+        "coarse": 6.436948690235755,
+        "fine": 6.4369191919982915,
+        "relative_residual": 1.1245543034018805e-13
+      },
+      "second": {
+        "Richardson": -551.1354708396625,
+        "absolute_residual": 1.0833900887519121e-08,
+        "analytic": -551.1354708504964,
+        "coarse": -551.1500686700143,
+        "fine": -551.1391202972504,
+        "relative_residual": 1.9657419020409912e-11
+      }
+    },
+    "first_variation": {
+      "channels": {
+        "D_lambda[A]": {
+          "subterms": {
+            "pressure": 0.005743466943917167,
+            "velocity_Fisher": 0.001440676726059743,
+            "weight_self": 1.0874544471382005e-18
+          },
+          "value": 0.007184143669976911
+        },
+        "D_lambda[D]": {
+          "subterms": {
+            "pressure": 0.0018719348280504904,
+            "velocity_Fisher": 0.226916910672184,
+            "weight_self": -0.058732910156250005
+          },
+          "value": 0.1700559353439845
+        },
+        "D_u[E]": {
+          "subterms": {
+            "pressure_direction": 0.0038305352395359305,
+            "pressure_variation": -0.004070020840912087,
+            "weighted_Fisher": 4.518690404835976e-05
+          },
+          "value": -0.0001942986973277968
+        },
+        "D_u[V]": {
+          "subterms": {
+            "pressure_direction": -0.010485340373231195,
+            "pressure_variation": -0.5600500523503222,
+            "weighted_Fisher": 6.830398971660113
+          },
+          "value": 6.259863578936559
+        }
+      },
+      "decomposition_residual": 1.7763568394002505e-15,
+      "direct_first_derivative": 6.436909359253194,
+      "expanded_first_derivative": 6.4369093592531925
+    },
+    "grid_point_count": 9801,
+    "grid_shape": [
+      81,
+      11,
+      11
+    ],
+    "heat_identity_replay": {
+      "all_heat_identity_checks_pass": true,
+      "components": {
+        "xy": {
+          "amplitude": 0.7,
+          "first_heat_load": {
+            "combined": -0.006160808771959095,
+            "maximum_imaginary_residual": 0.0,
+            "pressure_cross": -0.00047777699174330886,
+            "pressure_high_high": -0.005683031780215786
+          },
+          "second_heat_load": {
+            "combined": -0.6379913681736569,
+            "maximum_imaginary_residual": 0.0,
+            "pressure_cross": -0.051368563551998904,
+            "pressure_high_high": -0.586622804621658
+          }
+        },
+        "yz": {
+          "amplitude": 0.7,
+          "first_heat_load": {
+            "combined": -0.8994509257098723,
+            "maximum_imaginary_residual": 0.0,
+            "pressure_cross": 0.0050339200545646105,
+            "pressure_high_high": -0.9044848457644369
+          },
+          "second_heat_load": {
+            "combined": -92.54141692107069,
+            "maximum_imaginary_residual": 0.0,
+            "pressure_cross": 0.472043438250912,
+            "pressure_high_high": -93.0134603593216
+          }
+        }
+      },
+      "first_velocity_heat_pressure": {
+        "actual": -0.5705353927235535,
+        "expected": -0.5705353927235538,
+        "residual": 3.3306690738754696e-16
+      },
+      "second_double_velocity_heat_pressure": {
+        "actual": 58.70302722222393,
+        "expected": 58.70302722222394,
+        "residual": 7.105427357601002e-15
+      }
+    },
+    "maximum_velocity_divergence_residual": 4.0145245140556966e-11,
+    "runtime_seconds": 0.35874019999755546,
+    "second_variation": {
+      "channels": {
+        "2H_lambda_lambda[A,D]": {
+          "multiplicity": 2.0,
+          "subterms": {
+            "first_weight_direction": -3.624848157127335e-18,
+            "mixed_weight_gradient": 2.899878525701868e-18,
+            "second_weight_direction": 1.3593180589227507e-18
+          },
+          "value": 6.343484274972837e-19
+        },
+        "2H_u_lambda[E,A]": {
+          "multiplicity": 2.0,
+          "subterms": {
+            "pressure_direction": 0.0020024238740867398,
+            "pressure_variation": -0.023598817257637322,
+            "weighted_Fisher": 0.4875811524442382
+          },
+          "value": 0.46598475906068765
+        },
+        "2H_u_lambda[E,D]": {
+          "multiplicity": 2.0,
+          "subterms": {
+            "pressure_direction": -0.013497313202951002,
+            "pressure_variation": 0.009810274812557722,
+            "weighted_Fisher": -0.3946104811694362
+          },
+          "value": -0.3982975195598295
+        },
+        "2H_u_lambda[V,A]": {
+          "multiplicity": 2.0,
+          "subterms": {
+            "pressure_direction": -0.1269250263278697,
+            "pressure_variation": -1.0759379664122064,
+            "weighted_Fisher": -0.11265063651788261
+          },
+          "value": -1.3155136292579588
+        },
+        "2H_u_lambda[V,D]": {
+          "multiplicity": 2.0,
+          "subterms": {
+            "pressure_direction": -0.01186671767166419,
+            "pressure_variation": -0.3249446490252685,
+            "weighted_Fisher": -67.14134490880703
+          },
+          "value": -67.47815627550396
+        },
+        "2H_uu[E,V]": {
+          "multiplicity": 2.0,
+          "subterms": {
+            "pressure_first_variation_first": 0.04518126820064913,
+            "pressure_first_variation_second": -0.6810340075801092,
+            "pressure_second_variation": 1.0034975173916887,
+            "weighted_Fisher": -4.936242151866876
+          },
+          "value": -4.568597373854648
+        },
+        "D_lambda[lambda2_0A]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure": 0.016018222909086388,
+            "velocity_Fisher": -0.22450064947803014,
+            "weight_Fisher_cross": 0.03978330077708903,
+            "weight_Fisher_direction": 0.009881742392969002
+          },
+          "value": -0.1588173833988857
+        },
+        "D_lambda[lambda2_0D]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure": -0.01736682631305066,
+            "velocity_Fisher": -0.0033921260274345,
+            "weight_Fisher_cross": 1.2686968549945672e-18,
+            "weight_Fisher_direction": -1.8124240785636674e-18
+          },
+          "value": -0.02075895234048516
+        },
+        "D_lambda[lambda2_DA]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure": 0.08056118597932217,
+            "velocity_Fisher": 0.0701155642528961,
+            "weight_Fisher_cross": 2.174908894276401e-18,
+            "weight_Fisher_direction": 7.24969631425467e-19
+          },
+          "value": 0.15067675023221827
+        },
+        "D_lambda[lambda2_DD]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure": -0.0019392085829896461,
+            "velocity_Fisher": -1.4548965541509686,
+            "weight_Fisher_cross": -0.09931201171875001,
+            "weight_Fisher_direction": -0.014950195312500003
+          },
+          "value": -1.5710979697652083
+        },
+        "D_lambda[lambda2_E0]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure": -0.0008111607374619812,
+            "velocity_Fisher": -2.4168818222356998e-05,
+            "weight_Fisher_cross": -2.332836879732392e-06,
+            "weight_Fisher_direction": 7.776122932414385e-07
+          },
+          "value": -0.0008368847802708292
+        },
+        "D_lambda[lambda2_V0]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure": -0.09062497288613147,
+            "velocity_Fisher": -0.06876388033433511,
+            "weight_Fisher_cross": 2.5373937099891344e-18,
+            "weight_Fisher_direction": 3.624848157127335e-19
+          },
+          "value": -0.1593888532204666
+        },
+        "D_u[u2_EE]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure_direction": -0.004709027296715914,
+            "pressure_variation": -0.38462936666176883,
+            "weighted_Fisher": 3.0448910213038833
+          },
+          "value": 2.6555526273453984
+        },
+        "D_u[u2_EV]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure_direction": -0.3462289429065732,
+            "pressure_variation": -0.11265537425065134,
+            "weighted_Fisher": 2.414257462799001
+          },
+          "value": 1.9553731456417764
+        },
+        "D_u[u2_VE]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure_direction": -0.032885821843934786,
+            "pressure_variation": 0.4522536716946572,
+            "weighted_Fisher": 0.4564379371258064
+          },
+          "value": 0.8758057869765288
+        },
+        "D_u[u2_VV]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure_direction": -0.027719500078103303,
+            "pressure_variation": 27.81943883490762,
+            "weighted_Fisher": -256.9195620795596
+          },
+          "value": -229.12784274473012
+        },
+        "H_lambda_lambda[A,A]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "first_weight_direction": -0.009044155218634924,
+            "mixed_weight_gradient": -0.08057652280779118,
+            "second_weight_direction": -0.009044155218634924
+          },
+          "value": -0.09866483324506103
+        },
+        "H_lambda_lambda[D,D]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "first_weight_direction": -0.040579101562500004,
+            "mixed_weight_gradient": -0.08863330078125,
+            "second_weight_direction": -0.040579101562500004
+          },
+          "value": -0.16979150390625
+        },
+        "H_uu[E,E]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure_first_variation_first": -0.004787753666288837,
+            "pressure_first_variation_second": -0.004787753666288837,
+            "pressure_second_variation": 0.37633190043898535,
+            "weighted_Fisher": -3.5108875424084505
+          },
+          "value": -3.144131149302043
+        },
+        "H_uu[V,V]": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure_first_variation_first": 1.0532516976122441,
+            "pressure_first_variation_second": 1.0532516976122441,
+            "pressure_second_variation": 28.804804492169925,
+            "weighted_Fisher": -279.9382767342822
+          },
+          "value": -249.02696884688783
+        }
+      },
+      "decomposition_residual": 0.0,
+      "direct_chain_rule_blocks": {
+        "2D_u_lambda": {
+          "multiplicity": 2.0,
+          "subterms": {
+            "pressure_direction": -0.1502866333283982,
+            "pressure_variation": -1.4146711578825557,
+            "weighted_Fisher": -67.16102487405017
+          },
+          "value": -68.72598266526113
+        },
+        "D_lambda_acceleration": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure": -0.014162759631225215,
+            "velocity_Fisher": -1.6814618145560947,
+            "weight_Fisher_cross": -0.05953104377854071,
+            "weight_Fisher_direction": -0.005067675307237757
+          },
+          "value": -1.7602232932730983
+        },
+        "D_lambda_lambda": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "first_weight_direction": -0.049623256781134925,
+            "mixed_weight_gradient": -0.1692098235890412,
+            "second_weight_direction": -0.049623256781134925
+          },
+          "value": -0.268456337151311
+        },
+        "D_u_acceleration": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure_direction": -0.4115432921253273,
+            "pressure_variation": 27.774407765689862,
+            "weighted_Fisher": -251.00397565833092
+          },
+          "value": -223.64111118476637
+        },
+        "D_uu": {
+          "multiplicity": 1.0,
+          "subterms": {
+            "pressure_first_variation_first": 0.7305375742562253,
+            "pressure_first_variation_second": 0.7305375742562253,
+            "pressure_second_variation": 30.1846339100006,
+            "weighted_Fisher": -288.38540642855753
+          },
+          "value": -256.7396973700445
+        }
+      },
+      "direct_second_derivative": -551.1354708504964,
+      "expanded_second_derivative": -551.1354708504964,
+      "pure_velocity_heat_pressure_second_derivative": 58.70302722222393,
+      "velocity_direction_divergence_residuals": {
+        "E": 2.5075106271428458e-14,
+        "EE": 1.0062753682673882e-12,
+        "EV": 1.4081725877671394e-13,
+        "V": 4.440892098500626e-16,
+        "VE": 4.0145245140556966e-11,
+        "VV": 2.842170943040401e-14
+      }
+    },
+    "size": 3,
+    "static_objective_replay": {
+      "equal_low_amplitudes": true,
+      "expected_rho_zero_generator": -0.5518548312622973,
+      "high_weighted_Fisher": 0.053606964501888704,
+      "low_weighted_Fisher_mass": 1.125,
+      "pressure_HHL_load": -0.009309246763932641,
+      "pressure_cross": 5.427547068655801e-05,
+      "pressure_high_high": -0.009363522234619198,
+      "replay_residual": 1.1102230246251565e-16
+    },
+    "viscosity": 1.0,
+    "xy_amplitude": 0.7,
+    "yz_amplitude": 0.7
+  },
+  "status": "pass",
+  "theorem": "The complete finite first and second rho-zero generator jets have been ported to the common-polarization two-mode shear. A bivariate amplitude projection enumerates every yz/xy mixed channel, verifies the support-forbidden HHHL and HLLL quartic rows vanish, and reduces the inviscid pressure second jet to HHHHL and HHLLL. The first total jet retains a strict negative N5 limit. The inviscid pressure second jet has a strict negative N9 limit, while the positive double-heat pressure term is only N7.",
+  "two_low_amplitude_polynomial_projection": {
+    "all_projection_checks_pass": true,
+    "channel_polynomial_ledger": [
+      {
+        "key": "first::D_lambda[A]::pressure",
+        "maximum_forbidden_support_coefficient": 3.726186026398182e-15,
+        "maximum_forbidden_support_relative": 3.726186026398182e-15,
+        "nonzero_terms": [
+          {
+            "coefficient": 0.00134953036418053,
+            "high_degree": 4,
+            "low_degree": 0,
+            "term": "H^4",
+            "xy_power": 0,
+            "yz_power": 0
+          },
+          {
+            "coefficient": 0.0014088196842125186,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_xy^2",
+            "xy_power": 2,
+            "yz_power": 0
+          },
+          {
+            "coefficient": 0.007294404401627737,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_yz^1 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 1
+          },
+          {
+            "coefficient": -0.00036059033889916897,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_yz^2",
+            "xy_power": 0,
+            "yz_power": 2
+          }
+        ],
+        "velocity_degree": 4,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "first::D_lambda[A]::velocity_Fisher",
+        "maximum_forbidden_support_coefficient": 2.0789630867518172e-14,
+        "maximum_forbidden_support_relative": 2.0789630867518172e-14,
+        "nonzero_terms": [
+          {
+            "coefficient": 0.00018926358945908404,
+            "high_degree": 2,
+            "low_degree": 1,
+            "term": "H^2 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 0
+          },
+          {
+            "coefficient": 0.00010708865969472792,
+            "high_degree": 2,
+            "low_degree": 1,
+            "term": "H^2 L_yz^1",
+            "xy_power": 0,
+            "yz_power": 1
+          }
+        ],
+        "velocity_degree": 3,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "first::D_lambda[A]::weight_self",
+        "maximum_forbidden_support_coefficient": 9.035019548134963e-17,
+        "maximum_forbidden_support_relative": 9.035019548134963e-17,
+        "nonzero_terms": [],
+        "velocity_degree": 1,
+        "weight_scale_degree": 3
+      },
+      {
+        "key": "first::D_lambda[D]::pressure",
+        "maximum_forbidden_support_coefficient": 4.132978681514743e-16,
+        "maximum_forbidden_support_relative": 4.132978681514743e-16,
+        "nonzero_terms": [
+          {
+            "coefficient": 1.34885795339689e-05,
+            "high_degree": 2,
+            "low_degree": 1,
+            "term": "H^2 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 0
+          },
+          {
+            "coefficient": 0.0008351475013269715,
+            "high_degree": 2,
+            "low_degree": 1,
+            "term": "H^2 L_yz^1",
+            "xy_power": 0,
+            "yz_power": 1
+          }
+        ],
+        "velocity_degree": 3,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "first::D_lambda[D]::velocity_Fisher",
+        "maximum_forbidden_support_coefficient": 2.1094237467877974e-15,
+        "maximum_forbidden_support_relative": 2.1094237467877974e-15,
+        "nonzero_terms": [
+          {
+            "coefficient": 0.32550526218336273,
+            "high_degree": 2,
+            "low_degree": 0,
+            "term": "H^2",
+            "xy_power": 0,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.24999999999999933,
+            "high_degree": 0,
+            "low_degree": 2,
+            "term": "L_yz^1 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 1
+          }
+        ],
+        "velocity_degree": 2,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "first::D_lambda[D]::weight_self",
+        "maximum_forbidden_support_coefficient": 5.551115123125783e-17,
+        "maximum_forbidden_support_relative": 5.551115123125783e-17,
+        "nonzero_terms": [
+          {
+            "coefficient": -0.08056640625,
+            "high_degree": 0,
+            "low_degree": 0,
+            "term": "constant",
+            "xy_power": 0,
+            "yz_power": 0
+          }
+        ],
+        "velocity_degree": 0,
+        "weight_scale_degree": 3
+      },
+      {
+        "key": "first::D_u[E]::pressure_direction",
+        "maximum_forbidden_support_coefficient": 3.9966275915106474e-17,
+        "maximum_forbidden_support_relative": 3.9966275915106474e-17,
+        "nonzero_terms": [
+          {
+            "coefficient": 0.007270784066241162,
+            "high_degree": 4,
+            "low_degree": 0,
+            "term": "H^4",
+            "xy_power": 0,
+            "yz_power": 0
+          },
+          {
+            "coefficient": 8.01053227901527e-06,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_xy^2",
+            "xy_power": 2,
+            "yz_power": 0
+          },
+          {
+            "coefficient": 0.00012025844052920842,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_yz^1 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 1
+          },
+          {
+            "coefficient": 1.1629190307053665e-05,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_yz^2",
+            "xy_power": 0,
+            "yz_power": 2
+          }
+        ],
+        "velocity_degree": 4,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "first::D_u[E]::pressure_variation",
+        "maximum_forbidden_support_coefficient": 4.6629367034256575e-15,
+        "maximum_forbidden_support_relative": 4.6629367034256575e-15,
+        "nonzero_terms": [
+          {
+            "coefficient": -1.571537619249907e-05,
+            "high_degree": 4,
+            "low_degree": 0,
+            "term": "H^4",
+            "xy_power": 0,
+            "yz_power": 0
+          },
+          {
+            "coefficient": 0.009716210670738384,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_xy^2",
+            "xy_power": 2,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.0046619147213851075,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_yz^1 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 1
+          },
+          {
+            "coefficient": -0.025115353871096403,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_yz^2",
+            "xy_power": 0,
+            "yz_power": 2
+          }
+        ],
+        "velocity_degree": 4,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "first::D_u[E]::weighted_Fisher",
+        "maximum_forbidden_support_coefficient": 6.412844868970206e-15,
+        "maximum_forbidden_support_relative": 6.412844868970206e-15,
+        "nonzero_terms": [
+          {
+            "coefficient": 0.011189392882735606,
+            "high_degree": 2,
+            "low_degree": 1,
+            "term": "H^2 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.007875829469649008,
+            "high_degree": 2,
+            "low_degree": 1,
+            "term": "H^2 L_yz^1",
+            "xy_power": 0,
+            "yz_power": 1
+          }
+        ],
+        "velocity_degree": 3,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "first::D_u[V]::pressure_direction",
+        "maximum_forbidden_support_coefficient": 5.551115123125783e-16,
+        "maximum_forbidden_support_relative": 5.551115123125783e-16,
+        "nonzero_terms": [
+          {
+            "coefficient": -0.0004906042060325642,
+            "high_degree": 2,
+            "low_degree": 1,
+            "term": "H^2 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.02064762504548172,
+            "high_degree": 2,
+            "low_degree": 1,
+            "term": "H^2 L_yz^1",
+            "xy_power": 0,
+            "yz_power": 1
+          }
+        ],
+        "velocity_degree": 3,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "first::D_u[V]::pressure_variation",
+        "maximum_forbidden_support_coefficient": 3.376591204528116e-14,
+        "maximum_forbidden_support_relative": 1.1120220659750112e-14,
+        "nonzero_terms": [
+          {
+            "coefficient": -0.020148961076901284,
+            "high_degree": 2,
+            "low_degree": 1,
+            "term": "H^2 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -3.036442628112375,
+            "high_degree": 2,
+            "low_degree": 1,
+            "term": "H^2 L_yz^1",
+            "xy_power": 0,
+            "yz_power": 1
+          }
+        ],
+        "velocity_degree": 3,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "first::D_u[V]::weighted_Fisher",
+        "maximum_forbidden_support_coefficient": 2.842170943040401e-14,
+        "maximum_forbidden_support_relative": 5.615939455700302e-15,
+        "nonzero_terms": [
+          {
+            "coefficient": 5.060900256243921,
+            "high_degree": 2,
+            "low_degree": 0,
+            "term": "H^2",
+            "xy_power": 0,
+            "yz_power": 0
+          },
+          {
+            "coefficient": 1.999999999999993,
+            "high_degree": 0,
+            "low_degree": 2,
+            "term": "L_xy^2",
+            "xy_power": 2,
+            "yz_power": 0
+          },
+          {
+            "coefficient": 0.4999999999999698,
+            "high_degree": 0,
+            "low_degree": 2,
+            "term": "L_yz^1 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 1
+          },
+          {
+            "coefficient": 1.9999999999999611,
+            "high_degree": 0,
+            "low_degree": 2,
+            "term": "L_yz^2",
+            "xy_power": 0,
+            "yz_power": 2
+          }
+        ],
+        "velocity_degree": 2,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "first::aggregate::inviscid_pressure",
+        "maximum_forbidden_support_coefficient": 8.43769498715119e-15,
+        "maximum_forbidden_support_relative": 8.43769498715119e-15,
+        "nonzero_terms": [
+          {
+            "coefficient": 0.008604599054229193,
+            "high_degree": 4,
+            "low_degree": 0,
+            "term": "H^4",
+            "xy_power": 0,
+            "yz_power": 0
+          },
+          {
+            "coefficient": 0.011133040887229828,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_xy^2",
+            "xy_power": 2,
+            "yz_power": 0
+          },
+          {
+            "coefficient": 0.0027527481207719195,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_yz^1 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 1
+          },
+          {
+            "coefficient": -0.02546431501968843,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_yz^2",
+            "xy_power": 0,
+            "yz_power": 2
+          }
+        ],
+        "velocity_degree": 4,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "first::aggregate::velocity_heat_pressure",
+        "maximum_forbidden_support_coefficient": 2.058935519733519e-14,
+        "maximum_forbidden_support_relative": 6.734951699926798e-15,
+        "nonzero_terms": [
+          {
+            "coefficient": -0.02063956528293384,
+            "high_degree": 2,
+            "low_degree": 1,
+            "term": "H^2 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -3.0570902531578623,
+            "high_degree": 2,
+            "low_degree": 1,
+            "term": "H^2 L_yz^1",
+            "xy_power": 0,
+            "yz_power": 1
+          }
+        ],
+        "velocity_degree": 3,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "second::2H_lambda_lambda[A,D]::first_weight_direction",
+        "maximum_forbidden_support_coefficient": 2.1784494799202044e-16,
+        "maximum_forbidden_support_relative": 2.1784494799202044e-16,
+        "nonzero_terms": [],
+        "velocity_degree": 1,
+        "weight_scale_degree": 3
+      },
+      {
+        "key": "second::2H_lambda_lambda[A,D]::mixed_weight_gradient",
+        "maximum_forbidden_support_coefficient": 2.0641264638508915e-16,
+        "maximum_forbidden_support_relative": 2.0641264638508915e-16,
+        "nonzero_terms": [],
+        "velocity_degree": 1,
+        "weight_scale_degree": 3
+      },
+      {
+        "key": "second::2H_lambda_lambda[A,D]::second_weight_direction",
+        "maximum_forbidden_support_coefficient": 1.341789394742561e-16,
+        "maximum_forbidden_support_relative": 1.341789394742561e-16,
+        "nonzero_terms": [],
+        "velocity_degree": 1,
+        "weight_scale_degree": 3
+      },
+      {
+        "key": "second::2H_u_lambda[E,A]::pressure_direction",
+        "maximum_forbidden_support_coefficient": 1.6618650899857812e-15,
+        "maximum_forbidden_support_relative": 1.6618650899857812e-15,
+        "nonzero_terms": [
+          {
+            "coefficient": 0.0015877174868995127,
+            "high_degree": 4,
+            "low_degree": 1,
+            "term": "H^4 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.004823276526003208,
+            "high_degree": 4,
+            "low_degree": 1,
+            "term": "H^4 L_yz^1",
+            "xy_power": 0,
+            "yz_power": 1
+          },
+          {
+            "coefficient": -2.780484530064478e-06,
+            "high_degree": 2,
+            "low_degree": 3,
+            "term": "H^2 L_xy^3",
+            "xy_power": 3,
+            "yz_power": 0
+          },
+          {
+            "coefficient": 0.0015053725031451038,
+            "high_degree": 2,
+            "low_degree": 3,
+            "term": "H^2 L_yz^1 L_xy^2",
+            "xy_power": 2,
+            "yz_power": 1
+          },
+          {
+            "coefficient": 0.0007556045882550141,
+            "high_degree": 2,
+            "low_degree": 3,
+            "term": "H^2 L_yz^2 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 2
+          },
+          {
+            "coefficient": 0.0005879763787341343,
+            "high_degree": 2,
+            "low_degree": 3,
+            "term": "H^2 L_yz^3",
+            "xy_power": 0,
+            "yz_power": 3
+          }
+        ],
+        "velocity_degree": 5,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "second::2H_u_lambda[E,A]::pressure_variation",
+        "maximum_forbidden_support_coefficient": 7.14740766571964e-14,
+        "maximum_forbidden_support_relative": 7.14740766571964e-14,
+        "nonzero_terms": [
+          {
+            "coefficient": -0.004104265518073441,
+            "high_degree": 4,
+            "low_degree": 1,
+            "term": "H^4 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.012158552971902341,
+            "high_degree": 4,
+            "low_degree": 1,
+            "term": "H^4 L_yz^1",
+            "xy_power": 0,
+            "yz_power": 1
+          },
+          {
+            "coefficient": 0.0012849174463438334,
+            "high_degree": 2,
+            "low_degree": 3,
+            "term": "H^2 L_xy^3",
+            "xy_power": 3,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.004391407268221126,
+            "high_degree": 2,
+            "low_degree": 3,
+            "term": "H^2 L_yz^1 L_xy^2",
+            "xy_power": 2,
+            "yz_power": 1
+          },
+          {
+            "coefficient": -0.03017707100708039,
+            "high_degree": 2,
+            "low_degree": 3,
+            "term": "H^2 L_yz^2 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 2
+          },
+          {
+            "coefficient": 0.01339321266221853,
+            "high_degree": 2,
+            "low_degree": 3,
+            "term": "H^2 L_yz^3",
+            "xy_power": 0,
+            "yz_power": 3
+          }
+        ],
+        "velocity_degree": 5,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "second::2H_u_lambda[E,A]::weighted_Fisher",
+        "maximum_forbidden_support_coefficient": 4.800604358479177e-13,
+        "maximum_forbidden_support_relative": 4.800604358479177e-13,
+        "nonzero_terms": [
+          {
+            "coefficient": 0.018756178735836262,
+            "high_degree": 4,
+            "low_degree": 0,
+            "term": "H^4",
+            "xy_power": 0,
+            "yz_power": 0
+          },
+          {
+            "coefficient": 0.20032385183704227,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_xy^2",
+            "xy_power": 2,
+            "yz_power": 0
+          },
+          {
+            "coefficient": 0.2759807835505921,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_yz^1 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 1
+          },
+          {
+            "coefficient": 0.2269570555860268,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_yz^2",
+            "xy_power": 0,
+            "yz_power": 2
+          }
+        ],
+        "velocity_degree": 4,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "second::2H_u_lambda[E,D]::pressure_direction",
+        "maximum_forbidden_support_coefficient": 3.826980098156141e-16,
+        "maximum_forbidden_support_relative": 3.826980098156141e-16,
+        "nonzero_terms": [
+          {
+            "coefficient": -0.06463443665524035,
+            "high_degree": 4,
+            "low_degree": 0,
+            "term": "H^4",
+            "xy_power": 0,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.00017939367379321558,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_xy^2",
+            "xy_power": 2,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.0031594301329605223,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_yz^1 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 1
+          },
+          {
+            "coefficient": 0.0023743123787036023,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_yz^2",
+            "xy_power": 0,
+            "yz_power": 2
+          }
+        ],
+        "velocity_degree": 4,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "second::2H_u_lambda[E,D]::pressure_variation",
+        "maximum_forbidden_support_coefficient": 2.5979218776228663e-14,
+        "maximum_forbidden_support_relative": 2.5979218776228663e-14,
+        "nonzero_terms": [
+          {
+            "coefficient": 0.0017077525613802703,
+            "high_degree": 4,
+            "low_degree": 0,
+            "term": "H^4",
+            "xy_power": 0,
+            "yz_power": 0
+          },
+          {
+            "coefficient": 0.037492796915787885,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_xy^2",
+            "xy_power": 2,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.05943476617382931,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_yz^1 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 1
+          },
+          {
+            "coefficient": -0.04110987931982637,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_yz^2",
+            "xy_power": 0,
+            "yz_power": 2
+          }
+        ],
+        "velocity_degree": 4,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "second::2H_u_lambda[E,D]::weighted_Fisher",
+        "maximum_forbidden_support_coefficient": 1.0658141036401503e-14,
+        "maximum_forbidden_support_relative": 1.0658141036401503e-14,
+        "nonzero_terms": [
+          {
+            "coefficient": -0.638482500304677,
+            "high_degree": 2,
+            "low_degree": 1,
+            "term": "H^2 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.6442895568395326,
+            "high_degree": 2,
+            "low_degree": 1,
+            "term": "H^2 L_yz^1",
+            "xy_power": 0,
+            "yz_power": 1
+          }
+        ],
+        "velocity_degree": 3,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "second::2H_u_lambda[V,A]::pressure_direction",
+        "maximum_forbidden_support_coefficient": 1.9317880628477724e-14,
+        "maximum_forbidden_support_relative": 1.9317880628477724e-14,
+        "nonzero_terms": [
+          {
+            "coefficient": -0.3711423285681172,
+            "high_degree": 4,
+            "low_degree": 0,
+            "term": "H^4",
+            "xy_power": 0,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.0056607201718020805,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_xy^2",
+            "xy_power": 2,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.024021475819711258,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_yz^1 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 1
+          },
+          {
+            "coefficient": 0.0026842827948536105,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_yz^2",
+            "xy_power": 0,
+            "yz_power": 2
+          }
+        ],
+        "velocity_degree": 4,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "second::2H_u_lambda[V,A]::pressure_variation",
+        "maximum_forbidden_support_coefficient": 8.526512829121202e-14,
+        "maximum_forbidden_support_relative": 2.0394153538623298e-14,
+        "nonzero_terms": [
+          {
+            "coefficient": -0.7768298352297877,
+            "high_degree": 4,
+            "low_degree": 0,
+            "term": "H^4",
+            "xy_power": 0,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.798338885265105,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_xy^2",
+            "xy_power": 2,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -4.180861349785044,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_yz^1 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 1
+          },
+          {
+            "coefficient": 0.20061562698518198,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_yz^2",
+            "xy_power": 0,
+            "yz_power": 2
+          }
+        ],
+        "velocity_degree": 4,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "second::2H_u_lambda[V,A]::weighted_Fisher",
+        "maximum_forbidden_support_coefficient": 1.1453338277789271e-11,
+        "maximum_forbidden_support_relative": 1.1453338277789271e-11,
+        "nonzero_terms": [
+          {
+            "coefficient": -0.018103641288103656,
+            "high_degree": 2,
+            "low_degree": 1,
+            "term": "H^2 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.01979819667940173,
+            "high_degree": 2,
+            "low_degree": 1,
+            "term": "H^2 L_yz^1",
+            "xy_power": 0,
+            "yz_power": 1
+          }
+        ],
+        "velocity_degree": 3,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "second::2H_u_lambda[V,D]::pressure_direction",
+        "maximum_forbidden_support_coefficient": 1.6237011735142914e-15,
+        "maximum_forbidden_support_relative": 1.6237011735142914e-15,
+        "nonzero_terms": [
+          {
+            "coefficient": 0.01016799415070628,
+            "high_degree": 2,
+            "low_degree": 1,
+            "term": "H^2 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.018977910609570395,
+            "high_degree": 2,
+            "low_degree": 1,
+            "term": "H^2 L_yz^1",
+            "xy_power": 0,
+            "yz_power": 1
+          }
+        ],
+        "velocity_degree": 3,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "second::2H_u_lambda[V,D]::pressure_variation",
+        "maximum_forbidden_support_coefficient": 9.73983454794301e-14,
+        "maximum_forbidden_support_relative": 9.73983454794301e-14,
+        "nonzero_terms": [
+          {
+            "coefficient": 0.006527455564066607,
+            "high_degree": 2,
+            "low_degree": 1,
+            "term": "H^2 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.4564342216058604,
+            "high_degree": 2,
+            "low_degree": 1,
+            "term": "H^2 L_yz^1",
+            "xy_power": 0,
+            "yz_power": 1
+          }
+        ],
+        "velocity_degree": 3,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "second::2H_u_lambda[V,D]::weighted_Fisher",
+        "maximum_forbidden_support_coefficient": 2.2737367544323206e-13,
+        "maximum_forbidden_support_relative": 1.185967224852082e-15,
+        "nonzero_terms": [
+          {
+            "coefficient": -191.7200329643097,
+            "high_degree": 2,
+            "low_degree": 0,
+            "term": "H^2",
+            "xy_power": 0,
+            "yz_power": 0
+          },
+          {
+            "coefficient": 1.9999999999994884,
+            "high_degree": 0,
+            "low_degree": 2,
+            "term": "L_yz^1 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 1
+          }
+        ],
+        "velocity_degree": 2,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "second::2H_uu[E,V]::pressure_first_variation_first",
+        "maximum_forbidden_support_coefficient": 1.9984014443252818e-14,
+        "maximum_forbidden_support_relative": 1.9984014443252818e-14,
+        "nonzero_terms": [
+          {
+            "coefficient": -0.015101460093448385,
+            "high_degree": 4,
+            "low_degree": 0,
+            "term": "H^4",
+            "xy_power": 0,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.04057817239551054,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_xy^2",
+            "xy_power": 2,
+            "yz_power": 0
+          },
+          {
+            "coefficient": 0.04930818303597739,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_yz^1 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 1
+          },
+          {
+            "coefficient": 0.09488312536371253,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_yz^2",
+            "xy_power": 0,
+            "yz_power": 2
+          }
+        ],
+        "velocity_degree": 4,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "second::2H_uu[E,V]::pressure_first_variation_second",
+        "maximum_forbidden_support_coefficient": 3.4049946202763034e-14,
+        "maximum_forbidden_support_relative": 8.1939747614414e-15,
+        "nonzero_terms": [
+          {
+            "coefficient": -4.155485853214089,
+            "high_degree": 4,
+            "low_degree": 0,
+            "term": "H^4",
+            "xy_power": 0,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.002003650969927051,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_xy^2",
+            "xy_power": 2,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.03571749707602834,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_yz^1 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 1
+          },
+          {
+            "coefficient": -0.0004965806309028881,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_yz^2",
+            "xy_power": 0,
+            "yz_power": 2
+          }
+        ],
+        "velocity_degree": 4,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "second::2H_uu[E,V]::pressure_second_variation",
+        "maximum_forbidden_support_coefficient": 1.9343736202203476e-13,
+        "maximum_forbidden_support_relative": 3.2250753368094027e-14,
+        "nonzero_terms": [
+          {
+            "coefficient": 0.025237657193653847,
+            "high_degree": 4,
+            "low_degree": 0,
+            "term": "H^4",
+            "xy_power": 0,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.09419938493126634,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_xy^2",
+            "xy_power": 2,
+            "yz_power": 0
+          },
+          {
+            "coefficient": 5.592413977056381,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_yz^1 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 1
+          },
+          {
+            "coefficient": 5.997917624256312,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_yz^2",
+            "xy_power": 0,
+            "yz_power": 2
+          }
+        ],
+        "velocity_degree": 4,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "second::2H_uu[E,V]::weighted_Fisher",
+        "maximum_forbidden_support_coefficient": 8.313519625456115e-14,
+        "maximum_forbidden_support_relative": 4.92294522387206e-15,
+        "nonzero_terms": [
+          {
+            "coefficient": -16.887288497833936,
+            "high_degree": 2,
+            "low_degree": 1,
+            "term": "H^2 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -3.8216667038047767,
+            "high_degree": 2,
+            "low_degree": 1,
+            "term": "H^2 L_yz^1",
+            "xy_power": 0,
+            "yz_power": 1
+          }
+        ],
+        "velocity_degree": 3,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "second::D_lambda[lambda2_0A]::pressure",
+        "maximum_forbidden_support_coefficient": 1.387084891391055e-14,
+        "maximum_forbidden_support_relative": 1.387084891391055e-14,
+        "nonzero_terms": [
+          {
+            "coefficient": -0.0009043547152721024,
+            "high_degree": 4,
+            "low_degree": 1,
+            "term": "H^4 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 0
+          },
+          {
+            "coefficient": 0.0025985188628760577,
+            "high_degree": 4,
+            "low_degree": 1,
+            "term": "H^4 L_yz^1",
+            "xy_power": 0,
+            "yz_power": 1
+          },
+          {
+            "coefficient": 3.8495870786307146e-05,
+            "high_degree": 2,
+            "low_degree": 3,
+            "term": "H^2 L_xy^3",
+            "xy_power": 3,
+            "yz_power": 0
+          },
+          {
+            "coefficient": 0.02711071852163524,
+            "high_degree": 2,
+            "low_degree": 3,
+            "term": "H^2 L_yz^1 L_xy^2",
+            "xy_power": 2,
+            "yz_power": 1
+          },
+          {
+            "coefficient": 0.019995823713827687,
+            "high_degree": 2,
+            "low_degree": 3,
+            "term": "H^2 L_yz^2 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 2
+          },
+          {
+            "coefficient": 0.018681460242778287,
+            "high_degree": 2,
+            "low_degree": 3,
+            "term": "H^2 L_yz^3",
+            "xy_power": 0,
+            "yz_power": 3
+          }
+        ],
+        "velocity_degree": 5,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "second::D_lambda[lambda2_0A]::velocity_Fisher",
+        "maximum_forbidden_support_coefficient": 1.7386092565629951e-13,
+        "maximum_forbidden_support_relative": 1.7386092565629951e-13,
+        "nonzero_terms": [
+          {
+            "coefficient": -0.015956263120959265,
+            "high_degree": 4,
+            "low_degree": 0,
+            "term": "H^4",
+            "xy_power": 0,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.10748684300075428,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_xy^2",
+            "xy_power": 2,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.1190408155935998,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_yz^1 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 1
+          },
+          {
+            "coefficient": -0.11120061093583576,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_yz^2",
+            "xy_power": 0,
+            "yz_power": 2
+          }
+        ],
+        "velocity_degree": 4,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "second::D_lambda[lambda2_0A]::weight_Fisher_cross",
+        "maximum_forbidden_support_coefficient": 4.440892098500626e-16,
+        "maximum_forbidden_support_relative": 4.440892098500626e-16,
+        "nonzero_terms": [
+          {
+            "coefficient": -3.405422700273313e-06,
+            "high_degree": 2,
+            "low_degree": 0,
+            "term": "H^2",
+            "xy_power": 0,
+            "yz_power": 0
+          },
+          {
+            "coefficient": 0.035888671875000666,
+            "high_degree": 0,
+            "low_degree": 2,
+            "term": "L_xy^2",
+            "xy_power": 2,
+            "yz_power": 0
+          },
+          {
+            "coefficient": 0.03973388671875,
+            "high_degree": 0,
+            "low_degree": 2,
+            "term": "L_yz^1 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 1
+          },
+          {
+            "coefficient": 0.03588867187499938,
+            "high_degree": 0,
+            "low_degree": 2,
+            "term": "L_yz^2",
+            "xy_power": 0,
+            "yz_power": 2
+          }
+        ],
+        "velocity_degree": 2,
+        "weight_scale_degree": 3
+      },
+      {
+        "key": "second::D_lambda[lambda2_0A]::weight_Fisher_direction",
+        "maximum_forbidden_support_coefficient": 1.4150949221982601e-16,
+        "maximum_forbidden_support_relative": 1.4150949221982601e-16,
+        "nonzero_terms": [
+          {
+            "coefficient": 1.4592504915361164e-06,
+            "high_degree": 2,
+            "low_degree": 0,
+            "term": "H^2",
+            "xy_power": 0,
+            "yz_power": 0
+          },
+          {
+            "coefficient": 0.01090494791666674,
+            "high_degree": 0,
+            "low_degree": 2,
+            "term": "L_xy^2",
+            "xy_power": 2,
+            "yz_power": 0
+          },
+          {
+            "coefficient": 0.005777994791666657,
+            "high_degree": 0,
+            "low_degree": 2,
+            "term": "L_yz^1 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 1
+          },
+          {
+            "coefficient": 0.010904947916666342,
+            "high_degree": 0,
+            "low_degree": 2,
+            "term": "L_yz^2",
+            "xy_power": 0,
+            "yz_power": 2
+          }
+        ],
+        "velocity_degree": 2,
+        "weight_scale_degree": 3
+      },
+      {
+        "key": "second::D_lambda[lambda2_0D]::pressure",
+        "maximum_forbidden_support_coefficient": 9.547918011776346e-15,
+        "maximum_forbidden_support_relative": 9.547918011776346e-15,
+        "nonzero_terms": [
+          {
+            "coefficient": -0.026824862792941957,
+            "high_degree": 4,
+            "low_degree": 0,
+            "term": "H^4",
+            "xy_power": 0,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.006285193283294382,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_xy^2",
+            "xy_power": 2,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.0070400627023207984,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_yz^1 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 1
+          },
+          {
+            "coefficient": -0.0010281963908720512,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_yz^2",
+            "xy_power": 0,
+            "yz_power": 2
+          }
+        ],
+        "velocity_degree": 4,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "second::D_lambda[lambda2_0D]::velocity_Fisher",
+        "maximum_forbidden_support_coefficient": 2.718658631550852e-14,
+        "maximum_forbidden_support_relative": 2.718658631550852e-14,
+        "nonzero_terms": [
+          {
+            "coefficient": -0.000492902394674216,
+            "high_degree": 2,
+            "low_degree": 1,
+            "term": "H^2 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.0031936171649489887,
+            "high_degree": 2,
+            "low_degree": 1,
+            "term": "H^2 L_yz^1",
+            "xy_power": 0,
+            "yz_power": 1
+          }
+        ],
+        "velocity_degree": 3,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "second::D_lambda[lambda2_0D]::weight_Fisher_cross",
+        "maximum_forbidden_support_coefficient": 7.878835317838077e-17,
+        "maximum_forbidden_support_relative": 7.878835317838077e-17,
+        "nonzero_terms": [],
+        "velocity_degree": 1,
+        "weight_scale_degree": 3
+      },
+      {
+        "key": "second::D_lambda[lambda2_0D]::weight_Fisher_direction",
+        "maximum_forbidden_support_coefficient": 1.914889654919092e-17,
+        "maximum_forbidden_support_relative": 1.914889654919092e-17,
+        "nonzero_terms": [],
+        "velocity_degree": 1,
+        "weight_scale_degree": 3
+      },
+      {
+        "key": "second::D_lambda[lambda2_DA]::pressure",
+        "maximum_forbidden_support_coefficient": 1.7486012637846216e-14,
+        "maximum_forbidden_support_relative": 1.7486012637846216e-14,
+        "nonzero_terms": [
+          {
+            "coefficient": 0.1777870809376237,
+            "high_degree": 4,
+            "low_degree": 0,
+            "term": "H^4",
+            "xy_power": 0,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.0036409586614347123,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_xy^2",
+            "xy_power": 2,
+            "yz_power": 0
+          },
+          {
+            "coefficient": 0.0220591172289753,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_yz^1 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 1
+          },
+          {
+            "coefficient": -0.0035889304541328413,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_yz^2",
+            "xy_power": 0,
+            "yz_power": 2
+          }
+        ],
+        "velocity_degree": 4,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "second::D_lambda[lambda2_DA]::velocity_Fisher",
+        "maximum_forbidden_support_coefficient": 4.415565135751365e-13,
+        "maximum_forbidden_support_relative": 4.415565135751365e-13,
+        "nonzero_terms": [
+          {
+            "coefficient": 0.0332598899017324,
+            "high_degree": 2,
+            "low_degree": 1,
+            "term": "H^2 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 0
+          },
+          {
+            "coefficient": 0.01708976426807753,
+            "high_degree": 2,
+            "low_degree": 1,
+            "term": "H^2 L_yz^1",
+            "xy_power": 0,
+            "yz_power": 1
+          }
+        ],
+        "velocity_degree": 3,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "second::D_lambda[lambda2_DA]::weight_Fisher_cross",
+        "maximum_forbidden_support_coefficient": 1.007388538296985e-16,
+        "maximum_forbidden_support_relative": 1.007388538296985e-16,
+        "nonzero_terms": [],
+        "velocity_degree": 1,
+        "weight_scale_degree": 3
+      },
+      {
+        "key": "second::D_lambda[lambda2_DA]::weight_Fisher_direction",
+        "maximum_forbidden_support_coefficient": 2.1593693268669632e-17,
+        "maximum_forbidden_support_relative": 2.1593693268669632e-17,
+        "nonzero_terms": [],
+        "velocity_degree": 1,
+        "weight_scale_degree": 3
+      },
+      {
+        "key": "second::D_lambda[lambda2_DD]::pressure",
+        "maximum_forbidden_support_coefficient": 9.406538048484236e-16,
+        "maximum_forbidden_support_relative": 9.406538048484236e-16,
+        "nonzero_terms": [
+          {
+            "coefficient": 0.00038529439823480863,
+            "high_degree": 2,
+            "low_degree": 1,
+            "term": "H^2 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 0
+          },
+          {
+            "coefficient": 0.0022367916247081287,
+            "high_degree": 2,
+            "low_degree": 1,
+            "term": "H^2 L_yz^1",
+            "xy_power": 0,
+            "yz_power": 1
+          }
+        ],
+        "velocity_degree": 3,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "second::D_lambda[lambda2_DD]::velocity_Fisher",
+        "maximum_forbidden_support_coefficient": 1.0658141036401503e-14,
+        "maximum_forbidden_support_relative": 2.8241156192744517e-15,
+        "nonzero_terms": [
+          {
+            "coefficient": -3.7739747493552347,
+            "high_degree": 2,
+            "low_degree": 0,
+            "term": "H^2",
+            "xy_power": 0,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.5000000000000053,
+            "high_degree": 0,
+            "low_degree": 2,
+            "term": "L_yz^1 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 1
+          }
+        ],
+        "velocity_degree": 2,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "second::D_lambda[lambda2_DD]::weight_Fisher_cross",
+        "maximum_forbidden_support_coefficient": 5.551115123125783e-17,
+        "maximum_forbidden_support_relative": 5.551115123125783e-17,
+        "nonzero_terms": [
+          {
+            "coefficient": -0.13623046875,
+            "high_degree": 0,
+            "low_degree": 0,
+            "term": "constant",
+            "xy_power": 0,
+            "yz_power": 0
+          }
+        ],
+        "velocity_degree": 0,
+        "weight_scale_degree": 3
+      },
+      {
+        "key": "second::D_lambda[lambda2_DD]::weight_Fisher_direction",
+        "maximum_forbidden_support_coefficient": 6.938893903907228e-18,
+        "maximum_forbidden_support_relative": 6.938893903907228e-18,
+        "nonzero_terms": [
+          {
+            "coefficient": -0.0205078125,
+            "high_degree": 0,
+            "low_degree": 0,
+            "term": "constant",
+            "xy_power": 0,
+            "yz_power": 0
+          }
+        ],
+        "velocity_degree": 0,
+        "weight_scale_degree": 3
+      },
+      {
+        "key": "second::D_lambda[lambda2_E0]::pressure",
+        "maximum_forbidden_support_coefficient": 6.643990912991171e-16,
+        "maximum_forbidden_support_relative": 6.643990912991171e-16,
+        "nonzero_terms": [
+          {
+            "coefficient": -0.0008059742764241692,
+            "high_degree": 4,
+            "low_degree": 1,
+            "term": "H^4 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.0012900363477264501,
+            "high_degree": 4,
+            "low_degree": 1,
+            "term": "H^4 L_yz^1",
+            "xy_power": 0,
+            "yz_power": 1
+          },
+          {
+            "coefficient": -5.999103828363984e-05,
+            "high_degree": 2,
+            "low_degree": 3,
+            "term": "H^2 L_xy^3",
+            "xy_power": 3,
+            "yz_power": 0
+          },
+          {
+            "coefficient": 0.00042704894890117744,
+            "high_degree": 2,
+            "low_degree": 3,
+            "term": "H^2 L_yz^1 L_xy^2",
+            "xy_power": 2,
+            "yz_power": 1
+          },
+          {
+            "coefficient": -0.00047556940353334076,
+            "high_degree": 2,
+            "low_degree": 3,
+            "term": "H^2 L_yz^2 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 2
+          },
+          {
+            "coefficient": 0.00012458488906420148,
+            "high_degree": 2,
+            "low_degree": 3,
+            "term": "H^2 L_yz^3",
+            "xy_power": 0,
+            "yz_power": 3
+          }
+        ],
+        "velocity_degree": 5,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "second::D_lambda[lambda2_E0]::velocity_Fisher",
+        "maximum_forbidden_support_coefficient": 5.384581669432009e-15,
+        "maximum_forbidden_support_relative": 5.384581669432009e-15,
+        "nonzero_terms": [
+          {
+            "coefficient": 0.004031924050882985,
+            "high_degree": 4,
+            "low_degree": 0,
+            "term": "H^4",
+            "xy_power": 0,
+            "yz_power": 0
+          },
+          {
+            "coefficient": 0.005377940304879147,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_xy^2",
+            "xy_power": 2,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.016217271366447884,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_yz^1 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 1
+          },
+          {
+            "coefficient": -0.003190247219565018,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_yz^2",
+            "xy_power": 0,
+            "yz_power": 2
+          }
+        ],
+        "velocity_degree": 4,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "second::D_lambda[lambda2_E0]::weight_Fisher_cross",
+        "maximum_forbidden_support_coefficient": 1.9425430095856497e-16,
+        "maximum_forbidden_support_relative": 1.9425430095856497e-16,
+        "nonzero_terms": [
+          {
+            "coefficient": -8.868361468324894e-07,
+            "high_degree": 2,
+            "low_degree": 0,
+            "term": "H^2",
+            "xy_power": 0,
+            "yz_power": 0
+          }
+        ],
+        "velocity_degree": 2,
+        "weight_scale_degree": 3
+      },
+      {
+        "key": "second::D_lambda[lambda2_E0]::weight_Fisher_direction",
+        "maximum_forbidden_support_coefficient": 4.795551146263106e-17,
+        "maximum_forbidden_support_relative": 4.795551146263106e-17,
+        "nonzero_terms": [
+          {
+            "coefficient": 2.9561204894651046e-07,
+            "high_degree": 2,
+            "low_degree": 0,
+            "term": "H^2",
+            "xy_power": 0,
+            "yz_power": 0
+          }
+        ],
+        "velocity_degree": 2,
+        "weight_scale_degree": 3
+      },
+      {
+        "key": "second::D_lambda[lambda2_V0]::pressure",
+        "maximum_forbidden_support_coefficient": 8.271161533457416e-15,
+        "maximum_forbidden_support_relative": 8.271161533457416e-15,
+        "nonzero_terms": [
+          {
+            "coefficient": -0.1928237467281173,
+            "high_degree": 4,
+            "low_degree": 0,
+            "term": "H^4",
+            "xy_power": 0,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.0038319521021138447,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_xy^2",
+            "xy_power": 2,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.028477613480692998,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_yz^1 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 1
+          },
+          {
+            "coefficient": 0.004250048548930129,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_yz^2",
+            "xy_power": 0,
+            "yz_power": 2
+          }
+        ],
+        "velocity_degree": 4,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "second::D_lambda[lambda2_V0]::velocity_Fisher",
+        "maximum_forbidden_support_coefficient": 3.2828215656081854e-14,
+        "maximum_forbidden_support_relative": 3.2828215656081854e-14,
+        "nonzero_terms": [
+          {
+            "coefficient": -0.036122460713361976,
+            "high_degree": 2,
+            "low_degree": 1,
+            "term": "H^2 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.015835510324480283,
+            "high_degree": 2,
+            "low_degree": 1,
+            "term": "H^2 L_yz^1",
+            "xy_power": 0,
+            "yz_power": 1
+          }
+        ],
+        "velocity_degree": 3,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "second::D_lambda[lambda2_V0]::weight_Fisher_cross",
+        "maximum_forbidden_support_coefficient": 1.4718488388827656e-16,
+        "maximum_forbidden_support_relative": 1.4718488388827656e-16,
+        "nonzero_terms": [],
+        "velocity_degree": 1,
+        "weight_scale_degree": 3
+      },
+      {
+        "key": "second::D_lambda[lambda2_V0]::weight_Fisher_direction",
+        "maximum_forbidden_support_coefficient": 1.4991662809976505e-17,
+        "maximum_forbidden_support_relative": 1.4991662809976505e-17,
+        "nonzero_terms": [],
+        "velocity_degree": 1,
+        "weight_scale_degree": 3
+      },
+      {
+        "key": "second::D_u[u2_EE]::pressure_direction",
+        "maximum_forbidden_support_coefficient": 4.306381828061295e-16,
+        "maximum_forbidden_support_relative": 4.306381828061295e-16,
+        "nonzero_terms": [
+          {
+            "coefficient": -0.00026153849810397404,
+            "high_degree": 4,
+            "low_degree": 1,
+            "term": "H^4 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.01298741280029143,
+            "high_degree": 4,
+            "low_degree": 1,
+            "term": "H^4 L_yz^1",
+            "xy_power": 0,
+            "yz_power": 1
+          },
+          {
+            "coefficient": -5.871427660628396e-05,
+            "high_degree": 2,
+            "low_degree": 3,
+            "term": "H^2 L_xy^3",
+            "xy_power": 3,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.00033853596888298865,
+            "high_degree": 2,
+            "low_degree": 3,
+            "term": "H^2 L_yz^1 L_xy^2",
+            "xy_power": 2,
+            "yz_power": 1
+          },
+          {
+            "coefficient": -0.0012742690837866388,
+            "high_degree": 2,
+            "low_degree": 3,
+            "term": "H^2 L_yz^2 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 2
+          },
+          {
+            "coefficient": -0.00016501161123909586,
+            "high_degree": 2,
+            "low_degree": 3,
+            "term": "H^2 L_yz^3",
+            "xy_power": 0,
+            "yz_power": 3
+          }
+        ],
+        "velocity_degree": 5,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "second::D_u[u2_EE]::pressure_variation",
+        "maximum_forbidden_support_coefficient": 4.4547698863084406e-14,
+        "maximum_forbidden_support_relative": 3.780622655429086e-14,
+        "nonzero_terms": [
+          {
+            "coefficient": 0.028169065791962017,
+            "high_degree": 4,
+            "low_degree": 1,
+            "term": "H^4 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.21821920068018716,
+            "high_degree": 4,
+            "low_degree": 1,
+            "term": "H^4 L_yz^1",
+            "xy_power": 0,
+            "yz_power": 1
+          },
+          {
+            "coefficient": -0.008029775692377533,
+            "high_degree": 2,
+            "low_degree": 3,
+            "term": "H^2 L_xy^3",
+            "xy_power": 3,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -1.1783164553360699,
+            "high_degree": 2,
+            "low_degree": 3,
+            "term": "H^2 L_yz^1 L_xy^2",
+            "xy_power": 2,
+            "yz_power": 1
+          },
+          {
+            "coefficient": -1.075370834211192,
+            "high_degree": 2,
+            "low_degree": 3,
+            "term": "H^2 L_yz^2 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 2
+          },
+          {
+            "coefficient": -1.1393458505450995,
+            "high_degree": 2,
+            "low_degree": 3,
+            "term": "H^2 L_yz^3",
+            "xy_power": 0,
+            "yz_power": 3
+          }
+        ],
+        "velocity_degree": 5,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "second::D_u[u2_EE]::weighted_Fisher",
+        "maximum_forbidden_support_coefficient": 4.7768821232105445e-14,
+        "maximum_forbidden_support_relative": 1.3956021870258372e-14,
+        "nonzero_terms": [
+          {
+            "coefficient": 0.009478070903367138,
+            "high_degree": 4,
+            "low_degree": 0,
+            "term": "H^4",
+            "xy_power": 0,
+            "yz_power": 0
+          },
+          {
+            "coefficient": 3.366855570448422,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_xy^2",
+            "xy_power": 2,
+            "yz_power": 0
+          },
+          {
+            "coefficient": 1.9829114464340876,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_yz^1 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 1
+          },
+          {
+            "coefficient": 3.422810717565971,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_yz^2",
+            "xy_power": 0,
+            "yz_power": 2
+          }
+        ],
+        "velocity_degree": 4,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "second::D_u[u2_EV]::pressure_direction",
+        "maximum_forbidden_support_coefficient": 4.884981308350689e-15,
+        "maximum_forbidden_support_relative": 2.3442242828218687e-15,
+        "nonzero_terms": [
+          {
+            "coefficient": -2.0838370049090926,
+            "high_degree": 4,
+            "low_degree": 0,
+            "term": "H^4",
+            "xy_power": 0,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.0010694126748207466,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_xy^2",
+            "xy_power": 2,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.017069889006517514,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_yz^1 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 1
+          },
+          {
+            "coefficient": -0.002329365081350655,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_yz^2",
+            "xy_power": 0,
+            "yz_power": 2
+          }
+        ],
+        "velocity_degree": 4,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "second::D_u[u2_EV]::pressure_variation",
+        "maximum_forbidden_support_coefficient": 1.2434497875801753e-13,
+        "maximum_forbidden_support_relative": 2.9431668349643376e-14,
+        "nonzero_terms": [
+          {
+            "coefficient": 0.00425888419825811,
+            "high_degree": 4,
+            "low_degree": 0,
+            "term": "H^4",
+            "xy_power": 0,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -2.719601653875614,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_xy^2",
+            "xy_power": 2,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -1.4605327655201705,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_yz^1 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 1
+          },
+          {
+            "coefficient": 4.224870207180227,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_yz^2",
+            "xy_power": 0,
+            "yz_power": 2
+          }
+        ],
+        "velocity_degree": 4,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "second::D_u[u2_EV]::weighted_Fisher",
+        "maximum_forbidden_support_coefficient": 2.4158453015843406e-13,
+        "maximum_forbidden_support_relative": 4.681464398779624e-14,
+        "nonzero_terms": [
+          {
+            "coefficient": 5.160447876553562,
+            "high_degree": 2,
+            "low_degree": 1,
+            "term": "H^2 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 0
+          },
+          {
+            "coefficient": 4.130383116418665,
+            "high_degree": 2,
+            "low_degree": 1,
+            "term": "H^2 L_yz^1",
+            "xy_power": 0,
+            "yz_power": 1
+          }
+        ],
+        "velocity_degree": 3,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "second::D_u[u2_VE]::pressure_direction",
+        "maximum_forbidden_support_coefficient": 1.3813281140304066e-15,
+        "maximum_forbidden_support_relative": 1.3813281140304066e-15,
+        "nonzero_terms": [
+          {
+            "coefficient": -0.014554524417106057,
+            "high_degree": 4,
+            "low_degree": 0,
+            "term": "H^4",
+            "xy_power": 0,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -7.632144659859563e-05,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_xy^2",
+            "xy_power": 2,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.01645829059328638,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_yz^1 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 1
+          },
+          {
+            "coefficient": -0.002112404803927779,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_yz^2",
+            "xy_power": 0,
+            "yz_power": 2
+          }
+        ],
+        "velocity_degree": 4,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "second::D_u[u2_VE]::pressure_variation",
+        "maximum_forbidden_support_coefficient": 1.5631940186722204e-13,
+        "maximum_forbidden_support_relative": 4.847607448454391e-14,
+        "nonzero_terms": [
+          {
+            "coefficient": -0.00043684503007623517,
+            "high_degree": 4,
+            "low_degree": 0,
+            "term": "H^4",
+            "xy_power": 0,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.7471629324536178,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_xy^2",
+            "xy_power": 2,
+            "yz_power": 0
+          },
+          {
+            "coefficient": 2.5716296619873376,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_yz^1 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 1
+          },
+          {
+            "coefficient": 3.224671212126775,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_yz^2",
+            "xy_power": 0,
+            "yz_power": 2
+          }
+        ],
+        "velocity_degree": 4,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "second::D_u[u2_VE]::weighted_Fisher",
+        "maximum_forbidden_support_coefficient": 1.3624656958199921e-12,
+        "maximum_forbidden_support_relative": 7.03426545208357e-13,
+        "nonzero_terms": [
+          {
+            "coefficient": 1.6271182765620988,
+            "high_degree": 2,
+            "low_degree": 1,
+            "term": "H^2 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -1.9368983230742676,
+            "high_degree": 2,
+            "low_degree": 1,
+            "term": "H^2 L_yz^1",
+            "xy_power": 0,
+            "yz_power": 1
+          }
+        ],
+        "velocity_degree": 3,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "second::D_u[u2_VV]::pressure_direction",
+        "maximum_forbidden_support_coefficient": 8.991159751994088e-15,
+        "maximum_forbidden_support_relative": 8.991159751994088e-15,
+        "nonzero_terms": [
+          {
+            "coefficient": 0.0378744255070175,
+            "high_degree": 2,
+            "low_degree": 1,
+            "term": "H^2 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.04279909909796741,
+            "high_degree": 2,
+            "low_degree": 1,
+            "term": "H^2 L_yz^1",
+            "xy_power": 0,
+            "yz_power": 1
+          }
+        ],
+        "velocity_degree": 3,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "second::D_u[u2_VV]::pressure_variation",
+        "maximum_forbidden_support_coefficient": 7.809903734490012e-12,
+        "maximum_forbidden_support_relative": 1.7494092478235903e-14,
+        "nonzero_terms": [
+          {
+            "coefficient": 1.596952584467001,
+            "high_degree": 2,
+            "low_degree": 1,
+            "term": "H^2 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 0
+          },
+          {
+            "coefficient": 446.43091627680474,
+            "high_degree": 2,
+            "low_degree": 1,
+            "term": "H^2 L_yz^1",
+            "xy_power": 0,
+            "yz_power": 1
+          }
+        ],
+        "velocity_degree": 3,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "second::D_u[u2_VV]::weighted_Fisher",
+        "maximum_forbidden_support_coefficient": 3.2838019235893708e-12,
+        "maximum_forbidden_support_relative": 4.2836907968966565e-15,
+        "nonzero_terms": [
+          {
+            "coefficient": -766.5823887121683,
+            "high_degree": 2,
+            "low_degree": 0,
+            "term": "H^2",
+            "xy_power": 0,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -4.000000000001137,
+            "high_degree": 0,
+            "low_degree": 2,
+            "term": "L_xy^2",
+            "xy_power": 2,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.999999999996362,
+            "high_degree": 0,
+            "low_degree": 2,
+            "term": "L_yz^1 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 1
+          },
+          {
+            "coefficient": -3.9999999999946407,
+            "high_degree": 0,
+            "low_degree": 2,
+            "term": "L_yz^2",
+            "xy_power": 0,
+            "yz_power": 2
+          }
+        ],
+        "velocity_degree": 2,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "second::H_lambda_lambda[A,A]::first_weight_direction",
+        "maximum_forbidden_support_coefficient": 7.724397949192459e-17,
+        "maximum_forbidden_support_relative": 7.724397949192459e-17,
+        "nonzero_terms": [
+          {
+            "coefficient": 3.861210838255481e-07,
+            "high_degree": 2,
+            "low_degree": 0,
+            "term": "H^2",
+            "xy_power": 0,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.008300781249999944,
+            "high_degree": 0,
+            "low_degree": 2,
+            "term": "L_xy^2",
+            "xy_power": 2,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.008728027343750028,
+            "high_degree": 0,
+            "low_degree": 2,
+            "term": "L_yz^1 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 1
+          },
+          {
+            "coefficient": -0.00830078124999984,
+            "high_degree": 0,
+            "low_degree": 2,
+            "term": "L_yz^2",
+            "xy_power": 0,
+            "yz_power": 2
+          }
+        ],
+        "velocity_degree": 2,
+        "weight_scale_degree": 3
+      },
+      {
+        "key": "second::H_lambda_lambda[A,A]::mixed_weight_gradient",
+        "maximum_forbidden_support_coefficient": 1.3994678875838991e-15,
+        "maximum_forbidden_support_relative": 1.3994678875838991e-15,
+        "nonzero_terms": [
+          {
+            "coefficient": -4.538558812278039e-05,
+            "high_degree": 2,
+            "low_degree": 0,
+            "term": "H^2",
+            "xy_power": 0,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.08211263020833326,
+            "high_degree": 0,
+            "low_degree": 2,
+            "term": "L_xy^2",
+            "xy_power": 2,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.059895833333333814,
+            "high_degree": 0,
+            "low_degree": 2,
+            "term": "L_yz^1 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 1
+          },
+          {
+            "coefficient": -0.08211263020833048,
+            "high_degree": 0,
+            "low_degree": 2,
+            "term": "L_yz^2",
+            "xy_power": 0,
+            "yz_power": 2
+          }
+        ],
+        "velocity_degree": 2,
+        "weight_scale_degree": 3
+      },
+      {
+        "key": "second::H_lambda_lambda[A,A]::second_weight_direction",
+        "maximum_forbidden_support_coefficient": 7.724397949192459e-17,
+        "maximum_forbidden_support_relative": 7.724397949192459e-17,
+        "nonzero_terms": [
+          {
+            "coefficient": 3.861210838255481e-07,
+            "high_degree": 2,
+            "low_degree": 0,
+            "term": "H^2",
+            "xy_power": 0,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.008300781249999944,
+            "high_degree": 0,
+            "low_degree": 2,
+            "term": "L_xy^2",
+            "xy_power": 2,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.008728027343750028,
+            "high_degree": 0,
+            "low_degree": 2,
+            "term": "L_yz^1 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 1
+          },
+          {
+            "coefficient": -0.00830078124999984,
+            "high_degree": 0,
+            "low_degree": 2,
+            "term": "L_yz^2",
+            "xy_power": 0,
+            "yz_power": 2
+          }
+        ],
+        "velocity_degree": 2,
+        "weight_scale_degree": 3
+      },
+      {
+        "key": "second::H_lambda_lambda[D,D]::first_weight_direction",
+        "maximum_forbidden_support_coefficient": 5.654114329511906e-17,
+        "maximum_forbidden_support_relative": 5.654114329511906e-17,
+        "nonzero_terms": [
+          {
+            "coefficient": -0.0556640625,
+            "high_degree": 0,
+            "low_degree": 0,
+            "term": "constant",
+            "xy_power": 0,
+            "yz_power": 0
+          }
+        ],
+        "velocity_degree": 0,
+        "weight_scale_degree": 3
+      },
+      {
+        "key": "second::H_lambda_lambda[D,D]::mixed_weight_gradient",
+        "maximum_forbidden_support_coefficient": 5.551115123125783e-17,
+        "maximum_forbidden_support_relative": 5.551115123125783e-17,
+        "nonzero_terms": [
+          {
+            "coefficient": -0.12158203125,
+            "high_degree": 0,
+            "low_degree": 0,
+            "term": "constant",
+            "xy_power": 0,
+            "yz_power": 0
+          }
+        ],
+        "velocity_degree": 0,
+        "weight_scale_degree": 3
+      },
+      {
+        "key": "second::H_lambda_lambda[D,D]::second_weight_direction",
+        "maximum_forbidden_support_coefficient": 5.654114329511906e-17,
+        "maximum_forbidden_support_relative": 5.654114329511906e-17,
+        "nonzero_terms": [
+          {
+            "coefficient": -0.0556640625,
+            "high_degree": 0,
+            "low_degree": 0,
+            "term": "constant",
+            "xy_power": 0,
+            "yz_power": 0
+          }
+        ],
+        "velocity_degree": 0,
+        "weight_scale_degree": 3
+      },
+      {
+        "key": "second::H_uu[E,E]::pressure_first_variation_first",
+        "maximum_forbidden_support_coefficient": 1.2714894028098064e-15,
+        "maximum_forbidden_support_relative": 1.2714894028098064e-15,
+        "nonzero_terms": [
+          {
+            "coefficient": -0.0021711210236105283,
+            "high_degree": 4,
+            "low_degree": 1,
+            "term": "H^4 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.01495843839638187,
+            "high_degree": 4,
+            "low_degree": 1,
+            "term": "H^4 L_yz^1",
+            "xy_power": 0,
+            "yz_power": 1
+          },
+          {
+            "coefficient": 7.387379482690429e-05,
+            "high_degree": 2,
+            "low_degree": 3,
+            "term": "H^2 L_xy^3",
+            "xy_power": 3,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.00041940552118616137,
+            "high_degree": 2,
+            "low_degree": 3,
+            "term": "H^2 L_yz^1 L_xy^2",
+            "xy_power": 2,
+            "yz_power": 1
+          },
+          {
+            "coefficient": 0.0004597210571819915,
+            "high_degree": 2,
+            "low_degree": 3,
+            "term": "H^2 L_yz^2 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 2
+          },
+          {
+            "coefficient": -0.0001244657313242119,
+            "high_degree": 2,
+            "low_degree": 3,
+            "term": "H^2 L_yz^3",
+            "xy_power": 0,
+            "yz_power": 3
+          }
+        ],
+        "velocity_degree": 5,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "second::H_uu[E,E]::pressure_first_variation_second",
+        "maximum_forbidden_support_coefficient": 1.2714894028098064e-15,
+        "maximum_forbidden_support_relative": 1.2714894028098064e-15,
+        "nonzero_terms": [
+          {
+            "coefficient": -0.0021711210236105283,
+            "high_degree": 4,
+            "low_degree": 1,
+            "term": "H^4 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.01495843839638187,
+            "high_degree": 4,
+            "low_degree": 1,
+            "term": "H^4 L_yz^1",
+            "xy_power": 0,
+            "yz_power": 1
+          },
+          {
+            "coefficient": 7.387379482690429e-05,
+            "high_degree": 2,
+            "low_degree": 3,
+            "term": "H^2 L_xy^3",
+            "xy_power": 3,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.00041940552118616137,
+            "high_degree": 2,
+            "low_degree": 3,
+            "term": "H^2 L_yz^1 L_xy^2",
+            "xy_power": 2,
+            "yz_power": 1
+          },
+          {
+            "coefficient": 0.0004597210571819915,
+            "high_degree": 2,
+            "low_degree": 3,
+            "term": "H^2 L_yz^2 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 2
+          },
+          {
+            "coefficient": -0.0001244657313242119,
+            "high_degree": 2,
+            "low_degree": 3,
+            "term": "H^2 L_yz^3",
+            "xy_power": 0,
+            "yz_power": 3
+          }
+        ],
+        "velocity_degree": 5,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "second::H_uu[E,E]::pressure_second_variation",
+        "maximum_forbidden_support_coefficient": 1.2578075314790017e-13,
+        "maximum_forbidden_support_relative": 1.0890004585258623e-13,
+        "nonzero_terms": [
+          {
+            "coefficient": 0.004034291615019753,
+            "high_degree": 4,
+            "low_degree": 1,
+            "term": "H^4 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 0
+          },
+          {
+            "coefficient": 0.06144150567453594,
+            "high_degree": 4,
+            "low_degree": 1,
+            "term": "H^4 L_yz^1",
+            "xy_power": 0,
+            "yz_power": 1
+          },
+          {
+            "coefficient": 0.008023115810318025,
+            "high_degree": 2,
+            "low_degree": 3,
+            "term": "H^2 L_xy^3",
+            "xy_power": 3,
+            "yz_power": 0
+          },
+          {
+            "coefficient": 1.155011021006958,
+            "high_degree": 2,
+            "low_degree": 3,
+            "term": "H^2 L_yz^1 L_xy^2",
+            "xy_power": 2,
+            "yz_power": 1
+          },
+          {
+            "coefficient": 1.112621815454375,
+            "high_degree": 2,
+            "low_degree": 3,
+            "term": "H^2 L_yz^2 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 2
+          },
+          {
+            "coefficient": 1.1302930284703812,
+            "high_degree": 2,
+            "low_degree": 3,
+            "term": "H^2 L_yz^3",
+            "xy_power": 0,
+            "yz_power": 3
+          }
+        ],
+        "velocity_degree": 5,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "second::H_uu[E,E]::weighted_Fisher",
+        "maximum_forbidden_support_coefficient": 4.263256414560601e-14,
+        "maximum_forbidden_support_relative": 1.1921693325712313e-14,
+        "nonzero_terms": [
+          {
+            "coefficient": -0.06797837767252422,
+            "high_degree": 4,
+            "low_degree": 0,
+            "term": "H^4",
+            "xy_power": 0,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -3.576049390035685,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_xy^2",
+            "xy_power": 2,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -2.1450601129131215,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_yz^1 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 1
+          },
+          {
+            "coefficient": -3.5562849526901483,
+            "high_degree": 2,
+            "low_degree": 2,
+            "term": "H^2 L_yz^2",
+            "xy_power": 0,
+            "yz_power": 2
+          }
+        ],
+        "velocity_degree": 4,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "second::H_uu[V,V]::pressure_first_variation_first",
+        "maximum_forbidden_support_coefficient": 3.527067675402145e-14,
+        "maximum_forbidden_support_relative": 5.9060233643255435e-15,
+        "nonzero_terms": [
+          {
+            "coefficient": 0.07785440844657548,
+            "high_degree": 2,
+            "low_degree": 1,
+            "term": "H^2 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 0
+          },
+          {
+            "coefficient": 5.971983952361031,
+            "high_degree": 2,
+            "low_degree": 1,
+            "term": "H^2 L_yz^1",
+            "xy_power": 0,
+            "yz_power": 1
+          }
+        ],
+        "velocity_degree": 3,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "second::H_uu[V,V]::pressure_first_variation_second",
+        "maximum_forbidden_support_coefficient": 3.527067675402145e-14,
+        "maximum_forbidden_support_relative": 5.9060233643255435e-15,
+        "nonzero_terms": [
+          {
+            "coefficient": 0.07785440844657548,
+            "high_degree": 2,
+            "low_degree": 1,
+            "term": "H^2 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 0
+          },
+          {
+            "coefficient": 5.971983952361031,
+            "high_degree": 2,
+            "low_degree": 1,
+            "term": "H^2 L_yz^1",
+            "xy_power": 0,
+            "yz_power": 1
+          }
+        ],
+        "velocity_degree": 3,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "second::H_uu[V,V]::pressure_second_variation",
+        "maximum_forbidden_support_coefficient": 1.8758328224066645e-12,
+        "maximum_forbidden_support_relative": 4.175127821892336e-15,
+        "nonzero_terms": [
+          {
+            "coefficient": 4.30773403692822,
+            "high_degree": 2,
+            "low_degree": 1,
+            "term": "H^2 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 0
+          },
+          {
+            "coefficient": 449.28751943131203,
+            "high_degree": 2,
+            "low_degree": 1,
+            "term": "H^2 L_yz^1",
+            "xy_power": 0,
+            "yz_power": 1
+          }
+        ],
+        "velocity_degree": 3,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "second::H_uu[V,V]::weighted_Fisher",
+        "maximum_forbidden_support_coefficient": 1.4464805249513729e-12,
+        "maximum_forbidden_support_relative": 1.7394569828424455e-15,
+        "nonzero_terms": [
+          {
+            "coefficient": -831.57016196381,
+            "high_degree": 2,
+            "low_degree": 0,
+            "term": "H^2",
+            "xy_power": 0,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -3.9999999999995453,
+            "high_degree": 0,
+            "low_degree": 2,
+            "term": "L_xy^2",
+            "xy_power": 2,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.9999999999993179,
+            "high_degree": 0,
+            "low_degree": 2,
+            "term": "L_yz^1 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 1
+          },
+          {
+            "coefficient": -4.000000000000807,
+            "high_degree": 0,
+            "low_degree": 2,
+            "term": "L_yz^2",
+            "xy_power": 0,
+            "yz_power": 2
+          }
+        ],
+        "velocity_degree": 2,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "second::aggregate::double_velocity_heat_pressure",
+        "maximum_forbidden_support_coefficient": 1.1604237904334785e-11,
+        "maximum_forbidden_support_relative": 1.2785353959549802e-14,
+        "nonzero_terms": [
+          {
+            "coefficient": 6.098269863795384,
+            "high_degree": 2,
+            "low_degree": 1,
+            "term": "H^2 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 0
+          },
+          {
+            "coefficient": 907.619604513741,
+            "high_degree": 2,
+            "low_degree": 1,
+            "term": "H^2 L_yz^1",
+            "xy_power": 0,
+            "yz_power": 1
+          }
+        ],
+        "velocity_degree": 3,
+        "weight_scale_degree": 1
+      },
+      {
+        "key": "second::aggregate::inviscid_pressure",
+        "maximum_forbidden_support_coefficient": 1.6542323066914832e-13,
+        "maximum_forbidden_support_relative": 1.6542323066914832e-13,
+        "nonzero_terms": [
+          {
+            "coefficient": 0.023372699838786523,
+            "high_degree": 4,
+            "low_degree": 1,
+            "term": "H^4 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.21535533158146028,
+            "high_degree": 4,
+            "low_degree": 1,
+            "term": "H^4 L_yz^1",
+            "xy_power": 0,
+            "yz_power": 1
+          },
+          {
+            "coefficient": 0.0013430152253045557,
+            "high_degree": 2,
+            "low_degree": 3,
+            "term": "H^2 L_xy^3",
+            "xy_power": 3,
+            "yz_power": 0
+          },
+          {
+            "coefficient": 0.0001689513650827701,
+            "high_degree": 2,
+            "low_degree": 3,
+            "term": "H^2 L_yz^1 L_xy^2",
+            "xy_power": 2,
+            "yz_power": 1
+          },
+          {
+            "coefficient": 0.026994942165210256,
+            "high_degree": 2,
+            "low_degree": 3,
+            "term": "H^2 L_yz^2 L_xy^1",
+            "xy_power": 1,
+            "yz_power": 2
+          },
+          {
+            "coefficient": 0.023320469024194913,
+            "high_degree": 2,
+            "low_degree": 3,
+            "term": "H^2 L_yz^3",
+            "xy_power": 0,
+            "yz_power": 3
+          }
+        ],
+        "velocity_degree": 5,
+        "weight_scale_degree": 1
+      }
+    ],
+    "degree": 5,
+    "evaluation_count": 23,
+    "finite_c1_equal_amplitude_coefficient": -0.19198263174267377,
+    "finite_c3_equal_amplitude_coefficient": 0.051827377779792495,
+    "first_inviscid_low_only_stationarity_residual": 4.3021142204224816e-15,
+    "interpolation_points": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        5,
+        0
+      ]
+    ],
+    "maximum_forbidden_support_coefficient": 1.1604237904334785e-11,
+    "maximum_forbidden_support_relative": 1.1453338277789271e-11,
+    "maximum_node_reconstruction_residual": 2.3919710656628013e-10,
+    "maximum_validation_relative_residual": 5.491651512874729e-12,
+    "maximum_validation_residual": 8.412825991399586e-12,
+    "monomials": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        5,
+        0
+      ]
+    ],
+    "quartic_first_inviscid_pressure_enumeration": [
+      {
+        "branch": "HHHH",
+        "high_degree": 4,
+        "low_degree": 0,
+        "maximum_absolute_coefficient": 0.008604599054229193,
+        "mixed_polarization_terms": [
+          {
+            "coefficient": 0.008604599054229193,
+            "xy_power": 0,
+            "yz_power": 0
+          }
+        ],
+        "sum_on_equal_amplitude_ray": 0.008604599054229193
+      },
+      {
+        "branch": "HHHL",
+        "high_degree": 3,
+        "low_degree": 1,
+        "maximum_absolute_coefficient": 1.0547118733938987e-15,
+        "mixed_polarization_terms": [
+          {
+            "coefficient": 1.0547118733938987e-15,
+            "xy_power": 1,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -3.5114137460421366e-16,
+            "xy_power": 0,
+            "yz_power": 1
+          }
+        ],
+        "sum_on_equal_amplitude_ray": 7.03570498789685e-16
+      },
+      {
+        "branch": "HHLL",
+        "high_degree": 2,
+        "low_degree": 2,
+        "maximum_absolute_coefficient": 0.02546431501968843,
+        "mixed_polarization_terms": [
+          {
+            "coefficient": 0.011133040887229828,
+            "xy_power": 2,
+            "yz_power": 0
+          },
+          {
+            "coefficient": 0.0027527481207719195,
+            "xy_power": 1,
+            "yz_power": 1
+          },
+          {
+            "coefficient": -0.02546431501968843,
+            "xy_power": 0,
+            "yz_power": 2
+          }
+        ],
+        "sum_on_equal_amplitude_ray": -0.011578526011686682
+      },
+      {
+        "branch": "HLLL",
+        "high_degree": 1,
+        "low_degree": 3,
+        "maximum_absolute_coefficient": 8.43769498715119e-15,
+        "mixed_polarization_terms": [
+          {
+            "coefficient": 1.429412144204889e-15,
+            "xy_power": 3,
+            "yz_power": 0
+          },
+          {
+            "coefficient": 4.996003610813204e-16,
+            "xy_power": 2,
+            "yz_power": 1
+          },
+          {
+            "coefficient": 8.43769498715119e-15,
+            "xy_power": 1,
+            "yz_power": 2
+          },
+          {
+            "coefficient": -4.880911096856549e-16,
+            "xy_power": 0,
+            "yz_power": 3
+          }
+        ],
+        "sum_on_equal_amplitude_ray": 9.878616382751743e-15
+      },
+      {
+        "branch": "LLLL",
+        "high_degree": 0,
+        "low_degree": 4,
+        "maximum_absolute_coefficient": 4.3021142204224816e-15,
+        "mixed_polarization_terms": [
+          {
+            "coefficient": -3.8163916471489756e-16,
+            "xy_power": 4,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -2.498001805406602e-16,
+            "xy_power": 3,
+            "yz_power": 1
+          },
+          {
+            "coefficient": 5.551115123125783e-17,
+            "xy_power": 2,
+            "yz_power": 2
+          },
+          {
+            "coefficient": -4.3021142204224816e-15,
+            "xy_power": 1,
+            "yz_power": 3
+          },
+          {
+            "coefficient": 1.8675800130245794e-16,
+            "xy_power": 0,
+            "yz_power": 4
+          }
+        ],
+        "sum_on_equal_amplitude_ray": -4.691284413144324e-15
+      }
+    ],
+    "quintic_second_inviscid_pressure_enumeration": [
+      {
+        "branch": "HHHHH",
+        "high_degree": 5,
+        "low_degree": 0,
+        "maximum_absolute_coefficient": 4.1030168944989634e-18,
+        "mixed_polarization_terms": [
+          {
+            "coefficient": -4.1030168944989634e-18,
+            "xy_power": 0,
+            "yz_power": 0
+          }
+        ],
+        "sum_on_equal_amplitude_ray": -4.1030168944989634e-18
+      },
+      {
+        "branch": "HHHHL",
+        "high_degree": 4,
+        "low_degree": 1,
+        "maximum_absolute_coefficient": 0.21535533158146028,
+        "mixed_polarization_terms": [
+          {
+            "coefficient": 0.023372699838786523,
+            "xy_power": 1,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.21535533158146028,
+            "xy_power": 0,
+            "yz_power": 1
+          }
+        ],
+        "sum_on_equal_amplitude_ray": -0.19198263174267377
+      },
+      {
+        "branch": "HHHLL",
+        "high_degree": 3,
+        "low_degree": 2,
+        "maximum_absolute_coefficient": 1.6542323066914832e-13,
+        "mixed_polarization_terms": [
+          {
+            "coefficient": 1.6542323066914832e-13,
+            "xy_power": 2,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -1.361133428190442e-13,
+            "xy_power": 1,
+            "yz_power": 1
+          },
+          {
+            "coefficient": -1.4469607515814065e-13,
+            "xy_power": 0,
+            "yz_power": 2
+          }
+        ],
+        "sum_on_equal_amplitude_ray": -1.1538618730803651e-13
+      },
+      {
+        "branch": "HHLLL",
+        "high_degree": 2,
+        "low_degree": 3,
+        "maximum_absolute_coefficient": 0.026994942165210256,
+        "mixed_polarization_terms": [
+          {
+            "coefficient": 0.0013430152253045557,
+            "xy_power": 3,
+            "yz_power": 0
+          },
+          {
+            "coefficient": 0.0001689513650827701,
+            "xy_power": 2,
+            "yz_power": 1
+          },
+          {
+            "coefficient": 0.026994942165210256,
+            "xy_power": 1,
+            "yz_power": 2
+          },
+          {
+            "coefficient": 0.023320469024194913,
+            "xy_power": 0,
+            "yz_power": 3
+          }
+        ],
+        "sum_on_equal_amplitude_ray": 0.051827377779792495
+      },
+      {
+        "branch": "HLLLL",
+        "high_degree": 1,
+        "low_degree": 4,
+        "maximum_absolute_coefficient": 7.244205235679146e-14,
+        "mixed_polarization_terms": [
+          {
+            "coefficient": 2.588901315547787e-14,
+            "xy_power": 4,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -5.012656956182582e-14,
+            "xy_power": 3,
+            "yz_power": 1
+          },
+          {
+            "coefficient": 1.0547118733938987e-15,
+            "xy_power": 2,
+            "yz_power": 2
+          },
+          {
+            "coefficient": -7.244205235679146e-14,
+            "xy_power": 1,
+            "yz_power": 3
+          },
+          {
+            "coefficient": -2.1973912125207415e-14,
+            "xy_power": 0,
+            "yz_power": 4
+          }
+        ],
+        "sum_on_equal_amplitude_ray": -1.1759880901495292e-13
+      },
+      {
+        "branch": "LLLLL",
+        "high_degree": 0,
+        "low_degree": 5,
+        "maximum_absolute_coefficient": 1.0533240946131173e-14,
+        "mixed_polarization_terms": [
+          {
+            "coefficient": -2.291136030896368e-15,
+            "xy_power": 5,
+            "yz_power": 0
+          },
+          {
+            "coefficient": 7.310124727766265e-15,
+            "xy_power": 4,
+            "yz_power": 1
+          },
+          {
+            "coefficient": 1.0512424264419451e-15,
+            "xy_power": 3,
+            "yz_power": 2
+          },
+          {
+            "coefficient": 3.122502256758253e-17,
+            "xy_power": 2,
+            "yz_power": 3
+          },
+          {
+            "coefficient": 1.0533240946131173e-14,
+            "xy_power": 1,
+            "yz_power": 4
+          },
+          {
+            "coefficient": 1.883003211461155e-15,
+            "xy_power": 0,
+            "yz_power": 5
+          }
+        ],
+        "sum_on_equal_amplitude_ray": 1.8517700303471752e-14
+      }
+    ],
+    "runtime_seconds_sum": 30.771381299913628,
+    "second_inviscid_low_only_stationarity_residual": 1.0533240946131173e-14,
+    "size": 5,
+    "validation_rows": [
+      {
+        "maximum_absolute_residual": 5.491651512874729e-12,
+        "maximum_relative_residual": 5.491651512874729e-12,
+        "xy_amplitude": -0.42,
+        "yz_amplitude": 0.37
+      },
+      {
+        "maximum_absolute_residual": 8.412825991399586e-12,
+        "maximum_relative_residual": 1.3939006199281678e-12,
+        "xy_amplitude": 0.2,
+        "yz_amplitude": -0.6
+      }
+    ]
+  },
+  "weight_scale_homogeneity_replay": {
+    "all_weight_homogeneity_checks_pass": true,
+    "maximum_absolute_residual": 0.0,
+    "maximum_relative_residual": 0.0,
+    "maximum_residual_key": "first::D_u[E]::pressure_variation",
+    "size": 3
+  }
+}

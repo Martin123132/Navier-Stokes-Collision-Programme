@@ -1,0 +1,73 @@
+{
+  "all_recurrence_roundoff_checks_pass": true,
+  "below_normal_priority_set": true,
+  "boundary_output_roundoff_enclosed": false,
+  "checks": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "computed_one_step_state_sha256": "9aec28127a019c2043e3bc2325cece0b0ff7260326856b28253b5be3bc4d2c63",
+  "computed_state_cache": {
+    "path": "work\\ns_collision\\results\\neutral_strip_h006_chebyshev_recurrence_roundoff_v1.npz",
+    "sha256": "7773d53b1e68abbd7cdb7317a7032c5bacf3f0b25ea1c4387386803849c41818"
+  },
+  "elapsed_seconds": 61.048781499965116,
+  "kind": "neutral_strip_chebyshev_recurrence_roundoff_certificate",
+  "maximum_error_components": {
+    "chebyshev_state_recurrence_error_upper": 1.0646035113054651e-10,
+    "exact_polynomial_tail_action_error_upper": 4.59092528933045e-15,
+    "exact_to_computational_generator_action_error_upper": 4.0376670139243885e-10,
+    "initial_sparse_action_roundoff_upper": 1.1063105870503902e-13,
+    "local_recurrence_roundoff_upper": 3.479368856406148e-13,
+    "polynomial_accumulation_roundoff_upper": 1.2739755858769879e-12,
+    "scipy_coefficient_action_error_upper": 4.576095791751172e-14,
+    "source_construction_error_upper": 4.3386422707344663e-14,
+    "total_one_step_state_action_error_upper": 5.112846674319628e-10
+  },
+  "model": "directed one-step sparse Chebyshev action error for all 112 stored modified-chain point sources",
+  "next_required_step": "Enclose the reduced 240-dimensional action and common-circle boundary multiplication, then propagate the one-step error through the 16 resumable steps.",
+  "one_step_full_state_chebyshev_action_roundoff_certified": true,
+  "operator": {
+    "central_scaled_absolute_row_sum_upper": 1.1826474808772673,
+    "computational_generator_floor_lower": 1.947688863792073,
+    "computational_generator_upper": 7987.792382838194,
+    "computational_scaled_spectrum_inside_unit_interval_certified": true,
+    "degree": 320,
+    "entry_count": 112,
+    "equivalent_generator_scaling_error_upper": 1.5972213395671647e-11,
+    "exact_to_computational_generator_error_upper": 3.3708675434376434e-11,
+    "maximum_computed_chebyshev_state_norm": 65.13169237924534,
+    "maximum_scaled_row_nonzeros": 10,
+    "maximum_source_state_norm": 65.13169237924535,
+    "scaled_operator_construction_error_upper": 3.9940019243749495e-15,
+    "state_count": 15211,
+    "window": 0.375
+  },
+  "post_terminal_time_tail_certified": false,
+  "premise_artifacts": {
+    "eigen_cache": "work\\ns_collision\\results\\neutral_strip_h006_q12_k241_reference_eigensystem_v1.npz",
+    "eigen_cache_sha256": "8994f7b90409db710a69bda72073dacf83722c790384d1f6bb4fcfc468e6c66e",
+    "scaling_coefficient_result": "work\\ns_collision\\results\\neutral_strip_h006_chebyshev_scaling_coefficients_v1.json",
+    "scaling_coefficient_result_sha256": "9aafa45313cd8289a37922bb30de355e4db3d94cefbddc0a49a4a7d5548af14d"
+  },
+  "reduced_semigroup_roundoff_enclosed": false,
+  "scope": "This certificate closes one-step full-state sparse action roundoff for the stored finite chain. It does not yet certify the reduced subtraction, boundary output, time-window suprema, continuum transfer, polygon-circle transfer, or regularity.",
+  "screen_updated": false,
+  "sixteen_step_error_propagation_enclosed": false,
+  "stability": {
+    "identity": "e_n=U_(n-1)(X)e_1+sum_(r=2)^n U_(n-r)(X)delta_r",
+    "raw_exponential_norm_recurrence_used": false,
+    "u_polynomial_bound": "||U_j(X)||<=j+1 for self-adjoint spectrum in [-1,1]"
+  },
+  "within_window_suprema_certified": false
+}

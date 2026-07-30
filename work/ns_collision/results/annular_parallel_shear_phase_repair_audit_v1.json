@@ -1,0 +1,702 @@
+{
+  "algorithm_revision": "annular-parallel-shear-phase-repair-v1",
+  "all_positive_checks_pass": true,
+  "certification_flags": {
+    "Navier_Stokes_global_regularity_proved": false,
+    "critical_L3_control_proved": false,
+    "finite_time_blowup_proved": false,
+    "full_polarization_family_classified": true,
+    "parallel_complete_finite_first_jet_ported": false,
+    "parallel_complete_finite_second_jet_ported": false,
+    "parallel_finite_static_optimizer_restored": true,
+    "parallel_four_high_limit_negative": true,
+    "parallel_full_c1_limit_negative": true,
+    "parallel_reset_N5_gate_restored": true,
+    "parallel_shear_pressure_and_energy_flux_divergence_zero_pointwise": true,
+    "parallel_shear_stationary_Euler_low_field": true,
+    "parallel_static_HHL_limit_negative": true,
+    "scalar_phase_family_classified": true,
+    "scalar_phase_repair_exists_in_strict_square_quadrant": false,
+    "uniform_second_jet_Taylor_remainder_proved": false
+  },
+  "coefficient_penalty_certificate": {
+    "all_penalty_checks_pass": true,
+    "common_exact_value": "75/256",
+    "delta_vertex_energies": {
+      "+++": "75/256",
+      "++-": "75/256",
+      "+-+": "75/256",
+      "+--": "75/256",
+      "-++": "75/256",
+      "-+-": "75/256",
+      "--+": "75/256",
+      "---": "75/256"
+    }
+  },
+  "curvature_matrix_replays": [
+    {
+      "all_curvature_replay_checks_pass": true,
+      "curvature_matrix": [
+        [
+          1.2069354242390278e-06,
+          -2.4071011361100833e-23,
+          -9.577476256323421e-23
+        ],
+        [
+          -2.4071011361100833e-23,
+          1.2847744461598917e-06,
+          -8.579144165752531e-23
+        ],
+        [
+          -9.577476256323421e-23,
+          -8.579144165752531e-23,
+          -2.49170987039892e-06
+        ]
+      ],
+      "maximum_off_diagonal": 9.577476256323421e-23,
+      "parallel_four_high_functional": -2.2252946170150975e-07,
+      "size": 8,
+      "strict_square_replay": -2.2252946170150975e-07,
+      "trace_residual": 8.470329472543003e-22,
+      "y_curvature_positive": true
+    },
+    {
+      "all_curvature_replay_checks_pass": true,
+      "curvature_matrix": [
+        [
+          1.3172728405032253e-06,
+          -1.4192226151875696e-23,
+          -6.054739772866384e-23
+        ],
+        [
+          -1.4192226151875696e-23,
+          1.406085313544012e-06,
+          -2.47857440331937e-24
+        ],
+        [
+          -6.054739772866384e-23,
+          -2.47857440331937e-24,
+          -2.7233581540472387e-06
+        ]
+      ],
+      "maximum_off_diagonal": 6.054739772866384e-23,
+      "parallel_four_high_functional": -2.4354112028346435e-07,
+      "size": 16,
+      "strict_square_replay": -2.4354112028346435e-07,
+      "trace_residual": 1.6940658945086007e-21,
+      "y_curvature_positive": true
+    }
+  ],
+  "diagonal_cosine_no_go": {
+    "all_diagonal_cosine_checks_pass": true,
+    "checks": {
+      "strictly_negative_for_b_positive": true,
+      "sum_of_squares_exact": true
+    },
+    "conclusion": "For b>0, cosine quadratures alone cannot cancel the pressure self-flux. A transverse sine polarization is necessary.",
+    "pressure_self_flux": "-b*(A**2 - 2*A*B + B**2 + C**2 - 2*C*D + D**2 + 2*b**2)/24",
+    "scope": "Exact diagonal sine polarizations a=d=0, with arbitrary divergence-free cosine polarizations."
+  },
+  "exact_square_polarization_family": {
+    "all_polarization_checks_pass": true,
+    "checks": {
+      "Fisher_polynomial_exact": true,
+      "complete_factorization_exact": true,
+      "pressure_factorization_exact": true,
+      "shared_zero_branch_exact": true
+    },
+    "common_polarization_point": "a=b and d=-b",
+    "common_zero_branch": "a=d+2b",
+    "complete_self_flux_zero_cosine": "(a + 2*b)*(2*b - d)*(a - 2*b - d)/24",
+    "exact_square_diagonal_parameterization": {
+      "combined_strain_diagonal": "b*diag(-1,2,-1)",
+      "condition": "b>0",
+      "off_diagonal_parameters": "a and d",
+      "xy_sine_polarization": "(-b,-b,d)",
+      "yz_sine_polarization": "(a,b,b)"
+    },
+    "pressure_self_flux_zero_cosine": "-(a - b)*(b + d)*(a - 2*b - d)/24",
+    "weighted_Fisher_zero_cosine": "(4*a**2 + a*b + 17*b**2 - b*d + 4*d**2)/8"
+  },
+  "finite_annular_rows": [
+    {
+      "HHL_components": {
+        "complete": -0.009782379352366165,
+        "kinetic": -0.00047313258843352307,
+        "maximum_imaginary_residual": 0.0,
+        "pressure": -0.009309246763932641,
+        "pressure_cross": 5.427547068655801e-05,
+        "pressure_high_high": -0.009363522234619198
+      },
+      "all_finite_checks_pass": true,
+      "complete_HHL_load_over_N": -0.0032607931174553884,
+      "complete_joint_optimum": {
+        "coefficient_stationarity_residual": 0.0,
+        "low_stationarity_residual": 0.0,
+        "optimal_coefficient_scale": 0.0,
+        "optimal_low_amplitude": 0.008695448313214369,
+        "optimized_linear_margin": -0.05356443341486933,
+        "optimized_objective": 0.0,
+        "positive_escape": false
+      },
+      "high_plus_Fisher": 0.053606964501888704,
+      "high_plus_Fisher_times_N_cubed": 1.447388041550995,
+      "maximum_divergence_residual": 0.0,
+      "pressure_HHL_load_over_N": -0.0031030822546442138,
+      "pressure_joint_optimum": {
+        "coefficient_stationarity_residual": 0.0,
+        "low_stationarity_residual": 0.0,
+        "optimal_coefficient_scale": 0.0,
+        "optimal_low_amplitude": 0.00827488601238457,
+        "optimized_linear_margin": -0.05356844802397235,
+        "optimized_objective": 0.0,
+        "positive_escape": false
+      },
+      "size": 3
+    },
+    {
+      "HHL_components": {
+        "complete": -0.010896205785633606,
+        "kinetic": -0.00011909578055609594,
+        "maximum_imaginary_residual": 0.0,
+        "pressure": -0.010777110005077509,
+        "pressure_cross": 3.852737976192386e-06,
+        "pressure_high_high": -0.010780962743053703
+      },
+      "all_finite_checks_pass": true,
+      "complete_HHL_load_over_N": -0.002179241157126721,
+      "complete_joint_optimum": {
+        "coefficient_stationarity_residual": 0.0,
+        "low_stationarity_residual": 0.0,
+        "optimal_coefficient_scale": 0.0,
+        "optimal_low_amplitude": 0.009685516253896539,
+        "optimized_linear_margin": -0.017182286850769782,
+        "optimized_objective": 0.0,
+        "positive_escape": false
+      },
+      "high_plus_Fisher": 0.017235054539891062,
+      "high_plus_Fisher_times_N_cubed": 2.154381817486383,
+      "maximum_divergence_residual": 0.0,
+      "pressure_HHL_load_over_N": -0.0021554220010155016,
+      "pressure_joint_optimum": {
+        "coefficient_stationarity_residual": 0.0,
+        "low_stationarity_residual": 0.0,
+        "optimal_coefficient_scale": 0.0,
+        "optimal_low_amplitude": 0.009579653337846675,
+        "optimized_linear_margin": -0.017183434050974822,
+        "optimized_objective": 0.0,
+        "positive_escape": false
+      },
+      "size": 5
+    },
+    {
+      "HHL_components": {
+        "complete": -0.014898805117911534,
+        "kinetic": -1.2046385825387196e-05,
+        "maximum_imaginary_residual": 0.0,
+        "pressure": -0.014886758732086147,
+        "pressure_cross": 1.3163602384931872e-07,
+        "pressure_high_high": -0.014886890368109995
+      },
+      "all_finite_checks_pass": true,
+      "complete_HHL_load_over_N": -0.0016554227908790594,
+      "complete_joint_optimum": {
+        "coefficient_stationarity_residual": 0.0,
+        "low_stationarity_residual": 1.734723475976807e-18,
+        "optimal_coefficient_scale": 0.0,
+        "optimal_low_amplitude": 0.013243382327032475,
+        "optimized_linear_margin": -0.003768575646041413,
+        "optimized_objective": 0.0,
+        "positive_escape": false
+      },
+      "high_plus_Fisher": 0.0038672309322376384,
+      "high_plus_Fisher_times_N_cubed": 2.8192113496012383,
+      "maximum_divergence_residual": 1.3877787807814457e-17,
+      "pressure_HHL_load_over_N": -0.0016540843035651274,
+      "pressure_joint_optimum": {
+        "coefficient_stationarity_residual": 0.0,
+        "low_stationarity_residual": 0.0,
+        "optimal_coefficient_scale": 0.0,
+        "optimal_low_amplitude": 0.013232674428521019,
+        "optimized_linear_margin": -0.003768735116438819,
+        "optimized_objective": 0.0,
+        "positive_escape": false
+      },
+      "size": 9
+    },
+    {
+      "HHL_components": {
+        "complete": -0.019327605303747487,
+        "kinetic": -2.4006946839228577e-06,
+        "maximum_imaginary_residual": 0.0,
+        "pressure": -0.019325204609063562,
+        "pressure_cross": 1.4648110044142343e-08,
+        "pressure_high_high": -0.019325219257173606
+      },
+      "all_finite_checks_pass": true,
+      "complete_HHL_load_over_N": -0.0014867388695190375,
+      "complete_joint_optimum": {
+        "coefficient_stationarity_residual": 0.0,
+        "low_stationarity_residual": 3.469446951953614e-18,
+        "optimal_coefficient_scale": 0.0,
+        "optimal_low_amplitude": 0.0171800936033311,
+        "optimized_linear_margin": -0.0012564289016402225,
+        "optimized_objective": 0.0,
+        "positive_escape": false
+      },
+      "high_plus_Fisher": 0.0014224539357635328,
+      "high_plus_Fisher_times_N_cubed": 3.1251312968724814,
+      "maximum_divergence_residual": 1.3877787807814457e-17,
+      "pressure_HHL_load_over_N": -0.001486554200697197,
+      "pressure_joint_optimum": {
+        "coefficient_stationarity_residual": 0.0,
+        "low_stationarity_residual": 0.0,
+        "optimal_coefficient_scale": 0.0,
+        "optimal_low_amplitude": 0.017177959652500945,
+        "optimized_linear_margin": -0.0012564701432381232,
+        "optimized_objective": 0.0,
+        "positive_escape": false
+      },
+      "size": 13
+    },
+    {
+      "HHL_components": {
+        "complete": -0.023851426304838382,
+        "kinetic": -7.034940107085441e-07,
+        "maximum_imaginary_residual": 0.0,
+        "pressure": -0.023850722810827674,
+        "pressure_cross": 2.9003911879632235e-09,
+        "pressure_high_high": -0.023850725711218865
+      },
+      "all_finite_checks_pass": true,
+      "complete_HHL_load_over_N": -0.001403025076755199,
+      "complete_joint_optimum": {
+        "coefficient_stationarity_residual": 0.0,
+        "low_stationarity_residual": 0.0,
+        "optimal_coefficient_scale": 0.0,
+        "optimal_low_amplitude": 0.021201267826523006,
+        "optimized_linear_margin": -0.000418683755106337,
+        "optimized_objective": 0.0,
+        "positive_escape": false
+      },
+      "high_plus_Fisher": 0.0006715239936730642,
+      "high_plus_Fisher_times_N_cubed": 3.2991973809157646,
+      "maximum_divergence_residual": 1.3877787807814457e-17,
+      "pressure_HHL_load_over_N": -0.001402983694754569,
+      "pressure_joint_optimum": {
+        "coefficient_stationarity_residual": 0.0,
+        "low_stationarity_residual": 0.0,
+        "optimal_coefficient_scale": 0.0,
+        "optimal_low_amplitude": 0.021200642498513486,
+        "optimized_linear_margin": -0.0004186986698513151,
+        "optimized_objective": 0.0,
+        "positive_escape": false
+      },
+      "size": 17
+    },
+    {
+      "HHL_components": {
+        "complete": -0.03299215853617395,
+        "kinetic": -1.146397498354157e-07,
+        "maximum_imaginary_residual": 0.0,
+        "pressure": -0.032992043896424114,
+        "pressure_cross": 2.7976054371942486e-10,
+        "pressure_high_high": -0.03299204417618466
+      },
+      "all_finite_checks_pass": true,
+      "complete_HHL_load_over_N": -0.0013196863414469582,
+      "complete_joint_optimum": {
+        "coefficient_stationarity_residual": 0.0,
+        "low_stationarity_residual": 0.0,
+        "optimal_coefficient_scale": 0.0688585171887509,
+        "optimal_low_amplitude": 0.029326363143265737,
+        "optimized_linear_margin": 0.0002604581207574556,
+        "optimized_objective": 1.1956506656751342e-05,
+        "positive_escape": true
+      },
+      "high_plus_Fisher": 0.00022331189029856031,
+      "high_plus_Fisher_times_N_cubed": 3.489248285915005,
+      "maximum_divergence_residual": 1.3877787807814457e-17,
+      "pressure_HHL_load_over_N": -0.0013196817558569645,
+      "pressure_joint_optimum": {
+        "coefficient_stationarity_residual": 5.421010862427522e-20,
+        "low_stationarity_residual": 0.0,
+        "optimal_coefficient_scale": 0.06885807277872039,
+        "optimal_low_amplitude": 0.029326261241265878,
+        "optimized_linear_margin": 0.00026045475879636225,
+        "optimized_objective": 1.195627515784265e-05,
+        "positive_escape": true
+      },
+      "size": 25
+    },
+    {
+      "HHL_components": {
+        "complete": -0.0421799413526654,
+        "kinetic": -3.0281950350041775e-08,
+        "maximum_imaginary_residual": 0.0,
+        "pressure": -0.04217991107071505,
+        "pressure_cross": 5.1862817682496364e-11,
+        "pressure_high_high": -0.04217991112257787
+      },
+      "all_finite_checks_pass": true,
+      "complete_HHL_load_over_N": -0.0012781800409898607,
+      "complete_joint_optimum": {
+        "coefficient_stationarity_residual": 0.0,
+        "low_stationarity_residual": 6.938893903907228e-18,
+        "optimal_coefficient_scale": 0.11214229701731356,
+        "optimal_low_amplitude": 0.03749328120236925,
+        "optimized_linear_margin": 0.0006908145326103171,
+        "optimized_objective": 5.164635233324187e-05,
+        "positive_escape": true
+      },
+      "high_plus_Fisher": 9.991766850714642e-05,
+      "high_plus_Fisher_times_N_cubed": 3.5907412531413208,
+      "maximum_divergence_residual": 1.3877787807814457e-17,
+      "pressure_HHL_load_over_N": -0.0012781791233550015,
+      "pressure_joint_optimum": {
+        "coefficient_stationarity_residual": 0.0,
+        "low_stationarity_residual": 0.0,
+        "optimal_coefficient_scale": 0.1121422048630779,
+        "optimal_low_amplitude": 0.03749325428508005,
+        "optimized_linear_margin": 0.0006908133972410448,
+        "optimized_objective": 5.1646225010376034e-05,
+        "positive_escape": true
+      },
+      "size": 33
+    },
+    {
+      "HHL_components": {
+        "complete": -0.06060363346371794,
+        "kinetic": -4.440256974602708e-09,
+        "maximum_imaginary_residual": 0.0,
+        "pressure": -0.06060362902346097,
+        "pressure_cross": 4.717119390205298e-12,
+        "pressure_high_high": -0.060603629028178084
+      },
+      "all_finite_checks_pass": true,
+      "complete_HHL_load_over_N": -0.0012368088461983254,
+      "complete_joint_optimum": {
+        "coefficient_stationarity_residual": 2.168404344971009e-19,
+        "low_stationarity_residual": 0.0,
+        "optimal_coefficient_scale": 0.1707164428386193,
+        "optimal_low_amplitude": 0.053869896412193724,
+        "optimized_linear_margin": 0.0016009334393264417,
+        "optimized_objective": 0.00018220377465547112,
+        "positive_escape": true
+      },
+      "high_plus_Fisher": 3.1422289120079804e-05,
+      "high_plus_Fisher_times_N_cubed": 3.6968008926882687,
+      "maximum_divergence_residual": 1.3877787807814457e-17,
+      "pressure_HHL_load_over_N": -0.001236808755580836,
+      "pressure_joint_optimum": {
+        "coefficient_stationarity_residual": 2.168404344971009e-19,
+        "low_stationarity_residual": 6.938893903907228e-18,
+        "optimal_coefficient_scale": 0.17071643008520915,
+        "optimal_low_amplitude": 0.053869892465298636,
+        "optimized_linear_margin": 0.001600933200130267,
+        "optimized_objective": 0.0001822037338207526,
+        "positive_escape": true
+      },
+      "size": 49
+    }
+  ],
+  "finite_escape_summary": {
+    "complete_positive_sizes": [
+      25,
+      33,
+      49
+    ],
+    "first_complete_positive_size": 25,
+    "first_pressure_positive_size": 25,
+    "pressure_positive_sizes": [
+      25,
+      33,
+      49
+    ]
+  },
+  "full_field_support_replay": {
+    "all_support_replay_checks_pass": true,
+    "amplitude_rows": [
+      {
+        "Fisher_residual": 0.0,
+        "complete_load": 0.019564758704732715,
+        "complete_residual": 3.8510861166685117e-16,
+        "expected_complete_load": 0.01956475870473233,
+        "expected_pressure_load": 0.018618493527865283,
+        "expected_weighted_Fisher": 4.553606964501889,
+        "low_field_factor": -2.0,
+        "pressure_load": 0.018618493527865272,
+        "pressure_residual": 1.0408340855860843e-17,
+        "weighted_Fisher": 4.553606964501889
+      },
+      {
+        "Fisher_residual": 2.220446049250313e-16,
+        "complete_load": 0.009782379352366163,
+        "complete_residual": 1.734723475976807e-18,
+        "expected_complete_load": 0.009782379352366165,
+        "expected_pressure_load": 0.009309246763932641,
+        "expected_weighted_Fisher": 1.1786069645018888,
+        "low_field_factor": -1.0,
+        "pressure_load": 0.009309246763932636,
+        "pressure_residual": 5.204170427930421e-18,
+        "weighted_Fisher": 1.178606964501889
+      },
+      {
+        "Fisher_residual": 2.636779683484747e-16,
+        "complete_load": 0.0,
+        "complete_residual": 0.0,
+        "expected_complete_load": -0.0,
+        "expected_pressure_load": -0.0,
+        "expected_weighted_Fisher": 0.053606964501888704,
+        "low_field_factor": 0.0,
+        "pressure_load": 0.0,
+        "pressure_residual": 0.0,
+        "weighted_Fisher": 0.05360696450188897
+      },
+      {
+        "Fisher_residual": 2.220446049250313e-16,
+        "complete_load": -0.009782379352366163,
+        "complete_residual": 1.734723475976807e-18,
+        "expected_complete_load": -0.009782379352366165,
+        "expected_pressure_load": -0.009309246763932641,
+        "expected_weighted_Fisher": 1.1786069645018888,
+        "low_field_factor": 1.0,
+        "pressure_load": -0.009309246763932636,
+        "pressure_residual": 5.204170427930421e-18,
+        "weighted_Fisher": 1.178606964501889
+      },
+      {
+        "Fisher_residual": 0.0,
+        "complete_load": -0.019564758704732715,
+        "complete_residual": 3.8510861166685117e-16,
+        "expected_complete_load": -0.01956475870473233,
+        "expected_pressure_load": -0.018618493527865283,
+        "expected_weighted_Fisher": 4.553606964501889,
+        "low_field_factor": 2.0,
+        "pressure_load": -0.018618493527865272,
+        "pressure_residual": 1.0408340855860843e-17,
+        "weighted_Fisher": 4.553606964501889
+      }
+    ],
+    "complete_HHL_components": {
+      "complete": -0.009782379352366165,
+      "kinetic": -0.00047313258843352307,
+      "maximum_imaginary_residual": 0.0,
+      "pressure": -0.009309246763932641,
+      "pressure_cross": 5.427547068655801e-05,
+      "pressure_high_high": -0.009363522234619198
+    },
+    "high_weighted_Fisher": 0.053606964501888704,
+    "maximum_Fisher_quadratic_residual": 2.636779683484747e-16,
+    "maximum_complete_linear_residual": 3.8510861166685117e-16,
+    "maximum_pressure_linear_residual": 1.0408340855860843e-17,
+    "replay_size": 3,
+    "support_gaps": {
+      "HHH": "|k_x|>=N+1>1",
+      "HLL": "|k_x|>=2N-2>1 for N>=3",
+      "high_low_Fisher": "|Delta k_x|>=2N-1>1 for N>=3"
+    },
+    "unit_low_complete_load": 0.0,
+    "unit_low_pressure_load": 0.0,
+    "unit_low_weighted_Fisher": 1.1250000000000002
+  },
+  "kind": "annular_parallel_shear_phase_repair_audit",
+  "next_theorem_target": "Port the complete finite first and second rho=0 generator jets to the common-polarization low field. Enumerate all new mixed polarization channels, prove their N-power ledger, and only then rebuild the uniform heat-window Taylor remainder.",
+  "optimizer_and_restart_certificate": {
+    "all_optimizer_restart_checks_pass": true,
+    "asymptotic_optimizer": {
+      "A_N_over_N_squared_limit": 5.924882010205161e-07,
+      "a_N_over_N_limit": 0.0010263100688241377,
+      "formulas": {
+        "A_N_over_N_squared": "4 beta_*^2/(9nu)",
+        "a_N_over_N": "8 beta_*/(9nu)",
+        "g_N_over_N_cubed": "1024 beta_*^3/(1215nu^2)",
+        "t_N_over_N": "128 beta_*/(45nu)"
+      },
+      "g_N_over_N_cubed_limit": 1.297230093582625e-09,
+      "t_N_over_N_limit": 0.003284192220237241
+    },
+    "checks": {
+      "all_asymptotic_constants_positive": true,
+      "deficit_to_generator_ratio_exact": true,
+      "parallel_HHL_reference_negative": true,
+      "reset_speed_gap_exact": true
+    },
+    "exact_objective": "J_N(a,t)=t[a|B_N|-nu(D_N+(9/8)a^2)]-(nu/16)(75/256)t^3",
+    "finite_optimizer": {
+      "coefficient_scale": "t_N=sqrt(16A_N/(3nu(75/256)))",
+      "linear_margin": "A_N=4|B_N|^2/(9nu)-nu D_N",
+      "low_amplitude": "a_N=8|B_N|/(9nu)",
+      "maximum": "g_N=(2/3)A_N t_N"
+    },
+    "parallel_continuum_HHL_formula": "-||b||_L2(D)^2/(10sqrt(3))",
+    "parallel_continuum_HHL_limit": -0.001154598827427155,
+    "reset_deficit_port": {
+      "deficit_formula": "256 beta_*^3/(729nu^3)",
+      "deficit_over_N_cubed_liminf": 5.405125389927603e-10,
+      "deficit_over_three_static_generator_liminf": 0.1388888888888889,
+      "heat_window_average_gate": "For delta_N=T/N^2, average g_0/g_N(s) >=[5/(36nu T)]N^2+o(N^2).",
+      "norm_bound": "Delta_s>=(1/2)(sqrt(||h_N||_2^2+4a_N^2)-5t_N/16)_+^3",
+      "ratio_formula": "5/(36nu)",
+      "speed_gap_over_N_limit": 0.0010263100688241377
+    }
+  },
+  "parallel_full_c1_tail_port": {
+    "all_tail_port_checks_pass": true,
+    "checks": {
+      "all_fourteen_profiles_have_one_low_leaf": true,
+      "dominant_limit_strictly_negative": true,
+      "parallel_low_Fourier_l1_mass_is_four": true,
+      "same_low_waves_retain_even_coordinate_sum": true,
+      "tail_constant_unchanged": true
+    },
+    "complete_limit": "c1_parallel,N/N^7 -> -(sqrt(3)/10)||v_y||_2^2<0",
+    "dominant_limit": "D_parallel,N/N^7 -> -(sqrt(3)/10)||v_y||_2^2<0",
+    "linearity": "Every one of the fourteen structural c1 profiles has exactly one low leaf, so the dominant functional and tail port are linear in the replacement low field.",
+    "old_two_shear_low_Fourier_l1_mass": 4,
+    "parallel_low_Fourier_l1_mass": 4,
+    "tail_bound": "|c1_parallel,N-D_parallel,N|<=70,657,920 N^6"
+  },
+  "parallel_shear_repair": {
+    "L2_mass": "4",
+    "all_parallel_shear_checks_pass": true,
+    "checks": {
+      "L2_mass_exact": true,
+      "both_waves_perpendicular_to_common_direction": true,
+      "complete_load_zero": true,
+      "kinetic_load_zero": true,
+      "pressure_field_identically_zero": true,
+      "pressure_load_zero": true,
+      "weighted_Fisher_exact": true
+    },
+    "common_unit_direction": "(1,1,1)/sqrt(3)",
+    "complete_self_flux_load": "0",
+    "kinetic_self_flux_load": "0",
+    "physical_form": "U_*(x)=2r[sin(ell_yz.x)-sin(ell_xy.x)]",
+    "pressure_self_flux_load": "0",
+    "stationarity_identity": "U_*=r f, r.grad f=0, so (U_*.grad)U_*=0, p=0, and div[(|U_*|^2/2)U_*]=0 pointwise.",
+    "weighted_Fisher": "9/8",
+    "xy_polarization": "-(1,1,1)/sqrt(3)",
+    "yz_polarization": "+(1,1,1)/sqrt(3)"
+  },
+  "prerequisite_audit": {
+    "all_prerequisite_checks_pass": true,
+    "rows": [
+      {
+        "actual_sha256": "de11a2c2db530b81ee5c01c12a1270ebb8af8c957e28ed6676fd692f5d7a131e",
+        "expected_sha256": "de11a2c2db530b81ee5c01c12a1270ebb8af8c957e28ed6676fd692f5d7a131e",
+        "matches": true,
+        "path": "work/ns_collision/results/annular_two_shear_static_optimizer_audit_v1.json"
+      },
+      {
+        "actual_sha256": "7aca1d4c57ce970db5872979449368e65fb6add48c4ccd39b8f875cc1669f923",
+        "expected_sha256": "7aca1d4c57ce970db5872979449368e65fb6add48c4ccd39b8f875cc1669f923",
+        "matches": true,
+        "path": "work/ns_collision/results/annular_two_shear_square_gate_audit_v1.json"
+      },
+      {
+        "actual_sha256": "af0039698cdbd5442be629b23ea259e97556c978a0f0d91e94e9e0d658b1f32f",
+        "expected_sha256": "af0039698cdbd5442be629b23ea259e97556c978a0f0d91e94e9e0d658b1f32f",
+        "matches": true,
+        "path": "work/ns_collision/results/annular_two_shear_full_c1_port_audit_v1.json"
+      }
+    ]
+  },
+  "route_decision": "Adopt the common-polarization parallel shear as the canonical two-mode low field. The low self-flux obstruction is repaired without sacrificing the analytic signs. Proceed to the complete finite first- and second-jet port with Fisher mass 9/8 and the new polarization; do not reuse the old jet constants without enumeration.",
+  "scalar_phase_family": {
+    "all_phase_checks_pass": true,
+    "checks": {
+      "Fisher_polynomial_exact": true,
+      "complete_polynomial_exact": true,
+      "kinetic_polynomial_exact": true,
+      "pressure_polynomial_exact": true,
+      "strict_square_quadrant_has_nonzero_interaction": true
+    },
+    "common_interaction_polynomial": "p1**2*p2 + p1*p2**2 + p1*q2**2 + p2*q1**2",
+    "complete_self_flux": "-sqrt(2)*(p1**2*p2 + p1*p2**2 + p1*q2**2 + p2*q1**2)/24",
+    "kinetic_self_flux": "-sqrt(2)*(p1**2*p2 + p1*p2**2 + p1*q2**2 + p2*q1**2)/32",
+    "parameterization": "Uhat_j(+ell_j)=(q_j-i p_j)d_j, Uhat_j(-ell_j)=(q_j+i p_j)d_j",
+    "pressure_self_flux": "-sqrt(2)*(p1**2*p2 + p1*p2**2 + p1*q2**2 + p2*q1**2)/96",
+    "strict_square_quadrant": "For p1>0 and p2>0, every term in p1*p2*(p1+p2)+p1*q2^2+p2*q1^2 is positive. Relative scalar phases cannot cancel the self-flux.",
+    "weighted_Fisher": "(8*p1**2 + p1*p2 + 8*p2**2 + 8*q1**2 - q1*q2 + 8*q2**2)/16"
+  },
+  "scope": "Relative phases and divergence-free polarizations of the two low modes, their exact self-flux and Fisher forms, the modified annular HHL/four-high signs, the restored static optimizer, and the reset-deficit scaling.",
+  "status": "complete_parallel_shear_phase_repair_certified",
+  "stencil_and_curvature_symmetry": {
+    "all_stencil_symmetry_checks_pass": true,
+    "checks": {
+      "combined_projector_exact": true,
+      "combined_strain_exact": true,
+      "diagonal_projector_is_negative_strain_over_20": true,
+      "reflection_average_is_diagonal": true,
+      "trace_reduction_is_strict_square": true
+    },
+    "combined_projector_matrix": [
+      [
+        "sqrt(3)/60",
+        "sqrt(3)/1080",
+        "-sqrt(3)/540"
+      ],
+      [
+        "sqrt(3)/1080",
+        "-sqrt(3)/30",
+        "sqrt(3)/1080"
+      ],
+      [
+        "-sqrt(3)/540",
+        "sqrt(3)/1080",
+        "sqrt(3)/60"
+      ]
+    ],
+    "combined_strain_matrix": [
+      [
+        "-sqrt(3)/3",
+        "sqrt(3)/6",
+        "-sqrt(3)/3"
+      ],
+      [
+        "sqrt(3)/6",
+        "2*sqrt(3)/3",
+        "sqrt(3)/6"
+      ],
+      [
+        "-sqrt(3)/3",
+        "sqrt(3)/6",
+        "-sqrt(3)/3"
+      ]
+    ],
+    "curvature_evenness": "The second energy-tensor curvature C is quartic in b, so C(-b)=C(b). Euler equivariance under all three reflections therefore gives C=R_j C R_j for j=x,y,z.",
+    "diagonal_relation": "diag(Q_*)=-diag(S_*)/20",
+    "four_high_reduction": {
+      "formula": "L_*=2 Q_*:C",
+      "missing_component_identity": "C_y=||v_y||_2^2>0",
+      "reduced_formula": "-sqrt(3)*Cyy/10",
+      "strict_result": "L_*=-(sqrt(3)/10)||v_y||_2^2<0",
+      "trace_constraint": "C_x+C_y+C_z=0"
+    },
+    "modified_profile_reflection_characters": {
+      "x_reflection": "b(R_x xi)=R_x b(xi)",
+      "y_reflection": "b(R_y xi)=R_y b(xi)",
+      "z_reflection": "b(R_z xi)=-R_z b(xi)"
+    },
+    "reflection_average_of_generic_symmetric_tensor": [
+      [
+        "Cxx",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "Cyy",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "Czz"
+      ]
+    ],
+    "static_profile_energy_tensor": "E=diag(E_x,0,E_z), hence -2 Q_*:E=-(E_x+E_z)/(10sqrt(3))<0."
+  },
+  "theorem": "Scalar phase changes cannot cancel the two-shear self-flux inside the strict-square quadrant. Full divergence-free polarization freedom can: choosing the common unit direction r=(1,1,1)/sqrt(3), with yz polarization +r and xy polarization -r, makes the entire low field a stationary parallel shear. Its pressure and nonlinear self-advection vanish pointwise, while its complete local-energy flux has zero divergence and hence zero gradient load. Its +++ Fisher mass is 9/8, and the modified high profile's reflection symmetries annihilate every added off-diagonal stencil contribution. The static HHL and full c1 limits remain strict negative squares, the finite joint optimizer is restored, and the reset deficit again imposes an Omega(N^5) heat-window average-generator gate."
+}

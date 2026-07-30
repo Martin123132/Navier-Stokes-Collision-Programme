@@ -1,0 +1,316 @@
+{
+  "Taylor_Green_stress": {
+    "all_checks_pass": true,
+    "compatible_pressure_loads": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "global_enstrophy": 1.0,
+    "maximum_vertex_bound_ratio": 0.0,
+    "name": "Taylor-Green",
+    "partition_center": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "partition_enstrophy_residual": 0.0,
+    "pressure_mode_count": 8,
+    "support": {
+      "annular_ratio_Lambda": 1.0,
+      "coordinate_degree_L": 1,
+      "divergence_residual": 0.0,
+      "lower_carrier_K": 1.4142135623730951,
+      "reality_residual": 0.0,
+      "upper_carrier": 1.4142135623730951,
+      "velocity_L_infinity_triangle_bound": 1.4142135623730951
+    },
+    "toggle": {
+      "coordinate_degree_L": 1,
+      "hamming_energy_factor": 318.3919189857866,
+      "maximum_residue_chain_length": 3,
+      "partition_frequency_m": 1,
+      "toggle_constant": 2.414213562373095,
+      "vertex_pressure_constant": 900.5483399593904
+    },
+    "velocity_mode_count": 4,
+    "vertex_bound_ratios": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "vertex_bounds": [
+      79.59797974644665,
+      79.59797974644665,
+      79.59797974644665,
+      79.59797974644665,
+      79.59797974644665,
+      79.59797974644665,
+      79.59797974644665,
+      79.59797974644665
+    ],
+    "vertex_weighted_enstrophies": [
+      0.125,
+      0.125,
+      0.125,
+      0.125,
+      0.125,
+      0.125,
+      0.125,
+      0.125
+    ],
+    "weighted_adversary": null
+  },
+  "all_positive_checks_pass": true,
+  "balanced_uniformity": {
+    "all_checks_pass": true,
+    "finite_positive_constants": true,
+    "rows": [
+      {
+        "annular_width_Lambda": 1.0,
+        "condition": "m >= intrinsic_absorption_constant * ||u||_infinity / nu",
+        "intrinsic_absorption_constant": 37638.09216688548,
+        "lower_balance_K_over_m": 0.5,
+        "uniform_chain_length_cap": 5,
+        "uniform_toggle_cap": 3.7320508075688776,
+        "upper_balance_K_over_m": 2.0
+      },
+      {
+        "annular_width_Lambda": 2.0,
+        "condition": "m >= intrinsic_absorption_constant * ||u||_infinity / nu",
+        "intrinsic_absorption_constant": 771987.6215383628,
+        "lower_balance_K_over_m": 0.5,
+        "uniform_chain_length_cap": 9,
+        "uniform_toggle_cap": 6.313751514675044,
+        "upper_balance_K_over_m": 2.0
+      },
+      {
+        "annular_width_Lambda": 2.0,
+        "condition": "m >= intrinsic_absorption_constant * ||u||_infinity / nu",
+        "intrinsic_absorption_constant": 6453108.147727311,
+        "lower_balance_K_over_m": 1.0,
+        "uniform_chain_length_cap": 17,
+        "uniform_toggle_cap": 11.430052302761343,
+        "upper_balance_K_over_m": 4.0
+      }
+    ]
+  },
+  "certification_flags": {
+    "Navier_Stokes_global_regularity_proved": false,
+    "compatible_nonnegative_vertex_weights_included": true,
+    "complete_single_band_pressure_included": true,
+    "critical_L3_bound_proved": false,
+    "cross_shell_HHL_pressure_absorbed": false,
+    "exceptional_set_removed": false,
+    "floor_free_balanced_annular_self_edge_absorbed": true,
+    "full_multiband_pressure_edge_absorbed": false,
+    "terminal_dual_supremum_controlled": false,
+    "terminal_weight_cubic_Fisher_retained": true
+  },
+  "coscaling_stress": {
+    "all_checks_pass": true,
+    "maximum_ratio_residual": 0.0,
+    "rows": [
+      {
+        "amplitude_a": 1.0,
+        "bound_ratio": 1.6902892122312959e-09,
+        "partition_frequency_m": 1,
+        "pressure_load": 1.280453496113644,
+        "theorem_bound": 757535152.474504,
+        "velocity_Fisher": 787.1192752552946
+      },
+      {
+        "amplitude_a": 2.0,
+        "bound_ratio": 1.6902892122312959e-09,
+        "partition_frequency_m": 2,
+        "pressure_load": 20.487255937818304,
+        "theorem_bound": 12120562439.592064,
+        "velocity_Fisher": 12593.908404084714
+      },
+      {
+        "amplitude_a": 4.0,
+        "bound_ratio": 1.6902892122312959e-09,
+        "partition_frequency_m": 4,
+        "pressure_load": 327.79609500509287,
+        "theorem_bound": 193928999033.47302,
+        "velocity_Fisher": 201502.53446535542
+      },
+      {
+        "amplitude_a": 8.0,
+        "bound_ratio": 1.6902892122312959e-09,
+        "partition_frequency_m": 8,
+        "pressure_load": 5244.737520081486,
+        "theorem_bound": 3102863984535.5684,
+        "velocity_Fisher": 3224040.5514456867
+      }
+    ],
+    "scaling": {
+      "carrier": "m K",
+      "pressure_load": "a^3 m",
+      "theorem_coefficient": "a/m",
+      "velocity_amplitude": "a",
+      "weighted_velocity_Fisher": "a^2 m^2"
+    }
+  },
+  "kind": "balanced_annular_pressure_edge_gate_audit",
+  "positive_checks": {
+    "Taylor_Green_sparse_replay_passes": true,
+    "balanced_constant_is_uniform": true,
+    "coscaling_invariance_passes": true,
+    "prerequisite_hashes_and_results_pass": true,
+    "seed81_sparse_replay_passes": true
+  },
+  "prerequisites": {
+    "all_checks_pass": true,
+    "rows": [
+      {
+        "actual_sha256": "9bffa20e16b9f1831df682cb601545508a492952317a102b082823a7006bf9da",
+        "all_positive_checks_pass": true,
+        "expected_sha256": "9bffa20e16b9f1831df682cb601545508a492952317a102b082823a7006bf9da",
+        "matches": true,
+        "path": "work/ns_collision/results/pressure_hamming_commutator_gate_audit_v1.json"
+      },
+      {
+        "actual_sha256": "7274c0084146e78de9f6ee97d24edab93f544d50e01bec45e0eab1c8f043ae7a",
+        "all_positive_checks_pass": true,
+        "expected_sha256": "7274c0084146e78de9f6ee97d24edab93f544d50e01bec45e0eab1c8f043ae7a",
+        "matches": true,
+        "path": "work/ns_collision/results/annular_vertex_commutator_gate_audit_v1.json"
+      },
+      {
+        "actual_sha256": "067625c4b44aa6085ff2b59cbbcef351253dcbd5b1fb9f0eac641fdd7a48682c",
+        "all_positive_checks_pass": true,
+        "expected_sha256": "067625c4b44aa6085ff2b59cbbcef351253dcbd5b1fb9f0eac641fdd7a48682c",
+        "matches": true,
+        "path": "work/ns_collision/results/compatible_eight_cell_cubic_graph_audit_v1.json"
+      },
+      {
+        "actual_sha256": "7af42aaf85a6526bc914eee4ce90d7446d26befdb47e2b36d3ac024f94a8c0b4",
+        "all_positive_checks_pass": true,
+        "expected_sha256": "7af42aaf85a6526bc914eee4ce90d7446d26befdb47e2b36d3ac024f94a8c0b4",
+        "matches": true,
+        "path": "work/ns_collision/results/fourier_pressure_load_surjectivity_audit_v1.json"
+      }
+    ]
+  },
+  "proof_chain": {
+    "Hamming_energy_comparison": "sum_w ||psi_w grad u||_2^2 <= (1+C^2)^3 ||psi_v grad u||_2^2",
+    "compatible_nonnegative_sum": "sum_v w_v |P_v| is charged directly to sum_v w_v E_v; zero coefficients cause no division.",
+    "exact_pressure_shift_bound": "||psi_v p||_2 <= sqrt(8)||u||_infinity||u||_2",
+    "high_pass_Poincare": "||u||_2^2 <= K^(-2)||grad u||_2^2",
+    "partition_gradient_bound": "||u grad psi_v||_2 <= (m/2)||u||_2",
+    "terminal_weight_Fisher": "The exact nonnegative cubic graph Fisher term remains available as additional dissipation and is not spent."
+  },
+  "schema_version": 1,
+  "scope": "This certifies the complete pressure edge generated and transported by one bounded annular velocity band. It does not compare the weighted Fisher energy of spectral pieces with the full multiband field, control HHL/cross-shell pressure, construct the terminal adaptive partition, or prove Navier-Stokes regularity.",
+  "seed81_stress": {
+    "all_checks_pass": true,
+    "compatible_pressure_loads": [
+      0.5154090623037019,
+      -2.9062227842838126,
+      0.5270944168887033,
+      0.6291130459876251,
+      1.9638874135458555,
+      0.008747154731771498,
+      -1.7996150250960383,
+      1.061586715922194
+    ],
+    "global_enstrophy": 567.0369975365945,
+    "maximum_vertex_bound_ratio": 4.174440488525669e-08,
+    "name": "seed-81",
+    "partition_center": [
+      3.455751918948772,
+      2.827433388230814,
+      5.026548245743669
+    ],
+    "partition_enstrophy_residual": 2.2737367544323206e-13,
+    "pressure_mode_count": 696,
+    "support": {
+      "annular_ratio_Lambda": 3.0,
+      "coordinate_degree_L": 2,
+      "divergence_residual": 5.978733960281817e-16,
+      "lower_carrier_K": 1.0,
+      "reality_residual": 2.7755575615628914e-16,
+      "upper_carrier": 3.0,
+      "velocity_L_infinity_triangle_bound": 102.2809216470783
+    },
+    "toggle": {
+      "coordinate_degree_L": 2,
+      "hamming_energy_factor": 3326.7687752661245,
+      "maximum_residue_chain_length": 5,
+      "partition_frequency_m": 1,
+      "toggle_constant": 3.7320508075688776,
+      "vertex_pressure_constant": 9409.52304172137
+    },
+    "velocity_mode_count": 116,
+    "vertex_bound_ratios": [
+      8.497496767333151e-09,
+      4.174440488525669e-08,
+      7.871867402791369e-09,
+      8.976944958203262e-09,
+      2.995330244795004e-08,
+      1.2623607482451835e-10,
+      2.4883837805498224e-08,
+      1.4902981623185044e-08
+    ],
+    "vertex_bounds": [
+      60654222.8159573,
+      69619456.6019609,
+      66959260.09904528,
+      70080973.97464073,
+      65564971.24009981,
+      69292036.71716645,
+      72320637.96439001,
+      71233176.20352222
+    ],
+    "vertex_weighted_enstrophies": [
+      63.02296038423946,
+      72.33831465800822,
+      69.57422914122147,
+      72.81785573107241,
+      68.12548893086321,
+      71.99810800016304,
+      75.14498562157101,
+      74.01505506945593
+    ],
+    "weighted_adversary": {
+      "bound_ratio": 1.6902892122312959e-09,
+      "coefficients": [
+        1.7,
+        0.8,
+        1.4,
+        2.0,
+        0.6,
+        1.8,
+        1.2,
+        1.6
+      ],
+      "cubic_terminal_weight_Fisher_Q": "518053/256000",
+      "cubic_terminal_weight_Fisher_positive": true,
+      "pressure_load": 1.280453496113644,
+      "theorem_bound": 757535152.474504,
+      "velocity_Fisher": 787.1192752552946
+    }
+  },
+  "status": "balanced_annular_self_pressure_edge_intrinsic_absorption_certified",
+  "theorem": {
+    "absorption_condition": "nu K^2 >= 2sqrt(2)(1+C^2)^3 m||u||_infinity",
+    "compatible_weight_extension": "The same coefficient bounds every lambda=sum_v w_v Phi_v with w_v>=0.",
+    "hypothesis": "u is smooth, divergence free, and Fourier supported in {K<=|k|<=Lambda K}; Phi_v=psi_v^2 is the frequency-m tensor partition.",
+    "requires_positive_weight_floor": false,
+    "toggle_constant": "C=cot(pi/[2(N+1)]), N=ceil((2 floor(Lambda K)+1)/m)",
+    "uses_complete_single_band_pressure": true,
+    "uses_smooth_output_cutoff": false,
+    "vertex_bound": "|integral p[u,u] u dot grad Phi_v| <= 2sqrt(2)(1+C^2)^3 m||u||_infinity K^(-2) integral Phi_v|grad u|^2"
+  }
+}

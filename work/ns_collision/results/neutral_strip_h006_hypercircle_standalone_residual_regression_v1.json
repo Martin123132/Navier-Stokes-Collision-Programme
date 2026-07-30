@@ -1,0 +1,123 @@
+{
+  "all_checks_pass": true,
+  "certification_flags": {
+    "continuum_spectrum_below_60_captured": false,
+    "full_123816_pivot_inertia_certified": false,
+    "navier_stokes_regularity_certified": false,
+    "standalone_residual_implementation_validated": true
+  },
+  "checks": {
+    "prefix_2304_certificate_values_reproduce_exactly": true,
+    "prefix_2304_directed_audit_is_not_required_or_loaded": true,
+    "prefix_2304_frozen_preparation_hashes_equal": true,
+    "prefix_2304_full_inertia_claim_remains_false": true,
+    "prefix_2304_legacy_certificate_closes": true,
+    "prefix_2304_standalone_certificate_closes": true,
+    "prefix_2304_standalone_contract_dimension_matches": true,
+    "prefix_2304_standalone_integrity_checks_pass": true,
+    "prefix_32064_certificate_values_reproduce_exactly": true,
+    "prefix_32064_directed_audit_is_not_required_or_loaded": true,
+    "prefix_32064_frozen_preparation_hashes_equal": true,
+    "prefix_32064_full_inertia_claim_remains_false": true,
+    "prefix_32064_legacy_certificate_closes": true,
+    "prefix_32064_standalone_certificate_closes": true,
+    "prefix_32064_standalone_contract_dimension_matches": true,
+    "prefix_32064_standalone_integrity_checks_pass": true,
+    "prefix_33280_certificate_values_reproduce_exactly": true,
+    "prefix_33280_directed_audit_is_not_required_or_loaded": true,
+    "prefix_33280_frozen_preparation_hashes_equal": true,
+    "prefix_33280_full_inertia_claim_remains_false": true,
+    "prefix_33280_legacy_certificate_closes": true,
+    "prefix_33280_standalone_certificate_closes": true,
+    "prefix_33280_standalone_contract_dimension_matches": true,
+    "prefix_33280_standalone_integrity_checks_pass": true
+  },
+  "kind": "hypercircle-standalone-residual-regression",
+  "next_required_step": "Run only the bounded standalone 63680 state-entry pilot at precisions 60 and 100.",
+  "prefix_comparisons": [
+    {
+      "artifacts": {
+        "legacy": "work/ns_collision/results/neutral_strip_h006_hypercircle_congruence_residual_pilot2304_v1.json",
+        "legacy_sha256": "fcbf1c9e803ba281486f1f1bde1346473a66faa81be89aafbb3ac0014722c402",
+        "standalone": "work/ns_collision/results/neutral_strip_h006_hypercircle_standalone_residual2304_v1.json",
+        "standalone_sha256": "19bf03556b28230659ee67038687e0b4127adc0215fb1dd534e827d0907f63ff"
+      },
+      "bound_to_diagonal_ratio_upper_decimal": "7.40408920013392229637364779840502475756945403032700254284111E-11",
+      "checks": {
+        "certificate_values_reproduce_exactly": true,
+        "directed_audit_is_not_required_or_loaded": true,
+        "frozen_preparation_hashes_equal": true,
+        "full_inertia_claim_remains_false": true,
+        "legacy_certificate_closes": true,
+        "standalone_certificate_closes": true,
+        "standalone_contract_dimension_matches": true,
+        "standalone_integrity_checks_pass": true
+      },
+      "maximum_pivots": 2304,
+      "reference_signs": {
+        "negative": 1768,
+        "positive": 536,
+        "zero": 0
+      },
+      "standalone_contract_sha256": "ab0ecd91eaf0ef532048cbe837586b7e44b061acc609a6b57ac6e24bdac1d2fc",
+      "standalone_reference_factor_sha256": "b345e6b45fad0cf00edb2c5fe1c932979f0080e587f52d098d8384fe07a904ba"
+    },
+    {
+      "artifacts": {
+        "legacy": "work/ns_collision/results/neutral_strip_h006_hypercircle_congruence_residual_pilot32064_v1.json",
+        "legacy_sha256": "a97cf12ab204c57cbf063e1047ccc658f59295f6cbe2bd8cccbcf4b301b8e4d2",
+        "standalone": "work/ns_collision/results/neutral_strip_h006_hypercircle_standalone_residual32064_v1.json",
+        "standalone_sha256": "1a8f041a62f77b2bb9a9d535306d619d5bc00cac38326d82f2734e5eb8febea8"
+      },
+      "bound_to_diagonal_ratio_upper_decimal": "8.43748828577460122046582638120655977291971071373360677754120E-11",
+      "checks": {
+        "certificate_values_reproduce_exactly": true,
+        "directed_audit_is_not_required_or_loaded": true,
+        "frozen_preparation_hashes_equal": true,
+        "full_inertia_claim_remains_false": true,
+        "legacy_certificate_closes": true,
+        "standalone_certificate_closes": true,
+        "standalone_contract_dimension_matches": true,
+        "standalone_integrity_checks_pass": true
+      },
+      "maximum_pivots": 32064,
+      "reference_signs": {
+        "negative": 31486,
+        "positive": 578,
+        "zero": 0
+      },
+      "standalone_contract_sha256": "33f7a251b6f4d3fc04eddb70cd5c06eb33b82ffaa291a691bd1f34bd020f0e6f",
+      "standalone_reference_factor_sha256": "e5d5b3bc52f4e21f98345129d420b5dcf309478c96ea0503593eee224f74f832"
+    },
+    {
+      "artifacts": {
+        "legacy": "work/ns_collision/results/neutral_strip_h006_hypercircle_congruence_residual_pilot33280_v1.json",
+        "legacy_sha256": "bc9c73addd681030500e22199a97ecfb74d7d954f39343efe5b95b7f15cd4b58",
+        "standalone": "work/ns_collision/results/neutral_strip_h006_hypercircle_standalone_residual33280_v1.json",
+        "standalone_sha256": "24f0a6c8a99d04dbdb440ef60e4a5932442725c491bc596e9124da02044f053e"
+      },
+      "bound_to_diagonal_ratio_upper_decimal": "2.93998788797135271314311048751638997573330538068136271186661E-8",
+      "checks": {
+        "certificate_values_reproduce_exactly": true,
+        "directed_audit_is_not_required_or_loaded": true,
+        "frozen_preparation_hashes_equal": true,
+        "full_inertia_claim_remains_false": true,
+        "legacy_certificate_closes": true,
+        "standalone_certificate_closes": true,
+        "standalone_contract_dimension_matches": true,
+        "standalone_integrity_checks_pass": true
+      },
+      "maximum_pivots": 33280,
+      "reference_signs": {
+        "negative": 31971,
+        "positive": 1309,
+        "zero": 0
+      },
+      "standalone_contract_sha256": "91c43e8a9c3011e1406b401f1f75d237fd519fe832873f5227959a26c962f517",
+      "standalone_reference_factor_sha256": "cb4e7b90193fc65e345768823a6af803a0cb28d0d7629065fbef8ae5007fae38"
+    }
+  ],
+  "scope": "Exact regression comparison at three already-certified prefixes. It validates removal of the directed-audit dependency but certifies no new pivot or broader theorem.",
+  "state_entry_pilot_admitted": true,
+  "status": "pass"
+}

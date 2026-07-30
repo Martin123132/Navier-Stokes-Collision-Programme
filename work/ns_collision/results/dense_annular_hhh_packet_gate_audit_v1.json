@@ -1,0 +1,336 @@
+{
+  "all_positive_checks_pass": true,
+  "assumption_scope": "Smooth finite-Fourier divergence-free annular packets; the exact HHH Leray-projected stress symbol at zero output; unit shell L2 energy; and arbitrary smooth parabolic pulse paths for the functional-input no-go.",
+  "certification_flags": {
+    "Navier_Stokes_global_regularity_proved": false,
+    "coherent_H_six_triad_count_proved": true,
+    "complete_signed_flux_occupation_bound_proved": false,
+    "critical_signed_large_data_bound_proved": false,
+    "dense_packet_divergence_free_annular_unit_energy_proved": true,
+    "equation_specific_temporal_correlation_bound_proved": false,
+    "exceptional_set_upgrade_proved": false,
+    "fixed_traceless_tensor_channel_nonzero_proved": true,
+    "low_regularity_passage_proved": false,
+    "raw_tensor_forcing_bound_from_Leray_inputs_alone_falsified": true,
+    "sharp_H_five_halves_tensor_forcing_growth_proved": true,
+    "top_Walsh_cell_channel_survives_proved": true,
+    "trace_local_energy_channel_obstructed": false,
+    "unforced_Navier_Stokes_dynamic_counterexample_proved": false
+  },
+  "dense_annular_packet": {
+    "all_checks_pass": true,
+    "channel_over_count_scale_values": [
+      78.4149461790156,
+      78.4869987358381,
+      78.51034205371757,
+      78.52185979207408
+    ],
+    "exact_one_dimensional_offset_pair_count": "3M^2+3M+1",
+    "exact_three_dimensional_triad_count": "(3M^2+3M+1)^3",
+    "forcing_cost_over_enstrophy_cost_values": [
+      0.40492044532685567,
+      1.637748422946926,
+      4.328163392728687,
+      9.05795976741642
+    ],
+    "forcing_prefix_growth_ratios": [
+      4.02186104807665,
+      2.4384034677588033,
+      1.9288352825797421
+    ],
+    "interpretation": "Every audited lattice triad has the same positive projection on the fixed traceless tensor channel. The exact count scale is R times O(M^6) coherent triples times the cube of the O(M^(-3/2)) energy normalization, hence O(R^(5/2)) at fixed R/M.",
+    "maximum_channel_over_count_scale": 78.52185979207408,
+    "minimum_channel_over_count_scale": 78.4149461790156,
+    "only_zero_center_relations": "Among the six carrier centers, the only signed triples summing to zero are A+B+C=0 and its full negative. Thus no other carrier combination can cancel the selected channel.",
+    "packet_definition": "For R=32M, take lattice boxes R*A+B_M, R*B+B_M, R*C+B_M around A=(1,0,0), B=(-1,1,0), C=(0,-1,0), plus their conjugates. Use coefficients P_k v_A, P_k v_B, and i P_k v_C, then normalize total Fourier L2 energy to one.",
+    "rows": [
+      {
+        "all_checks_pass": true,
+        "annulus_ratio": 1.5057987118688783,
+        "box_radius": 1,
+        "carrier": 32,
+        "carrier_multiple": 32,
+        "channel_over_coherent_count_scale": 78.4149461790156,
+        "channel_over_full_tensor_norm": 0.9999957720812108,
+        "coherent_count_scale": 0.30461733844173355,
+        "energy_before_normalization": 1731.7278837436122,
+        "enstrophy_time_cost": 1.3760596915195278,
+        "exact_coherent_triad_count": 343,
+        "fixed_channel_forcing": 23.886552199103516,
+        "forcing_L2_time_cost": 0.5571947030864228,
+        "forcing_cost_over_enstrophy_cost": 0.40492044532685567,
+        "full_tensor_forcing_Frobenius_norm": 23.886653189933348,
+        "maximum_divergence_residual_before_normalization": 2.5757174171303632e-14,
+        "maximum_support_radius": 46.67976006793523,
+        "maximum_unit_triad_channel_over_carrier": 90.4228013190032,
+        "minimum_support_radius": 31.0,
+        "minimum_unit_triad_channel_over_carrier": 66.8571944758444,
+        "normalization_coefficient": 0.024030354357293872,
+        "normalized_energy": 0.9999999999999999,
+        "normalized_enstrophy": 1409.0851241159965,
+        "parabolic_duration": 0.0009765625,
+        "positive_cluster_mode_count": 81,
+        "real_field_mode_count": 162,
+        "trace_residual": 7.514822097931528e-15,
+        "triad_count_formula": 343
+      },
+      {
+        "all_checks_pass": true,
+        "annulus_ratio": 1.5057987118688783,
+        "box_radius": 2,
+        "carrier": 64,
+        "carrier_multiple": 32,
+        "channel_over_coherent_count_scale": 78.4869987358381,
+        "channel_over_full_tensor_norm": 0.999997705387371,
+        "coherent_count_scale": 1.2240039166965637,
+        "energy_before_normalization": 8012.941584114506,
+        "enstrophy_time_cost": 1.3757956183943971,
+        "exact_coherent_triad_count": 6859,
+        "fixed_channel_forcing": 96.06839386242407,
+        "forcing_L2_time_cost": 2.2532071043227146,
+        "forcing_cost_over_enstrophy_cost": 1.637748422946926,
+        "full_tensor_forcing_Frobenius_norm": 96.0686143026797,
+        "maximum_divergence_residual_before_normalization": 5.1514348342607263e-14,
+        "maximum_support_radius": 93.35952013587045,
+        "maximum_unit_triad_channel_over_carrier": 90.4228013190032,
+        "minimum_support_radius": 62.0,
+        "minimum_unit_triad_channel_over_carrier": 66.8571944758444,
+        "normalization_coefficient": 0.011171307637794465,
+        "normalized_energy": 0.9999999999999998,
+        "normalized_enstrophy": 5635.258852943451,
+        "parabolic_duration": 0.000244140625,
+        "positive_cluster_mode_count": 375,
+        "real_field_mode_count": 750,
+        "trace_residual": 2.2612467454052876e-13,
+        "triad_count_formula": 6859
+      },
+      {
+        "all_checks_pass": true,
+        "annulus_ratio": 1.5057987118688783,
+        "box_radius": 3,
+        "carrier": 96,
+        "carrier_multiple": 32,
+        "channel_over_coherent_count_scale": 78.51034205371757,
+        "channel_over_full_tensor_norm": 0.9999982053908452,
+        "coherent_count_scale": 2.983727985491068,
+        "energy_before_normalization": 21983.56467594326,
+        "enstrophy_time_cost": 1.3757074237416573,
+        "exact_coherent_triad_count": 50653,
+        "fixed_channel_forcing": 234.2535047361534,
+        "forcing_L2_time_cost": 5.954286510543732,
+        "forcing_cost_over_enstrophy_cost": 4.328163392728687,
+        "full_tensor_forcing_Frobenius_norm": 234.253925130392,
+        "maximum_divergence_residual_before_normalization": 1.0480505352461478e-13,
+        "maximum_support_radius": 140.03928020380567,
+        "maximum_unit_triad_channel_over_carrier": 90.42280131900321,
+        "minimum_support_radius": 93.0,
+        "minimum_unit_triad_channel_over_carrier": 66.8571944758444,
+        "normalization_coefficient": 0.006744518375892589,
+        "normalized_energy": 1.0000000000000002,
+        "normalized_enstrophy": 12678.519617203114,
+        "parabolic_duration": 0.00010850694444444444,
+        "positive_cluster_mode_count": 1029,
+        "real_field_mode_count": 2058,
+        "trace_residual": 1.8052781491917358e-12,
+        "triad_count_formula": 50653
+      },
+      {
+        "all_checks_pass": true,
+        "annulus_ratio": 1.5057987118688783,
+        "box_radius": 4,
+        "carrier": 128,
+        "carrier_multiple": 32,
+        "channel_over_coherent_count_scale": 78.52185979207408,
+        "channel_over_full_tensor_norm": 0.999998429390415,
+        "coherent_count_scale": 5.754275639923919,
+        "energy_before_normalization": 46718.89252209287,
+        "enstrophy_time_cost": 1.3756632991657527,
+        "exact_coherent_triad_count": 226981,
+        "fixed_channel_forcing": 451.83642500305336,
+        "forcing_L2_time_cost": 12.460702817354727,
+        "forcing_cost_over_enstrophy_cost": 9.05795976741642,
+        "full_tensor_forcing_Frobenius_norm": 451.83713466278795,
+        "maximum_divergence_residual_before_normalization": 1.1191048088221578e-13,
+        "maximum_support_radius": 186.7190402717409,
+        "maximum_unit_triad_channel_over_carrier": 90.4228013190032,
+        "minimum_support_radius": 124.0,
+        "minimum_unit_triad_channel_over_carrier": 66.8571944758444,
+        "normalization_coefficient": 0.004626512398823146,
+        "normalized_energy": 1.0,
+        "normalized_enstrophy": 22538.867493531692,
+        "parabolic_duration": 6.103515625e-05,
+        "positive_cluster_mode_count": 2187,
+        "real_field_mode_count": 4374,
+        "trace_residual": 9.666711875411238e-13,
+        "triad_count_formula": 226981
+      }
+    ]
+  },
+  "exact_center_witness": {
+    "all_checks_pass": true,
+    "center_directions": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        -1,
+        1,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ]
+    ],
+    "central_channel_pairing": 78.689262291624,
+    "channel_tensor": [
+      [
+        -0.457495710997814,
+        -0.0,
+        0.3812464258315117
+      ],
+      [
+        -0.0,
+        0.457495710997814,
+        -0.3812464258315117
+      ],
+      [
+        0.3812464258315117,
+        -0.3812464258315117,
+        -0.0
+      ]
+    ],
+    "exact_Frobenius_norm": "12*sqrt(43)",
+    "exact_integer_matrix": [
+      [
+        36,
+        0,
+        -30
+      ],
+      [
+        0,
+        -36,
+        30
+      ],
+      [
+        -30,
+        30,
+        0
+      ]
+    ],
+    "exact_matrix_residual": 0.0,
+    "exact_unphased_matrix_factor": "i",
+    "integer_base_vectors": [
+      [
+        -4,
+        -3,
+        1
+      ],
+      [
+        -3,
+        -1,
+        2
+      ],
+      [
+        -3,
+        7,
+        1
+      ]
+    ],
+    "numeric_Frobenius_norm": 78.689262291624,
+    "phase_rotated_real_matrix_residual": 0.0,
+    "projected_center_polarizations": [
+      [
+        0,
+        -3,
+        1
+      ],
+      [
+        -2,
+        -2,
+        2
+      ],
+      [
+        -3,
+        0,
+        1
+      ]
+    ],
+    "proof_of_nonzero": "All waves and unnormalized projected polarizations are rational. Direct symbol algebra gives exactly i times the displayed nonzero integer matrix, whose norm is 12sqrt(43). The phase product i rotates it to a real matrix.",
+    "relative_phases": [
+      "1",
+      "1",
+      "i"
+    ],
+    "trace_residual": 0.0
+  },
+  "fixed_top_Walsh_coupling": {
+    "Walsh_character": "chi_123(v)=v_1 v_2 v_3",
+    "all_checks_pass": true,
+    "exact_pairing_magnitude": "1/sqrt(86)",
+    "low_velocity_divergence_residual": 0.0,
+    "low_velocity_polarization": [
+      0.7071067811865475,
+      -0.7071067811865475,
+      0.0
+    ],
+    "low_velocity_wave": [
+      -1,
+      -1,
+      -1
+    ],
+    "pairing_magnitude_residual": 4.163336342344337e-17,
+    "partition_wave": [
+      1,
+      1,
+      1
+    ],
+    "reason": "The partition coefficient at r=(1,1,1) is chi_123(v)/64. Since q=0 and the low wave is -r, the fixed dense tensor channel couples nontrivially to the pure top Walsh vertex channel.",
+    "stress_output_wave": [
+      0,
+      0,
+      0
+    ],
+    "tensor_gradient_pairing": -0.10783277320343837
+  },
+  "kind": "dense_annular_hhh_packet_gate_audit",
+  "next_theorem_target": "Project the dense packet through the complete signed local energy evolution, including low-velocity evolution, kinetic transport, high-high pressure, cross pressure, and all eight cell vertices. Determine whether the H^(5/2) traceless pressure-strain channel cancels in that scalar equation or survives with a sharp coefficient. In parallel, formulate the weakest shell-weighted negative norm that viscosity and Leray enstrophy can control without discarding the signed flux.",
+  "parabolic_Leray_input_no_go": {
+    "all_checks_pass": true,
+    "energy_and_enstrophy": "sup_t||u_R(t)||_2^2<=C, while integral||grad u_R(t)||_2^2 dt<=C because the shell enstrophy R^2 is active for time R^(-2).",
+    "enstrophy_cost_growth_exponent": "0",
+    "falsified_statement": "No universal estimate of the raw tensor form sum_H||f_H||_(L2_t)^2<=C(sup_t||u||_2, integral||grad u||_2^2) can be derived from those two Leray quantities alone for arbitrary smooth divergence-free paths.",
+    "forcing_cost": "The cubic regeneration is phi^3 G_R, so integral|<T,G_R(t)>|^2 dt>=c R^5 R^(-2)=c R^3.",
+    "forcing_cost_growth_exponent": "3",
+    "scope": "The pulse path is not claimed to solve unforced Navier-Stokes. This is a functional-input no-go: a successful Navier-Stokes estimate must use equation-specific temporal correlation or an additional signed cancellation. The trace channel, complete local-energy balance, and global regularity are not falsified.",
+    "test_path": "Let u_R(t)=phi(R^2 t)u_R for a fixed nonzero smooth compact pulse phi and the unit-energy dense packet u_R."
+  },
+  "positive_checks": {
+    "Leray_input_only_parabolic_no_go_passes": true,
+    "dense_annular_lattice_replay_passes": true,
+    "exact_rational_center_witness_passes": true,
+    "sharp_H_five_halves_scaling_theorem_passes": true,
+    "top_Walsh_channel_coupling_passes": true
+  },
+  "route_decision": "Dense same-shell multiplicity is decisive: a unit-energy annular packet coherently feeds one fixed low traceless tensor and top-Walsh channel at the sharp H^(5/2) Bernstein rate. A parabolic H^(-2) lifetime leaves forcing L2 cost H^3 while Leray enstrophy cost stays O(1), so the raw tensor Duhamel norm cannot follow from Leray inputs alone. The route must now retain the equation-specific signed scalar local-energy structure, where the pressure-strain trace cancels, or discover temporal decorrelation forced by the actual Navier-Stokes evolution.",
+  "schema_version": 1,
+  "sharp_scaling_theorem": {
+    "all_checks_pass": true,
+    "coherent_triad_count_exponent": "6",
+    "conclusion": "The dense packet saturates the H^(3/2) Bernstein multiplicity beyond the sparse O(H) triad size. The sharp unit-energy tensor forcing is H^(5/2).",
+    "continuity_lower_bound": "The normalized trilinear symbol projected on T is continuous in the three wave directions and equals 12sqrt(43)>0 at (A,B,C). Therefore there is epsilon>0 such that every triad in epsilon-neighborhood boxes has channel at least 6sqrt(43) times the carrier and the same sign.",
+    "energy_normalization": "Unit L2 energy makes every bounded polarization coefficient O(M^(-3/2)).",
+    "lattice_construction": "Choose integer carrier R and M=floor(epsilon R/4). For offsets x,y in B_(M/2), z=-x-y lies in B_M, giving at least c M^6 positive triads. The six real-field clusters contain C M^3 modes.",
+    "lower_bound": "|<T,G_R(0)>|>=c R M^6 M^(-9/2)>=c_epsilon R^(5/2).",
+    "mode_count_exponent": "3",
+    "parabolic_enstrophy_cost_exponent": "0",
+    "parabolic_forcing_L2_cost_exponent": "3",
+    "sharp_forcing_exponent": "5/2",
+    "single_coefficient_exponent": "-3/2",
+    "upper_bound": "|G_R(0)|<=2||u_R||_2||grad p_R||_2<=C||u_R||_2||u_R||_infinity||grad u_R||_2<=C R^(5/2)||u_R||_2^3 by annular Bernstein."
+  },
+  "status": "sharp_dense_HHH_Bernstein_loss_certified_Leray_input_only_forcing_bound_falsified"
+}

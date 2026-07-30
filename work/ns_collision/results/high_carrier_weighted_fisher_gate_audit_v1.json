@@ -1,0 +1,273 @@
+{
+  "PDE_zero_face_packet_pilot": {
+    "all_checks_pass": true,
+    "construction": "A real three-carrier triad is multiplied by a peak-one three-dimensional Fejer window centered one packet width from the zero face of Phi=(-,+,+), then projected modewise onto divergence-free fields. Grid size 32N makes the cubic load integration alias free.",
+    "fitted_log_slopes": {
+      "intrinsic_Reynolds_proxy": 0.34749121193082455,
+      "normalizing_amplitude": 1.2625351197923111,
+      "unweighted_Fisher": 1.2029405677913476,
+      "weighted_Fisher": -0.28152324745481216
+    },
+    "interpretation": "This tests whether a strict high-pass divergence-free field and its actual Poisson pressure can carry a fixed compatible zero-face load while weighted and unweighted Fisher costs separate. Three small carriers diagnose the mechanism; they do not certify the limiting exponents.",
+    "predicted_full_concentration_slopes": {
+      "intrinsic_Reynolds_proxy": 0.3333333333333333,
+      "normalizing_amplitude": 1.3333333333333333,
+      "unweighted_Fisher": 1.6666666666666667,
+      "weighted_Fisher": -0.3333333333333333
+    },
+    "rows": [
+      {
+        "all_checks_pass": true,
+        "base_pressure_load": 0.0006977325383986082,
+        "grid_size": 64,
+        "intrinsic_Reynolds_proxy": 3.712706803535248,
+        "maximum_relative_divergence_residual": 4.965068306494546e-16,
+        "maximum_velocity_mode": 12.767145334803704,
+        "minimum_mode_over_order": 3.5,
+        "minimum_velocity_mode": 7.0,
+        "normalized_pressure_load": 0.9999999999999996,
+        "normalized_unweighted_Fisher": 864.7505809444531,
+        "normalized_velocity_L_infinity": 25.988947624746736,
+        "normalized_weighted_Fisher": 125.36562159790786,
+        "normalizing_amplitude": 11.274665721045599,
+        "order": 2,
+        "scope": "Alias-free finite-Fourier FFT pilot for the displayed Fejer-windowed carrier triad. Values are binary64 diagnostics, not interval enclosures or an asymptotic proof."
+      },
+      {
+        "all_checks_pass": true,
+        "base_pressure_load": 0.0001580927734616244,
+        "grid_size": 96,
+        "intrinsic_Reynolds_proxy": 4.228560328721285,
+        "maximum_relative_divergence_residual": 1.9860273225978177e-15,
+        "maximum_velocity_mode": 19.899748742132395,
+        "minimum_mode_over_order": 3.3333333333333335,
+        "minimum_velocity_mode": 10.0,
+        "normalized_pressure_load": 0.9999999999999994,
+        "normalized_unweighted_Fisher": 1282.4778627544858,
+        "normalized_velocity_L_infinity": 42.285603287212844,
+        "normalized_weighted_Fisher": 112.33375735294658,
+        "normalizing_amplitude": 18.493935012089107,
+        "order": 3,
+        "scope": "Alias-free finite-Fourier FFT pilot for the displayed Fejer-windowed carrier triad. Values are binary64 diagnostics, not interval enclosures or an asymptotic proof."
+      },
+      {
+        "all_checks_pass": true,
+        "base_pressure_load": 5.2027154993315825e-05,
+        "grid_size": 128,
+        "intrinsic_Reynolds_proxy": 4.6980096119780015,
+        "maximum_relative_divergence_residual": 1.779424813216141e-15,
+        "maximum_velocity_mode": 27.03701166919155,
+        "minimum_mode_over_order": 3.25,
+        "minimum_velocity_mode": 13.0,
+        "normalized_pressure_load": 0.9999999999999993,
+        "normalized_unweighted_Fisher": 1882.2171191424604,
+        "normalized_velocity_L_infinity": 61.07412495571402,
+        "normalized_weighted_Fisher": 103.51281057320465,
+        "normalizing_amplitude": 26.786952485871268,
+        "order": 4,
+        "scope": "Alias-free finite-Fourier FFT pilot for the displayed Fejer-windowed carrier triad. Values are binary64 diagnostics, not interval enclosures or an asymptotic proof."
+      },
+      {
+        "all_checks_pass": true,
+        "base_pressure_load": 2.167163379172456e-05,
+        "grid_size": 160,
+        "intrinsic_Reynolds_proxy": 5.104443067478397,
+        "maximum_relative_divergence_residual": 3.972054645195638e-15,
+        "maximum_velocity_mode": 34.17601498127013,
+        "minimum_mode_over_order": 3.2,
+        "minimum_velocity_mode": 16.0,
+        "normalized_pressure_load": 0.9999999999999994,
+        "normalized_unweighted_Fisher": 2612.6389233249038,
+        "normalized_velocity_L_infinity": 81.67108907965435,
+        "normalized_weighted_Fisher": 96.80226589057165,
+        "normalizing_amplitude": 35.86763835453291,
+        "order": 5,
+        "scope": "Alias-free finite-Fourier FFT pilot for the displayed Fejer-windowed carrier triad. Values are binary64 diagnostics, not interval enclosures or an asymptotic proof."
+      }
+    ]
+  },
+  "all_positive_checks_pass": true,
+  "assumption_scope": "Smooth periodic pure high-pass velocities for the rigorous unweighted theorem; an exact scalar/divergence-free shear packet for the support-only weighted no-go; symbolic zero-face concentration scaling; and a binary64 finite-Fourier pressure-packet pilot.",
+  "certification_flags": {
+    "Navier_Stokes_global_regularity_proved": false,
+    "PDE_pressure_packet_asymptotic_counterexample_proved": false,
+    "PDE_pressure_packet_mechanism_numerically_realized": true,
+    "critical_signed_bound_proved": false,
+    "exceptional_set_upgrade_proved": false,
+    "general_intrinsic_high_carrier_absorption_proved": false,
+    "global_quadratic_carrier_coercivity_proved": false,
+    "intrinsic_ratio_A_over_nuK_survives_scaling": true,
+    "low_regularity_passage_proved": false,
+    "mixed_low_high_velocity_remainder_controlled": false,
+    "pure_highpass_unweighted_H1_least_cost_linear_coercivity_proved": true,
+    "vertex_square_factor_highpass_mass_bridge_proved": true,
+    "vertex_zero_face_gradient_controlled_by_weighted_Fisher": true,
+    "weighted_Fisher_carrier_coercivity_from_support_alone": false,
+    "zero_face_uncertainty_mechanism_exactly_realized": true
+  },
+  "kind": "high_carrier_weighted_fisher_gate_audit",
+  "next_theorem_target": "Prove or falsify the remaining high-output commutator bound for T=Q_H R_iR_j: control psi_v T(u_i u_j) by ||u||_infinity times ||psi_v u|| plus a term bounded by ||u||_infinity/K times ||u grad psi_v||. Combined with the certified square-factor bridge, this would give floor-free pure-high-pass absorption for K>=C||u||_infinity/nu. Only then add mixed low/high paraproduct terms.",
+  "positive_checks": {
+    "PDE_zero_face_packet_pilot_passes": true,
+    "concentration_scaling_passes": true,
+    "square_factor_highpass_bridge_passes": true,
+    "unweighted_highpass_coercivity_passes": true,
+    "zero_face_uncertainty_packet_passes": true
+  },
+  "route_decision": "Use the rigorous linear carrier lower bound as the universal baseline; do not promote the explicit block family's quadratic growth globally without a separate proof. Do not transfer unweighted mass coercivity directly to a vertex weight: zero faces admit exact uncertainty packets with uniform weighted Dirichlet cost. Instead use the exact square-factor bridge, which controls psi_v u and u grad psi_v by vertex-weighted Fisher. The concentration calculation and actual pressure pilot preserve A/(nu K), so the remaining theorem is a high-output pressure multiplier commutator estimate at amplitude-relative carrier.",
+  "schema_version": 1,
+  "square_factor_highpass_bridge": {
+    "all_checks_pass": true,
+    "coercive_denominator": "-K*(-K + sqrt(3)*m)",
+    "eigenfunction_identity": "Delta psi_v,m=-(3m^2/4)psi_v,m",
+    "factorization": "Phi_v,m=psi_v,m^2, where each one-dimensional factor of psi is sin(mx_j/2) or cos(mx_j/2)",
+    "gradient_factor": "sqrt(1 + 3*m**2/(4*K*(K - sqrt(3)*m))) + 1",
+    "gradient_factor_at_K_equals_2sqrt3m": "1 + 3*sqrt(2)/4",
+    "ground_state_identity": "||grad(psi u)||_2^2=mean[Phi|grad u|^2]+(3m^2/4)||psi u||_2^2",
+    "half_lattice_support": "psi_hat is supported on the eight shifts (+/-m/2,+/-m/2,+/-m/2), each of magnitude sqrt(3)m/2",
+    "interpretation": "Zero faces can hide unweighted mass, but they do not hide the correctly weighted mass psi u from weighted Fisher once the velocity is spectrally separated. The remaining pure high-pass obstruction is the pressure multiplier commutator.",
+    "shifted_carrier_floor": "K - sqrt(3)*m/2",
+    "validity_threshold": "K>sqrt(3)m",
+    "weighted_Fisher_symbol": "E_v=mean[Phi_v,m|grad u|^2]",
+    "weighted_mass_symbol": "M_v=||psi_v,m u||_2^2",
+    "weighted_mass_upper_bound": "E_v/(K*(K - sqrt(3)*m))",
+    "weighted_zero_face_gradient_bound": "||u grad psi||_2<=[1+sqrt(1+(3m^2/4)/(K(K-sqrt(3)m)))]sqrt(E_v)"
+  },
+  "status": "highpass_linear_unweighted_and_square_factor_bridges_certified",
+  "unweighted_highpass_coercivity": {
+    "all_checks_pass": true,
+    "assumptions": "u is smooth, mean zero, divergence free on the normalized three-torus, and u_hat(k)=0 for |k|<K. Pressure is p=-R_iR_j(u_i u_j).",
+    "carrier_exponent_for_fixed_load": 1,
+    "enstrophy_lower_bound": "6**(2/3)*B**(2/3)*K/(3*C_R**(2/3)*C_S*m**(2/3))",
+    "highpass_interpolation_step": "||u||_3^3<=C_S^(3/2)K^(-3/2)||grad u||_2^3",
+    "holder_riesz_step": "|b_Phi|<=C_R||grad Phi||_infinity||u||_3^3",
+    "load": "b_Phi=mean[p u dot grad Phi]",
+    "load_upper_bound": "sqrt(3)*C_R*C_S**(3/2)*E**(3/2)*m/(2*K**(3/2))",
+    "scope": "This proves linear carrier coercivity for unweighted enstrophy of a pure high-pass velocity. It does not control vertex-weighted enstrophy and does not yet treat mixed low/high velocity interactions.",
+    "vertex_partition_gradient_bound": "||grad Phi_v,m||_infinity<=sqrt(3)m/2"
+  },
+  "zero_face_concentration_scaling": {
+    "all_checks_pass": true,
+    "generic_positive_weight_three_dimensional_fixed_load": "B**(2/3)/delta",
+    "interpretation": "Full three-dimensional concentration can make the weighted Fisher cost of a fixed zero-face load scale as delta^(1/3), while its unweighted Fisher cost grows as delta^(-5/3). This does not defeat an intrinsic threshold K comparable to A/nu: the adverse ratio is exactly A/(nu K).",
+    "intrinsic_ratio": "load/(nu weighted_Fisher)=A delta/nu=A/(nu K)",
+    "model": "A divergence-free band-limited packet of amplitude A and width delta is centered O(delta) from a quadratic zero face. It is localized in d coordinate directions.",
+    "rows": [
+      {
+        "fixed_load_amplitude": "B**(1/3)/delta**(2/3)",
+        "fixed_load_unweighted_Fisher": "B**(2/3)/delta**(7/3)",
+        "fixed_load_weighted_Fisher": "B**(2/3)/delta**(1/3)",
+        "fixed_load_weighted_delta_exponent": "-1/3",
+        "localized_dimensions": 1,
+        "pressure_to_weighted_Fisher_ratio": "A*delta/nu",
+        "unit_amplitude_load_scaling": "A**3*delta**2",
+        "unit_amplitude_weighted_Fisher_scaling": "A**2*delta"
+      },
+      {
+        "fixed_load_amplitude": "B**(1/3)/delta",
+        "fixed_load_unweighted_Fisher": "B**(2/3)/delta**2",
+        "fixed_load_weighted_Fisher": "B**(2/3)",
+        "fixed_load_weighted_delta_exponent": "0",
+        "localized_dimensions": 2,
+        "pressure_to_weighted_Fisher_ratio": "A*delta/nu",
+        "unit_amplitude_load_scaling": "A**3*delta**3",
+        "unit_amplitude_weighted_Fisher_scaling": "A**2*delta**2"
+      },
+      {
+        "fixed_load_amplitude": "B**(1/3)/delta**(4/3)",
+        "fixed_load_unweighted_Fisher": "B**(2/3)/delta**(5/3)",
+        "fixed_load_weighted_Fisher": "B**(2/3)*delta**(1/3)",
+        "fixed_load_weighted_delta_exponent": "1/3",
+        "localized_dimensions": 3,
+        "pressure_to_weighted_Fisher_ratio": "A*delta/nu",
+        "unit_amplitude_load_scaling": "A**3*delta**4",
+        "unit_amplitude_weighted_Fisher_scaling": "A**2*delta**3"
+      }
+    ]
+  },
+  "zero_face_uncertainty_packet": {
+    "all_checks_pass": true,
+    "conclusion": "A partition zero face can hide arbitrarily high Fourier carrier from vertex-weighted Fisher energy. Fourier support alone therefore cannot promote the unweighted carrier lower bound to a weighted one.",
+    "divergence_free_embedding": "For N>=2, u_N(x)=(0,sqrt(2) Re f_N(x_1),0) is real and divergence free; positive and negative frequency blocks do not couple through the frequency-one weight, so it has the same normalized weighted Dirichlet form. Its induced pressure is zero, making this a support-only weighted-coercivity no-go, not a pressure-load counterexample.",
+    "exact_difference_identity": "mean[phi_-|f_N'|^2]=(1/4)sum_k|d_k-d_(k-1)|^2, d_k=k f_hat_N(k)",
+    "maximum_weighted_Dirichlet": 5.85341578850057,
+    "packet": "f_N=sum_(j=1)^N sqrt(2/(N+1))sin(pi j/(N+1)) exp(i(N+j)x)",
+    "ratio_drop": 810.599158763048,
+    "rows": [
+      {
+        "L2_squared": 1.0,
+        "all_checks_pass": true,
+        "analytic_uniform_upper_bound": 38.859399610720004,
+        "carrier": 8,
+        "difference_form_Dirichlet": 5.026113775563731,
+        "maximum_mode": 16,
+        "minimum_mode": 9,
+        "unweighted_Dirichlet": 158.89235058146016,
+        "weighted_Dirichlet": 5.026113775563729,
+        "weighted_over_unweighted": 0.031632194735434827
+      },
+      {
+        "L2_squared": 1.0,
+        "all_checks_pass": true,
+        "analytic_uniform_upper_bound": 38.859399610720004,
+        "carrier": 16,
+        "difference_form_Dirichlet": 5.436319579705788,
+        "maximum_mode": 32,
+        "minimum_mode": 17,
+        "unweighted_Dirichlet": 609.6912777338973,
+        "weighted_Dirichlet": 5.436319579705753,
+        "weighted_over_unweighted": 0.008916511976211116
+      },
+      {
+        "L2_squared": 1.0,
+        "all_checks_pass": true,
+        "analytic_uniform_upper_bound": 38.859399610720004,
+        "carrier": 32,
+        "difference_form_Dirichlet": 5.655008250378971,
+        "maximum_mode": 64,
+        "minimum_mode": 33,
+        "unweighted_Dirichlet": 2387.8303129716824,
+        "weighted_Dirichlet": 5.655008250378842,
+        "weighted_over_unweighted": 0.0023682621916886206
+      },
+      {
+        "L2_squared": 1.0,
+        "all_checks_pass": true,
+        "analytic_uniform_upper_bound": 38.859399610720004,
+        "carrier": 64,
+        "difference_form_Dirichlet": 5.767606917734606,
+        "maximum_mode": 128,
+        "minimum_mode": 65,
+        "unweighted_Dirichlet": 9450.292254993312,
+        "weighted_Dirichlet": 5.767606917734156,
+        "weighted_over_unweighted": 0.0006103098996421712
+      },
+      {
+        "L2_squared": 1.0,
+        "all_checks_pass": true,
+        "analytic_uniform_upper_bound": 38.859399610720004,
+        "carrier": 128,
+        "difference_form_Dirichlet": 5.8246864140778225,
+        "maximum_mode": 256,
+        "minimum_mode": 129,
+        "unweighted_Dirichlet": 37599.957071732424,
+        "weighted_Dirichlet": 5.8246864140819525,
+        "weighted_over_unweighted": 0.00015491204957946455
+      },
+      {
+        "L2_squared": 1.0,
+        "all_checks_pass": true,
+        "analytic_uniform_upper_bound": 38.859399610720004,
+        "carrier": 256,
+        "difference_form_Dirichlet": 5.853415788507938,
+        "maximum_mode": 512,
+        "minimum_mode": 257,
+        "unweighted_Dirichlet": 149998.25189915588,
+        "weighted_Dirichlet": 5.85341578850057,
+        "weighted_over_unweighted": 3.90232267002407e-05
+      }
+    ],
+    "uniform_bound_proof": "The sine window vanishes at both spectral endpoints. |d_(k+1)-d_k| is at most sqrt(2/(N+1))(1+2pi), while the two endpoint terms are bounded by the same elementary sine estimate. Hence the displayed analytic bound is independent of N.",
+    "weight": "phi_-(x)=sin(x/2)^2"
+  }
+}

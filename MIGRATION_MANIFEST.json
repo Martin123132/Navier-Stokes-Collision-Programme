@@ -1,0 +1,88 @@
+{
+  "kind": "navier_stokes_workspace_migration_manifest",
+  "schema_version": 1,
+  "created_at": "2026-07-23T17:23:53+01:00",
+  "strategy": "additive_copy_then_owner_verified_source_checkpoint_removal",
+  "source_workspace": "C:\\Users\\ollet\\Documents\\Codex\\2026-07-03\\l",
+  "source_research_root": "C:\\Users\\ollet\\Documents\\Codex\\2026-07-03\\l\\work\\ns_collision",
+  "destination_workspace": "C:\\Users\\ollet\\Documents\\Codex\\2026-07-03\\navier-stokes",
+  "destination_research_root": "C:\\Users\\ollet\\Documents\\Codex\\2026-07-03\\navier-stokes\\work\\ns_collision",
+  "source_was_moved_or_deleted": false,
+  "rh_bookmark_was_edited_by_ns_task": false,
+  "source_snapshot": {
+    "file_count": 410,
+    "total_bytes": 461242314,
+    "tree_sha256": "3f0c4f87d6dcbc1bd61081b06f8ea7516c57b59b8a8a8e0f794665f4f328b70b",
+    "file_hash_manifest": "migration/SOURCE_TREE_SHA256.json",
+    "destination_evolution_allowed_after_split": true,
+    "research_resumed_at": "2026-07-23T18:21:00+01:00",
+    "initial_copy_validation_report": "migration/VALIDATION_REPORT.json"
+  },
+  "checkpoint_migration": {
+    "source_bookmark": "C:\\Users\\ollet\\Documents\\Codex\\2026-07-03\\l\\work\\rh_compute\\results\\session_bookmark.json",
+    "source_json_path": "parallel_research_checkpoints.ns_collision_fork",
+    "source_bookmark_sha256_at_copy": "854e39044ff369fab165bed3e0257ad45751e1755bbce329dc5c2a4a341e6e41",
+    "source_checkpoint_canonical_sha256": "53a19d5ed342fbd24d5bdb21e0c9dcf66c38a5bb53bcc93a312ac0c28036a3e1",
+    "standalone_bookmark": "work/ns_collision/results/session_bookmark.json",
+    "initial_checkpoint_archive": "migration/INITIAL_NS_CHECKPOINT.json",
+    "initial_checkpoint_archive_file_sha256": "1ecd41bf91ca31dc401755581944bc83001dd8579c7fe41c6359d190fff2d039",
+    "live_bookmark_evolution_allowed": true,
+    "source_checkpoint_fields": [
+      "checkpointed_at",
+      "status",
+      "codex_owned_processes_running",
+      "parked_calculation",
+      "sparse_inertia_parked_calculation",
+      "validated_checkpoint",
+      "principal_results",
+      "completed_obligations",
+      "unfinished_obligation",
+      "resume_command",
+      "next_action",
+      "primary_artifacts"
+    ],
+    "source_removal_owner": "RH task",
+    "source_removal_pending": false,
+    "source_removal_status": "acknowledged_complete",
+    "source_removal_acknowledged_at": "2026-07-23T17:29:43+01:00",
+    "rh_bookmark_sha256_after_removal": "6667ff494320e9159f7ad3a2639896b122e245280d94d61ed4a56175ca528eba",
+    "remaining_rh_values_semantically_equal": true,
+    "rh_active_ns_reference_count": 0,
+    "preserved_source_untouched": true
+  },
+  "path_compatibility": {
+    "preserved_prefix": "work/ns_collision",
+    "mass_path_rewrite_performed": false,
+    "runtime_dependencies_on_rh": []
+  },
+  "shared_foundations": [
+    {
+      "kind": "conceptual_provenance",
+      "path": "work/ns_collision/notes/replica_correlation_bridge.md",
+      "description": "Comparison with the zeta mechanism; copied into NS and not linked to RH files."
+    }
+  ],
+  "validation": {
+    "status": "pass",
+    "validated_at": "2026-07-23T17:30:13+01:00",
+    "report": "migration/VALIDATION_REPORT.json",
+    "report_sha256": "63bab48eda69312470ca106b2a1ed4f09b33ff7317e58dc99468014db2496a03",
+    "post_removal_rh_source_state": "removed_by_rh_owner",
+    "standalone_checkpoint_canonical_sha256": "53a19d5ed342fbd24d5bdb21e0c9dcf66c38a5bb53bcc93a312ac0c28036a3e1",
+    "standalone_bookmark_sha256_at_split": "a6e23f7bbca7e4f403e5c0efa269fa4caf3e0afb795256e2cf474b850e4d1efc",
+    "source_hash_mismatches": 0,
+    "destination_hash_mismatches": 0,
+    "declared_primary_artifacts": 163,
+    "missing_primary_artifacts": 0,
+    "json_files_parsed": 29,
+    "invalid_json_files": 0,
+    "python_files_compiled_in_memory": 126,
+    "focused_tests": {
+      "count": 5,
+      "runtime_seconds": 1.919,
+      "status": "pass"
+    },
+    "cross_workspace_runtime_references": [],
+    "reparse_points": []
+  }
+}

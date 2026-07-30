@@ -1,0 +1,611 @@
+{
+  "algorithm_revision": "annular-two-shear-square-gate-v1",
+  "all_route_guard_checks_pass": true,
+  "analytic_square_reduction": {
+    "combined_functional": "L_*=alpha[(C_z-C_y)+(C_x-C_y)]",
+    "component_tensor": "C_j=int |v_j|^2+2 int gamma_j*b_j, where gamma is the Euler second Taylor coefficient",
+    "continuum_sign_conclusion": "L_*=-(3*sqrt(2)/20)*||v_y||_2^2<0",
+    "covariance_argument": "M=int b tensor b=diag(m_x,0,m_z), m_z>0. For rho=t(0,1,1), (P_rho M rho)_y=-m_z*t/2. Since A(rho)=M+O(|rho|^2), v_y(t(0,1,1))=-m_z*t/2+O(t^3), so v_y is not identically zero.",
+    "energy_trace_identity": "C_x+C_y+C_z=0",
+    "exact_reduction": "L_*=-3*alpha*int |v_y|^2, alpha=sqrt(2)/20",
+    "missing_component_identity": "b_y=0 implies C_y=int |v_y|^2",
+    "static_load_reduction": "b_0,*=alpha[(E_y-E_z)+(E_y-E_x)]=-alpha*||b||_L2(D)^2<0",
+    "strict_nonvanishing_is_analytic": true
+  },
+  "certification": {
+    "fft_rows_are_replays_not_sign_evidence": true,
+    "low_stencil_matrix_exact_rational": true,
+    "modified_finite_c1_tail_ledger_ported": false,
+    "modified_finite_static_hhl_replayed": true,
+    "modified_finite_static_packet_defined": true,
+    "modified_first_and_second_jet_optimizer_ported": false,
+    "modified_four_high_continuum_sign_analytic": true,
+    "modified_profile_divergence_free_analytic": true,
+    "modified_static_continuum_sign_analytic": true,
+    "modified_static_limit_quantitative_remainder_ported": false,
+    "navier_stokes_clay_problem_solved": false,
+    "original_single_shear_interval_branch_superseded": false,
+    "strict_nonzero_analytic": true
+  },
+  "exact_low_stencil": {
+    "all_exact_stencil_checks_pass": true,
+    "checks": {
+      "combined_matrix_exact": true,
+      "combined_static_strain_exact": true,
+      "combined_stencil_count_exact": true,
+      "combined_stencil_l1_exact": true,
+      "each_low_direction_is_divergence_free": true,
+      "each_low_wave_has_even_coordinate_sum": true,
+      "fixed_output_matrix_is_negative_static_strain_over_20": true,
+      "maximum_radius_squared_exact": true,
+      "xy_matrix_exact": true,
+      "xy_static_strain_exact": true,
+      "yz_matrix_exact": true,
+      "yz_static_strain_exact": true
+    },
+    "combined_active_output_count": 58,
+    "combined_active_output_l1_before_dividing_by_sqrt2": "3",
+    "combined_actual_projector_matrix": "Q_*=(sqrt(2)/40) diag(1,-2,1)",
+    "combined_maximum_radius_squared": 6,
+    "combined_sqrt2_times_projector_matrix": [
+      [
+        "1/20",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "-1/10",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1/20"
+      ]
+    ],
+    "combined_static_strain_after_removing_sqrt2": [
+      [
+        "-1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "2",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "-1"
+      ]
+    ],
+    "exact_matrix_relation": "sqrt(2)*Q_*=-S_*/20",
+    "low_shears": [
+      {
+        "active_output_count": 36,
+        "actual_projector_matrix": "(sqrt(2)/40) diag(0,-1,1)",
+        "direction": "[0, 1, 1]/sqrt(2)",
+        "label": "yz_original",
+        "sqrt2_times_projector_matrix": [
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "-1/20",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1/20"
+          ]
+        ],
+        "static_strain_after_removing_sqrt2": [
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "-1"
+          ]
+        ],
+        "wave": [
+          0,
+          1,
+          -1
+        ]
+      },
+      {
+        "active_output_count": 36,
+        "actual_projector_matrix": "(sqrt(2)/40) diag(1,-1,0)",
+        "direction": "[-1, -1, 0]/sqrt(2)",
+        "label": "xy_sign_flipped",
+        "sqrt2_times_projector_matrix": [
+          [
+            "1/20",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "-1/20",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        "static_strain_after_removing_sqrt2": [
+          [
+            "-1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        "wave": [
+          1,
+          -1,
+          0
+        ]
+      }
+    ],
+    "phase": "sigma_q=(-1)^(q_x+q_y+q_z)",
+    "weight": "w_s=product_j(1/2 if s_j=0 else 1/4), s in {-1,0,1}^3"
+  },
+  "finite_static_packet_replay": {
+    "all_finite_static_rows_pass": true,
+    "continuum_reference_is_sign_replay_not_error_bound": true,
+    "packet_formula": "hhat_N(k)=parity*sine_N(k)*(k_x^2+k_y^2)/(k_x*|k|^3)*(-k_z,0,k_x)",
+    "positive_packet_continuum_reference_gauss80": -0.0014140889924061505,
+    "rows": [
+      {
+        "all_finite_static_checks_pass": true,
+        "coefficient_scale": "Theta(N^-1)",
+        "combined_pressure_hhl_load": -0.013203928828218822,
+        "combined_pressure_hhl_load_over_N": -0.002640785765643764,
+        "continuum_reference": -0.0014140889924061505,
+        "maximum_divergence_residual": 0.0,
+        "maximum_imaginary_residual": 0.0,
+        "normalized_error_from_reference": -0.0012266967732376137,
+        "parity_values": [
+          -1.0,
+          1.0
+        ],
+        "positive_mode_count": 125,
+        "size": 5,
+        "wave_box": {
+          "x": [
+            10,
+            14
+          ],
+          "y": [
+            -2,
+            2
+          ],
+          "z": [
+            -2,
+            2
+          ]
+        },
+        "xy_pressure_hhl_load": -0.00013878034165671726,
+        "yz_pressure_hhl_load": -0.013065148486562105
+      },
+      {
+        "all_finite_static_checks_pass": true,
+        "coefficient_scale": "Theta(N^-1)",
+        "combined_pressure_hhl_load": -0.018232642629311555,
+        "combined_pressure_hhl_load_over_N": -0.002025849181034617,
+        "continuum_reference": -0.0014140889924061505,
+        "maximum_divergence_residual": 1.3877787807814457e-17,
+        "maximum_imaginary_residual": 0.0,
+        "normalized_error_from_reference": -0.0006117601886284666,
+        "parity_values": [
+          -1.0,
+          1.0
+        ],
+        "positive_mode_count": 729,
+        "size": 9,
+        "wave_box": {
+          "x": [
+            18,
+            26
+          ],
+          "y": [
+            -4,
+            4
+          ],
+          "z": [
+            -4,
+            4
+          ]
+        },
+        "xy_pressure_hhl_load": -0.00013674297837079716,
+        "yz_pressure_hhl_load": -0.018095899650940758
+      },
+      {
+        "all_finite_static_checks_pass": true,
+        "coefficient_scale": "Theta(N^-1)",
+        "combined_pressure_hhl_load": -0.023668463173741352,
+        "combined_pressure_hhl_load_over_N": -0.0018206510133647194,
+        "continuum_reference": -0.0014140889924061505,
+        "maximum_divergence_residual": 1.3877787807814457e-17,
+        "maximum_imaginary_residual": 0.0,
+        "normalized_error_from_reference": -0.00040656202095856893,
+        "parity_values": [
+          -1.0,
+          1.0
+        ],
+        "positive_mode_count": 2197,
+        "size": 13,
+        "wave_box": {
+          "x": [
+            26,
+            38
+          ],
+          "y": [
+            -6,
+            6
+          ],
+          "z": [
+            -6,
+            6
+          ]
+        },
+        "xy_pressure_hhl_load": -0.0001567950730323171,
+        "yz_pressure_hhl_load": -0.023511668100709034
+      },
+      {
+        "all_finite_static_checks_pass": true,
+        "coefficient_scale": "Theta(N^-1)",
+        "combined_pressure_hhl_load": -0.029211053993782835,
+        "combined_pressure_hhl_load_over_N": -0.0017182972937519313,
+        "continuum_reference": -0.0014140889924061505,
+        "maximum_divergence_residual": 1.3877787807814457e-17,
+        "maximum_imaginary_residual": 0.0,
+        "normalized_error_from_reference": -0.00030420830134578083,
+        "parity_values": [
+          -1.0,
+          1.0
+        ],
+        "positive_mode_count": 4913,
+        "size": 17,
+        "wave_box": {
+          "x": [
+            34,
+            50
+          ],
+          "y": [
+            -8,
+            8
+          ],
+          "z": [
+            -8,
+            8
+          ]
+        },
+        "xy_pressure_hhl_load": -0.00018206317399649353,
+        "yz_pressure_hhl_load": -0.02902899081978634
+      },
+      {
+        "all_finite_static_checks_pass": true,
+        "coefficient_scale": "Theta(N^-1)",
+        "combined_pressure_hhl_load": -0.04040683690150691,
+        "combined_pressure_hhl_load_over_N": -0.0016162734760602766,
+        "continuum_reference": -0.0014140889924061505,
+        "maximum_divergence_residual": 1.3877787807814457e-17,
+        "maximum_imaginary_residual": 0.0,
+        "normalized_error_from_reference": -0.00020218448365412608,
+        "parity_values": [
+          -1.0,
+          1.0
+        ],
+        "positive_mode_count": 15625,
+        "size": 25,
+        "wave_box": {
+          "x": [
+            50,
+            74
+          ],
+          "y": [
+            -12,
+            12
+          ],
+          "z": [
+            -12,
+            12
+          ]
+        },
+        "xy_pressure_hhl_load": -0.00023742910276022475,
+        "yz_pressure_hhl_load": -0.04016940779874669
+      }
+    ]
+  },
+  "modified_high_profile": {
+    "even_extension_to_negative_domain": true,
+    "face_vanishing": true,
+    "formula": "b=S*(x^2+y^2)/(x*(x^2+y^2+z^2)^(3/2))*(-z,0,x)",
+    "middle_component_identically_zero": true,
+    "pointwise_divergence_identity": "xi dot b=(-x*z+x*z)*S*(x^2+y^2)/(x*r^3)=0",
+    "positive_domain": "D=[2,3]x[-1/2,1/2]^2",
+    "scalar": "S=sin(pi(x-2))*cos(pi*y)*cos(pi*z)",
+    "zero_extension": true,
+    "zero_extension_is_H1": true
+  },
+  "prerequisites": {
+    "fixed_output_gate": "work/ns_collision/results/annular_rho_zero_fixed_output_continuum_gate_audit_v1.json",
+    "fixed_output_gate_sha256": "6b29ef28146f86d87ba4eeb22de596083d8b18fa451394b5f3ade69b1353d072",
+    "full_c1_tail_ledger": "work/ns_collision/results/annular_rho_zero_full_c1_tail_ledger_audit_v1.json",
+    "full_c1_tail_ledger_sha256": "e8917ea3b781f72806bd2b560ccf65058027bb34bb15d997375a9d237020d773"
+  },
+  "remaining_obligation": "Port the finite packet definition, static optimizer, full c1 tail ledger, and parabolic-window bounds to the modified divergence-free profile and two-mode low field. The exact continuum sign no longer needs interval quadrature on this branch, but all finite-N and time-window estimates must be rechecked before it can replace the original witness.",
+  "rows": [
+    {
+      "acceleration_pair_components": [
+        -3.5755729364343866e-08,
+        0.0,
+        -2.973613367801709e-06
+      ],
+      "all_numerical_checks_pass": true,
+      "combined_fixed_output_functional": -2.7254181695245514e-07,
+      "component_energy_curvatures": [
+        1.2069354242390278e-06,
+        1.2847744461598917e-06,
+        -2.49170987039892e-06
+      ],
+      "covariance_matrix": [
+        [
+          0.00021045776655835444,
+          0.0,
+          -6.331810886122682e-22
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          -6.331810886122682e-22,
+          0.0,
+          0.0397857903726435
+        ]
+      ],
+      "energy_trace_relative_residual": 8.470329472543003e-22,
+      "functional_replay_error": 5.293955920339377e-23,
+      "grid_shape": [
+        98,
+        18,
+        18
+      ],
+      "maximum_profile_y_component": 0.0,
+      "maximum_sample_divergence": 6.938893903907228e-18,
+      "maximum_spectral_divergence": 1.1102230246251565e-16,
+      "near_zero_nonvanishing_replay": {
+        "absolute_residual": 0.0005151737370939131,
+        "leading_velocity": [
+          -7.914763607653353e-23,
+          -0.002486611898290219,
+          0.002486611898290219
+        ],
+        "leading_y_component_negative": true,
+        "quadrature_velocity": [
+          -1.147971781663586e-21,
+          -0.0021223290553018972,
+          0.0021223290553018972
+        ],
+        "quadrature_y_component_negative": true,
+        "rho": [
+          0.0,
+          0.125,
+          0.125
+        ]
+      },
+      "negative_square_replay": -2.725418169524551e-07,
+      "positive_packet_profile_energy_components": [
+        0.00010522888327917723,
+        0.0,
+        0.019892895186321743
+      ],
+      "profile_formula": "b=S*(x^2+y^2)/(x*r^3)*(-z,0,x)",
+      "size": 8,
+      "static_combined": -0.0014140809140624727,
+      "static_negative_norm_replay": -0.0014140809140624727,
+      "static_replay_error": 0.0,
+      "static_xy_shear": -7.440805694339392e-06,
+      "static_yz_shear": -0.0014066401083681333,
+      "velocity_energy_components": [
+        1.2784468829677156e-06,
+        1.2847744461598917e-06,
+        3.455516865204498e-06
+      ],
+      "xy_fixed_output_functional": -5.504050024117114e-09,
+      "yz_fixed_output_functional": -2.6703776692833804e-07
+    },
+    {
+      "acceleration_pair_components": [
+        -4.119703987225182e-08,
+        0.0,
+        -3.2572616797557242e-06
+      ],
+      "all_numerical_checks_pass": true,
+      "combined_fixed_output_functional": -2.982757380401352e-07,
+      "component_energy_curvatures": [
+        1.3172728405032253e-06,
+        1.406085313544012e-06,
+        -2.7233581540472387e-06
+      ],
+      "covariance_matrix": [
+        [
+          0.00021089142610992629,
+          0.0,
+          -1.249373597200093e-20
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          -1.249373597200093e-20,
+          0.0,
+          0.03978557064735049
+        ]
+      ],
+      "energy_trace_relative_residual": 1.6940658945086007e-21,
+      "functional_replay_error": 1.0587911840678754e-22,
+      "grid_shape": [
+        196,
+        33,
+        33
+      ],
+      "maximum_profile_y_component": 0.0,
+      "maximum_sample_divergence": 1.3877787807814457e-17,
+      "maximum_spectral_divergence": 4.440892098500626e-16,
+      "near_zero_nonvanishing_replay": {
+        "absolute_residual": 6.69487267873759e-05,
+        "leading_velocity": [
+          -7.808584982500581e-22,
+          -0.0012432990827297029,
+          0.0012432990827297029
+        ],
+        "leading_y_component_negative": true,
+        "quadrature_velocity": [
+          1.900198650011787e-21,
+          -0.001195959184026544,
+          0.001195959184026544
+        ],
+        "quadrature_y_component_negative": true,
+        "rho": [
+          0.0,
+          0.0625,
+          0.0625
+        ]
+      },
+      "negative_square_replay": -2.982757380401351e-07,
+      "positive_packet_profile_energy_components": [
+        0.00010544571305496313,
+        0.0,
+        0.019892785323675236
+      ],
+      "profile_formula": "b=S*(x^2+y^2)/(x*r^3)*(-z,0,x)",
+      "size": 16,
+      "static_combined": -0.0014140884777807203,
+      "static_negative_norm_replay": -0.0014140884777807203,
+      "static_replay_error": 0.0,
+      "static_xy_shear": -7.456137874821529e-06,
+      "static_yz_shear": -0.0014066323399058989,
+      "velocity_energy_components": [
+        1.399666920247729e-06,
+        1.406085313544012e-06,
+        3.7911652054642097e-06
+      ],
+      "xy_fixed_output_functional": -6.27999019410877e-09,
+      "yz_fixed_output_functional": -2.9199574784602646e-07
+    },
+    {
+      "acceleration_pair_components": [
+        -4.263630261152672e-08,
+        0.0,
+        -3.3312516448400624e-06
+      ],
+      "all_numerical_checks_pass": true,
+      "combined_fixed_output_functional": -3.050326849524017e-07,
+      "component_energy_curvatures": [
+        1.3462209089312638e-06,
+        1.4379378667558864e-06,
+        -2.784158775687151e-06
+      ],
+      "covariance_matrix": [
+        [
+          0.00021091789595151356,
+          0.0,
+          -6.819897355346575e-21
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          -6.819897355346575e-21,
+          0.0,
+          0.039785557819484986
+        ]
+      ],
+      "energy_trace_relative_residual": 8.470329472543003e-22,
+      "functional_replay_error": 5.293955920339377e-23,
+      "grid_shape": [
+        385,
+        66,
+        66
+      ],
+      "maximum_profile_y_component": 0.0,
+      "maximum_sample_divergence": 1.3877787807814457e-17,
+      "maximum_spectral_divergence": 6.661338147750939e-16,
+      "near_zero_nonvanishing_replay": {
+        "absolute_residual": 8.449914997170395e-06,
+        "leading_velocity": [
+          -2.1312179235458047e-22,
+          -0.0006216493409294529,
+          0.0006216493409294529
+        ],
+        "leading_y_component_negative": true,
+        "quadrature_velocity": [
+          2.3327826278667397e-22,
+          -0.0006156743487345038,
+          0.0006156743487345038
+        ],
+        "quadrature_y_component_negative": true,
+        "rho": [
+          0.0,
+          0.03125,
+          0.03125
+        ]
+      },
+      "negative_square_replay": -3.0503268495240164e-07,
+      "positive_packet_profile_energy_components": [
+        0.00010545894797575687,
+        0.0,
+        0.019892778909742503
+      ],
+      "profile_formula": "b=S*(x^2+y^2)/(x*r^3)*(-z,0,x)",
+      "size": 32,
+      "static_combined": -0.0014140889600974117,
+      "static_negative_norm_replay": -0.0014140889600974117,
+      "static_replay_error": 0.0,
+      "static_xy_shear": -7.457073725045701e-06,
+      "static_yz_shear": -0.001406631886372366,
+      "velocity_energy_components": [
+        1.4314935141543173e-06,
+        1.4379378667558864e-06,
+        3.878344513992974e-06
+      ],
+      "xy_fixed_output_functional": -6.485368282759128e-09,
+      "yz_fixed_output_functional": -2.985473166696426e-07
+    }
+  ]
+}

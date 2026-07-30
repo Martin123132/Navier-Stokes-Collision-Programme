@@ -1,0 +1,191 @@
+{
+  "algorithm_revision": "annular-two-shear-full-c1-port-v1",
+  "all_port_checks_pass": true,
+  "certification": {
+    "Navier_Stokes_global_regularity_proved": false,
+    "critical_L3_controlled": false,
+    "finite_time_blowup_proved": false,
+    "modified_complete_second_jet_ported": false,
+    "modified_first_jet_ported": false,
+    "modified_fixed_output_convergence_proved": true,
+    "modified_full_c1_limit_negative_certified": true,
+    "modified_full_c1_over_N7_convergence_proved": true,
+    "modified_full_c1_tail_ledger_ported": true,
+    "modified_packet_first_difference_certified": true,
+    "modified_parabolic_window_closed": false,
+    "modified_static_optimizer_ported": false,
+    "original_single_shear_L_EE_sign_certified": false
+  },
+  "finite_first_difference_replay": {
+    "all_replay_checks_pass": true,
+    "analytic_bound": "|Delta_j[parity*hhat_*,N]|<4/N^2",
+    "replay_is_not_source_of_analytic_bound": true,
+    "rows": [
+      {
+        "N2_times_maximum_first_difference_by_axis": [
+          1.2499999999999998,
+          1.027493670658483,
+          1.0135135135135132
+        ],
+        "checks_pass": true,
+        "maximum_divergence_residual": 0.0,
+        "maximum_scaled_first_difference": 1.2499999999999998,
+        "size": 5
+      },
+      {
+        "N2_times_maximum_first_difference_by_axis": [
+          1.390576474687263,
+          1.1193924691125854,
+          1.1013365679523128
+        ],
+        "checks_pass": true,
+        "maximum_divergence_residual": 1.3877787807814457e-17,
+        "maximum_scaled_first_difference": 1.390576474687263,
+        "size": 9
+      },
+      {
+        "N2_times_maximum_first_difference_by_axis": [
+          1.476009510168908,
+          1.1831009854231196,
+          1.1612024866091257
+        ],
+        "checks_pass": true,
+        "maximum_divergence_residual": 1.3877787807814457e-17,
+        "maximum_scaled_first_difference": 1.476009510168908,
+        "size": 17
+      },
+      {
+        "N2_times_maximum_first_difference_by_axis": [
+          1.5224279311444826,
+          1.2117902258335767,
+          1.1896604485814883
+        ],
+        "checks_pass": true,
+        "maximum_divergence_residual": 1.3877787807814457e-17,
+        "maximum_scaled_first_difference": 1.5224279311444826,
+        "size": 33
+      }
+    ]
+  },
+  "fixed_output_convergence_port": {
+    "all_fixed_output_port_checks_pass": true,
+    "checks": {
+      "new_active_output_set_is_finite": true,
+      "new_continuum_limit_is_strictly_nonzero": true,
+      "new_continuum_sign_is_exact": true,
+      "new_profile_converges_in_L1_and_L2": true,
+      "new_projector_matrix_is_exact": true,
+      "old_fixed_output_continuity_theorem_passed": true
+    },
+    "conclusion": "D_*,N/N^7 -> L_*",
+    "operator_continuity": "For supports of radii R_f,R_g and p in {1,2}, ||B_c(f,g)||_p <= (R_f+R_g)/2 [||f||_1||g||_p+||g||_1||f||_p].",
+    "profile_error_bound": "||b_N-b||_1+||b_N-b||_2<=256/N",
+    "translation_error": "The 58 fixed output shifts are q/N with |q|<=sqrt(6); translation continuity of compact H1 profiles makes each shifted bilinear/cubic convolution converge."
+  },
+  "full_limit_certificate": {
+    "all_full_limit_checks_pass": true,
+    "checks": {
+      "new_active_output_set_is_finite": true,
+      "new_continuum_limit_is_strictly_nonzero": true,
+      "new_continuum_sign_is_exact": true,
+      "new_profile_converges_in_L1_and_L2": true,
+      "new_projector_matrix_is_exact": true,
+      "old_fixed_output_continuity_theorem_passed": true,
+      "ported_tail_is_o_N7": true
+    },
+    "conclusion": "c1_*,N/N^7 -> L_*<0",
+    "continuum_identity": "L_*=-(3*sqrt(2)/20)*||v_y||_2^2<0",
+    "fixed_output_limit": "D_*,N/N^7 -> L_*",
+    "normalized_tail_inequality": "|c1_*,N-D_*,N|/N^7<=70657920/N",
+    "tail_inequality": "|c1_*,N-D_*,N|<=70657920*N^6 for odd N>=5"
+  },
+  "modified_packet_multiplier_certificate": {
+    "all_multiplier_checks_pass": true,
+    "boundary_argument": "The packet sine is at most pi/N on an adjacent boundary cell, so the same one-difference bound holds for the zero extension.",
+    "certified_multiplier_derivative_bound": "|partial_j m_*|<6/|k|^2<=3/(2N^2)",
+    "certified_packet_first_difference": "|Delta_j[(-1)^sum(k) hhat_*,N(k)]|<4/N^2",
+    "checks": {
+      "angular_radius_bound": true,
+      "combined_profile_error_below_256": true,
+      "explicit_vector_derivative_below_six": true,
+      "first_difference_below_four": true,
+      "raw_pointwise_error_below_rounded_constant": true
+    },
+    "continuum_profile_approximation": {
+      "certified_bound": "epsilon_N=||b_N-b||_1+||b_N-b||_2<=256/N",
+      "coordinate_lipschitz_constant": 3.0707963267948966,
+      "derived_L1_plus_L2_error_constant": 150.0,
+      "euclidean_lipschitz_constant": 5.318775257704642,
+      "raw_pointwise_error_constant": 11.16942804117975,
+      "rounded_pointwise_error_constant": 25.0,
+      "sample_plus_cell_displacement_over_h": 2.1,
+      "support_union_volume_bound": 4.0
+    },
+    "derived_first_difference_constant": 3.0707963267948966,
+    "homogeneity": "-1",
+    "m_x_coordinate_derivative_constants": [
+      1.5151650429449552,
+      1.25,
+      1.8106601717798212
+    ],
+    "m_z_coordinate_derivative_constants": [
+      5.0,
+      5.0,
+      3.0
+    ],
+    "maximum_vector_coordinate_derivative_constant": 5.224531089711534,
+    "multiplier": "m_*(k)=(k_x^2+k_y^2)/(k_x*|k|^3)*(-k_z,0,k_x)",
+    "radius_over_x_bound": "r/k_x<=sqrt(9/8)",
+    "size_bound": "|m_*(k)|<=(k_x^2+k_y^2)|k|/(k_x|k|^3)<=1/k_x<=1/(2N)",
+    "transverse_ratio_bound": "|k_y|/k_x,|k_z|/k_x<=1/4",
+    "vector_coordinate_derivative_constants": [
+      5.224531089711534,
+      5.153882032022076,
+      3.504067673100754
+    ]
+  },
+  "prerequisites": {
+    "original_fixed_output_gate": "work/ns_collision/results/annular_rho_zero_fixed_output_continuum_gate_audit_v1.json",
+    "original_fixed_output_gate_sha256": "6b29ef28146f86d87ba4eeb22de596083d8b18fa451394b5f3ade69b1353d072",
+    "original_full_c1_tail_ledger": "work/ns_collision/results/annular_rho_zero_full_c1_tail_ledger_audit_v1.json",
+    "original_full_c1_tail_ledger_sha256": "e8917ea3b781f72806bd2b560ccf65058027bb34bb15d997375a9d237020d773",
+    "two_shear_square_gate": "work/ns_collision/results/annular_two_shear_square_gate_audit_v1.json",
+    "two_shear_square_gate_sha256": "7aca1d4c57ce970db5872979449368e65fb6add48c4ccd39b8f875cc1669f923"
+  },
+  "remaining_obligation": "The modified amplitude-one four-high coefficient now has a strictly negative N7 limit. Port the static joint optimizer and complete first/second jet finite formulas to the two-mode low field, then establish the uniform Taylor and parabolic window estimates. No singularity or regularity conclusion follows from the coefficient limit alone.",
+  "two_shear_tail_port_certificate": {
+    "all_tail_port_checks_pass": true,
+    "atomic_coefficient_mass": 94,
+    "checks": {
+      "atomic_coefficient_mass_retained": true,
+      "both_new_low_directions_are_divergence_free": true,
+      "both_new_low_waves_are_even": true,
+      "combined_stencil_l1_doubles": true,
+      "every_structural_profile_is_linear_in_low_field": true,
+      "fourteen_rows_retained": true,
+      "new_per_atomic_constant_is_exact_double": true,
+      "new_tail_constant_is_exact_double": true,
+      "old_per_atomic_constant_replayed": true,
+      "old_tail_constant_replayed": true,
+      "predecessor_tail_passed": true
+    },
+    "constant_multiplier": 2,
+    "linearity": "The amplitude-one coefficient contains exactly one low leaf in every one of the fourteen structural profiles. Therefore c1[U_yz+U_xy]=c1[U_yz]+c1[U_xy].",
+    "new_low_fourier_l1": 4,
+    "new_per_atomic_constant": 751680,
+    "new_tail_constant": 70657920,
+    "old_low_fourier_l1": 2,
+    "old_per_atomic_constant": 375840,
+    "old_tail_constant": 35328960,
+    "portable_hypotheses": [
+      "each low wave has even coordinate sum",
+      "each low wave has squared radius 2",
+      "each normalized low direction is divergence free",
+      "the low support is finite and has doubled Fourier l1 mass",
+      "the high support radius and mode count are unchanged",
+      "the high coefficient and first-difference bounds are unchanged",
+      "the degree-zero outer projector is held fixed in every tail row"
+    ],
+    "ported_tail_inequality": "|c1_*,N-D_*,N|<=70657920*N^6 for odd N>=5"
+  }
+}

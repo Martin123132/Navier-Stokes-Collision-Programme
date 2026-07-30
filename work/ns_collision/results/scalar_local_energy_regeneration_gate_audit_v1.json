@@ -1,0 +1,739 @@
+{
+  "all_positive_checks_pass": true,
+  "central_complete_quartic_symbol": {
+    "all_checks_pass": true,
+    "carriers": [
+      16,
+      32,
+      64,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "complete_errors_strictly_decrease": true,
+    "exact_limit": "3*sqrt(2)/16",
+    "last_complete_relative_error": 1.66892615053705e-05,
+    "leading_identity": "At zero low wave the cross pressure vanishes, linearized sweeping has zero mean because A+B+C=0, and the complete differentiated HHL flux is G_HHH U_low. Since r^T G_HHH U_low=-6sqrt(2)H and the real Fourier pair supplies the partition factor -2/64, the load/H tends to 3sqrt(2)/16.",
+    "numeric_limit": 0.26516504294495535,
+    "rows": [
+      {
+        "all_values_finite": true,
+        "carrier": 16,
+        "complete_load_over_carrier": 0.2831146802859057,
+        "complete_minus_stress_over_carrier": 0.01794963734095023,
+        "complete_real_quartet_vertex_load": 4.529834884574491,
+        "component_real_quartet_vertex_loads": {
+          "complete": 4.529834884574491,
+          "high_velocity_evolution": 4.330331904575107,
+          "kinetic_flux": 4.342788776576938,
+          "kinetic_flux_pressure_dynamics": 4.342788776576938,
+          "kinetic_flux_transport_dynamics": -8.881784197001252e-16,
+          "linearized_low_velocity_evolution": 0.19950297999937483,
+          "pressure_flux": 0.18704610799755272,
+          "pressure_flux_pressure_dynamics": -58.368123533458025,
+          "pressure_flux_transport_dynamics": 58.55516964145558
+        },
+        "exact_limiting_real_quartet_load_over_carrier": "3*sqrt(2)/16",
+        "numeric_limiting_real_quartet_load_over_carrier": 0.26516504294495535,
+        "stress_load_over_carrier": 0.26516504294495546,
+        "stress_regeneration_vertex_load": 4.242640687119287
+      },
+      {
+        "all_values_finite": true,
+        "carrier": 32,
+        "complete_load_over_carrier": 0.26968576782398923,
+        "complete_minus_stress_over_carrier": 0.004520724879033766,
+        "complete_real_quartet_vertex_load": 8.629944570367655,
+        "component_real_quartet_vertex_loads": {
+          "complete": 8.629944570367655,
+          "high_velocity_evolution": 8.529389021734744,
+          "kinetic_flux": 8.537157364025191,
+          "kinetic_flux_pressure_dynamics": 8.537157364025191,
+          "kinetic_flux_transport_dynamics": 8.881784197001252e-15,
+          "linearized_low_velocity_evolution": 0.10055554863293148,
+          "pressure_flux": 0.0927872063424644,
+          "pressure_flux_pressure_dynamics": -118.28000079917176,
+          "pressure_flux_transport_dynamics": 118.37278800551422
+        },
+        "exact_limiting_real_quartet_load_over_carrier": "3*sqrt(2)/16",
+        "numeric_limiting_real_quartet_load_over_carrier": 0.26516504294495535,
+        "stress_load_over_carrier": 0.26516504294495546,
+        "stress_regeneration_vertex_load": 8.485281374238575
+      },
+      {
+        "all_values_finite": true,
+        "carrier": 64,
+        "complete_load_over_carrier": 0.2662972711244185,
+        "complete_minus_stress_over_carrier": 0.001132228179463013,
+        "complete_real_quartet_vertex_load": 17.043025351962783,
+        "component_real_quartet_vertex_loads": {
+          "complete": 17.043025351962783,
+          "high_velocity_evolution": 16.992649039219557,
+          "kinetic_flux": 16.996727373823134,
+          "kinetic_flux_pressure_dynamics": 16.99672737382315,
+          "kinetic_flux_transport_dynamics": 0.0,
+          "linearized_low_velocity_evolution": 0.05037631274319887,
+          "pressure_flux": 0.04629797813964842,
+          "pressure_flux_pressure_dynamics": -237.3309767332312,
+          "pressure_flux_transport_dynamics": 237.37727471137083
+        },
+        "exact_limiting_real_quartet_load_over_carrier": "3*sqrt(2)/16",
+        "numeric_limiting_real_quartet_load_over_carrier": 0.26516504294495535,
+        "stress_load_over_carrier": 0.26516504294495546,
+        "stress_regeneration_vertex_load": 16.97056274847715
+      },
+      {
+        "all_values_finite": true,
+        "carrier": 128,
+        "complete_load_over_carrier": 0.2654482273605119,
+        "complete_minus_stress_over_carrier": 0.0002831844155564145,
+        "complete_real_quartet_vertex_load": 33.97737310214552,
+        "component_real_quartet_vertex_loads": {
+          "complete": 33.97737310214552,
+          "high_velocity_evolution": 33.95217269150544,
+          "kinetic_flux": 33.954236181289616,
+          "kinetic_flux_pressure_dynamics": 33.954236181289616,
+          "kinetic_flux_transport_dynamics": 0.0,
+          "linearized_low_velocity_evolution": 0.025200410640072057,
+          "pressure_flux": 0.023136920855904464,
+          "pressure_flux_pressure_dynamics": -475.0473147363955,
+          "pressure_flux_transport_dynamics": 475.07045165725145
+        },
+        "exact_limiting_real_quartet_load_over_carrier": "3*sqrt(2)/16",
+        "numeric_limiting_real_quartet_load_over_carrier": 0.26516504294495535,
+        "stress_load_over_carrier": 0.26516504294495546,
+        "stress_regeneration_vertex_load": 33.9411254969543
+      },
+      {
+        "all_values_finite": true,
+        "carrier": 256,
+        "complete_load_over_carrier": 0.26523584700064373,
+        "complete_minus_stress_over_carrier": 7.08040556882672e-05,
+        "complete_real_quartet_vertex_load": 67.9003768321648,
+        "component_real_quartet_vertex_loads": {
+          "complete": 67.9003768321648,
+          "high_velocity_evolution": 67.887775097043,
+          "kinetic_flux": 67.88880988386933,
+          "kinetic_flux_pressure_dynamics": 67.88880988386933,
+          "kinetic_flux_transport_dynamics": -4.263256414560601e-14,
+          "linearized_low_velocity_evolution": 0.01260173512184748,
+          "pressure_flux": 0.011566948295467228,
+          "pressure_flux_pressure_dynamics": -950.2872938925163,
+          "pressure_flux_transport_dynamics": 950.2988608408118
+        },
+        "exact_limiting_real_quartet_load_over_carrier": "3*sqrt(2)/16",
+        "numeric_limiting_real_quartet_load_over_carrier": 0.26516504294495535,
+        "stress_load_over_carrier": 0.26516504294495546,
+        "stress_regeneration_vertex_load": 67.8822509939086
+      },
+      {
+        "all_values_finite": true,
+        "carrier": 512,
+        "complete_load_over_carrier": 0.2651827444557253,
+        "complete_minus_stress_over_carrier": 1.7701510769851936e-05,
+        "complete_real_quartet_vertex_load": 135.77356516133136,
+        "component_real_quartet_vertex_loads": {
+          "complete": 135.77356516133136,
+          "high_velocity_evolution": 135.76726410260756,
+          "kinetic_flux": 135.76778187631362,
+          "kinetic_flux_pressure_dynamics": 135.76778187631362,
+          "kinetic_flux_transport_dynamics": 2.842170943040401e-14,
+          "linearized_low_velocity_evolution": 0.006301058724006214,
+          "pressure_flux": 0.005783285017741946,
+          "pressure_flux_pressure_dynamics": -1900.670917954586,
+          "pressure_flux_transport_dynamics": 1900.6767012396037
+        },
+        "exact_limiting_real_quartet_load_over_carrier": "3*sqrt(2)/16",
+        "numeric_limiting_real_quartet_load_over_carrier": 0.26516504294495535,
+        "stress_load_over_carrier": 0.26516504294495546,
+        "stress_regeneration_vertex_load": 135.7645019878172
+      },
+      {
+        "all_values_finite": true,
+        "carrier": 1024,
+        "complete_load_over_carrier": 0.26516946835369914,
+        "complete_minus_stress_over_carrier": 4.425408743680137e-06,
+        "complete_real_quartet_vertex_load": 271.5335355941879,
+        "component_real_quartet_vertex_loads": {
+          "complete": 271.5335355941879,
+          "high_velocity_evolution": 271.53038504093206,
+          "kinetic_flux": 271.5306439753235,
+          "kinetic_flux_pressure_dynamics": 271.5306439753235,
+          "kinetic_flux_transport_dynamics": 2.2737367544323206e-13,
+          "linearized_low_velocity_evolution": 0.0031505532558004923,
+          "pressure_flux": 0.0028916188643961505,
+          "pressure_flux_pressure_dynamics": -3801.3900007384896,
+          "pressure_flux_transport_dynamics": 3801.392892357355
+        },
+        "exact_limiting_real_quartet_load_over_carrier": "3*sqrt(2)/16",
+        "numeric_limiting_real_quartet_load_over_carrier": 0.26516504294495535,
+        "stress_load_over_carrier": 0.26516504294495546,
+        "stress_regeneration_vertex_load": 271.5290039756344
+      }
+    ],
+    "stress_prediction_is_exactly_at_limit": true
+  },
+  "certification_flags": {
+    "Leray_control_of_weighted_HHH_forcing_proved": true,
+    "Navier_Stokes_global_regularity_proved": false,
+    "all_kinetic_and_pressure_quartic_terms_included": true,
+    "complete_HHL_transfer_time_derivative_derived": true,
+    "complete_differentiated_HHL_H_five_halves_survives": true,
+    "full_nonlinear_shell_response_closed": false,
+    "linearized_low_velocity_evolution_included": true,
+    "ordinary_scalar_local_energy_trace_removes_H_five_halves": true,
+    "pure_top_Walsh_frequency_isolated": true,
+    "sharp_shell_negative_three_halves_forcing_norm_proved": true,
+    "suitable_weak_solution_passage_proved": false
+  },
+  "dense_spaced_packet": {
+    "all_checks_pass": true,
+    "all_coherent_quartets_have_positive_selected_load": true,
+    "carrier_multiple_relative_to_box_width": 32,
+    "coherent_coefficient_target": 0.13258252147247768,
+    "exact_mode_count": "6(2M+1)^3 high modes plus two low modes",
+    "exact_triad_count": "(3M^2+3M+1)^3",
+    "last_coherent_coefficient_relative_error": 0.01155716337255107,
+    "offset_spacing": 4,
+    "radii": [
+      1,
+      2,
+      3
+    ],
+    "rows": [
+      {
+        "all_checks_pass": true,
+        "box_radius": 1,
+        "carrier": 128,
+        "carrier_multiple_relative_to_box_width": 32,
+        "coherent_count_normalized_complete_coefficient": 0.13033835189265122,
+        "coherent_count_normalized_stress_coefficient": 0.13021684465502273,
+        "complete_load_over_H_five_halves": 8.567653844013996e-07,
+        "complete_minus_stress_load": 0.00014805284531119178,
+        "complete_top_Walsh_vertex_load": 0.158813287401686,
+        "component_top_Walsh_vertex_loads": {
+          "complete": 0.158813287401686,
+          "high_velocity_evolution": 0.1587175524421227,
+          "kinetic_flux": 0.1587521812996141,
+          "kinetic_flux_pressure_dynamics": 0.1587806801991951,
+          "kinetic_flux_transport_dynamics": -2.8498899581020837e-05,
+          "linearized_low_velocity_evolution": 9.573495956236399e-05,
+          "pressure_flux": 6.11061020714741e-05,
+          "pressure_flux_pressure_dynamics": -2.255772239072274,
+          "pressure_flux_transport_dynamics": 2.255833345174342
+        },
+        "eight_vertex_loads": [
+          {
+            "Walsh_character": -1,
+            "load": -0.158813287401686,
+            "vertex": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          {
+            "Walsh_character": 1,
+            "load": 0.158813287401686,
+            "vertex": [
+              -1,
+              -1,
+              1
+            ]
+          },
+          {
+            "Walsh_character": 1,
+            "load": 0.158813287401686,
+            "vertex": [
+              -1,
+              1,
+              -1
+            ]
+          },
+          {
+            "Walsh_character": -1,
+            "load": -0.158813287401686,
+            "vertex": [
+              -1,
+              1,
+              1
+            ]
+          },
+          {
+            "Walsh_character": 1,
+            "load": 0.158813287401686,
+            "vertex": [
+              1,
+              -1,
+              -1
+            ]
+          },
+          {
+            "Walsh_character": -1,
+            "load": -0.158813287401686,
+            "vertex": [
+              1,
+              -1,
+              1
+            ]
+          },
+          {
+            "Walsh_character": -1,
+            "load": -0.158813287401686,
+            "vertex": [
+              1,
+              1,
+              -1
+            ]
+          },
+          {
+            "Walsh_character": 1,
+            "load": 0.158813287401686,
+            "vertex": [
+              1,
+              1,
+              1
+            ]
+          }
+        ],
+        "exact_coherent_triad_count": 343,
+        "expected_coherent_triad_count": 343,
+        "expected_positive_quartet_coefficient_limit": 0.13258252147247768,
+        "high_annulus_ratio": 1.5057987118688783,
+        "maximum_high_divergence_residual": 1.0302869668521453e-13,
+        "maximum_high_support": 186.7190402717409,
+        "maximum_positive_quartet_load_over_carrier": 0.23634588161679804,
+        "minimum_high_support": 124.0,
+        "minimum_positive_quartet_load_over_carrier": 0.011771709372173866,
+        "normalization": 0.024030354357293872,
+        "normalized_high_energy": 0.9999999999999999,
+        "normalized_high_enstrophy": 22545.361985855943,
+        "offset_spacing": 4,
+        "partition_frequency_isolation": "All high offsets lie in 4Z^3. After adding the low waves +/-(1,1,1), a quartic output in {-1,0,1}^3 is possible only at the matching corner frequency. Mixed carrier signs cannot enter the partition support. The complete vertex load is therefore exactly the pure top Walsh character.",
+        "real_high_mode_count": 162,
+        "real_low_mode_count": 2,
+        "stress_prediction_top_Walsh_vertex_load": 0.1586652345563748
+      },
+      {
+        "all_checks_pass": true,
+        "box_radius": 2,
+        "carrier": 256,
+        "carrier_multiple_relative_to_box_width": 32,
+        "coherent_count_normalized_complete_coefficient": 0.1308657564958074,
+        "coherent_count_normalized_stress_coefficient": 0.13083757751784295,
+        "complete_load_over_H_five_halves": 6.110389652722436e-07,
+        "complete_minus_stress_load": 0.00013796471758797946,
+        "complete_top_Walsh_vertex_load": 0.6407207940493082,
+        "component_top_Walsh_vertex_loads": {
+          "complete": 0.6407207940493082,
+          "high_velocity_evolution": 0.6406354586056073,
+          "kinetic_flux": 0.6406825250587468,
+          "kinetic_flux_pressure_dynamics": 0.6407247210308857,
+          "kinetic_flux_transport_dynamics": -4.2195972163491735e-05,
+          "linearized_low_velocity_evolution": 8.533544369453342e-05,
+          "pressure_flux": 3.826899056492848e-05,
+          "pressure_flux_pressure_dynamics": -9.0714148855723,
+          "pressure_flux_transport_dynamics": 9.071453154562807
+        },
+        "eight_vertex_loads": [
+          {
+            "Walsh_character": -1,
+            "load": -0.6407207940493082,
+            "vertex": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          {
+            "Walsh_character": 1,
+            "load": 0.6407207940493082,
+            "vertex": [
+              -1,
+              -1,
+              1
+            ]
+          },
+          {
+            "Walsh_character": 1,
+            "load": 0.6407207940493082,
+            "vertex": [
+              -1,
+              1,
+              -1
+            ]
+          },
+          {
+            "Walsh_character": -1,
+            "load": -0.6407207940493082,
+            "vertex": [
+              -1,
+              1,
+              1
+            ]
+          },
+          {
+            "Walsh_character": 1,
+            "load": 0.6407207940493082,
+            "vertex": [
+              1,
+              -1,
+              -1
+            ]
+          },
+          {
+            "Walsh_character": -1,
+            "load": -0.6407207940493082,
+            "vertex": [
+              1,
+              -1,
+              1
+            ]
+          },
+          {
+            "Walsh_character": -1,
+            "load": -0.6407207940493082,
+            "vertex": [
+              1,
+              1,
+              -1
+            ]
+          },
+          {
+            "Walsh_character": 1,
+            "load": 0.6407207940493082,
+            "vertex": [
+              1,
+              1,
+              1
+            ]
+          }
+        ],
+        "exact_coherent_triad_count": 6859,
+        "expected_coherent_triad_count": 6859,
+        "expected_positive_quartet_coefficient_limit": 0.13258252147247768,
+        "high_annulus_ratio": 1.5057987118688783,
+        "maximum_high_divergence_residual": 2.0605739337042905e-13,
+        "maximum_high_support": 373.4380805434818,
+        "maximum_positive_quartet_load_over_carrier": 0.23637909754162412,
+        "minimum_high_support": 248.0,
+        "minimum_positive_quartet_load_over_carrier": 0.011530588371747363,
+        "normalization": 0.011171307637794465,
+        "normalized_high_energy": 0.9999999999999998,
+        "normalized_high_enstrophy": 90164.14164709521,
+        "offset_spacing": 4,
+        "partition_frequency_isolation": "All high offsets lie in 4Z^3. After adding the low waves +/-(1,1,1), a quartic output in {-1,0,1}^3 is possible only at the matching corner frequency. Mixed carrier signs cannot enter the partition support. The complete vertex load is therefore exactly the pure top Walsh character.",
+        "real_high_mode_count": 750,
+        "real_low_mode_count": 2,
+        "stress_prediction_top_Walsh_vertex_load": 0.6405828293317202
+      },
+      {
+        "all_checks_pass": true,
+        "box_radius": 3,
+        "carrier": 384,
+        "carrier_multiple_relative_to_box_width": 32,
+        "coherent_count_normalized_complete_coefficient": 0.1310502436114755,
+        "coherent_count_normalized_stress_coefficient": 0.13103873298027158,
+        "complete_load_over_H_five_halves": 5.412887372928463e-07,
+        "complete_minus_stress_load": 0.00013737836981508877,
+        "complete_top_Walsh_vertex_load": 1.564073117475926,
+        "component_top_Walsh_vertex_loads": {
+          "complete": 1.564073117475926,
+          "high_velocity_evolution": 1.5639927835550909,
+          "kinetic_flux": 1.5640571457055552,
+          "kinetic_flux_pressure_dynamics": 1.5641177951278151,
+          "kinetic_flux_transport_dynamics": -6.064942212712256e-05,
+          "linearized_low_velocity_evolution": 8.033392086529231e-05,
+          "pressure_flux": 1.597177023386159e-05,
+          "pressure_flux_pressure_dynamics": -22.11839588664448,
+          "pressure_flux_transport_dynamics": 22.118411858414984
+        },
+        "eight_vertex_loads": [
+          {
+            "Walsh_character": -1,
+            "load": -1.564073117475926,
+            "vertex": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          {
+            "Walsh_character": 1,
+            "load": 1.564073117475926,
+            "vertex": [
+              -1,
+              -1,
+              1
+            ]
+          },
+          {
+            "Walsh_character": 1,
+            "load": 1.564073117475926,
+            "vertex": [
+              -1,
+              1,
+              -1
+            ]
+          },
+          {
+            "Walsh_character": -1,
+            "load": -1.564073117475926,
+            "vertex": [
+              -1,
+              1,
+              1
+            ]
+          },
+          {
+            "Walsh_character": 1,
+            "load": 1.564073117475926,
+            "vertex": [
+              1,
+              -1,
+              -1
+            ]
+          },
+          {
+            "Walsh_character": -1,
+            "load": -1.564073117475926,
+            "vertex": [
+              1,
+              -1,
+              1
+            ]
+          },
+          {
+            "Walsh_character": -1,
+            "load": -1.564073117475926,
+            "vertex": [
+              1,
+              1,
+              -1
+            ]
+          },
+          {
+            "Walsh_character": 1,
+            "load": 1.564073117475926,
+            "vertex": [
+              1,
+              1,
+              1
+            ]
+          }
+        ],
+        "exact_coherent_triad_count": 50653,
+        "expected_coherent_triad_count": 50653,
+        "expected_positive_quartet_coefficient_limit": 0.13258252147247768,
+        "high_annulus_ratio": 1.5057987118688783,
+        "maximum_high_divergence_residual": 4.192202140984591e-13,
+        "maximum_high_support": 560.1571208152227,
+        "maximum_positive_quartet_load_over_carrier": 0.23640456715834626,
+        "minimum_high_support": 372.0,
+        "minimum_positive_quartet_load_over_carrier": 0.011466665353924377,
+        "normalization": 0.006744518375892589,
+        "normalized_high_energy": 1.0000000000000002,
+        "normalized_high_enstrophy": 202856.31387524982,
+        "offset_spacing": 4,
+        "partition_frequency_isolation": "All high offsets lie in 4Z^3. After adding the low waves +/-(1,1,1), a quartic output in {-1,0,1}^3 is possible only at the matching corner frequency. Mixed carrier signs cannot enter the partition support. The complete vertex load is therefore exactly the pure top Walsh character.",
+        "real_high_mode_count": 2058,
+        "real_low_mode_count": 2,
+        "stress_prediction_top_Walsh_vertex_load": 1.5639357391061108
+      }
+    ],
+    "sharp_complete_derivative_exponent": "5/2"
+  },
+  "generated_at_utc": "2026-07-26T23:50:58.463964+00:00",
+  "independent_quartic_reconstruction": {
+    "all_checks_pass": true,
+    "carrier": 32,
+    "direct_symbol": [
+      [
+        0.0,
+        -875.3491681191726
+      ],
+      [
+        0.0,
+        -753.7257535799446
+      ],
+      [
+        0.0,
+        1352.9166954473521
+      ]
+    ],
+    "independent_reconstruction": [
+      [
+        0.0,
+        -875.3491681191722
+      ],
+      [
+        0.0,
+        -753.7257535799442
+      ],
+      [
+        0.0,
+        1352.9166954473517
+      ]
+    ],
+    "maximum_vector_residual": 7.279509460923746e-13,
+    "polarization_method": "16-sign Walsh extraction of the coefficient odd in each of the three high legs and the low leg"
+  },
+  "prerequisite_result": "work/ns_collision/results/dense_annular_hhh_packet_gate_audit_v1.json",
+  "prerequisite_result_sha256": "9123904c9199f11f6064081d4e2d5de983b768e4d5cc265b5de6735825e7ecee",
+  "route_decision": {
+    "discard": "Any claim that taking the scalar trace also cancels the time derivative of the complete HHL transfer.",
+    "next_gate": "Lift the weighted fixed-channel theorem to the complete dyadic HHH/HHL shell system with comparable-shell neighbors and filter commutators. Prove the weighted Duhamel response before attempting low-regularity passage.",
+    "retain": "The H^(-3/2)-weighted shell forcing norm. It is exactly controlled by Leray energy and dissipation, is sharp on the dense packet, and leaves a summable half derivative after the viscous H^(-2) response."
+  },
+  "scalar_trace_identity": {
+    "all_checks_pass": true,
+    "identity": "tr G(q) = -2 i q dot F_cubic(q)",
+    "interpretation": "The sharp carrier derivative is traceless at q=0 and is therefore absent from the ordinary scalar local-energy identity. This does not yet test the time derivative of the HHL transfer, which couples the anisotropic tensor to a low velocity.",
+    "maximum_identity_residual": 9.379164112033322e-13,
+    "rows": [
+      {
+        "identity_residual": 0.0,
+        "output_wave": [
+          0,
+          0,
+          0
+        ],
+        "stress_trace_imag": 0.0,
+        "stress_trace_real": 0.0,
+        "twice_flux_divergence_imag": 0.0,
+        "twice_flux_divergence_real": 0.0
+      },
+      {
+        "identity_residual": 1.7053025658242404e-13,
+        "output_wave": [
+          1,
+          1,
+          1
+        ],
+        "stress_trace_imag": 0.0,
+        "stress_trace_real": -10.390530598459918,
+        "twice_flux_divergence_imag": 0.0,
+        "twice_flux_divergence_real": 10.390530598460089
+      },
+      {
+        "identity_residual": 7.105427357601002e-13,
+        "output_wave": [
+          1,
+          0,
+          -1
+        ],
+        "stress_trace_imag": 0.0,
+        "stress_trace_real": -38.93361181281443,
+        "twice_flux_divergence_imag": 0.0,
+        "twice_flux_divergence_real": 38.93361181281372
+      },
+      {
+        "identity_residual": 9.379164112033322e-13,
+        "output_wave": [
+          -1,
+          1,
+          0
+        ],
+        "stress_trace_imag": 0.0,
+        "stress_trace_real": -0.5090855338360143,
+        "twice_flux_divergence_imag": 0.0,
+        "twice_flux_divergence_real": 0.5090855338369522
+      }
+    ],
+    "zero_output_trace_residual": 0.0
+  },
+  "schema": "ns_scalar_local_energy_regeneration_gate_audit_v1",
+  "sharp_negative_shell_norm": {
+    "Leray_controlled_norm": "sum_H H^(-3)||G_H||_(L2_t)^2 <= C E_*^2 D",
+    "all_checks_pass": true,
+    "dense_cost_exponent_at_s_three_halves": "0",
+    "dense_parabolic_cost_with_weight_s": "H^(3-2s)",
+    "dissipation_definition": "D = integral sum_H H^2 a_H(t)^2 dt",
+    "energy_definition": "E_* = sup_t sum_H a_H(t)^2",
+    "finite_sequence_replay": {
+      "all_checks_pass": true,
+      "amplitudes": [
+        0.5,
+        0.3333333333333333,
+        0.25,
+        0.2,
+        0.16666666666666666,
+        0.14285714285714285,
+        0.125,
+        0.1111111111111111
+      ],
+      "carriers": [
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        1024,
+        2048
+      ],
+      "pulse_weight_rows": [
+        {
+          "carrier": 16,
+          "cost_at_s_3_over_2": 1.0,
+          "cost_at_s_5_over_4": 4.0,
+          "cost_at_s_7_over_4": 0.25
+        },
+        {
+          "carrier": 32,
+          "cost_at_s_3_over_2": 1.0,
+          "cost_at_s_5_over_4": 5.656854249492381,
+          "cost_at_s_7_over_4": 0.1767766952966369
+        },
+        {
+          "carrier": 64,
+          "cost_at_s_3_over_2": 1.0,
+          "cost_at_s_5_over_4": 8.0,
+          "cost_at_s_7_over_4": 0.125
+        },
+        {
+          "carrier": 128,
+          "cost_at_s_3_over_2": 1.0,
+          "cost_at_s_5_over_4": 11.313708498984761,
+          "cost_at_s_7_over_4": 0.08838834764831845
+        },
+        {
+          "carrier": 256,
+          "cost_at_s_3_over_2": 1.0,
+          "cost_at_s_5_over_4": 16.0,
+          "cost_at_s_7_over_4": 0.0625
+        },
+        {
+          "carrier": 512,
+          "cost_at_s_3_over_2": 1.0,
+          "cost_at_s_5_over_4": 22.627416997969522,
+          "cost_at_s_7_over_4": 0.04419417382415922
+        },
+        {
+          "carrier": 1024,
+          "cost_at_s_3_over_2": 1.0,
+          "cost_at_s_5_over_4": 32.0,
+          "cost_at_s_7_over_4": 0.03125
+        },
+        {
+          "carrier": 2048,
+          "cost_at_s_3_over_2": 1.0,
+          "cost_at_s_5_over_4": 45.254833995939045,
+          "cost_at_s_7_over_4": 0.02209708691207961
+        }
+      ],
+      "viscous_response_Cauchy_upper": 0.43609854960819455,
+      "viscous_response_l1": 0.42924421844272026,
+      "weighted_forcing_over_energy_squared_dissipation": 0.0010319789074893593
+    },
+    "fixed_low_channel_Bernstein_bound": "|G_H| <= C H^(5/2) a_H^3",
+    "forcing_amplitude_weight": "H^(-3/2)",
+    "pointwise_weighted_square_bound": "H^(-3)|G_H|^2 <= C H^2 a_H^6 <= C E_*^2 H^2 a_H^2",
+    "scope": "This is a sharp fixed-low-output HHH forcing theorem at the smooth shell level. Completing the full Navier-Stokes route still requires comparable-shell bookkeeping, filter commutators, HHL terms, initial stress, and passage to suitable weak solutions.",
+    "sharp_weight_exponent": "3/2",
+    "squared_norm_weight": "H^(-3)",
+    "viscous_relaxation_gain": "For the zero-initial forced component of dot c_H+c nu H^2 c_H=G_H, ||sum_H c_H||_L2 <= C/(c nu sqrt(H_0)) [sum_H H^(-3)||G_H||_L2^2]^(1/2) for dyadic H>=H_0."
+  },
+  "status": "scalar_trace_cancels_H5over2_but_complete_differentiated_HHL_transfer_retains_it_negative_three_halves_norm_is_sharp"
+}

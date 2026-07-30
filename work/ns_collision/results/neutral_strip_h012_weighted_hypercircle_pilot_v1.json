@@ -1,0 +1,91 @@
+{
+  "all_floating_pilot_checks_pass": true,
+  "assembly_seconds": 19.529536199988797,
+  "below_normal_priority_set": true,
+  "certification_flags": {
+    "continuum_spectrum_below_60_captured": false,
+    "directed_roundoff_enclosure_complete": false,
+    "global_weighted_Ritz_constant_certified": false,
+    "kappa_h_verified_upper_bound": false,
+    "physical_source_P0_projection_decomposition_encoded": true,
+    "projected_source_norm_inflation_encoded": true,
+    "quadrature_enclosure_complete": false,
+    "weighted_hypercircle_decomposition_encoded": true
+  },
+  "elapsed_seconds": 19.89801369991619,
+  "hypercircle_bound": {
+    "combined_C_h_floating": 0.13126653788302517,
+    "data_oscillation_bound": "C_data,T <= diameter(T)/pi * sqrt(mu_max,T/mu_min,T)",
+    "data_oscillation_constant_upper_floating_geometry": 0.0674455247597244,
+    "floating_diagnostic_passes_strict_target": false,
+    "formula": "C_h <= C_data + alpha_source*kappa_h",
+    "kappa_h_floating": 0.04789000880794886,
+    "projected_source_norm_factor_upper_floating_geometry": 1.3326582039113692,
+    "remaining_kappa_budget_if_combined_to_pass": 0.013601111442914154,
+    "strict_target_lower": 0.08557115750643675
+  },
+  "interpretation": "This is a floating feasibility and implementation pilot. Passing the target does not certify C_h; failing it rules out this mesh/formulation unless a sharper valid bound is found.",
+  "kind": "neutral-strip-weighted-hypercircle-pilot",
+  "linear_algebra": {
+    "all_floating_linear_algebra_checks_pass": true,
+    "checks": {
+      "eigen_residual_below_1e_7": true,
+      "eigenvalue_nonnegative": true,
+      "matrix_action_symmetric_to_1e_9": true,
+      "mixed_relative_residual_below_1e_9": true,
+      "objective_identity_relative_defect_below_1e_9": true,
+      "p1_relative_residual_below_1e_9": true
+    },
+    "cpu_samples_percent": [],
+    "eigen_residual_norm": 2.863743441924639e-13,
+    "eigensolve_seconds": 0.21652299992274493,
+    "factor_seconds": 0.10570129996631294,
+    "kappa_h_floating": 0.04789000880794886,
+    "largest_normalized_quadratic_eigenvalue_floating": 0.002293452943625419,
+    "matvec_count": 44,
+    "mixed_matrix_dimension": 19488,
+    "mixed_matrix_nnz": 104650,
+    "mixed_relative_residual": 1.6065754395412627e-14,
+    "normalized_action_symmetry_defect": 4.718447854656915e-15,
+    "objective_identity_relative_defect": 1.2545755424716547e-14,
+    "p1_matrix_dimension": 3738,
+    "p1_matrix_nnz": 25500,
+    "p1_relative_residual": 2.507379340323878e-15
+  },
+  "mesh": {
+    "boundary_edge_count": 266,
+    "edge_count": 11746,
+    "every_edge_has_one_or_two_incident_triangles": true,
+    "interior_edge_outward_signs_cancel": true,
+    "maximum_triangle_diameter": 0.1670395726804525,
+    "mesh_fingerprint_sha256": "ea848b6cb7beab5cfd610a858d547945ad9777d166f8ee0bca0ee2f7b0f085cb",
+    "minimum_source_mass": 0.0022751576461968975,
+    "p1_stiffness_symmetry_error": 0.0,
+    "rt_mass_symmetry_error": 0.0,
+    "state_count": 3738,
+    "triangle_count": 7742,
+    "vertex_count": 4004
+  },
+  "model": "Gaussian-weighted Dirichlet operator with conforming P1 potentials, RT0 equilibrated physical fluxes, and weighted physical-source norm",
+  "premises": {
+    "continuum_dependency_result": "work/ns_collision/results/neutral_strip_h006_continuum_ritz_dependency_audit_v1.json",
+    "continuum_dependency_result_sha256": "fc9e1f5e313dd9e98a801648f91a532ccfc2d1dada5aa228f1799ef5729b38c1",
+    "literature_method": "Liu and Oishi, SIAM J. Numer. Anal. 51 (2013), Theorems 3.2-3.3 and Section 3.3, adapted to mu"
+  },
+  "quadrature_order": 12,
+  "source_space": {
+    "continuum_physical_source": "g=mu*f",
+    "corresponding_operator_source": "f_h=g_h/mu",
+    "projected_physical_source": "g_h=unweighted cell average of g",
+    "projection": "unweighted L2 projection of physical source g onto P0",
+    "weighted_source_mass": "integral_T mu^-1"
+  },
+  "spacing": 0.12,
+  "structural_checks": {
+    "edge_incidence_valid": true,
+    "interior_flux_orientation_valid": true,
+    "p1_stiffness_symmetric": true,
+    "positive_source_mass": true,
+    "rt_mass_symmetric": true
+  }
+}

@@ -1,0 +1,1973 @@
+{
+  "all_241_exact_polygon_generalized_eigenvalues_indexed": true,
+  "all_decimal_formula_values_contained": true,
+  "all_exact_polygon_indexed_intervals_disjoint": true,
+  "all_exact_polygon_indexed_spectrum_transfer_checks_pass": true,
+  "assembly_result": "work\\ns_collision\\results\\neutral_strip_h006_gaussian_assembly_interval_audit_v1.json",
+  "assembly_result_sha256": "c4da43d4589edad78c1413c4b8914e59b31143487784623677f849061304ba3a",
+  "continuum_Ritz_transfer_proved": false,
+  "eigensystem_result": "work\\ns_collision\\results\\neutral_strip_h006_q12_k240_eigensystem_residual_audit_v1.json",
+  "eigensystem_result_sha256": "b564e5a718a26d8e613a3112167b278d2f2db81f22190d94e43afb6d480e0e85",
+  "endpoint_effect_of_indexed_spectrum_transfer_certified": false,
+  "exact_complement_index_240_interval_lower": 107.01775717228844,
+  "exact_mass_relative_lower": 0.9999999999994507,
+  "exact_mass_relative_upper": 1.0000000000005496,
+  "exact_polygon_complement_generalized_eigenvalue_lower_bound": 107.01775717228844,
+  "exact_polygon_generalized_eigenvectors_interval_enclosed": false,
+  "exact_retained_complement_separation": 0.6015334077597457,
+  "exact_retained_index_239_interval_upper": 106.4162237645287,
+  "first_240_exact_polygon_generalized_eigenvalues_indexed": true,
+  "indexed_interval_count": 241,
+  "inertia_result": "work\\ns_collision\\results\\neutral_strip_h006_q12_k240_sparse_inertia_audit_v1.json",
+  "inertia_result_sha256": "228605f602dfa2bca6f18aadeda1e2398a1c96f500f2150fdea33bda9f4610b5",
+  "mass_form_relative_error_upper": 5.492564204190142e-13,
+  "minimum_adjacent_exact_interval_separation": 8.211095644128362e-05,
+  "model": "min-max transfer of indexed stored generalized eigenvalues to exact Gaussian-weighted P1 forms on the stored polygon",
+  "polygon_to_circle_domain_transfer_proved": false,
+  "precision_crosscheck_result": "work\\ns_collision\\results\\neutral_strip_h006_q12_k240_sparse_inertia_precision_crosscheck_v1.json",
+  "precision_crosscheck_result_sha256": "debc1b112b026c8cf5165fef047de603dbbac6dc56b085ed8f0a778daa0a208d",
+  "premises": {
+    "all_241_stored_intervals_indexed": true,
+    "all_four_stored_matrix_fingerprints_match": true,
+    "all_stored_lower_endpoints_exceed_stiffness_error": true,
+    "complete_exact_assembly_audit": true,
+    "exact_mass_lower_positive": true,
+    "independent_precision_crosscheck_passed": true,
+    "stored_inertia_audit_passed": true,
+    "stored_mass_coercivity_proved": true
+  },
+  "rows": [
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 2.3732837765220616,
+      "exact_polygon_indexed_interval_upper": 2.3732837875100743,
+      "index": 0,
+      "stored_proximity_interval_lower": 2.3732837819545494,
+      "stored_proximity_interval_upper": 2.373283782077587
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 2.37966825333346,
+      "exact_polygon_indexed_interval_upper": 2.37966826432136,
+      "index": 1,
+      "stored_proximity_interval_lower": 2.3796682587659514,
+      "stored_proximity_interval_upper": 2.379668258888869
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 3.7284764927103384,
+      "exact_polygon_indexed_interval_upper": 3.7284765036999192,
+      "index": 2,
+      "stored_proximity_interval_lower": 3.728476498143571,
+      "stored_proximity_interval_upper": 3.7284764982666876
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 3.767424526125225,
+      "exact_polygon_indexed_interval_upper": 3.7674245371148003,
+      "index": 3,
+      "stored_proximity_interval_lower": 3.7674245315584787,
+      "stored_proximity_interval_upper": 3.7674245316815473
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 4.987148563342481,
+      "exact_polygon_indexed_interval_upper": 4.987148574334531,
+      "index": 4,
+      "stored_proximity_interval_lower": 4.987148568776406,
+      "stored_proximity_interval_upper": 4.987148568900607
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 5.089711790262119,
+      "exact_polygon_indexed_interval_upper": 5.089711801253905,
+      "index": 5,
+      "stored_proximity_interval_lower": 5.0897117956961,
+      "stored_proximity_interval_upper": 5.089711795819925
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 6.00488962933981,
+      "exact_polygon_indexed_interval_upper": 6.004889640332125,
+      "index": 6,
+      "stored_proximity_interval_lower": 6.004889634774295,
+      "stored_proximity_interval_upper": 6.0048896348976415
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 6.251609266777347,
+      "exact_polygon_indexed_interval_upper": 6.251609277770702,
+      "index": 7,
+      "stored_proximity_interval_lower": 6.251609272211967,
+      "stored_proximity_interval_upper": 6.251609272336083
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 6.448849666590321,
+      "exact_polygon_indexed_interval_upper": 6.448849677584729,
+      "index": 8,
+      "stored_proximity_interval_lower": 6.448849672025049,
+      "stored_proximity_interval_upper": 6.4488496721500015
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 6.613675468889529,
+      "exact_polygon_indexed_interval_upper": 6.613675479884308,
+      "index": 9,
+      "stored_proximity_interval_lower": 6.6136754743243475,
+      "stored_proximity_interval_upper": 6.61367547444949
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 7.648920437217639,
+      "exact_polygon_indexed_interval_upper": 7.648920448211496,
+      "index": 10,
+      "stored_proximity_interval_lower": 7.6489204426530275,
+      "stored_proximity_interval_upper": 7.6489204427761095
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 8.1201635321351,
+      "exact_polygon_indexed_interval_upper": 8.120163543129692,
+      "index": 11,
+      "stored_proximity_interval_lower": 8.120163537570749,
+      "stored_proximity_interval_upper": 8.120163537694046
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 8.271696110214865,
+      "exact_polygon_indexed_interval_upper": 8.27169612120945,
+      "index": 12,
+      "stored_proximity_interval_lower": 8.271696115650597,
+      "stored_proximity_interval_upper": 8.27169611577372
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 9.19419159300015,
+      "exact_polygon_indexed_interval_upper": 9.194191603997346,
+      "index": 13,
+      "stored_proximity_interval_lower": 9.194191598436388,
+      "stored_proximity_interval_upper": 9.19419159856111
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 9.98949374797151,
+      "exact_polygon_indexed_interval_upper": 9.989493758969534,
+      "index": 14,
+      "stored_proximity_interval_lower": 9.989493753408185,
+      "stored_proximity_interval_upper": 9.98949375353286
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 10.199266355471599,
+      "exact_polygon_indexed_interval_upper": 10.199266366469608,
+      "index": 15,
+      "stored_proximity_interval_lower": 10.19926636090839,
+      "stored_proximity_interval_upper": 10.19926636103282
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 10.207685395971739,
+      "exact_polygon_indexed_interval_upper": 10.207685406970938,
+      "index": 16,
+      "stored_proximity_interval_lower": 10.207685401408535,
+      "stored_proximity_interval_upper": 10.207685401534144
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 10.826273800291462,
+      "exact_polygon_indexed_interval_upper": 10.826273811291454,
+      "index": 17,
+      "stored_proximity_interval_lower": 10.826273805728597,
+      "stored_proximity_interval_upper": 10.82627380585432
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 10.857610841856728,
+      "exact_polygon_indexed_interval_upper": 10.857610852856244,
+      "index": 18,
+      "stored_proximity_interval_lower": 10.85761084729388,
+      "stored_proximity_interval_upper": 10.857610847419092
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 11.132510808565574,
+      "exact_polygon_indexed_interval_upper": 11.132510819565509,
+      "index": 19,
+      "stored_proximity_interval_lower": 11.132510814002877,
+      "stored_proximity_interval_upper": 11.132510814128207
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 11.597137674279109,
+      "exact_polygon_indexed_interval_upper": 11.59713768527907,
+      "index": 20,
+      "stored_proximity_interval_lower": 11.597137679716669,
+      "stored_proximity_interval_upper": 11.597137679841515
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 12.714277776795942,
+      "exact_polygon_indexed_interval_upper": 12.714277787796318,
+      "index": 21,
+      "stored_proximity_interval_lower": 12.714277782234115,
+      "stored_proximity_interval_upper": 12.714277782358147
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 13.540892501690196,
+      "exact_polygon_indexed_interval_upper": 13.540892512691553,
+      "index": 22,
+      "stored_proximity_interval_lower": 13.540892507128824,
+      "stored_proximity_interval_upper": 13.540892507252927
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 13.629125167988224,
+      "exact_polygon_indexed_interval_upper": 13.629125178993448,
+      "index": 23,
+      "stored_proximity_interval_lower": 13.629125173426901,
+      "stored_proximity_interval_upper": 13.629125173554774
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 14.146020567333572,
+      "exact_polygon_indexed_interval_upper": 14.146020578337607,
+      "index": 24,
+      "stored_proximity_interval_lower": 14.146020572772532,
+      "stored_proximity_interval_upper": 14.14602057289865
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 15.263557333793544,
+      "exact_polygon_indexed_interval_upper": 15.26355734479863,
+      "index": 25,
+      "stored_proximity_interval_lower": 15.263557339233119,
+      "stored_proximity_interval_upper": 15.263557339359059
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 15.493381557854905,
+      "exact_polygon_indexed_interval_upper": 15.49338156885972,
+      "index": 26,
+      "stored_proximity_interval_lower": 15.493381563294605,
+      "stored_proximity_interval_upper": 15.493381563420023
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 15.53677734885206,
+      "exact_polygon_indexed_interval_upper": 15.536777359857124,
+      "index": 27,
+      "stored_proximity_interval_lower": 15.536777354291786,
+      "stored_proximity_interval_upper": 15.536777354417403
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 15.652435080028065,
+      "exact_polygon_indexed_interval_upper": 15.652435091032991,
+      "index": 28,
+      "stored_proximity_interval_lower": 15.652435085467852,
+      "stored_proximity_interval_upper": 15.652435085593206
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 16.04945556457785,
+      "exact_polygon_indexed_interval_upper": 16.049455575583423,
+      "index": 29,
+      "stored_proximity_interval_lower": 16.049455570017862,
+      "stored_proximity_interval_upper": 16.049455570143415
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 16.55790249626232,
+      "exact_polygon_indexed_interval_upper": 16.55790250726912,
+      "index": 30,
+      "stored_proximity_interval_lower": 16.557902501702607,
+      "stored_proximity_interval_upper": 16.557902501828835
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 17.42644462111087,
+      "exact_polygon_indexed_interval_upper": 17.426444632117715,
+      "index": 31,
+      "stored_proximity_interval_lower": 17.42644462655164,
+      "stored_proximity_interval_upper": 17.42644462667695
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 17.770211726241502,
+      "exact_polygon_indexed_interval_upper": 17.770211737248793,
+      "index": 32,
+      "stored_proximity_interval_lower": 17.77021173168246,
+      "stored_proximity_interval_upper": 17.77021173180784
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 18.119393226009077,
+      "exact_polygon_indexed_interval_upper": 18.11939323701747,
+      "index": 33,
+      "stored_proximity_interval_lower": 18.119393231450225,
+      "stored_proximity_interval_upper": 18.119393231576325
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 18.506395466414762,
+      "exact_polygon_indexed_interval_upper": 18.506395477423453,
+      "index": 34,
+      "stored_proximity_interval_lower": 18.506395471856123,
+      "stored_proximity_interval_upper": 18.506395471982096
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 18.70315243418663,
+      "exact_polygon_indexed_interval_upper": 18.70315244519609,
+      "index": 35,
+      "stored_proximity_interval_lower": 18.7031524396281,
+      "stored_proximity_interval_upper": 18.703152439754625
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 18.966601005501076,
+      "exact_polygon_indexed_interval_upper": 18.966601016512325,
+      "index": 36,
+      "stored_proximity_interval_lower": 18.96660101094269,
+      "stored_proximity_interval_upper": 18.966601011070715
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 20.736213622328137,
+      "exact_polygon_indexed_interval_upper": 20.736213633339624,
+      "index": 37,
+      "stored_proximity_interval_lower": 20.736213627770724,
+      "stored_proximity_interval_upper": 20.736213627897044
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 21.036969372049732,
+      "exact_polygon_indexed_interval_upper": 21.03696938306088,
+      "index": 38,
+      "stored_proximity_interval_lower": 21.036969377492483,
+      "stored_proximity_interval_upper": 21.036969377618135
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 21.72238353072727,
+      "exact_polygon_indexed_interval_upper": 21.722383541739386,
+      "index": 39,
+      "stored_proximity_interval_lower": 21.722383536170398,
+      "stored_proximity_interval_upper": 21.722383536296263
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 21.737023176323085,
+      "exact_polygon_indexed_interval_upper": 21.737023187337126,
+      "index": 40,
+      "stored_proximity_interval_lower": 21.73702318176622,
+      "stored_proximity_interval_upper": 21.737023181893996
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 21.995703396087126,
+      "exact_polygon_indexed_interval_upper": 21.99570340709934,
+      "index": 41,
+      "stored_proximity_interval_lower": 21.995703401530402,
+      "stored_proximity_interval_upper": 21.99570340165607
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 22.028129686230624,
+      "exact_polygon_indexed_interval_upper": 22.02812969724377,
+      "index": 42,
+      "stored_proximity_interval_lower": 22.028129691673918,
+      "stored_proximity_interval_upper": 22.02812969180048
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 22.783721204802205,
+      "exact_polygon_indexed_interval_upper": 22.783721215817014,
+      "index": 43,
+      "stored_proximity_interval_lower": 22.783721210245915,
+      "stored_proximity_interval_upper": 22.783721210373308
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 23.268915568473492,
+      "exact_polygon_indexed_interval_upper": 23.26891557948803,
+      "index": 44,
+      "stored_proximity_interval_lower": 23.268915573917468,
+      "stored_proximity_interval_upper": 23.26891557404406
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 23.28044704967468,
+      "exact_polygon_indexed_interval_upper": 23.280447060688843,
+      "index": 45,
+      "stored_proximity_interval_lower": 23.280447055118664,
+      "stored_proximity_interval_upper": 23.280447055244863
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 24.033571929617953,
+      "exact_polygon_indexed_interval_upper": 24.03357194063221,
+      "index": 46,
+      "stored_proximity_interval_lower": 24.03357193506235,
+      "stored_proximity_interval_upper": 24.03357193518782
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 24.181835453301833,
+      "exact_polygon_indexed_interval_upper": 24.18183546431793,
+      "index": 47,
+      "stored_proximity_interval_lower": 24.181835458746313,
+      "stored_proximity_interval_upper": 24.181835458873458
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 25.188871375820593,
+      "exact_polygon_indexed_interval_upper": 25.188871386836524,
+      "index": 48,
+      "stored_proximity_interval_lower": 25.188871381265624,
+      "stored_proximity_interval_upper": 25.188871381391497
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 25.25307941995902,
+      "exact_polygon_indexed_interval_upper": 25.253079430975006,
+      "index": 49,
+      "stored_proximity_interval_lower": 25.253079425404085,
+      "stored_proximity_interval_upper": 25.253079425529943
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 25.454422002682268,
+      "exact_polygon_indexed_interval_upper": 25.45442201369864,
+      "index": 50,
+      "stored_proximity_interval_lower": 25.454422008127445,
+      "stored_proximity_interval_upper": 25.454422008253466
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 26.86112114219137,
+      "exact_polygon_indexed_interval_upper": 26.861121153210174,
+      "index": 51,
+      "stored_proximity_interval_lower": 26.86112114763732,
+      "stored_proximity_interval_upper": 26.86112114776423
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 27.131302547575245,
+      "exact_polygon_indexed_interval_upper": 27.13130255859665,
+      "index": 52,
+      "stored_proximity_interval_lower": 27.131302553021346,
+      "stored_proximity_interval_upper": 27.131302553150558
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 27.2462800186273,
+      "exact_polygon_indexed_interval_upper": 27.246280029645686,
+      "index": 53,
+      "stored_proximity_interval_lower": 27.246280024073464,
+      "stored_proximity_interval_upper": 27.246280024199528
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 27.515683750138496,
+      "exact_polygon_indexed_interval_upper": 27.515683761160403,
+      "index": 54,
+      "stored_proximity_interval_lower": 27.515683755584806,
+      "stored_proximity_interval_upper": 27.515683755714097
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 27.779534511343922,
+      "exact_polygon_indexed_interval_upper": 27.77953452236586,
+      "index": 55,
+      "stored_proximity_interval_lower": 27.779534516790378,
+      "stored_proximity_interval_upper": 27.779534516919412
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 27.95721565811611,
+      "exact_polygon_indexed_interval_upper": 27.957215669135547,
+      "index": 56,
+      "stored_proximity_interval_lower": 27.957215663562664,
+      "stored_proximity_interval_upper": 27.957215663689
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 29.467668978842084,
+      "exact_polygon_indexed_interval_upper": 29.467668989863057,
+      "index": 57,
+      "stored_proximity_interval_lower": 29.467668984289467,
+      "stored_proximity_interval_upper": 29.46766898441568
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 29.50139305626545,
+      "exact_polygon_indexed_interval_upper": 29.50139306728646,
+      "index": 58,
+      "stored_proximity_interval_lower": 29.50139306171285,
+      "stored_proximity_interval_upper": 29.501393061839064
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 30.104288929968106,
+      "exact_polygon_indexed_interval_upper": 30.104288940990855,
+      "index": 59,
+      "stored_proximity_interval_lower": 30.10428893541584,
+      "stored_proximity_interval_upper": 30.104288935543128
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 30.617641143303022,
+      "exact_polygon_indexed_interval_upper": 30.617641154326574,
+      "index": 60,
+      "stored_proximity_interval_lower": 30.617641148751037,
+      "stored_proximity_interval_upper": 30.617641148878565
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 30.779574402788924,
+      "exact_polygon_indexed_interval_upper": 30.779574413811837,
+      "index": 61,
+      "stored_proximity_interval_lower": 30.77957440823703,
+      "stored_proximity_interval_upper": 30.77957440836374
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 31.022952355952416,
+      "exact_polygon_indexed_interval_upper": 31.022952366976387,
+      "index": 62,
+      "stored_proximity_interval_lower": 31.022952361400655,
+      "stored_proximity_interval_upper": 31.022952361528155
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 31.030783538850443,
+      "exact_polygon_indexed_interval_upper": 31.03078354987548,
+      "index": 63,
+      "stored_proximity_interval_lower": 31.030783544298686,
+      "stored_proximity_interval_upper": 31.030783544427244
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 31.42109051896409,
+      "exact_polygon_indexed_interval_upper": 31.421090529988074,
+      "index": 64,
+      "stored_proximity_interval_lower": 31.421090524412545,
+      "stored_proximity_interval_upper": 31.421090524539625
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 32.35048506889214,
+      "exact_polygon_indexed_interval_upper": 32.35048507991883,
+      "index": 65,
+      "stored_proximity_interval_lower": 32.350485074341115,
+      "stored_proximity_interval_upper": 32.350485074469866
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 32.57900054755559,
+      "exact_polygon_indexed_interval_upper": 32.57900055858225,
+      "index": 66,
+      "stored_proximity_interval_lower": 32.57900055300469,
+      "stored_proximity_interval_upper": 32.579000553133156
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 32.95328001140097,
+      "exact_polygon_indexed_interval_upper": 32.953280022428714,
+      "index": 67,
+      "stored_proximity_interval_lower": 32.95328001685028,
+      "stored_proximity_interval_upper": 32.95328001697941
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 33.64452792001464,
+      "exact_polygon_indexed_interval_upper": 33.644527931042,
+      "index": 68,
+      "stored_proximity_interval_lower": 33.644527925464324,
+      "stored_proximity_interval_upper": 33.64452792559232
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 33.860983246572914,
+      "exact_polygon_indexed_interval_upper": 33.86098325760019,
+      "index": 69,
+      "stored_proximity_interval_lower": 33.86098325202272,
+      "stored_proximity_interval_upper": 33.86098325215039
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 34.22215369485645,
+      "exact_polygon_indexed_interval_upper": 34.22215370588327,
+      "index": 70,
+      "stored_proximity_interval_lower": 34.22215370030646,
+      "stored_proximity_interval_upper": 34.222153700433275
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 34.46364682284875,
+      "exact_polygon_indexed_interval_upper": 34.46364683387785,
+      "index": 71,
+      "stored_proximity_interval_lower": 34.46364682829889,
+      "stored_proximity_interval_upper": 34.46364682842773
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 35.47977261033199,
+      "exact_polygon_indexed_interval_upper": 35.47977262136239,
+      "index": 72,
+      "stored_proximity_interval_lower": 35.479772615782686,
+      "stored_proximity_interval_upper": 35.479772615911706
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 36.077728036590294,
+      "exact_polygon_indexed_interval_upper": 36.07772804762101,
+      "index": 73,
+      "stored_proximity_interval_lower": 36.077728042041315,
+      "stored_proximity_interval_upper": 36.077728042169994
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 36.3124111744225,
+      "exact_polygon_indexed_interval_upper": 36.31241118545406,
+      "index": 74,
+      "stored_proximity_interval_lower": 36.312411179873656,
+      "stored_proximity_interval_upper": 36.31241118000292
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 36.81008614659728,
+      "exact_polygon_indexed_interval_upper": 36.81008615762755,
+      "index": 75,
+      "stored_proximity_interval_lower": 36.810086152048704,
+      "stored_proximity_interval_upper": 36.81008615217613
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 37.317004875917625,
+      "exact_polygon_indexed_interval_upper": 37.31700488695023,
+      "index": 76,
+      "stored_proximity_interval_lower": 37.31700488136933,
+      "stored_proximity_interval_upper": 37.317004881498534
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 37.367311570345905,
+      "exact_polygon_indexed_interval_upper": 37.36731158137648,
+      "index": 77,
+      "stored_proximity_interval_lower": 37.367311575797636,
+      "stored_proximity_interval_upper": 37.36731157592475
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 37.874732173941894,
+      "exact_polygon_indexed_interval_upper": 37.874732184974285,
+      "index": 78,
+      "stored_proximity_interval_lower": 37.8747321793939,
+      "stored_proximity_interval_upper": 37.87473217952228
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 37.88399733245568,
+      "exact_polygon_indexed_interval_upper": 37.88399734348855,
+      "index": 79,
+      "stored_proximity_interval_lower": 37.883997337907694,
+      "stored_proximity_interval_upper": 37.883997338036544
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 38.80502244841306,
+      "exact_polygon_indexed_interval_upper": 38.805022459447784,
+      "index": 80,
+      "stored_proximity_interval_lower": 38.80502245386558,
+      "stored_proximity_interval_upper": 38.80502245399527
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 38.849134632144214,
+      "exact_polygon_indexed_interval_upper": 38.84913464317773,
+      "index": 81,
+      "stored_proximity_interval_lower": 38.84913463759676,
+      "stored_proximity_interval_upper": 38.849134637725186
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 38.867853589166046,
+      "exact_polygon_indexed_interval_upper": 38.8678536001998,
+      "index": 82,
+      "stored_proximity_interval_lower": 38.8678535946186,
+      "stored_proximity_interval_upper": 38.86785359474725
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 39.82446595640049,
+      "exact_polygon_indexed_interval_upper": 39.82446596743706,
+      "index": 83,
+      "stored_proximity_interval_lower": 39.82446596185357,
+      "stored_proximity_interval_upper": 39.82446596198398
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 40.565156441139735,
+      "exact_polygon_indexed_interval_upper": 40.56515645217575,
+      "index": 84,
+      "stored_proximity_interval_lower": 40.56515644659322,
+      "stored_proximity_interval_upper": 40.56515644672227
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 40.75191926389567,
+      "exact_polygon_indexed_interval_upper": 40.75191927493042,
+      "index": 85,
+      "stored_proximity_interval_lower": 40.751919269349266,
+      "stored_proximity_interval_upper": 40.751919269476836
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 41.252677340636744,
+      "exact_polygon_indexed_interval_upper": 41.25267735167386,
+      "index": 86,
+      "stored_proximity_interval_lower": 41.252677346090614,
+      "stored_proximity_interval_upper": 41.252677346220004
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 41.884438318304284,
+      "exact_polygon_indexed_interval_upper": 41.88443832934358,
+      "index": 87,
+      "stored_proximity_interval_lower": 41.884438323758495,
+      "stored_proximity_interval_upper": 41.88443832388938
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 42.28913898097266,
+      "exact_polygon_indexed_interval_upper": 42.289138992010585,
+      "index": 88,
+      "stored_proximity_interval_lower": 42.2891389864271,
+      "stored_proximity_interval_upper": 42.28913898655616
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 42.71853991862796,
+      "exact_polygon_indexed_interval_upper": 42.71853992966561,
+      "index": 89,
+      "stored_proximity_interval_lower": 42.718539924082634,
+      "stored_proximity_interval_upper": 42.718539924210944
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 42.92357534752231,
+      "exact_polygon_indexed_interval_upper": 42.92357535856152,
+      "index": 90,
+      "stored_proximity_interval_lower": 42.923575352977096,
+      "stored_proximity_interval_upper": 42.92357535310674
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 43.153938947970204,
+      "exact_polygon_indexed_interval_upper": 43.153938959009366,
+      "index": 91,
+      "stored_proximity_interval_lower": 43.15393895342512,
+      "stored_proximity_interval_upper": 43.153938953554466
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 43.8554559916483,
+      "exact_polygon_indexed_interval_upper": 43.855456002687866,
+      "index": 92,
+      "stored_proximity_interval_lower": 43.8554559971036,
+      "stored_proximity_interval_upper": 43.855455997232575
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 44.135275434935295,
+      "exact_polygon_indexed_interval_upper": 44.135275445977214,
+      "index": 93,
+      "stored_proximity_interval_lower": 44.13527544039075,
+      "stored_proximity_interval_upper": 44.135275440521774
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 44.341101983845526,
+      "exact_polygon_indexed_interval_upper": 44.34110199488527,
+      "index": 94,
+      "stored_proximity_interval_lower": 44.341101989301094,
+      "stored_proximity_interval_upper": 44.34110198942972
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 45.42232649492964,
+      "exact_polygon_indexed_interval_upper": 45.42232650597144,
+      "index": 95,
+      "stored_proximity_interval_lower": 45.4223265003858,
+      "stored_proximity_interval_upper": 45.42232650051529
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 45.49834211293619,
+      "exact_polygon_indexed_interval_upper": 45.4983421239791,
+      "index": 96,
+      "stored_proximity_interval_lower": 45.498342118392394,
+      "stored_proximity_interval_upper": 45.498342118522906
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 46.03351278112083,
+      "exact_polygon_indexed_interval_upper": 46.03351279216429,
+      "index": 97,
+      "stored_proximity_interval_lower": 46.03351278657732,
+      "stored_proximity_interval_upper": 46.0335127867078
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 46.973516912156775,
+      "exact_polygon_indexed_interval_upper": 46.973516923201416,
+      "index": 98,
+      "stored_proximity_interval_lower": 46.973516917613786,
+      "stored_proximity_interval_upper": 46.97351691774441
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 47.28138893576407,
+      "exact_polygon_indexed_interval_upper": 47.28138894680737,
+      "index": 99,
+      "stored_proximity_interval_lower": 47.28138894122125,
+      "stored_proximity_interval_upper": 47.2813889413502
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 47.48308782030057,
+      "exact_polygon_indexed_interval_upper": 47.48308783134675,
+      "index": 100,
+      "stored_proximity_interval_lower": 47.48308782575786,
+      "stored_proximity_interval_upper": 47.48308782588947
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 47.760575165180846,
+      "exact_polygon_indexed_interval_upper": 47.76057517622575,
+      "index": 101,
+      "stored_proximity_interval_lower": 47.76057517063829,
+      "stored_proximity_interval_upper": 47.76057517076832
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 47.81930460181154,
+      "exact_polygon_indexed_interval_upper": 47.81930461285694,
+      "index": 102,
+      "stored_proximity_interval_lower": 47.81930460726902,
+      "stored_proximity_interval_upper": 47.819304607399474
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 48.78409730924738,
+      "exact_polygon_indexed_interval_upper": 48.78409732029519,
+      "index": 103,
+      "stored_proximity_interval_lower": 48.784097314705384,
+      "stored_proximity_interval_upper": 48.78409731483719
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 49.67073747531578,
+      "exact_polygon_indexed_interval_upper": 49.670737486362846,
+      "index": 104,
+      "stored_proximity_interval_lower": 49.67073748077428,
+      "stored_proximity_interval_upper": 49.670737480904364
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 49.949326431606835,
+      "exact_polygon_indexed_interval_upper": 49.949326442654645,
+      "index": 105,
+      "stored_proximity_interval_lower": 49.94932643706548,
+      "stored_proximity_interval_upper": 49.94932643719601
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 50.05680869549861,
+      "exact_polygon_indexed_interval_upper": 50.05680870654961,
+      "index": 106,
+      "stored_proximity_interval_lower": 50.05680870095732,
+      "stored_proximity_interval_upper": 50.056808701090915
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 50.48039398334569,
+      "exact_polygon_indexed_interval_upper": 50.48039399439427,
+      "index": 107,
+      "stored_proximity_interval_lower": 50.48039398880463,
+      "stored_proximity_interval_upper": 50.48039398893534
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 50.82761267238308,
+      "exact_polygon_indexed_interval_upper": 50.8276126834324,
+      "index": 108,
+      "stored_proximity_interval_lower": 50.82761267784221,
+      "stored_proximity_interval_upper": 50.82761267797328
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 50.922213030958105,
+      "exact_polygon_indexed_interval_upper": 50.92221304200693,
+      "index": 109,
+      "stored_proximity_interval_lower": 50.92221303641729,
+      "stored_proximity_interval_upper": 50.92221303654776
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 51.31107719777743,
+      "exact_polygon_indexed_interval_upper": 51.311077208827676,
+      "index": 110,
+      "stored_proximity_interval_lower": 51.31107720323683,
+      "stored_proximity_interval_upper": 51.31107720336829
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 51.573222695399465,
+      "exact_polygon_indexed_interval_upper": 51.573222706448135,
+      "index": 111,
+      "stored_proximity_interval_lower": 51.573222700859006,
+      "stored_proximity_interval_upper": 51.57322270098861
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 52.52495508526338,
+      "exact_polygon_indexed_interval_upper": 52.5249550963149,
+      "index": 112,
+      "stored_proximity_interval_lower": 52.52495509072344,
+      "stored_proximity_interval_upper": 52.524955090854846
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 52.5542615234609,
+      "exact_polygon_indexed_interval_upper": 52.554261534511404,
+      "index": 113,
+      "stored_proximity_interval_lower": 52.55426152892098,
+      "stored_proximity_interval_upper": 52.55426152905134
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 53.05739897625961,
+      "exact_polygon_indexed_interval_upper": 53.05739898731034,
+      "index": 114,
+      "stored_proximity_interval_lower": 53.05739898171997,
+      "stored_proximity_interval_upper": 53.05739898185
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 53.996918514323276,
+      "exact_polygon_indexed_interval_upper": 53.99691852537535,
+      "index": 115,
+      "stored_proximity_interval_lower": 53.996918519784145,
+      "stored_proximity_interval_upper": 53.99691851991449
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 54.646261547608795,
+      "exact_polygon_indexed_interval_upper": 54.64626155866279,
+      "index": 116,
+      "stored_proximity_interval_lower": 54.646261553070026,
+      "stored_proximity_interval_upper": 54.646261553201576
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 54.86004527743469,
+      "exact_polygon_indexed_interval_upper": 54.8600452884869,
+      "index": 117,
+      "stored_proximity_interval_lower": 54.86004528289604,
+      "stored_proximity_interval_upper": 54.86004528302557
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 54.98435019305228,
+      "exact_polygon_indexed_interval_upper": 54.98435020410598,
+      "index": 118,
+      "stored_proximity_interval_lower": 54.984350198513695,
+      "stored_proximity_interval_upper": 54.98435019864458
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 55.402395289711535,
+      "exact_polygon_indexed_interval_upper": 55.402395300765946,
+      "index": 119,
+      "stored_proximity_interval_lower": 55.40239529517318,
+      "stored_proximity_interval_upper": 55.402395295304316
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 56.383075833198355,
+      "exact_polygon_indexed_interval_upper": 56.38307584425339,
+      "index": 120,
+      "stored_proximity_interval_lower": 56.38307583866054,
+      "stored_proximity_interval_upper": 56.38307583879122
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 56.73665653417645,
+      "exact_polygon_indexed_interval_upper": 56.73665654523319,
+      "index": 121,
+      "stored_proximity_interval_lower": 56.73665653963882,
+      "stored_proximity_interval_upper": 56.73665653977083
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 56.77768443114075,
+      "exact_polygon_indexed_interval_upper": 56.777684442199,
+      "index": 122,
+      "stored_proximity_interval_lower": 56.777684436603145,
+      "stored_proximity_interval_upper": 56.777684436736614
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 57.871587894768275,
+      "exact_polygon_indexed_interval_upper": 57.87158790582516,
+      "index": 123,
+      "stored_proximity_interval_lower": 57.871587900231276,
+      "stored_proximity_interval_upper": 57.87158790036217
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 57.89230625369101,
+      "exact_polygon_indexed_interval_upper": 57.89230626474737,
+      "index": 124,
+      "stored_proximity_interval_lower": 57.892306259154026,
+      "stored_proximity_interval_upper": 57.89230625928437
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 57.92829606187372,
+      "exact_polygon_indexed_interval_upper": 57.92829607293189,
+      "index": 125,
+      "stored_proximity_interval_lower": 57.92829606733675,
+      "stored_proximity_interval_upper": 57.92829606746887
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 58.606688784581486,
+      "exact_polygon_indexed_interval_upper": 58.606688795639975,
+      "index": 126,
+      "stored_proximity_interval_lower": 58.60668879004489,
+      "stored_proximity_interval_upper": 58.606688790176584
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 58.8793546334257,
+      "exact_polygon_indexed_interval_upper": 58.879354644482554,
+      "index": 127,
+      "stored_proximity_interval_lower": 58.879354638889254,
+      "stored_proximity_interval_upper": 58.87935463901901
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 59.57244368911293,
+      "exact_polygon_indexed_interval_upper": 59.572443700173665,
+      "index": 128,
+      "stored_proximity_interval_lower": 59.57244369457687,
+      "stored_proximity_interval_upper": 59.57244369470974
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 60.268835283049484,
+      "exact_polygon_indexed_interval_upper": 60.26883529411065,
+      "index": 129,
+      "stored_proximity_interval_lower": 60.2688352885138,
+      "stored_proximity_interval_upper": 60.26883528864634
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 60.88774895288899,
+      "exact_polygon_indexed_interval_upper": 60.88774896395018,
+      "index": 130,
+      "stored_proximity_interval_lower": 60.88774895835365,
+      "stored_proximity_interval_upper": 60.88774895848554
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 61.12186699973116,
+      "exact_polygon_indexed_interval_upper": 61.12186701079238,
+      "index": 131,
+      "stored_proximity_interval_lower": 61.121867005195945,
+      "stored_proximity_interval_upper": 61.12186700532761
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 61.27346912523642,
+      "exact_polygon_indexed_interval_upper": 61.273469136299965,
+      "index": 132,
+      "stored_proximity_interval_lower": 61.27346913070129,
+      "stored_proximity_interval_upper": 61.27346913083511
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 61.349120005873345,
+      "exact_polygon_indexed_interval_upper": 61.34912001693533,
+      "index": 133,
+      "stored_proximity_interval_lower": 61.34912001133826,
+      "stored_proximity_interval_upper": 61.34912001147043
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 61.968902333449265,
+      "exact_polygon_indexed_interval_upper": 61.968902344512486,
+      "index": 134,
+      "stored_proximity_interval_lower": 61.96890233891452,
+      "stored_proximity_interval_upper": 61.96890233904725
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 62.11089863398612,
+      "exact_polygon_indexed_interval_upper": 62.110898645048486,
+      "index": 135,
+      "stored_proximity_interval_lower": 62.11089863945145,
+      "stored_proximity_interval_upper": 62.11089863958317
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 63.06430102757834,
+      "exact_polygon_indexed_interval_upper": 63.06430103864335,
+      "index": 136,
+      "stored_proximity_interval_lower": 63.064301033044195,
+      "stored_proximity_interval_upper": 63.06430103317751
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 63.620007486149866,
+      "exact_polygon_indexed_interval_upper": 63.62000749721444,
+      "index": 137,
+      "stored_proximity_interval_lower": 63.62000749161603,
+      "stored_proximity_interval_upper": 63.62000749174829
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 63.7029682517831,
+      "exact_polygon_indexed_interval_upper": 63.70296826284905,
+      "index": 138,
+      "stored_proximity_interval_lower": 63.7029682572493,
+      "stored_proximity_interval_upper": 63.70296825738286
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 63.7687728122806,
+      "exact_polygon_indexed_interval_upper": 63.768772823343895,
+      "index": 139,
+      "stored_proximity_interval_lower": 63.76877281774684,
+      "stored_proximity_interval_upper": 63.76877281787767
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 64.0327203862167,
+      "exact_polygon_indexed_interval_upper": 64.03272039728114,
+      "index": 140,
+      "stored_proximity_interval_lower": 64.0327203916831,
+      "stored_proximity_interval_upper": 64.03272039181475
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 65.2955884021226,
+      "exact_polygon_indexed_interval_upper": 65.29558841318875,
+      "index": 141,
+      "stored_proximity_interval_lower": 65.2955884075897,
+      "stored_proximity_interval_upper": 65.29558840772167
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 65.41220167867782,
+      "exact_polygon_indexed_interval_upper": 65.41220168974536,
+      "index": 142,
+      "stored_proximity_interval_lower": 65.41220168414499,
+      "stored_proximity_interval_upper": 65.4122016842782
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 65.47967014843776,
+      "exact_polygon_indexed_interval_upper": 65.47967015950437,
+      "index": 143,
+      "stored_proximity_interval_lower": 65.47967015390496,
+      "stored_proximity_interval_upper": 65.47967015403718
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 65.86273481509899,
+      "exact_polygon_indexed_interval_upper": 65.86273482616761,
+      "index": 144,
+      "stored_proximity_interval_lower": 65.8627348205664,
+      "stored_proximity_interval_upper": 65.86273482070021
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 66.65848876961708,
+      "exact_polygon_indexed_interval_upper": 66.65848878068488,
+      "index": 145,
+      "stored_proximity_interval_lower": 66.65848877508493,
+      "stored_proximity_interval_upper": 66.65848877521704
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 67.42297310599824,
+      "exact_polygon_indexed_interval_upper": 67.42297311706783,
+      "index": 146,
+      "stored_proximity_interval_lower": 67.4229731114665,
+      "stored_proximity_interval_upper": 67.42297311159957
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 68.25306462769854,
+      "exact_polygon_indexed_interval_upper": 68.25306463877114,
+      "index": 147,
+      "stored_proximity_interval_lower": 68.25306463316726,
+      "stored_proximity_interval_upper": 68.25306463330243
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 68.31292474968465,
+      "exact_polygon_indexed_interval_upper": 68.31292476075478,
+      "index": 148,
+      "stored_proximity_interval_lower": 68.31292475515342,
+      "stored_proximity_interval_upper": 68.31292475528603
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 69.04675691569696,
+      "exact_polygon_indexed_interval_upper": 69.04675692677039,
+      "index": 149,
+      "stored_proximity_interval_lower": 69.04675692116612,
+      "stored_proximity_interval_upper": 69.04675692130124
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 69.16907632218192,
+      "exact_polygon_indexed_interval_upper": 69.16907633325299,
+      "index": 150,
+      "stored_proximity_interval_lower": 69.16907632765115,
+      "stored_proximity_interval_upper": 69.16907632778377
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 70.1133491542701,
+      "exact_polygon_indexed_interval_upper": 70.11334916534315,
+      "index": 151,
+      "stored_proximity_interval_lower": 70.11334915973984,
+      "stored_proximity_interval_upper": 70.11334915987342
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 70.21594362075253,
+      "exact_polygon_indexed_interval_upper": 70.21594363182439,
+      "index": 152,
+      "stored_proximity_interval_lower": 70.21594362622233,
+      "stored_proximity_interval_upper": 70.2159436263546
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 70.4922692933067,
+      "exact_polygon_indexed_interval_upper": 70.49226930438257,
+      "index": 153,
+      "stored_proximity_interval_lower": 70.49226929877666,
+      "stored_proximity_interval_upper": 70.49226929891263
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 70.53463248726563,
+      "exact_polygon_indexed_interval_upper": 70.53463249833845,
+      "index": 154,
+      "stored_proximity_interval_lower": 70.53463249273561,
+      "stored_proximity_interval_upper": 70.53463249286848
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 71.09517598839058,
+      "exact_polygon_indexed_interval_upper": 71.09517599946474,
+      "index": 155,
+      "stored_proximity_interval_lower": 71.09517599386086,
+      "stored_proximity_interval_upper": 71.09517599399447
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 71.21588278888787,
+      "exact_polygon_indexed_interval_upper": 71.21588279996195,
+      "index": 156,
+      "stored_proximity_interval_lower": 71.21588279435822,
+      "stored_proximity_interval_upper": 71.2158827944916
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 71.35111414388723,
+      "exact_polygon_indexed_interval_upper": 71.3511141549598,
+      "index": 157,
+      "stored_proximity_interval_lower": 71.35111414935766,
+      "stored_proximity_interval_upper": 71.35111414948939
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 71.5901434910508,
+      "exact_polygon_indexed_interval_upper": 71.59014350212449,
+      "index": 158,
+      "stored_proximity_interval_lower": 71.59014349652136,
+      "stored_proximity_interval_upper": 71.59014349665395
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 72.46572447760711,
+      "exact_polygon_indexed_interval_upper": 72.4657244886836,
+      "index": 159,
+      "stored_proximity_interval_lower": 72.46572448307815,
+      "stored_proximity_interval_upper": 72.46572448321258
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 73.12203259471619,
+      "exact_polygon_indexed_interval_upper": 73.12203260579362,
+      "index": 160,
+      "stored_proximity_interval_lower": 73.1220326001876,
+      "stored_proximity_interval_upper": 73.12203260032223
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 73.33602779423366,
+      "exact_polygon_indexed_interval_upper": 73.33602780530717,
+      "index": 161,
+      "stored_proximity_interval_lower": 73.33602779970518,
+      "stored_proximity_interval_upper": 73.33602779983566
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 73.46925037551819,
+      "exact_polygon_indexed_interval_upper": 73.46925038659266,
+      "index": 162,
+      "stored_proximity_interval_lower": 73.46925038098978,
+      "stored_proximity_interval_upper": 73.46925038112109
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 73.61738968932097,
+      "exact_polygon_indexed_interval_upper": 73.61738970039772,
+      "index": 163,
+      "stored_proximity_interval_lower": 73.61738969479265,
+      "stored_proximity_interval_upper": 73.61738969492606
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 73.68336469719439,
+      "exact_polygon_indexed_interval_upper": 73.68336470827128,
+      "index": 164,
+      "stored_proximity_interval_lower": 73.6833647026661,
+      "stored_proximity_interval_upper": 73.6833647027996
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 73.6960654349895,
+      "exact_polygon_indexed_interval_upper": 73.69606544606515,
+      "index": 165,
+      "stored_proximity_interval_lower": 73.69606544046123,
+      "stored_proximity_interval_upper": 73.69606544059344
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 75.07692555095021,
+      "exact_polygon_indexed_interval_upper": 75.07692556203,
+      "index": 166,
+      "stored_proximity_interval_lower": 75.07692555642268,
+      "stored_proximity_interval_upper": 75.07692555655754
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 76.79171527991856,
+      "exact_polygon_indexed_interval_upper": 76.79171529099936,
+      "index": 167,
+      "stored_proximity_interval_lower": 76.79171528539199,
+      "stored_proximity_interval_upper": 76.79171528552597
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 77.08988664274948,
+      "exact_polygon_indexed_interval_upper": 77.08988665383114,
+      "index": 168,
+      "stored_proximity_interval_lower": 77.08988664822306,
+      "stored_proximity_interval_upper": 77.08988664835758
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 77.935829794135,
+      "exact_polygon_indexed_interval_upper": 77.93582980521764,
+      "index": 169,
+      "stored_proximity_interval_lower": 77.93582979960905,
+      "stored_proximity_interval_upper": 77.9358297997436
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 78.02536043744219,
+      "exact_polygon_indexed_interval_upper": 78.02536044852508,
+      "index": 170,
+      "stored_proximity_interval_lower": 78.02536044291628,
+      "stored_proximity_interval_upper": 78.025360443051
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 78.02544255948152,
+      "exact_polygon_indexed_interval_upper": 78.02544257056074,
+      "index": 171,
+      "stored_proximity_interval_lower": 78.02544256495561,
+      "stored_proximity_interval_upper": 78.02544256508666
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 78.04816731507223,
+      "exact_polygon_indexed_interval_upper": 78.04816732615546,
+      "index": 172,
+      "stored_proximity_interval_lower": 78.04816732054634,
+      "stored_proximity_interval_upper": 78.04816732068137
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 78.23828474916785,
+      "exact_polygon_indexed_interval_upper": 78.23828476024961,
+      "index": 173,
+      "stored_proximity_interval_lower": 78.23828475464207,
+      "stored_proximity_interval_upper": 78.23828475477542
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 79.25494730198886,
+      "exact_polygon_indexed_interval_upper": 79.25494731307215,
+      "index": 174,
+      "stored_proximity_interval_lower": 79.25494730746364,
+      "stored_proximity_interval_upper": 79.25494730759739
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 79.39125892080516,
+      "exact_polygon_indexed_interval_upper": 79.39125893188805,
+      "index": 175,
+      "stored_proximity_interval_lower": 79.39125892628,
+      "stored_proximity_interval_upper": 79.39125892641322
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 79.77682080418522,
+      "exact_polygon_indexed_interval_upper": 79.7768208152701,
+      "index": 176,
+      "stored_proximity_interval_lower": 79.77682080966028,
+      "stored_proximity_interval_upper": 79.77682080979505
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 80.40010903613671,
+      "exact_polygon_indexed_interval_upper": 80.40010904721989,
+      "index": 177,
+      "stored_proximity_interval_lower": 80.40010904161211,
+      "stored_proximity_interval_upper": 80.4001090417445
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 80.51546191356057,
+      "exact_polygon_indexed_interval_upper": 80.51546192464629,
+      "index": 178,
+      "stored_proximity_interval_lower": 80.51546191903604,
+      "stored_proximity_interval_upper": 80.51546191917085
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 81.164327864456,
+      "exact_polygon_indexed_interval_upper": 81.16432787554088,
+      "index": 179,
+      "stored_proximity_interval_lower": 81.16432786993182,
+      "stored_proximity_interval_upper": 81.16432787006507
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 81.72181493320696,
+      "exact_polygon_indexed_interval_upper": 81.72181494429402,
+      "index": 180,
+      "stored_proximity_interval_lower": 81.72181493868308,
+      "stored_proximity_interval_upper": 81.72181493881791
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 82.70856224320853,
+      "exact_polygon_indexed_interval_upper": 82.70856225429785,
+      "index": 181,
+      "stored_proximity_interval_lower": 82.7085622486852,
+      "stored_proximity_interval_upper": 82.7085622488212
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 82.83676258123238,
+      "exact_polygon_indexed_interval_upper": 82.83676259231976,
+      "index": 182,
+      "stored_proximity_interval_lower": 82.83676258670911,
+      "stored_proximity_interval_upper": 82.83676258684304
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 82.98068244343102,
+      "exact_polygon_indexed_interval_upper": 82.98068245451951,
+      "index": 183,
+      "stored_proximity_interval_lower": 82.98068244890784,
+      "stored_proximity_interval_upper": 82.9806824490427
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 82.99913134519831,
+      "exact_polygon_indexed_interval_upper": 82.99913135628891,
+      "index": 184,
+      "stored_proximity_interval_lower": 82.99913135067514,
+      "stored_proximity_interval_upper": 82.9991313508121
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 83.74963391086635,
+      "exact_polygon_indexed_interval_upper": 83.74963392195471,
+      "index": 185,
+      "stored_proximity_interval_lower": 83.7496339163436,
+      "stored_proximity_interval_upper": 83.74963391647749
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 83.75818781542934,
+      "exact_polygon_indexed_interval_upper": 83.75818782651731,
+      "index": 186,
+      "stored_proximity_interval_lower": 83.75818782090658,
+      "stored_proximity_interval_upper": 83.75818782104008
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 83.8138890241673,
+      "exact_polygon_indexed_interval_upper": 83.81388903525527,
+      "index": 187,
+      "stored_proximity_interval_lower": 83.81388902964457,
+      "stored_proximity_interval_upper": 83.81388902977801
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 84.37370563621035,
+      "exact_polygon_indexed_interval_upper": 84.37370564730162,
+      "index": 188,
+      "stored_proximity_interval_lower": 84.37370564168793,
+      "stored_proximity_interval_upper": 84.37370564182405
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 84.6140679793763,
+      "exact_polygon_indexed_interval_upper": 84.614067990468,
+      "index": 189,
+      "stored_proximity_interval_lower": 84.61406798485402,
+      "stored_proximity_interval_upper": 84.6140679849903
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 85.84381847273315,
+      "exact_polygon_indexed_interval_upper": 85.84381848382702,
+      "index": 190,
+      "stored_proximity_interval_lower": 85.84381847821155,
+      "stored_proximity_interval_upper": 85.84381847834865
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 85.87223037240297,
+      "exact_polygon_indexed_interval_upper": 85.87223038349636,
+      "index": 191,
+      "stored_proximity_interval_lower": 85.87223037788138,
+      "stored_proximity_interval_upper": 85.87223037801797
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 86.2981457497285,
+      "exact_polygon_indexed_interval_upper": 86.29814576082379,
+      "index": 192,
+      "stored_proximity_interval_lower": 86.29814575520714,
+      "stored_proximity_interval_upper": 86.29814575534516
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 86.59718843999023,
+      "exact_polygon_indexed_interval_upper": 86.59718845108273,
+      "index": 193,
+      "stored_proximity_interval_lower": 86.59718844546904,
+      "stored_proximity_interval_upper": 86.59718844560393
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 86.97409318445126,
+      "exact_polygon_indexed_interval_upper": 86.97409319554328,
+      "index": 194,
+      "stored_proximity_interval_lower": 86.97409318993027,
+      "stored_proximity_interval_upper": 86.97409319006428
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 87.14046112004753,
+      "exact_polygon_indexed_interval_upper": 87.14046113113784,
+      "index": 195,
+      "stored_proximity_interval_lower": 87.14046112552664,
+      "stored_proximity_interval_upper": 87.14046112565875
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 87.8405742502433,
+      "exact_polygon_indexed_interval_upper": 87.84057426133761,
+      "index": 196,
+      "stored_proximity_interval_lower": 87.84057425572279,
+      "stored_proximity_interval_upper": 87.84057425585813
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 88.54930797664575,
+      "exact_polygon_indexed_interval_upper": 88.54930798774308,
+      "index": 197,
+      "stored_proximity_interval_lower": 88.54930798212563,
+      "stored_proximity_interval_upper": 88.54930798226322
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 88.98733728155796,
+      "exact_polygon_indexed_interval_upper": 88.98733729265432,
+      "index": 198,
+      "stored_proximity_interval_lower": 88.98733728703807,
+      "stored_proximity_interval_upper": 88.98733728717421
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 89.72915711075039,
+      "exact_polygon_indexed_interval_upper": 89.72915712184653,
+      "index": 199,
+      "stored_proximity_interval_lower": 89.72915711623092,
+      "stored_proximity_interval_upper": 89.72915711636601
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 90.01788947353984,
+      "exact_polygon_indexed_interval_upper": 90.01788948463549,
+      "index": 200,
+      "stored_proximity_interval_lower": 90.01788947902052,
+      "stored_proximity_interval_upper": 90.01788947915482
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 90.66354873474182,
+      "exact_polygon_indexed_interval_upper": 90.66354874583895,
+      "index": 201,
+      "stored_proximity_interval_lower": 90.66354874022286,
+      "stored_proximity_interval_upper": 90.66354874035792
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 91.44359378460791,
+      "exact_polygon_indexed_interval_upper": 91.44359379570635,
+      "index": 202,
+      "stored_proximity_interval_lower": 91.44359379008938,
+      "stored_proximity_interval_upper": 91.4435937902249
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 91.77170157352687,
+      "exact_polygon_indexed_interval_upper": 91.77170158462556,
+      "index": 203,
+      "stored_proximity_interval_lower": 91.77170157900852,
+      "stored_proximity_interval_upper": 91.77170157914392
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 92.00676560215183,
+      "exact_polygon_indexed_interval_upper": 92.0067656132518,
+      "index": 204,
+      "stored_proximity_interval_lower": 92.00676560763361,
+      "stored_proximity_interval_upper": 92.00676560777003
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 92.05489862873857,
+      "exact_polygon_indexed_interval_upper": 92.05489863983617,
+      "index": 205,
+      "stored_proximity_interval_lower": 92.05489863422038,
+      "stored_proximity_interval_upper": 92.05489863435439
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 92.12431204529508,
+      "exact_polygon_indexed_interval_upper": 92.12431205639786,
+      "index": 206,
+      "stored_proximity_interval_lower": 92.12431205077694,
+      "stored_proximity_interval_upper": 92.12431205091603
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 92.40506003679705,
+      "exact_polygon_indexed_interval_upper": 92.40506004789702,
+      "index": 207,
+      "stored_proximity_interval_lower": 92.40506004227905,
+      "stored_proximity_interval_upper": 92.40506004241504
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 92.90090871827263,
+      "exact_polygon_indexed_interval_upper": 92.90090872937196,
+      "index": 208,
+      "stored_proximity_interval_lower": 92.90090872375491,
+      "stored_proximity_interval_upper": 92.90090872388971
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 93.98522828345064,
+      "exact_polygon_indexed_interval_upper": 93.98522829455344,
+      "index": 209,
+      "stored_proximity_interval_lower": 93.98522828893351,
+      "stored_proximity_interval_upper": 93.98522828907059
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 94.76635152675541,
+      "exact_polygon_indexed_interval_upper": 94.76635153785685,
+      "index": 210,
+      "stored_proximity_interval_lower": 94.76635153223872,
+      "stored_proximity_interval_upper": 94.76635153237358
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 94.95426566749758,
+      "exact_polygon_indexed_interval_upper": 94.95426567860014,
+      "index": 211,
+      "stored_proximity_interval_lower": 94.95426567298098,
+      "stored_proximity_interval_upper": 94.95426567311675
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 96.21592479213315,
+      "exact_polygon_indexed_interval_upper": 96.21592480324095,
+      "index": 212,
+      "stored_proximity_interval_lower": 96.21592479761725,
+      "stored_proximity_interval_upper": 96.21592479775688
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 96.85969884540587,
+      "exact_polygon_indexed_interval_upper": 96.85969885651379,
+      "index": 213,
+      "stored_proximity_interval_lower": 96.85969885089033,
+      "stored_proximity_interval_upper": 96.85969885102936
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 96.90328791317093,
+      "exact_polygon_indexed_interval_upper": 96.90328792427923,
+      "index": 214,
+      "stored_proximity_interval_lower": 96.9032879186554,
+      "stored_proximity_interval_upper": 96.90328791879477
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 97.15467632234916,
+      "exact_polygon_indexed_interval_upper": 97.15467633345709,
+      "index": 215,
+      "stored_proximity_interval_lower": 97.15467632783377,
+      "stored_proximity_interval_upper": 97.1546763279725
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 97.22001352035365,
+      "exact_polygon_indexed_interval_upper": 97.22001353146486,
+      "index": 216,
+      "stored_proximity_interval_lower": 97.2200135258383,
+      "stored_proximity_interval_upper": 97.22001352598024
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 97.75038895118901,
+      "exact_polygon_indexed_interval_upper": 97.75038896230024,
+      "index": 217,
+      "stored_proximity_interval_lower": 97.75038895667394,
+      "stored_proximity_interval_upper": 97.75038895681531
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 98.11308513504129,
+      "exact_polygon_indexed_interval_upper": 98.11308514615041,
+      "index": 218,
+      "stored_proximity_interval_lower": 98.11308514052642,
+      "stored_proximity_interval_upper": 98.11308514066529
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 98.22819968537208,
+      "exact_polygon_indexed_interval_upper": 98.22819969648462,
+      "index": 219,
+      "stored_proximity_interval_lower": 98.22819969085728,
+      "stored_proximity_interval_upper": 98.22819969099945
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 98.29878998882062,
+      "exact_polygon_indexed_interval_upper": 98.29878999993369,
+      "index": 220,
+      "stored_proximity_interval_lower": 98.29878999430585,
+      "stored_proximity_interval_upper": 98.29878999444847
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 98.90849761487821,
+      "exact_polygon_indexed_interval_upper": 98.90849762598994,
+      "index": 221,
+      "stored_proximity_interval_lower": 98.90849762036379,
+      "stored_proximity_interval_upper": 98.90849762050439
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 99.11664172776808,
+      "exact_polygon_indexed_interval_upper": 99.11664173888418,
+      "index": 222,
+      "stored_proximity_interval_lower": 99.11664173325377,
+      "stored_proximity_interval_upper": 99.11664173339852
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 99.46516571203016,
+      "exact_polygon_indexed_interval_upper": 99.4651657231468,
+      "index": 223,
+      "stored_proximity_interval_lower": 99.46516571751604,
+      "stored_proximity_interval_upper": 99.46516571766094
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 99.82298038418529,
+      "exact_polygon_indexed_interval_upper": 99.82298039529725,
+      "index": 224,
+      "stored_proximity_interval_lower": 99.82298038967136,
+      "stored_proximity_interval_upper": 99.82298038981119
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 100.6706133213876,
+      "exact_polygon_indexed_interval_upper": 100.67061333250486,
+      "index": 225,
+      "stored_proximity_interval_lower": 100.67061332687415,
+      "stored_proximity_interval_upper": 100.67061332701833
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 101.26520604537487,
+      "exact_polygon_indexed_interval_upper": 101.26520605649863,
+      "index": 226,
+      "stored_proximity_interval_lower": 101.26520605086174,
+      "stored_proximity_interval_upper": 101.26520605101177
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 101.33627357788586,
+      "exact_polygon_indexed_interval_upper": 101.33627358900242,
+      "index": 227,
+      "stored_proximity_interval_lower": 101.33627358337277,
+      "stored_proximity_interval_upper": 101.33627358351553
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 101.61706673968783,
+      "exact_polygon_indexed_interval_upper": 101.6170667508128,
+      "index": 228,
+      "stored_proximity_interval_lower": 101.6170667451749,
+      "stored_proximity_interval_upper": 101.61706674532576
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 101.80006558709832,
+      "exact_polygon_indexed_interval_upper": 101.80006559821598,
+      "index": 229,
+      "stored_proximity_interval_lower": 101.80006559258548,
+      "stored_proximity_interval_upper": 101.80006559272884
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 102.23912677118153,
+      "exact_polygon_indexed_interval_upper": 102.23912678230036,
+      "index": 230,
+      "stored_proximity_interval_lower": 102.23912677666894,
+      "stored_proximity_interval_upper": 102.23912677681298
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 102.88042459354088,
+      "exact_polygon_indexed_interval_upper": 102.88042460466153,
+      "index": 231,
+      "stored_proximity_interval_lower": 102.88042459902864,
+      "stored_proximity_interval_upper": 102.8804245991738
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 103.66041166566525,
+      "exact_polygon_indexed_interval_upper": 103.66041167678416,
+      "index": 232,
+      "stored_proximity_interval_lower": 103.66041167115344,
+      "stored_proximity_interval_upper": 103.660411671296
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 104.24766226518946,
+      "exact_polygon_indexed_interval_upper": 104.24766227630964,
+      "index": 233,
+      "stored_proximity_interval_lower": 104.24766227067796,
+      "stored_proximity_interval_upper": 104.24766227082115
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 104.76462336592442,
+      "exact_polygon_indexed_interval_upper": 104.76462337704517,
+      "index": 234,
+      "stored_proximity_interval_lower": 104.76462337141321,
+      "stored_proximity_interval_upper": 104.7646233715564
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 105.42810851142126,
+      "exact_polygon_indexed_interval_upper": 105.42810852254398,
+      "index": 235,
+      "stored_proximity_interval_lower": 105.42810851691041,
+      "stored_proximity_interval_upper": 105.42810851705485
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 105.48337404616255,
+      "exact_polygon_indexed_interval_upper": 105.48337405728685,
+      "index": 236,
+      "stored_proximity_interval_lower": 105.48337405165174,
+      "stored_proximity_interval_upper": 105.48337405179768
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 105.85495122381639,
+      "exact_polygon_indexed_interval_upper": 105.85495123494135,
+      "index": 237,
+      "stored_proximity_interval_lower": 105.85495122930578,
+      "stored_proximity_interval_upper": 105.85495122945198
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 106.28293536320558,
+      "exact_polygon_indexed_interval_upper": 106.28293537432671,
+      "index": 238,
+      "stored_proximity_interval_lower": 106.2829353686952,
+      "stored_proximity_interval_upper": 106.28293536883712
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 106.41622375341366,
+      "exact_polygon_indexed_interval_upper": 106.4162237645287,
+      "index": 239,
+      "stored_proximity_interval_lower": 106.41622375890336,
+      "stored_proximity_interval_upper": 106.41622375903901
+    },
+    {
+      "decimal_formula_values_contained": true,
+      "exact_polygon_indexed_interval_lower": 107.01775717228844,
+      "exact_polygon_indexed_interval_upper": 107.01775718341179,
+      "index": 240,
+      "stored_proximity_interval_lower": 107.01775717777848,
+      "stored_proximity_interval_upper": 107.01775717792178
+    }
+  ],
+  "scope": "This transfers only from the stored binary matrices to the exact Gaussian-weighted finite-element forms on the same stored polygon. It does not prove continuum Ritz or polygon-to-circle domain transfer.",
+  "state_count": 15211,
+  "stiffness_form_error_in_stored_mass_units_upper": 5.431182629562088e-09,
+  "theorem": "If |a_exact-a_stored| <= eta_A m_stored and mu_- m_stored <= m_exact <= mu_+ m_stored, then (lambda_stored_j-eta_A)/mu_+ <= lambda_exact_j <= (lambda_stored_j+eta_A)/mu_- for every indexed j."
+}

@@ -1,0 +1,946 @@
+{
+  "algorithm_revision": "annular-parallel-shear-euler-transport-fisher-exclusion-v1",
+  "all_positive_checks_pass": true,
+  "carrier_power_exclusion": {
+    "all_checks_pass": true,
+    "branches": [
+      {
+        "branch": "HHHH",
+        "coefficient_product": "O(N^-4)",
+        "fixed_weight_scale_bound": "O(nu N^7)",
+        "free_high_tuple_count": "O(N^9)",
+        "kernel_power": 4,
+        "minimum_compatible_gain": "N^-2",
+        "optimized_bound": "O(nu N^8)",
+        "optimizer_factor": "t_N=O(N)",
+        "strictly_below_N9": true
+      },
+      {
+        "branch": "HHLL",
+        "coefficient_product": "O(N^-2)",
+        "fixed_amplitude_bound": "O(nu N^5)",
+        "free_high_tuple_count": "O(N^3)",
+        "kernel_power_upper_bound": 4,
+        "optimized_bound": "O(nu N^8)",
+        "optimizer_factor": "a_N^2 t_N=O(N^3)",
+        "strictly_below_N9": true
+      },
+      {
+        "bound": "0 exactly",
+        "branch": "LLLL",
+        "reason": "U=r f, r dot grad f=0, and r dot grad(grad f)=0",
+        "strictly_below_N9": true
+      }
+    ],
+    "conclusion": "Every pure E/A viscosity-bearing Fisher row is o(N^9): the velocity-Fisher block is O(N^8), and the weight-self block is O(N^6).",
+    "high_packet": {
+      "coefficient_l1": "O(N^2)",
+      "coefficient_l_infinity": "O(N^-1)",
+      "first_difference_l1": "O(N)",
+      "mode_count": "2N^3",
+      "second_difference_l1": "O(1)"
+    },
+    "internal_output_shell": {
+      "dyadic_sum_bound": "O(N^7)",
+      "finite_shell_bound": "O(N^5)",
+      "four_high_coefficient_product": "O(N^-4)",
+      "output_count": "O(K^3)",
+      "pair_count_per_output": "O(N^6)",
+      "remaining_degree_three_kernel": "O(N^3)",
+      "second_Euler_symbol_difference": "O((1+K)^-1)",
+      "shell": "K<=|s|<2K, 1<=K<=CN",
+      "shell_bound": "O(N^5 K^2)"
+    },
+    "kernel": {
+      "first_compatible_difference_bound": "O(N^3)",
+      "regular_second_difference_bound": "O(N^2)",
+      "singular_exception": "A second difference of the degree-one internal Euler symbol is treated by output shells, not by a false C2 extension through output zero.",
+      "total_differential_order": 4,
+      "undifferenced_bound": "O(N^4)"
+    },
+    "velocity_Fisher_conclusion": "The complete five-channel Euler-transport weighted-Fisher block is O(N^8)=o(N^9) on the static optimizer.",
+    "weight_self_branches": [
+      {
+        "branch": "HH",
+        "coefficient_product": "O(N^-2)",
+        "fixed_weight_scale_bound": "O(nu N^3)",
+        "free_high_pair_count": "O(N^3)",
+        "kernel_power": 2,
+        "optimized_bound": "O(nu N^6)",
+        "optimizer_factor": "t_N^3=O(N^3)",
+        "strictly_below_N9": true
+      },
+      {
+        "bound": "0 exactly",
+        "branch": "HL",
+        "reason": "first-coordinate incidence",
+        "strictly_below_N9": true
+      },
+      {
+        "branch": "LL",
+        "fixed_carrier_bound": "O(nu)",
+        "optimized_bound": "O(nu N^5)",
+        "optimizer_factor": "a_N^2 t_N^3=O(N^5)",
+        "strictly_below_N9": true
+      }
+    ],
+    "weight_self_conclusion": "The complete Euler-transport weight-self block is O(N^6)=o(N^9) on the static optimizer."
+  },
+  "certification_flags": {
+    "Euler_transport_weight_self_identity_proved": true,
+    "Euler_transport_weight_self_o_N9_proved": true,
+    "Euler_transport_weighted_Fisher_identity_proved": true,
+    "Euler_transport_weighted_Fisher_o_N9_proved": true,
+    "Navier_Stokes_global_regularity_proved": false,
+    "all_pure_EA_viscosity_bearing_Fisher_rows_o_N9_proved": true,
+    "all_viscosity_bearing_second_rows_o_N9_proved": false,
+    "complete_second_N9_limit_certified": false,
+    "finite_time_blowup_proved": false,
+    "uniform_second_jet_Taylor_remainder_proved": false
+  },
+  "finite_channel_projection_replay": {
+    "all_checks_pass": true,
+    "combined_N5_polynomial": [
+      {
+        "combined_coefficient": -0.051668467103397106,
+        "expected_coefficient": -0.0516684671033971,
+        "residual": 6.938893903907228e-18,
+        "term": "H^4",
+        "xy_power": 0,
+        "yz_power": 0
+      },
+      {
+        "combined_coefficient": -0.11097887044609589,
+        "expected_coefficient": -0.11097887044609589,
+        "residual": 0.0,
+        "term": "H^2 L_yz^0 L_xy^2",
+        "xy_power": 2,
+        "yz_power": 0
+      },
+      {
+        "combined_coefficient": -0.021425969888489327,
+        "expected_coefficient": -0.021425969888489327,
+        "residual": 0.0,
+        "term": "H^2 L_yz^1 L_xy^1",
+        "xy_power": 1,
+        "yz_power": 1
+      },
+      {
+        "combined_coefficient": -0.020908037693550874,
+        "expected_coefficient": -0.020908037693550874,
+        "residual": 0.0,
+        "term": "H^2 L_yz^2 L_xy^0",
+        "xy_power": 0,
+        "yz_power": 2
+      }
+    ],
+    "finite_fixed_amplitude_replays": [
+      {
+        "channel_values": {
+          "2H_u_lambda[E,A]": 0.4875811524442382,
+          "D_lambda[lambda2_0A]": -0.22450064947803014,
+          "D_lambda[lambda2_E0]": -2.4168818222356998e-05,
+          "D_u[u2_EE]": 3.0448910213038833,
+          "H_uu[E,E]": -3.5108875424084505
+        },
+        "coefficient_scale": 0.9,
+        "combined_value": -0.2029401869565814,
+        "size": 3,
+        "source": "small_carrier_finite_jet_validation",
+        "xy_amplitude": 0.7,
+        "yz_amplitude": 0.7
+      },
+      {
+        "channel_values": {
+          "2H_u_lambda[E,A]": 0.2175443099890472,
+          "D_lambda[lambda2_0A]": -0.11003075212154995,
+          "D_lambda[lambda2_E0]": -0.0008149793042597577,
+          "D_u[u2_EE]": 2.5340848442438593,
+          "H_uu[E,E]": -2.7262723053620737
+        },
+        "coefficient_scale": 0.8,
+        "combined_value": -0.08548888255497689,
+        "size": 5,
+        "source": "fixed_amplitude_N5_jet_row",
+        "xy_amplitude": 0.6,
+        "yz_amplitude": 0.6
+      }
+    ],
+    "maximum_combined_coefficient_residual": 6.938893903907228e-18,
+    "selected_channel_count": 5,
+    "selected_channels": [
+      "second::2H_u_lambda[E,A]::weighted_Fisher",
+      "second::D_lambda[lambda2_0A]::velocity_Fisher",
+      "second::D_lambda[lambda2_E0]::velocity_Fisher",
+      "second::D_u[u2_EE]::weighted_Fisher",
+      "second::H_uu[E,E]::weighted_Fisher"
+    ],
+    "support_statement": "Only HHHH and HHLL survive. The low-only LLLL block is identically zero because the parallel shear is Euler stationary and D_t grad U=0."
+  },
+  "finite_weight_self_projection_replay": {
+    "all_checks_pass": true,
+    "combined_N5_polynomial": [
+      {
+        "combined_coefficient": -4.715074226175247e-05,
+        "expected_coefficient": -4.715074226175247e-05,
+        "residual": 0.0,
+        "term": "H^2",
+        "xy_power": 0,
+        "yz_power": 0
+      },
+      {
+        "combined_coefficient": -0.05192057291666574,
+        "expected_coefficient": -0.05192057291666574,
+        "residual": 0.0,
+        "term": "L_yz^0 L_xy^2",
+        "xy_power": 2,
+        "yz_power": 0
+      },
+      {
+        "combined_coefficient": -0.03184000651041721,
+        "expected_coefficient": -0.03184000651041721,
+        "residual": 0.0,
+        "term": "L_yz^1 L_xy^1",
+        "xy_power": 1,
+        "yz_power": 1
+      },
+      {
+        "combined_coefficient": -0.05192057291666444,
+        "expected_coefficient": -0.05192057291666444,
+        "residual": 0.0,
+        "term": "L_yz^2 L_xy^0",
+        "xy_power": 0,
+        "yz_power": 2
+      }
+    ],
+    "maximum_combined_coefficient_residual": 0.0,
+    "selected_subterm_count": 7,
+    "selected_subterms": [
+      "second::D_lambda[lambda2_0A]::weight_Fisher_cross",
+      "second::D_lambda[lambda2_0A]::weight_Fisher_direction",
+      "second::D_lambda[lambda2_E0]::weight_Fisher_cross",
+      "second::D_lambda[lambda2_E0]::weight_Fisher_direction",
+      "second::H_lambda_lambda[A,A]::first_weight_direction",
+      "second::H_lambda_lambda[A,A]::mixed_weight_gradient",
+      "second::H_lambda_lambda[A,A]::second_weight_direction"
+    ],
+    "support_statement": "Velocity degree two permits HH and LL. The one-high/one-low branch vanishes by first-coordinate incidence."
+  },
+  "kind": "annular_parallel_shear_euler_transport_fisher_exclusion_audit",
+  "material_identity_certificate": {
+    "Euler_acceleration": "E2=D E[u] E",
+    "Euler_direction": "E=-P[(u dot grad)u]",
+    "all_checks_pass": true,
+    "channel_rows": [
+      {
+        "channel": "H_uu[E,E]::weighted_Fisher",
+        "coefficient_in_minus_nu_F_second": 2,
+        "integrand": "-2 nu lambda |grad E|^2"
+      },
+      {
+        "channel": "D_u[u2_EE]::weighted_Fisher",
+        "coefficient_in_minus_nu_F_second": 2,
+        "integrand": "-2 nu lambda grad u : grad(D E[u] E)"
+      },
+      {
+        "channel": "2H_u_lambda[E,A]::weighted_Fisher",
+        "coefficient_in_minus_nu_F_second": 4,
+        "integrand": "-4 nu A grad u : grad E"
+      },
+      {
+        "channel": "D_lambda[lambda2_E0]::velocity_Fisher",
+        "coefficient_in_minus_nu_F_second": 1,
+        "integrand": "+nu (E dot grad lambda) |grad u|^2"
+      },
+      {
+        "channel": "D_lambda[lambda2_0A]::velocity_Fisher",
+        "coefficient_in_minus_nu_F_second": 1,
+        "integrand": "+nu (u dot grad A) |grad u|^2"
+      }
+    ],
+    "combined_material_identity": "-nu F''=-nu mean(lambda D_t^2 |grad u|^2)",
+    "functional": "F(u,lambda)=mean(lambda |grad u|^2)",
+    "material_transport_rule": "d/ds mean(lambda f)=mean(lambda D_t f), D_t=partial_s+u dot grad",
+    "matrix_reduction": {
+      "definitions": "M=grad u, P=Hess p, Q=M^2+P, D_t M=-Q",
+      "identity": "D_t^2 |M|^2=2|Q|^2-2 M:D_t Q",
+      "outer_projector_guard": "The only degree-zero outer Riesz multiplier occurs in Hess(D_t p). It is paired with the exterior factor M. On the HHHH branch that exterior factor is high, so it can absorb the vertex shift while the outer output and projector are held fixed.",
+      "pressure_Poisson": "-Delta p=tr(M^2)"
+    },
+    "ordinary_chain_rule": "-nu F'' = H_uu[E,E]_Fisher +D_u[E2]_Fisher+2H_u_lambda[E,A]_Fisher +D_lambda[-E dot grad lambda]_velocity_Fisher +D_lambda[-u dot grad A]_velocity_Fisher",
+    "velocity_degree": 4,
+    "weight_acceleration": "lambda2_EA=-E dot grad lambda-u dot grad A",
+    "weight_degree": 1,
+    "weight_self_companion": {
+      "channel_subterm_count": 7,
+      "combined_material_identity": "-nu W''=-nu mean(lambda D_t^2 |grad lambda|^2)",
+      "functional": "W(lambda)=mean(lambda |grad lambda|^2)",
+      "ordinary_chain_rule": "-nu W''=H_lambda_lambda[A,A]_weight_self +D_lambda[lambda2_E0+lambda2_0A]_weight_self",
+      "rows": [
+        {
+          "channels": "H_lambda_lambda[A,A]::first_weight_direction + H_lambda_lambda[A,A]::second_weight_direction",
+          "integrand": "-4 nu A grad lambda : grad A"
+        },
+        {
+          "channels": "H_lambda_lambda[A,A]::mixed_weight_gradient",
+          "integrand": "-2 nu lambda |grad A|^2"
+        },
+        {
+          "channels": "D_lambda[lambda2_E0/0A]::weight_Fisher_direction",
+          "integrand": "-nu lambda2_EA |grad lambda|^2"
+        },
+        {
+          "channels": "D_lambda[lambda2_E0/0A]::weight_Fisher_cross",
+          "integrand": "-2 nu lambda grad lambda : grad lambda2_EA"
+        }
+      ],
+      "second_material_gradient": "D_t^2 grad lambda=Q^T grad lambda +((grad u)^T)^2 grad lambda",
+      "transported_gradient": "D_t grad lambda=-(grad u)^T grad lambda",
+      "velocity_degree": 2,
+      "weight_degree": 3
+    },
+    "weight_transport_direction": "A=-u dot grad lambda"
+  },
+  "next_theorem_target": "Close all one-heat V/D mixed blocks with four-/three-difference stencils and fixed/dyadic output bounds, followed by the strictly lower two-heat blocks.",
+  "packet_difference_norm_certificate": {
+    "all_checks_pass": true,
+    "diagnostic_bounds": {
+      "maximum_mixed_second_difference_l1": 80.0,
+      "maximum_pure_second_difference_l1": 80.0,
+      "maximum_scaled_first_difference_l1": 20.0,
+      "scaled_l1": 2.0,
+      "scaled_l_infinity": 2.0
+    },
+    "exact_sine_sequence_identities": {
+      "first_difference_l1": "||Delta s||_1=2 max_n sin(n theta)<=2",
+      "l1": "sum_{n=1}^N sin(n theta)=cot(theta/2)<=N+1",
+      "second_difference_l1": "||Delta^2 s||_1=4 sin(theta)<=4pi/(N+1)",
+      "theta": "pi/(N+1)"
+    },
+    "maxima": {
+      "maximum_mixed_second_difference_l1": 1.2885649186639139,
+      "maximum_pure_second_difference_l1": 2.353448789288053,
+      "maximum_scaled_first_difference_l1": 0.47824482947059305,
+      "scaled_l1": 0.17230415194166102,
+      "scaled_l_infinity": 0.41666666666666663
+    },
+    "multiplier_bound": "The parity-gauged polarization multiplier is homogeneous of degree -1 and smooth on the fixed annulus, so its m-th unit difference is O(N^(-1-m)) for m=0,1,2.",
+    "proved_norm_scales": {
+      "first_difference_l1": "O(N)",
+      "l1": "O(N^2)",
+      "l_infinity": "O(N^-1)",
+      "second_or_mixed_difference_l1": "O(1)"
+    },
+    "rows": [
+      {
+        "maximum_mixed_second_difference_l1": 1.2885649186639139,
+        "maximum_pure_second_difference_l1": 2.353448789288053,
+        "maximum_scaled_first_difference_l1": 0.47824482947059305,
+        "scaled_l1": 0.17230415194166102,
+        "scaled_l_infinity": 0.41666666666666663,
+        "size": 5
+      },
+      {
+        "maximum_mixed_second_difference_l1": 1.1884252059192562,
+        "maximum_pure_second_difference_l1": 2.280257619123277,
+        "maximum_scaled_first_difference_l1": 0.4148293939462796,
+        "scaled_l1": 0.14054954835631145,
+        "scaled_l_infinity": 0.4090909090909091,
+        "size": 9
+      },
+      {
+        "maximum_mixed_second_difference_l1": 1.1260992988071277,
+        "maximum_pure_second_difference_l1": 2.2177937668436893,
+        "maximum_scaled_first_difference_l1": 0.376895867077671,
+        "scaled_l1": 0.1224811033132226,
+        "scaled_l_infinity": 0.4083349219806717,
+        "size": 17
+      },
+      {
+        "maximum_mixed_second_difference_l1": 1.0905379306062315,
+        "maximum_pure_second_difference_l1": 2.172136243905856,
+        "maximum_scaled_first_difference_l1": 0.3559048314283725,
+        "scaled_l1": 0.11284765228480054,
+        "scaled_l_infinity": 0.4056694792313103,
+        "size": 33
+      },
+      {
+        "maximum_mixed_second_difference_l1": 1.0713597562766148,
+        "maximum_pure_second_difference_l1": 2.144702718004756,
+        "maximum_scaled_first_difference_l1": 0.3448112350589663,
+        "scaled_l1": 0.10787718216933778,
+        "scaled_l_infinity": 0.4046439856745951,
+        "size": 65
+      }
+    ],
+    "sizes": [
+      5,
+      9,
+      17,
+      33,
+      65
+    ]
+  },
+  "prerequisite": {
+    "all_checks_pass": true,
+    "path": "work/ns_collision/results/annular_parallel_shear_finite_jet_port_audit_v1.json",
+    "sha256": "1e7753a5280c136bbe34770a17d929f73cc7398579906f51e316c738ee660da0"
+  },
+  "remaining_gate": "Exclude every row containing a V or D heat/antidiffusion direction below N^9. Only then may the negative inviscid N^9 coefficient be assigned to the complete second jet.",
+  "runtime_seconds": 0.2776016999850981,
+  "scope": "Exact o(N^9) exclusion for the five pure Euler/transport velocity-weighted-Fisher second-jet rows only.",
+  "status": "passed",
+  "theorem": "For the repaired parallel-shear restart family, the sum of H_uu[E,E] weighted Fisher, D_u[u2_EE] weighted Fisher, 2H_u_lambda[E,A] weighted Fisher, and the E0/0A velocity Fisher acceleration rows is O(N^8)=o(N^9), while the companion A-A/E0/0A weight-self block is O(N^6)=o(N^9), after inserting the static optimizer a_N,t_N=O(N).",
+  "vertex_difference_certificate": {
+    "all_checks_pass": true,
+    "maximum_total_vertex_power": 4,
+    "minimum_compatible_difference_order": 2,
+    "minimum_order_multiindices": [
+      [
+        0,
+        2,
+        2
+      ],
+      [
+        1,
+        1,
+        2
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        2,
+        0,
+        2
+      ],
+      [
+        2,
+        1,
+        1
+      ],
+      [
+        2,
+        2,
+        0
+      ]
+    ],
+    "multiindex_count": 35,
+    "one_dimensional_order_by_coordinate_power": {
+      "0": 2,
+      "1": 1,
+      "2": 0,
+      "3": 1,
+      "4": 0
+    },
+    "proof": "After parity gauging, Phi supplies a tensor product of three second-difference stencils. A coordinate monomial q^alpha reduces the vanishing order according to 0->2, 1->1, 2->0, 3->1, 4->0. Exhausting every |alpha|<=4 leaves at least two exact lattice differences.",
+    "rows": [
+      {
+        "coordinate_vanishing_orders": [
+          2,
+          2,
+          2
+        ],
+        "multiindex": [
+          0,
+          0,
+          0
+        ],
+        "total_compatible_difference_order": 6,
+        "total_degree": 0
+      },
+      {
+        "coordinate_vanishing_orders": [
+          2,
+          2,
+          1
+        ],
+        "multiindex": [
+          0,
+          0,
+          1
+        ],
+        "total_compatible_difference_order": 5,
+        "total_degree": 1
+      },
+      {
+        "coordinate_vanishing_orders": [
+          2,
+          2,
+          0
+        ],
+        "multiindex": [
+          0,
+          0,
+          2
+        ],
+        "total_compatible_difference_order": 4,
+        "total_degree": 2
+      },
+      {
+        "coordinate_vanishing_orders": [
+          2,
+          2,
+          1
+        ],
+        "multiindex": [
+          0,
+          0,
+          3
+        ],
+        "total_compatible_difference_order": 5,
+        "total_degree": 3
+      },
+      {
+        "coordinate_vanishing_orders": [
+          2,
+          2,
+          0
+        ],
+        "multiindex": [
+          0,
+          0,
+          4
+        ],
+        "total_compatible_difference_order": 4,
+        "total_degree": 4
+      },
+      {
+        "coordinate_vanishing_orders": [
+          2,
+          1,
+          2
+        ],
+        "multiindex": [
+          0,
+          1,
+          0
+        ],
+        "total_compatible_difference_order": 5,
+        "total_degree": 1
+      },
+      {
+        "coordinate_vanishing_orders": [
+          2,
+          1,
+          1
+        ],
+        "multiindex": [
+          0,
+          1,
+          1
+        ],
+        "total_compatible_difference_order": 4,
+        "total_degree": 2
+      },
+      {
+        "coordinate_vanishing_orders": [
+          2,
+          1,
+          0
+        ],
+        "multiindex": [
+          0,
+          1,
+          2
+        ],
+        "total_compatible_difference_order": 3,
+        "total_degree": 3
+      },
+      {
+        "coordinate_vanishing_orders": [
+          2,
+          1,
+          1
+        ],
+        "multiindex": [
+          0,
+          1,
+          3
+        ],
+        "total_compatible_difference_order": 4,
+        "total_degree": 4
+      },
+      {
+        "coordinate_vanishing_orders": [
+          2,
+          0,
+          2
+        ],
+        "multiindex": [
+          0,
+          2,
+          0
+        ],
+        "total_compatible_difference_order": 4,
+        "total_degree": 2
+      },
+      {
+        "coordinate_vanishing_orders": [
+          2,
+          0,
+          1
+        ],
+        "multiindex": [
+          0,
+          2,
+          1
+        ],
+        "total_compatible_difference_order": 3,
+        "total_degree": 3
+      },
+      {
+        "coordinate_vanishing_orders": [
+          2,
+          0,
+          0
+        ],
+        "multiindex": [
+          0,
+          2,
+          2
+        ],
+        "total_compatible_difference_order": 2,
+        "total_degree": 4
+      },
+      {
+        "coordinate_vanishing_orders": [
+          2,
+          1,
+          2
+        ],
+        "multiindex": [
+          0,
+          3,
+          0
+        ],
+        "total_compatible_difference_order": 5,
+        "total_degree": 3
+      },
+      {
+        "coordinate_vanishing_orders": [
+          2,
+          1,
+          1
+        ],
+        "multiindex": [
+          0,
+          3,
+          1
+        ],
+        "total_compatible_difference_order": 4,
+        "total_degree": 4
+      },
+      {
+        "coordinate_vanishing_orders": [
+          2,
+          0,
+          2
+        ],
+        "multiindex": [
+          0,
+          4,
+          0
+        ],
+        "total_compatible_difference_order": 4,
+        "total_degree": 4
+      },
+      {
+        "coordinate_vanishing_orders": [
+          1,
+          2,
+          2
+        ],
+        "multiindex": [
+          1,
+          0,
+          0
+        ],
+        "total_compatible_difference_order": 5,
+        "total_degree": 1
+      },
+      {
+        "coordinate_vanishing_orders": [
+          1,
+          2,
+          1
+        ],
+        "multiindex": [
+          1,
+          0,
+          1
+        ],
+        "total_compatible_difference_order": 4,
+        "total_degree": 2
+      },
+      {
+        "coordinate_vanishing_orders": [
+          1,
+          2,
+          0
+        ],
+        "multiindex": [
+          1,
+          0,
+          2
+        ],
+        "total_compatible_difference_order": 3,
+        "total_degree": 3
+      },
+      {
+        "coordinate_vanishing_orders": [
+          1,
+          2,
+          1
+        ],
+        "multiindex": [
+          1,
+          0,
+          3
+        ],
+        "total_compatible_difference_order": 4,
+        "total_degree": 4
+      },
+      {
+        "coordinate_vanishing_orders": [
+          1,
+          1,
+          2
+        ],
+        "multiindex": [
+          1,
+          1,
+          0
+        ],
+        "total_compatible_difference_order": 4,
+        "total_degree": 2
+      },
+      {
+        "coordinate_vanishing_orders": [
+          1,
+          1,
+          1
+        ],
+        "multiindex": [
+          1,
+          1,
+          1
+        ],
+        "total_compatible_difference_order": 3,
+        "total_degree": 3
+      },
+      {
+        "coordinate_vanishing_orders": [
+          1,
+          1,
+          0
+        ],
+        "multiindex": [
+          1,
+          1,
+          2
+        ],
+        "total_compatible_difference_order": 2,
+        "total_degree": 4
+      },
+      {
+        "coordinate_vanishing_orders": [
+          1,
+          0,
+          2
+        ],
+        "multiindex": [
+          1,
+          2,
+          0
+        ],
+        "total_compatible_difference_order": 3,
+        "total_degree": 3
+      },
+      {
+        "coordinate_vanishing_orders": [
+          1,
+          0,
+          1
+        ],
+        "multiindex": [
+          1,
+          2,
+          1
+        ],
+        "total_compatible_difference_order": 2,
+        "total_degree": 4
+      },
+      {
+        "coordinate_vanishing_orders": [
+          1,
+          1,
+          2
+        ],
+        "multiindex": [
+          1,
+          3,
+          0
+        ],
+        "total_compatible_difference_order": 4,
+        "total_degree": 4
+      },
+      {
+        "coordinate_vanishing_orders": [
+          0,
+          2,
+          2
+        ],
+        "multiindex": [
+          2,
+          0,
+          0
+        ],
+        "total_compatible_difference_order": 4,
+        "total_degree": 2
+      },
+      {
+        "coordinate_vanishing_orders": [
+          0,
+          2,
+          1
+        ],
+        "multiindex": [
+          2,
+          0,
+          1
+        ],
+        "total_compatible_difference_order": 3,
+        "total_degree": 3
+      },
+      {
+        "coordinate_vanishing_orders": [
+          0,
+          2,
+          0
+        ],
+        "multiindex": [
+          2,
+          0,
+          2
+        ],
+        "total_compatible_difference_order": 2,
+        "total_degree": 4
+      },
+      {
+        "coordinate_vanishing_orders": [
+          0,
+          1,
+          2
+        ],
+        "multiindex": [
+          2,
+          1,
+          0
+        ],
+        "total_compatible_difference_order": 3,
+        "total_degree": 3
+      },
+      {
+        "coordinate_vanishing_orders": [
+          0,
+          1,
+          1
+        ],
+        "multiindex": [
+          2,
+          1,
+          1
+        ],
+        "total_compatible_difference_order": 2,
+        "total_degree": 4
+      },
+      {
+        "coordinate_vanishing_orders": [
+          0,
+          0,
+          2
+        ],
+        "multiindex": [
+          2,
+          2,
+          0
+        ],
+        "total_compatible_difference_order": 2,
+        "total_degree": 4
+      },
+      {
+        "coordinate_vanishing_orders": [
+          1,
+          2,
+          2
+        ],
+        "multiindex": [
+          3,
+          0,
+          0
+        ],
+        "total_compatible_difference_order": 5,
+        "total_degree": 3
+      },
+      {
+        "coordinate_vanishing_orders": [
+          1,
+          2,
+          1
+        ],
+        "multiindex": [
+          3,
+          0,
+          1
+        ],
+        "total_compatible_difference_order": 4,
+        "total_degree": 4
+      },
+      {
+        "coordinate_vanishing_orders": [
+          1,
+          1,
+          2
+        ],
+        "multiindex": [
+          3,
+          1,
+          0
+        ],
+        "total_compatible_difference_order": 4,
+        "total_degree": 4
+      },
+      {
+        "coordinate_vanishing_orders": [
+          0,
+          2,
+          2
+        ],
+        "multiindex": [
+          4,
+          0,
+          0
+        ],
+        "total_compatible_difference_order": 4,
+        "total_degree": 4
+      }
+    ],
+    "signed_one_dimensional_vertex_stencil": [
+      [
+        "-1",
+        "-1/4"
+      ],
+      [
+        "0",
+        "1/2"
+      ],
+      [
+        "1",
+        "-1/4"
+      ]
+    ]
+  }
+}

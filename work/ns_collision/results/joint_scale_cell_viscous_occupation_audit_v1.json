@@ -1,0 +1,433 @@
+{
+  "all_positive_checks_pass": true,
+  "assumption_scope": "Smooth finite-Fourier divergence-free sideband fields for the pointwise witness; Hilbert-valued dyadic relaxation channels for the time theorem; full Stokes heat evolution for the exact HHL damping replay.",
+  "baseline_cumulative_stress_bound": {
+    "all_checks_pass": true,
+    "definition": "R_L=P_(<=cL) sum_(H,H'>=4L,H~H') (u_H tensor u_H').",
+    "estimate": "||R_L||_2<=C_c L^(3/2) sum_(H>=4L)||u_H||_2^2.",
+    "pressure_extension": "Applying the low-frequency double Riesz transform preserves the L2 estimate. Pairing with a low velocity and grad W recovers the HHL amplitude envelope from the dyadic atlas.",
+    "proof": "The low-pass kernel has L2 norm C_c L^(3/2). Young gives ||P_(<=cL)(u_H tensor u_H')||_2<=C_c L^(3/2)||u_H||_2||u_H'||_2. Comparable-shell multiplicity is finite, and 2ab<=a^2+b^2 closes the sum.",
+    "scope": "This is an ell1 sum of shell energies. Replacing it pointwise by the ell2 norm (sum_H ||u_H||_2^4)^(1/2) requires a new orthogonality gain."
+  },
+  "certification_flags": {
+    "Navier_Stokes_global_regularity_proved": false,
+    "Navier_Stokes_nonlinear_regeneration_bound_proved": false,
+    "Navier_Stokes_time_integrated_compensation_proved": false,
+    "all_pointwise_Carleson_estimates_falsified": false,
+    "baseline_cumulative_stress_ell1_bound_proved": true,
+    "common_low_Fourier_top_Walsh_channel_exhibited": true,
+    "conditional_forced_relaxation_bound_proved": true,
+    "critical_signed_large_data_bound_proved": false,
+    "exceptional_set_upgrade_proved": false,
+    "linear_Stokes_HHL_viscous_occupation_bound_proved": true,
+    "low_regularity_passage_proved": false,
+    "pointwise_high_shell_ell2_orthogonality_gain_falsified": true
+  },
+  "forced_relaxation_bound": {
+    "Navier_Stokes_gap": "For Navier-Stokes, f_j is the projected nonlinear Duhamel regeneration of the common low Fourier-Walsh stress channel. No bound of its ell2_H L2_t norm by the Leray energy budget is proved here.",
+    "all_checks_pass": true,
+    "conditional_bound": "||sum_j c_j||_(L2_t)<=[2nu mu_0^2 sqrt(1-rho^(-4))]^(-1)(sum_j||f_j||_(L2_t)^2)^(1/2).",
+    "conditional_operator_constant": 0.00017987581514080565,
+    "exact_replay_response_L2_norm": 2.4185333068639665e-06,
+    "forced_system": "dot c_j+2nu mu_j^2 c_j=f_j, c_j(0)=0.",
+    "forcing_L2_ell2_norm": 0.0203732958764465,
+    "proof": "Young gives ||exp(-lambda_j t)*f_j||_2<=lambda_j^(-1)||f_j||_2. Sum in j, apply Cauchy-Schwarz, and use sum_j lambda_j^(-2)<=[4nu^2 mu_0^4(1-rho^(-4))]^(-1).",
+    "replay_upper": 3.6646632028806284e-06
+  },
+  "kind": "joint_scale_cell_viscous_occupation_audit",
+  "next_theorem_target": "Derive the exact shellwise evolution of the low-output Fourier-Walsh Reynolds-stress channel for a smooth Navier-Stokes solution. Decompose its Duhamel forcing into HHH, HHL, and transport pieces, then test whether the weighted ell2_H L2_t forcing norm required by the conditional occupation theorem follows from signed transfer plus dissipation. Stress any candidate on forced coherent sidebands before attempting low-regularity passage.",
+  "pointwise_Fourier_Walsh_channel": {
+    "all_checks_pass": true,
+    "carriers": [
+      64,
+      128,
+      256,
+      512,
+      1024,
+      2048,
+      4096,
+      8192
+    ],
+    "common_cell_Walsh_mask": 7,
+    "common_low_Fourier_mode": [
+      1,
+      1,
+      0
+    ],
+    "individual_channels": [
+      {
+        "all_checks_pass": true,
+        "all_cosine_vertex_load": 0.007048320351646755,
+        "carrier": 64,
+        "maximum_off_top_Walsh_coefficient": 0.0,
+        "stress_Frobenius_norm": 1.999877985541173,
+        "stress_e11_coefficient": 1.9997559636376738,
+        "stress_e11_formula": 1.9997559636376738,
+        "stress_e11_formula_residual": 0.0,
+        "top_Walsh_coefficient": 0.007048320351646755
+      },
+      {
+        "all_checks_pass": true,
+        "all_cosine_vertex_load": 0.007011143644905247,
+        "carrier": 128,
+        "maximum_off_top_Walsh_coefficient": 0.0,
+        "stress_Frobenius_norm": 1.9999694859139334,
+        "stress_e11_coefficient": 1.9999389713622977,
+        "stress_e11_formula": 1.9999389713622977,
+        "stress_e11_formula_residual": 0.0,
+        "top_Walsh_coefficient": 0.007011143644905247
+      },
+      {
+        "all_checks_pass": true,
+        "all_cosine_vertex_load": 0.00698147098260897,
+        "carrier": 256,
+        "maximum_off_top_Walsh_coefficient": 0.0,
+        "stress_Frobenius_norm": 1.9999923708237413,
+        "stress_e11_coefficient": 1.99998474161838,
+        "stress_e11_formula": 1.99998474161838,
+        "stress_e11_formula_residual": 0.0,
+        "top_Walsh_coefficient": 0.00698147098260897
+      },
+      {
+        "all_checks_pass": true,
+        "all_cosine_vertex_load": 0.006963874546416279,
+        "carrier": 512,
+        "maximum_off_top_Walsh_coefficient": 0.0,
+        "stress_Frobenius_norm": 1.9999980926650096,
+        "stress_e11_coefficient": 1.9999961853282,
+        "stress_e11_formula": 1.9999961853282,
+        "stress_e11_formula_residual": 0.0,
+        "top_Walsh_coefficient": 0.006963874546416279
+      },
+      {
+        "all_checks_pass": true,
+        "all_cosine_vertex_load": 0.0069543883572682425,
+        "carrier": 1024,
+        "maximum_off_top_Walsh_coefficient": 0.0,
+        "stress_Frobenius_norm": 1.9999995231636944,
+        "stress_e11_coefficient": 1.9999990463272752,
+        "stress_e11_formula": 1.9999990463272752,
+        "stress_e11_formula_residual": 0.0,
+        "top_Walsh_coefficient": 0.0069543883572682425
+      },
+      {
+        "all_checks_pass": true,
+        "all_cosine_vertex_load": 0.006949473570115323,
+        "carrier": 2048,
+        "maximum_off_top_Walsh_coefficient": 0.0,
+        "stress_Frobenius_norm": 1.9999998807907637,
+        "stress_e11_coefficient": 1.9999997615815204,
+        "stress_e11_formula": 1.9999997615815204,
+        "stress_e11_formula_residual": 0.0,
+        "top_Walsh_coefficient": 0.006949473570115323
+      },
+      {
+        "all_checks_pass": true,
+        "all_cosine_vertex_load": 0.006946973293637706,
+        "carrier": 4096,
+        "maximum_off_top_Walsh_coefficient": 0.0,
+        "stress_Frobenius_norm": 1.999999970197681,
+        "stress_e11_coefficient": 1.9999999403953614,
+        "stress_e11_formula": 1.9999999403953614,
+        "stress_e11_formula_residual": 0.0,
+        "top_Walsh_coefficient": 0.006946973293637706
+      },
+      {
+        "all_checks_pass": true,
+        "all_cosine_vertex_load": 0.006945712439874534,
+        "carrier": 8192,
+        "maximum_off_top_Walsh_coefficient": 0.0,
+        "stress_Frobenius_norm": 1.9999999925494196,
+        "stress_e11_coefficient": 1.9999999850988393,
+        "stress_e11_formula": 1.9999999850988393,
+        "stress_e11_formula_residual": 0.0,
+        "top_Walsh_coefficient": 0.006945712439874534
+      }
+    ],
+    "joint_channel_no_go": "Every complete HHL load is the same top Walsh character and tends with the same sign to 1/144. Thus its sum divided by its shell square function is asymptotic to sqrt(N). No uniform pointwise gain can come from treating high-shell labels as orthogonal after projection to this fixed Fourier-Walsh channel.",
+    "prefix_rows": [
+      {
+        "all_checks_pass": true,
+        "analytic_stress_ratio_lower": 0.816496580927726,
+        "carriers": [
+          64
+        ],
+        "cumulative_stress_Frobenius_norm": 1.999877985541173,
+        "cumulative_top_Walsh_vertex_load": 0.007048320351646755,
+        "flux_cross_shell_residual": 0.0,
+        "flux_ratio_over_sqrt_shell_count": 1.0,
+        "flux_shell_square_function": 0.007048320351646755,
+        "flux_sum_over_square_function": 1.0,
+        "shell_count": 1,
+        "stress_cross_shell_residual": 0.0,
+        "stress_shell_square_function": 1.999877985541173,
+        "stress_sum_over_square_function": 1.0
+      },
+      {
+        "all_checks_pass": true,
+        "analytic_stress_ratio_lower": 1.1547005383792517,
+        "carriers": [
+          64,
+          128
+        ],
+        "cumulative_stress_Frobenius_norm": 3.9998322200843743,
+        "cumulative_top_Walsh_vertex_load": 0.014059463996552004,
+        "flux_cross_shell_residual": 1.734723475976807e-18,
+        "flux_ratio_over_sqrt_shell_count": 0.9999965039951192,
+        "flux_shell_square_function": 0.00994157708761206,
+        "flux_sum_over_square_function": 1.4142086182755786,
+        "shell_count": 2,
+        "stress_cross_shell_residual": 0.0,
+        "stress_shell_square_function": 2.828319271517815,
+        "stress_sum_over_square_function": 1.4142081696236042
+      },
+      {
+        "all_checks_pass": true,
+        "analytic_stress_ratio_lower": 1.414213562373095,
+        "carriers": [
+          64,
+          128,
+          256
+        ],
+        "cumulative_stress_Frobenius_norm": 5.999804253062421,
+        "cumulative_top_Walsh_vertex_load": 0.02104093497916097,
+        "flux_cross_shell_residual": 3.469446951953614e-18,
+        "flux_ratio_over_sqrt_shell_count": 0.9999923977667293,
+        "flux_shell_square_function": 0.012148081826771837,
+        "flux_sum_over_square_function": 1.7320376401146014,
+        "shell_count": 3,
+        "stress_cross_shell_residual": 8.881784197001252e-16,
+        "stress_shell_square_function": 3.4640091490918774,
+        "stress_sum_over_square_function": 1.7320405330440094
+      },
+      {
+        "all_checks_pass": true,
+        "analytic_stress_ratio_lower": 1.632993161855452,
+        "carriers": [
+          64,
+          128,
+          256,
+          512
+        ],
+        "cumulative_stress_Frobenius_norm": 7.999783119205541,
+        "cumulative_top_Walsh_vertex_load": 0.028004809525577254,
+        "flux_cross_shell_residual": 3.469446951953614e-18,
+        "flux_ratio_over_sqrt_shell_count": 0.9999895404230271,
+        "flux_shell_square_function": 0.014002551223550966,
+        "flux_sum_over_square_function": 1.9999790808460542,
+        "shell_count": 4,
+        "stress_cross_shell_residual": 8.881784197001252e-16,
+        "stress_shell_square_function": 3.999918968636228,
+        "stress_sum_over_square_function": 1.9999862952056418
+      },
+      {
+        "all_checks_pass": true,
+        "analytic_stress_ratio_lower": 1.8257418583505538,
+        "carriers": [
+          64,
+          128,
+          256,
+          512,
+          1024
+        ],
+        "cumulative_stress_Frobenius_norm": 9.999766529928735,
+        "cumulative_top_Walsh_vertex_load": 0.0349591978828455,
+        "flux_cross_shell_residual": 6.938893903907228e-18,
+        "flux_ratio_over_sqrt_shell_count": 0.9999880235941075,
+        "flux_shell_square_function": 0.015634415825091667,
+        "flux_sum_over_square_function": 2.236041197442088,
+        "shell_count": 5,
+        "stress_cross_shell_residual": 1.7763568394002505e-15,
+        "stress_shell_square_function": 4.472063265240208,
+        "stress_sum_over_square_function": 2.236052116626668
+      },
+      {
+        "all_checks_pass": true,
+        "analytic_stress_ratio_lower": 1.9999999999999998,
+        "carriers": [
+          64,
+          128,
+          256,
+          512,
+          1024,
+          2048
+        ],
+        "cumulative_stress_Frobenius_norm": 11.999753503987309,
+        "cumulative_top_Walsh_vertex_load": 0.041908671452960816,
+        "flux_cross_shell_residual": 0.0,
+        "flux_ratio_over_sqrt_shell_count": 0.9999874446688508,
+        "flux_shell_square_function": 0.017109358289942034,
+        "flux_sum_over_square_function": 2.4494589886283107,
+        "shell_count": 6,
+        "stress_cross_shell_residual": 1.7763568394002505e-15,
+        "stress_shell_square_function": 4.898913080620433,
+        "stress_sum_over_square_function": 2.4494726292362743
+      },
+      {
+        "all_checks_pass": true,
+        "analytic_stress_ratio_lower": 2.160246899469287,
+        "carriers": [
+          64,
+          128,
+          256,
+          512,
+          1024,
+          2048,
+          4096
+        ],
+        "cumulative_stress_Frobenius_norm": 13.999743259096835,
+        "cumulative_top_Walsh_vertex_load": 0.048855644746598516,
+        "flux_cross_shell_residual": 6.938893903907228e-18,
+        "flux_ratio_over_sqrt_shell_count": 0.9999874252863468,
+        "flux_shell_square_function": 0.018465930223959034,
+        "flux_sum_over_square_function": 2.6457180414994563,
+        "shell_count": 7,
+        "stress_cross_shell_residual": 3.552713678800501e-15,
+        "stress_shell_square_function": 5.291441131890697,
+        "stress_sum_over_square_function": 2.6457335365072
+      },
+      {
+        "all_checks_pass": true,
+        "analytic_stress_ratio_lower": 2.3094010767585034,
+        "carriers": [
+          64,
+          128,
+          256,
+          512,
+          1024,
+          2048,
+          4096,
+          8192
+        ],
+        "cumulative_stress_Frobenius_norm": 15.999735136901853,
+        "cumulative_top_Walsh_vertex_load": 0.055801357186473055,
+        "flux_cross_shell_residual": 0.0,
+        "flux_ratio_over_sqrt_shell_count": 0.9999877099340216,
+        "flux_shell_square_function": 0.01972900150371406,
+        "flux_sum_over_square_function": 2.828392363190212,
+        "shell_count": 8,
+        "stress_cross_shell_residual": 3.552713678800501e-15,
+        "stress_shell_square_function": 5.6567967280486915,
+        "stress_sum_over_square_function": 2.8284090636611845
+      }
+    ],
+    "scope_limit": "This falsifies only an ell2 shell-orthogonality replacement inside a common low Fourier-Walsh channel. It does not falsify the baseline ell1 shell-energy estimate, estimates using low-scale differences, or spacetime Carleson bounds.",
+    "stress_no_go_theorem": "For H>=1, the q=(1,1,0) stress coefficient R_H has (R_H)11=2sqrt((H^2+1)/(H^2+2))>=2sqrt(2/3) and ||R_H||_F<=2. Hence ||sum_(j=1)^N R_Hj||_F/(sum_j||R_Hj||_F^2)^(1/2)>=sqrt(2/3)sqrt(N)."
+  },
+  "positive_checks": {
+    "baseline_cumulative_stress_envelope_passes": true,
+    "common_low_mode_stress_reconstruction_passes": true,
+    "common_top_Walsh_flux_reconstruction_passes": true,
+    "conditional_Duhamel_forcing_bound_passes": true,
+    "exact_Stokes_HHL_damping_law_passes": true,
+    "pointwise_shell_orthogonality_no_go_passes": true,
+    "viscous_Gram_Schur_bound_passes": true,
+    "viscous_occupation_corollary_passes": true
+  },
+  "route_decision": "Pointwise shell orthogonality is unavailable in the exact coherent low Fourier/top-Walsh channel: the required constant grows like sqrt(N). Time must be retained. Under Stokes damping, the same coherent channel has a weighted ell2 shell L2-time bound and a finite threshold-occupation estimate. The next Navier-Stokes gate is not another pointwise Carleson ansatz; it is control, cancellation, or a sharp no-go for the nonlinear Duhamel regeneration f_j in the forced relaxation identity.",
+  "schema_version": 1,
+  "status": "pointwise_joint_channel_no_go_Stokes_occupation_certified",
+  "viscous_occupation_bound": {
+    "Chebyshev_occupation_upper": 1.5595128653160762e-05,
+    "Schur_row_bound": 2.502013991262933,
+    "Schur_upper": 2.8775822736724418e-08,
+    "Stokes_HHL_damping_law": "For the full Stokes evolution of the two high sidebands and the low mode, b_H(t)=b_H(0)exp[-nu(2H^2+11)t].",
+    "actual_normalized_Gram_operator_norm": 1.8592569103540217,
+    "all_checks_pass": true,
+    "beta_in_mu_squared": 5.5,
+    "exact_L2_time_norm_squared": 1.2139994619472786e-08,
+    "half_peak_occupation": 7.826176345484024e-07,
+    "half_peak_threshold": 0.027900678593236528,
+    "maximum_actual_normalized_Gram_row_sum": 2.0791237238908793,
+    "maximum_exact_Stokes_damping_residual": 4.336808689942018e-18,
+    "minimum_lacunarity_ratio": 1.9989940173886285,
+    "mu_definition": "mu_j=sqrt(H_j^2+11/2)",
+    "occupation_corollary": "|{t:||F(t)||>=Lambda}|<=Lambda^(-2)||F||_(L2_t)^2.",
+    "prefix_rows": [
+      {
+        "Chebyshev_occupation_upper": 0.00034830462722697274,
+        "Schur_upper": 2.1646627916194983e-08,
+        "all_checks_pass": true,
+        "exact_L2_time_norm_squared": 4.325840701088264e-09,
+        "half_peak_occupation": 0.00012071318516917945,
+        "half_peak_threshold": 0.0035241601758233777,
+        "initial_coherent_sum": 0.007048320351646755,
+        "shell_count": 1
+      },
+      {
+        "Chebyshev_occupation_upper": 0.0001789296646802624,
+        "Schur_upper": 2.7006738180631252e-08,
+        "all_checks_pass": true,
+        "exact_L2_time_norm_squared": 8.842190852420348e-09,
+        "half_peak_occupation": 5.627402848028785e-05,
+        "half_peak_threshold": 0.007029731998276001,
+        "initial_coherent_sum": 0.014059463996552002,
+        "shell_count": 2
+      },
+      {
+        "Chebyshev_occupation_upper": 9.912016739588097e-05,
+        "Schur_upper": 2.8335781682229e-08,
+        "all_checks_pass": true,
+        "exact_L2_time_norm_squared": 1.0970643539492236e-08,
+        "half_peak_occupation": 2.6296821496854124e-05,
+        "half_peak_threshold": 0.010520467489580486,
+        "initial_coherent_sum": 0.021040934979160972,
+        "shell_count": 3
+      },
+      {
+        "Chebyshev_occupation_upper": 5.9991806368166516e-05,
+        "Schur_upper": 2.8666390583302978e-08,
+        "all_checks_pass": true,
+        "exact_L2_time_norm_squared": 1.1762433844866443e-08,
+        "half_peak_occupation": 1.2783707478788142e-05,
+        "half_peak_threshold": 0.014002404762788625,
+        "initial_coherent_sum": 0.02800480952557725,
+        "shell_count": 4
+      },
+      {
+        "Chebyshev_occupation_upper": 3.9359861275141254e-05,
+        "Schur_upper": 2.8748819081272312e-08,
+        "all_checks_pass": true,
+        "exact_L2_time_norm_squared": 1.2025869497970538e-08,
+        "half_peak_occupation": 6.29073656237748e-06,
+        "half_peak_threshold": 0.017479598941422748,
+        "initial_coherent_sum": 0.034959197882845496,
+        "shell_count": 5
+      },
+      {
+        "Chebyshev_occupation_upper": 2.7575878937264346e-05,
+        "Schur_upper": 2.8769397170182457e-08,
+        "all_checks_pass": true,
+        "exact_L2_time_norm_squared": 1.2108132349179847e-08,
+        "half_peak_occupation": 3.136563556272891e-06,
+        "half_peak_threshold": 0.020954335726480408,
+        "initial_coherent_sum": 0.041908671452960816,
+        "shell_count": 6
+      },
+      {
+        "Chebyshev_occupation_upper": 2.0332537339657413e-05,
+        "Schur_upper": 2.8774537996346955e-08,
+        "all_checks_pass": true,
+        "exact_L2_time_norm_squared": 1.2132801302506016e-08,
+        "half_peak_occupation": 1.5617976899689136e-06,
+        "half_peak_threshold": 0.02442782237329926,
+        "initial_coherent_sum": 0.04885564474659852,
+        "shell_count": 7
+      },
+      {
+        "Chebyshev_occupation_upper": 1.5595128653160762e-05,
+        "Schur_upper": 2.8775822736724418e-08,
+        "all_checks_pass": true,
+        "exact_L2_time_norm_squared": 1.2139994619472786e-08,
+        "half_peak_occupation": 7.826176345484024e-07,
+        "half_peak_threshold": 0.027900678593236528,
+        "initial_coherent_sum": 0.055801357186473055,
+        "shell_count": 8
+      }
+    ],
+    "proof": "Exact time integration gives the Gram kernel 1/[2nu(mu_j^2+mu_k^2)]. After setting x_j=c_j/mu_j, the normalized kernel is mu_j mu_k/(mu_j^2+mu_k^2). Its diagonal is 1/2 and its distance-d off-diagonal entries are at most rho^(-d), so the Schur row sum is at most 1/2+2/(rho-1).",
+    "theorem": "Let H_j be dyadic, mu_j=sqrt(H_j^2+beta), mu_(j+1)>=rho mu_j, and F(t)=sum_j exp(-2nu mu_j^2 t)c_j in a Hilbert space. Then ||F||_(L2_t)^2<=[1/(2nu)][1/2+2/(rho-1)]sum_j ||c_j||^2/mu_j^2.",
+    "viscosity": 0.7,
+    "weighted_shell_square_sum": 1.6101489428953625e-08
+  }
+}

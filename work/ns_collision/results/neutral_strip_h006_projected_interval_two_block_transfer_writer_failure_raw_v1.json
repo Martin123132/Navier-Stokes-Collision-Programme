@@ -1,0 +1,429 @@
+{
+  "all_projected_interval_two_block_transfer_checks_pass": false,
+  "below_normal_priority_set": true,
+  "boundary_geometry": {
+    "boundary_riesz_gram_push_cross_interval_certified": false,
+    "checks": [
+      true,
+      true,
+      true,
+      false,
+      true,
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "circulant_template_defects": {
+      "cross": 5e-324,
+      "pushed": 5e-324,
+      "trace": 5e-324
+    },
+    "cross_gram_difference_spectral_upper": 1.6653345369377356e-16,
+    "exact_p1_pushforward_l2_factor_upper": 1.000039383027293,
+    "exact_pushed_gram_maximum_eigenvalue_upper": 0.05608516034133201,
+    "exact_riesz_load_to_circle_l2_operator_upper": 12.666025085550777,
+    "exact_scalar_intervals": {
+      "cross_diagonal": [
+        0.7499016540164748,
+        0.749901654016475
+      ],
+      "cross_neighbor": [
+        0.1249836090027458,
+        0.12498360900274583
+      ],
+      "exact_arc": [
+        0.05609986881410344,
+        0.056099868814103455
+      ],
+      "inverse_arc": [
+        17.825353626292273,
+        17.82535362629228
+      ],
+      "pushed_diagonal": [
+        0.03739206864144002,
+        0.037392068641440034
+      ],
+      "pushed_neighbor": [
+        0.009346545849945983,
+        0.009346545849945986
+      ],
+      "trace_diagonal": [
+        0.03739500836782527,
+        0.037395008367825285
+      ],
+      "trace_neighbor": [
+        0.009348752091956318,
+        0.009348752091956321
+      ]
+    },
+    "exact_trace_mass_minimum_eigenvalue_lower": 0.018697504183912625,
+    "pushed_gram_difference_spectral_upper": 1.0408340855860847e-17,
+    "riesz_geometry_difference_operator_upper": 7.050796998495942e-15,
+    "stored_scalar_values": {
+      "cross_diagonal": 0.7499016540164749,
+      "cross_neighbor": 0.12498360900274583,
+      "inverse_arc": 17.82535362629228,
+      "pushed_diagonal": 0.03739206864144003,
+      "pushed_neighbor": 0.009346545849945985,
+      "trace_diagonal": 0.03739500836782528,
+      "trace_neighbor": 0.00934875209195632
+    },
+    "stored_to_exact_scalar_error_uppers": {
+      "cross_diagonal": 1.1102230246251568e-16,
+      "cross_neighbor": 2.775557561562892e-17,
+      "inverse_arc": 7.105427357601003e-15,
+      "pushed_diagonal": 6.93889390390723e-18,
+      "pushed_neighbor": 1.7347234759768075e-18,
+      "trace_diagonal": 6.93889390390723e-18,
+      "trace_neighbor": 1.7347234759768075e-18
+    },
+    "stored_trace_mass_minimum_eigenvalue_lower": 0.018697504183912635,
+    "trace_mass_difference_spectral_upper": 1.0408340855860847e-17,
+    "vertex_count": 112
+  },
+  "checks": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "continuum_Ritz_transfer_certified": false,
+  "elapsed_seconds": 73.51212540001143,
+  "endpoint_assembly_and_eigensystem_effect_on_fixed_trial_space_certified": true,
+  "exact_form_boundary_and_source_transfer": {
+    "added_projected_interval_factor_upper": 4.542140375825828e-06,
+    "common_circle_projected_endpoint_rows": [
+      {
+        "axial_l2_upper": 0.6726506036499493,
+        "boundary_geometry_error_upper": 4.797608764895596e-06,
+        "end": 0.75,
+        "load_map_error_upper": 1.9563332720169972e-08,
+        "projected_endpoint_error_upper": 6.76493181054425e-06,
+        "raw_interval_error_upper": 4.550435466013335e-06,
+        "reduced_dynamics_error_upper": 9.397330635639377e-08,
+        "source_metric_error_upper": 4.178620549074627e-08,
+        "start": 0.375,
+        "window_index": 1
+      },
+      {
+        "axial_l2_upper": 0.554346825288723,
+        "boundary_geometry_error_upper": 1.9715927226244055e-06,
+        "end": 1.125,
+        "load_map_error_upper": 8.033944424409059e-09,
+        "projected_endpoint_error_upper": 3.2619309898613894e-06,
+        "raw_interval_error_upper": 1.8082410885405632e-06,
+        "reduced_dynamics_error_upper": 7.667996164832353e-08,
+        "source_metric_error_upper": 1.7160064531429808e-08,
+        "start": 0.75,
+        "window_index": 2
+      },
+      {
+        "axial_l2_upper": 0.5165841301689827,
+        "boundary_geometry_error_upper": 8.102326889822457e-07,
+        "end": 1.5,
+        "load_map_error_upper": 3.299246807163265e-09,
+        "projected_endpoint_error_upper": 1.5395517332574768e-06,
+        "raw_interval_error_upper": 7.953079929749635e-07,
+        "reduced_dynamics_error_upper": 4.72344788457212e-08,
+        "source_metric_error_upper": 7.047010161955155e-09,
+        "start": 1.125,
+        "window_index": 3
+      },
+      {
+        "axial_l2_upper": 0.5012394295921184,
+        "boundary_geometry_error_upper": 3.3296799617041713e-07,
+        "end": 1.875,
+        "load_map_error_upper": 1.3548798596995088e-09,
+        "projected_endpoint_error_upper": 7.143689076166366e-07,
+        "raw_interval_error_upper": 3.580698637721077e-07,
+        "reduced_dynamics_error_upper": 2.5863294588943126e-08,
+        "source_metric_error_upper": 2.8939490368315895e-09,
+        "start": 1.5,
+        "window_index": 4
+      },
+      {
+        "axial_l2_upper": 0.4944512939727069,
+        "boundary_geometry_error_upper": 1.3683443435058234e-07,
+        "end": 2.25,
+        "load_map_error_upper": 5.563995485980991e-10,
+        "projected_endpoint_error_upper": 3.2709362878169423e-07,
+        "raw_interval_error_upper": 1.6173186800133697e-07,
+        "reduced_dynamics_error_upper": 1.3276385108546782e-08,
+        "source_metric_error_upper": 1.1884389032092585e-09,
+        "start": 1.875,
+        "window_index": 5
+      },
+      {
+        "axial_l2_upper": 0.49133927697187857,
+        "boundary_geometry_error_upper": 5.623264179440013e-08,
+        "end": 2.625,
+        "load_map_error_upper": 2.2849292168888597e-10,
+        "projected_endpoint_error_upper": 1.4817647748821221e-07,
+        "raw_interval_error_upper": 7.280492331329804e-08,
+        "reduced_dynamics_error_upper": 6.5425502890403375e-09,
+        "source_metric_error_upper": 4.880483411026352e-10,
+        "start": 2.25,
+        "window_index": 6
+      },
+      {
+        "axial_l2_upper": 0.48988955479527985,
+        "boundary_geometry_error_upper": 2.3109031779500144e-08,
+        "end": 3.0,
+        "load_map_error_upper": 9.383367652520369e-11,
+        "projected_endpoint_error_upper": 6.653881466234658e-08,
+        "raw_interval_error_upper": 3.259667029154261e-08,
+        "reduced_dynamics_error_upper": 3.134583484788134e-09,
+        "source_metric_error_upper": 2.0042358308014227e-10,
+        "start": 2.625,
+        "window_index": 7
+      },
+      {
+        "axial_l2_upper": 0.48920920228246245,
+        "boundary_geometry_error_upper": 9.496754026178667e-09,
+        "end": 3.375,
+        "load_map_error_upper": 3.853405516966095e-11,
+        "projected_endpoint_error_upper": 2.9660982860870753e-08,
+        "raw_interval_error_upper": 1.4510425764280373e-08,
+        "reduced_dynamics_error_upper": 1.471152757087351e-09,
+        "source_metric_error_upper": 8.230662676555469e-11,
+        "start": 3.0,
+        "window_index": 8
+      },
+      {
+        "axial_l2_upper": 0.48888881070546814,
+        "boundary_geometry_error_upper": 3.902732690287367e-09,
+        "end": 3.75,
+        "load_map_error_upper": 1.582452550944903e-11,
+        "projected_endpoint_error_upper": 1.3139963263973113e-08,
+        "raw_interval_error_upper": 6.4239810128373574e-09,
+        "reduced_dynamics_error_upper": 6.796671414185507e-10,
+        "source_metric_error_upper": 3.3800317833932175e-11,
+        "start": 3.375,
+        "window_index": 9
+      },
+      {
+        "axial_l2_upper": 0.48873768718428084,
+        "boundary_geometry_error_upper": 1.6038457573371914e-09,
+        "end": 4.125,
+        "load_map_error_upper": 6.4985532017497845e-12,
+        "projected_endpoint_error_upper": 5.790045915487351e-09,
+        "raw_interval_error_upper": 2.8298136494260803e-09,
+        "reduced_dynamics_error_upper": 3.101271205995534e-10,
+        "source_metric_error_upper": 1.3880552885845554e-11,
+        "start": 3.75,
+        "window_index": 10
+      },
+      {
+        "axial_l2_upper": 0.48866635020559634,
+        "boundary_geometry_error_upper": 6.591079800865463e-10,
+        "end": 4.5,
+        "load_map_error_upper": 2.668717851334984e-12,
+        "projected_endpoint_error_upper": 2.5395388805368465e-09,
+        "raw_interval_error_upper": 1.240987195957147e-09,
+        "reduced_dynamics_error_upper": 1.4009363822315503e-10,
+        "source_metric_error_upper": 5.700234813275453e-12,
+        "start": 4.125,
+        "window_index": 11
+      },
+      {
+        "axial_l2_upper": 0.4886326638638695,
+        "boundary_geometry_error_upper": 2.708636439542699e-10,
+        "end": 4.875,
+        "load_map_error_upper": 1.0959447047561808e-12,
+        "projected_endpoint_error_upper": 1.109332601417903e-09,
+        "raw_interval_error_upper": 5.420561441418663e-10,
+        "reduced_dynamics_error_upper": 6.276144829236997e-11,
+        "source_metric_error_upper": 2.3408777152970134e-12,
+        "start": 4.5,
+        "window_index": 12
+      },
+      {
+        "axial_l2_upper": 0.48861675398516574,
+        "boundary_geometry_error_upper": 1.1131278284364302e-10,
+        "end": 5.25,
+        "load_map_error_upper": 4.5006436153686445e-13,
+        "projected_endpoint_error_upper": 4.82845612718507e-10,
+        "raw_interval_error_upper": 2.359264559624954e-10,
+        "reduced_dynamics_error_upper": 2.7921647827306932e-11,
+        "source_metric_error_upper": 9.613127629781658e-13,
+        "start": 4.875,
+        "window_index": 13
+      },
+      {
+        "axial_l2_upper": 0.48860923923101596,
+        "boundary_geometry_error_upper": 4.5744569044369564e-11,
+        "end": 5.625,
+        "load_map_error_upper": 1.848249538927693e-13,
+        "projected_endpoint_error_upper": 2.0949132063930616e-10,
+        "raw_interval_error_upper": 1.0235939480307222e-10,
+        "reduced_dynamics_error_upper": 1.2348429039618627e-11,
+        "source_metric_error_upper": 3.9477595186874655e-13,
+        "start": 5.25,
+        "window_index": 14
+      },
+      {
+        "axial_l2_upper": 0.4886056896330737,
+        "boundary_geometry_error_upper": 1.8798977028156734e-11,
+        "end": 6.0,
+        "load_map_error_upper": 7.590084108151762e-14,
+        "projected_endpoint_error_upper": 9.063163056231813e-11,
+        "raw_interval_error_upper": 4.428313035347142e-11,
+        "reduced_dynamics_error_upper": 5.433265351130153e-12,
+        "source_metric_error_upper": 1.6212002812805122e-13,
+        "start": 5.625,
+        "window_index": 15
+      }
+    ],
+    "exact_boundary_load_map_difference_upper": 6.049680305529662e-09,
+    "exact_spectral_projector_endpoint_composition_certified": false,
+    "finite_raw_interval_error_sum_upper": 7.80511770565493e-06,
+    "fixed_trial_space_projected_endpoint_transfer_certified": true,
+    "frozen_low_block_interval_factor": 0.008090916167796953,
+    "post_terminal_raw_interval_error_sum_upper": 3.3931259117079424e-11,
+    "source_coordinate_difference_upper": 8.608217507922132e-09,
+    "source_exact_coordinate_upper": 7.8745262256281725,
+    "stored_vector_euclidean_operator_upper": 7667.158404535354,
+    "tail_ratio_upper": 0.4368424912801333,
+    "tail_start": {
+      "boundary_geometry_norm_error_upper": 7.725543999772125e-12,
+      "coefficient_error_common_circle_l2_upper": 3.138310604341048e-11,
+      "load_map_error": 3.116969627501782e-14,
+      "reduced_dynamics_error": 2.3799926797567443e-12,
+      "source_metric_error": 6.657675928795835e-14,
+      "time": 6.0,
+      "total_projected_endpoint_error_upper": 3.910865004318261e-11
+    },
+    "total_raw_interval_error_sum_upper": 7.805151636914048e-06,
+    "upgraded_complete_screen_headroom_lower": 0.029910980767838376,
+    "upgraded_complete_screen_upper": 0.9700890192321616,
+    "upgraded_low_block_interval_factor_upper": 0.00809545830817278
+  },
+  "exact_form_reduced_generator": {
+    "exact_inverse_mass_residual_block_upper": 6.5131413308358305e-09,
+    "exact_low_projector_sine_upper": 1.082756379067906e-08,
+    "exact_mass_gram_condition_sqrt_upper": 1.0000000010931729,
+    "exact_mass_gram_defect_upper": 1.0931727524007872e-09,
+    "exact_mass_gram_inverse_upper": 1.0000000010931729,
+    "exact_polygon_complement_floor": 107.01775717228844,
+    "exact_polygon_low_subspace_projector_certified": true,
+    "exact_polygon_minimum_eigenvalue_lower": 2.3732837765220616,
+    "exact_projector_source_state_error_global_upper": 8.301664671834765e-05,
+    "exact_reduced_generator_difference_from_frozen_diagonal_upper": 6.513141341515814e-09,
+    "exact_reduced_ritz_maximum_upper": 106.41622376548435,
+    "frozen_reference_maximum_retained_eigenvalue": 106.41622375897119,
+    "frozen_reference_minimum_eigenvalue": 2.373283782016068,
+    "individual_exact_eigenvectors_interval_enclosed": false,
+    "normalized_invariance_residual_upper": 6.513141334395826e-09,
+    "retained_complement_gap_lower": 0.6015334068040942,
+    "source_dual_norm_global_upper": 7667.158404535355,
+    "stored_inverse_mass_residual_block_frobenius_upper": 1.0235089041365414e-09,
+    "stored_mass_gram_defect_upper": 1.0926234959797678e-09
+  },
+  "exact_polygon_low_projector_certified": true,
+  "finite_common_circle_riesz_gram_projected_algebra_certified": true,
+  "inner_boundary_vertex_count": 112,
+  "model": "exact-polygon projected finite-block interval transfer and two-block damped comparison",
+  "modified_off_block_leakage_certified": false,
+  "next_required_step": "Certify a lower form bound for the modified-chain complementary block, then apply the encoded two-block damped theorem together with a boundary-output smoothing estimate. After that, compose the certified exact-polygon projector source error through the trace before continuum Ritz and polygon-to-circle transfer.",
+  "polygon_to_circle_domain_transfer_certified": false,
+  "premise_artifacts": {
+    "assembly_checkpoint": "work\\ns_collision\\results\\neutral_strip_h006_gaussian_assembly_interval_checkpoint_v1.npz",
+    "assembly_result": "work\\ns_collision\\results\\neutral_strip_h006_gaussian_assembly_interval_audit_v1.json",
+    "eigen_cache": "work\\ns_collision\\results\\neutral_strip_h006_q12_k241_reference_eigensystem_v1.npz",
+    "eigensystem_result": "work\\ns_collision\\results\\neutral_strip_h006_q12_k240_eigensystem_residual_audit_v1.json",
+    "indexed_spectrum_result": "work\\ns_collision\\results\\neutral_strip_h006_exact_polygon_indexed_spectrum_transfer_v1.json",
+    "sha256": {
+      "assembly_checkpoint": "60276e13ecb0de15099fea1bd7369597e589a9e95f0193bd133e48f0c0c4fcd5",
+      "assembly_result": "c4da43d4589edad78c1413c4b8914e59b31143487784623677f849061304ba3a",
+      "eigen_cache": "8994f7b90409db710a69bda72073dacf83722c790384d1f6bb4fcfc468e6c66e",
+      "eigensystem_result": "b564e5a718a26d8e613a3112167b278d2f2db81f22190d94e43afb6d480e0e85",
+      "spectrum_result": "352a5af82a6595f802ffb36ca875970bafb3f69e250727ed973f911e57a8b06f"
+    }
+  },
+  "retained_mode_count": 240,
+  "scope": "This certificate promotes the common-circle boundary geometry, the exact-form reduced reference generator on the frozen trial space, its source metric, and the resulting added endpoint/time-slab charge. It also encloses the exact polygon low spectral subspace projector in operator angle. It does not yet compose that projector error through the boundary trace, certify the modified complementary spectral floor, transfer the finite element projector to the continuum, or compare polygon and circle domains.",
+  "spacing": 0.06,
+  "state_count": 15211,
+  "stored_binary_reconstruction": {
+    "boundary_mass_mode_frobenius_upper": 0.0033993584524083247,
+    "modified_load_operator_frobenius_upper": 11.460850282851746,
+    "modified_source_maximum_column_norm_upper": 7.799841830085986,
+    "reference_load_mode_maximum_difference": 5e-324,
+    "reference_load_operator_frobenius_upper": 11.820442170190242,
+    "reference_source_maximum_column_norm_upper": 7.8745262170199535
+  },
+  "two_block_damped_leakage_theorem": {
+    "modified_chain_high_block_floor_certified": false,
+    "off_block_leakage_interval_certified": false,
+    "reason_leakage_remains_open": "The certified 107.01775717228844 floor belongs to the exact reference polygon form. The coupling 6.343703098841749 belongs to the modified chain. A certified transfer or a direct lower bound for the modified complementary block is required before the theorem can be charged to the screen.",
+    "reference_complement_floor_substituted_for_modified_floor": false,
+    "reference_floor_diagnostic_only": {
+      "coupling": 6.343703098841749,
+      "gap_free_high_component_upper": 2.378888662065656,
+      "high_component_upper": 0.028565439525887276,
+      "high_floor": 107.01775717228844,
+      "low_feedback_upper": 0.06180338477139721,
+      "low_floor": 2.370152540073057,
+      "orthogonal_total_difference_upper": 0.06808555430125025,
+      "time": 0.375
+    },
+    "regression_rows": [
+      {
+        "coupling": 1.0,
+        "gap_free_high_component_upper": 0.12500000000000003,
+        "high_component_upper": 0.0650452971245093,
+        "high_floor": 9.0,
+        "low_feedback_upper": 0.004644494101291593,
+        "low_floor": 2.0,
+        "orthogonal_total_difference_upper": 0.06521090402281378,
+        "time": 0.125
+      },
+      {
+        "coupling": 1.0,
+        "gap_free_high_component_upper": 0.37500000000000006,
+        "high_component_upper": 0.06392365558828263,
+        "high_floor": 9.0,
+        "low_feedback_upper": 0.01651920086823678,
+        "low_floor": 2.0,
+        "orthogonal_total_difference_upper": 0.06602361502594759,
+        "time": 0.375
+      },
+      {
+        "coupling": 1.0,
+        "gap_free_high_component_upper": 0.7500000000000001,
+        "high_component_upper": 0.03389909286508595,
+        "high_floor": 9.0,
+        "low_feedback_upper": 0.019965353677425298,
+        "low_floor": 2.0,
+        "orthogonal_total_difference_upper": 0.03934162991718062,
+        "time": 0.75
+      },
+      {
+        "coupling": 1.0,
+        "gap_free_high_component_upper": 1.5000000000000002,
+        "high_component_upper": 0.00843739531700685,
+        "high_floor": 9.0,
+        "low_feedback_upper": 0.010457508971468299,
+        "low_floor": 2.0,
+        "orthogonal_total_difference_upper": 0.013436857282258715,
+        "time": 1.5
+      }
+    ],
+    "statement": "For H=[[A,B*],[B,C]] self-adjoint with A>=alpha, C>=beta and ||B||<=epsilon, component norms are dominated by exp(t[[-alpha,epsilon],[epsilon,-beta]]).",
+    "theorem_implemented": true
+  }
+}

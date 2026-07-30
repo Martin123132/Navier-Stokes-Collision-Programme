@@ -1,0 +1,2838 @@
+{
+  "algorithm_revision": "joint-incidence-witness-v1",
+  "all_positive_checks_pass": true,
+  "certification_flags": {
+    "Navier_Stokes_global_regularity_proved": false,
+    "all_52_real_low_coordinates_included": true,
+    "all_cross_shell_HHL_absorbed": false,
+    "all_primitive_steps_and_residue_chains_controlled": false,
+    "analytic_unbounded_pressure_family_proved": false,
+    "complete_HHL_blocks_assembled_jointly": true,
+    "critical_L3_controlled": false,
+    "finite_window_pressure_growth_witnesses_validated": true,
+    "finite_windows_pass_direct_reconstruction": true,
+    "shared_physical_Fisher_charged_once": true,
+    "terminal_dual_supremum_controlled": false,
+    "window_uniform_joint_Schur_bound_proved": false
+  },
+  "geometry": {
+    "complete_ordered_HHL_symbol": "(ha dot hb)U/2+(U dot ha)hb+p[ha,hb]U+2p[U,ha]hb, summed over both ordered high legs",
+    "high_velocity_basis": "two real orthonormal divergence-free polarizations divided by |k|, so each complex coordinate is gradient-normalized",
+    "low_basis": "thirteen cube waves modulo sign, two real transverse polarizations, and cosine/sine Fourier phases",
+    "partition_scale": 1,
+    "translation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "vertex": [
+      1,
+      1,
+      1
+    ]
+  },
+  "growth_summary": {
+    "Schur_upper_values": [
+      0.0341971402920302,
+      0.03898455185695666,
+      0.18672869658946992,
+      0.3678968079963082,
+      0.5646087761362366,
+      1.2126136910616252,
+      0.8406292494010399,
+      1.1374860443024977
+    ],
+    "completed_window_count": 8,
+    "directional_comparisons": {
+      "axial_length_8_over_4_joint_lower_ratio": 1.2052410693928366,
+      "pressure_high_high_fraction_by_window": {
+        "axial_4": 0.0,
+        "axial_8": 0.0,
+        "slab_4x3x3": 0.968074519005894,
+        "slab_4x5x3": 0.989615070511002,
+        "slab_6x3x3": 0.9764287543103852,
+        "slab_8x3x3": 0.9829736438360206,
+        "strip_4x3": 0.9186509610535529,
+        "strip_4x5": 0.9732550669605012
+      },
+      "slab_length_linear_fit_R_squared": 0.9996869387290163,
+      "slab_length_linear_fit_intercept": -0.0630072069147289,
+      "slab_length_linear_fit_slope": 0.11259677012408989,
+      "slab_length_rows": [
+        {
+          "joint_lower": 0.38968066878973084,
+          "length": 4
+        },
+        {
+          "joint_lower": 0.6079718234136112,
+          "length": 6
+        },
+        {
+          "joint_lower": 0.84006774928609,
+          "length": 8
+        }
+      ],
+      "slab_width_5_over_3_joint_lower_ratio": 2.2263445596584233,
+      "strip_width_5_over_3_joint_lower_ratio": 2.03575317990317
+    },
+    "interpretation": "Finite-window spectra diagnose the next proof route. They do not prove asymptotic divergence or a window-uniform bound.",
+    "joint_lower_values": [
+      0.026689984579438164,
+      0.032167865556600374,
+      0.16644661290536808,
+      0.33884422150621507,
+      0.38968066878973084,
+      0.8675634369640731,
+      0.6079718234136112,
+      0.84006774928609
+    ],
+    "largest_to_smallest_Schur_upper_ratio": 35.459505698616276,
+    "last_to_first_Schur_upper_ratio": 33.26260718261269,
+    "observed_route_signal": "Axial length is nearly saturated over 4 to 8 modes, while transverse widening and three-dimensional slab length produce strongly increasing direct witnesses dominated by the high-high pressure term."
+  },
+  "kind": "joint_primitive_hhl_incidence_schur_gate_audit",
+  "next_theorem_target": "Extract a separable divergence-free high-carrier family from the pressure-dominated slab witnesses. Compute its weighted Fisher energy and high-high pressure HHL load analytically as the longitudinal and transverse Dirichlet windows grow. Either prove an explicit divergent lower ratio, which closes the joint-Schur route as a no-go, or identify the cancellation missing from the finite numerical witness.",
+  "prerequisites": {
+    "all_checks_pass": true,
+    "rows": [
+      {
+        "actual_sha256": "89d5cee5520acead1deba0231bed2cc7e4e740a673223ff5ca733c4a8375d18a",
+        "all_positive_checks_pass": true,
+        "expected_sha256": "89d5cee5520acead1deba0231bed2cc7e4e740a673223ff5ca733c4a8375d18a",
+        "matches": true,
+        "path": "work/ns_collision/results/primitive_hhl_chain_hardy_envelope_audit_v1.json"
+      }
+    ]
+  },
+  "run_state": "complete",
+  "schema_version": 1,
+  "scope": "This is a finite-window joint incidence calculation, not an analytic uniform theorem. It removes the repeated-Fisher bookkeeping error inside the tested windows and exposes the normalized graph whose growth must next be bounded or converted into a rigorous obstruction.",
+  "status": "finite_window_joint_pressure_growth_witnesses_validated",
+  "window_rows": [
+    {
+      "Fisher_hermitian_residual": 0.0,
+      "all_checks_pass": true,
+      "carrier": 8,
+      "complex_high_variable_dimension": 8,
+      "direct_reconstruction": {
+        "coefficient_trials": 2,
+        "low_coordinates_checked": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51
+        ],
+        "maximum_Fisher_matrix_residual": 8.881784197001252e-16,
+        "maximum_component_vs_direct_flux_residual": 7.776515945702112e-16,
+        "maximum_component_vs_direct_load_residual": 2.7755575615628914e-17,
+        "maximum_divergence_residual": 0.0,
+        "maximum_load_imaginary_residual": 3.469446951953614e-18,
+        "maximum_load_matrix_residual": 3.878959614448864e-18
+      },
+      "high_mode_count": 4,
+      "incidence": {
+        "active_ordered_variable_pairs": 56,
+        "maximum_scalar_low_incidence_per_variable_pair": 104,
+        "scalar_low_incidence_count": 3776
+      },
+      "label": "axial_4",
+      "longitudinal_length": 4,
+      "low_wave_representative_count": 13,
+      "maximum_load_block_hermitian_residual": 2.168404344971009e-19,
+      "normalized_spectra": {
+        "Fisher_condition_number_on_quotient": 9.472135954999633,
+        "Fisher_dimension": 8,
+        "Fisher_maximum_eigenvalue": 0.45225424859373703,
+        "Fisher_minimum_eigenvalue": 0.047745751406262894,
+        "Fisher_minimum_retained_eigenvalue": 0.047745751406262894,
+        "Fisher_numerical_nullity": 0,
+        "Fisher_quotient_tolerance": 7.275957614183426e-12,
+        "Fisher_rank_after_exact_null_quotient": 8,
+        "Schur_square_function_spectrum_maximum": 0.0011694444041527954,
+        "Schur_square_function_spectrum_minimum": 0.0003138672148196148,
+        "Schur_square_function_upper": 0.0341971402920302,
+        "joint_l2_numerical_radius_lower": {
+          "best_lower_bound": 0.026689984579438164,
+          "deterministic_starts": 16,
+          "iterations_for_best_start": 42,
+          "maximum_iterations": 80
+        },
+        "joint_l2_witness": {
+          "Fisher_energy": 1.0000000000000018,
+          "Fisher_energy_imaginary_residual": 2.7755575615628914e-17,
+          "component_loads": {
+            "combined": 0.02668998457943817,
+            "kinetic": 0.02668263426465889,
+            "pressure_cross": 7.350314779300881e-06,
+            "pressure_high_high": 0.0
+          },
+          "component_vs_direct_flux_residual": 4.528175411165359e-16,
+          "direct_complete_load": 0.026689984579438185,
+          "direct_complete_load_imaginary_residual": 2.168404344971009e-19,
+          "high_coefficient_l2_norm": 3.8392326356147266,
+          "low_coordinate_l1_norm": 4.833778759209698,
+          "low_coordinate_l2_norm": 1.0,
+          "matrix_complete_load": 0.026689984579438168,
+          "matrix_vs_direct_complete_load_residual": 1.7348589959548253e-17,
+          "maximum_component_load_imaginary_residual": 5.421010862427522e-20,
+          "maximum_high_coefficient": 1.8134020787692327,
+          "maximum_low_divergence_residual": 9.309503074677274e-17,
+          "top_high_modes_by_coefficient_mass": [
+            {
+              "coefficient_l2_mass": 6.576792184249761,
+              "mass_fraction": 0.4461955777994804,
+              "mode_index": 1,
+              "wave": [
+                9,
+                0,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 4.865770168372631,
+              "mass_fraction": 0.3301130811029518,
+              "mode_index": 2,
+              "wave": [
+                10,
+                0,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 2.2556930213659028,
+              "mass_fraction": 0.15303513062446378,
+              "mode_index": 0,
+              "wave": [
+                8,
+                0,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 1.0414518563809003,
+              "mass_fraction": 0.07065621047310411,
+              "mode_index": 3,
+              "wave": [
+                11,
+                0,
+                0
+              ]
+            }
+          ],
+          "top_low_coordinates": [
+            {
+              "absolute_value": 0.3137856890389331,
+              "coordinate_index": 47,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": 0.3137856890389331,
+              "wave": [
+                1,
+                1,
+                0
+              ]
+            },
+            {
+              "absolute_value": 0.3137856890389331,
+              "coordinate_index": 23,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": -0.3137856890389331,
+              "wave": [
+                1,
+                -1,
+                0
+              ]
+            },
+            {
+              "absolute_value": 0.31378471852828205,
+              "coordinate_index": 31,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": 0.31378471852828205,
+              "wave": [
+                1,
+                0,
+                -1
+              ]
+            },
+            {
+              "absolute_value": 0.31378471852828205,
+              "coordinate_index": 39,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": -0.31378471852828205,
+              "wave": [
+                1,
+                0,
+                1
+              ]
+            },
+            {
+              "absolute_value": 0.26582654695141894,
+              "coordinate_index": 8,
+              "phase": "cosine",
+              "polarization_index": 0,
+              "value": 0.26582654695141894,
+              "wave": [
+                0,
+                1,
+                0
+              ]
+            },
+            {
+              "absolute_value": 0.2658264882171949,
+              "coordinate_index": 0,
+              "phase": "cosine",
+              "polarization_index": 0,
+              "value": 0.2658264882171949,
+              "wave": [
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "absolute_value": 0.22938976929199723,
+              "coordinate_index": 3,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": 0.22938976929199723,
+              "wave": [
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "absolute_value": 0.22938976929199723,
+              "coordinate_index": 11,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": -0.22938976929199723,
+              "wave": [
+                0,
+                1,
+                0
+              ]
+            },
+            {
+              "absolute_value": 0.2119689069746487,
+              "coordinate_index": 49,
+              "phase": "sine",
+              "polarization_index": 0,
+              "value": 0.2119689069746487,
+              "wave": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "absolute_value": 0.2119689069746487,
+              "coordinate_index": 17,
+              "phase": "sine",
+              "polarization_index": 0,
+              "value": 0.2119689069746487,
+              "wave": [
+                1,
+                -1,
+                -1
+              ]
+            },
+            {
+              "absolute_value": 0.15153482243967836,
+              "coordinate_index": 25,
+              "phase": "sine",
+              "polarization_index": 0,
+              "value": 0.15153482243967836,
+              "wave": [
+                1,
+                -1,
+                1
+              ]
+            },
+            {
+              "absolute_value": 0.15153482243967836,
+              "coordinate_index": 41,
+              "phase": "sine",
+              "polarization_index": 0,
+              "value": 0.15153482243967836,
+              "wave": [
+                1,
+                1,
+                -1
+              ]
+            }
+          ]
+        },
+        "lower_to_Schur_upper_ratio": 0.7804741668898667,
+        "maximum_single_low_coordinate_norm": 0.012112495783685196,
+        "root_sum_square_coordinate_norm_upper": 0.044564400056525344
+      },
+      "real_high_dimension": 16,
+      "real_low_coordinate_count": 52,
+      "same_sign_high_alias_count": 0,
+      "transverse_y_radius": 0,
+      "transverse_z_radius": 0
+    },
+    {
+      "Fisher_hermitian_residual": 0.0,
+      "all_checks_pass": true,
+      "carrier": 8,
+      "complex_high_variable_dimension": 16,
+      "direct_reconstruction": {
+        "coefficient_trials": 2,
+        "low_coordinates_checked": [
+          0,
+          1,
+          7,
+          19,
+          31,
+          43,
+          51
+        ],
+        "maximum_Fisher_matrix_residual": 1.7798229048217483e-15,
+        "maximum_component_vs_direct_flux_residual": 6.004449063730082e-16,
+        "maximum_component_vs_direct_load_residual": 2.42861286636753e-17,
+        "maximum_divergence_residual": 0.0,
+        "maximum_load_imaginary_residual": 8.673617379884035e-19,
+        "maximum_load_matrix_residual": 6.952433221959954e-18
+      },
+      "high_mode_count": 8,
+      "incidence": {
+        "active_ordered_variable_pairs": 136,
+        "maximum_scalar_low_incidence_per_variable_pair": 104,
+        "scalar_low_incidence_count": 8640
+      },
+      "label": "axial_8",
+      "longitudinal_length": 8,
+      "low_wave_representative_count": 13,
+      "maximum_load_block_hermitian_residual": 2.168404344971009e-19,
+      "normalized_spectra": {
+        "Fisher_condition_number_on_quotient": 32.16343747752647,
+        "Fisher_dimension": 16,
+        "Fisher_maximum_eigenvalue": 0.4849231551964771,
+        "Fisher_minimum_eigenvalue": 0.015076844803522851,
+        "Fisher_minimum_retained_eigenvalue": 0.015076844803522851,
+        "Fisher_numerical_nullity": 0,
+        "Fisher_quotient_tolerance": 1.4551915228366852e-11,
+        "Fisher_rank_after_exact_null_quotient": 16,
+        "Schur_square_function_spectrum_maximum": 0.0015197952834877428,
+        "Schur_square_function_spectrum_minimum": 9.580112859307317e-05,
+        "Schur_square_function_upper": 0.03898455185695666,
+        "joint_l2_numerical_radius_lower": {
+          "best_lower_bound": 0.032167865556600374,
+          "deterministic_starts": 16,
+          "iterations_for_best_start": 40,
+          "maximum_iterations": 80
+        },
+        "joint_l2_witness": {
+          "Fisher_energy": 1.0000000000000009,
+          "Fisher_energy_imaginary_residual": 2.7755575615628914e-17,
+          "component_loads": {
+            "combined": 0.03216786555660039,
+            "kinetic": 0.03199986809245274,
+            "pressure_cross": 0.000167997464147656,
+            "pressure_high_high": 0.0
+          },
+          "component_vs_direct_flux_residual": 5.700528401702363e-16,
+          "direct_complete_load": 0.032167865556600415,
+          "direct_complete_load_imaginary_residual": 1.3010426069826053e-18,
+          "high_coefficient_l2_norm": 5.998159464907739,
+          "low_coordinate_l1_norm": 4.524787668517031,
+          "low_coordinate_l2_norm": 0.9999999999999998,
+          "matrix_complete_load": 0.03216786555660037,
+          "matrix_vs_direct_complete_load_residual": 4.858967888080295e-17,
+          "maximum_component_load_imaginary_residual": 1.734723475976807e-18,
+          "maximum_high_coefficient": 2.1140580892381555,
+          "maximum_low_divergence_residual": 1.1105279146216472e-16,
+          "top_high_modes_by_coefficient_mass": [
+            {
+              "coefficient_l2_mass": 8.93836978025988,
+              "mass_fraction": 0.24844044719409414,
+              "mode_index": 2,
+              "wave": [
+                10,
+                0,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 8.201334514698264,
+              "mass_fraction": 0.22795467904223973,
+              "mode_index": 3,
+              "wave": [
+                11,
+                0,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 6.381914509365305,
+              "mass_fraction": 0.1773842136362248,
+              "mode_index": 1,
+              "wave": [
+                9,
+                0,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 5.799026029589935,
+              "mass_fraction": 0.16118292882257862,
+              "mode_index": 4,
+              "wave": [
+                12,
+                0,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 3.2571578861205395,
+              "mass_fraction": 0.09053214195687816,
+              "mode_index": 5,
+              "wave": [
+                13,
+                0,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 1.7686950788020972,
+              "mass_fraction": 0.04916057481734782,
+              "mode_index": 0,
+              "wave": [
+                8,
+                0,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 1.3464758093333256,
+              "mass_fraction": 0.03742506300707949,
+              "mode_index": 6,
+              "wave": [
+                14,
+                0,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 0.2849433582929477,
+              "mass_fraction": 0.007919951523557206,
+              "mode_index": 7,
+              "wave": [
+                15,
+                0,
+                0
+              ]
+            }
+          ],
+          "top_low_coordinates": [
+            {
+              "absolute_value": 0.3538851805825249,
+              "coordinate_index": 8,
+              "phase": "cosine",
+              "polarization_index": 0,
+              "value": 0.3538851805825249,
+              "wave": [
+                0,
+                1,
+                0
+              ]
+            },
+            {
+              "absolute_value": 0.3538850944617941,
+              "coordinate_index": 0,
+              "phase": "cosine",
+              "polarization_index": 0,
+              "value": 0.3538850944617941,
+              "wave": [
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "absolute_value": 0.3160323776591171,
+              "coordinate_index": 47,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": 0.3160323776591171,
+              "wave": [
+                1,
+                1,
+                0
+              ]
+            },
+            {
+              "absolute_value": 0.3160323776591171,
+              "coordinate_index": 23,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": -0.3160323776591171,
+              "wave": [
+                1,
+                -1,
+                0
+              ]
+            },
+            {
+              "absolute_value": 0.31603068258309464,
+              "coordinate_index": 31,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": 0.31603068258309464,
+              "wave": [
+                1,
+                0,
+                -1
+              ]
+            },
+            {
+              "absolute_value": 0.31603068258309464,
+              "coordinate_index": 39,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": -0.31603068258309464,
+              "wave": [
+                1,
+                0,
+                1
+              ]
+            },
+            {
+              "absolute_value": 0.2211638318151987,
+              "coordinate_index": 41,
+              "phase": "sine",
+              "polarization_index": 0,
+              "value": 0.2211638318151987,
+              "wave": [
+                1,
+                1,
+                -1
+              ]
+            },
+            {
+              "absolute_value": 0.2211638318151987,
+              "coordinate_index": 25,
+              "phase": "sine",
+              "polarization_index": 0,
+              "value": 0.2211638318151987,
+              "wave": [
+                1,
+                -1,
+                1
+              ]
+            },
+            {
+              "absolute_value": 0.18181673009173274,
+              "coordinate_index": 4,
+              "phase": "cosine",
+              "polarization_index": 0,
+              "value": 0.18181673009173274,
+              "wave": [
+                0,
+                1,
+                -1
+              ]
+            },
+            {
+              "absolute_value": 0.17524788757275392,
+              "coordinate_index": 12,
+              "phase": "cosine",
+              "polarization_index": 0,
+              "value": 0.17524788757275392,
+              "wave": [
+                0,
+                1,
+                1
+              ]
+            },
+            {
+              "absolute_value": 0.16465101799790513,
+              "coordinate_index": 11,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": 0.16465101799790513,
+              "wave": [
+                0,
+                1,
+                0
+              ]
+            },
+            {
+              "absolute_value": 0.16465101799790513,
+              "coordinate_index": 3,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": -0.16465101799790513,
+              "wave": [
+                0,
+                0,
+                1
+              ]
+            }
+          ]
+        },
+        "lower_to_Schur_upper_ratio": 0.8251439101988838,
+        "maximum_single_low_coordinate_norm": 0.014008773175554915,
+        "root_sum_square_coordinate_norm_upper": 0.050045042847031394
+      },
+      "real_high_dimension": 32,
+      "real_low_coordinate_count": 52,
+      "same_sign_high_alias_count": 0,
+      "transverse_y_radius": 0,
+      "transverse_z_radius": 0
+    },
+    {
+      "Fisher_hermitian_residual": 0.0,
+      "all_checks_pass": true,
+      "carrier": 8,
+      "complex_high_variable_dimension": 24,
+      "direct_reconstruction": {
+        "coefficient_trials": 2,
+        "low_coordinates_checked": [
+          0,
+          1,
+          7,
+          19,
+          31,
+          43,
+          51
+        ],
+        "maximum_Fisher_matrix_residual": 7.110846302088116e-15,
+        "maximum_component_vs_direct_flux_residual": 1.159106867033638e-15,
+        "maximum_component_vs_direct_load_residual": 4.8746674966609137e-17,
+        "maximum_divergence_residual": 1.3877787807814457e-17,
+        "maximum_load_imaginary_residual": 5.9631119486702744e-18,
+        "maximum_load_matrix_residual": 7.961322465290408e-18
+      },
+      "high_mode_count": 12,
+      "incidence": {
+        "active_ordered_variable_pairs": 504,
+        "maximum_scalar_low_incidence_per_variable_pair": 104,
+        "scalar_low_incidence_count": 23488
+      },
+      "label": "strip_4x3",
+      "longitudinal_length": 4,
+      "low_wave_representative_count": 13,
+      "maximum_load_block_hermitian_residual": 4.343262720139088e-19,
+      "normalized_spectra": {
+        "Fisher_condition_number_on_quotient": 54.31383379686211,
+        "Fisher_dimension": 24,
+        "Fisher_maximum_eigenvalue": 0.7702355866889953,
+        "Fisher_minimum_eigenvalue": 0.014181204544863012,
+        "Fisher_minimum_retained_eigenvalue": 0.014181204544863012,
+        "Fisher_numerical_nullity": 0,
+        "Fisher_quotient_tolerance": 2.1827872842550278e-11,
+        "Fisher_rank_after_exact_null_quotient": 24,
+        "Schur_square_function_spectrum_maximum": 0.03486760613000232,
+        "Schur_square_function_spectrum_minimum": 0.0002749748640469456,
+        "Schur_square_function_upper": 0.18672869658946992,
+        "joint_l2_numerical_radius_lower": {
+          "best_lower_bound": 0.16644661290536808,
+          "deterministic_starts": 16,
+          "iterations_for_best_start": 5,
+          "maximum_iterations": 80
+        },
+        "joint_l2_witness": {
+          "Fisher_energy": 0.9999999999999946,
+          "Fisher_energy_imaginary_residual": 0.0,
+          "component_loads": {
+            "combined": 0.16644661290536816,
+            "kinetic": 0.014227637872755378,
+            "pressure_cross": -0.0006873658770123136,
+            "pressure_high_high": 0.15290634090962507
+          },
+          "component_vs_direct_flux_residual": 6.866368829839059e-16,
+          "direct_complete_load": 0.16644661290536816,
+          "direct_complete_load_imaginary_residual": 0.0,
+          "high_coefficient_l2_norm": 8.279637950583673,
+          "low_coordinate_l1_norm": 3.3136564559876645,
+          "low_coordinate_l2_norm": 1.0,
+          "matrix_complete_load": 0.16644661290536805,
+          "matrix_vs_direct_complete_load_residual": 1.1102230246251565e-16,
+          "maximum_component_load_imaginary_residual": 0.0,
+          "maximum_high_coefficient": 3.7842337775369246,
+          "maximum_low_divergence_residual": 9.71445146547012e-17,
+          "top_high_modes_by_coefficient_mass": [
+            {
+              "coefficient_l2_mass": 14.320425283051382,
+              "mass_fraction": 0.20889749043999029,
+              "mode_index": 4,
+              "wave": [
+                9,
+                0,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 12.387869845200727,
+              "mass_fraction": 0.180706569212186,
+              "mode_index": 7,
+              "wave": [
+                10,
+                0,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 6.549264497687118,
+              "mass_fraction": 0.09553661226903479,
+              "mode_index": 5,
+              "wave": [
+                9,
+                1,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 6.549264412711896,
+              "mass_fraction": 0.09553661102946889,
+              "mode_index": 3,
+              "wave": [
+                9,
+                -1,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 5.734001878325332,
+              "mass_fraction": 0.08364406635171678,
+              "mode_index": 8,
+              "wave": [
+                10,
+                1,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 5.734001775075115,
+              "mass_fraction": 0.08364406484556659,
+              "mode_index": 6,
+              "wave": [
+                10,
+                -1,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 5.241148694179209,
+              "mass_fraction": 0.07645462949572239,
+              "mode_index": 1,
+              "wave": [
+                8,
+                0,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 3.74434291181176,
+              "mass_fraction": 0.054620154231730715,
+              "mode_index": 10,
+              "wave": [
+                11,
+                0,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 2.387461817466717,
+              "mass_fraction": 0.03482681361288632,
+              "mode_index": 2,
+              "wave": [
+                8,
+                1,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 2.387461811392326,
+              "mass_fraction": 0.03482681352427687,
+              "mode_index": 0,
+              "wave": [
+                8,
+                -1,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 1.7585808523294058,
+              "mass_fraction": 0.02565308777681459,
+              "mode_index": 11,
+              "wave": [
+                11,
+                1,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 1.7585808135144252,
+              "mass_fraction": 0.025653087210605705,
+              "mode_index": 9,
+              "wave": [
+                11,
+                -1,
+                0
+              ]
+            }
+          ],
+          "top_low_coordinates": [
+            {
+              "absolute_value": 0.5254229031998693,
+              "coordinate_index": 47,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": 0.5254229031998693,
+              "wave": [
+                1,
+                1,
+                0
+              ]
+            },
+            {
+              "absolute_value": 0.5254229028975211,
+              "coordinate_index": 23,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": -0.5254229028975211,
+              "wave": [
+                1,
+                -1,
+                0
+              ]
+            },
+            {
+              "absolute_value": 0.23199605756440655,
+              "coordinate_index": 39,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": -0.23199605756440655,
+              "wave": [
+                1,
+                0,
+                1
+              ]
+            },
+            {
+              "absolute_value": 0.2319960575644065,
+              "coordinate_index": 31,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": 0.2319960575644065,
+              "wave": [
+                1,
+                0,
+                -1
+              ]
+            },
+            {
+              "absolute_value": 0.22569766966152024,
+              "coordinate_index": 41,
+              "phase": "sine",
+              "polarization_index": 0,
+              "value": 0.22569766966152024,
+              "wave": [
+                1,
+                1,
+                -1
+              ]
+            },
+            {
+              "absolute_value": 0.2256976696615202,
+              "coordinate_index": 49,
+              "phase": "sine",
+              "polarization_index": 0,
+              "value": 0.2256976696615202,
+              "wave": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "absolute_value": 0.22569766951739545,
+              "coordinate_index": 17,
+              "phase": "sine",
+              "polarization_index": 0,
+              "value": 0.22569766951739545,
+              "wave": [
+                1,
+                -1,
+                -1
+              ]
+            },
+            {
+              "absolute_value": 0.22569766951739542,
+              "coordinate_index": 25,
+              "phase": "sine",
+              "polarization_index": 0,
+              "value": 0.22569766951739542,
+              "wave": [
+                1,
+                -1,
+                1
+              ]
+            },
+            {
+              "absolute_value": 0.17905029822162138,
+              "coordinate_index": 7,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": 0.17905029822162138,
+              "wave": [
+                0,
+                1,
+                -1
+              ]
+            },
+            {
+              "absolute_value": 0.1790502982216213,
+              "coordinate_index": 15,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": -0.1790502982216213,
+              "wave": [
+                0,
+                1,
+                1
+              ]
+            },
+            {
+              "absolute_value": 0.13448181444187063,
+              "coordinate_index": 43,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": 0.13448181444187063,
+              "wave": [
+                1,
+                1,
+                -1
+              ]
+            },
+            {
+              "absolute_value": 0.1344818144418706,
+              "coordinate_index": 51,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": -0.1344818144418706,
+              "wave": [
+                1,
+                1,
+                1
+              ]
+            }
+          ]
+        },
+        "lower_to_Schur_upper_ratio": 0.8913820743434376,
+        "maximum_single_low_coordinate_norm": 0.0875544481785143,
+        "root_sum_square_coordinate_norm_upper": 0.19665616345381703
+      },
+      "real_high_dimension": 48,
+      "real_low_coordinate_count": 52,
+      "same_sign_high_alias_count": 0,
+      "transverse_y_radius": 1,
+      "transverse_z_radius": 0
+    },
+    {
+      "Fisher_hermitian_residual": 0.0,
+      "all_checks_pass": true,
+      "carrier": 8,
+      "complex_high_variable_dimension": 40,
+      "direct_reconstruction": {
+        "coefficient_trials": 2,
+        "low_coordinates_checked": [
+          0,
+          1,
+          7,
+          19,
+          31,
+          43,
+          51
+        ],
+        "maximum_Fisher_matrix_residual": 1.0668889546876769e-14,
+        "maximum_component_vs_direct_flux_residual": 1.1957467920563633e-15,
+        "maximum_component_vs_direct_load_residual": 8.076978734770528e-17,
+        "maximum_divergence_residual": 1.1188630228279524e-16,
+        "maximum_load_imaginary_residual": 1.0408340855860843e-17,
+        "maximum_load_matrix_residual": 2.313012632671399e-17
+      },
+      "high_mode_count": 20,
+      "incidence": {
+        "active_ordered_variable_pairs": 1064,
+        "maximum_scalar_low_incidence_per_variable_pair": 104,
+        "scalar_low_incidence_count": 45888
+      },
+      "label": "strip_4x5",
+      "longitudinal_length": 4,
+      "low_wave_representative_count": 13,
+      "maximum_load_block_hermitian_residual": 4.949522140076767e-19,
+      "normalized_spectra": {
+        "Fisher_condition_number_on_quotient": 126.8937660915545,
+        "Fisher_dimension": 40,
+        "Fisher_maximum_eigenvalue": 0.8417197757957479,
+        "Fisher_minimum_eigenvalue": 0.006633263411761636,
+        "Fisher_minimum_retained_eigenvalue": 0.006633263411761636,
+        "Fisher_numerical_nullity": 0,
+        "Fisher_quotient_tolerance": 3.637978807091713e-11,
+        "Fisher_rank_after_exact_null_quotient": 40,
+        "Schur_square_function_spectrum_maximum": 0.13534806133387245,
+        "Schur_square_function_spectrum_minimum": 0.00023732247648233264,
+        "Schur_square_function_upper": 0.3678968079963082,
+        "joint_l2_numerical_radius_lower": {
+          "best_lower_bound": 0.33884422150621507,
+          "deterministic_starts": 16,
+          "iterations_for_best_start": 6,
+          "maximum_iterations": 80
+        },
+        "joint_l2_witness": {
+          "Fisher_energy": 1.0000000000000027,
+          "Fisher_energy_imaginary_residual": 0.0,
+          "component_loads": {
+            "combined": 0.33884422150621507,
+            "kinetic": 0.010416472092940702,
+            "pressure_cross": -0.001354106077936042,
+            "pressure_high_high": 0.3297818554912103
+          },
+          "component_vs_direct_flux_residual": 1.4706690826623748e-15,
+          "direct_complete_load": 0.3388442215062149,
+          "direct_complete_load_imaginary_residual": 0.0,
+          "high_coefficient_l2_norm": 11.999635337946971,
+          "low_coordinate_l1_norm": 3.3632088460324705,
+          "low_coordinate_l2_norm": 0.9999999999999999,
+          "matrix_complete_load": 0.3388442215062151,
+          "matrix_vs_direct_complete_load_residual": 2.220446049250313e-16,
+          "maximum_component_load_imaginary_residual": 0.0,
+          "maximum_high_coefficient": 4.40556566939733,
+          "maximum_low_divergence_residual": 1.1102230246251565e-16,
+          "top_high_modes_by_coefficient_mass": [
+            {
+              "coefficient_l2_mass": 19.409008867372343,
+              "mass_fraction": 0.13479297599061385,
+              "mode_index": 7,
+              "wave": [
+                9,
+                0,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 17.34058678283042,
+              "mass_fraction": 0.12042806069353197,
+              "mode_index": 12,
+              "wave": [
+                10,
+                0,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 14.156642807356553,
+              "mass_fraction": 0.09831599475682289,
+              "mode_index": 8,
+              "wave": [
+                9,
+                1,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 14.156642599744664,
+              "mass_fraction": 0.09831599331498603,
+              "mode_index": 6,
+              "wave": [
+                9,
+                -1,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 12.657201331094473,
+              "mass_fraction": 0.08790257384026641,
+              "mode_index": 13,
+              "wave": [
+                10,
+                1,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 12.65720112724626,
+              "mass_fraction": 0.08790257242456778,
+              "mode_index": 11,
+              "wave": [
+                10,
+                -1,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 7.203998672282984,
+              "mass_fraction": 0.05003080923425422,
+              "mode_index": 2,
+              "wave": [
+                8,
+                0,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 5.5768426597020415,
+              "mass_fraction": 0.03873042790950194,
+              "mode_index": 17,
+              "wave": [
+                11,
+                0,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 5.277190114682057,
+              "mass_fraction": 0.03664938098008841,
+              "mode_index": 3,
+              "wave": [
+                8,
+                1,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 5.277190054149143,
+              "mass_fraction": 0.0366493805596954,
+              "mode_index": 1,
+              "wave": [
+                8,
+                -1,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 4.3092231160203625,
+              "mass_fraction": 0.029926979372572608,
+              "mode_index": 9,
+              "wave": [
+                9,
+                2,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 4.309223010431842,
+              "mass_fraction": 0.02992697863927443,
+              "mode_index": 5,
+              "wave": [
+                9,
+                -2,
+                0
+              ]
+            }
+          ],
+          "top_low_coordinates": [
+            {
+              "absolute_value": 0.5136279170705103,
+              "coordinate_index": 47,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": 0.5136279170705103,
+              "wave": [
+                1,
+                1,
+                0
+              ]
+            },
+            {
+              "absolute_value": 0.5136279169332548,
+              "coordinate_index": 23,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": -0.5136279169332548,
+              "wave": [
+                1,
+                -1,
+                0
+              ]
+            },
+            {
+              "absolute_value": 0.25017862855814504,
+              "coordinate_index": 31,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": 0.25017862855814504,
+              "wave": [
+                1,
+                0,
+                -1
+              ]
+            },
+            {
+              "absolute_value": 0.2501786285581449,
+              "coordinate_index": 39,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": -0.2501786285581449,
+              "wave": [
+                1,
+                0,
+                1
+              ]
+            },
+            {
+              "absolute_value": 0.21304339325444757,
+              "coordinate_index": 17,
+              "phase": "sine",
+              "polarization_index": 0,
+              "value": 0.21304339325444757,
+              "wave": [
+                1,
+                -1,
+                -1
+              ]
+            },
+            {
+              "absolute_value": 0.21304339325444752,
+              "coordinate_index": 25,
+              "phase": "sine",
+              "polarization_index": 0,
+              "value": 0.21304339325444752,
+              "wave": [
+                1,
+                -1,
+                1
+              ]
+            },
+            {
+              "absolute_value": 0.21304339311780585,
+              "coordinate_index": 49,
+              "phase": "sine",
+              "polarization_index": 0,
+              "value": 0.21304339311780585,
+              "wave": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "absolute_value": 0.21304339311780585,
+              "coordinate_index": 41,
+              "phase": "sine",
+              "polarization_index": 0,
+              "value": 0.21304339311780585,
+              "wave": [
+                1,
+                1,
+                -1
+              ]
+            },
+            {
+              "absolute_value": 0.20245043817721356,
+              "coordinate_index": 15,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": -0.20245043817721356,
+              "wave": [
+                0,
+                1,
+                1
+              ]
+            },
+            {
+              "absolute_value": 0.20245043817721353,
+              "coordinate_index": 7,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": 0.20245043817721353,
+              "wave": [
+                0,
+                1,
+                -1
+              ]
+            },
+            {
+              "absolute_value": 0.14463032551748922,
+              "coordinate_index": 43,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": 0.14463032551748922,
+              "wave": [
+                1,
+                1,
+                -1
+              ]
+            },
+            {
+              "absolute_value": 0.1446303255174891,
+              "coordinate_index": 51,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": -0.1446303255174891,
+              "wave": [
+                1,
+                1,
+                1
+              ]
+            }
+          ]
+        },
+        "lower_to_Schur_upper_ratio": 0.9210306100552396,
+        "maximum_single_low_coordinate_norm": 0.17414871650023886,
+        "root_sum_square_coordinate_norm_upper": 0.38162759722525247
+      },
+      "real_high_dimension": 80,
+      "real_low_coordinate_count": 52,
+      "same_sign_high_alias_count": 0,
+      "transverse_y_radius": 2,
+      "transverse_z_radius": 0
+    },
+    {
+      "Fisher_hermitian_residual": 0.0,
+      "all_checks_pass": true,
+      "carrier": 8,
+      "complex_high_variable_dimension": 72,
+      "direct_reconstruction": {
+        "coefficient_trials": 2,
+        "low_coordinates_checked": [
+          0,
+          1,
+          7,
+          19,
+          31,
+          43,
+          51
+        ],
+        "maximum_Fisher_matrix_residual": 2.1338248718259644e-14,
+        "maximum_component_vs_direct_flux_residual": 3.581417175486983e-15,
+        "maximum_component_vs_direct_load_residual": 2.1536264573359097e-16,
+        "maximum_divergence_residual": 9.309503074677274e-17,
+        "maximum_load_imaginary_residual": 1.474514954580286e-17,
+        "maximum_load_matrix_residual": 4.861144704255396e-17
+      },
+      "high_mode_count": 36,
+      "incidence": {
+        "active_ordered_variable_pairs": 4536,
+        "maximum_scalar_low_incidence_per_variable_pair": 104,
+        "scalar_low_incidence_count": 146624
+      },
+      "label": "slab_4x3x3",
+      "longitudinal_length": 4,
+      "low_wave_representative_count": 13,
+      "maximum_load_block_hermitian_residual": 6.416445764047725e-19,
+      "normalized_spectra": {
+        "Fisher_condition_number_on_quotient": 306.62614572950105,
+        "Fisher_dimension": 72,
+        "Fisher_maximum_eigenvalue": 1.3087687909633081,
+        "Fisher_minimum_eigenvalue": 0.004268288302191541,
+        "Fisher_minimum_retained_eigenvalue": 0.004268288302191541,
+        "Fisher_numerical_nullity": 0,
+        "Fisher_quotient_tolerance": 8.570291624833606e-11,
+        "Fisher_rank_after_exact_null_quotient": 72,
+        "Schur_square_function_spectrum_maximum": 0.3187830700900589,
+        "Schur_square_function_spectrum_minimum": 0.00044000462996497414,
+        "Schur_square_function_upper": 0.5646087761362366,
+        "joint_l2_numerical_radius_lower": {
+          "best_lower_bound": 0.38968066878973084,
+          "deterministic_starts": 16,
+          "iterations_for_best_start": 5,
+          "maximum_iterations": 80
+        },
+        "joint_l2_witness": {
+          "Fisher_energy": 0.9999999999999967,
+          "Fisher_energy_imaginary_residual": 0.0,
+          "component_loads": {
+            "combined": 0.389680668789731,
+            "kinetic": 0.013217015322695216,
+            "pressure_cross": -0.0007762725374782805,
+            "pressure_high_high": 0.37723992600451384
+          },
+          "component_vs_direct_flux_residual": 3.111695119796722e-15,
+          "direct_complete_load": 0.3896806687897313,
+          "direct_complete_load_imaginary_residual": 0.0,
+          "high_coefficient_l2_norm": 15.151191885975823,
+          "low_coordinate_l1_norm": 2.7976262038006676,
+          "low_coordinate_l2_norm": 0.9999999999999999,
+          "matrix_complete_load": 0.3896806687897309,
+          "matrix_vs_direct_complete_load_residual": 3.885780586188048e-16,
+          "maximum_component_load_imaginary_residual": 0.0,
+          "maximum_high_coefficient": 4.866545003538092,
+          "maximum_low_divergence_residual": 4.163336342344337e-17,
+          "top_high_modes_by_coefficient_mass": [
+            {
+              "coefficient_l2_mass": 23.683260271461567,
+              "mass_fraction": 0.10316868401172052,
+              "mode_index": 13,
+              "wave": [
+                9,
+                0,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 19.649633664698534,
+              "mass_fraction": 0.08559745673792075,
+              "mode_index": 22,
+              "wave": [
+                10,
+                0,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 11.461895130935153,
+              "mass_fraction": 0.04993014573942992,
+              "mode_index": 16,
+              "wave": [
+                9,
+                1,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 11.461895130935035,
+              "mass_fraction": 0.049930145739429416,
+              "mode_index": 10,
+              "wave": [
+                9,
+                -1,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 11.105210894731036,
+              "mass_fraction": 0.04837636290568524,
+              "mode_index": 12,
+              "wave": [
+                9,
+                0,
+                -1
+              ]
+            },
+            {
+              "coefficient_l2_mass": 11.105210881536978,
+              "mass_fraction": 0.048376362848209474,
+              "mode_index": 14,
+              "wave": [
+                9,
+                0,
+                1
+              ]
+            },
+            {
+              "coefficient_l2_mass": 10.397850272392233,
+              "mass_fraction": 0.045294968549843787,
+              "mode_index": 4,
+              "wave": [
+                8,
+                0,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 9.53140758874061,
+              "mass_fraction": 0.041520583164583444,
+              "mode_index": 25,
+              "wave": [
+                10,
+                1,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 9.531407588740569,
+              "mass_fraction": 0.041520583164583263,
+              "mode_index": 19,
+              "wave": [
+                10,
+                -1,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 9.293583829848226,
+              "mass_fraction": 0.040484578663918726,
+              "mode_index": 21,
+              "wave": [
+                10,
+                0,
+                -1
+              ]
+            },
+            {
+              "coefficient_l2_mass": 9.293583823473902,
+              "mass_fraction": 0.04048457863615099,
+              "mode_index": 23,
+              "wave": [
+                10,
+                0,
+                1
+              ]
+            },
+            {
+              "coefficient_l2_mass": 6.332640729491544,
+              "mass_fraction": 0.027586160135559132,
+              "mode_index": 31,
+              "wave": [
+                11,
+                0,
+                0
+              ]
+            }
+          ],
+          "top_low_coordinates": [
+            {
+              "absolute_value": 0.4915382662269028,
+              "coordinate_index": 31,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": 0.4915382662269028,
+              "wave": [
+                1,
+                0,
+                -1
+              ]
+            },
+            {
+              "absolute_value": 0.49153826622481883,
+              "coordinate_index": 39,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": -0.49153826622481883,
+              "wave": [
+                1,
+                0,
+                1
+              ]
+            },
+            {
+              "absolute_value": 0.4608339053231162,
+              "coordinate_index": 7,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": -0.4608339053231162,
+              "wave": [
+                0,
+                1,
+                -1
+              ]
+            },
+            {
+              "absolute_value": 0.4608339053231159,
+              "coordinate_index": 15,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": 0.4608339053231159,
+              "wave": [
+                0,
+                1,
+                1
+              ]
+            },
+            {
+              "absolute_value": 0.12043036383068514,
+              "coordinate_index": 43,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": -0.12043036383068514,
+              "wave": [
+                1,
+                1,
+                -1
+              ]
+            },
+            {
+              "absolute_value": 0.12043036383068495,
+              "coordinate_index": 19,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": 0.12043036383068495,
+              "wave": [
+                1,
+                -1,
+                -1
+              ]
+            },
+            {
+              "absolute_value": 0.12043036375475058,
+              "coordinate_index": 51,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": 0.12043036375475058,
+              "wave": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "absolute_value": 0.1204303637547504,
+              "coordinate_index": 27,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": -0.1204303637547504,
+              "wave": [
+                1,
+                -1,
+                1
+              ]
+            },
+            {
+              "absolute_value": 0.0906157948398295,
+              "coordinate_index": 49,
+              "phase": "sine",
+              "polarization_index": 0,
+              "value": 0.0906157948398295,
+              "wave": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "absolute_value": 0.09061579483982894,
+              "coordinate_index": 25,
+              "phase": "sine",
+              "polarization_index": 0,
+              "value": 0.09061579483982894,
+              "wave": [
+                1,
+                -1,
+                1
+              ]
+            },
+            {
+              "absolute_value": 0.09061579481094621,
+              "coordinate_index": 17,
+              "phase": "sine",
+              "polarization_index": 0,
+              "value": 0.09061579481094621,
+              "wave": [
+                1,
+                -1,
+                -1
+              ]
+            },
+            {
+              "absolute_value": 0.09061579481094599,
+              "coordinate_index": 41,
+              "phase": "sine",
+              "polarization_index": 0,
+              "value": 0.09061579481094599,
+              "wave": [
+                1,
+                1,
+                -1
+              ]
+            }
+          ]
+        },
+        "lower_to_Schur_upper_ratio": 0.6901781999500896,
+        "maximum_single_low_coordinate_norm": 0.19220226360809084,
+        "root_sum_square_coordinate_norm_upper": 0.6868529886980249
+      },
+      "real_high_dimension": 144,
+      "real_low_coordinate_count": 52,
+      "same_sign_high_alias_count": 0,
+      "transverse_y_radius": 1,
+      "transverse_z_radius": 1
+    },
+    {
+      "Fisher_hermitian_residual": 0.0,
+      "all_checks_pass": true,
+      "carrier": 8,
+      "complex_high_variable_dimension": 120,
+      "direct_reconstruction": {
+        "coefficient_trials": 2,
+        "low_coordinates_checked": [
+          0,
+          1,
+          7,
+          19,
+          31,
+          43,
+          51
+        ],
+        "maximum_Fisher_matrix_residual": 8.526621361585432e-14,
+        "maximum_component_vs_direct_flux_residual": 5.687262012677269e-15,
+        "maximum_component_vs_direct_load_residual": 3.4819577720689635e-16,
+        "maximum_divergence_residual": 1.0569008315563939e-16,
+        "maximum_load_imaginary_residual": 4.336808689942018e-17,
+        "maximum_load_matrix_residual": 9.540979117872439e-17
+      },
+      "high_mode_count": 60,
+      "incidence": {
+        "active_ordered_variable_pairs": 9576,
+        "maximum_scalar_low_incidence_per_variable_pair": 104,
+        "scalar_low_incidence_count": 286784
+      },
+      "label": "slab_4x5x3",
+      "longitudinal_length": 4,
+      "low_wave_representative_count": 13,
+      "maximum_load_block_hermitian_residual": 7.422241977868066e-19,
+      "normalized_spectra": {
+        "Fisher_condition_number_on_quotient": 716.8218020131802,
+        "Fisher_dimension": 120,
+        "Fisher_maximum_eigenvalue": 1.430282148698571,
+        "Fisher_minimum_eigenvalue": 0.0019953106123190606,
+        "Fisher_minimum_retained_eigenvalue": 0.0019953106123190606,
+        "Fisher_numerical_nullity": 0,
+        "Fisher_quotient_tolerance": 1.5610008435381e-10,
+        "Fisher_rank_after_exact_null_quotient": 120,
+        "Schur_square_function_spectrum_maximum": 1.4704319637500984,
+        "Schur_square_function_spectrum_minimum": 0.00034862302542469935,
+        "Schur_square_function_upper": 1.2126136910616252,
+        "joint_l2_numerical_radius_lower": {
+          "best_lower_bound": 0.8675634369640731,
+          "deterministic_starts": 16,
+          "iterations_for_best_start": 5,
+          "maximum_iterations": 80
+        },
+        "joint_l2_witness": {
+          "Fisher_energy": 0.9999999999999627,
+          "Fisher_energy_imaginary_residual": 0.0,
+          "component_loads": {
+            "combined": 0.8675634369640735,
+            "kinetic": 0.010402626382124518,
+            "pressure_cross": -0.0013930412620197182,
+            "pressure_high_high": 0.8585538518439685
+          },
+          "component_vs_direct_flux_residual": 5.1819511067957025e-15,
+          "direct_complete_load": 0.8675634369640739,
+          "direct_complete_load_imaginary_residual": 0.0,
+          "high_coefficient_l2_norm": 21.976514432944814,
+          "low_coordinate_l1_norm": 2.8823003306619808,
+          "low_coordinate_l2_norm": 1.0,
+          "matrix_complete_load": 0.8675634369640732,
+          "matrix_vs_direct_complete_load_residual": 6.661338147750939e-16,
+          "maximum_component_load_imaginary_residual": 0.0,
+          "maximum_high_coefficient": 5.682959547077485,
+          "maximum_low_divergence_residual": 4.85722573273506e-17,
+          "top_high_modes_by_coefficient_mass": [
+            {
+              "coefficient_l2_mass": 32.29602921371913,
+              "mass_fraction": 0.0668700278369719,
+              "mode_index": 22,
+              "wave": [
+                9,
+                0,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 27.72555103467765,
+              "mass_fraction": 0.05740669718916124,
+              "mode_index": 37,
+              "wave": [
+                10,
+                0,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 23.784674647084138,
+              "mass_fraction": 0.0492469784820547,
+              "mode_index": 19,
+              "wave": [
+                9,
+                -1,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 23.78467414418175,
+              "mass_fraction": 0.04924697744077818,
+              "mode_index": 25,
+              "wave": [
+                9,
+                1,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 20.440977117002173,
+              "mass_fraction": 0.04232373892726713,
+              "mode_index": 34,
+              "wave": [
+                10,
+                -1,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 20.440976713945584,
+              "mass_fraction": 0.042323738092724744,
+              "mode_index": 40,
+              "wave": [
+                10,
+                1,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 15.796530738240351,
+              "mass_fraction": 0.03270725460407372,
+              "mode_index": 23,
+              "wave": [
+                9,
+                0,
+                1
+              ]
+            },
+            {
+              "coefficient_l2_mass": 15.796530738239754,
+              "mass_fraction": 0.032707254604072485,
+              "mode_index": 21,
+              "wave": [
+                9,
+                0,
+                -1
+              ]
+            },
+            {
+              "coefficient_l2_mass": 13.844188342676278,
+              "mass_fraction": 0.02866486321673834,
+              "mode_index": 7,
+              "wave": [
+                8,
+                0,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 13.57633156748706,
+              "mass_fraction": 0.028110256645921403,
+              "mode_index": 38,
+              "wave": [
+                10,
+                0,
+                1
+              ]
+            },
+            {
+              "coefficient_l2_mass": 13.576331567486648,
+              "mass_fraction": 0.02811025664592055,
+              "mode_index": 36,
+              "wave": [
+                10,
+                0,
+                -1
+              ]
+            },
+            {
+              "coefficient_l2_mass": 11.635123050072316,
+              "mass_fraction": 0.024090918332289057,
+              "mode_index": 20,
+              "wave": [
+                9,
+                -1,
+                1
+              ]
+            }
+          ],
+          "top_low_coordinates": [
+            {
+              "absolute_value": 0.4811226136227031,
+              "coordinate_index": 47,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": 0.4811226136227031,
+              "wave": [
+                1,
+                1,
+                0
+              ]
+            },
+            {
+              "absolute_value": 0.48112261350886676,
+              "coordinate_index": 23,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": -0.48112261350886676,
+              "wave": [
+                1,
+                -1,
+                0
+              ]
+            },
+            {
+              "absolute_value": 0.45614327405074606,
+              "coordinate_index": 15,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": -0.45614327405074606,
+              "wave": [
+                0,
+                1,
+                1
+              ]
+            },
+            {
+              "absolute_value": 0.4561432740507414,
+              "coordinate_index": 7,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": 0.4561432740507414,
+              "wave": [
+                0,
+                1,
+                -1
+              ]
+            },
+            {
+              "absolute_value": 0.1420831219965316,
+              "coordinate_index": 27,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": 0.1420831219965316,
+              "wave": [
+                1,
+                -1,
+                1
+              ]
+            },
+            {
+              "absolute_value": 0.14208312199653045,
+              "coordinate_index": 19,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": -0.14208312199653045,
+              "wave": [
+                1,
+                -1,
+                -1
+              ]
+            },
+            {
+              "absolute_value": 0.14208312079317972,
+              "coordinate_index": 43,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": 0.14208312079317972,
+              "wave": [
+                1,
+                1,
+                -1
+              ]
+            },
+            {
+              "absolute_value": 0.14208312079317925,
+              "coordinate_index": 51,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": -0.14208312079317925,
+              "wave": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "absolute_value": 0.09901760701766697,
+              "coordinate_index": 41,
+              "phase": "sine",
+              "polarization_index": 0,
+              "value": 0.09901760701766697,
+              "wave": [
+                1,
+                1,
+                -1
+              ]
+            },
+            {
+              "absolute_value": 0.09901760701763626,
+              "coordinate_index": 49,
+              "phase": "sine",
+              "polarization_index": 0,
+              "value": 0.09901760701763626,
+              "wave": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "absolute_value": 0.09901760631771145,
+              "coordinate_index": 25,
+              "phase": "sine",
+              "polarization_index": 0,
+              "value": 0.09901760631771145,
+              "wave": [
+                1,
+                -1,
+                1
+              ]
+            },
+            {
+              "absolute_value": 0.09901760631768013,
+              "coordinate_index": 17,
+              "phase": "sine",
+              "polarization_index": 0,
+              "value": 0.09901760631768013,
+              "wave": [
+                1,
+                -1,
+                -1
+              ]
+            }
+          ]
+        },
+        "lower_to_Schur_upper_ratio": 0.715449151992119,
+        "maximum_single_low_coordinate_norm": 0.41838819697608254,
+        "root_sum_square_coordinate_norm_upper": 1.4222259860088355
+      },
+      "real_high_dimension": 240,
+      "real_low_coordinate_count": 52,
+      "same_sign_high_alias_count": 0,
+      "transverse_y_radius": 2,
+      "transverse_z_radius": 1
+    },
+    {
+      "Fisher_hermitian_residual": 0.0,
+      "all_checks_pass": true,
+      "carrier": 8,
+      "complex_high_variable_dimension": 108,
+      "direct_reconstruction": {
+        "coefficient_trials": 2,
+        "low_coordinates_checked": [
+          0,
+          1,
+          7,
+          19,
+          31,
+          43,
+          51
+        ],
+        "maximum_Fisher_matrix_residual": 1.0659194828817843e-13,
+        "maximum_component_vs_direct_flux_residual": 5.402869160584885e-15,
+        "maximum_component_vs_direct_load_residual": 1.9111110861480833e-16,
+        "maximum_divergence_residual": 6.206335383118183e-17,
+        "maximum_load_imaginary_residual": 3.2959746043559335e-17,
+        "maximum_load_matrix_residual": 5.928593550334434e-17
+      },
+      "high_mode_count": 54,
+      "incidence": {
+        "active_ordered_variable_pairs": 7776,
+        "maximum_scalar_low_incidence_per_variable_pair": 104,
+        "scalar_low_incidence_count": 241472
+      },
+      "label": "slab_6x3x3",
+      "longitudinal_length": 6,
+      "low_wave_representative_count": 13,
+      "maximum_load_block_hermitian_residual": 6.422125725716664e-19,
+      "normalized_spectra": {
+        "Fisher_condition_number_on_quotient": 625.7425340779968,
+        "Fisher_dimension": 108,
+        "Fisher_maximum_eigenvalue": 1.3768989393866307,
+        "Fisher_minimum_eigenvalue": 0.0022004240792348065,
+        "Fisher_minimum_retained_eigenvalue": 0.0022004240792348065,
+        "Fisher_numerical_nullity": 0,
+        "Fisher_quotient_tolerance": 1.3524648734688172e-10,
+        "Fisher_rank_after_exact_null_quotient": 108,
+        "Schur_square_function_spectrum_maximum": 0.7066575349485558,
+        "Schur_square_function_spectrum_minimum": 0.000227015115624741,
+        "Schur_square_function_upper": 0.8406292494010399,
+        "joint_l2_numerical_radius_lower": {
+          "best_lower_bound": 0.6079718234136112,
+          "deterministic_starts": 16,
+          "iterations_for_best_start": 5,
+          "maximum_iterations": 80
+        },
+        "joint_l2_witness": {
+          "Fisher_energy": 1.0000000000000444,
+          "Fisher_energy_imaginary_residual": 0.0,
+          "component_loads": {
+            "combined": 0.6079718234136121,
+            "kinetic": 0.01506231706878311,
+            "pressure_cross": -0.0007316638467374811,
+            "pressure_high_high": 0.593641170191566
+          },
+          "component_vs_direct_flux_residual": 2.7852053982080096e-14,
+          "direct_complete_load": 0.6079718234136116,
+          "direct_complete_load_imaginary_residual": 0.0,
+          "high_coefficient_l2_norm": 21.015476606440913,
+          "low_coordinate_l1_norm": 2.856439820538375,
+          "low_coordinate_l2_norm": 1.0,
+          "matrix_complete_load": 0.6079718234136113,
+          "matrix_vs_direct_complete_load_residual": 2.220446049250313e-16,
+          "maximum_component_load_imaginary_residual": 0.0,
+          "maximum_high_coefficient": 5.73372712070753,
+          "maximum_low_divergence_residual": 5.551115123125783e-17,
+          "top_high_modes_by_coefficient_mass": [
+            {
+              "coefficient_l2_mass": 32.875626694737065,
+              "mass_fraction": 0.07443814686842772,
+              "mode_index": 22,
+              "wave": [
+                10,
+                0,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 28.165887249290297,
+              "mass_fraction": 0.06377418965150514,
+              "mode_index": 31,
+              "wave": [
+                11,
+                0,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 24.68379768424505,
+              "mass_fraction": 0.05588992034589972,
+              "mode_index": 13,
+              "wave": [
+                9,
+                0,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 16.116354922735667,
+              "mass_fraction": 0.03649121599602408,
+              "mode_index": 23,
+              "wave": [
+                10,
+                0,
+                1
+              ]
+            },
+            {
+              "coefficient_l2_mass": 16.11635492273546,
+              "mass_fraction": 0.03649121599602362,
+              "mode_index": 21,
+              "wave": [
+                10,
+                0,
+                -1
+              ]
+            },
+            {
+              "coefficient_l2_mass": 15.85846661264398,
+              "mass_fraction": 0.0359072962405011,
+              "mode_index": 40,
+              "wave": [
+                12,
+                0,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 15.56836417599263,
+              "mass_fraction": 0.03525043612991349,
+              "mode_index": 19,
+              "wave": [
+                10,
+                -1,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 15.568364156155887,
+              "mass_fraction": 0.03525043608499845,
+              "mode_index": 25,
+              "wave": [
+                10,
+                1,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 13.817485694894104,
+              "mass_fraction": 0.031286035671939987,
+              "mode_index": 32,
+              "wave": [
+                11,
+                0,
+                1
+              ]
+            },
+            {
+              "coefficient_l2_mass": 13.8174856948939,
+              "mass_fraction": 0.03128603567193953,
+              "mode_index": 30,
+              "wave": [
+                11,
+                0,
+                -1
+              ]
+            },
+            {
+              "coefficient_l2_mass": 13.395288205638504,
+              "mass_fraction": 0.030330081310841195,
+              "mode_index": 28,
+              "wave": [
+                11,
+                -1,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 13.395288194259933,
+              "mass_fraction": 0.030330081285077436,
+              "mode_index": 34,
+              "wave": [
+                11,
+                1,
+                0
+              ]
+            }
+          ],
+          "top_low_coordinates": [
+            {
+              "absolute_value": 0.5021643327395283,
+              "coordinate_index": 23,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": -0.5021643327395283,
+              "wave": [
+                1,
+                -1,
+                0
+              ]
+            },
+            {
+              "absolute_value": 0.5021643327270862,
+              "coordinate_index": 47,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": 0.5021643327270862,
+              "wave": [
+                1,
+                1,
+                0
+              ]
+            },
+            {
+              "absolute_value": 0.445923259141474,
+              "coordinate_index": 7,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": 0.445923259141474,
+              "wave": [
+                0,
+                1,
+                -1
+              ]
+            },
+            {
+              "absolute_value": 0.44592325914147357,
+              "coordinate_index": 15,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": -0.44592325914147357,
+              "wave": [
+                0,
+                1,
+                1
+              ]
+            },
+            {
+              "absolute_value": 0.1097343829498247,
+              "coordinate_index": 19,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": -0.1097343829498247,
+              "wave": [
+                1,
+                -1,
+                -1
+              ]
+            },
+            {
+              "absolute_value": 0.10973438294982434,
+              "coordinate_index": 27,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": 0.10973438294982434,
+              "wave": [
+                1,
+                -1,
+                1
+              ]
+            },
+            {
+              "absolute_value": 0.10973438288450742,
+              "coordinate_index": 43,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": 0.10973438288450742,
+              "wave": [
+                1,
+                1,
+                -1
+              ]
+            },
+            {
+              "absolute_value": 0.10973438288450724,
+              "coordinate_index": 51,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": -0.10973438288450724,
+              "wave": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "absolute_value": 0.10625992887614613,
+              "coordinate_index": 49,
+              "phase": "sine",
+              "polarization_index": 0,
+              "value": 0.10625992887614613,
+              "wave": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "absolute_value": 0.10625992887614324,
+              "coordinate_index": 41,
+              "phase": "sine",
+              "polarization_index": 0,
+              "value": 0.10625992887614324,
+              "wave": [
+                1,
+                1,
+                -1
+              ]
+            },
+            {
+              "absolute_value": 0.10625992885578099,
+              "coordinate_index": 17,
+              "phase": "sine",
+              "polarization_index": 0,
+              "value": 0.10625992885578099,
+              "wave": [
+                1,
+                -1,
+                -1
+              ]
+            },
+            {
+              "absolute_value": 0.10625992885577767,
+              "coordinate_index": 25,
+              "phase": "sine",
+              "polarization_index": 0,
+              "value": 0.10625992885577767,
+              "wave": [
+                1,
+                -1,
+                1
+              ]
+            }
+          ]
+        },
+        "lower_to_Schur_upper_ratio": 0.7232342008641737,
+        "maximum_single_low_coordinate_norm": 0.30590973846808245,
+        "root_sum_square_coordinate_norm_upper": 1.028853324606076
+      },
+      "real_high_dimension": 216,
+      "real_low_coordinate_count": 52,
+      "same_sign_high_alias_count": 0,
+      "transverse_y_radius": 1,
+      "transverse_z_radius": 1
+    },
+    {
+      "Fisher_hermitian_residual": 0.0,
+      "all_checks_pass": true,
+      "carrier": 8,
+      "complex_high_variable_dimension": 144,
+      "direct_reconstruction": {
+        "coefficient_trials": 2,
+        "low_coordinates_checked": [
+          0,
+          1,
+          7,
+          19,
+          31,
+          43,
+          51
+        ],
+        "maximum_Fisher_matrix_residual": 9.947598687856456e-14,
+        "maximum_component_vs_direct_flux_residual": 7.324235594788545e-15,
+        "maximum_component_vs_direct_load_residual": 3.700792419478043e-16,
+        "maximum_divergence_residual": 6.736447455048117e-17,
+        "maximum_load_imaginary_residual": 4.163336342344337e-17,
+        "maximum_load_matrix_residual": 6.532333834880892e-17
+      },
+      "high_mode_count": 72,
+      "incidence": {
+        "active_ordered_variable_pairs": 11016,
+        "maximum_scalar_low_incidence_per_variable_pair": 104,
+        "scalar_low_incidence_count": 336320
+      },
+      "label": "slab_8x3x3",
+      "longitudinal_length": 8,
+      "low_wave_representative_count": 13,
+      "maximum_load_block_hermitian_residual": 6.422134726818681e-19,
+      "normalized_spectra": {
+        "Fisher_condition_number_on_quotient": 1054.0249879310745,
+        "Fisher_dimension": 144,
+        "Fisher_maximum_eigenvalue": 1.4061946326416392,
+        "Fisher_minimum_eigenvalue": 0.0013341188764431778,
+        "Fisher_minimum_retained_eigenvalue": 0.0013341188764431778,
+        "Fisher_numerical_nullity": 0,
+        "Fisher_quotient_tolerance": 1.8416542579907042e-10,
+        "Fisher_rank_after_exact_null_quotient": 144,
+        "Schur_square_function_spectrum_maximum": 1.2938745009829435,
+        "Schur_square_function_spectrum_minimum": 0.00012657814907715721,
+        "Schur_square_function_upper": 1.1374860443024977,
+        "joint_l2_numerical_radius_lower": {
+          "best_lower_bound": 0.84006774928609,
+          "deterministic_starts": 16,
+          "iterations_for_best_start": 5,
+          "maximum_iterations": 80
+        },
+        "joint_l2_witness": {
+          "Fisher_energy": 1.0000000000000848,
+          "Fisher_energy_imaginary_residual": 0.0,
+          "component_loads": {
+            "combined": 0.8400677492860902,
+            "kinetic": 0.014962087933751478,
+            "pressure_cross": -0.0006587952325331973,
+            "pressure_high_high": 0.8257644565848721
+          },
+          "component_vs_direct_flux_residual": 7.148979140527988e-14,
+          "direct_complete_load": 0.8400677492860903,
+          "direct_complete_load_imaginary_residual": 0.0,
+          "high_coefficient_l2_norm": 26.876023270476065,
+          "low_coordinate_l1_norm": 2.8852387049760826,
+          "low_coordinate_l2_norm": 0.9999999999999999,
+          "matrix_complete_load": 0.8400677492860896,
+          "matrix_vs_direct_complete_load_residual": 6.661338147750939e-16,
+          "maximum_component_load_imaginary_residual": 0.0,
+          "maximum_high_coefficient": 6.449623987650835,
+          "maximum_low_divergence_residual": 6.245004513516506e-17,
+          "top_high_modes_by_coefficient_mass": [
+            {
+              "coefficient_l2_mass": 41.597649582081054,
+              "mass_fraction": 0.057588898941374644,
+              "mode_index": 31,
+              "wave": [
+                11,
+                0,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 37.07427754845409,
+              "mass_fraction": 0.051326621684464516,
+              "mode_index": 22,
+              "wave": [
+                10,
+                0,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 36.35558033093459,
+              "mass_fraction": 0.050331638029258025,
+              "mode_index": 40,
+              "wave": [
+                12,
+                0,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 24.99325260690411,
+              "mass_fraction": 0.034601327552296814,
+              "mode_index": 49,
+              "wave": [
+                13,
+                0,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 23.329731685936434,
+              "mass_fraction": 0.03229830468521305,
+              "mode_index": 13,
+              "wave": [
+                9,
+                0,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 20.49216174737704,
+              "mass_fraction": 0.028369896948897765,
+              "mode_index": 32,
+              "wave": [
+                11,
+                0,
+                1
+              ]
+            },
+            {
+              "coefficient_l2_mass": 20.492161747375576,
+              "mass_fraction": 0.028369896948895735,
+              "mode_index": 30,
+              "wave": [
+                11,
+                0,
+                -1
+              ]
+            },
+            {
+              "coefficient_l2_mass": 19.787822934490613,
+              "mass_fraction": 0.027394791453195018,
+              "mode_index": 28,
+              "wave": [
+                11,
+                -1,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 19.78782292360879,
+              "mass_fraction": 0.02739479143812993,
+              "mode_index": 34,
+              "wave": [
+                11,
+                1,
+                0
+              ]
+            },
+            {
+              "coefficient_l2_mass": 18.25565463729529,
+              "mass_fraction": 0.025273616672532202,
+              "mode_index": 23,
+              "wave": [
+                10,
+                0,
+                1
+              ]
+            },
+            {
+              "coefficient_l2_mass": 18.25565463729439,
+              "mass_fraction": 0.025273616672530957,
+              "mode_index": 21,
+              "wave": [
+                10,
+                0,
+                -1
+              ]
+            },
+            {
+              "coefficient_l2_mass": 17.914243239962055,
+              "mass_fraction": 0.02480095760030119,
+              "mode_index": 41,
+              "wave": [
+                12,
+                0,
+                1
+              ]
+            }
+          ],
+          "top_low_coordinates": [
+            {
+              "absolute_value": 0.5040731844609785,
+              "coordinate_index": 23,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": -0.5040731844609785,
+              "wave": [
+                1,
+                -1,
+                0
+              ]
+            },
+            {
+              "absolute_value": 0.5040731844541776,
+              "coordinate_index": 47,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": 0.5040731844541776,
+              "wave": [
+                1,
+                1,
+                0
+              ]
+            },
+            {
+              "absolute_value": 0.44040435385710486,
+              "coordinate_index": 7,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": 0.44040435385710486,
+              "wave": [
+                0,
+                1,
+                -1
+              ]
+            },
+            {
+              "absolute_value": 0.4404043538571047,
+              "coordinate_index": 15,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": -0.4404043538571047,
+              "wave": [
+                0,
+                1,
+                1
+              ]
+            },
+            {
+              "absolute_value": 0.11399275137769509,
+              "coordinate_index": 41,
+              "phase": "sine",
+              "polarization_index": 0,
+              "value": 0.11399275137769509,
+              "wave": [
+                1,
+                1,
+                -1
+              ]
+            },
+            {
+              "absolute_value": 0.11399275137768872,
+              "coordinate_index": 49,
+              "phase": "sine",
+              "polarization_index": 0,
+              "value": 0.11399275137768872,
+              "wave": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "absolute_value": 0.11399275137000318,
+              "coordinate_index": 25,
+              "phase": "sine",
+              "polarization_index": 0,
+              "value": 0.11399275137000318,
+              "wave": [
+                1,
+                -1,
+                1
+              ]
+            },
+            {
+              "absolute_value": 0.11399275136999741,
+              "coordinate_index": 17,
+              "phase": "sine",
+              "polarization_index": 0,
+              "value": 0.11399275136999741,
+              "wave": [
+                1,
+                -1,
+                -1
+              ]
+            },
+            {
+              "absolute_value": 0.10657174309197567,
+              "coordinate_index": 19,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": -0.10657174309197567,
+              "wave": [
+                1,
+                -1,
+                -1
+              ]
+            },
+            {
+              "absolute_value": 0.10657174309197495,
+              "coordinate_index": 27,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": 0.10657174309197495,
+              "wave": [
+                1,
+                -1,
+                1
+              ]
+            },
+            {
+              "absolute_value": 0.10657174306691027,
+              "coordinate_index": 43,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": 0.10657174306691027,
+              "wave": [
+                1,
+                1,
+                -1
+              ]
+            },
+            {
+              "absolute_value": 0.10657174306690959,
+              "coordinate_index": 51,
+              "phase": "sine",
+              "polarization_index": 1,
+              "value": -0.10657174306690959,
+              "wave": [
+                1,
+                1,
+                1
+              ]
+            }
+          ]
+        },
+        "lower_to_Schur_upper_ratio": 0.7385301591117247,
+        "maximum_single_low_coordinate_norm": 0.42406581907791496,
+        "root_sum_square_coordinate_norm_upper": 1.3961183966429485
+      },
+      "real_high_dimension": 288,
+      "real_low_coordinate_count": 52,
+      "same_sign_high_alias_count": 0,
+      "transverse_y_radius": 1,
+      "transverse_z_radius": 1
+    }
+  ]
+}

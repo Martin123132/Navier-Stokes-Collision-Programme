@@ -1,0 +1,245 @@
+{
+  "Hamming_leakage_bound": {
+    "all_checks_pass": true,
+    "bounded_multiplier_fallback": "Without multiplier derivatives one may take B_(v,w)=sup||M|| for all eight vertices.",
+    "bounded_multiplier_matrix_norm": 8.0,
+    "coefficient_bound": "||A_S||_(2->2)<=sup_xi||M(xi)||. If M is C^3 and ||partial_S M||_infinity<=L_|S| H^(-|S|), then ||A_S||_(2->2)<=L_|S|(m/(2H))^|S|.",
+    "coupled_vertex_bound": "||psi_v T(u tensor u)||_2 <= ||u||_infinity sum_w B_(v,w)||psi_w u||_2, with B_(v,w)=L_d(m/(2H))^d and d=Hamming(v,w).",
+    "higher_strata": {
+      "distance_0": "psi_v u",
+      "distance_1": "(2/m)partial_j psi_v u",
+      "distance_2": "(2/m)^2 partial_jl psi_v u",
+      "distance_3": "(2/m)^3 partial_123 psi_v u"
+    },
+    "interpretation": "The exact commutator is an eight-cell Hamming leakage operator. The old diagonal proposal retained only distances zero and one, so it requires a separate bandwidth-sensitive uncertainty theorem; it does not follow from symbol calculus.",
+    "smooth_prototype_exact_row_sum": 1.331,
+    "smooth_prototype_matrix_norm": 1.3309999999999997,
+    "smooth_prototype_ratio": "1/10"
+  },
+  "all_positive_checks_pass": true,
+  "assumption_scope": "Smooth periodic divergence-free pure high-pass velocities; vertex square roots on the periodic double cover; bounded or smooth translation-invariant pressure multipliers; and a fixed smooth high-output cutoff in the analytic no-go family.",
+  "certification_flags": {
+    "Navier_Stokes_global_regularity_proved": false,
+    "annular_shell_diagonal_commutator_bound_proved": false,
+    "coupled_eight_cell_multiplier_bound_proved": true,
+    "critical_signed_bound_proved": false,
+    "distance_two_and_three_pressure_leakage_genuine": true,
+    "exact_eight_shift_Walsh_identity_proved": true,
+    "exceptional_set_upgrade_proved": false,
+    "intrinsic_amplitude_condition_repairs_diagonal_bound": false,
+    "low_regularity_passage_proved": false,
+    "lower_carrier_only_diagonal_commutator_bound_falsified": true,
+    "mixed_low_high_paraproduct_controlled": false
+  },
+  "exact_vertex_Walsh_calculus": {
+    "all_checks_pass": true,
+    "concrete_symbol": "M_12(xi)=-xi_1 xi_2/|xi|^2 at output (11/2,13/2,15/2) with m=1",
+    "concrete_walsh_coefficients": {
+      "0": "-1069136209973/3872906846600",
+      "1": "25811778551/1936453423300",
+      "2": "14168605651/1936453423300",
+      "3": "-3697040923/3872906846600",
+      "4": "-185936345231/11618720539800",
+      "5": "258331411/2904680134950",
+      "6": "-555293732/1452340067475",
+      "7": "-779148481/11618720539800"
+    },
+    "distance_three_term_is_genuine": true,
+    "distance_two_terms_are_genuine": true,
+    "exact_multiplier_formula": "psi_v T f=sum_(S subset {1,2,3}) i^(-|S|)A_S(D)[(2/m)^|S| partial_S psi_v f], where A_S(k)=2^(-3)sum_epsilon epsilon_S M(k-(m/2)epsilon).",
+    "mixed_derivative_toggle": "partial_S psi_v=sigma(v,S)(m/2)^|S| psi_(v xor S)",
+    "nonzero_masks_by_hamming_order": {
+      "0": [
+        0
+      ],
+      "1": [
+        1,
+        2,
+        4
+      ],
+      "2": [
+        3,
+        5,
+        6
+      ],
+      "3": [
+        7
+      ]
+    },
+    "phase_corrected_Fourier_identity_residual": 5.898059818321144e-17,
+    "scope": "The identity is exact on the half-lattice (or on the periodic double cover). It applies componentwise to the matrix double-Riesz pressure multiplier.",
+    "vertex_factorization": "Phi_v=psi_v^2, with Fourier shifts q_epsilon=(m/2)epsilon for epsilon in {+1,-1}^3."
+  },
+  "finite_Fourier_counterexample_pilot": {
+    "all_checks_pass": true,
+    "construction": "The real shifted three-dimensional Fejer packet is converted to the exactly divergence-free field N^(-1)(partial_2 a,-partial_1 a,0). Its lowest carrier is fixed while bandwidth and triple-zero concentration grow.",
+    "fitted_log_slopes": {
+      "diagonal_commutator_ratio": 3.319190778223603,
+      "weighted_pressure_all_rows": -0.948063737243039,
+      "weighted_pressure_tail_rows": -2.0127477613624163,
+      "weighted_velocity_mass": -4.677388709498881,
+      "zero_face_gradient_over_carrier": -3.679279100417771
+    },
+    "interpretation": "The finite rows are pre-asymptotic, but the fixed carrier, exact divergence constraint, increasing N^3 pressure norm, and rapidly increasing diagonal ratio independently stress the analytic no-go mechanism.",
+    "observed_ratio_growth_factor": 69.71182377775808,
+    "proved_asymptotic_exponents": {
+      "diagonal_ratio_lower": 0.5,
+      "weighted_pressure_lower": -3.0,
+      "weighted_velocity_mass_upper": -4.5,
+      "zero_face_gradient_over_carrier_upper": -3.5
+    },
+    "rows": [
+      {
+        "N_cubed_weighted_pressure": 0.0009525870768735198,
+        "N_to_7_over_2_gradient_over_carrier": 0.10646339545477249,
+        "N_to_9_over_2_weighted_mass": 0.5659615711335891,
+        "all_checks_pass": true,
+        "diagonal_commutator_ratio": 0.0040952943680033285,
+        "expected_minimum_velocity_mode": 5.196152422706632,
+        "grid_size": 40,
+        "maximum_product_coordinate_mode_upper": 18.0,
+        "maximum_relative_divergence_residual": 4.2873991405124947e-16,
+        "maximum_velocity_mode": 15.588457268119896,
+        "minimum_velocity_mode": 5.196152422706633,
+        "nyquist": 20.0,
+        "order": 4,
+        "scope": "Binary64 alias-free finite-Fourier stress of the exact curl packet. It supports, but is not needed to prove, the asymptotic counterexample theorem.",
+        "velocity_L_infinity": 1.8761986068282184,
+        "weighted_pressure_norm": 1.4884173076148747e-05,
+        "weighted_velocity_mass": 0.0011053936936202913,
+        "zero_face_gradient_over_carrier": 0.00083174527699041
+      },
+      {
+        "N_cubed_weighted_pressure": 0.0044957138048902215,
+        "N_to_7_over_2_gradient_over_carrier": 0.09649021820772755,
+        "N_to_9_over_2_weighted_mass": 0.512573391312386,
+        "all_checks_pass": true,
+        "diagonal_commutator_ratio": 0.03455880101988247,
+        "expected_minimum_velocity_mode": 5.196152422706632,
+        "grid_size": 60,
+        "maximum_product_coordinate_mode_upper": 26.0,
+        "maximum_relative_divergence_residual": 9.646648066153147e-16,
+        "maximum_velocity_mode": 22.516660498395403,
+        "minimum_velocity_mode": 5.196152422706632,
+        "nyquist": 30.0,
+        "order": 6,
+        "scope": "Binary64 alias-free finite-Fourier stress of the exact curl packet. It supports, but is not needed to prove, the asymptotic counterexample theorem.",
+        "velocity_L_infinity": 1.751609436262343,
+        "weighted_pressure_norm": 2.081348983745473e-05,
+        "weighted_velocity_mass": 0.00016146389717634744,
+        "zero_face_gradient_over_carrier": 0.00018237021587865686
+      },
+      {
+        "N_cubed_weighted_pressure": 0.007834893793438907,
+        "N_to_7_over_2_gradient_over_carrier": 0.0914476031219707,
+        "N_to_9_over_2_weighted_mass": 0.48613591206575135,
+        "all_checks_pass": true,
+        "diagonal_commutator_ratio": 0.08788612744841012,
+        "expected_minimum_velocity_mode": 5.196152422706632,
+        "grid_size": 80,
+        "maximum_product_coordinate_mode_upper": 34.0,
+        "maximum_relative_divergence_residual": 1.0289757937229998e-15,
+        "maximum_velocity_mode": 29.444863728670914,
+        "minimum_velocity_mode": 5.196152422706633,
+        "nyquist": 40.0,
+        "order": 8,
+        "scope": "Binary64 alias-free finite-Fourier stress of the exact curl packet. It supports, but is not needed to prove, the asymptotic counterexample theorem.",
+        "velocity_L_infinity": 1.6565383344733544,
+        "weighted_pressure_norm": 1.5302526940310366e-05,
+        "weighted_velocity_mass": 4.196166992187499e-05,
+        "zero_face_gradient_over_carrier": 6.314767606523591e-05
+      },
+      {
+        "N_cubed_weighted_pressure": 0.010447677370849917,
+        "N_to_7_over_2_gradient_over_carrier": 0.08841073652749047,
+        "N_to_9_over_2_weighted_mass": 0.4703721930556695,
+        "all_checks_pass": true,
+        "diagonal_commutator_ratio": 0.1529055375291277,
+        "expected_minimum_velocity_mode": 5.196152422706632,
+        "grid_size": 100,
+        "maximum_product_coordinate_mode_upper": 42.0,
+        "maximum_relative_divergence_residual": 2.1436995702562502e-15,
+        "maximum_velocity_mode": 36.373066958946424,
+        "minimum_velocity_mode": 5.196152422706632,
+        "nyquist": 50.0,
+        "order": 10,
+        "scope": "Binary64 alias-free finite-Fourier stress of the exact curl packet. It supports, but is not needed to prove, the asymptotic counterexample theorem.",
+        "velocity_L_infinity": 1.5952328488587937,
+        "weighted_pressure_norm": 1.0447677370849917e-05,
+        "weighted_velocity_mass": 1.4874474780643518e-05,
+        "zero_face_gradient_over_carrier": 2.7957929703991564e-05
+      },
+      {
+        "N_cubed_weighted_pressure": 0.012305575271257219,
+        "N_to_7_over_2_gradient_over_carrier": 0.08638310987127451,
+        "N_to_9_over_2_weighted_mass": 0.4599089080499553,
+        "all_checks_pass": true,
+        "diagonal_commutator_ratio": 0.2203504576678807,
+        "expected_minimum_velocity_mode": 5.196152422706632,
+        "grid_size": 120,
+        "maximum_product_coordinate_mode_upper": 50.0,
+        "maximum_relative_divergence_residual": 1.1024740647032167e-15,
+        "maximum_velocity_mode": 43.30127018922193,
+        "minimum_velocity_mode": 5.196152422706632,
+        "nyquist": 60.0,
+        "order": 12,
+        "scope": "Binary64 alias-free finite-Fourier stress of the exact curl packet. It supports, but is not needed to prove, the asymptotic counterexample theorem.",
+        "velocity_L_infinity": 1.5512482526855926,
+        "weighted_pressure_norm": 7.121281985681261e-06,
+        "weighted_velocity_mass": 6.4025977012285044e-06,
+        "zero_face_gradient_over_carrier": 1.4430935109264282e-05
+      },
+      {
+        "N_cubed_weighted_pressure": 0.013584669987820756,
+        "N_to_7_over_2_gradient_over_carrier": 0.08493386250743516,
+        "N_to_9_over_2_weighted_mass": 0.452459266404282,
+        "all_checks_pass": true,
+        "diagonal_commutator_ratio": 0.2854904393002932,
+        "expected_minimum_velocity_mode": 5.196152422706632,
+        "grid_size": 140,
+        "maximum_product_coordinate_mode_upper": 58.0,
+        "maximum_relative_divergence_residual": 2.2508845487690634e-15,
+        "maximum_velocity_mode": 50.22947341949743,
+        "minimum_velocity_mode": 5.196152422706632,
+        "nyquist": 70.0,
+        "order": 14,
+        "scope": "Binary64 alias-free finite-Fourier stress of the exact curl packet. It supports, but is not needed to prove, the asymptotic counterexample theorem.",
+        "velocity_L_infinity": 1.5184478081898178,
+        "weighted_pressure_norm": 4.950681482441967e-06,
+        "weighted_velocity_mass": 3.1477724243542504e-06,
+        "zero_face_gradient_over_carrier": 8.272423314196874e-06
+      }
+    ]
+  },
+  "kind": "pressure_hamming_commutator_gate_audit",
+  "next_theorem_target": "For u supported in one annulus K<=|k|<=Lambda K, prove or falsify a uniform finite-type inequality that controls the distance-two and distance-three vertex masses by ||psi_v u||_2+K^(-1)||u grad psi_v||_2. Combine it with the exact Walsh multiplier formula, then test summability of comparable-shell and separated-shell pressure paraproducts.",
+  "positive_checks": {
+    "Hamming_leakage_bound_passes": true,
+    "exact_vertex_Walsh_calculus_passes": true,
+    "finite_Fourier_counterexample_pilot_passes": true,
+    "two_scale_counterexample_theorem_passes": true
+  },
+  "route_decision": "Do not seek a bandwidth-independent single-vertex estimate from a lower carrier cutoff alone. Retain the exact Hamming leakage terms and move to a dyadic annular decomposition, where bandwidth is comparable to carrier and triple-zero concentration cannot occur below the shell scale.",
+  "schema_version": 1,
+  "status": "lower_carrier_diagonal_commutator_falsified_hamming_leakage_certified",
+  "two_scale_counterexample_theorem": {
+    "all_checks_pass": true,
+    "amplitude_bound": "0<c<=||u_N||_infinity<=C independently of N.",
+    "exact_divergence": "div u_N=0",
+    "falsified_statement": "There is no bandwidth-independent C such that every smooth divergence-free u with u_hat(k)=0 for |k|<K obeys ||psi p_H||_2<=C||u||_infinity(||psi u||_2+K^(-1)||u grad psi||_2).",
+    "fixed_minimum_velocity_mode": "sqrt(3)*(2+1)=3*sqrt(3)",
+    "fixed_smooth_pressure_tail": "p_N^H=-chi_H(D)R_iR_j(u_Ni u_Nj), where H=3sqrt(3), chi_H=0 on |xi|<=H and chi_H=1 on |xi|>=2H.",
+    "fourier_support": "Each positive-octant coordinate lies in {3,...,2N+1}; the other component is its full negative-octant conjugate.",
+    "packet": "F_N(x)=[sin(Nx/2)/(N sin(x/2))]^2 and a_N=F_N(x1)F_N(x2)F_N(x3)cos((N+2)(x1+x2+x3)).",
+    "proof_mechanism": "The shifted Fejer support gives the fixed spectral gap without a global low-mode correction. At scale 1/N the curl packet has bounded amplitude and its Reynolds stresses converge after multiplication by N^3 to a nonzero positive matrix times delta_0. The fixed smooth high-pass pressure kernel is nonzero away from zero, giving the N^(-3) lower bound on a set where psi is nonzero. Standard Fejer kernel bounds give the two weighted upper bounds at the triple zero. Amplitude rescaling leaves the ratio invariant, so K>=C||u||_infinity/nu cannot repair the estimate.",
+    "proved_asymptotic_bounds": {
+      "diagonal_ratio_lower": "ratio>=c N^(1/2)",
+      "weighted_pressure_lower": "||psi p_N^H||_2>=c N^(-3)",
+      "weighted_velocity_mass_upper": "||psi u_N||_2<=C N^(-9/2)",
+      "zero_face_gradient_upper": "||u_N grad psi||_2<=C N^(-7/2)"
+    },
+    "scope": "This falsifies the lower-carrier-only diagonal high-output commutator estimate. It does not falsify an annular or dyadic-shell estimate, a coupled eight-cell estimate, or a signed cross-shell pressure theorem.",
+    "triple_zero_weight": "psi=sin(x1/2)sin(x2/2)sin(x3/2).",
+    "velocity": "u_N=N^(-1)(partial_2 a_N,-partial_1 a_N,0)."
+  }
+}

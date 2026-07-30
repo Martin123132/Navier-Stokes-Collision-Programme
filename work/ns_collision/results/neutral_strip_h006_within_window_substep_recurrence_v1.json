@@ -1,0 +1,56 @@
+{
+  "all_substep_recurrence_checks_pass": true,
+  "below_normal_priority_set": true,
+  "checks": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "elapsed_seconds": 0.028270800015889108,
+  "kind": "neutral_strip_within_window_substep_recurrence_certificate",
+  "model": "universal binary64 degree-112 Chebyshev action bound for one 3/80 stored-chain semigroup substep",
+  "next_required_step": "Propagate the 112 actual entry sources over the 160 substeps with atomic per-window checkpoints, enclose each boundary endpoint evaluation, and combine adjacent values with a certified second-derivative interpolation charge.",
+  "operator": {
+    "absolute_scaled_operator_norm_upper": 1.1826474808772702,
+    "coefficient_operator_error_upper": 1.8389075426154066e-15,
+    "computational_substep_operator_norm_upper": 0.9312290557621669,
+    "degree": 112,
+    "exact_substep_contraction_upper": 0.9312290557603189,
+    "generator_transfer_operator_error_upper": 1.1771436748382035e-12,
+    "maximum_chebyshev_state_error_upper": 5.853891149694509e-11,
+    "maximum_local_recurrence_error_upper": 9.351215239257656e-15,
+    "polynomial_accumulation_operator_error_upper": 2.501970092152022e-14,
+    "recurrence_polynomial_operator_error_upper": 6.438700606802311e-13,
+    "sparse_action_relative_error_upper": 3.676406897197691e-15,
+    "substep": 0.0375,
+    "tail_operator_error_upper": 1.9750037482143836e-19,
+    "total_one_substep_operator_error_upper": 1.8478725414829455e-12,
+    "total_substeps_through_time_6": 160
+  },
+  "post_terminal_time_tail_certified": false,
+  "premise_artifacts": {
+    "production_recurrence_result": "work\\ns_collision\\results\\neutral_strip_h006_chebyshev_recurrence_roundoff_v1.json",
+    "production_recurrence_result_sha256": "e60ccb744439727e96dd722ddf461d32e28d89d8f50b580610136e05d2868320",
+    "substep_coefficient_result": "work\\ns_collision\\results\\neutral_strip_h006_within_window_substep_coefficients_v1.json",
+    "substep_coefficient_result_sha256": "78667bea469b6c52284c492ffb6e5a1baba47ce8d163ad226a1f20c94a9c98ee"
+  },
+  "repeated_propagation": {
+    "formula": "n*epsilon*max(||P||,||S||)^(n-1)",
+    "maximum_at_substep": 14,
+    "maximum_operator_error_upper": 1.0245538365659799e-11,
+    "terminal_operator_error_upper": 3.554498890733036e-15
+  },
+  "scope": "This is an arbitrary-state stored-chain action certificate. It does not yet certify the computed 160-point source grid, any within-window supremum, the terminal tail, continuum transfer, or Navier-Stokes regularity.",
+  "screen_updated": false,
+  "sparse_recurrence_roundoff_enclosed": true,
+  "within_window_grid_propagated": false,
+  "within_window_suprema_certified": false
+}

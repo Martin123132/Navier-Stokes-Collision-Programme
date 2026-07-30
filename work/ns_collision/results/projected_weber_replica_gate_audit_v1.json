@@ -1,0 +1,207 @@
+{
+  "affine_generator_stress": {
+    "contracting_tangent_direction": {
+      "direction": "Y parallel e_1",
+      "far_field_generator_rate_over_a": 2.0,
+      "sigma": -0.5
+    },
+    "expanding_tangent_direction": {
+      "direction": "Y parallel e_3",
+      "far_field_generator_rate_over_a": 0.5,
+      "sigma": 1.0
+    },
+    "far_field_formula": "-3*mu-q*sigma",
+    "interpretation": "One positive superharmonic collision factor cannot give a pointwise nonpositive generator for the cubic inverse deformation. The claim is a sign obstruction, not a regularity counterexample.",
+    "inverse_covector_direction": "z=e_1",
+    "inverse_covector_strain_rate_mu": -0.5,
+    "minimum_rate_over_0_le_q_le_1_with_expanding_tangent": 0.5,
+    "q": 1.0,
+    "single_superharmonic_collision_weight_has_universal_sign": false,
+    "strain": "S=diag(-a/2,-a/2,a)"
+  },
+  "all_positive_checks_pass": true,
+  "certification_flags": {
+    "Leray_energy_bounds_unprojected_directional_moment": false,
+    "Navier_Stokes_global_regularity_proved": false,
+    "bare_directional_cubic_has_direct_collision_diffusion": false,
+    "exceptional_set_upgrade_proved": false,
+    "joint_common_path_tangent_covector_generator_derived": true,
+    "low_regularity_projected_replica_flow_justified": false,
+    "mean_Weber_magnetization_equation_derived": true,
+    "mean_magnetization_reset_strain_integral_cancels": true,
+    "projected_positive_Jensen_moment_bound_proved": false,
+    "projected_positive_Jensen_moment_retains_noise_variance": true,
+    "signed_projected_replica_closure_bound_proved": false,
+    "single_superharmonic_collision_weight_closes_pointwise": false,
+    "smooth_tensor_spectral_proxy_generator_derived": true,
+    "three_replica_signed_cubic_identity_derived": true,
+    "two_replica_signed_L3_identity_derived": true,
+    "unprojected_positive_moment_retains_Leray_gradient_loss": true
+  },
+  "exact_periodic_shear": {
+    "projected_common_path_harmonic_variance": {
+      "Fourier_phase_pairing": "mean_theta[sin(theta)cos(theta+delta)]=-sin(delta)/2",
+      "Fourier_phase_pairing_symbolic_residual": "0",
+      "all_checks_pass": true,
+      "closed_form_variance": 1.1848932583436875,
+      "expectation": 0.0,
+      "infinite_time_variance": 2.367850098619328,
+      "parameters": {
+        "amplitude": 1.4,
+        "duration": 3.0,
+        "scaled_time": 1.0140000000000002,
+        "viscosity": 0.2,
+        "wave_number": 1.3
+      },
+      "positive_projected_moment_lower_bound": "E|c_W|^3 >= Var(c_W)^(3/2)",
+      "quadrature_variance": 1.184893258343688,
+      "relative_residual": 3.747925871996572e-16,
+      "shear_phase_harmonic": "c_W=(A_s^2 k/2) integral_0^tau exp(-nu k^2 r) sin(k sqrt(2nu) W_r) dr",
+      "signed_expectation_cancels_harmonic": true,
+      "variance_formula": "A_s^4/[96 nu^2 k^2] * [4-(3+12x)exp(-2x)-exp(-6x)], x=nu k^2 tau",
+      "variance_numerator_is_monotone": true,
+      "variance_numerator_small_time": "16x^3+O(x^4)"
+    },
+    "symbolic": {
+      "Leray_projection": "P m=(c+A exp(-nu k^2 tau) sin(k y),0,0)=u",
+      "all_checks_pass": true,
+      "first_component_residual": "0",
+      "initial_second_component": "0",
+      "magnetization_PDE": "partial_t m+u dot grad m-nu Delta m+(grad u)^T m=0",
+      "magnetization_x": "A*exp(-k**2*nu*tau)*sin(k*y) + c",
+      "magnetization_y": "-A**2*(1 - exp(-2*k**2*nu*tau))*exp(-2*k**2*nu*tau)*sin(2*k*y)/(4*k*nu) - A*c*k*tau*exp(-k**2*nu*tau)*cos(k*y)",
+      "second_component_residual": "0",
+      "transverse_component_is_pure_gradient": true,
+      "velocity": "u=(c+A exp(-nu k^2 tau) sin(k y),0,0)"
+    },
+    "unprojected_magnetization_inflation": {
+      "all_checks_pass": true,
+      "initial_spatial_mean_L3_cubed": 11.0,
+      "parameters": {
+        "amplitude": 1.0,
+        "duration_search_interval": [
+          0.0,
+          20.0
+        ],
+        "mean_speed": 2.0,
+        "space_grid_count": 4096,
+        "time_grid_count": 401,
+        "wave_number": 1.0
+      },
+      "reset_gauge_first_variation": -4.75,
+      "reset_gauge_first_variation_formula": "-mean_y[(c+A sin y)^3 (A cos y)^2]",
+      "reset_strain_integral": 0.0,
+      "rows": [
+        {
+          "maximum_physical_velocity_cubic_ratio": 1.0,
+          "maximum_time": 3.9000000000000004,
+          "maximum_unprojected_magnetization_cubic": 25.82717866470181,
+          "unprojected_inflation_ratio": 2.3479253331547096,
+          "viscosity": 0.25
+        },
+        {
+          "maximum_physical_velocity_cubic_ratio": 1.0,
+          "maximum_time": 9.950000000000001,
+          "maximum_unprojected_magnetization_cubic": 200.3350529373201,
+          "unprojected_inflation_ratio": 18.212277539756375,
+          "viscosity": 0.1
+        },
+        {
+          "maximum_physical_velocity_cubic_ratio": 1.0,
+          "maximum_time": 20.0,
+          "maximum_unprojected_magnetization_cubic": 4648.079795405417,
+          "unprojected_inflation_ratio": 422.55270867321974,
+          "viscosity": 0.03
+        }
+      ]
+    }
+  },
+  "joint_generator": {
+    "coupled_weighted_directional_cubic": "L(w|Z|^3)/(w|Z|^3)=-3mu-q sigma |Y|^2/(|Y|^2+epsilon)-2nu q[(1-q)|Y|^2+3epsilon]/(|Y|^2+epsilon)^2",
+    "directional_cubic": "L|Z|^3/|Z|^3=-3 n_Z^T S n_Z",
+    "generator": "L=partial_t+u dot grad_X+nu Delta_X+(A Y) dot grad_Y+2nu Delta_Y-(A^T Z) dot grad_Z+(-A^T C-C A):grad_C",
+    "state_equations": [
+      "dX=u(X,t)dt+sqrt(2nu)dW_plus",
+      "dY=A(X,t)Ydt+2sqrt(nu)dW_minus",
+      "dZ=-A(X,t)^T Zdt",
+      "dC=(-A^T C-C A)dt"
+    ]
+  },
+  "kind": "projected_weber_replica_gate_audit",
+  "mean_Weber_magnetization": {
+    "L3_balance": "(1/3)d_t||m||_3^3+nu D_3(m)=-integral |m| m^T S m",
+    "Leray_obstruction": "energy controls integral ||S||_2^2 dt, not integral ||S||_2^4 dt",
+    "equation": "partial_t m+u dot grad m-nu Delta m+(grad u)^T m=0, m(s)=u(s)",
+    "gauge": "m=u+grad q; q_t+u dot grad q-nu Delta q=p-|u|^2/2",
+    "mean": "m=E W",
+    "naive_absolute_value_closure": "|integral |m|m^T S m|<=C||S||_2 ||m|^(3/2)||_4^2<=epsilon D_3+C epsilon^(-3)||S||_2^4||m||_3^3",
+    "projection_identity": "u(t)=P m(t)",
+    "random_integrand": "W=(grad A_st)^T(u(s) composed with A_st)",
+    "reset_cancellation": "integral |u| u^T S u=(1/3)integral u dot grad(|u|^3)=0",
+    "strict_target_hierarchy": "||u(t)||_3<=||P|| ||m||_3<=||P|| (integral E|W|^3)^(1/3)"
+  },
+  "next_theorem_target": "Derive the signed projected two- and three-replica generator, including Leray pressure transfer, and seek a scale-critical integrated bound before any absolute value or operator norm. The unprojected Gramian hierarchy remains sufficient but is no longer the primary closure target.",
+  "positive_checks": {
+    "exact_shear_magnetization_formula_passes": true,
+    "exact_shear_projection_loss_exposed": true,
+    "projected_harmonic_variance_formula_passes": true,
+    "radial_weight_symbolic_identity_passes": true,
+    "single_weight_affine_sign_obstruction_exposed": true,
+    "tensor_proxy_generator_checks_pass": true
+  },
+  "radial_weight": {
+    "laplacian_ratio": "Delta_Y w/w=q*((q-1)|Y|^2-3epsilon)/(|Y|^2+epsilon)^2",
+    "positive_damping_in_superharmonic_range": "2*nu*q*(3*epsilon + r**2*(1 - q))/(epsilon + r**2)**2",
+    "superharmonic_range": "0<q<=1",
+    "symbolic_identity_passes": true,
+    "symbolic_residual": "0",
+    "weight": "w=(epsilon/(|Y|^2+epsilon))^(q/2)"
+  },
+  "schema_version": 1,
+  "signed_replica_identities": {
+    "interpretation": "The sign across common-noise realizations and the Leray projection must be retained before taking a critical moment. Positive Jensen bounds discard both cancellations.",
+    "mean": "E v_W=u",
+    "projected_random_velocity": "v_W=P W_W",
+    "shear_harmonic_cancellation": "E c_W=0 and E[c_1 c_2]=0, while E|c_W|^3 is strictly positive",
+    "three_replica": "|u|^3=E product_(j=1)^3(v_j dot n), n=u/|u|",
+    "two_replica": "|u|^3=|u| E[v_1 dot v_2] for independent projected replicas"
+  },
+  "status": "projection_loss_identified_signed_projected_replica_closure_open",
+  "tensor_proxy": {
+    "all_checks_pass": true,
+    "matrix_equation": "C_dot=-A^T C-C A",
+    "proxy_generator": "L Psi_p/Psi_p=-3 tr(S C^p)/tr(C^p)",
+    "rows": [
+      {
+        "mu_power": -0.06033057851239668,
+        "power": 1,
+        "proxy": 12.705648197750477,
+        "proxy_derivative_relative_residual": 3.862287923210862e-16,
+        "trace_derivative_residual": 2.220446049250313e-16
+      },
+      {
+        "mu_power": -0.18288076705204828,
+        "power": 2,
+        "proxy": 7.259485967927276,
+        "proxy_derivative_relative_residual": 2.2300009977154446e-16,
+        "trace_derivative_residual": 1.7763568394002505e-15
+      },
+      {
+        "mu_power": -0.32096754066361793,
+        "power": 4,
+        "proxy": 6.281167877609107,
+        "proxy_derivative_relative_residual": 5.874047280095221e-16,
+        "trace_derivative_residual": 1.7053025658242404e-13
+      },
+      {
+        "mu_power": -0.3667316733509445,
+        "power": 8,
+        "proxy": 6.172786140607181,
+        "proxy_derivative_relative_residual": 2.61564804960033e-16,
+        "trace_derivative_residual": 2.9103830456733704e-11
+      }
+    ],
+    "smooth_proxy": "Psi_p(C)=(tr(C^p))^(3/(2p))",
+    "spectral_limit": "Psi_p decreases to lambda_max(C)^(3/2)=||J^(-1)||_2^3 as p tends to infinity"
+  }
+}

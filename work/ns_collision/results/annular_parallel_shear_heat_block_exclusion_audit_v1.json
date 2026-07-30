@@ -1,0 +1,635 @@
+{
+  "algorithm_revision": "annular-parallel-shear-heat-block-exclusion-v1",
+  "all_positive_checks_pass": true,
+  "certification_flags": {
+    "Navier_Stokes_global_regularity_proved": false,
+    "all_69_second_subterms_partitioned": true,
+    "all_one_heat_rows_o_N9_proved": true,
+    "all_two_heat_rows_o_N9_proved": true,
+    "all_viscosity_bearing_second_rows_o_N9_proved": true,
+    "complete_second_N9_limit_certified": true,
+    "critical_L3_control_proved": false,
+    "finite_time_blowup_proved": false,
+    "parabolic_window_turnaround_proved": false,
+    "uniform_second_jet_Taylor_remainder_proved": false
+  },
+  "complete_second_jet_asymptotic": {
+    "certified": true,
+    "conclusion": "The complete second jet has the same strict negative N^9 limit as the already certified inviscid-pressure block.",
+    "inviscid_N9_limit": "J''_inv,N/N^9 -> -(1024 beta_0^2/(405 nu^2))*(sqrt(3)/10)||v_y||_2^2 < 0",
+    "one_heat_remainder": "O(N^8)=o(N^9)",
+    "pure_EA_Fisher_remainder": "O(N^8)=o(N^9)",
+    "two_heat_remainder": "O(N^8)=o(N^9)"
+  },
+  "exhaustive_subterm_partition": {
+    "all_checks_pass": true,
+    "block_channel_counts": {
+      "one_heat": 9,
+      "pure_EA": 6,
+      "two_heat": 5
+    },
+    "block_subterm_counts": {
+      "one_heat": 31,
+      "pure_EA": 21,
+      "two_heat": 17
+    },
+    "channel_count": 20,
+    "derived_aggregate_keys": [
+      "second::aggregate::double_velocity_heat_pressure",
+      "second::aggregate::inviscid_pressure"
+    ],
+    "derived_aggregate_row_count": 2,
+    "duplicate_key_count": 0,
+    "expected_channel_count": 20,
+    "expected_channels": [
+      "2H_lambda_lambda[A,D]",
+      "2H_u_lambda[E,A]",
+      "2H_u_lambda[E,D]",
+      "2H_u_lambda[V,A]",
+      "2H_u_lambda[V,D]",
+      "2H_uu[E,V]",
+      "D_lambda[lambda2_0A]",
+      "D_lambda[lambda2_0D]",
+      "D_lambda[lambda2_DA]",
+      "D_lambda[lambda2_DD]",
+      "D_lambda[lambda2_E0]",
+      "D_lambda[lambda2_V0]",
+      "D_u[u2_EE]",
+      "D_u[u2_EV]",
+      "D_u[u2_VE]",
+      "D_u[u2_VV]",
+      "H_lambda_lambda[A,A]",
+      "H_lambda_lambda[D,D]",
+      "H_uu[E,E]",
+      "H_uu[V,V]"
+    ],
+    "expected_second_subterm_count": 69,
+    "group_records": [
+      {
+        "all_checks_pass": true,
+        "block": "pure_EA",
+        "category": "pressure",
+        "combined_N5_polynomial": [
+          {
+            "coefficient": 0.023372699838786537,
+            "xy_power": 1,
+            "yz_power": 0
+          },
+          {
+            "coefficient": 0.0013430152253044534,
+            "xy_power": 3,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.21535533158146236,
+            "xy_power": 0,
+            "yz_power": 1
+          },
+          {
+            "coefficient": 0.0001689513650933172,
+            "xy_power": 2,
+            "yz_power": 1
+          },
+          {
+            "coefficient": 0.02699494216522913,
+            "xy_power": 1,
+            "yz_power": 2
+          },
+          {
+            "coefficient": 0.023320469024189272,
+            "xy_power": 0,
+            "yz_power": 3
+          }
+        ],
+        "expected_row_count": 9,
+        "keys": [
+          "second::2H_u_lambda[E,A]::pressure_direction",
+          "second::2H_u_lambda[E,A]::pressure_variation",
+          "second::D_lambda[lambda2_0A]::pressure",
+          "second::D_lambda[lambda2_E0]::pressure",
+          "second::D_u[u2_EE]::pressure_direction",
+          "second::D_u[u2_EE]::pressure_variation",
+          "second::H_uu[E,E]::pressure_first_variation_first",
+          "second::H_uu[E,E]::pressure_first_variation_second",
+          "second::H_uu[E,E]::pressure_second_variation"
+        ],
+        "maximum_forbidden_support_relative": 1.0890004585258623e-13,
+        "observed_degrees": [
+          [
+            5,
+            1
+          ]
+        ],
+        "row_count": 9,
+        "velocity_degree": 5,
+        "weight_scale_degree": 1
+      },
+      {
+        "all_checks_pass": true,
+        "block": "pure_EA",
+        "category": "velocity_Fisher",
+        "combined_N5_polynomial": [
+          {
+            "coefficient": -0.051668467103397106,
+            "xy_power": 0,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.11097887044609589,
+            "xy_power": 2,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.021425969888489327,
+            "xy_power": 1,
+            "yz_power": 1
+          },
+          {
+            "coefficient": -0.020908037693550874,
+            "xy_power": 0,
+            "yz_power": 2
+          }
+        ],
+        "expected_row_count": 5,
+        "keys": [
+          "second::2H_u_lambda[E,A]::weighted_Fisher",
+          "second::D_lambda[lambda2_0A]::velocity_Fisher",
+          "second::D_lambda[lambda2_E0]::velocity_Fisher",
+          "second::D_u[u2_EE]::weighted_Fisher",
+          "second::H_uu[E,E]::weighted_Fisher"
+        ],
+        "maximum_forbidden_support_relative": 4.800604358479177e-13,
+        "observed_degrees": [
+          [
+            4,
+            1
+          ]
+        ],
+        "row_count": 5,
+        "velocity_degree": 4,
+        "weight_scale_degree": 1
+      },
+      {
+        "all_checks_pass": true,
+        "block": "pure_EA",
+        "category": "weight_self",
+        "combined_N5_polynomial": [
+          {
+            "coefficient": -4.715074226175247e-05,
+            "xy_power": 0,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.05192057291666574,
+            "xy_power": 2,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.03184000651041721,
+            "xy_power": 1,
+            "yz_power": 1
+          },
+          {
+            "coefficient": -0.05192057291666444,
+            "xy_power": 0,
+            "yz_power": 2
+          }
+        ],
+        "expected_row_count": 7,
+        "keys": [
+          "second::D_lambda[lambda2_0A]::weight_Fisher_cross",
+          "second::D_lambda[lambda2_0A]::weight_Fisher_direction",
+          "second::D_lambda[lambda2_E0]::weight_Fisher_cross",
+          "second::D_lambda[lambda2_E0]::weight_Fisher_direction",
+          "second::H_lambda_lambda[A,A]::first_weight_direction",
+          "second::H_lambda_lambda[A,A]::mixed_weight_gradient",
+          "second::H_lambda_lambda[A,A]::second_weight_direction"
+        ],
+        "maximum_forbidden_support_relative": 1.3994678875838991e-15,
+        "observed_degrees": [
+          [
+            2,
+            3
+          ]
+        ],
+        "row_count": 7,
+        "velocity_degree": 2,
+        "weight_scale_degree": 3
+      },
+      {
+        "all_checks_pass": true,
+        "block": "one_heat",
+        "category": "pressure",
+        "combined_N5_polynomial": [
+          {
+            "coefficient": -7.492679522747101,
+            "xy_power": 0,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -4.385135834989111,
+            "xy_power": 2,
+            "yz_power": 0
+          },
+          {
+            "coefficient": 2.40263779901811,
+            "xy_power": 1,
+            "yz_power": 1
+          },
+          {
+            "coefficient": 13.701601082953683,
+            "xy_power": 0,
+            "yz_power": 2
+          }
+        ],
+        "expected_row_count": 14,
+        "keys": [
+          "second::2H_u_lambda[E,D]::pressure_direction",
+          "second::2H_u_lambda[E,D]::pressure_variation",
+          "second::2H_u_lambda[V,A]::pressure_direction",
+          "second::2H_u_lambda[V,A]::pressure_variation",
+          "second::2H_uu[E,V]::pressure_first_variation_first",
+          "second::2H_uu[E,V]::pressure_first_variation_second",
+          "second::2H_uu[E,V]::pressure_second_variation",
+          "second::D_lambda[lambda2_0D]::pressure",
+          "second::D_lambda[lambda2_DA]::pressure",
+          "second::D_lambda[lambda2_V0]::pressure",
+          "second::D_u[u2_EV]::pressure_direction",
+          "second::D_u[u2_EV]::pressure_variation",
+          "second::D_u[u2_VE]::pressure_direction",
+          "second::D_u[u2_VE]::pressure_variation"
+        ],
+        "maximum_forbidden_support_relative": 4.847607448454391e-14,
+        "observed_degrees": [
+          [
+            4,
+            1
+          ]
+        ],
+        "row_count": 14,
+        "velocity_degree": 4,
+        "weight_scale_degree": 1
+      },
+      {
+        "all_checks_pass": true,
+        "block": "one_heat",
+        "category": "velocity_Fisher",
+        "combined_N5_polynomial": [
+          {
+            "coefficient": -10.75966395951736,
+            "xy_power": 1,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -2.2942090272006657,
+            "xy_power": 0,
+            "yz_power": 1
+          }
+        ],
+        "expected_row_count": 8,
+        "keys": [
+          "second::2H_u_lambda[E,D]::weighted_Fisher",
+          "second::2H_u_lambda[V,A]::weighted_Fisher",
+          "second::2H_uu[E,V]::weighted_Fisher",
+          "second::D_lambda[lambda2_0D]::velocity_Fisher",
+          "second::D_lambda[lambda2_DA]::velocity_Fisher",
+          "second::D_lambda[lambda2_V0]::velocity_Fisher",
+          "second::D_u[u2_EV]::weighted_Fisher",
+          "second::D_u[u2_VE]::weighted_Fisher"
+        ],
+        "maximum_forbidden_support_relative": 1.1453338277789271e-11,
+        "observed_degrees": [
+          [
+            3,
+            1
+          ]
+        ],
+        "row_count": 8,
+        "velocity_degree": 3,
+        "weight_scale_degree": 1
+      },
+      {
+        "all_checks_pass": true,
+        "block": "one_heat",
+        "category": "weight_self",
+        "combined_N5_polynomial": [],
+        "expected_row_count": 9,
+        "keys": [
+          "second::2H_lambda_lambda[A,D]::first_weight_direction",
+          "second::2H_lambda_lambda[A,D]::mixed_weight_gradient",
+          "second::2H_lambda_lambda[A,D]::second_weight_direction",
+          "second::D_lambda[lambda2_0D]::weight_Fisher_cross",
+          "second::D_lambda[lambda2_0D]::weight_Fisher_direction",
+          "second::D_lambda[lambda2_DA]::weight_Fisher_cross",
+          "second::D_lambda[lambda2_DA]::weight_Fisher_direction",
+          "second::D_lambda[lambda2_V0]::weight_Fisher_cross",
+          "second::D_lambda[lambda2_V0]::weight_Fisher_direction"
+        ],
+        "maximum_forbidden_support_relative": 2.1784494799202044e-16,
+        "observed_degrees": [
+          [
+            1,
+            3
+          ]
+        ],
+        "row_count": 9,
+        "velocity_degree": 1,
+        "weight_scale_degree": 3
+      },
+      {
+        "all_checks_pass": true,
+        "block": "two_heat",
+        "category": "pressure",
+        "combined_N5_polynomial": [
+          {
+            "coefficient": 6.115350607908398,
+            "xy_power": 1,
+            "yz_power": 0
+          },
+          {
+            "coefficient": 907.1464291731502,
+            "xy_power": 0,
+            "yz_power": 1
+          }
+        ],
+        "expected_row_count": 8,
+        "keys": [
+          "second::2H_u_lambda[V,D]::pressure_direction",
+          "second::2H_u_lambda[V,D]::pressure_variation",
+          "second::D_lambda[lambda2_DD]::pressure",
+          "second::D_u[u2_VV]::pressure_direction",
+          "second::D_u[u2_VV]::pressure_variation",
+          "second::H_uu[V,V]::pressure_first_variation_first",
+          "second::H_uu[V,V]::pressure_first_variation_second",
+          "second::H_uu[V,V]::pressure_second_variation"
+        ],
+        "maximum_forbidden_support_relative": 9.73983454794301e-14,
+        "observed_degrees": [
+          [
+            3,
+            1
+          ]
+        ],
+        "row_count": 8,
+        "velocity_degree": 3,
+        "weight_scale_degree": 1
+      },
+      {
+        "all_checks_pass": true,
+        "block": "two_heat",
+        "category": "velocity_Fisher",
+        "combined_N5_polynomial": [
+          {
+            "coefficient": -1793.6465583896434,
+            "xy_power": 0,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -8.000000000000682,
+            "xy_power": 2,
+            "yz_power": 0
+          },
+          {
+            "coefficient": -0.4999999999961968,
+            "xy_power": 1,
+            "yz_power": 1
+          },
+          {
+            "coefficient": -7.999999999995448,
+            "xy_power": 0,
+            "yz_power": 2
+          }
+        ],
+        "expected_row_count": 4,
+        "keys": [
+          "second::2H_u_lambda[V,D]::weighted_Fisher",
+          "second::D_lambda[lambda2_DD]::velocity_Fisher",
+          "second::D_u[u2_VV]::weighted_Fisher",
+          "second::H_uu[V,V]::weighted_Fisher"
+        ],
+        "maximum_forbidden_support_relative": 4.2836907968966565e-15,
+        "observed_degrees": [
+          [
+            2,
+            1
+          ]
+        ],
+        "row_count": 4,
+        "velocity_degree": 2,
+        "weight_scale_degree": 1
+      },
+      {
+        "all_checks_pass": true,
+        "block": "two_heat",
+        "category": "weight_self",
+        "combined_N5_polynomial": [
+          {
+            "coefficient": -0.3896484375,
+            "xy_power": 0,
+            "yz_power": 0
+          }
+        ],
+        "expected_row_count": 5,
+        "keys": [
+          "second::D_lambda[lambda2_DD]::weight_Fisher_cross",
+          "second::D_lambda[lambda2_DD]::weight_Fisher_direction",
+          "second::H_lambda_lambda[D,D]::first_weight_direction",
+          "second::H_lambda_lambda[D,D]::mixed_weight_gradient",
+          "second::H_lambda_lambda[D,D]::second_weight_direction"
+        ],
+        "maximum_forbidden_support_relative": 5.654114329511906e-17,
+        "observed_degrees": [
+          [
+            0,
+            3
+          ]
+        ],
+        "row_count": 5,
+        "velocity_degree": 0,
+        "weight_scale_degree": 3
+      }
+    ],
+    "observed_channels": [
+      "2H_lambda_lambda[A,D]",
+      "2H_u_lambda[E,A]",
+      "2H_u_lambda[E,D]",
+      "2H_u_lambda[V,A]",
+      "2H_u_lambda[V,D]",
+      "2H_uu[E,V]",
+      "D_lambda[lambda2_0A]",
+      "D_lambda[lambda2_0D]",
+      "D_lambda[lambda2_DA]",
+      "D_lambda[lambda2_DD]",
+      "D_lambda[lambda2_E0]",
+      "D_lambda[lambda2_V0]",
+      "D_u[u2_EE]",
+      "D_u[u2_EV]",
+      "D_u[u2_VE]",
+      "D_u[u2_VV]",
+      "H_lambda_lambda[A,A]",
+      "H_lambda_lambda[D,D]",
+      "H_uu[E,E]",
+      "H_uu[V,V]"
+    ],
+    "pure_pressure_subterm_count": 9,
+    "pure_velocity_Fisher_subterm_count": 5,
+    "pure_weight_self_subterm_count": 7,
+    "second_subterm_count": 69,
+    "unclassified_keys": []
+  },
+  "flow_block_identity_certificate": {
+    "all_checks_pass": true,
+    "channel_partition": {
+      "one_heat": [
+        "2H_lambda_lambda[A,D]",
+        "2H_u_lambda[E,D]",
+        "2H_u_lambda[V,A]",
+        "2H_uu[E,V]",
+        "D_lambda[lambda2_0D]",
+        "D_lambda[lambda2_DA]",
+        "D_lambda[lambda2_V0]",
+        "D_u[u2_EV]",
+        "D_u[u2_VE]"
+      ],
+      "pure_EA": [
+        "2H_u_lambda[E,A]",
+        "D_lambda[lambda2_0A]",
+        "D_lambda[lambda2_E0]",
+        "D_u[u2_EE]",
+        "H_lambda_lambda[A,A]",
+        "H_uu[E,E]"
+      ],
+      "two_heat": [
+        "2H_u_lambda[V,D]",
+        "D_lambda[lambda2_DD]",
+        "D_u[u2_VV]",
+        "H_lambda_lambda[D,D]",
+        "H_uu[V,V]"
+      ]
+    },
+    "heat_vector_field": "Y(z)=(V,D)=(nu Delta u,-nu Delta lambda)",
+    "inviscid_vector_field": "X(z)=(E,A)=(-P[(u dot grad)u],-u dot grad lambda)",
+    "one_heat_accelerations": {
+      "velocity": "u2_EV+u2_VE",
+      "weight": "lambda2_V0+lambda2_0D+lambda2_DA"
+    },
+    "one_heat_second_block": "2D^2 g[X,Y]+Dg[DX Y+DY X]=X(Yg)+Y(Xg)",
+    "pure_EA_second_block": "D^2 g[X,X]+Dg[DX X]",
+    "state": "z=(u,lambda)",
+    "two_heat_accelerations": {
+      "velocity": "u2_VV",
+      "weight": "lambda2_DD"
+    },
+    "two_heat_second_block": "D^2 g[Y,Y]+Dg[DY Y]"
+  },
+  "kind": "annular_parallel_shear_heat_block_exclusion_audit",
+  "next_theorem_target": "Build the uniform parabolic-window Taylor remainder. Begin with an exact third-jet channel-degree ledger and prove a uniform o(N^11) remainder after s=O(N^-2), without assuming the static optimizer remains frozen.",
+  "one_heat_pressure_HHHH_certificate": {
+    "all_checks_pass": true,
+    "branches": [
+      {
+        "branch": "HHHH",
+        "compatible_gain": -2,
+        "fixed_weight_scale_power": 7,
+        "kernel_power": 4,
+        "optimized_power": 8,
+        "optimizer_factor_power": 1,
+        "raw_tuple_and_coefficient_power": 5
+      },
+      {
+        "branch": "HHLL",
+        "fixed_amplitude_power": 5,
+        "high_pair_sum_power": 1,
+        "kernel_power_upper_bound": 4,
+        "optimized_power": 8,
+        "optimizer_factor_power": 3
+      },
+      {
+        "branch": "LLLL",
+        "fixed_carrier_power": 0,
+        "optimized_power": 5,
+        "optimizer_factor_power": 5
+      }
+    ],
+    "conclusion": "one-heat pressure block=O(N^8)=o(N^9)",
+    "internal_output_guard": "Regular allocations use O(N^4), O(N^3), and O(N^2) kernel bounds under zero, one, and two differences. If two differences hit an internal degree-one Euler symbol, split its output into finite and dyadic shells. The shell bound is O(N^5 K^2), whose dyadic sum is O(N^7).",
+    "maximum_explicit_vertex_degree": 4,
+    "minimum_remaining_compatible_differences": 2,
+    "outer_projector_guard": "Every HHHH pressure atom has a high leaf on the test side. Choose it as the dependent leaf so a vertex shift changes that side while the degree-zero outer pressure output and projector remain fixed.",
+    "total_differential_order": 4,
+    "velocity_degree": 4,
+    "vertex_stencil_order": 6,
+    "weight_degree": 1,
+    "weight_reduction": "Because the pressure generator is linear in lambda, integrate every A, D, V0, 0D, and DA derivative by parts until the base weight is undifferentiated Phi. The resulting quartic kernel still has total differential order at most four."
+  },
+  "prerequisites": [
+    {
+      "path": "work/ns_collision/results/annular_parallel_shear_finite_jet_port_audit_v1.json",
+      "sha256": "1e7753a5280c136bbe34770a17d929f73cc7398579906f51e316c738ee660da0"
+    },
+    {
+      "path": "work/ns_collision/results/annular_parallel_shear_euler_transport_fisher_exclusion_audit_v1.json",
+      "sha256": "74722ffabf83612a51fdd0f3ab71e90c7b6fd68c5b4eb15b6b5ed040876e5046"
+    }
+  ],
+  "remaining_gate": "Promote the restart-time first/second jet asymptotics to a uniform Taylor estimate on 0<=s<=T/N^2. This requires a complete third-derivative or integral-remainder bound along the coupled Navier-Stokes/adjoint evolution.",
+  "remaining_heat_power_ledger": {
+    "all_checks_pass": true,
+    "all_rows_strictly_below_N9": true,
+    "maximum_optimized_power": 8,
+    "rows": [
+      {
+        "block": "one_heat",
+        "category": "velocity_Fisher",
+        "high_sum_power": 1,
+        "kernel_power_upper_bound": 5,
+        "optimized_power": 8,
+        "optimizer_amplitude_power": 2,
+        "reason": "Velocity degree three permits only zero or two high leaves; the HHL branch has one low amplitude and one weight scale.",
+        "surviving_high_branch": "HHL"
+      },
+      {
+        "block": "one_heat",
+        "category": "weight_self",
+        "kernel_power_upper_bound": 0,
+        "optimized_power": 4,
+        "optimizer_amplitude_power": 4,
+        "reason": "Velocity degree one makes its high branch incidence-forbidden; only a fixed low mode times t_N^3 remains.",
+        "surviving_high_branch": "none"
+      },
+      {
+        "block": "two_heat",
+        "category": "pressure",
+        "high_sum_power": 1,
+        "kernel_power_upper_bound": 4,
+        "optimized_power": 7,
+        "optimizer_amplitude_power": 2,
+        "reason": "Velocity degree three permits two high leaves; both velocity Laplacians supply at most four carrier powers.",
+        "surviving_high_branch": "HHL"
+      },
+      {
+        "block": "two_heat",
+        "category": "velocity_Fisher",
+        "high_sum_power": 1,
+        "kernel_power_upper_bound": 6,
+        "optimized_power": 8,
+        "optimizer_amplitude_power": 1,
+        "reason": "The worst H_uu[V,V] Fisher atom has two grad(V) factors, hence six carrier derivatives and one weight scale.",
+        "surviving_high_branch": "HH"
+      },
+      {
+        "block": "two_heat",
+        "category": "weight_self",
+        "kernel_power_upper_bound": 0,
+        "optimized_power": 3,
+        "optimizer_amplitude_power": 3,
+        "reason": "Velocity degree zero leaves only t_N^3.",
+        "surviving_high_branch": "none"
+      }
+    ]
+  },
+  "runtime_seconds": 0.010325999988708645,
+  "scope": "Exhaustive o(N^9) exclusion for every second-jet subterm containing at least one V or D direction, followed by the complete second-jet N^9 asymptotic.",
+  "status": "passed",
+  "theorem": "For fixed viscosity nu>0 and the repaired parallel-shear static optimizer, every V/D one-heat or two-heat second-jet row is O(N^8)=o(N^9). Hence the complete second derivative has the strict negative N^9 limit J''_inv,N/N^9 -> -(1024 beta_0^2/(405 nu^2))*(sqrt(3)/10)||v_y||_2^2 < 0."
+}

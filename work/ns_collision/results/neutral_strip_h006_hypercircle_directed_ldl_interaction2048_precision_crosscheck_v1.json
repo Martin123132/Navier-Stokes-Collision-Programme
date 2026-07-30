@@ -1,0 +1,122 @@
+{
+  "artifacts": {
+    "p50_audit": "work/ns_collision/results/neutral_strip_h006_hypercircle_directed_ldl_interaction2048_audit_v1.json",
+    "p50_audit_sha256": "1a625588c7eaa564a2e183a2f41da2c473a36b8665357613ad6ea332d6d6190d",
+    "p50_checkpoint": "work/ns_collision/results/neutral_strip_h006_hypercircle_directed_ldl_interaction2048_checkpoint_v1.json",
+    "p50_checkpoint_sha256": "d5ad3c64e8a13eab5038db8076223cb9b6f051fe2d49e345fca1a3a379b5d70e",
+    "p80_audit": "work/ns_collision/results/neutral_strip_h006_hypercircle_directed_ldl_interaction2048_p80_audit_v1.json",
+    "p80_audit_sha256": "030cb126fc30fc4a9489711650c2fddfed57283710d81196e700d40fd7e7da26",
+    "p80_checkpoint": "work/ns_collision/results/neutral_strip_h006_hypercircle_directed_ldl_interaction2048_p80_checkpoint_v1.json",
+    "p80_checkpoint_sha256": "5cd8be2eaad892c383d4c4ad4e7bfd294b04fc5298a76097a6c36cb1443d9af8"
+  },
+  "checks": {
+    "endpoint_lengths_equal": true,
+    "interaction_profile_range_and_blocks_equal": true,
+    "lower_intervals_p80_nested_in_p50": true,
+    "p80_prefix_certified": true,
+    "pivot_intervals_p80_nested_in_p50": true,
+    "pivot_signs_equal": true,
+    "symbolic_coordinates_equal": true
+  },
+  "comparison": {
+    "p50_interaction_profile": {
+      "block_counts": {
+        "edge_metric": 0,
+        "source_triangle": 0,
+        "state": 0,
+        "triangle_constraint": 310
+      },
+      "first_pivot": 1738,
+      "last_pivot": 2047,
+      "maximum_cancellation_charge_index": 1887,
+      "maximum_cancellation_charge_upper_decimal": "1.6238482964115980096664253286023819129619964955402",
+      "maximum_diagonal_term_count": 2,
+      "maximum_lower_interval_width_decimal": "1.1777498480601589210277481733054195364E-12",
+      "maximum_lower_interval_width_index": 2015,
+      "maximum_off_diagonal_recurrence_term_count": 3,
+      "maximum_pivot_radius_to_margin_index": 1896,
+      "maximum_pivot_radius_to_margin_upper_decimal": "4.0904215736535162752778652906803267784255617245686E-13",
+      "maximum_symbolic_descendant_count": 3,
+      "minimum_pivot_margin_decimal": "0.7879861706481846044216128619",
+      "minimum_pivot_margin_index": 1909,
+      "negative_pivot_count": 310,
+      "pivot_count": 310,
+      "positive_pivot_count": 0
+    },
+    "p50_maximum_relative_radius_decimal": "4.0904215736535162752778652906803267784255617245686E-13",
+    "p50_minimum_margin_decimal": "0.1464628437608216996667076129",
+    "p80_interaction_profile": {
+      "block_counts": {
+        "edge_metric": 0,
+        "source_triangle": 0,
+        "state": 0,
+        "triangle_constraint": 310
+      },
+      "first_pivot": 1738,
+      "last_pivot": 2047,
+      "maximum_cancellation_charge_index": 1887,
+      "maximum_cancellation_charge_upper_decimal": "1.6238482964115980096664253286023819129619964955401374671724131574132012504575119",
+      "maximum_diagonal_term_count": 2,
+      "maximum_lower_interval_width_decimal": "1.1777498480601589210277481733054195349684660149170468371300509838782E-12",
+      "maximum_lower_interval_width_index": 2015,
+      "maximum_off_diagonal_recurrence_term_count": 3,
+      "maximum_pivot_radius_to_margin_index": 1896,
+      "maximum_pivot_radius_to_margin_upper_decimal": "4.0904215736535162752778652906803267720035699593515499726728051962473829886749128E-13",
+      "maximum_symbolic_descendant_count": 3,
+      "minimum_pivot_margin_decimal": "0.7879861706481846044216128619",
+      "minimum_pivot_margin_index": 1909,
+      "negative_pivot_count": 310,
+      "pivot_count": 310,
+      "positive_pivot_count": 0
+    },
+    "p80_maximum_relative_radius_decimal": "4.0904215736535162752778652906803267720035699593515499726728051962473829886749128E-13",
+    "p80_minimum_margin_decimal": "0.1464628437608216996667076129",
+    "pivot_count": 2048,
+    "symbolic_lower_entry_count": 5612
+  },
+  "kind": "hypercircle-directed-ldl-interaction2048-precision-crosscheck",
+  "runtime_history": {
+    "p80_final_baseline_cpu_samples_percent": [
+      48.6,
+      53.6,
+      39.9,
+      41.5,
+      35.0
+    ],
+    "p80_final_periodic_cpu_samples_percent": [
+      32.6,
+      43.2,
+      40.4,
+      41.2,
+      53.1,
+      29.5,
+      46.9,
+      45.1,
+      25.5,
+      18.9,
+      25.3,
+      14.1,
+      17.4,
+      27.1,
+      39.9,
+      18.3,
+      25.5,
+      39.9,
+      18.3,
+      31.9,
+      34.0,
+      49.5,
+      33.0,
+      31.3,
+      33.7,
+      35.1,
+      63.7,
+      76.2,
+      50.0,
+      41.7
+    ],
+    "p80_final_run_status": "certified_bounded_prefix",
+    "prior_128_pivot_cpu_park_preserved_by_checkpoint": true
+  },
+  "status": "pass"
+}

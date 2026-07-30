@@ -1,0 +1,664 @@
+{
+  "all_positive_checks_pass": true,
+  "assumption_scope": "Smooth periodic Navier-Stokes and smooth reset projected replicas. Frequency sweeps are resolved deterministic diagnostics; Taylor crossover times are not rigorous beyond the displayed expansion.",
+  "certification_flags": {
+    "Navier_Stokes_global_regularity_proved": false,
+    "Taylor_crossover_is_a_sign_certificate": false,
+    "critical_signed_replica_bound_proved": false,
+    "edge_Young_ratio_equals_local_Reynolds_squared": true,
+    "exceptional_set_upgrade_proved": false,
+    "finite_time_positive_rho_advantage_proved": false,
+    "first_short_time_rho_correction_derived": true,
+    "fixed_scale_universal_edge_absorption_falsified_by_scaling": true,
+    "low_regularity_scale_adapted_partition_justified": false,
+    "partition_frequency_must_track_local_amplitude": true,
+    "positive_rho_is_worse_on_sufficiently_short_restart_windows": true,
+    "replica_pressure_linearization_implemented": true,
+    "scale_adapted_edge_identity_derived": true,
+    "scale_adapted_edge_remainder_absorbed": false
+  },
+  "kind": "scale_adapted_edge_rho_expansion_audit",
+  "next_theorem_target": "Replace fixed partition scale by an intrinsic local-Reynolds scale m comparable to amplitude/nu and derive a pressure-tail estimate uniform under that adaptation. Since rho>0 is worse through first order on short restart windows, test correlation only on a nonperturbative finite window and require measured R_rho/F_rho improvement to exceed the exact reset dissipation loss. Do not treat the quadratic Taylor crossover as evidence of such an advantage.",
+  "partition_frequency_sweep": {
+    "all_checks_pass": true,
+    "grid_size": 96,
+    "positive_pressure_frequencies": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "pressure_gradient_reconstruction_residual": 1.9895196601282805e-13,
+    "rows": [
+      {
+        "all_checks_pass": true,
+        "conditional_pressure": 1.2804534961136396,
+        "conditional_weight_fisher": 0.126477783203125,
+        "direct_pressure": 1.2804534961136393,
+        "direct_weight_fisher": 0.126477783203125,
+        "direction_rows": [
+          {
+            "conditional_pressure": -0.17233383115983836,
+            "conditional_weight_fisher": 0.037505615234375,
+            "direct_weight_fisher": 0.037505615234375,
+            "direction": 0,
+            "young_margin": 613.4590719234734,
+            "young_remainder": 613.2492324770792
+          },
+          {
+            "conditional_pressure": 0.9323092095766936,
+            "conditional_weight_fisher": 0.036447021484374995,
+            "direct_weight_fisher": 0.036447021484375,
+            "direction": 1,
+            "young_margin": 1645.0116299570473,
+            "young_remainder": 1645.9074921451397
+          },
+          {
+            "conditional_pressure": 0.5204781176967844,
+            "conditional_weight_fisher": 0.05252514648437501,
+            "direct_weight_fisher": 0.05252514648437501,
+            "direction": 2,
+            "young_margin": 1223.51139411484,
+            "young_remainder": 1223.9793470860523
+          }
+        ],
+        "edge_absorption_amplitude_threshold": 0.47537359343395375,
+        "exact_sign_amplitude_threshold": 614.8179183608785,
+        "maximum_weight": 1.9999057660195445,
+        "minimum_weight": 0.6001242180450943,
+        "partition_frequency": 1,
+        "representation_residual": 2.220446049250313e-16,
+        "scale_adapted_young_remainder": 3483.136071708271,
+        "weighted_velocity_fisher": 787.1192752552939
+      },
+      {
+        "all_checks_pass": true,
+        "conditional_pressure": 7.586591558669367,
+        "conditional_weight_fisher": 0.5059111328125,
+        "direct_pressure": 7.586591558669365,
+        "direct_weight_fisher": 0.5059111328125,
+        "direction_rows": [
+          {
+            "conditional_pressure": -0.029329379623382026,
+            "conditional_weight_fisher": 0.1500224609375,
+            "direct_weight_fisher": 0.1500224609375,
+            "direction": 0,
+            "young_margin": 610.6817691186254,
+            "young_remainder": 610.5024172780645
+          },
+          {
+            "conditional_pressure": 1.4580142011560826,
+            "conditional_weight_fisher": 0.1457880859375,
+            "direct_weight_fisher": 0.14578808593750003,
+            "direction": 1,
+            "young_margin": 967.067801755697,
+            "young_remainder": 968.3800278709156
+          },
+          {
+            "conditional_pressure": 6.157906737136667,
+            "conditional_weight_fisher": 0.21010058593750003,
+            "direct_weight_fisher": 0.21010058593750003,
+            "direction": 2,
+            "young_margin": 1263.980091973791,
+            "young_remainder": 1269.9278981249904
+          }
+        ],
+        "edge_absorption_amplitude_threshold": 0.523291354971633,
+        "exact_sign_amplitude_threshold": 102.89292458410502,
+        "maximum_weight": 1.9996231484668274,
+        "minimum_weight": 0.6004967672421466,
+        "partition_frequency": 2,
+        "representation_residual": 1.7763568394002505e-15,
+        "scale_adapted_young_remainder": 2848.8103432739704,
+        "weighted_velocity_fisher": 780.1006819637623
+      },
+      {
+        "all_checks_pass": true,
+        "conditional_pressure": 3.004983416660519,
+        "conditional_weight_fisher": 1.138300048828125,
+        "direct_pressure": 3.0049834166605196,
+        "direct_weight_fisher": 1.1383000488281252,
+        "direction_rows": [
+          {
+            "conditional_pressure": -3.5068426610453125,
+            "conditional_weight_fisher": 0.3375505371093749,
+            "direct_weight_fisher": 0.3375505371093749,
+            "direction": 0,
+            "young_margin": 372.56561828647364,
+            "young_remainder": 368.72122508831893
+          },
+          {
+            "conditional_pressure": 3.7653004702723973,
+            "conditional_weight_fisher": 0.328023193359375,
+            "direct_weight_fisher": 0.328023193359375,
+            "direction": 1,
+            "young_margin": 450.9255856602171,
+            "young_remainder": 454.3628629371301
+          },
+          {
+            "conditional_pressure": 2.7465256074334343,
+            "conditional_weight_fisher": 0.4727263183593751,
+            "direct_weight_fisher": 0.4727263183593752,
+            "direction": 2,
+            "young_margin": 450.89137775786077,
+            "young_remainder": 453.16517704693484
+          }
+        ],
+        "edge_absorption_amplitude_threshold": 0.7859000043481023,
+        "exact_sign_amplitude_threshold": 262.69675291290326,
+        "maximum_weight": 1.9991524003815153,
+        "minimum_weight": 0.6011173329168361,
+        "partition_frequency": 3,
+        "representation_residual": 4.440892098500626e-16,
+        "scale_adapted_young_remainder": 1276.2492650723839,
+        "weighted_velocity_fisher": 788.2610860650123
+      },
+      {
+        "all_checks_pass": true,
+        "conditional_pressure": 7.584047761593603,
+        "conditional_weight_fisher": 2.02364453125,
+        "direct_pressure": 7.584047761593603,
+        "direct_weight_fisher": 2.02364453125,
+        "direction_rows": [
+          {
+            "conditional_pressure": 2.7197359741290255,
+            "conditional_weight_fisher": 0.60008984375,
+            "direct_weight_fisher": 0.60008984375,
+            "direction": 0,
+            "young_margin": 269.6878636045416,
+            "young_remainder": 271.8075097349206
+          },
+          {
+            "conditional_pressure": 1.4663855563166242,
+            "conditional_weight_fisher": 0.5831523437499998,
+            "direct_weight_fisher": 0.58315234375,
+            "direction": 1,
+            "young_margin": 155.05864883578047,
+            "young_remainder": 155.9418820483471
+          },
+          {
+            "conditional_pressure": 3.3979262311479532,
+            "conditional_weight_fisher": 0.8404023437500001,
+            "direct_weight_fisher": 0.8404023437500001,
+            "direction": 2,
+            "young_margin": 173.12199558977375,
+            "young_remainder": 175.6795194771717
+          }
+        ],
+        "edge_absorption_amplitude_threshold": 1.1423623718321037,
+        "exact_sign_amplitude_threshold": 104.09921502798062,
+        "maximum_weight": 1.99849394307563,
+        "minimum_weight": 0.6019853910796457,
+        "partition_frequency": 4,
+        "representation_residual": 0.0,
+        "scale_adapted_young_remainder": 603.4289112604395,
+        "weighted_velocity_fisher": 787.4697741853576
+      },
+      {
+        "all_checks_pass": true,
+        "conditional_pressure": 2.8242991134450772,
+        "conditional_weight_fisher": 3.1619445800781247,
+        "direct_pressure": 2.8242991134450772,
+        "direct_weight_fisher": 3.161944580078125,
+        "direction_rows": [
+          {
+            "conditional_pressure": 1.6417303556012361,
+            "conditional_weight_fisher": 0.937640380859375,
+            "direct_weight_fisher": 0.9376403808593752,
+            "direction": 0,
+            "young_margin": 84.47833068446259,
+            "young_remainder": 85.18242065920445
+          },
+          {
+            "conditional_pressure": 0.9145519077803258,
+            "conditional_weight_fisher": 0.9111755371093747,
+            "direct_weight_fisher": 0.9111755371093749,
+            "direction": 1,
+            "young_margin": 50.335642820409475,
+            "young_remainder": 50.33901919108043
+          },
+          {
+            "conditional_pressure": 0.26801685006351555,
+            "conditional_weight_fisher": 1.3131286621093752,
+            "direct_weight_fisher": 1.3131286621093752,
+            "direction": 2,
+            "young_margin": 45.59881862040295,
+            "young_remainder": 44.55370680835709
+          }
+        ],
+        "edge_absorption_amplitude_threshold": 2.0902359141899463,
+        "exact_sign_amplitude_threshold": 279.6891359352346,
+        "maximum_weight": 2.0,
+        "minimum_weight": 0.6,
+        "partition_frequency": 5,
+        "representation_residual": 4.440892098500626e-16,
+        "scale_adapted_young_remainder": 180.07514665864198,
+        "weighted_velocity_fisher": 786.7638340820246
+      },
+      {
+        "all_checks_pass": true,
+        "conditional_pressure": 0.9345480090330619,
+        "conditional_weight_fisher": 4.553200195312501,
+        "direct_pressure": 0.9345480090330625,
+        "direct_weight_fisher": 4.5532001953125,
+        "direction_rows": [
+          {
+            "conditional_pressure": 0.585527778583895,
+            "conditional_weight_fisher": 1.3502021484375,
+            "direct_weight_fisher": 1.3502021484374997,
+            "direction": 0,
+            "young_margin": 20.776084715397282,
+            "young_remainder": 20.011410345543677
+          },
+          {
+            "conditional_pressure": 0.17915961480497397,
+            "conditional_weight_fisher": 1.3120927734374999,
+            "direct_weight_fisher": 1.3120927734374996,
+            "direction": 1,
+            "young_margin": 2.305274488433417,
+            "young_remainder": 1.1723413298008911
+          },
+          {
+            "conditional_pressure": 0.16986061564419289,
+            "conditional_weight_fisher": 1.8909052734375007,
+            "direct_weight_fisher": 1.8909052734375007,
+            "direction": 2,
+            "young_margin": 7.287937904282623,
+            "young_remainder": 5.5668932464893155
+          }
+        ],
+        "edge_absorption_amplitude_threshold": 5.423193066651081,
+        "exact_sign_amplitude_threshold": 846.737702749032,
+        "maximum_weight": 1.9966164233786672,
+        "minimum_weight": 0.6044608468192587,
+        "partition_frequency": 6,
+        "representation_residual": 8.881784197001252e-16,
+        "scale_adapted_young_remainder": 26.75064492183388,
+        "weighted_velocity_fisher": 786.7638340820245
+      },
+      {
+        "all_checks_pass": true,
+        "conditional_pressure": -4.4420635151968575e-15,
+        "conditional_weight_fisher": 6.197411376953125,
+        "direct_pressure": -5.26327952414889e-15,
+        "direct_weight_fisher": 6.1974113769531245,
+        "direction_rows": [
+          {
+            "conditional_pressure": -2.0536613977128726e-15,
+            "conditional_weight_fisher": 1.8377751464843755,
+            "direct_weight_fisher": 1.8377751464843757,
+            "direction": 0,
+            "young_margin": 1.8377751464843775,
+            "young_remainder": 1.7850866472073122e-28
+          },
+          {
+            "conditional_pressure": -2.44718659752256e-15,
+            "conditional_weight_fisher": 1.785904052734375,
+            "direct_weight_fisher": 1.785904052734375,
+            "direction": 1,
+            "young_margin": 1.7859040527343775,
+            "young_remainder": 2.03350309876115e-28
+          },
+          {
+            "conditional_pressure": 5.878448003857537e-17,
+            "conditional_weight_fisher": 2.5737321777343753,
+            "direct_weight_fisher": 2.573732177734374,
+            "direction": 2,
+            "young_margin": 2.5737321777343753,
+            "young_remainder": 3.3195185256670155e-28
+          }
+        ],
+        "edge_absorption_amplitude_threshold": null,
+        "exact_sign_amplitude_threshold": null,
+        "maximum_weight": 1.9996231484668274,
+        "minimum_weight": 0.6004967672421467,
+        "partition_frequency": 7,
+        "representation_residual": 8.881784197001252e-16,
+        "scale_adapted_young_remainder": 7.1381082716354775e-28,
+        "weighted_velocity_fisher": 786.7638340820245
+      },
+      {
+        "all_checks_pass": true,
+        "conditional_pressure": -1.2367481013076712e-15,
+        "conditional_weight_fisher": 8.094578124999998,
+        "direct_pressure": -9.210739167260557e-16,
+        "direct_weight_fisher": 8.094578125,
+        "direction_rows": [
+          {
+            "conditional_pressure": 1.5632263156728051e-15,
+            "conditional_weight_fisher": 2.4003593749999994,
+            "direct_weight_fisher": 2.400359375,
+            "direction": 0,
+            "young_margin": 2.4003593749999976,
+            "young_remainder": 2.1033008804248336e-28
+          },
+          {
+            "conditional_pressure": -6.391158167328241e-16,
+            "conditional_weight_fisher": 2.3326093749999988,
+            "direct_weight_fisher": 2.332609374999998,
+            "direction": 1,
+            "young_margin": 2.332609374999999,
+            "young_remainder": 3.052326966542647e-28
+          },
+          {
+            "conditional_pressure": -2.1608586002476523e-15,
+            "conditional_weight_fisher": 3.3616093750000005,
+            "direct_weight_fisher": 3.3616093750000027,
+            "direction": 2,
+            "young_margin": 3.3616093750000027,
+            "young_remainder": 3.7781526858113593e-28
+          }
+        ],
+        "edge_absorption_amplitude_threshold": null,
+        "exact_sign_amplitude_threshold": null,
+        "maximum_weight": 1.9939972951048073,
+        "minimum_weight": 0.6079147898309851,
+        "partition_frequency": 8,
+        "representation_residual": 1.7763568394002505e-15,
+        "scale_adapted_young_remainder": 8.93378053277884e-28,
+        "weighted_velocity_fisher": 786.7638340820246
+      },
+      {
+        "all_checks_pass": true,
+        "conditional_pressure": -2.3852647321198498e-14,
+        "conditional_weight_fisher": 10.244700439453126,
+        "direct_pressure": -2.5132159727810952e-14,
+        "direct_weight_fisher": 10.244700439453126,
+        "direction_rows": [
+          {
+            "conditional_pressure": -8.629246406568383e-16,
+            "conditional_weight_fisher": 3.0379548339843754,
+            "direct_weight_fisher": 3.0379548339843754,
+            "direction": 0,
+            "young_margin": 3.0379548339843763,
+            "young_remainder": 3.9323855083201003e-28
+          },
+          {
+            "conditional_pressure": -9.194545357531655e-15,
+            "conditional_weight_fisher": 2.9522087402343744,
+            "direct_weight_fisher": 2.9522087402343735,
+            "direction": 1,
+            "young_margin": 2.9522087402343837,
+            "young_remainder": 3.7343510961846575e-28
+          },
+          {
+            "conditional_pressure": -1.3795177323010007e-14,
+            "conditional_weight_fisher": 4.2545368652343765,
+            "direct_weight_fisher": 4.254536865234377,
+            "direction": 2,
+            "young_margin": 4.254536865234391,
+            "young_remainder": 4.078406916321594e-28
+          }
+        ],
+        "edge_absorption_amplitude_threshold": null,
+        "exact_sign_amplitude_threshold": null,
+        "maximum_weight": 1.9966164233786674,
+        "minimum_weight": 0.6044608468192582,
+        "partition_frequency": 9,
+        "representation_residual": 1.2795124066124543e-15,
+        "scale_adapted_young_remainder": 1.1745143520826352e-27,
+        "weighted_velocity_fisher": 786.7638340820246
+      },
+      {
+        "all_checks_pass": true,
+        "conditional_pressure": 9.822656395260629e-15,
+        "conditional_weight_fisher": 12.647778320312508,
+        "direct_pressure": 9.210739167260558e-15,
+        "direct_weight_fisher": 12.6477783203125,
+        "direction_rows": [
+          {
+            "conditional_pressure": 3.114404635959324e-15,
+            "conditional_weight_fisher": 3.750561523437501,
+            "direct_weight_fisher": 3.7505615234374994,
+            "direction": 0,
+            "young_margin": 3.750561523437498,
+            "young_remainder": 2.9430150815187076e-28
+          },
+          {
+            "conditional_pressure": 4.786428473851948e-15,
+            "conditional_weight_fisher": 3.644702148437503,
+            "direct_weight_fisher": 3.6447021484375,
+            "direction": 1,
+            "young_margin": 3.644702148437498,
+            "young_remainder": 1.490812209578724e-28
+          },
+          {
+            "conditional_pressure": 1.921823285449357e-15,
+            "conditional_weight_fisher": 5.252514648437503,
+            "direct_weight_fisher": 5.252514648437502,
+            "direction": 2,
+            "young_margin": 5.252514648437502,
+            "young_remainder": 4.506627176668804e-28
+          }
+        ],
+        "edge_absorption_amplitude_threshold": null,
+        "exact_sign_amplitude_threshold": null,
+        "maximum_weight": 2.0,
+        "minimum_weight": 0.6,
+        "partition_frequency": 10,
+        "representation_residual": 7.105427357601002e-15,
+        "scale_adapted_young_remainder": 8.940454467766235e-28,
+        "weighted_velocity_fisher": 786.7638340820246
+      },
+      {
+        "all_checks_pass": true,
+        "conditional_pressure": -2.479424919351722e-14,
+        "conditional_weight_fisher": 15.303811767578125,
+        "direct_pressure": -2.460583177539606e-14,
+        "direct_weight_fisher": 15.303811767578123,
+        "direction_rows": [
+          {
+            "conditional_pressure": -8.302886362516246e-15,
+            "conditional_weight_fisher": 4.538179443359378,
+            "direct_weight_fisher": 4.538179443359381,
+            "direction": 0,
+            "young_margin": 4.538179443359386,
+            "young_remainder": 5.768505998014246e-28
+          },
+          {
+            "conditional_pressure": -6.307914926503984e-15,
+            "conditional_weight_fisher": 4.410089599609374,
+            "direct_weight_fisher": 4.410089599609372,
+            "direction": 1,
+            "young_margin": 4.41008959960938,
+            "young_remainder": 2.803912381204318e-28
+          },
+          {
+            "conditional_pressure": -1.0183447904496988e-14,
+            "conditional_weight_fisher": 6.355542724609374,
+            "direct_weight_fisher": 6.35554272460937,
+            "direction": 2,
+            "young_margin": 6.355542724609384,
+            "young_remainder": 6.528987520031168e-28
+          }
+        ],
+        "edge_absorption_amplitude_threshold": null,
+        "exact_sign_amplitude_threshold": null,
+        "maximum_weight": 1.9999057660195445,
+        "minimum_weight": 0.6001242180450943,
+        "partition_frequency": 11,
+        "representation_residual": 1.7763568394002505e-15,
+        "scale_adapted_young_remainder": 1.5101405899249733e-27,
+        "weighted_velocity_fisher": 786.7638340820246
+      },
+      {
+        "all_checks_pass": true,
+        "conditional_pressure": 3.518067317887981e-14,
+        "conditional_weight_fisher": 18.212800781250003,
+        "direct_pressure": 3.388236193670848e-14,
+        "direct_weight_fisher": 18.21280078125,
+        "direction_rows": [
+          {
+            "conditional_pressure": 4.932537036380831e-15,
+            "conditional_weight_fisher": 5.40080859375,
+            "direct_weight_fisher": 5.400808593750001,
+            "direction": 0,
+            "young_margin": 5.400808593749995,
+            "young_remainder": 3.3412353591040215e-28
+          },
+          {
+            "conditional_pressure": 5.241475751721251e-15,
+            "conditional_weight_fisher": 5.2483710937499986,
+            "direct_weight_fisher": 5.248371093749996,
+            "direction": 1,
+            "young_margin": 5.248371093749993,
+            "young_remainder": 3.3577565921763987e-28
+          },
+          {
+            "conditional_pressure": 2.5006660390777728e-14,
+            "conditional_weight_fisher": 7.563621093750003,
+            "direct_weight_fisher": 7.563621093750004,
+            "direction": 2,
+            "young_margin": 7.563621093749978,
+            "young_remainder": 7.983711358613131e-28
+          }
+        ],
+        "edge_absorption_amplitude_threshold": null,
+        "exact_sign_amplitude_threshold": null,
+        "maximum_weight": 1.9865741102744474,
+        "minimum_weight": 0.6177084445497263,
+        "partition_frequency": 12,
+        "representation_residual": 3.552713678800501e-15,
+        "scale_adapted_young_remainder": 1.4682703309893552e-27,
+        "weighted_velocity_fisher": 786.7638340820245
+      }
+    ],
+    "spectrally_silent_frequencies": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "positive_checks": {
+    "frequency_edge_identities_pass": true,
+    "scale_homogeneity_algebra_passes": true,
+    "short_time_rho_expansion_checks_pass": true
+  },
+  "scale_homogeneity": {
+    "Young_remainder_scale": "a^5/nu",
+    "Young_remainder_to_Fisher_ratio": "a**2/(m**2*nu**2)",
+    "all_checks_pass": true,
+    "coscaled_fields": "u_(a,m)=a u(mx), p_(a,m)=a^2 p(mx), lambda_(a,m)=a lambda(mx)",
+    "edge_ratio_symbolic_residual": "0",
+    "exact_pressure_to_Fisher_ratio": "a/(m*nu)",
+    "exact_ratio_symbolic_residual": "0",
+    "fixed_scale_universal_absorption_possible": false,
+    "local_Reynolds_number": "Re_cell=a/(nu m)",
+    "necessary_adaptation": "partition frequency m must grow at least proportionally to a/nu before a scale-independent edge estimate is possible",
+    "pressure_flux_scale": "a^4 m",
+    "velocity_and_weight_Fisher_scale": "nu a^3 m^2"
+  },
+  "schema_version": 1,
+  "short_time_rho_expansion": {
+    "all_checks_pass": true,
+    "first_chaos_expansion": "V_r=u-sqrt(2nu) partial_k u Delta W_r^k+O(tau)",
+    "first_time_coefficient_formula": "K1=3nu D_t-3 integral lambda R_rho,1+(3/2)integral grad lambda dot F_rho,1-3nu integral lambda G_rho,1",
+    "first_time_coefficient_range": [
+      -62459.64582301941,
+      -62459.64582301931
+    ],
+    "integrated_short_time_ordering": "integral_s^(s+h)(Q_rho-Q_0)=3nu rho h integral lambda|grad u|^2+O(rho h^2)",
+    "interpretation": "Positive rho is strictly worse over every sufficiently short restart window with nonzero weighted gradient energy. The reported crossover times come only from the quadratic Taylor truncation and are diagnostics, not sign certificates.",
+    "leading_reset_loss_range": [
+      2361.3578257658814,
+      2361.3578257658846
+    ],
+    "pressure_linearization": "Delta Pi_u[V]=-div((u dot grad)V+(grad u)^T V)",
+    "rho_derivative_at_reset": "partial_rho Q_rho|_(rho=0,t=s)=3nu integral lambda|grad u|^2>0",
+    "rows": [
+      {
+        "first_time_coefficient": -62459.64582301931,
+        "formal_derivative_crossover_time": 0.03780613537990333,
+        "formal_integrated_crossover_time": 0.07561227075980666,
+        "grid_size": 48,
+        "leading_reset_rho_loss": 2361.3578257658814,
+        "pressure_gradient_reconstruction_residual": 1.7053025658242404e-13,
+        "pressure_mean": -2.631639762074445e-16,
+        "replica_pressure_gauge_residual": 5.684341886080801e-13,
+        "replica_pressure_rows": [
+          {
+            "noise_direction": 0,
+            "pressure_rms": 57.69510904175879
+          },
+          {
+            "noise_direction": 1,
+            "pressure_rms": 52.55961183992437
+          },
+          {
+            "noise_direction": 2,
+            "pressure_rms": 55.188603093209984
+          }
+        ],
+        "stochastic_gradient_coefficient": -31852.48583503215,
+        "stochastic_pressure_coefficient": -15.044597797790635,
+        "stochastic_strain_coefficient": 615.5025409729078,
+        "weighted_gradient_energy": 787.1192752552938,
+        "weighted_gradient_energy_time_derivative": -10402.539310387427
+      },
+      {
+        "first_time_coefficient": -62459.64582301941,
+        "formal_derivative_crossover_time": 0.037806135379903315,
+        "formal_integrated_crossover_time": 0.07561227075980663,
+        "grid_size": 64,
+        "leading_reset_rho_loss": 2361.3578257658846,
+        "pressure_gradient_reconstruction_residual": 1.7053025658242404e-13,
+        "pressure_mean": -2.220446049250313e-16,
+        "replica_pressure_gauge_residual": 4.831690603168681e-13,
+        "replica_pressure_rows": [
+          {
+            "noise_direction": 0,
+            "pressure_rms": 57.69510904175888
+          },
+          {
+            "noise_direction": 1,
+            "pressure_rms": 52.55961183992445
+          },
+          {
+            "noise_direction": 2,
+            "pressure_rms": 55.18860309321007
+          }
+        ],
+        "stochastic_gradient_coefficient": -31852.485835032203,
+        "stochastic_pressure_coefficient": -15.044597797790672,
+        "stochastic_strain_coefficient": 615.5025409729091,
+        "weighted_gradient_energy": 787.119275255295,
+        "weighted_gradient_energy_time_derivative": -10402.539310387441
+      },
+      {
+        "first_time_coefficient": -62459.64582301941,
+        "formal_derivative_crossover_time": 0.03780613537990331,
+        "formal_integrated_crossover_time": 0.07561227075980662,
+        "grid_size": 80,
+        "leading_reset_rho_loss": 2361.357825765884,
+        "pressure_gradient_reconstruction_residual": 1.9895196601282805e-13,
+        "pressure_mean": 0.0,
+        "replica_pressure_gauge_residual": 5.400124791776761e-13,
+        "replica_pressure_rows": [
+          {
+            "noise_direction": 0,
+            "pressure_rms": 57.69510904175888
+          },
+          {
+            "noise_direction": 1,
+            "pressure_rms": 52.55961183992445
+          },
+          {
+            "noise_direction": 2,
+            "pressure_rms": 55.18860309321006
+          }
+        ],
+        "stochastic_gradient_coefficient": -31852.485835032203,
+        "stochastic_pressure_coefficient": -15.044597797790683,
+        "stochastic_strain_coefficient": 615.5025409729093,
+        "weighted_gradient_energy": 787.1192752552947,
+        "weighted_gradient_energy_time_derivative": -10402.539310387443
+      }
+    ]
+  },
+  "status": "fixed_scale_edge_absorption_falsified_short_time_positive_rho_advantage_excluded"
+}

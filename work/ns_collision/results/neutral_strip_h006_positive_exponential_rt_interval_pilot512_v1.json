@@ -1,0 +1,107 @@
+{
+  "all_positive_exponential_interval_pilot_checks_pass": true,
+  "analytic_enclosure": {
+    "RT0_reduction": "barycentric quadratic moments divided by the directed squared determinant interval",
+    "Taylor_degree": 22,
+    "coefficient_recurrence": "(n+1)*a[n+1]=center*a[n]+a[n-1]",
+    "maximum_interval_width": {
+      "area": 3.686287386450715e-18,
+      "load": 1.5178830414797062e-18,
+      "rt_mass": 4.042703949380666e-10,
+      "source_mass": 1.3997691894473974e-12
+    },
+    "minimum_RT_diagonal_interval_lower": 0.15689984670544685,
+    "minimum_source_mass_interval_lower": 0.0007538016409963171,
+    "remainder_majorant": "exp(max_abs_x^2/2) times the absolute Hermite coefficient majorant times max_abs_z^(degree+1)"
+  },
+  "below_normal_priority_set": true,
+  "certification_flags": {
+    "complete_mesh_RT0_P0_matrix_entries_enclosed": false,
+    "complete_mesh_geometry_budget_certified": true,
+    "continuum_spectrum_below_60_captured": false,
+    "distributed_RT0_P0_local_interval_pilot_complete": true,
+    "full_mesh_threshold_inertia_certified": false,
+    "global_weighted_Ritz_projection_constant_certified": false,
+    "kappa_h_verified_upper_bound": false
+  },
+  "checks": {
+    "all_sample_quadratures_and_geometry_values_contained": true,
+    "directed_fixed_beta_geometry_budget_passes": true,
+    "mesh_fingerprint_matches": true,
+    "sample_count_exact": true,
+    "sample_rt_diagonal_strictly_positive": true,
+    "sample_source_mass_strictly_positive": true
+  },
+  "elapsed_seconds": 16.297947100014426,
+  "geometry_budget": {
+    "combined_C_h_interval_if_kappa_below_beta": [
+      0.08299017542532901,
+      0.08299017542532967
+    ],
+    "data_oscillation_constant_interval": [
+      0.030354018922231274,
+      0.030354018922231562
+    ],
+    "directed_budget_passes": true,
+    "exact_decimal_beta": "0.045",
+    "exact_decimal_beta_interval": [
+      0.04499999999999999,
+      0.04500000000000001
+    ],
+    "pi_interval": [
+      3.1415926535897927,
+      3.1415926535897936
+    ],
+    "projected_source_norm_factor_interval": [
+      1.1696923667355057,
+      1.1696923667355128
+    ],
+    "strict_headroom_lower": 0.0025809820811070745,
+    "strict_target_lower": 0.08557115750643675,
+    "triangles_checked": 30954
+  },
+  "kind": "neutral-strip-positive-exponential-RT-interval-pilot",
+  "mesh": {
+    "mesh_fingerprint_sha256": "174d325adf2b1a7f6c70a023982060bc492dbb279d267e4cdc2a2a85e9270835",
+    "triangle_count": 30954,
+    "vertex_count": 15743
+  },
+  "model": "directed local P0 and RT0 moments against exp(+x^2/2), plus complete-mesh fixed-beta geometry budget",
+  "next_required_step": "Promote the same local analytic enclosures to a resumable complete-mesh P/W/D/B assembly audit before any full LDL.",
+  "premises": {
+    "continuum_dependency_result": "work/ns_collision/results/neutral_strip_h006_continuum_ritz_dependency_audit_v1.json",
+    "continuum_dependency_result_sha256": "fc9e1f5e313dd9e98a801648f91a532ccfc2d1dada5aa228f1799ef5729b38c1",
+    "hypercircle_result": "work/ns_collision/results/neutral_strip_h006_weighted_hypercircle_pilot_v1.json",
+    "hypercircle_result_sha256": "23aa5c22eaf495142cc6271c2d77b5368fd320600f557a989dbb40490a2a519f"
+  },
+  "quadrature_crosscheck": {
+    "containment_checks": 8192,
+    "containment_failures": 0,
+    "independent_order": 18,
+    "maximum_binary_geometry_distance_to_roundoff_guard_ratio": 0.008605348505980383,
+    "maximum_distance_to_interval": {
+      "binary_area": 1.0842021724855044e-19,
+      "binary_load": 0.0,
+      "q12_rt_mass": 0.0,
+      "q12_source_mass": 0.0,
+      "q18_rt_mass": 0.0,
+      "q18_source_mass": 0.0
+    },
+    "maximum_q12_q18_difference": {
+      "rt_mass": 1.659827830735594e-11,
+      "source_mass": 5.329070518200751e-15
+    },
+    "primary_order": 12,
+    "quadratures_are_diagnostics_not_proof_inputs": true,
+    "worst_failure": null
+  },
+  "sample": {
+    "first_triangle_index": 0,
+    "last_triangle_index": 30953,
+    "requested_count": 512,
+    "selected_count": 512,
+    "selected_indices_sha256": "0fe8d7d58396bc0a3bd02606d0d2c560bbd4cf116fce5d8b6f39dec162125c50",
+    "selection": "unique integer linspace over stored triangle order"
+  },
+  "spacing": 0.06
+}

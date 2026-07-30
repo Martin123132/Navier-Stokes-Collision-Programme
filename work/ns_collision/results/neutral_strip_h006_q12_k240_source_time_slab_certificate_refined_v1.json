@@ -1,0 +1,252 @@
+{
+  "all_frozen_time_slab_certificate_checks_pass": true,
+  "below_normal_priority_set": true,
+  "coefficient_matrices_interval_enclosed": false,
+  "combined_screen_below_one": true,
+  "combined_screen_headroom": 0.029915522908214198,
+  "combined_screen_total": 0.9700844770917858,
+  "continuum_Ritz_projector_error_certified": false,
+  "continuum_return_response_certified": false,
+  "cross_check_rows": [
+    {
+      "absolute_difference": 1.9637069748057456e-15,
+      "direct": 0.014140954974316422,
+      "independent": 0.014140954974314458,
+      "time": 0.375
+    },
+    {
+      "absolute_difference": 1.683901499141549e-17,
+      "direct": 1.8863063328552237e-05,
+      "independent": 1.8863063328569076e-05,
+      "time": 3.0
+    },
+    {
+      "absolute_difference": 4.956466230417742e-21,
+      "direct": 2.0363963627638743e-08,
+      "independent": 2.03639636276437e-08,
+      "time": 6.0
+    }
+  ],
+  "elapsed_seconds": 70.51722999999765,
+  "entry_count": 112,
+  "finite_raw_sum_upper": 0.013881494718201092,
+  "finite_window_indices": [
+    1,
+    15
+  ],
+  "frozen_finite_block_post_terminal_tail_enclosure_proved": true,
+  "frozen_finite_block_time_slab_enclosure_proved": true,
+  "independent_interpolation_regression": {
+    "dense_maximum": 0.45104787246536343,
+    "enclosure_margin": 0.0032257889230974945,
+    "endpoint_interpolation_enclosure": 0.4542736613884609,
+    "passes": true
+  },
+  "inner_boundary_vertex_count": 112,
+  "later_low_block_interval_factor_upper": 0.008090916167796953,
+  "maximum_arithmetic_guard": 6.737881177978004e-11,
+  "maximum_interpolation_charge": 0.0011322219734490864,
+  "maximum_modified_semigroup_defect_upper": 3.7622927370192294e-08,
+  "model": "frozen K-mode common-circle source discrepancy",
+  "modified_orthogonal_transform_defect_upper": 5.880705914070768e-11,
+  "modified_orthogonal_transform_raw_defect": 7.549490237959944e-12,
+  "modified_projected_matrices_interval_enclosed": false,
+  "off_block_leakage_interval_certified": false,
+  "polygon_domain_perturbation_certified": false,
+  "post_terminal_tail": {
+    "axial_tail_upper": 0.4886040129486318,
+    "modified_decay_lower": 2.37015254001425,
+    "modified_terminal_amplitude": 1.3108983525221057e-05,
+    "post_terminal_raw_sum_upper": 2.1824498288990452e-05,
+    "reference_decay_lower": 2.373283782016068,
+    "reference_terminal_amplitude": 1.3204201539745128e-05,
+    "tail_first_window_index": 16
+  },
+  "quadrature_order": 12,
+  "reference_eigensystem_cache": {
+    "enabled": true,
+    "loaded": true,
+    "matrix_fingerprint_sha256": "c80fdc5aa494fe1118aec4c38045df76151b2ccde3fded18f4af1161de7efd48",
+    "path": "work\\ns_collision\\results\\neutral_strip_h006_q12_k241_reference_eigensystem_v1.npz",
+    "written": false
+  },
+  "reference_generalized_eigenpairs_interval_enclosed": false,
+  "retained_mode_count": 240,
+  "scope": "The endpoint-interpolation and geometric-tail inequalities are analytic for the frozen finite block. Endpoint arithmetic uses an explicit conservative floating guard; the assembled forms, reference eigensystem, and projected matrices are not yet directed-interval enclosed.",
+  "spacing": 0.06,
+  "state_count": 15211,
+  "subslabs_per_window": 30,
+  "substep": 0.0125,
+  "tail_first_window_index": 16,
+  "terminal_time": 6.0,
+  "total_later_low_block_raw_sum_upper": 0.013903319216490084,
+  "uses_guarded_floating_endpoint_arithmetic": true,
+  "window_length": 0.375,
+  "window_rows": [
+    {
+      "difference_second_derivative_upper": 57.96976504059321,
+      "end": 0.75,
+      "maximum_column_discrepancy_upper": 0.015273179444958382,
+      "modified_second_derivative_upper": 28.980440159716725,
+      "raw_source_discrepancy_upper": 0.010273513373305256,
+      "reference_second_derivative_upper": 28.98932488087648,
+      "start": 0.375,
+      "subslab_count": 30,
+      "window_index": 1
+    },
+    {
+      "difference_second_derivative_upper": 6.234841654039097,
+      "end": 1.125,
+      "maximum_column_discrepancy_upper": 0.004114396239620746,
+      "modified_second_derivative_upper": 3.118447806580585,
+      "raw_source_discrepancy_upper": 0.0022808024934136213,
+      "reference_second_derivative_upper": 3.116393847458511,
+      "start": 0.75,
+      "subslab_count": 30,
+      "window_index": 2
+    },
+    {
+      "difference_second_derivative_upper": 1.4832179468811988,
+      "end": 1.5,
+      "maximum_column_discrepancy_upper": 0.0015398635882761498,
+      "modified_second_derivative_upper": 0.7418685107083608,
+      "raw_source_discrepancy_upper": 0.0007954690923285236,
+      "reference_second_derivative_upper": 0.7413494361728378,
+      "start": 1.125,
+      "subslab_count": 30,
+      "window_index": 3
+    },
+    {
+      "difference_second_derivative_upper": 0.5049051525139462,
+      "end": 1.875,
+      "maximum_column_discrepancy_upper": 0.0006235496070665066,
+      "modified_second_derivative_upper": 0.2525531551974002,
+      "raw_source_discrepancy_upper": 0.0003125476493684054,
+      "reference_second_derivative_upper": 0.25235199731654584,
+      "start": 1.5,
+      "subslab_count": 30,
+      "window_index": 4
+    },
+    {
+      "difference_second_derivative_upper": 0.19439646306426728,
+      "end": 2.25,
+      "maximum_column_discrepancy_upper": 0.000258146207938335,
+      "modified_second_derivative_upper": 0.0972663478419961,
+      "raw_source_discrepancy_upper": 0.00012764072654925722,
+      "reference_second_derivative_upper": 0.09713011522227115,
+      "start": 1.875,
+      "subslab_count": 30,
+      "window_index": 5
+    },
+    {
+      "difference_second_derivative_upper": 0.07802914840421182,
+      "end": 2.625,
+      "maximum_column_discrepancy_upper": 0.00010786157168617148,
+      "modified_second_derivative_upper": 0.039059579738309466,
+      "raw_source_discrepancy_upper": 5.299662664533395e-05,
+      "reference_second_derivative_upper": 0.03896956866590234,
+      "start": 2.25,
+      "subslab_count": 30,
+      "window_index": 6
+    },
+    {
+      "difference_second_derivative_upper": 0.03177969222091507,
+      "end": 3.0,
+      "maximum_column_discrepancy_upper": 4.5328022812697434e-05,
+      "modified_second_derivative_upper": 0.01591654183722142,
+      "raw_source_discrepancy_upper": 2.2205724915462637e-05,
+      "reference_second_derivative_upper": 0.015863150383693642,
+      "start": 2.625,
+      "subslab_count": 30,
+      "window_index": 7
+    },
+    {
+      "difference_second_derivative_upper": 0.013011073152612287,
+      "end": 3.375,
+      "maximum_column_discrepancy_upper": 1.9136125695847984e-05,
+      "modified_second_derivative_upper": 0.006520114216287548,
+      "raw_source_discrepancy_upper": 9.361568786442725e-06,
+      "reference_second_derivative_upper": 0.006490958936324736,
+      "start": 3.0,
+      "subslab_count": 30,
+      "window_index": 8
+    },
+    {
+      "difference_second_derivative_upper": 0.005337120041482987,
+      "end": 3.75,
+      "maximum_column_discrepancy_upper": 8.113591634374289e-06,
+      "modified_second_derivative_upper": 0.002676077149051932,
+      "raw_source_discrepancy_upper": 3.966644164679082e-06,
+      "reference_second_derivative_upper": 0.0026610428924310537,
+      "start": 3.375,
+      "subslab_count": 30,
+      "window_index": 9
+    },
+    {
+      "difference_second_derivative_upper": 0.0021908276388290637,
+      "end": 4.125,
+      "maximum_column_discrepancy_upper": 3.4579585093416206e-06,
+      "modified_second_derivative_upper": 0.0010991379973544634,
+      "raw_source_discrepancy_upper": 1.6900346442348272e-06,
+      "reference_second_derivative_upper": 0.0010916896414745999,
+      "start": 3.75,
+      "subslab_count": 30,
+      "window_index": 10
+    },
+    {
+      "difference_second_derivative_upper": 0.0008995476981458788,
+      "end": 4.5,
+      "maximum_column_discrepancy_upper": 1.486347978965565e-06,
+      "modified_second_derivative_upper": 0.00045156645692869023,
+      "raw_source_discrepancy_upper": 7.263282420165673e-07,
+      "reference_second_derivative_upper": 0.0004479812412171885,
+      "start": 4.125,
+      "subslab_count": 30,
+      "window_index": 11
+    },
+    {
+      "difference_second_derivative_upper": 0.0003693884963450399,
+      "end": 4.875,
+      "maximum_column_discrepancy_upper": 6.502023138429534e-07,
+      "modified_second_derivative_upper": 0.00018553878158987787,
+      "raw_source_discrepancy_upper": 3.1771008866353406e-07,
+      "reference_second_derivative_upper": 0.000183849714755162,
+      "start": 4.5,
+      "subslab_count": 30,
+      "window_index": 12
+    },
+    {
+      "difference_second_derivative_upper": 0.00015169071726504397,
+      "end": 5.25,
+      "maximum_column_discrepancy_upper": 2.957519527523323e-07,
+      "modified_second_derivative_upper": 7.623673200730527e-05,
+      "raw_source_discrepancy_upper": 1.4450935913861873e-07,
+      "reference_second_derivative_upper": 7.545398525773867e-05,
+      "start": 4.875,
+      "subslab_count": 30,
+      "window_index": 13
+    },
+    {
+      "difference_second_derivative_upper": 6.229326722315408e-05,
+      "end": 5.625,
+      "maximum_column_discrepancy_upper": 1.4608695247233288e-07,
+      "modified_second_derivative_upper": 3.132566162544849e-05,
+      "raw_source_discrepancy_upper": 7.137943470908416e-08,
+      "reference_second_derivative_upper": 3.096760559770558e-05,
+      "start": 5.25,
+      "subslab_count": 30,
+      "window_index": 14
+    },
+    {
+      "difference_second_derivative_upper": 2.5581495506002184e-05,
+      "end": 6.0,
+      "maximum_column_discrepancy_upper": 8.361948338577212e-08,
+      "modified_second_derivative_upper": 1.2871786764744482e-05,
+      "raw_source_discrepancy_upper": 4.085695534646655e-08,
+      "reference_second_derivative_upper": 1.27097087412577e-05,
+      "start": 5.625,
+      "subslab_count": 30,
+      "window_index": 15
+    }
+  ]
+}

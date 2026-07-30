@@ -1,0 +1,133 @@
+{
+  "all_continuum_Ritz_dependency_audit_checks_pass": true,
+  "available_analytic_index_bound": {
+    "continuum_eigenvalue_formula_upper": 46.61644988218182,
+    "continuum_eigenvalue_lower": 46.616449882181804,
+    "domain_area_lower": 32.1384073464102,
+    "domain_area_upper": 32.13840734641021,
+    "exact_P1_retained_upper": 106.4162237645287,
+    "index_one_based": 241,
+    "interpretation": "The bound is a valid continuum lower bound, but it is too small to separate the continuum index-241 mode from the retained exact-P1 block.",
+    "proves_continuum_index_separation_from_retained_FE_block": false,
+    "shortfall_below_exact_P1_retained_upper": 59.7997738823469
+  },
+  "below_normal_priority_set": true,
+  "certification_flags": {
+    "available_analytic_index_gap_closes": false,
+    "conforming_Rayleigh_eigenvalue_upper_direction_certified": true,
+    "continuum_low_to_FE_projector_angle_certified": false,
+    "continuum_polygon_conormal_response_certified": false,
+    "continuum_return_response_certified": false,
+    "continuum_spectrum_below_60_captured_by_240_FE_modes": false,
+    "cutoff_solution_operator_transfer_theorem_encoded": true,
+    "polygon_to_circle_domain_transfer_certified": false,
+    "positive_time_point_source_semigroup_transfer_certified": false,
+    "stored_FE_complement_lower_substitutable_as_continuum_lower": false,
+    "stored_polygon_P1_space_conforming_certified": true,
+    "weighted_global_Ritz_projection_constant_certified": false,
+    "weighted_solution_operator_norm_error_certified": false
+  },
+  "continuum_conormal_gate": {
+    "boundary_conormal_map_bounded_from_weighted_L2_state": false,
+    "existing_Rellich_flux_smoothing_constant_available": true,
+    "existing_continuum_flux_constant_upper": 3.134170665703,
+    "remaining_requirement": "Propagate an equilibrated parabolic residual through the positive-time Rellich/half-time factorization to bound the continuum polygon conormal output in L2 of the boundary."
+  },
+  "continuum_spectral_cutoff": 60.0,
+  "cutoff_solution_operator_route": {
+    "Ritz_projection_constant_strict_threshold_lower": 0.08557115750643675,
+    "Ritz_to_solution_operator_statement": "A certified weighted projection inequality ||u-R_hu||_m <= C_h||u-R_hu||_a implies ||T-T_h||_(m->m) <= C_h^2.",
+    "angle_target_rows": [
+      {
+        "projector_angle_target": 0.5,
+        "sufficient_Ritz_projection_constant_strict_upper": 0.060507945746783566,
+        "sufficient_solution_operator_error_strict_upper": 0.003661211498495704
+      },
+      {
+        "projector_angle_target": 0.25,
+        "sufficient_Ritz_projection_constant_strict_upper": 0.042785578753218374,
+        "sufficient_solution_operator_error_strict_upper": 0.001830605749247852
+      },
+      {
+        "projector_angle_target": 0.1,
+        "sufficient_Ritz_projection_constant_strict_upper": 0.027059975973735467,
+        "sufficient_solution_operator_error_strict_upper": 0.0007322422996991407
+      },
+      {
+        "projector_angle_target": 0.05,
+        "sufficient_Ritz_projection_constant_strict_upper": 0.019134292509773394,
+        "sufficient_solution_operator_error_strict_upper": 0.0003661211498495704
+      },
+      {
+        "projector_angle_target": 0.01,
+        "sufficient_Ritz_projection_constant_strict_upper": 0.008557115750643675,
+        "sufficient_solution_operator_error_strict_upper": 7.322422996991407e-05
+      }
+    ],
+    "conditional_projector_statement": "For P=1_[1/60,infinity)(T) and Q equal to the first 240 P1 modes, the separated-spectrum residual theorem gives ||(I-Q)P|| <= ||T-T_h||_m/d.",
+    "conditional_rank_statement": "If ||T-T_h||_m < d, where d is the reported inverse cutoff-to-omitted-mode gap, then lambda_241(continuum)>60 and at most 240 continuum modes lie at or below cutoff 60.",
+    "first_missing_quantitative_inequality": "Certify the global weighted Ritz projection constant C_h on the stored nonconvex polygon, preferably by a hypercircle/equilibrated-flux source-problem bound.",
+    "inverse_cutoff_lower": 0.016666666666666663,
+    "inverse_cutoff_upper": 0.016666666666666673,
+    "inverse_omitted_mode_upper": 0.009344243669675258,
+    "solution_operator_definition": "T solves a(Tf,v)=m(f,v); T_h is its conforming Galerkin solution operator extended by zero off V_h",
+    "solution_operator_error_strict_threshold_lower": 0.007322422996991409
+  },
+  "elapsed_seconds": 3.217731900047511,
+  "kind": "neutral-strip-continuum-Ritz-dependency-audit",
+  "model": "weighted Dirichlet solution operator on the stored binary polygon and its exact conforming Gaussian-weighted P1 Galerkin operator",
+  "next_required_step": "Construct a weighted equilibrated-flux/hypercircle estimator for the Galerkin source problem and certify C_h. Start with a pilot on the existing mesh to test the strict 0.0855711575 rank threshold before attempting the stronger projector-angle and positive-time point-source output bounds.",
+  "polygon_to_circle_gate": {
+    "common_circle_geometry_compares_domain_semigroups": false,
+    "common_circle_output_measure_geometry_certified": true,
+    "remaining_requirement": "After the continuum polygon response is enclosed, certify the circle-versus-polygon domain perturbation separately."
+  },
+  "positive_time_point_source_gate": {
+    "continuum_point_evaluation_bounded_on_H0_1_in_two_dimensions": false,
+    "continuum_point_mass_belongs_to_weighted_L2": false,
+    "existing_killed_kernel_diagonal_majorant_available": true,
+    "heat_smoothing_makes_positive_time_source_state_L2": true,
+    "raw_time_zero_Ritz_source_projection_is_valid": false,
+    "remaining_requirement": "Certify a positive-time semigroup or elliptic-reconstruction error for the continuum point source and the nodal P1 source; the L2 solution-operator bound alone does not act on delta_z at time zero."
+  },
+  "premise_artifacts": {
+    "assembly_checkpoint": "work/ns_collision/results/neutral_strip_h006_gaussian_assembly_interval_checkpoint_v1.npz",
+    "assembly_checkpoint_sha256": "60276e13ecb0de15099fea1bd7369597e589a9e95f0193bd133e48f0c0c4fcd5",
+    "assembly_result": "work/ns_collision/results/neutral_strip_h006_gaussian_assembly_interval_audit_v1.json",
+    "assembly_result_sha256": "c4da43d4589edad78c1413c4b8914e59b31143487784623677f849061304ba3a",
+    "projected_result": "work/ns_collision/results/neutral_strip_h006_projected_interval_two_block_transfer_v1.json",
+    "projected_result_sha256": "be566888d8165cdd96948d241aaa61df732e0d26445af74026ceef1b46e5a2f2",
+    "spectrum_result": "work/ns_collision/results/neutral_strip_h006_exact_polygon_indexed_spectrum_transfer_v1.json",
+    "spectrum_result_sha256": "352a5af82a6595f802ffb36ca875970bafb3f69e250727ed973f911e57a8b06f"
+  },
+  "retained_mode_count": 240,
+  "scope": "This is a theorem-dependency and mesh-conformity certificate. It does not certify continuum Ritz transfer, the positive-time point-source semigroup error, polygon conormal response, polygon-to-circle domain transfer, a Navier-Stokes estimate, or a regularity proof.",
+  "spacing": 0.06,
+  "stored_polygon_P1_conformity": {
+    "all_integer_topology_and_mesh_identity_checks_pass": true,
+    "boundary_component_count": 2,
+    "boundary_degrees_are_two": true,
+    "boundary_edge_count": 532,
+    "boundary_segments_equal_incidence_one_edges": true,
+    "continuous_P1_state_basis_has_zero_boundary_trace": true,
+    "euler_characteristic": 0,
+    "inner_boundary_segment_count": 112,
+    "interior_triangle_component_count": 1,
+    "marker_set_exact": true,
+    "mesh_fingerprint_matches_directed_assembly_checkpoint": true,
+    "mesh_fingerprint_sha256": "174d325adf2b1a7f6c70a023982060bc492dbb279d267e4cdc2a2a85e9270835",
+    "minimum_binary_triangle_determinant_magnitude": 0.0011222532900354314,
+    "state_count": 15211,
+    "total_triangle_count": 30954,
+    "vertex_count": 15743
+  },
+  "strongest_valid_subcertificate": "The exact stored-polygon P1 space is conforming, so its indexed eigenvalues are continuum upper bounds. The cutoff-resolvent transfer theorem and its exact numerical thresholds are now encoded. No continuum spectral, source, conormal, or domain transfer is promoted without the missing computable constants.",
+  "variational_direction": {
+    "conforming_upper_bound_direction_only": true,
+    "continuum_to_conforming_FE_relation": "lambda_j(continuum polygon) <= lambda_j(exact P1)",
+    "exact_P1_index_239_upper": 106.4162237645287,
+    "exact_P1_index_240_lower": 107.01775717228844,
+    "exact_P1_index_240_lower_is_not_a_continuum_lower_bound": true,
+    "naive_complement_substitution_rejected": true
+  }
+}

@@ -1,0 +1,1396 @@
+{
+  "algorithm_revision": "annular-parallel-shear-third-jet-route-guard-v1",
+  "all_route_guard_checks_pass": true,
+  "bounded_output_pressure_exceptions": {
+    "N11_capable_families": [
+      {
+        "external_velocity_degree": 1,
+        "heat_count": 0,
+        "high_leaf_count": 4,
+        "low_velocity_amplitude_power": 2,
+        "optimized_power_upper_bound": 11,
+        "pressure_side_high_differential_order_upper": 3,
+        "pressure_side_velocity_capacity": 5,
+        "pressure_slots": [
+          {
+            "heat_degree": 0,
+            "jet_order": 0,
+            "label": "U0^0"
+          },
+          {
+            "heat_degree": 0,
+            "jet_order": 3,
+            "label": "U3^0"
+          }
+        ],
+        "slot_velocity_degrees": [
+          1,
+          4,
+          1,
+          0
+        ],
+        "test_slot": {
+          "heat_degree": 0,
+          "jet_order": 0,
+          "label": "U0^0"
+        },
+        "third_derivative_taylor_multiplier": 2.0,
+        "weight_slot": {
+          "heat_degree": 0,
+          "jet_order": 0,
+          "label": "Lambda0^0"
+        }
+      },
+      {
+        "external_velocity_degree": 1,
+        "heat_count": 0,
+        "high_leaf_count": 4,
+        "low_velocity_amplitude_power": 2,
+        "optimized_power_upper_bound": 11,
+        "pressure_side_high_differential_order_upper": 3,
+        "pressure_side_velocity_capacity": 5,
+        "pressure_slots": [
+          {
+            "heat_degree": 0,
+            "jet_order": 1,
+            "label": "U1^0"
+          },
+          {
+            "heat_degree": 0,
+            "jet_order": 2,
+            "label": "U2^0"
+          }
+        ],
+        "slot_velocity_degrees": [
+          2,
+          3,
+          1,
+          0
+        ],
+        "test_slot": {
+          "heat_degree": 0,
+          "jet_order": 0,
+          "label": "U0^0"
+        },
+        "third_derivative_taylor_multiplier": 6.0,
+        "weight_slot": {
+          "heat_degree": 0,
+          "jet_order": 0,
+          "label": "Lambda0^0"
+        }
+      },
+      {
+        "external_velocity_degree": 1,
+        "heat_count": 1,
+        "high_leaf_count": 4,
+        "low_velocity_amplitude_power": 1,
+        "optimized_power_upper_bound": 11,
+        "pressure_side_high_differential_order_upper": 4,
+        "pressure_side_velocity_capacity": 4,
+        "pressure_slots": [
+          {
+            "heat_degree": 0,
+            "jet_order": 0,
+            "label": "U0^0"
+          },
+          {
+            "heat_degree": 1,
+            "jet_order": 3,
+            "label": "U3^1"
+          }
+        ],
+        "slot_velocity_degrees": [
+          1,
+          3,
+          1,
+          0
+        ],
+        "test_slot": {
+          "heat_degree": 0,
+          "jet_order": 0,
+          "label": "U0^0"
+        },
+        "third_derivative_taylor_multiplier": 2.0,
+        "weight_slot": {
+          "heat_degree": 0,
+          "jet_order": 0,
+          "label": "Lambda0^0"
+        }
+      },
+      {
+        "external_velocity_degree": 1,
+        "heat_count": 1,
+        "high_leaf_count": 4,
+        "low_velocity_amplitude_power": 1,
+        "optimized_power_upper_bound": 11,
+        "pressure_side_high_differential_order_upper": 4,
+        "pressure_side_velocity_capacity": 4,
+        "pressure_slots": [
+          {
+            "heat_degree": 0,
+            "jet_order": 1,
+            "label": "U1^0"
+          },
+          {
+            "heat_degree": 1,
+            "jet_order": 2,
+            "label": "U2^1"
+          }
+        ],
+        "slot_velocity_degrees": [
+          2,
+          2,
+          1,
+          0
+        ],
+        "test_slot": {
+          "heat_degree": 0,
+          "jet_order": 0,
+          "label": "U0^0"
+        },
+        "third_derivative_taylor_multiplier": 6.0,
+        "weight_slot": {
+          "heat_degree": 0,
+          "jet_order": 0,
+          "label": "Lambda0^0"
+        }
+      },
+      {
+        "external_velocity_degree": 1,
+        "heat_count": 1,
+        "high_leaf_count": 4,
+        "low_velocity_amplitude_power": 1,
+        "optimized_power_upper_bound": 11,
+        "pressure_side_high_differential_order_upper": 4,
+        "pressure_side_velocity_capacity": 4,
+        "pressure_slots": [
+          {
+            "heat_degree": 1,
+            "jet_order": 1,
+            "label": "U1^1"
+          },
+          {
+            "heat_degree": 0,
+            "jet_order": 2,
+            "label": "U2^0"
+          }
+        ],
+        "slot_velocity_degrees": [
+          1,
+          3,
+          1,
+          0
+        ],
+        "test_slot": {
+          "heat_degree": 0,
+          "jet_order": 0,
+          "label": "U0^0"
+        },
+        "third_derivative_taylor_multiplier": 6.0,
+        "weight_slot": {
+          "heat_degree": 0,
+          "jet_order": 0,
+          "label": "Lambda0^0"
+        }
+      }
+    ],
+    "N11_capable_family_count": 5,
+    "all_checks_pass": true,
+    "definition": "Four high leaves lie entirely inside the two pressure inputs, while every velocity leaf outside that pair is low.",
+    "families": [
+      {
+        "external_velocity_degree": 2,
+        "heat_count": 0,
+        "high_leaf_count": 4,
+        "low_velocity_amplitude_power": 2,
+        "optimized_power_upper_bound": 10,
+        "pressure_side_high_differential_order_upper": 2,
+        "pressure_side_velocity_capacity": 4,
+        "pressure_slots": [
+          {
+            "heat_degree": 0,
+            "jet_order": 0,
+            "label": "U0^0"
+          },
+          {
+            "heat_degree": 0,
+            "jet_order": 2,
+            "label": "U2^0"
+          }
+        ],
+        "slot_velocity_degrees": [
+          1,
+          3,
+          1,
+          1
+        ],
+        "test_slot": {
+          "heat_degree": 0,
+          "jet_order": 0,
+          "label": "U0^0"
+        },
+        "third_derivative_taylor_multiplier": 6.0,
+        "weight_slot": {
+          "heat_degree": 0,
+          "jet_order": 1,
+          "label": "Lambda1^0"
+        }
+      },
+      {
+        "external_velocity_degree": 2,
+        "heat_count": 0,
+        "high_leaf_count": 4,
+        "low_velocity_amplitude_power": 2,
+        "optimized_power_upper_bound": 10,
+        "pressure_side_high_differential_order_upper": 2,
+        "pressure_side_velocity_capacity": 4,
+        "pressure_slots": [
+          {
+            "heat_degree": 0,
+            "jet_order": 0,
+            "label": "U0^0"
+          },
+          {
+            "heat_degree": 0,
+            "jet_order": 2,
+            "label": "U2^0"
+          }
+        ],
+        "slot_velocity_degrees": [
+          1,
+          3,
+          2,
+          0
+        ],
+        "test_slot": {
+          "heat_degree": 0,
+          "jet_order": 1,
+          "label": "U1^0"
+        },
+        "third_derivative_taylor_multiplier": 6.0,
+        "weight_slot": {
+          "heat_degree": 0,
+          "jet_order": 0,
+          "label": "Lambda0^0"
+        }
+      },
+      {
+        "external_velocity_degree": 1,
+        "heat_count": 0,
+        "high_leaf_count": 4,
+        "low_velocity_amplitude_power": 2,
+        "optimized_power_upper_bound": 11,
+        "pressure_side_high_differential_order_upper": 3,
+        "pressure_side_velocity_capacity": 5,
+        "pressure_slots": [
+          {
+            "heat_degree": 0,
+            "jet_order": 0,
+            "label": "U0^0"
+          },
+          {
+            "heat_degree": 0,
+            "jet_order": 3,
+            "label": "U3^0"
+          }
+        ],
+        "slot_velocity_degrees": [
+          1,
+          4,
+          1,
+          0
+        ],
+        "test_slot": {
+          "heat_degree": 0,
+          "jet_order": 0,
+          "label": "U0^0"
+        },
+        "third_derivative_taylor_multiplier": 2.0,
+        "weight_slot": {
+          "heat_degree": 0,
+          "jet_order": 0,
+          "label": "Lambda0^0"
+        }
+      },
+      {
+        "external_velocity_degree": 2,
+        "heat_count": 0,
+        "high_leaf_count": 4,
+        "low_velocity_amplitude_power": 2,
+        "optimized_power_upper_bound": 10,
+        "pressure_side_high_differential_order_upper": 2,
+        "pressure_side_velocity_capacity": 4,
+        "pressure_slots": [
+          {
+            "heat_degree": 0,
+            "jet_order": 1,
+            "label": "U1^0"
+          },
+          {
+            "heat_degree": 0,
+            "jet_order": 1,
+            "label": "U1^0"
+          }
+        ],
+        "slot_velocity_degrees": [
+          2,
+          2,
+          1,
+          1
+        ],
+        "test_slot": {
+          "heat_degree": 0,
+          "jet_order": 0,
+          "label": "U0^0"
+        },
+        "third_derivative_taylor_multiplier": 6.0,
+        "weight_slot": {
+          "heat_degree": 0,
+          "jet_order": 1,
+          "label": "Lambda1^0"
+        }
+      },
+      {
+        "external_velocity_degree": 2,
+        "heat_count": 0,
+        "high_leaf_count": 4,
+        "low_velocity_amplitude_power": 2,
+        "optimized_power_upper_bound": 10,
+        "pressure_side_high_differential_order_upper": 2,
+        "pressure_side_velocity_capacity": 4,
+        "pressure_slots": [
+          {
+            "heat_degree": 0,
+            "jet_order": 1,
+            "label": "U1^0"
+          },
+          {
+            "heat_degree": 0,
+            "jet_order": 1,
+            "label": "U1^0"
+          }
+        ],
+        "slot_velocity_degrees": [
+          2,
+          2,
+          2,
+          0
+        ],
+        "test_slot": {
+          "heat_degree": 0,
+          "jet_order": 1,
+          "label": "U1^0"
+        },
+        "third_derivative_taylor_multiplier": 6.0,
+        "weight_slot": {
+          "heat_degree": 0,
+          "jet_order": 0,
+          "label": "Lambda0^0"
+        }
+      },
+      {
+        "external_velocity_degree": 1,
+        "heat_count": 0,
+        "high_leaf_count": 4,
+        "low_velocity_amplitude_power": 2,
+        "optimized_power_upper_bound": 11,
+        "pressure_side_high_differential_order_upper": 3,
+        "pressure_side_velocity_capacity": 5,
+        "pressure_slots": [
+          {
+            "heat_degree": 0,
+            "jet_order": 1,
+            "label": "U1^0"
+          },
+          {
+            "heat_degree": 0,
+            "jet_order": 2,
+            "label": "U2^0"
+          }
+        ],
+        "slot_velocity_degrees": [
+          2,
+          3,
+          1,
+          0
+        ],
+        "test_slot": {
+          "heat_degree": 0,
+          "jet_order": 0,
+          "label": "U0^0"
+        },
+        "third_derivative_taylor_multiplier": 6.0,
+        "weight_slot": {
+          "heat_degree": 0,
+          "jet_order": 0,
+          "label": "Lambda0^0"
+        }
+      },
+      {
+        "external_velocity_degree": 1,
+        "heat_count": 1,
+        "high_leaf_count": 4,
+        "low_velocity_amplitude_power": 1,
+        "optimized_power_upper_bound": 9,
+        "pressure_side_high_differential_order_upper": 2,
+        "pressure_side_velocity_capacity": 4,
+        "pressure_slots": [
+          {
+            "heat_degree": 0,
+            "jet_order": 0,
+            "label": "U0^0"
+          },
+          {
+            "heat_degree": 0,
+            "jet_order": 2,
+            "label": "U2^0"
+          }
+        ],
+        "slot_velocity_degrees": [
+          1,
+          3,
+          1,
+          0
+        ],
+        "test_slot": {
+          "heat_degree": 0,
+          "jet_order": 0,
+          "label": "U0^0"
+        },
+        "third_derivative_taylor_multiplier": 6.0,
+        "weight_slot": {
+          "heat_degree": 1,
+          "jet_order": 1,
+          "label": "Lambda1^1"
+        }
+      },
+      {
+        "external_velocity_degree": 1,
+        "heat_count": 1,
+        "high_leaf_count": 4,
+        "low_velocity_amplitude_power": 1,
+        "optimized_power_upper_bound": 9,
+        "pressure_side_high_differential_order_upper": 2,
+        "pressure_side_velocity_capacity": 4,
+        "pressure_slots": [
+          {
+            "heat_degree": 0,
+            "jet_order": 0,
+            "label": "U0^0"
+          },
+          {
+            "heat_degree": 0,
+            "jet_order": 2,
+            "label": "U2^0"
+          }
+        ],
+        "slot_velocity_degrees": [
+          1,
+          3,
+          1,
+          0
+        ],
+        "test_slot": {
+          "heat_degree": 1,
+          "jet_order": 1,
+          "label": "U1^1"
+        },
+        "third_derivative_taylor_multiplier": 6.0,
+        "weight_slot": {
+          "heat_degree": 0,
+          "jet_order": 0,
+          "label": "Lambda0^0"
+        }
+      },
+      {
+        "external_velocity_degree": 1,
+        "heat_count": 1,
+        "high_leaf_count": 4,
+        "low_velocity_amplitude_power": 1,
+        "optimized_power_upper_bound": 11,
+        "pressure_side_high_differential_order_upper": 4,
+        "pressure_side_velocity_capacity": 4,
+        "pressure_slots": [
+          {
+            "heat_degree": 0,
+            "jet_order": 0,
+            "label": "U0^0"
+          },
+          {
+            "heat_degree": 1,
+            "jet_order": 3,
+            "label": "U3^1"
+          }
+        ],
+        "slot_velocity_degrees": [
+          1,
+          3,
+          1,
+          0
+        ],
+        "test_slot": {
+          "heat_degree": 0,
+          "jet_order": 0,
+          "label": "U0^0"
+        },
+        "third_derivative_taylor_multiplier": 2.0,
+        "weight_slot": {
+          "heat_degree": 0,
+          "jet_order": 0,
+          "label": "Lambda0^0"
+        }
+      },
+      {
+        "external_velocity_degree": 1,
+        "heat_count": 1,
+        "high_leaf_count": 4,
+        "low_velocity_amplitude_power": 1,
+        "optimized_power_upper_bound": 9,
+        "pressure_side_high_differential_order_upper": 2,
+        "pressure_side_velocity_capacity": 4,
+        "pressure_slots": [
+          {
+            "heat_degree": 0,
+            "jet_order": 1,
+            "label": "U1^0"
+          },
+          {
+            "heat_degree": 0,
+            "jet_order": 1,
+            "label": "U1^0"
+          }
+        ],
+        "slot_velocity_degrees": [
+          2,
+          2,
+          1,
+          0
+        ],
+        "test_slot": {
+          "heat_degree": 0,
+          "jet_order": 0,
+          "label": "U0^0"
+        },
+        "third_derivative_taylor_multiplier": 6.0,
+        "weight_slot": {
+          "heat_degree": 1,
+          "jet_order": 1,
+          "label": "Lambda1^1"
+        }
+      },
+      {
+        "external_velocity_degree": 1,
+        "heat_count": 1,
+        "high_leaf_count": 4,
+        "low_velocity_amplitude_power": 1,
+        "optimized_power_upper_bound": 9,
+        "pressure_side_high_differential_order_upper": 2,
+        "pressure_side_velocity_capacity": 4,
+        "pressure_slots": [
+          {
+            "heat_degree": 0,
+            "jet_order": 1,
+            "label": "U1^0"
+          },
+          {
+            "heat_degree": 0,
+            "jet_order": 1,
+            "label": "U1^0"
+          }
+        ],
+        "slot_velocity_degrees": [
+          2,
+          2,
+          1,
+          0
+        ],
+        "test_slot": {
+          "heat_degree": 1,
+          "jet_order": 1,
+          "label": "U1^1"
+        },
+        "third_derivative_taylor_multiplier": 6.0,
+        "weight_slot": {
+          "heat_degree": 0,
+          "jet_order": 0,
+          "label": "Lambda0^0"
+        }
+      },
+      {
+        "external_velocity_degree": 1,
+        "heat_count": 1,
+        "high_leaf_count": 4,
+        "low_velocity_amplitude_power": 1,
+        "optimized_power_upper_bound": 11,
+        "pressure_side_high_differential_order_upper": 4,
+        "pressure_side_velocity_capacity": 4,
+        "pressure_slots": [
+          {
+            "heat_degree": 0,
+            "jet_order": 1,
+            "label": "U1^0"
+          },
+          {
+            "heat_degree": 1,
+            "jet_order": 2,
+            "label": "U2^1"
+          }
+        ],
+        "slot_velocity_degrees": [
+          2,
+          2,
+          1,
+          0
+        ],
+        "test_slot": {
+          "heat_degree": 0,
+          "jet_order": 0,
+          "label": "U0^0"
+        },
+        "third_derivative_taylor_multiplier": 6.0,
+        "weight_slot": {
+          "heat_degree": 0,
+          "jet_order": 0,
+          "label": "Lambda0^0"
+        }
+      },
+      {
+        "external_velocity_degree": 1,
+        "heat_count": 1,
+        "high_leaf_count": 4,
+        "low_velocity_amplitude_power": 1,
+        "optimized_power_upper_bound": 11,
+        "pressure_side_high_differential_order_upper": 4,
+        "pressure_side_velocity_capacity": 4,
+        "pressure_slots": [
+          {
+            "heat_degree": 1,
+            "jet_order": 1,
+            "label": "U1^1"
+          },
+          {
+            "heat_degree": 0,
+            "jet_order": 2,
+            "label": "U2^0"
+          }
+        ],
+        "slot_velocity_degrees": [
+          1,
+          3,
+          1,
+          0
+        ],
+        "test_slot": {
+          "heat_degree": 0,
+          "jet_order": 0,
+          "label": "U0^0"
+        },
+        "third_derivative_taylor_multiplier": 6.0,
+        "weight_slot": {
+          "heat_degree": 0,
+          "jet_order": 0,
+          "label": "Lambda0^0"
+        }
+      }
+    ],
+    "family_count": 13,
+    "family_count_by_heat": {
+      "0": 6,
+      "1": 7
+    },
+    "maximum_optimized_power_upper_bound": 11,
+    "r2_exception_absence_reason": "At heat count two the pressure sector has velocity degree four. The three total jet orders cannot place both heat operations outside the pressure pair, so that pair has capacity at most three; an external high leaf is forced."
+  },
+  "carrier_degree_ledger": {
+    "all_checks_pass": true,
+    "automatic_row_count": 22,
+    "common_formula_verified": true,
+    "common_nonzero_high_formula": "naive optimized power=h+8",
+    "dangerous_row_count": 6,
+    "dangerous_rows": [
+      {
+        "differential_order_upper_bound": 4,
+        "gains_required_for_O_N10": 2,
+        "heat_count": 0,
+        "high_leaf_count": 4,
+        "high_tuple_and_coefficient_power": 5,
+        "low_amplitude_power": 2,
+        "naive_optimized_power": 12,
+        "route": "mixed_fixed_output_protected_and_bounded_output_exception",
+        "sector": "pressure",
+        "velocity_degree": 6,
+        "weight_scale_degree": 1
+      },
+      {
+        "differential_order_upper_bound": 4,
+        "gains_required_for_O_N10": 4,
+        "heat_count": 0,
+        "high_leaf_count": 6,
+        "high_tuple_and_coefficient_power": 9,
+        "low_amplitude_power": 0,
+        "naive_optimized_power": 14,
+        "route": "compatible_stencil_closure_required",
+        "sector": "pressure",
+        "velocity_degree": 6,
+        "weight_scale_degree": 1
+      },
+      {
+        "differential_order_upper_bound": 5,
+        "gains_required_for_O_N10": 2,
+        "heat_count": 1,
+        "high_leaf_count": 4,
+        "high_tuple_and_coefficient_power": 5,
+        "low_amplitude_power": 1,
+        "naive_optimized_power": 12,
+        "route": "mixed_fixed_output_protected_and_bounded_output_exception",
+        "sector": "pressure",
+        "velocity_degree": 5,
+        "weight_scale_degree": 1
+      },
+      {
+        "differential_order_upper_bound": 6,
+        "gains_required_for_O_N10": 2,
+        "heat_count": 2,
+        "high_leaf_count": 4,
+        "high_tuple_and_coefficient_power": 5,
+        "low_amplitude_power": 0,
+        "naive_optimized_power": 12,
+        "route": "compatible_stencil_closure_required",
+        "sector": "pressure",
+        "velocity_degree": 4,
+        "weight_scale_degree": 1
+      },
+      {
+        "differential_order_upper_bound": 5,
+        "gains_required_for_O_N10": 2,
+        "heat_count": 0,
+        "high_leaf_count": 4,
+        "high_tuple_and_coefficient_power": 5,
+        "low_amplitude_power": 1,
+        "naive_optimized_power": 12,
+        "route": "compatible_stencil_closure_required",
+        "sector": "velocity_Fisher",
+        "velocity_degree": 5,
+        "weight_scale_degree": 1
+      },
+      {
+        "differential_order_upper_bound": 6,
+        "gains_required_for_O_N10": 2,
+        "heat_count": 1,
+        "high_leaf_count": 4,
+        "high_tuple_and_coefficient_power": 5,
+        "low_amplitude_power": 0,
+        "naive_optimized_power": 12,
+        "route": "compatible_stencil_closure_required",
+        "sector": "velocity_Fisher",
+        "velocity_degree": 4,
+        "weight_scale_degree": 1
+      }
+    ],
+    "row_count": 28,
+    "rows": [
+      {
+        "differential_order_upper_bound": 4,
+        "gains_required_for_O_N10": 0,
+        "heat_count": 0,
+        "high_leaf_count": 0,
+        "high_tuple_and_coefficient_power": 0,
+        "low_amplitude_power": 6,
+        "naive_optimized_power": 7,
+        "route": "automatic_O_N10_or_lower",
+        "sector": "pressure",
+        "velocity_degree": 6,
+        "weight_scale_degree": 1
+      },
+      {
+        "differential_order_upper_bound": 4,
+        "gains_required_for_O_N10": 0,
+        "heat_count": 0,
+        "high_leaf_count": 2,
+        "high_tuple_and_coefficient_power": 1,
+        "low_amplitude_power": 4,
+        "naive_optimized_power": 10,
+        "route": "automatic_O_N10_or_lower",
+        "sector": "pressure",
+        "velocity_degree": 6,
+        "weight_scale_degree": 1
+      },
+      {
+        "differential_order_upper_bound": 4,
+        "gains_required_for_O_N10": 2,
+        "heat_count": 0,
+        "high_leaf_count": 4,
+        "high_tuple_and_coefficient_power": 5,
+        "low_amplitude_power": 2,
+        "naive_optimized_power": 12,
+        "route": "mixed_fixed_output_protected_and_bounded_output_exception",
+        "sector": "pressure",
+        "velocity_degree": 6,
+        "weight_scale_degree": 1
+      },
+      {
+        "differential_order_upper_bound": 4,
+        "gains_required_for_O_N10": 4,
+        "heat_count": 0,
+        "high_leaf_count": 6,
+        "high_tuple_and_coefficient_power": 9,
+        "low_amplitude_power": 0,
+        "naive_optimized_power": 14,
+        "route": "compatible_stencil_closure_required",
+        "sector": "pressure",
+        "velocity_degree": 6,
+        "weight_scale_degree": 1
+      },
+      {
+        "differential_order_upper_bound": 5,
+        "gains_required_for_O_N10": 0,
+        "heat_count": 1,
+        "high_leaf_count": 0,
+        "high_tuple_and_coefficient_power": 0,
+        "low_amplitude_power": 5,
+        "naive_optimized_power": 6,
+        "route": "automatic_O_N10_or_lower",
+        "sector": "pressure",
+        "velocity_degree": 5,
+        "weight_scale_degree": 1
+      },
+      {
+        "differential_order_upper_bound": 5,
+        "gains_required_for_O_N10": 0,
+        "heat_count": 1,
+        "high_leaf_count": 2,
+        "high_tuple_and_coefficient_power": 1,
+        "low_amplitude_power": 3,
+        "naive_optimized_power": 10,
+        "route": "automatic_O_N10_or_lower",
+        "sector": "pressure",
+        "velocity_degree": 5,
+        "weight_scale_degree": 1
+      },
+      {
+        "differential_order_upper_bound": 5,
+        "gains_required_for_O_N10": 2,
+        "heat_count": 1,
+        "high_leaf_count": 4,
+        "high_tuple_and_coefficient_power": 5,
+        "low_amplitude_power": 1,
+        "naive_optimized_power": 12,
+        "route": "mixed_fixed_output_protected_and_bounded_output_exception",
+        "sector": "pressure",
+        "velocity_degree": 5,
+        "weight_scale_degree": 1
+      },
+      {
+        "differential_order_upper_bound": 6,
+        "gains_required_for_O_N10": 0,
+        "heat_count": 2,
+        "high_leaf_count": 0,
+        "high_tuple_and_coefficient_power": 0,
+        "low_amplitude_power": 4,
+        "naive_optimized_power": 5,
+        "route": "automatic_O_N10_or_lower",
+        "sector": "pressure",
+        "velocity_degree": 4,
+        "weight_scale_degree": 1
+      },
+      {
+        "differential_order_upper_bound": 6,
+        "gains_required_for_O_N10": 0,
+        "heat_count": 2,
+        "high_leaf_count": 2,
+        "high_tuple_and_coefficient_power": 1,
+        "low_amplitude_power": 2,
+        "naive_optimized_power": 10,
+        "route": "automatic_O_N10_or_lower",
+        "sector": "pressure",
+        "velocity_degree": 4,
+        "weight_scale_degree": 1
+      },
+      {
+        "differential_order_upper_bound": 6,
+        "gains_required_for_O_N10": 2,
+        "heat_count": 2,
+        "high_leaf_count": 4,
+        "high_tuple_and_coefficient_power": 5,
+        "low_amplitude_power": 0,
+        "naive_optimized_power": 12,
+        "route": "compatible_stencil_closure_required",
+        "sector": "pressure",
+        "velocity_degree": 4,
+        "weight_scale_degree": 1
+      },
+      {
+        "differential_order_upper_bound": 7,
+        "gains_required_for_O_N10": 0,
+        "heat_count": 3,
+        "high_leaf_count": 0,
+        "high_tuple_and_coefficient_power": 0,
+        "low_amplitude_power": 3,
+        "naive_optimized_power": 4,
+        "route": "automatic_O_N10_or_lower",
+        "sector": "pressure",
+        "velocity_degree": 3,
+        "weight_scale_degree": 1
+      },
+      {
+        "differential_order_upper_bound": 7,
+        "gains_required_for_O_N10": 0,
+        "heat_count": 3,
+        "high_leaf_count": 2,
+        "high_tuple_and_coefficient_power": 1,
+        "low_amplitude_power": 1,
+        "naive_optimized_power": 10,
+        "route": "automatic_O_N10_or_lower",
+        "sector": "pressure",
+        "velocity_degree": 3,
+        "weight_scale_degree": 1
+      },
+      {
+        "differential_order_upper_bound": 5,
+        "gains_required_for_O_N10": 0,
+        "heat_count": 0,
+        "high_leaf_count": 0,
+        "high_tuple_and_coefficient_power": 0,
+        "low_amplitude_power": 5,
+        "naive_optimized_power": 6,
+        "route": "automatic_O_N10_or_lower",
+        "sector": "velocity_Fisher",
+        "velocity_degree": 5,
+        "weight_scale_degree": 1
+      },
+      {
+        "differential_order_upper_bound": 5,
+        "gains_required_for_O_N10": 0,
+        "heat_count": 0,
+        "high_leaf_count": 2,
+        "high_tuple_and_coefficient_power": 1,
+        "low_amplitude_power": 3,
+        "naive_optimized_power": 10,
+        "route": "automatic_O_N10_or_lower",
+        "sector": "velocity_Fisher",
+        "velocity_degree": 5,
+        "weight_scale_degree": 1
+      },
+      {
+        "differential_order_upper_bound": 5,
+        "gains_required_for_O_N10": 2,
+        "heat_count": 0,
+        "high_leaf_count": 4,
+        "high_tuple_and_coefficient_power": 5,
+        "low_amplitude_power": 1,
+        "naive_optimized_power": 12,
+        "route": "compatible_stencil_closure_required",
+        "sector": "velocity_Fisher",
+        "velocity_degree": 5,
+        "weight_scale_degree": 1
+      },
+      {
+        "differential_order_upper_bound": 6,
+        "gains_required_for_O_N10": 0,
+        "heat_count": 1,
+        "high_leaf_count": 0,
+        "high_tuple_and_coefficient_power": 0,
+        "low_amplitude_power": 4,
+        "naive_optimized_power": 5,
+        "route": "automatic_O_N10_or_lower",
+        "sector": "velocity_Fisher",
+        "velocity_degree": 4,
+        "weight_scale_degree": 1
+      },
+      {
+        "differential_order_upper_bound": 6,
+        "gains_required_for_O_N10": 0,
+        "heat_count": 1,
+        "high_leaf_count": 2,
+        "high_tuple_and_coefficient_power": 1,
+        "low_amplitude_power": 2,
+        "naive_optimized_power": 10,
+        "route": "automatic_O_N10_or_lower",
+        "sector": "velocity_Fisher",
+        "velocity_degree": 4,
+        "weight_scale_degree": 1
+      },
+      {
+        "differential_order_upper_bound": 6,
+        "gains_required_for_O_N10": 2,
+        "heat_count": 1,
+        "high_leaf_count": 4,
+        "high_tuple_and_coefficient_power": 5,
+        "low_amplitude_power": 0,
+        "naive_optimized_power": 12,
+        "route": "compatible_stencil_closure_required",
+        "sector": "velocity_Fisher",
+        "velocity_degree": 4,
+        "weight_scale_degree": 1
+      },
+      {
+        "differential_order_upper_bound": 7,
+        "gains_required_for_O_N10": 0,
+        "heat_count": 2,
+        "high_leaf_count": 0,
+        "high_tuple_and_coefficient_power": 0,
+        "low_amplitude_power": 3,
+        "naive_optimized_power": 4,
+        "route": "automatic_O_N10_or_lower",
+        "sector": "velocity_Fisher",
+        "velocity_degree": 3,
+        "weight_scale_degree": 1
+      },
+      {
+        "differential_order_upper_bound": 7,
+        "gains_required_for_O_N10": 0,
+        "heat_count": 2,
+        "high_leaf_count": 2,
+        "high_tuple_and_coefficient_power": 1,
+        "low_amplitude_power": 1,
+        "naive_optimized_power": 10,
+        "route": "automatic_O_N10_or_lower",
+        "sector": "velocity_Fisher",
+        "velocity_degree": 3,
+        "weight_scale_degree": 1
+      },
+      {
+        "differential_order_upper_bound": 8,
+        "gains_required_for_O_N10": 0,
+        "heat_count": 3,
+        "high_leaf_count": 0,
+        "high_tuple_and_coefficient_power": 0,
+        "low_amplitude_power": 2,
+        "naive_optimized_power": 3,
+        "route": "automatic_O_N10_or_lower",
+        "sector": "velocity_Fisher",
+        "velocity_degree": 2,
+        "weight_scale_degree": 1
+      },
+      {
+        "differential_order_upper_bound": 8,
+        "gains_required_for_O_N10": 0,
+        "heat_count": 3,
+        "high_leaf_count": 2,
+        "high_tuple_and_coefficient_power": 1,
+        "low_amplitude_power": 0,
+        "naive_optimized_power": 10,
+        "route": "automatic_O_N10_or_lower",
+        "sector": "velocity_Fisher",
+        "velocity_degree": 2,
+        "weight_scale_degree": 1
+      },
+      {
+        "differential_order_upper_bound": 5,
+        "gains_required_for_O_N10": 0,
+        "heat_count": 0,
+        "high_leaf_count": 0,
+        "high_tuple_and_coefficient_power": 0,
+        "low_amplitude_power": 3,
+        "naive_optimized_power": 6,
+        "route": "automatic_O_N10_or_lower",
+        "sector": "weight_self",
+        "velocity_degree": 3,
+        "weight_scale_degree": 3
+      },
+      {
+        "differential_order_upper_bound": 5,
+        "gains_required_for_O_N10": 0,
+        "heat_count": 0,
+        "high_leaf_count": 2,
+        "high_tuple_and_coefficient_power": 1,
+        "low_amplitude_power": 1,
+        "naive_optimized_power": 10,
+        "route": "automatic_O_N10_or_lower",
+        "sector": "weight_self",
+        "velocity_degree": 3,
+        "weight_scale_degree": 3
+      },
+      {
+        "differential_order_upper_bound": 6,
+        "gains_required_for_O_N10": 0,
+        "heat_count": 1,
+        "high_leaf_count": 0,
+        "high_tuple_and_coefficient_power": 0,
+        "low_amplitude_power": 2,
+        "naive_optimized_power": 5,
+        "route": "automatic_O_N10_or_lower",
+        "sector": "weight_self",
+        "velocity_degree": 2,
+        "weight_scale_degree": 3
+      },
+      {
+        "differential_order_upper_bound": 6,
+        "gains_required_for_O_N10": 0,
+        "heat_count": 1,
+        "high_leaf_count": 2,
+        "high_tuple_and_coefficient_power": 1,
+        "low_amplitude_power": 0,
+        "naive_optimized_power": 10,
+        "route": "automatic_O_N10_or_lower",
+        "sector": "weight_self",
+        "velocity_degree": 2,
+        "weight_scale_degree": 3
+      },
+      {
+        "differential_order_upper_bound": 7,
+        "gains_required_for_O_N10": 0,
+        "heat_count": 2,
+        "high_leaf_count": 0,
+        "high_tuple_and_coefficient_power": 0,
+        "low_amplitude_power": 1,
+        "naive_optimized_power": 4,
+        "route": "automatic_O_N10_or_lower",
+        "sector": "weight_self",
+        "velocity_degree": 1,
+        "weight_scale_degree": 3
+      },
+      {
+        "differential_order_upper_bound": 8,
+        "gains_required_for_O_N10": 0,
+        "heat_count": 3,
+        "high_leaf_count": 0,
+        "high_tuple_and_coefficient_power": 0,
+        "low_amplitude_power": 0,
+        "naive_optimized_power": 3,
+        "route": "automatic_O_N10_or_lower",
+        "sector": "weight_self",
+        "velocity_degree": 0,
+        "weight_scale_degree": 3
+      }
+    ]
+  },
+  "certification_flags": {
+    "22_automatic_rows_O_N10_or_lower_certified": true,
+    "Navier_Stokes_global_regularity_proved": false,
+    "all_28_carrier_rows_partitioned": true,
+    "bounded_output_exception_inventory_certified": true,
+    "complete_restart_time_third_O_N11_proved": false,
+    "critical_L3_control_proved": false,
+    "exact_third_flow_heat_split_certified": true,
+    "finite_time_blowup_proved": false,
+    "finite_total_third_chain_rule_replayed": true,
+    "parabolic_window_turnaround_proved": false,
+    "uniform_parabolic_window_third_O_N11_proved": false
+  },
+  "compatible_stencil_route": {
+    "all_checks_pass": true,
+    "bounded_output_exception_rule": "If all four high leaves lie inside the two pressure inputs, the test and transported-weight velocity leaves may all be low and the outer pressure output is bounded. Do not differentiate that projector through its zero convention. Direct pressure-side derivative counting gives O(N^11) or better for all thirteen structural families.",
+    "exception_N11_family_count": 5,
+    "exception_family_count": 13,
+    "four_high_requirement": 2,
+    "internal_shell_obligation": "A depth-three discrete Leibniz and dyadic-shell lemma is still required for repeated differences through nested Euler/Leray outputs. The second-jet two-difference lemma does not by itself certify the four-difference all-high third-jet branch.",
+    "parity_gauged_vertex_difference_budget": 6,
+    "polynomial_trade_rule": "When a vertex difference hits an explicit q power, that monomial has already lost the same carrier power. Therefore explicit vertex powers consume cancellation order but do not erase the carrier gain.",
+    "pressure_projector_rule": "If a high leaf occurs outside the two outer pressure inputs, use it as the dependent resonance leaf. Then either the outer pressure output stays fixed or it stays at carrier scale, where degree-zero projector differences are regular.",
+    "protected_group_routes": [
+      {
+        "heat_count": 0,
+        "high_leaf_count": 4,
+        "required_gains": 2,
+        "sector": "pressure"
+      },
+      {
+        "heat_count": 0,
+        "high_leaf_count": 6,
+        "required_gains": 4,
+        "sector": "pressure"
+      },
+      {
+        "heat_count": 1,
+        "high_leaf_count": 4,
+        "required_gains": 2,
+        "sector": "pressure"
+      },
+      {
+        "heat_count": 2,
+        "high_leaf_count": 4,
+        "required_gains": 2,
+        "sector": "pressure"
+      },
+      {
+        "heat_count": 0,
+        "high_leaf_count": 4,
+        "required_gains": 2,
+        "sector": "velocity_Fisher"
+      },
+      {
+        "heat_count": 1,
+        "high_leaf_count": 4,
+        "required_gains": 2,
+        "sector": "velocity_Fisher"
+      }
+    ],
+    "restart_time_O_N11_certified": false,
+    "six_high_requirement": 4
+  },
+  "finite_replay_checks": {
+    "all_checks_pass": true,
+    "finite_difference_relative_residual_below_2e-5": true,
+    "flow_partition_residual_below_1e-8": true,
+    "padding_maximum_block_residual_below_1e-7": true,
+    "padding_relative_residual_below_1e-9": true,
+    "relative_divergence_residual_below_1e-9": true
+  },
+  "finite_spectral_replay": {
+    "coefficient_scale": 0.9,
+    "dealias_factor": 14,
+    "finite_difference_replay": {
+      "Richardson": 397399.8413929942,
+      "absolute_residual": 0.017795891559217125,
+      "coarse": 397872.6057854431,
+      "epsilon": 0.0002,
+      "evaluation_count": 6,
+      "exact_multilinear": 397399.8591888858,
+      "fine": 397518.0324911064,
+      "relative_residual": 4.478081999208426e-08
+    },
+    "grid_point_count": 178200,
+    "grid_shape": [
+      198,
+      30,
+      30
+    ],
+    "multilinear_replay": {
+      "heat_block_totals": {
+        "0": -0.09128004971843723,
+        "1": 371.6106292397538,
+        "2": 7134.08094162197,
+        "3": 389894.25889807375
+      },
+      "pressure_pair_cache_count": 19,
+      "sector_heat_blocks": {
+        "pressure": {
+          "0": -0.5249011636518937,
+          "1": 132.33018246342039,
+          "2": 1333.7953738230115,
+          "3": -177203.38428296513
+        },
+        "velocity_Fisher": {
+          "0": 0.4384030635471325,
+          "1": 240.2696768651797,
+          "2": 5800.285567798958,
+          "3": 567099.1083001795
+        },
+        "weight_self": {
+          "0": -0.004781949613676055,
+          "1": -0.989230088846293,
+          "2": 4.802343832488579e-16,
+          "3": -1.4651191406250001
+        }
+      },
+      "sector_totals": {
+        "pressure": -175737.78362784235,
+        "velocity_Fisher": 573140.1019479071,
+        "weight_self": -2.459131179084969
+      },
+      "total_third_derivative": 397399.8591888858
+    },
+    "runtime_seconds": 10.301086500025121,
+    "size": 5,
+    "third_flow_partition_residuals": {
+      "velocity": 5.821335671419174e-11,
+      "weight": 2.0358603163340204e-14
+    },
+    "third_velocity_divergence_residuals": {
+      "0": 1.1023202181677318e-09,
+      "1": 1.8872007635053466e-07,
+      "2": 8.874398243559606e-06,
+      "3": 1.1641532182693481e-10
+    },
+    "third_velocity_relative_divergence_residuals": {
+      "0": 1.3587345847485122e-12,
+      "1": 1.0502492038568653e-11,
+      "2": 5.050378483565135e-11,
+      "3": 1.7478077326538446e-16
+    },
+    "viscosity": 1.0,
+    "xy_amplitude": 0.7,
+    "yz_amplitude": 0.7
+  },
+  "kind": "annular_parallel_shear_third_jet_route_guard_audit",
+  "padding_replay": {
+    "base_dealias_factor": 14,
+    "base_grid_shape": [
+      198,
+      30,
+      30
+    ],
+    "maximum_sector_heat_residual": 4.5565684558823705e-10,
+    "maximum_sector_heat_residual_key": "velocity_Fisher::heat_2",
+    "padded_dealias_factor": 16,
+    "padded_grid_shape": [
+      225,
+      33,
+      33
+    ],
+    "relative_total_residual": 4.394138012449652e-16,
+    "total_third_derivative_residual": 1.7462298274040222e-10
+  },
+  "prerequisite_audit": {
+    "all_checks_pass": true,
+    "rows": [
+      {
+        "actual_sha256": "1e7753a5280c136bbe34770a17d929f73cc7398579906f51e316c738ee660da0",
+        "expected_sha256": "1e7753a5280c136bbe34770a17d929f73cc7398579906f51e316c738ee660da0",
+        "passed": true,
+        "path": "work/ns_collision/results/annular_parallel_shear_finite_jet_port_audit_v1.json"
+      },
+      {
+        "actual_sha256": "74722ffabf83612a51fdd0f3ab71e90c7b6fd68c5b4eb15b6b5ed040876e5046",
+        "expected_sha256": "74722ffabf83612a51fdd0f3ab71e90c7b6fd68c5b4eb15b6b5ed040876e5046",
+        "passed": true,
+        "path": "work/ns_collision/results/annular_parallel_shear_euler_transport_fisher_exclusion_audit_v1.json"
+      },
+      {
+        "actual_sha256": "e3ccdc9a380edf818943450203b0659d0a45b6a5b8255658c5a03681e8213c95",
+        "expected_sha256": "e3ccdc9a380edf818943450203b0659d0a45b6a5b8255658c5a03681e8213c95",
+        "passed": true,
+        "path": "work/ns_collision/results/annular_parallel_shear_heat_block_exclusion_audit_v1.json"
+      }
+    ]
+  },
+  "remaining_gate": "Prove a depth-three compatible-difference/dyadic-shell bound for the protected four- and six-high rows, retaining an explicit O(N^11) constant. Then propagate that bound uniformly along 0<=s<=T/N^2 and compare T with c2/(2C3).",
+  "route_guard_conclusion": "Twenty-two of twenty-eight sector/heat/incidence rows are automatically O(N^10) or lower. Six high-incidence rows need compatible-stencil closure. Thirteen bounded-output pressure families occur only at heat counts zero and one; direct pressure-side counting bounds each by O(N^11), and five can saturate that exponent. The remaining missing restart-time step is a depth-three internal-output shell lemma for the protected rows. Even after that, a dynamic bootstrap is required to make the bound uniform on the parabolic window.",
+  "runtime_seconds": 23.52453809999861,
+  "scope": "Exact third-flow heat split, exhaustive carrier-degree triage, bounded-output pressure exception inventory, and finite spectral chain-rule replay. This is a route guard, not a uniform third-derivative theorem.",
+  "status": "passed_route_guard",
+  "third_flow_identity_certificate": {
+    "X": "(E,A)=(-P[(u dot grad)u],-u dot grad lambda)",
+    "Y": "(V,D)=(nu Delta u,-nu Delta lambda)",
+    "all_checks_pass": true,
+    "binomial_multiplicities": [
+      1,
+      3,
+      3,
+      1
+    ],
+    "second_state_blocks": {
+      "z20": "DX X",
+      "z21": "DX Y+DY X",
+      "z22": "DY Y"
+    },
+    "state": "z=(u,lambda)",
+    "third_scalar_blocks": {
+      "heat_0": "D3g[X,X,X]+3D2g[X,z20]+Dg[z30]",
+      "heat_1": "3D3g[X,X,Y]+3D2g[Y,z20]+3D2g[X,z21]+Dg[z31]",
+      "heat_2": "3D3g[X,Y,Y]+3D2g[Y,z21]+3D2g[X,z22]+Dg[z32]",
+      "heat_3": "D3g[Y,Y,Y]+3D2g[Y,z22]+Dg[z33]"
+    },
+    "third_state_blocks": {
+      "z30": "D2X[X,X]+DX z20",
+      "z31": "2D2X[X,Y]+DX z21+DY z20",
+      "z32": "D2X[Y,Y]+DX z22+DY z21",
+      "z33": "DY z22"
+    }
+  },
+  "uniform_Taylor_threshold": {
+    "all_checks_pass": true,
+    "assumptions": [
+      "g_N''(0)<=-c2 N^9 for all sufficiently large N",
+      "sup_{0<=s<=T/N^2}|g_N'''(s)|<=C3 N^11 with constants c2,C3>0 independent of N"
+    ],
+    "consequence": "g_N''(s)<=-(c2/2)N^9 on the window",
+    "correction_to_previous_target": "Uniform O(N^11), with an explicit constant, is sufficient; o(N^11) is stronger than necessary.",
+    "curvature_bound": "g_N''(s)<=-(c2-C3 T)N^9",
+    "integrated_generator_bound": "integral_0^delta g_N(s) ds <= g_N(0)delta+g_N'(0)delta^2/2-c2 N^9 delta^3/12, delta=T/N^2",
+    "leading_integrated_curvature_scale": "-(c2 T^3/12)N^3",
+    "restart_time_bound_is_not_enough": "The estimate must hold along the evolving coupled Navier-Stokes/adjoint trajectory, not only at s=0.",
+    "sufficient_window_condition": "0<T<=c2/(2 C3)"
+  }
+}

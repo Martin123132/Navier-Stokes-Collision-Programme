@@ -1,0 +1,69 @@
+{
+  "all_first_endpoint_boundary_checks_pass": true,
+  "below_normal_priority_set": true,
+  "boundary_operator": {
+    "central_spectral_norm": 159.65245618244654,
+    "exact_operator_difference_upper": 4.589854796323987e-13,
+    "exact_operator_norm_upper": 159.65245618244703,
+    "geometry_relative_error_upper": 2.1036870797595744e-16,
+    "maximum_sparse_product_roundoff_upper": 1.2735022674247463e-18
+  },
+  "checks": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "elapsed_seconds": 4.12618050002493,
+  "endpoint": {
+    "central_maximizing_entry_index": 58,
+    "entry_count": 112,
+    "maximizing_entry_index": 58,
+    "maximum_boundary_l2_difference_upper": 0.0006491371392653222,
+    "maximum_boundary_l2_error_upper": 1.9325558293659325e-05,
+    "maximum_central_boundary_l2_difference": 0.0006301705554518929,
+    "time": 0.375
+  },
+  "first_endpoint_stored_chain_boundary_leakage_certified": true,
+  "kind": "neutral_strip_first_endpoint_boundary_leakage_certificate",
+  "later_endpoint_boundary_leakage_certified": false,
+  "model": "exact stored modified-chain point-source semigroup minus the exact frozen-trial Galerkin semigroup at t=3/8, observed in common-circle boundary L2",
+  "next_required_step": "Propagate the certified one-step action and reduced-state error through the remaining 15 endpoint steps, then replace endpoint samples by within-window suprema and certify the post-time-6 tail before charging the screen.",
+  "post_terminal_time_tail_certified": false,
+  "premise_artifacts": {
+    "eigen_cache": "work\\ns_collision\\results\\neutral_strip_h006_q12_k241_reference_eigensystem_v1.npz",
+    "eigen_cache_sha256": "8994f7b90409db710a69bda72073dacf83722c790384d1f6bb4fcfc468e6c66e",
+    "projected_result": "work\\ns_collision\\results\\neutral_strip_h006_projected_interval_two_block_transfer_v1.json",
+    "projected_result_sha256": "be566888d8165cdd96948d241aaa61df732e0d26445af74026ceef1b46e5a2f2",
+    "recurrence_result": "work\\ns_collision\\results\\neutral_strip_h006_chebyshev_recurrence_roundoff_v1.json",
+    "recurrence_result_sha256": "e60ccb744439727e96dd722ddf461d32e28d89d8f50b580610136e05d2868320",
+    "recurrence_state_cache": "work\\ns_collision\\results\\neutral_strip_h006_chebyshev_recurrence_roundoff_v1.npz",
+    "recurrence_state_cache_sha256": "7773d53b1e68abbd7cdb7317a7032c5bacf3f0b25ea1c4387386803849c41818",
+    "two_block_result": "work\\ns_collision\\results\\neutral_strip_h006_modified_two_block_leakage_v1.json",
+    "two_block_result_sha256": "ff39fff9ec109c1d273bab71c23392c61363e04496648e4c1d8748f82076010f"
+  },
+  "reduced_galerkin_transfer": {
+    "cholesky_residual_upper": 8.579357369564846e-13,
+    "eigensystem_generator_error_upper": 1.7991015422561377e-10,
+    "exact_reduced_generator_error_upper": 9.379291655033553e-08,
+    "reduced_dense_arithmetic_state_error_upper": 2.2030930640788978e-10,
+    "reduced_form_transfer_state_error_upper": 1.2031610681750426e-07,
+    "restricted_mass_error_upper": 5.548685911566524e-10,
+    "restricted_stiffness_error_upper": 3.691845665502229e-08,
+    "semigroup_generator_difference_upper": 1.505105552307815e-08,
+    "source_coordinate_error_upper": 4.289990127868637e-09,
+    "source_triangular_solve_error_upper": 4.278687467444621e-13,
+    "transformed_generator_solve_error_upper": 1.6472702541246356e-13,
+    "trial_triangular_solve_error_upper": 8.515957598998822e-13
+  },
+  "scope": "This certificate concerns the stored binary finite chain and its frozen 240-column trial space at one endpoint. It is not a continuum Ritz transfer, polygon-circle domain transfer, full time-slab bound, or Navier-Stokes regularity proof.",
+  "screen_updated": false,
+  "within_window_supremum_certified": false
+}

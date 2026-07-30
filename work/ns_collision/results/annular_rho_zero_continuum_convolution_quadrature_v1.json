@@ -1,0 +1,724 @@
+{
+  "algorithm_revision": "annular-rho-zero-continuum-convolution-quadrature-v1",
+  "all_positive_checks_pass": true,
+  "certification_flags": {
+    "Euler_energy_trace_replayed": true,
+    "Navier_Stokes_global_regularity_proved": false,
+    "continuum_sign_interval_certified": false,
+    "continuum_sign_numerically_stable": true,
+    "critical_L3_controlled": false,
+    "finite_parabolic_window_controlled": false,
+    "finite_time_blowup_proved": false,
+    "four_high_N9_coefficient_certified": false,
+    "fourfold_quartic_dealiasing_proved": true,
+    "uniform_second_jet_Taylor_bound_proved": false
+  },
+  "dealias_certificate": {
+    "factor": 4,
+    "reason": "The two diagnostics are quartic means: ||B(H,H)||_2^2 and <B(H,B(H,H)),H>. A grid length greater than four times each one-field maximum prevents wraparound into the zero mode."
+  },
+  "fixed_output_cross_replay": {
+    "all_checks_pass": true,
+    "interpretation": "The difference is the finite q/N shift and sampled-profile error. Agreement is a cross-replay, not an interval bound.",
+    "largest_common_absolute_difference": 3.0832046619099004e-09,
+    "largest_common_size": 29,
+    "rows": [
+      {
+        "absolute_difference": 6.17567575605441e-08,
+        "difference": -6.17567575605441e-08,
+        "fixed_output_active_over_N7": -1.0133663078691106e-06,
+        "size": 9,
+        "zero_shift_continuum_quadrature": -9.516095503085665e-07
+      },
+      {
+        "absolute_difference": 2.227841550623785e-08,
+        "difference": -2.227841550623785e-08,
+        "fixed_output_active_over_N7": -7.069159863331072e-07,
+        "size": 13,
+        "zero_shift_continuum_quadrature": -6.846375708268693e-07
+      },
+      {
+        "absolute_difference": 1.1146278120399952e-08,
+        "difference": -1.1146278120399952e-08,
+        "fixed_output_active_over_N7": -5.812247462135592e-07,
+        "size": 17,
+        "zero_shift_continuum_quadrature": -5.700784680931592e-07
+      },
+      {
+        "absolute_difference": 6.617377876993671e-09,
+        "difference": -6.617377876993671e-09,
+        "fixed_output_active_over_N7": -5.139165210008911e-07,
+        "size": 21,
+        "zero_shift_continuum_quadrature": -5.072991431238975e-07
+      },
+      {
+        "absolute_difference": 4.361290100224368e-09,
+        "difference": -4.361290100224368e-09,
+        "fixed_output_active_over_N7": -4.7225460007074697e-07,
+        "size": 25,
+        "zero_shift_continuum_quadrature": -4.678933099705226e-07
+      },
+      {
+        "absolute_difference": 3.0832046619099004e-09,
+        "difference": -3.0832046619099004e-09,
+        "fixed_output_active_over_N7": -4.4401498267026663e-07,
+        "size": 29,
+        "zero_shift_continuum_quadrature": -4.4093177800835673e-07
+      }
+    ]
+  },
+  "inverse_N_fits": {
+    "combined_continuum_quadrature": [
+      {
+        "candidate_limit": -2.4788904347997906e-07,
+        "certification_status": "diagnostic_only",
+        "degree_in_inverse_N": 1,
+        "maximum_replay_residual": 4.167519993806071e-08
+      },
+      {
+        "candidate_limit": -3.0527224742978333e-07,
+        "certification_status": "diagnostic_only",
+        "degree_in_inverse_N": 2,
+        "maximum_replay_residual": 2.1968179485141128e-09
+      },
+      {
+        "candidate_limit": -2.9908397692736293e-07,
+        "certification_status": "diagnostic_only",
+        "degree_in_inverse_N": 3,
+        "maximum_replay_residual": 3.145701779316999e-11
+      },
+      {
+        "candidate_limit": -2.993914611825339e-07,
+        "certification_status": "diagnostic_only",
+        "degree_in_inverse_N": 4,
+        "maximum_replay_residual": 2.2445415002096496e-13
+      }
+    ],
+    "first_form_continuum_quadrature": [
+      {
+        "candidate_limit": 1.423742284439825e-07,
+        "certification_status": "diagnostic_only",
+        "degree_in_inverse_N": 1,
+        "maximum_replay_residual": 2.409553568729451e-08
+      },
+      {
+        "candidate_limit": 1.755738819109448e-07,
+        "certification_status": "diagnostic_only",
+        "degree_in_inverse_N": 2,
+        "maximum_replay_residual": 1.2253654978312136e-09
+      },
+      {
+        "candidate_limit": 1.7210832804986146e-07,
+        "certification_status": "diagnostic_only",
+        "degree_in_inverse_N": 3,
+        "maximum_replay_residual": 1.2720554278116196e-11
+      },
+      {
+        "candidate_limit": 1.7223422482615112e-07,
+        "certification_status": "diagnostic_only",
+        "degree_in_inverse_N": 4,
+        "maximum_replay_residual": 3.602846508041686e-13
+      }
+    ],
+    "second_form_continuum_quadrature": [
+      {
+        "candidate_limit": -3.9026327192396155e-07,
+        "certification_status": "diagnostic_only",
+        "degree_in_inverse_N": 1,
+        "maximum_replay_residual": 6.577073562535543e-08
+      },
+      {
+        "candidate_limit": -4.808461293407282e-07,
+        "certification_status": "diagnostic_only",
+        "degree_in_inverse_N": 2,
+        "maximum_replay_residual": 3.422183446345644e-09
+      },
+      {
+        "candidate_limit": -4.7119230497722437e-07,
+        "certification_status": "diagnostic_only",
+        "degree_in_inverse_N": 3,
+        "maximum_replay_residual": 4.4177572070862667e-11
+      },
+      {
+        "candidate_limit": -4.7162568600868353e-07,
+        "certification_status": "diagnostic_only",
+        "degree_in_inverse_N": 4,
+        "maximum_replay_residual": 1.358305008361432e-13
+      }
+    ]
+  },
+  "kind": "annular_rho_zero_continuum_convolution_quadrature",
+  "prerequisite": {
+    "actual_sha256": "6b29ef28146f86d87ba4eeb22de596083d8b18fa451394b5f3ade69b1353d072",
+    "expected_sha256": "6b29ef28146f86d87ba4eeb22de596083d8b18fa451394b5f3ade69b1353d072",
+    "path": "work/ns_collision/results/annular_rho_zero_fixed_output_continuum_gate_audit_v1.json"
+  },
+  "route_decision": {
+    "continuum_sign_interval_certified": false,
+    "continuum_sign_numerically_stable": true,
+    "next_action": "Convert the convolution quadrature into an interval enclosure by bounding profile sampling, Fourier projection, and inverse-N extrapolation errors. Do not use fit agreement as the sign proof.",
+    "nonzero_N9_coefficient_certified": false
+  },
+  "rows": [
+    {
+      "acceleration_pair_components_over_N7": [
+        -1.6848304403049429e-07,
+        -3.2676740467693284e-08,
+        -1.0650902219215842e-05
+      ],
+      "all_checks_pass": true,
+      "combined_continuum_quadrature": -9.516095503085665e-07,
+      "divergence_residuals": {
+        "G": 2.5876491807594753e-15,
+        "H": 2.7755575615628914e-17,
+        "V": 6.102974028920904e-16
+      },
+      "energy_trace_relative_residual": 0.0,
+      "first_form_continuum_quadrature": 5.500342977295516e-07,
+      "grid_point_count": 34020,
+      "grid_shape": [
+        105,
+        18,
+        18
+      ],
+      "maximum_divergence_residual": 2.5876491807594753e-15,
+      "runtime_seconds": 0.045054699992761016,
+      "second_form_continuum_quadrature": -1.5016438480381182e-06,
+      "size": 9,
+      "velocity_energy_components_over_N7": [
+        4.579337768721417e-06,
+        4.673063301255857e-06,
+        1.2451722937450785e-05
+      ]
+    },
+    {
+      "acceleration_pair_components_over_N7": [
+        -1.1471992344874087e-07,
+        -2.193404754251092e-08,
+        -7.659469874637153e-06
+      ],
+      "all_checks_pass": true,
+      "combined_continuum_quadrature": -6.846375708268693e-07,
+      "divergence_residuals": {
+        "G": 3.282268352439995e-15,
+        "H": 2.7755575615628914e-17,
+        "V": 2.3314683517128287e-15
+      },
+      "energy_trace_relative_residual": 1.161978239732534e-16,
+      "first_form_continuum_quadrature": 3.954731041518963e-07,
+      "grid_point_count": 96250,
+      "grid_shape": [
+        154,
+        25,
+        25
+      ],
+      "maximum_divergence_residual": 3.282268352439995e-15,
+      "runtime_seconds": 0.2026110000006156,
+      "second_form_continuum_quadrature": -1.0801106749787656e-06,
+      "size": 13,
+      "velocity_energy_components_over_N7": [
+        3.2914939382988836e-06,
+        3.3539597392519645e-06,
+        8.946794013705958e-06
+      ]
+    },
+    {
+      "acceleration_pair_components_over_N7": [
+        -9.244947514389949e-08,
+        -1.75622823487385e-08,
+        -6.37547714345525e-06
+      ],
+      "all_checks_pass": true,
+      "combined_continuum_quadrature": -5.700784680931592e-07,
+      "divergence_residuals": {
+        "G": 3.820464312819159e-15,
+        "H": 2.7755575615628914e-17,
+        "V": 4.349300227189351e-15
+      },
+      "energy_trace_relative_residual": 0.0,
+      "first_form_continuum_quadrature": 3.2906647440586895e-07,
+      "grid_point_count": 228690,
+      "grid_shape": [
+        210,
+        33,
+        33
+      ],
+      "maximum_divergence_residual": 4.349300227189351e-15,
+      "runtime_seconds": 0.5064685000106692,
+      "second_form_continuum_quadrature": -8.991449424990282e-07,
+      "size": 17,
+      "velocity_energy_components_over_N7": [
+        2.7391503172460407e-06,
+        2.789062387189474e-06,
+        7.442765097460262e-06
+      ]
+    },
+    {
+      "acceleration_pair_components_over_N7": [
+        -8.051517369503369e-08,
+        -1.5239540803426766e-08,
+        -5.671901873968021e-06
+      ],
+      "all_checks_pass": true,
+      "combined_continuum_quadrature": -5.072991431238975e-07,
+      "divergence_residuals": {
+        "G": 4.3055609360779314e-15,
+        "H": 2.7755575615628914e-17,
+        "V": 6.42302615658627e-15
+      },
+      "energy_trace_relative_residual": 0.0,
+      "first_form_continuum_quadrature": 2.9267371580874284e-07,
+      "grid_point_count": 441000,
+      "grid_shape": [
+        250,
+        42,
+        42
+      ],
+      "maximum_divergence_residual": 6.42302615658627e-15,
+      "runtime_seconds": 0.9104606000037165,
+      "second_form_continuum_quadrature": -7.999728589326403e-07,
+      "size": 21,
+      "velocity_energy_components_over_N7": [
+        2.4365719216411914e-06,
+        2.47985493641162e-06,
+        6.618886318880151e-06
+      ]
+    },
+    {
+      "acceleration_pair_components_over_N7": [
+        -7.313819113506388e-08,
+        -1.3811098178913914e-08,
+        -5.23032932807797e-06
+      ],
+      "all_checks_pass": true,
+      "combined_continuum_quadrature": -4.678933099705226e-07,
+      "divergence_residuals": {
+        "G": 6.323388198165104e-15,
+        "H": 4.163336342344337e-17,
+        "V": 7.568499409060762e-15
+      },
+      "energy_trace_relative_residual": 0.0,
+      "first_form_continuum_quadrature": 2.6983377293845094e-07,
+      "grid_point_count": 713097,
+      "grid_shape": [
+        297,
+        49,
+        49
+      ],
+      "maximum_divergence_residual": 7.568499409060762e-15,
+      "runtime_seconds": 1.4714748999977019,
+      "second_form_continuum_quadrature": -7.377270829089735e-07,
+      "size": 25,
+      "velocity_energy_components_over_N7": [
+        2.246696947766977e-06,
+        2.2859172371291613e-06,
+        6.101943049887757e-06
+      ]
+    },
+    {
+      "acceleration_pair_components_over_N7": [
+        -6.814683541670607e-08,
+        -1.2847884078071637e-08,
+        -4.928236971585738e-06
+      ],
+      "all_checks_pass": true,
+      "combined_continuum_quadrature": -4.4093177800835673e-07,
+      "divergence_residuals": {
+        "G": 7.493548262035383e-15,
+        "H": 4.163336342344337e-17,
+        "V": 8.589792328934104e-15
+      },
+      "energy_trace_relative_residual": 0.0,
+      "first_form_continuum_quadrature": 2.542092131810486e-07,
+      "grid_point_count": 1260000,
+      "grid_shape": [
+        350,
+        60,
+        60
+      ],
+      "maximum_divergence_residual": 8.589792328934104e-15,
+      "runtime_seconds": 2.671570699996664,
+      "second_form_continuum_quadrature": -6.951409911894053e-07,
+      "size": 29,
+      "velocity_energy_components_over_N7": [
+        2.1168096074628023e-06,
+        2.1532963025449523e-06,
+        5.7483574721532755e-06
+      ]
+    },
+    {
+      "acceleration_pair_components_over_N7": [
+        -6.455289313067959e-08,
+        -1.2156026407326711e-08,
+        -4.708889055781267e-06
+      ],
+      "all_checks_pass": true,
+      "combined_continuum_quadrature": -4.213533905042982e-07,
+      "divergence_residuals": {
+        "G": 8.102288664942076e-15,
+        "H": 4.163336342344337e-17,
+        "V": 9.794943404793737e-15
+      },
+      "energy_trace_relative_residual": 0.0,
+      "first_form_continuum_quadrature": 2.428649643943317e-07,
+      "grid_point_count": 1724976,
+      "grid_shape": [
+        396,
+        66,
+        66
+      ],
+      "maximum_divergence_residual": 9.794943404793737e-15,
+      "runtime_seconds": 3.6127584999921964,
+      "second_form_continuum_quadrature": -6.642183548986299e-07,
+      "size": 33,
+      "velocity_energy_components_over_N7": [
+        2.0225048194406e-06,
+        2.05703093324036e-06,
+        5.4916601979575875e-06
+      ]
+    },
+    {
+      "acceleration_pair_components_over_N7": [
+        -6.184512234446357e-08,
+        -1.163571660336952e-08,
+        -4.542535436078074e-06
+      ],
+      "all_checks_pass": true,
+      "combined_continuum_quadrature": -4.0650403753414086e-07,
+      "divergence_residuals": {
+        "G": 9.349354959957249e-15,
+        "H": 4.163336342344337e-17,
+        "V": 1.1251673927562307e-14
+      },
+      "energy_trace_relative_residual": 0.0,
+      "first_form_continuum_quadrature": 2.3426194576921703e-07,
+      "grid_point_count": 2480625,
+      "grid_shape": [
+        441,
+        75,
+        75
+      ],
+      "maximum_divergence_residual": 1.1251673927562307e-14,
+      "runtime_seconds": 5.1779450999893015,
+      "second_form_continuum_quadrature": -6.407659833033579e-07,
+      "size": 37,
+      "velocity_energy_components_over_N7": [
+        1.9509872893846927e-06,
+        1.9840405260598745e-06,
+        5.297004734607246e-06
+      ]
+    },
+    {
+      "acceleration_pair_components_over_N7": [
+        -5.973347633862896e-08,
+        -1.1230533547114805e-08,
+        -4.412115354530901e-06
+      ],
+      "all_checks_pass": true,
+      "combined_continuum_quadrature": -3.9486153740074044e-07,
+      "divergence_residuals": {
+        "G": 1.5201718644620028e-14,
+        "H": 4.163336342344337e-17,
+        "V": 1.3280302460275611e-14
+      },
+      "energy_trace_relative_residual": 2.6667156793188667e-16,
+      "first_form_continuum_quadrature": 2.2751756262697568e-07,
+      "grid_point_count": 3214890,
+      "grid_shape": [
+        490,
+        81,
+        81
+      ],
+      "maximum_divergence_residual": 1.5201718644620028e-14,
+      "runtime_seconds": 6.746333599992795,
+      "second_form_continuum_quadrature": -6.223791000277161e-07,
+      "size": 41,
+      "velocity_energy_components_over_N7": [
+        1.8949200492487224e-06,
+        1.926827226066587e-06,
+        5.144411453517978e-06
+      ]
+    },
+    {
+      "acceleration_pair_components_over_N7": [
+        -5.80415395838009e-08,
+        -1.0906255567011206e-08,
+        -4.307160401986642e-06
+      ],
+      "all_checks_pass": true,
+      "combined_continuum_quadrature": -3.8549180886230907e-07,
+      "divergence_residuals": {
+        "G": 1.4543139372009196e-14,
+        "H": 4.163336342344337e-17,
+        "V": 1.499840000413654e-14
+      },
+      "energy_trace_relative_residual": 1.4238508247780042e-16,
+      "first_form_continuum_quadrature": 2.2209027926451955e-07,
+      "grid_point_count": 4365900,
+      "grid_shape": [
+        539,
+        90,
+        90
+      ],
+      "maximum_divergence_residual": 1.499840000413654e-14,
+      "runtime_seconds": 9.133426800006418,
+      "second_form_continuum_quadrature": -6.075820881268286e-07,
+      "size": 45,
+      "velocity_energy_components_over_N7": [
+        1.8498014958394377e-06,
+        1.8807920241821768e-06,
+        5.021622874253294e-06
+      ]
+    },
+    {
+      "acceleration_pair_components_over_N7": [
+        -5.665601128119704e-08,
+        -1.0640952902674846e-08,
+        -4.220897995611928e-06
+      ],
+      "all_checks_pass": true,
+      "combined_continuum_quadrature": -3.7779049913000924e-07,
+      "divergence_residuals": {
+        "G": 1.2831281367533677e-14,
+        "H": 4.163336342344337e-17,
+        "V": 1.6700977335895625e-14
+      },
+      "energy_trace_relative_residual": 1.6011169390955165e-16,
+      "first_form_continuum_quadrature": 2.1762976195761726e-07,
+      "grid_point_count": 5647152,
+      "grid_shape": [
+        588,
+        98,
+        98
+      ],
+      "maximum_divergence_residual": 1.6700977335895625e-14,
+      "runtime_seconds": 11.946174199998495,
+      "second_form_continuum_quadrature": -5.954202610876265e-07,
+      "size": 49,
+      "velocity_energy_components_over_N7": [
+        1.8127194633428923e-06,
+        1.8429604234419e-06,
+        4.920710032806806e-06
+      ]
+    },
+    {
+      "acceleration_pair_components_over_N7": [
+        -5.550087480653886e-08,
+        -1.0419938908163894e-08,
+        -4.148755987981558e-06
+      ],
+      "all_checks_pass": true,
+      "combined_continuum_quadrature": -3.7134958473339313e-07,
+      "divergence_residuals": {
+        "G": 1.3145176130919735e-14,
+        "H": 4.163336342344337e-17,
+        "V": 1.8166771529915966e-14
+      },
+      "energy_trace_relative_residual": 1.881069172224643e-16,
+      "first_form_continuum_quadrature": 2.1389951189231533e-07,
+      "grid_point_count": 7056000,
+      "grid_shape": [
+        640,
+        105,
+        105
+      ],
+      "maximum_divergence_residual": 1.8166771529915966e-14,
+      "runtime_seconds": 14.826951399998507,
+      "second_form_continuum_quadrature": -5.852490966257085e-07,
+      "size": 53,
+      "velocity_energy_components_over_N7": [
+        1.7817080489573982e-06,
+        1.8113248237020743e-06,
+        4.83632073073305e-06
+      ]
+    },
+    {
+      "acceleration_pair_components_over_N7": [
+        -5.452326554151381e-08,
+        -1.0233015378211599e-08,
+        -4.087537802392e-06
+      ],
+      "all_checks_pass": true,
+      "combined_continuum_quadrature": -3.6588378288887166e-07,
+      "divergence_residuals": {
+        "G": 1.8447216757855774e-14,
+        "H": 2.7755575615628914e-17,
+        "V": 1.8073289316106343e-14
+      },
+      "energy_trace_relative_residual": 1.1473291713183646e-16,
+      "first_form_continuum_quadrature": 2.1073418988349267e-07,
+      "grid_point_count": 9878400,
+      "grid_shape": [
+        686,
+        120,
+        120
+      ],
+      "maximum_divergence_residual": 1.8447216757855774e-14,
+      "runtime_seconds": 20.40891329999431,
+      "second_form_continuum_quadrature": -5.766179727723643e-07,
+      "size": 57,
+      "velocity_energy_components_over_N7": [
+        1.7553928612874101e-06,
+        1.7844819057233087e-06,
+        4.764713399612733e-06
+      ]
+    },
+    {
+      "acceleration_pair_components_over_N7": [
+        -5.368530072775927e-08,
+        -1.0072883612833328e-08,
+        -4.034942183569907e-06
+      ],
+      "all_checks_pass": true,
+      "combined_continuum_quadrature": -3.6118770423908733e-07,
+      "divergence_residuals": {
+        "G": 1.76721336139097e-14,
+        "H": 4.163336342344337e-17,
+        "V": 2.0750364003037027e-14
+      },
+      "energy_trace_relative_residual": 2.892045395088057e-16,
+      "first_form_continuum_quadrature": 2.0801477083875242e-07,
+      "grid_point_count": 10673289,
+      "grid_shape": [
+        729,
+        121,
+        121
+      ],
+      "maximum_divergence_residual": 2.0750364003037027e-14,
+      "runtime_seconds": 24.00367059999553,
+      "second_form_continuum_quadrature": -5.692024750778398e-07,
+      "size": 61,
+      "velocity_energy_components_over_N7": [
+        1.7327844906718877e-06,
+        1.7614215721040786e-06,
+        4.703194673045029e-06
+      ]
+    },
+    {
+      "acceleration_pair_components_over_N7": [
+        -5.295913454164728e-08,
+        -9.934184557952622e-09,
+        -3.989270737252853e-06
+      ],
+      "all_checks_pass": true,
+      "combined_continuum_quadrature": -3.571097583036093e-07,
+      "divergence_residuals": {
+        "G": 1.943055815085766e-14,
+        "H": 4.163336342344337e-17,
+        "V": 2.1976463793177313e-14
+      },
+      "energy_trace_relative_residual": 0.0,
+      "first_form_continuum_quadrature": 2.0565341390320342e-07,
+      "grid_point_count": 13660416,
+      "grid_shape": [
+        784,
+        132,
+        132
+      ],
+      "maximum_divergence_residual": 2.1976463793177313e-14,
+      "runtime_seconds": 30.179306900012307,
+      "second_form_continuum_quadrature": -5.627631722068127e-07,
+      "size": 65,
+      "velocity_energy_components_over_N7": [
+        1.7131527437160416e-06,
+        1.7413984490432429e-06,
+        4.649776919945621e-06
+      ]
+    }
+  ],
+  "scope": "Fourfold dealiased lattice quadrature for the two fixed-domain continuum components",
+  "status": "continuum_convolution_quadrature_complete_sign_not_interval",
+  "tail_inverse_N_fits": {
+    "fits": {
+      "combined_continuum_quadrature": [
+        {
+          "candidate_limit": -2.9046836365866534e-07,
+          "certification_status": "diagnostic_only",
+          "degree_in_inverse_N": 1,
+          "maximum_replay_residual": 6.775991807734034e-10
+        },
+        {
+          "candidate_limit": -2.9984920527818595e-07,
+          "certification_status": "diagnostic_only",
+          "degree_in_inverse_N": 2,
+          "maximum_replay_residual": 5.34718758626617e-12
+        },
+        {
+          "candidate_limit": -2.9937363099519685e-07,
+          "certification_status": "diagnostic_only",
+          "degree_in_inverse_N": 3,
+          "maximum_replay_residual": 2.5143829355625557e-14
+        },
+        {
+          "candidate_limit": -2.993861516551832e-07,
+          "certification_status": "diagnostic_only",
+          "degree_in_inverse_N": 4,
+          "maximum_replay_residual": 4.619828867399281e-17
+        }
+      ],
+      "first_form_continuum_quadrature": [
+        {
+          "candidate_limit": 1.6705198553685962e-07,
+          "certification_status": "diagnostic_only",
+          "degree_in_inverse_N": 1,
+          "maximum_replay_residual": 3.942206380350592e-10
+        },
+        {
+          "candidate_limit": 1.7250978778898043e-07,
+          "certification_status": "diagnostic_only",
+          "degree_in_inverse_N": 2,
+          "maximum_replay_residual": 3.0983731917993303e-12
+        },
+        {
+          "candidate_limit": 1.7223410265486672e-07,
+          "certification_status": "diagnostic_only",
+          "degree_in_inverse_N": 3,
+          "maximum_replay_residual": 1.3243487608779548e-14
+        },
+        {
+          "candidate_limit": 1.7224070913660578e-07,
+          "certification_status": "diagnostic_only",
+          "degree_in_inverse_N": 4,
+          "maximum_replay_residual": 1.2079669209691586e-17
+        }
+      ],
+      "second_form_continuum_quadrature": [
+        {
+          "candidate_limit": -4.5752034919552494e-07,
+          "certification_status": "diagnostic_only",
+          "degree_in_inverse_N": 1,
+          "maximum_replay_residual": 1.0718198188083567e-09
+        },
+        {
+          "candidate_limit": -4.723589930671656e-07,
+          "certification_status": "diagnostic_only",
+          "degree_in_inverse_N": 2,
+          "maximum_replay_residual": 8.445560778197849e-12
+        },
+        {
+          "candidate_limit": -4.7160773365006645e-07,
+          "certification_status": "diagnostic_only",
+          "degree_in_inverse_N": 3,
+          "maximum_replay_residual": 3.8387316858525986e-14
+        },
+        {
+          "candidate_limit": -4.716268607918199e-07,
+          "certification_status": "diagnostic_only",
+          "degree_in_inverse_N": 4,
+          "maximum_replay_residual": 3.4118592994521624e-17
+        }
+      ]
+    },
+    "sizes": [
+      33,
+      37,
+      41,
+      45,
+      49,
+      53,
+      57,
+      61,
+      65
+    ]
+  }
+}

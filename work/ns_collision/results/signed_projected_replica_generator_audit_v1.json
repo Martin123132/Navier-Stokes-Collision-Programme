@@ -1,0 +1,393 @@
+{
+  "Gaussian_chaos_homotopy": {
+    "all_checks_pass": true,
+    "chaos_energies": [
+      1.25,
+      1.0625,
+      1.625,
+      0.30000000000000004
+    ],
+    "derivative_identity": "partial_rho C_rho=E <D V(W1),D V(W2)>_Cameron-Martin",
+    "endpoint_C0": "|E V|^2=|u|^2",
+    "endpoint_C1": "E|V|^2",
+    "explicit_test_function": [
+      "F1=1+H1+0.5 H2",
+      "F2=-0.5+0.25 H1-0.2 H3",
+      "F3=0.75 H2+0.1 H3"
+    ],
+    "general_identity": "C_rho(x)=E[V(W1,x) dot V(W2,x)]=sum_(n>=0) rho^n ||V_n(x)||_chaos^2",
+    "gradient_cross_pairing_nonnegative": true,
+    "gradient_identity": "G_rho=E[grad V(W1):grad V(W2)]=sum_(n>=0) rho^n ||grad V_n||_chaos^2",
+    "gradient_lower_bound": "G_rho>=||grad V_0||^2=|grad u|^2 for 0<=rho<=1",
+    "monotone_on_zero_one": true,
+    "rows": [
+      {
+        "chaos_polynomial_correlation": 1.25,
+        "chaos_polynomial_derivative": 1.0625,
+        "correlation_residual": 6.661338147750939e-16,
+        "derivative_residual": 0.0,
+        "quadrature_Malliavin_pairing": 1.0625,
+        "quadrature_correlation": 1.2500000000000007,
+        "rho": 0.0
+      },
+      {
+        "chaos_polynomial_correlation": 1.621875,
+        "chaos_polynomial_derivative": 1.93125,
+        "correlation_residual": 1.1102230246251565e-15,
+        "derivative_residual": 1.1102230246251565e-15,
+        "quadrature_Malliavin_pairing": 1.931250000000001,
+        "quadrature_correlation": 1.621875000000001,
+        "rho": 0.25
+      },
+      {
+        "chaos_polynomial_correlation": 2.225,
+        "chaos_polynomial_derivative": 2.9125,
+        "correlation_residual": 1.3322676295501878e-15,
+        "derivative_residual": 8.881784197001252e-16,
+        "quadrature_Malliavin_pairing": 2.912500000000001,
+        "quadrature_correlation": 2.2250000000000014,
+        "rho": 0.5
+      },
+      {
+        "chaos_polynomial_correlation": 3.0875,
+        "chaos_polynomial_derivative": 4.00625,
+        "correlation_residual": 2.220446049250313e-15,
+        "derivative_residual": 2.6645352591003757e-15,
+        "quadrature_Malliavin_pairing": 4.006250000000002,
+        "quadrature_correlation": 3.087500000000002,
+        "rho": 0.75
+      },
+      {
+        "chaos_polynomial_correlation": 4.2375,
+        "chaos_polynomial_derivative": 5.2125,
+        "correlation_residual": 4.440892098500626e-15,
+        "derivative_residual": 1.7763568394002505e-15,
+        "quadrature_Malliavin_pairing": 5.212500000000002,
+        "quadrature_correlation": 4.237500000000004,
+        "rho": 1.0
+      }
+    ],
+    "scope": "The general identity uses the Wiener-chaos normalization implicit in ||V_n||_chaos. Malliavin differentiability is required for the derivative formula, and spatial chaos differentiability is required for the gradient identity.",
+    "variance_identity": "C_1-C_0=Var(V)=integral_0^1 partial_rho C_rho d rho"
+  },
+  "adversarial_pressure_stress": {
+    "all_checks_pass": true,
+    "convective_work": "-mean(lambda_epsilon u dot (u dot grad)u)",
+    "critical_pressure_relative_spread": 5.08019300677048e-06,
+    "critical_pressure_work_range": [
+      40.512286425572924,
+      40.51249223685267
+    ],
+    "interpretation": "Periodic convective cancellation converges to zero, while the critical pressure work remains positive and resolved. The same sign persists for smooth epsilon>0 weights, so the obstruction is not created by the cusp of |u| at zero. This is a resolved deterministic stress, not an interval proof.",
+    "maximum_absolute_critical_convective_work": 0.0002986127882885975,
+    "maximum_velocity_rms_residual": 3.552713678800501e-15,
+    "pressure_work": "-mean(lambda_epsilon u dot grad p)",
+    "rows": [
+      {
+        "grid_size": 48,
+        "velocity_rms": 9.999999999999996,
+        "weights": [
+          {
+            "convective_work": -0.0001334621237960905,
+            "epsilon": 1.0,
+            "pressure_work": 40.23196969027421
+          },
+          {
+            "convective_work": -0.0002772882196748267,
+            "epsilon": 0.3,
+            "pressure_work": 40.48659793941457
+          },
+          {
+            "convective_work": -0.0002961648712732346,
+            "epsilon": 0.1,
+            "pressure_work": 40.509468568868044
+          },
+          {
+            "convective_work": -0.00029839201420987527,
+            "epsilon": 0.03,
+            "pressure_work": 40.512076641435215
+          },
+          {
+            "convective_work": -0.0002986127882885975,
+            "epsilon": 0.0,
+            "pressure_work": 40.51233469441453
+          }
+        ]
+      },
+      {
+        "grid_size": 64,
+        "velocity_rms": 10.000000000000004,
+        "weights": [
+          {
+            "convective_work": 2.6184723651567765e-06,
+            "epsilon": 1.0,
+            "pressure_work": 40.231954461802495
+          },
+          {
+            "convective_work": -5.132147975928092e-06,
+            "epsilon": 0.3,
+            "pressure_work": 40.486557395095296
+          },
+          {
+            "convective_work": -7.4038479453975015e-06,
+            "epsilon": 0.1,
+            "pressure_work": 40.50942299563958
+          },
+          {
+            "convective_work": -7.708103908043995e-06,
+            "epsilon": 0.03,
+            "pressure_work": 40.51202870404676
+          },
+          {
+            "convective_work": -7.738666738532629e-06,
+            "epsilon": 0.0,
+            "pressure_work": 40.512286425572924
+          }
+        ]
+      },
+      {
+        "grid_size": 80,
+        "velocity_rms": 10.000000000000002,
+        "weights": [
+          {
+            "convective_work": -1.0452124988660217e-06,
+            "epsilon": 1.0,
+            "pressure_work": 40.23202025223714
+          },
+          {
+            "convective_work": -6.613317265873775e-06,
+            "epsilon": 0.3,
+            "pressure_work": 40.486677715950115
+          },
+          {
+            "convective_work": -7.985329459188506e-06,
+            "epsilon": 0.1,
+            "pressure_work": 40.50955901459749
+          },
+          {
+            "convective_work": -8.168820262653753e-06,
+            "epsilon": 0.03,
+            "pressure_work": 40.512167960826076
+          },
+          {
+            "convective_work": -8.187308470951393e-06,
+            "epsilon": 0.0,
+            "pressure_work": 40.51242606443026
+          }
+        ]
+      },
+      {
+        "grid_size": 96,
+        "velocity_rms": 9.999999999999996,
+        "weights": [
+          {
+            "convective_work": 1.7056276933376299e-06,
+            "epsilon": 1.0,
+            "pressure_work": 40.23204056852777
+          },
+          {
+            "convective_work": 4.544588069553289e-06,
+            "epsilon": 0.3,
+            "pressure_work": 40.48673367117003
+          },
+          {
+            "convective_work": 5.045163056315181e-06,
+            "epsilon": 0.1,
+            "pressure_work": 40.50962383585871
+          },
+          {
+            "convective_work": 5.110182899914906e-06,
+            "epsilon": 0.03,
+            "pressure_work": 40.512234011122324
+          },
+          {
+            "convective_work": 5.1167322891598345e-06,
+            "epsilon": 0.0,
+            "pressure_work": 40.51249223685267
+          }
+        ]
+      }
+    ],
+    "source": "Existing deterministic periodic finite-Fourier adversary from pressure_frame_pairing_audit.py",
+    "source_parameters": {
+      "base_grid_size": 20,
+      "random_seed": 81,
+      "velocity_rms_target": 10.0
+    },
+    "source_sha256": "b4e34f34145a5b0db899010ece72b32d3988a19e1f41e225683bddc08c0ce997",
+    "weight": "lambda_epsilon=sqrt(|u|^2+epsilon^2)"
+  },
+  "all_positive_checks_pass": true,
+  "assumption_scope": "Classical smooth incompressible Navier-Stokes and smooth projected stochastic Weber replicas on a periodic domain or with sufficient decay. Low-regularity passage is not claimed.",
+  "certification_flags": {
+    "Gaussian_chaos_correlation_homotopy_derived": true,
+    "Navier_Stokes_global_regularity_proved": false,
+    "critical_L3_Legendre_representation_derived": true,
+    "critical_weight_pressure_flux_can_be_nonzero": true,
+    "exceptional_set_upgrade_proved": false,
+    "independent_endpoint_recovers_energy_equality": true,
+    "low_regularity_projected_replica_flow_justified": false,
+    "positive_rho_cross_gradient_dissipation_proved": true,
+    "projected_Weber_SPDE_derived": true,
+    "rho_cross_energy_has_universal_strain_sign": false,
+    "rho_global_cross_energy_balance_derived": true,
+    "rho_two_replica_local_balance_derived": true,
+    "signed_replica_L3_bound_proved": false,
+    "three_replica_tensor_generator_derived": true,
+    "unweighted_global_pressure_cancellation_closes_L3": false,
+    "weighted_pressure_flux_bound_proved": false,
+    "weighted_two_replica_identity_derived": true
+  },
+  "kind": "signed_projected_replica_generator_audit",
+  "next_theorem_target": "Optimize or falsify the weighted two-replica dual equation with a backward/adapted lambda. Any candidate must control the signed pressure flux integral grad(lambda) dot F_rho together with strain before absolute values, retain the proved lower bound G_rho>=|grad u|^2 in the decorrelation dissipation 2nu(1-rho)G_rho, and survive the stored periodic pressure adversary. Connect the flux to the existing partition-edge antisymmetry machinery before any large numerical search.",
+  "positive_checks": {
+    "Gaussian_chaos_homotopy_quadrature_passes": true,
+    "critical_L3_dual_factorization_passes": true,
+    "critical_pressure_flux_obstruction_is_resolved": true,
+    "positive_rho_cross_gradient_is_dissipative": true,
+    "projected_product_generator_algebra_passes": true,
+    "rho_reset_shear_abc_and_strain_stresses_pass": true,
+    "three_replica_correlation_matrix_check_passes": true
+  },
+  "projected_two_replica_generator": {
+    "all_checks_pass": true,
+    "cross_diffusion_reduction_passes": true,
+    "diffusion_symbolic_residual": "0",
+    "martingale": "dM=-sqrt(2nu)[V2 dot partial_k V1 dW1_k+V1 dot partial_k V2 dW2_k]",
+    "mean_pressure_gauge": "E pi[V]=p-|u|^2/2 up to a space constant",
+    "pressure_flux_uses_divergence_free_replicas": true,
+    "pressure_poisson_equation": "Delta pi[V]=-partial_i(u_j partial_j V_i+partial_i u_j V_j)",
+    "projected_replica_SPDE": "dV_i=[-u_j partial_j V_i+nu Delta V_i-partial_i u_j V_j-partial_i pi[V]]dt-sqrt(2nu) partial_k V_i dW_k",
+    "rotational_form": "dV=[nu Delta V+P(u cross curl V)]dt-sqrt(2nu) grad V dW",
+    "strain_reduction_passes": true,
+    "stretch_symbolic_residual": "0",
+    "two_replica_local_balance": "dK+[u dot grad K+2 V1^T S V2+div(pi1 V2+pi2 V1)]dt=[nu Delta K-2nu(1-rho) grad V1:grad V2]dt+dM"
+  },
+  "rho_reset_stresses": {
+    "abc_flow": {
+      "normalized_gradient_energy": 3.0,
+      "parameters": {
+        "viscosity": 0.07
+      },
+      "physical_energy_derivative": -0.42000000000000004,
+      "rows": [
+        {
+          "cross_energy_derivative_at_reset": -0.42000000000000004,
+          "rho": 0.0
+        },
+        {
+          "cross_energy_derivative_at_reset": -0.31500000000000006,
+          "rho": 0.25
+        },
+        {
+          "cross_energy_derivative_at_reset": -0.21000000000000002,
+          "rho": 0.5
+        },
+        {
+          "cross_energy_derivative_at_reset": -0.10500000000000001,
+          "rho": 0.75
+        },
+        {
+          "cross_energy_derivative_at_reset": -0.0,
+          "rho": 1.0
+        }
+      ],
+      "velocity": "u(t)=exp(-nu t) u_ABC, A=B=C=1"
+    },
+    "all_checks_pass": true,
+    "burgers_strain_sign_stress": {
+      "V1_equals_V2_equals_e1_rate_over_a": 1.0,
+      "V1_equals_V2_equals_e3_rate_over_a": -2.0,
+      "interpretation": "The local strain contribution -2 V1^T S V2 has both signs. This algebraic stress is not asserted to be a periodic Navier-Stokes solution.",
+      "strain": "S=diag(-a/2,-a/2,a)"
+    },
+    "global_balance": "d_t E integral(V1 dot V2)=-2 E integral(V1^T S V2)-2nu(1-rho) E integral(grad V1:grad V2)",
+    "independent_endpoint": {
+      "C_0": "|u|^2",
+      "F_0": "2(p-|u|^2/2)u",
+      "G_0": "|grad u|^2",
+      "R_0": "u^T S u",
+      "energy_equality": "d_t ||u||_2^2=-2nu ||grad u||_2^2",
+      "integrated_strain_cancellation": "integral u^T S u=integral u dot grad(|u|^2/2)=0"
+    },
+    "periodic_shear": {
+      "normalized_gradient_energy": 5.779999999999999,
+      "parameters": {
+        "amplitude": 1.7,
+        "viscosity": 0.07,
+        "wave_number": 2.0
+      },
+      "physical_energy_derivative": -0.8092,
+      "rows": [
+        {
+          "cross_energy_derivative_at_reset": -0.8092,
+          "rho": 0.0
+        },
+        {
+          "cross_energy_derivative_at_reset": -0.6069,
+          "rho": 0.25
+        },
+        {
+          "cross_energy_derivative_at_reset": -0.4046,
+          "rho": 0.5
+        },
+        {
+          "cross_energy_derivative_at_reset": -0.2023,
+          "rho": 0.75
+        },
+        {
+          "cross_energy_derivative_at_reset": -0.0,
+          "rho": 1.0
+        }
+      ],
+      "velocity": "u=(c+A exp(-nu k^2 t) sin(k y),0,0)"
+    }
+  },
+  "schema_version": 1,
+  "status": "signed_projected_replica_generator_derived_weighted_pressure_flux_open",
+  "three_replica_tensor_generator": {
+    "all_checks_pass": true,
+    "critical_contraction": "(n tensor n tensor n):T=|u|^3, n=u/|u|",
+    "generator": "partial_t T=E sum_(r=1)^3 slot_r(B_u V_r)+2nu sum_(r<s) rho_rs sum_k E[slot_r(partial_k V_r) slot_s(partial_k V_s)]",
+    "independent_endpoint": "T_ijk=u_i u_j u_k",
+    "pressure_warning": "After contraction with n, pressure is not a pure global divergence because derivatives also hit n and the other replica factors.",
+    "primitive_operator": "B_u V=-u dot grad V-(grad u)^T V-grad pi[V]+nu Delta V",
+    "sample_correlation_eigenvalues": [
+      0.557266298689336,
+      0.8024514029897915,
+      1.6402822983208718
+    ],
+    "sample_correlation_matrix": [
+      [
+        1.0,
+        0.4,
+        0.2
+      ],
+      [
+        0.4,
+        1.0,
+        0.35
+      ],
+      [
+        0.2,
+        0.35,
+        1.0
+      ]
+    ],
+    "sample_correlation_matrix_is_positive_definite": true,
+    "tensor": "T_ijk=E[V1_i V2_j V3_k]"
+  },
+  "weighted_critical_formulation": {
+    "all_checks_pass": true,
+    "critical_dual_identity": "|u|^3=sup_(lambda>=0)[(3/2)lambda |u|^2-(1/2)lambda^3]",
+    "critical_optimizer": "lambda=|u|",
+    "dual_gap_expected": "(lambda-a)^2(lambda+2a)/2",
+    "dual_gap_factorization": "(a - lambda)**2*(2*a + lambda)/2",
+    "dual_gap_symbolic_residual": "0",
+    "optimizer_symbolic_residual": "0",
+    "pressure_gate": "For nonconstant critical lambda, pressure survives as integral grad lambda dot F_rho. Global unweighted pressure orthogonality therefore does not close L3.",
+    "rho_zero_reduction": "d_t integral(lambda |u|^2)=integral(lambda_t+u dot grad lambda+nu Delta lambda)|u|^2+2 integral p u dot grad lambda-2nu integral lambda |grad u|^2",
+    "scaling": "lambda scales like velocity, so the dual functional is critical under Navier-Stokes scaling",
+    "weighted_two_replica_identity": "d_t integral(lambda C_rho)=integral(lambda_t+u dot grad lambda+nu Delta lambda)C_rho-2 integral lambda R_rho+integral grad lambda dot F_rho-2nu(1-rho) integral lambda G_rho"
+  }
+}

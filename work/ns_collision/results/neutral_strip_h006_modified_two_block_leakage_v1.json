@@ -1,0 +1,143 @@
+{
+  "all_modified_two_block_leakage_checks_pass": true,
+  "below_normal_priority_set": true,
+  "boundary_output_smoothing_composed": false,
+  "certified_parameters": {
+    "all_two_block_parameters_certified": true,
+    "exact_weighted_invariance_residual_upper": 6.448549400260506,
+    "high_block_floor": 102.7,
+    "high_block_floor_certified": true,
+    "low_block_floor": 2.36,
+    "low_block_floor_certified": true,
+    "off_block_coupling_certified": true,
+    "off_block_coupling_upper": 6.44525405835444,
+    "projected_generator_error_upper": 9.376126603613224e-08,
+    "projected_generator_exact_solve_residual_upper": 9.385716742748558e-08,
+    "restricted_mass": {
+      "central_maximum": 1.0379113142959981,
+      "central_minimum": 1.0010228258200766,
+      "input_error_spectral_upper": 5.548685911566524e-10,
+      "maximum_upper": 1.0379113148557115,
+      "minimum_lower": 1.001022825260448,
+      "orthogonality_defect_upper": 2.296993083787207e-12,
+      "reconstruction_error_upper": 2.460426213407943e-12
+    },
+    "restricted_mass_projection_error_upper": 5.548685911566524e-10,
+    "restricted_stiffness_projection_error_upper": 3.691845665502229e-08,
+    "shifted_low_form": {
+      "central_maximum": 103.8892389127846,
+      "central_minimum": 0.010163280370569376,
+      "input_error_spectral_upper": 3.822801899668698e-08,
+      "maximum_upper": 103.88923895124803,
+      "minimum_lower": 0.010163242064110413,
+      "orthogonality_defect_upper": 1.5107222338544572e-12,
+      "reconstruction_error_upper": 7.842461003671993e-11
+    },
+    "weighted_invariance_residual": {
+      "central_spectral_norm": 6.448549302841634,
+      "input_error_spectral_upper": 3.7608138694083297e-10,
+      "left_orthogonality_defect_upper": 4.6067901460751e-10,
+      "reconstruction_error_upper": 1.8491328510278262e-11,
+      "right_orthogonality_defect_upper": 5.242403999696997e-12,
+      "spectral_norm_upper": 6.448549304738466
+    }
+  },
+  "checks": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "elapsed_seconds": 3.717915500048548,
+  "matrix_metadata": {
+    "mass_diagonal_strictly_positive": true,
+    "mass_sha256": "2a9c3e94b5f795260bc2b660fcff9bc57a8383ac63c39d9339c559572eeac308",
+    "maximum_mass_diagonal": 0.003435122672960468,
+    "minimum_mass_diagonal": 1.4859312101890292e-07,
+    "reference_eigen_cache": "work\\ns_collision\\results\\neutral_strip_h006_q12_k241_reference_eigensystem_v1.npz",
+    "reference_eigen_cache_sha256": "8994f7b90409db710a69bda72073dacf83722c790384d1f6bb4fcfc468e6c66e",
+    "reference_matrix_fingerprint_sha256": "c80fdc5aa494fe1118aec4c38045df76151b2ccde3fded18f4af1161de7efd48",
+    "retained_count": 240,
+    "retained_vectors_sha256": "356696189f2962f68a5c81bdc5bdf780afac6ea7c7d3061d7427238adf314a91",
+    "state_count": 15211,
+    "stiffness_exactly_symmetric": true,
+    "stiffness_sha256": "80cdc7836fb999d3dd3413fe7b95216053e9d4414982d56f097d262dc674177d"
+  },
+  "model": "certified modified-chain two-block state leakage",
+  "modified_two_block_state_leakage_certified": true,
+  "next_required_step": "Split each output time in half, apply the certified state leakage on the first half and an interval boundary-flux operator norm on the second half, then add the low-projector source/trace mismatch.",
+  "premise_artifacts": {
+    "modified_complement_result": "work\\ns_collision\\results\\neutral_strip_h006_modified_complement_inertia_schur_v1.json",
+    "modified_complement_result_sha256": "855fa8811fd5feaf03f8edfe2ed7a081fad9439fa64311efb6c31cb168cc3334",
+    "reference_eigen_cache": "work\\ns_collision\\results\\neutral_strip_h006_q12_k241_reference_eigensystem_v1.npz",
+    "reference_eigen_cache_sha256": "8994f7b90409db710a69bda72073dacf83722c790384d1f6bb4fcfc468e6c66e"
+  },
+  "scope": "This result certifies finite modified-chain state-space two-block leakage. It is not yet a boundary-output charge and does not address continuum Ritz or polygon-circle transfer.",
+  "spacing": 0.06,
+  "two_block_state_rows": [
+    {
+      "coupling": 6.44525405835444,
+      "gap_free_high_component_upper": 1.2084851359414577,
+      "high_component_upper": 0.044219176517204514,
+      "high_floor": 102.7,
+      "low_feedback_upper": 0.04880651435012536,
+      "low_floor": 2.36,
+      "orthogonal_total_difference_upper": 0.0658590268290436,
+      "time": 0.1875
+    },
+    {
+      "coupling": 6.44525405835444,
+      "gap_free_high_component_upper": 2.4169702718829154,
+      "high_component_upper": 0.030690921574191874,
+      "high_floor": 102.7,
+      "low_feedback_upper": 0.06704678749964414,
+      "low_floor": 2.36,
+      "orthogonal_total_difference_upper": 0.07373740150761779,
+      "time": 0.375
+    },
+    {
+      "coupling": 6.44525405835444,
+      "gap_free_high_component_upper": 4.833940543765831,
+      "high_component_upper": 0.014784562657685914,
+      "high_floor": 102.7,
+      "low_feedback_upper": 0.06077952332895914,
+      "low_floor": 2.36,
+      "orthogonal_total_difference_upper": 0.06255184848647184,
+      "time": 0.75
+    },
+    {
+      "coupling": 6.44525405835444,
+      "gap_free_high_component_upper": 9.667881087531661,
+      "high_component_upper": 0.003430880469421938,
+      "high_floor": 102.7,
+      "low_feedback_upper": 0.024618249485085147,
+      "low_floor": 2.36,
+      "orthogonal_total_difference_upper": 0.02485616922426616,
+      "time": 1.5
+    },
+    {
+      "coupling": 6.44525405835444,
+      "gap_free_high_component_upper": 19.335762175063323,
+      "high_component_upper": 0.00018475653070951342,
+      "high_floor": 102.7,
+      "low_feedback_upper": 0.0020463437975091654,
+      "low_floor": 2.36,
+      "orthogonal_total_difference_upper": 0.0020546673485613304,
+      "time": 3.0
+    },
+    {
+      "coupling": 6.44525405835444,
+      "gap_free_high_component_upper": 38.671524350126646,
+      "high_component_upper": 5.35782125206e-07,
+      "high_floor": 102.7,
+      "low_feedback_upper": 7.666772435432461e-06,
+      "low_floor": 2.36,
+      "orthogonal_total_difference_upper": 7.685470841945682e-06,
+      "time": 6.0
+    }
+  ]
+}

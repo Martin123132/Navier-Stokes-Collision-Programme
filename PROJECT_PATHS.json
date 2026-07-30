@@ -1,0 +1,43 @@
+{
+  "kind": "navier_stokes_workspace_path_manifest",
+  "schema_version": 1,
+  "date": "2026-07-23",
+  "workspace_root": ".",
+  "research_root": "work/ns_collision",
+  "research_readme": "work/ns_collision/README.md",
+  "session_bookmark": "work/ns_collision/results/session_bookmark.json",
+  "runtime_policy": "work/ns_collision/session_runtime_policy.json",
+  "migration_manifest": "MIGRATION_MANIFEST.json",
+  "source_tree_hash_manifest": "migration/SOURCE_TREE_SHA256.json",
+  "initial_checkpoint_archive": "migration/INITIAL_NS_CHECKPOINT.json",
+  "split_validation_report": "migration/VALIDATION_REPORT.json",
+  "live_boundary_validation_report": "migration/LIVE_BOUNDARY_VALIDATION_REPORT.json",
+  "preserved_source_root": "../l/work/ns_collision",
+  "rh_workspace_root": "../l",
+  "rh_bookmark_provenance_only": "../l/work/rh_compute/results/session_bookmark.json",
+  "ownership": {
+    "navier_stokes_owned": [
+      "AGENTS.md",
+      "README.md",
+      "PROJECT_PATHS.json",
+      "MIGRATION_MANIFEST.json",
+      "migration",
+      "tools",
+      "work/ns_collision"
+    ],
+    "rh_owned": [
+      "../l/work/rh_compute"
+    ],
+    "preservation_only": [
+      "../l/work/ns_collision"
+    ]
+  },
+  "runtime_dependencies_on_rh": [],
+  "shared_foundations": [
+    {
+      "kind": "conceptual_provenance",
+      "ns_path": "work/ns_collision/notes/replica_correlation_bridge.md",
+      "description": "Historical comparison with the zeta non-collision mechanism; no cross-workspace file dependency."
+    }
+  ]
+}

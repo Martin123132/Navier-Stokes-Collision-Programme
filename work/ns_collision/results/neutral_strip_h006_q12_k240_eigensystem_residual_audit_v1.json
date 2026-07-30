@@ -1,0 +1,2261 @@
+{
+  "all_eigensystem_residual_checks_pass": true,
+  "below_normal_priority_set": true,
+  "distinct_reference_eigenvalue_proximity_intervals_proved": true,
+  "elapsed_seconds": 92.32157840003492,
+  "endpoint_effect_of_eigenpair_residuals_certified": false,
+  "finite_element_assembly_interval_enclosed": false,
+  "generalized_eigenvalue_inclusions_proved": false,
+  "generalized_eigenvalue_proximity_intervals_proved": true,
+  "model": "binary-frozen generalized eigensystem residual audit",
+  "modified_standard_eigensystem": {
+    "maximum_directed_residual_column": 238,
+    "maximum_directed_residual_l2_upper": 1.1384725498967043e-11,
+    "orthogonality": {
+      "central_spectral_defect": 1.780738046218354e-13,
+      "directed_frobenius_defect_upper": 1.893421204981003e-12,
+      "maximum_entry_defect_upper": 1.644338036523503e-13
+    },
+    "pair_count": 240,
+    "residual_frobenius_upper": 1.0575442843267444e-10
+  },
+  "quadrature_order": 12,
+  "reference_eigensystem_cache": {
+    "enabled": true,
+    "loaded": true,
+    "matrix_fingerprint_sha256": "c80fdc5aa494fe1118aec4c38045df76151b2ccde3fded18f4af1161de7efd48",
+    "path": "work\\ns_collision\\results\\neutral_strip_h006_q12_k241_reference_eigensystem_v1.npz",
+    "written": false
+  },
+  "reference_generalized_eigensystem": {
+    "all_adjacent_proximity_intervals_disjoint": true,
+    "distinct_eigenvalue_existence_in_each_proximity_interval_proved": true,
+    "generalized_eigenvalue_inclusions_proved": false,
+    "generalized_eigenvalue_proximity_intervals_proved": true,
+    "inverse_mass_residual_block_frobenius_upper": 1.0235089041365414e-09,
+    "mass_coercivity": {
+      "all_local_leading_principal_minors_positive": true,
+      "global_duplicate_summation_gamma": 5.773159728050848e-15,
+      "global_row_lumped_coercivity_lower": 0.14999999999999333,
+      "local_row_lumped_alpha": 0.15,
+      "maximum_global_entry_contribution_count": 9,
+      "minimum_local_leading_principal_minor_lower_by_size": [
+        1.3101229999230833e-08,
+        1.0156758961628055e-16,
+        5.919727470781511e-25
+      ],
+      "stored_mass_row_lumped_coercivity_proved": true
+    },
+    "mass_maximum_row_nonzeros": 10,
+    "mass_row_sum_lower_minimum": 1.1340700196474622e-07,
+    "maximum_directed_inverse_mass_residual_column": 228,
+    "maximum_directed_inverse_mass_residual_upper": 7.541469516727855e-11,
+    "maximum_directed_relative_residual_column": 11,
+    "maximum_directed_relative_residual_upper": 7.293579067550235e-13,
+    "maximum_directed_residual_column": 228,
+    "maximum_directed_residual_l2_upper": 7.595999996836146e-13,
+    "maximum_generalized_eigenvalue_proximity_column": 228,
+    "maximum_generalized_eigenvalue_proximity_radius": 7.541469516753379e-11,
+    "maximum_stored_mass_asymmetry": 0.0,
+    "maximum_stored_stiffness_asymmetry": 0.0,
+    "minimum_adjacent_proximity_interval_separation": 8.212190464007561e-05,
+    "orthogonality": {
+      "central_spectral_defect": 5.154297067480029e-15,
+      "directed_frobenius_defect_upper": 1.0926234959797678e-09,
+      "maximum_entry_defect_upper": 6.7685890416844714e-12
+    },
+    "pair_count": 241,
+    "pair_rows": [
+      {
+        "approximate_eigenvalue": 2.373283782016068,
+        "directed_inverse_mass_residual_upper": 6.15182836271907e-11,
+        "directed_residual_l2_upper": 4.1466956905636065e-13,
+        "eigenvalue_proximity_radius": 6.15182836273989e-11,
+        "index": 0,
+        "proximity_interval_lower": 2.3732837819545494,
+        "proximity_interval_upper": 2.373283782077587
+      },
+      {
+        "approximate_eigenvalue": 2.3796682588274103,
+        "directed_inverse_mass_residual_upper": 6.145858377688298e-11,
+        "directed_residual_l2_upper": 4.097106449104678e-13,
+        "eigenvalue_proximity_radius": 6.145858377709099e-11,
+        "index": 1,
+        "proximity_interval_lower": 2.3796682587659514,
+        "proximity_interval_upper": 2.379668258888869
+      },
+      {
+        "approximate_eigenvalue": 3.7284764982051293,
+        "directed_inverse_mass_residual_upper": 6.155791234631262e-11,
+        "directed_residual_l2_upper": 5.133810821662334e-13,
+        "eigenvalue_proximity_radius": 6.155791234652097e-11,
+        "index": 2,
+        "proximity_interval_lower": 3.728476498143571,
+        "proximity_interval_upper": 3.7284764982666876
+      },
+      {
+        "approximate_eigenvalue": 3.767424531620013,
+        "directed_inverse_mass_residual_upper": 6.153406760923288e-11,
+        "directed_residual_l2_upper": 4.901487722808731e-13,
+        "eigenvalue_proximity_radius": 6.153406760944114e-11,
+        "index": 3,
+        "proximity_interval_lower": 3.7674245315584787,
+        "proximity_interval_upper": 3.7674245316815473
+      },
+      {
+        "approximate_eigenvalue": 4.987148568838506,
+        "directed_inverse_mass_residual_upper": 6.209935298765172e-11,
+        "directed_residual_l2_upper": 5.438251510127412e-13,
+        "eigenvalue_proximity_radius": 6.20993529878619e-11,
+        "index": 4,
+        "proximity_interval_lower": 4.987148568776406,
+        "proximity_interval_upper": 4.987148568900607
+      },
+      {
+        "approximate_eigenvalue": 5.089711795758013,
+        "directed_inverse_mass_residual_upper": 6.19117640378059e-11,
+        "directed_residual_l2_upper": 4.787551648304646e-13,
+        "eigenvalue_proximity_radius": 6.191176403801543e-11,
+        "index": 5,
+        "proximity_interval_lower": 5.0897117956961,
+        "proximity_interval_upper": 5.089711795819925
+      },
+      {
+        "approximate_eigenvalue": 6.004889634835968,
+        "directed_inverse_mass_residual_upper": 6.167280857425053e-11,
+        "directed_residual_l2_upper": 6.036901644106074e-13,
+        "eigenvalue_proximity_radius": 6.167280857445927e-11,
+        "index": 6,
+        "proximity_interval_lower": 6.004889634774295,
+        "proximity_interval_upper": 6.0048896348976415
+      },
+      {
+        "approximate_eigenvalue": 6.251609272274025,
+        "directed_inverse_mass_residual_upper": 6.205684008400846e-11,
+        "directed_residual_l2_upper": 5.063699848208571e-13,
+        "eigenvalue_proximity_radius": 6.205684008421849e-11,
+        "index": 7,
+        "proximity_interval_lower": 6.251609272211967,
+        "proximity_interval_upper": 6.251609272336083
+      },
+      {
+        "approximate_eigenvalue": 6.448849672087525,
+        "directed_inverse_mass_residual_upper": 6.247516241888148e-11,
+        "directed_residual_l2_upper": 5.699129203945273e-13,
+        "eigenvalue_proximity_radius": 6.247516241909293e-11,
+        "index": 8,
+        "proximity_interval_lower": 6.448849672025049,
+        "proximity_interval_upper": 6.4488496721500015
+      },
+      {
+        "approximate_eigenvalue": 6.613675474386919,
+        "directed_inverse_mass_residual_upper": 6.2570715006537e-11,
+        "directed_residual_l2_upper": 4.821902223949385e-13,
+        "eigenvalue_proximity_radius": 6.257071500674878e-11,
+        "index": 9,
+        "proximity_interval_lower": 6.6136754743243475,
+        "proximity_interval_upper": 6.61367547444949
+      },
+      {
+        "approximate_eigenvalue": 7.6489204427145685,
+        "directed_inverse_mass_residual_upper": 6.154003232800592e-11,
+        "directed_residual_l2_upper": 6.251928753541562e-13,
+        "eigenvalue_proximity_radius": 6.15400323282142e-11,
+        "index": 10,
+        "proximity_interval_lower": 7.6489204426530275,
+        "proximity_interval_upper": 7.6489204427761095
+      },
+      {
+        "approximate_eigenvalue": 8.120163537632397,
+        "directed_inverse_mass_residual_upper": 6.164621914239794e-11,
+        "directed_residual_l2_upper": 7.293579067550234e-13,
+        "eigenvalue_proximity_radius": 6.164621914260658e-11,
+        "index": 11,
+        "proximity_interval_lower": 8.120163537570749,
+        "proximity_interval_upper": 8.120163537694046
+      },
+      {
+        "approximate_eigenvalue": 8.271696115712158,
+        "directed_inverse_mass_residual_upper": 6.155903970700065e-11,
+        "directed_residual_l2_upper": 5.212415101677046e-13,
+        "eigenvalue_proximity_radius": 6.1559039707209e-11,
+        "index": 12,
+        "proximity_interval_lower": 8.271696115650597,
+        "proximity_interval_upper": 8.27169611577372
+      },
+      {
+        "approximate_eigenvalue": 9.19419159849875,
+        "directed_inverse_mass_residual_upper": 6.235930778092422e-11,
+        "directed_residual_l2_upper": 6.055507766213745e-13,
+        "eigenvalue_proximity_radius": 6.235930778113528e-11,
+        "index": 13,
+        "proximity_interval_lower": 9.194191598436388,
+        "proximity_interval_upper": 9.19419159856111
+      },
+      {
+        "approximate_eigenvalue": 9.989493753470523,
+        "directed_inverse_mass_residual_upper": 6.233527470823983e-11,
+        "directed_residual_l2_upper": 6.677875905485857e-13,
+        "eigenvalue_proximity_radius": 6.23352747084508e-11,
+        "index": 14,
+        "proximity_interval_lower": 9.989493753408185,
+        "proximity_interval_upper": 9.98949375353286
+      },
+      {
+        "approximate_eigenvalue": 10.199266360970604,
+        "directed_inverse_mass_residual_upper": 6.221304702783537e-11,
+        "directed_residual_l2_upper": 3.7300344470847357e-13,
+        "eigenvalue_proximity_radius": 6.221304702804593e-11,
+        "index": 15,
+        "proximity_interval_lower": 10.19926636090839,
+        "proximity_interval_upper": 10.19926636103282
+      },
+      {
+        "approximate_eigenvalue": 10.20768540147134,
+        "directed_inverse_mass_residual_upper": 6.280323002540597e-11,
+        "directed_residual_l2_upper": 3.954383083226192e-13,
+        "eigenvalue_proximity_radius": 6.280323002561853e-11,
+        "index": 16,
+        "proximity_interval_lower": 10.207685401408535,
+        "proximity_interval_upper": 10.207685401534144
+      },
+      {
+        "approximate_eigenvalue": 10.826273805791459,
+        "directed_inverse_mass_residual_upper": 6.286061517547489e-11,
+        "directed_residual_l2_upper": 4.440410360894263e-13,
+        "eigenvalue_proximity_radius": 6.286061517568765e-11,
+        "index": 17,
+        "proximity_interval_lower": 10.826273805728597,
+        "proximity_interval_upper": 10.82627380585432
+      },
+      {
+        "approximate_eigenvalue": 10.857610847356487,
+        "directed_inverse_mass_residual_upper": 6.260485588124933e-11,
+        "directed_residual_l2_upper": 4.03747974628536e-13,
+        "eigenvalue_proximity_radius": 6.260485588146121e-11,
+        "index": 18,
+        "proximity_interval_lower": 10.85761084729388,
+        "proximity_interval_upper": 10.857610847419092
+      },
+      {
+        "approximate_eigenvalue": 11.132510814065542,
+        "directed_inverse_mass_residual_upper": 6.266230724506686e-11,
+        "directed_residual_l2_upper": 6.284916531782475e-13,
+        "eigenvalue_proximity_radius": 6.266230724527894e-11,
+        "index": 19,
+        "proximity_interval_lower": 11.132510814002877,
+        "proximity_interval_upper": 11.132510814128207
+      },
+      {
+        "approximate_eigenvalue": 11.597137679779092,
+        "directed_inverse_mass_residual_upper": 6.242202879823996e-11,
+        "directed_residual_l2_upper": 5.958609174913388e-13,
+        "eigenvalue_proximity_radius": 6.242202879845123e-11,
+        "index": 20,
+        "proximity_interval_lower": 11.597137679716669,
+        "proximity_interval_upper": 11.597137679841515
+      },
+      {
+        "approximate_eigenvalue": 12.714277782296131,
+        "directed_inverse_mass_residual_upper": 6.201400673703345e-11,
+        "directed_residual_l2_upper": 5.51470848490995e-13,
+        "eigenvalue_proximity_radius": 6.201400673724333e-11,
+        "index": 21,
+        "proximity_interval_lower": 12.714277782234115,
+        "proximity_interval_upper": 12.714277782358147
+      },
+      {
+        "approximate_eigenvalue": 13.540892507190875,
+        "directed_inverse_mass_residual_upper": 6.204949553000072e-11,
+        "directed_residual_l2_upper": 5.891253077928093e-13,
+        "eigenvalue_proximity_radius": 6.204949553021072e-11,
+        "index": 22,
+        "proximity_interval_lower": 13.540892507128824,
+        "proximity_interval_upper": 13.540892507252927
+      },
+      {
+        "approximate_eigenvalue": 13.629125173490838,
+        "directed_inverse_mass_residual_upper": 6.393375788935281e-11,
+        "directed_residual_l2_upper": 4.820165196882995e-13,
+        "eigenvalue_proximity_radius": 6.39337578895692e-11,
+        "index": 23,
+        "proximity_interval_lower": 13.629125173426901,
+        "proximity_interval_upper": 13.629125173554774
+      },
+      {
+        "approximate_eigenvalue": 14.14602057283559,
+        "directed_inverse_mass_residual_upper": 6.305776410001623e-11,
+        "directed_residual_l2_upper": 4.719077146550509e-13,
+        "eigenvalue_proximity_radius": 6.305776410022964e-11,
+        "index": 24,
+        "proximity_interval_lower": 14.146020572772532,
+        "proximity_interval_upper": 14.14602057289865
+      },
+      {
+        "approximate_eigenvalue": 15.263557339296089,
+        "directed_inverse_mass_residual_upper": 6.296902855422488e-11,
+        "directed_residual_l2_upper": 5.093970605564128e-13,
+        "eigenvalue_proximity_radius": 6.296902855443799e-11,
+        "index": 25,
+        "proximity_interval_lower": 15.263557339233119,
+        "proximity_interval_upper": 15.263557339359059
+      },
+      {
+        "approximate_eigenvalue": 15.493381563357314,
+        "directed_inverse_mass_residual_upper": 6.270765969732108e-11,
+        "directed_residual_l2_upper": 4.748944177591717e-13,
+        "eigenvalue_proximity_radius": 6.270765969753332e-11,
+        "index": 26,
+        "proximity_interval_lower": 15.493381563294605,
+        "proximity_interval_upper": 15.493381563420023
+      },
+      {
+        "approximate_eigenvalue": 15.536777354354594,
+        "directed_inverse_mass_residual_upper": 6.28061108402492e-11,
+        "directed_residual_l2_upper": 4.981738940505036e-13,
+        "eigenvalue_proximity_radius": 6.280611084046178e-11,
+        "index": 27,
+        "proximity_interval_lower": 15.536777354291786,
+        "proximity_interval_upper": 15.536777354417403
+      },
+      {
+        "approximate_eigenvalue": 15.652435085530529,
+        "directed_inverse_mass_residual_upper": 6.267487032774034e-11,
+        "directed_residual_l2_upper": 5.845196849394563e-13,
+        "eigenvalue_proximity_radius": 6.267487032795246e-11,
+        "index": 28,
+        "proximity_interval_lower": 15.652435085467852,
+        "proximity_interval_upper": 15.652435085593206
+      },
+      {
+        "approximate_eigenvalue": 16.04945557008064,
+        "directed_inverse_mass_residual_upper": 6.27739885469015e-11,
+        "directed_residual_l2_upper": 4.1754434490277306e-13,
+        "eigenvalue_proximity_radius": 6.277398854711395e-11,
+        "index": 29,
+        "proximity_interval_lower": 16.049455570017862,
+        "proximity_interval_upper": 16.049455570143415
+      },
+      {
+        "approximate_eigenvalue": 16.55790250176572,
+        "directed_inverse_mass_residual_upper": 6.310925654057427e-11,
+        "directed_residual_l2_upper": 4.74821318613097e-13,
+        "eigenvalue_proximity_radius": 6.310925654078786e-11,
+        "index": 30,
+        "proximity_interval_lower": 16.557902501702607,
+        "proximity_interval_upper": 16.557902501828835
+      },
+      {
+        "approximate_eigenvalue": 17.426444626614295,
+        "directed_inverse_mass_residual_upper": 6.265175791454476e-11,
+        "directed_residual_l2_upper": 5.1889109476289e-13,
+        "eigenvalue_proximity_radius": 6.265175791475681e-11,
+        "index": 31,
+        "proximity_interval_lower": 17.42644462655164,
+        "proximity_interval_upper": 17.42644462667695
+      },
+      {
+        "approximate_eigenvalue": 17.77021173174515,
+        "directed_inverse_mass_residual_upper": 6.268788206651329e-11,
+        "directed_residual_l2_upper": 4.646903642971575e-13,
+        "eigenvalue_proximity_radius": 6.268788206672547e-11,
+        "index": 32,
+        "proximity_interval_lower": 17.77021173168246,
+        "proximity_interval_upper": 17.77021173180784
+      },
+      {
+        "approximate_eigenvalue": 18.119393231513275,
+        "directed_inverse_mass_residual_upper": 6.304589031883365e-11,
+        "directed_residual_l2_upper": 5.400512859935109e-13,
+        "eigenvalue_proximity_radius": 6.304589031904702e-11,
+        "index": 33,
+        "proximity_interval_lower": 18.119393231450225,
+        "proximity_interval_upper": 18.119393231576325
+      },
+      {
+        "approximate_eigenvalue": 18.50639547191911,
+        "directed_inverse_mass_residual_upper": 6.298296259711519e-11,
+        "directed_residual_l2_upper": 5.513690129854199e-13,
+        "eigenvalue_proximity_radius": 6.298296259732836e-11,
+        "index": 34,
+        "proximity_interval_lower": 18.506395471856123,
+        "proximity_interval_upper": 18.506395471982096
+      },
+      {
+        "approximate_eigenvalue": 18.70315243969136,
+        "directed_inverse_mass_residual_upper": 6.325812576296884e-11,
+        "directed_residual_l2_upper": 4.3615169961962913e-13,
+        "eigenvalue_proximity_radius": 6.325812576318293e-11,
+        "index": 35,
+        "proximity_interval_lower": 18.7031524396281,
+        "proximity_interval_upper": 18.703152439754625
+      },
+      {
+        "approximate_eigenvalue": 18.966601011006702,
+        "directed_inverse_mass_residual_upper": 6.401092901487593e-11,
+        "directed_residual_l2_upper": 4.949081900495481e-13,
+        "eigenvalue_proximity_radius": 6.401092901509258e-11,
+        "index": 36,
+        "proximity_interval_lower": 18.96660101094269,
+        "proximity_interval_upper": 18.966601011070715
+      },
+      {
+        "approximate_eigenvalue": 20.736213627833884,
+        "directed_inverse_mass_residual_upper": 6.315688937704245e-11,
+        "directed_residual_l2_upper": 5.580352798010965e-13,
+        "eigenvalue_proximity_radius": 6.31568893772562e-11,
+        "index": 37,
+        "proximity_interval_lower": 20.736213627770724,
+        "proximity_interval_upper": 20.736213627897044
+      },
+      {
+        "approximate_eigenvalue": 21.03696937755531,
+        "directed_inverse_mass_residual_upper": 6.282365004730599e-11,
+        "directed_residual_l2_upper": 5.937845428028647e-13,
+        "eigenvalue_proximity_radius": 6.282365004751861e-11,
+        "index": 38,
+        "proximity_interval_lower": 21.036969377492483,
+        "proximity_interval_upper": 21.036969377618135
+      },
+      {
+        "approximate_eigenvalue": 21.72238353623333,
+        "directed_inverse_mass_residual_upper": 6.292910277380419e-11,
+        "directed_residual_l2_upper": 5.123520464095811e-13,
+        "eigenvalue_proximity_radius": 6.292910277401718e-11,
+        "index": 39,
+        "proximity_interval_lower": 21.722383536170398,
+        "proximity_interval_upper": 21.722383536296263
+      },
+      {
+        "approximate_eigenvalue": 21.737023181830107,
+        "directed_inverse_mass_residual_upper": 6.388641272155479e-11,
+        "directed_residual_l2_upper": 5.188048443547627e-13,
+        "eigenvalue_proximity_radius": 6.3886412721771e-11,
+        "index": 40,
+        "proximity_interval_lower": 21.73702318176622,
+        "proximity_interval_upper": 21.737023181893996
+      },
+      {
+        "approximate_eigenvalue": 21.995703401593236,
+        "directed_inverse_mass_residual_upper": 6.283115522195738e-11,
+        "directed_residual_l2_upper": 5.057791408027011e-13,
+        "eigenvalue_proximity_radius": 6.283115522217003e-11,
+        "index": 41,
+        "proximity_interval_lower": 21.995703401530402,
+        "proximity_interval_upper": 21.99570340165607
+      },
+      {
+        "approximate_eigenvalue": 22.0281296917372,
+        "directed_inverse_mass_residual_upper": 6.327640760261051e-11,
+        "directed_residual_l2_upper": 5.000295905187339e-13,
+        "eigenvalue_proximity_radius": 6.327640760282467e-11,
+        "index": 42,
+        "proximity_interval_lower": 22.028129691673918,
+        "proximity_interval_upper": 22.02812969180048
+      },
+      {
+        "approximate_eigenvalue": 22.78372121030961,
+        "directed_inverse_mass_residual_upper": 6.369409276335719e-11,
+        "directed_residual_l2_upper": 5.330480245076106e-13,
+        "eigenvalue_proximity_radius": 6.369409276357276e-11,
+        "index": 43,
+        "proximity_interval_lower": 22.783721210245915,
+        "proximity_interval_upper": 22.783721210373308
+      },
+      {
+        "approximate_eigenvalue": 23.268915573980763,
+        "directed_inverse_mass_residual_upper": 6.329196007623476e-11,
+        "directed_residual_l2_upper": 4.875151442939168e-13,
+        "eigenvalue_proximity_radius": 6.329196007644898e-11,
+        "index": 44,
+        "proximity_interval_lower": 23.268915573917468,
+        "proximity_interval_upper": 23.26891557404406
+      },
+      {
+        "approximate_eigenvalue": 23.280447055181764,
+        "directed_inverse_mass_residual_upper": 6.309576640418955e-11,
+        "directed_residual_l2_upper": 4.83798857895964e-13,
+        "eigenvalue_proximity_radius": 6.309576640440309e-11,
+        "index": 45,
+        "proximity_interval_lower": 23.280447055118664,
+        "proximity_interval_upper": 23.280447055244863
+      },
+      {
+        "approximate_eigenvalue": 24.033571935125085,
+        "directed_inverse_mass_residual_upper": 6.273168893304292e-11,
+        "directed_residual_l2_upper": 5.745280891341774e-13,
+        "eigenvalue_proximity_radius": 6.273168893325523e-11,
+        "index": 46,
+        "proximity_interval_lower": 24.03357193506235,
+        "proximity_interval_upper": 24.03357193518782
+      },
+      {
+        "approximate_eigenvalue": 24.181835458809886,
+        "directed_inverse_mass_residual_upper": 6.356698127640445e-11,
+        "directed_residual_l2_upper": 4.851857011220301e-13,
+        "eigenvalue_proximity_radius": 6.356698127661959e-11,
+        "index": 47,
+        "proximity_interval_lower": 24.181835458746313,
+        "proximity_interval_upper": 24.181835458873458
+      },
+      {
+        "approximate_eigenvalue": 25.18887138132856,
+        "directed_inverse_mass_residual_upper": 6.293269637446911e-11,
+        "directed_residual_l2_upper": 3.968539835770244e-13,
+        "eigenvalue_proximity_radius": 6.293269637468211e-11,
+        "index": 48,
+        "proximity_interval_lower": 25.188871381265624,
+        "proximity_interval_upper": 25.188871381391497
+      },
+      {
+        "approximate_eigenvalue": 25.253079425467014,
+        "directed_inverse_mass_residual_upper": 6.292664538643826e-11,
+        "directed_residual_l2_upper": 3.97820141524612e-13,
+        "eigenvalue_proximity_radius": 6.292664538665124e-11,
+        "index": 49,
+        "proximity_interval_lower": 25.253079425404085,
+        "proximity_interval_upper": 25.253079425529943
+      },
+      {
+        "approximate_eigenvalue": 25.454422008190456,
+        "directed_inverse_mass_residual_upper": 6.300600422404345e-11,
+        "directed_residual_l2_upper": 5.05101237395411e-13,
+        "eigenvalue_proximity_radius": 6.30060042242567e-11,
+        "index": 50,
+        "proximity_interval_lower": 25.454422008127445,
+        "proximity_interval_upper": 25.454422008253466
+      },
+      {
+        "approximate_eigenvalue": 26.861121147700775,
+        "directed_inverse_mass_residual_upper": 6.345235505992021e-11,
+        "directed_residual_l2_upper": 6.586432047930504e-13,
+        "eigenvalue_proximity_radius": 6.345235506013496e-11,
+        "index": 51,
+        "proximity_interval_lower": 26.86112114763732,
+        "proximity_interval_upper": 26.86112114776423
+      },
+      {
+        "approximate_eigenvalue": 27.131302553085952,
+        "directed_inverse_mass_residual_upper": 6.46029155083348e-11,
+        "directed_residual_l2_upper": 6.158916358154001e-13,
+        "eigenvalue_proximity_radius": 6.460291550855344e-11,
+        "index": 52,
+        "proximity_interval_lower": 27.131302553021346,
+        "proximity_interval_upper": 27.131302553150558
+      },
+      {
+        "approximate_eigenvalue": 27.246280024136496,
+        "directed_inverse_mass_residual_upper": 6.302968371124587e-11,
+        "directed_residual_l2_upper": 5.821377633773475e-13,
+        "eigenvalue_proximity_radius": 6.302968371145919e-11,
+        "index": 53,
+        "proximity_interval_lower": 27.246280024073464,
+        "proximity_interval_upper": 27.246280024199528
+      },
+      {
+        "approximate_eigenvalue": 27.51568375564945,
+        "directed_inverse_mass_residual_upper": 6.464130683229658e-11,
+        "directed_residual_l2_upper": 5.7194122244595e-13,
+        "eigenvalue_proximity_radius": 6.464130683251536e-11,
+        "index": 54,
+        "proximity_interval_lower": 27.515683755584806,
+        "proximity_interval_upper": 27.515683755714097
+      },
+      {
+        "approximate_eigenvalue": 27.779534516854895,
+        "directed_inverse_mass_residual_upper": 6.451449739019356e-11,
+        "directed_residual_l2_upper": 6.527303887165704e-13,
+        "eigenvalue_proximity_radius": 6.451449739041191e-11,
+        "index": 55,
+        "proximity_interval_lower": 27.779534516790378,
+        "proximity_interval_upper": 27.779534516919412
+      },
+      {
+        "approximate_eigenvalue": 27.95721566362583,
+        "directed_inverse_mass_residual_upper": 6.316284155673874e-11,
+        "directed_residual_l2_upper": 5.513767122600503e-13,
+        "eigenvalue_proximity_radius": 6.316284155695252e-11,
+        "index": 56,
+        "proximity_interval_lower": 27.957215663562664,
+        "proximity_interval_upper": 27.957215663689
+      },
+      {
+        "approximate_eigenvalue": 29.467668984352574,
+        "directed_inverse_mass_residual_upper": 6.310320816402617e-11,
+        "directed_residual_l2_upper": 4.1313024565287883e-13,
+        "eigenvalue_proximity_radius": 6.310320816423973e-11,
+        "index": 57,
+        "proximity_interval_lower": 29.467668984289467,
+        "proximity_interval_upper": 29.46766898441568
+      },
+      {
+        "approximate_eigenvalue": 29.501393061775957,
+        "directed_inverse_mass_residual_upper": 6.310288828144298e-11,
+        "directed_residual_l2_upper": 4.0029461156455257e-13,
+        "eigenvalue_proximity_radius": 6.310288828165654e-11,
+        "index": 58,
+        "proximity_interval_lower": 29.50139306171285,
+        "proximity_interval_upper": 29.501393061839064
+      },
+      {
+        "approximate_eigenvalue": 30.104288935479484,
+        "directed_inverse_mass_residual_upper": 6.363907349759555e-11,
+        "directed_residual_l2_upper": 5.51689325934236e-13,
+        "eigenvalue_proximity_radius": 6.363907349781094e-11,
+        "index": 59,
+        "proximity_interval_lower": 30.10428893541584,
+        "proximity_interval_upper": 30.104288935543128
+      },
+      {
+        "approximate_eigenvalue": 30.6176411488148,
+        "directed_inverse_mass_residual_upper": 6.375965049181229e-11,
+        "directed_residual_l2_upper": 5.84167896541426e-13,
+        "eigenvalue_proximity_radius": 6.375965049202808e-11,
+        "index": 60,
+        "proximity_interval_lower": 30.617641148751037,
+        "proximity_interval_upper": 30.617641148878565
+      },
+      {
+        "approximate_eigenvalue": 30.779574408300384,
+        "directed_inverse_mass_residual_upper": 6.335267819068033e-11,
+        "directed_residual_l2_upper": 6.064918469813169e-13,
+        "eigenvalue_proximity_radius": 6.335267819089475e-11,
+        "index": 61,
+        "proximity_interval_lower": 30.77957440823703,
+        "proximity_interval_upper": 30.77957440836374
+      },
+      {
+        "approximate_eigenvalue": 31.022952361464405,
+        "directed_inverse_mass_residual_upper": 6.374505271907971e-11,
+        "directed_residual_l2_upper": 6.688427340801865e-13,
+        "eigenvalue_proximity_radius": 6.374505271929545e-11,
+        "index": 62,
+        "proximity_interval_lower": 31.022952361400655,
+        "proximity_interval_upper": 31.022952361528155
+      },
+      {
+        "approximate_eigenvalue": 31.030783544362965,
+        "directed_inverse_mass_residual_upper": 6.427651468518698e-11,
+        "directed_residual_l2_upper": 5.092611051097227e-13,
+        "eigenvalue_proximity_radius": 6.427651468540453e-11,
+        "index": 63,
+        "proximity_interval_lower": 31.030783544298686,
+        "proximity_interval_upper": 31.030783544427244
+      },
+      {
+        "approximate_eigenvalue": 31.421090524476085,
+        "directed_inverse_mass_residual_upper": 6.353623063404006e-11,
+        "directed_residual_l2_upper": 5.428894016679034e-13,
+        "eigenvalue_proximity_radius": 6.35362306342551e-11,
+        "index": 64,
+        "proximity_interval_lower": 31.421090524412545,
+        "proximity_interval_upper": 31.421090524539625
+      },
+      {
+        "approximate_eigenvalue": 32.35048507440549,
+        "directed_inverse_mass_residual_upper": 6.436992001587781e-11,
+        "directed_residual_l2_upper": 4.690905466687282e-13,
+        "eigenvalue_proximity_radius": 6.436992001609567e-11,
+        "index": 65,
+        "proximity_interval_lower": 32.350485074341115,
+        "proximity_interval_upper": 32.350485074469866
+      },
+      {
+        "approximate_eigenvalue": 32.57900055306892,
+        "directed_inverse_mass_residual_upper": 6.42233123562176e-11,
+        "directed_residual_l2_upper": 4.835537075731573e-13,
+        "eigenvalue_proximity_radius": 6.422331235643497e-11,
+        "index": 66,
+        "proximity_interval_lower": 32.57900055300469,
+        "proximity_interval_upper": 32.579000553133156
+      },
+      {
+        "approximate_eigenvalue": 32.953280016914846,
+        "directed_inverse_mass_residual_upper": 6.455925912172247e-11,
+        "directed_residual_l2_upper": 6.579901691121387e-13,
+        "eigenvalue_proximity_radius": 6.455925912194098e-11,
+        "index": 67,
+        "proximity_interval_lower": 32.95328001685028,
+        "proximity_interval_upper": 32.95328001697941
+      },
+      {
+        "approximate_eigenvalue": 33.64452792552832,
+        "directed_inverse_mass_residual_upper": 6.399394988192911e-11,
+        "directed_residual_l2_upper": 5.566921757352406e-13,
+        "eigenvalue_proximity_radius": 6.39939498821457e-11,
+        "index": 68,
+        "proximity_interval_lower": 33.644527925464324,
+        "proximity_interval_upper": 33.64452792559232
+      },
+      {
+        "approximate_eigenvalue": 33.860983252086555,
+        "directed_inverse_mass_residual_upper": 6.382933943286129e-11,
+        "directed_residual_l2_upper": 6.087994426902343e-13,
+        "eigenvalue_proximity_radius": 6.382933943307732e-11,
+        "index": 69,
+        "proximity_interval_lower": 33.86098325202272,
+        "proximity_interval_upper": 33.86098325215039
+      },
+      {
+        "approximate_eigenvalue": 34.222153700369866,
+        "directed_inverse_mass_residual_upper": 6.340331505741738e-11,
+        "directed_residual_l2_upper": 5.666613336752636e-13,
+        "eigenvalue_proximity_radius": 6.340331505763196e-11,
+        "index": 70,
+        "proximity_interval_lower": 34.22215370030646,
+        "proximity_interval_upper": 34.222153700433275
+      },
+      {
+        "approximate_eigenvalue": 34.46364682836331,
+        "directed_inverse_mass_residual_upper": 6.440889625453097e-11,
+        "directed_residual_l2_upper": 6.714070187333662e-13,
+        "eigenvalue_proximity_radius": 6.440889625474896e-11,
+        "index": 71,
+        "proximity_interval_lower": 34.46364682829889,
+        "proximity_interval_upper": 34.46364682842773
+      },
+      {
+        "approximate_eigenvalue": 35.479772615847196,
+        "directed_inverse_mass_residual_upper": 6.450515584191211e-11,
+        "directed_residual_l2_upper": 5.594610907713791e-13,
+        "eigenvalue_proximity_radius": 6.450515584213042e-11,
+        "index": 72,
+        "proximity_interval_lower": 35.479772615782686,
+        "proximity_interval_upper": 35.479772615911706
+      },
+      {
+        "approximate_eigenvalue": 36.077728042105655,
+        "directed_inverse_mass_residual_upper": 6.432954458830284e-11,
+        "directed_residual_l2_upper": 5.659078930900579e-13,
+        "eigenvalue_proximity_radius": 6.432954458852056e-11,
+        "index": 73,
+        "proximity_interval_lower": 36.077728042041315,
+        "proximity_interval_upper": 36.077728042169994
+      },
+      {
+        "approximate_eigenvalue": 36.31241117993829,
+        "directed_inverse_mass_residual_upper": 6.462735078752826e-11,
+        "directed_residual_l2_upper": 6.20674373902382e-13,
+        "eigenvalue_proximity_radius": 6.462735078774698e-11,
+        "index": 74,
+        "proximity_interval_lower": 36.312411179873656,
+        "proximity_interval_upper": 36.31241118000292
+      },
+      {
+        "approximate_eigenvalue": 36.81008615211242,
+        "directed_inverse_mass_residual_upper": 6.370744103844107e-11,
+        "directed_residual_l2_upper": 5.862162791974817e-13,
+        "eigenvalue_proximity_radius": 6.370744103865669e-11,
+        "index": 75,
+        "proximity_interval_lower": 36.810086152048704,
+        "proximity_interval_upper": 36.81008615217613
+      },
+      {
+        "approximate_eigenvalue": 37.31700488143393,
+        "directed_inverse_mass_residual_upper": 6.45960175654052e-11,
+        "directed_residual_l2_upper": 5.360856756588942e-13,
+        "eigenvalue_proximity_radius": 6.459601756562382e-11,
+        "index": 76,
+        "proximity_interval_lower": 37.31700488136933,
+        "proximity_interval_upper": 37.317004881498534
+      },
+      {
+        "approximate_eigenvalue": 37.367311575861194,
+        "directed_inverse_mass_residual_upper": 6.355428420594603e-11,
+        "directed_residual_l2_upper": 4.819781003645392e-13,
+        "eigenvalue_proximity_radius": 6.355428420616113e-11,
+        "index": 77,
+        "proximity_interval_lower": 37.367311575797636,
+        "proximity_interval_upper": 37.36731157592475
+      },
+      {
+        "approximate_eigenvalue": 37.87473217945809,
+        "directed_inverse_mass_residual_upper": 6.418499570793079e-11,
+        "directed_residual_l2_upper": 4.387286756678887e-13,
+        "eigenvalue_proximity_radius": 6.418499570814803e-11,
+        "index": 78,
+        "proximity_interval_lower": 37.8747321793939,
+        "proximity_interval_upper": 37.87473217952228
+      },
+      {
+        "approximate_eigenvalue": 37.88399733797212,
+        "directed_inverse_mass_residual_upper": 6.441452825503673e-11,
+        "directed_residual_l2_upper": 4.535449810897261e-13,
+        "eigenvalue_proximity_radius": 6.441452825525474e-11,
+        "index": 79,
+        "proximity_interval_lower": 37.883997337907694,
+        "proximity_interval_upper": 37.883997338036544
+      },
+      {
+        "approximate_eigenvalue": 38.80502245393043,
+        "directed_inverse_mass_residual_upper": 6.483416226263378e-11,
+        "directed_residual_l2_upper": 5.749716713842903e-13,
+        "eigenvalue_proximity_radius": 6.483416226285322e-11,
+        "index": 80,
+        "proximity_interval_lower": 38.80502245386558,
+        "proximity_interval_upper": 38.80502245399527
+      },
+      {
+        "approximate_eigenvalue": 38.849134637660974,
+        "directed_inverse_mass_residual_upper": 6.420160375739664e-11,
+        "directed_residual_l2_upper": 5.451409011858701e-13,
+        "eigenvalue_proximity_radius": 6.420160375761393e-11,
+        "index": 81,
+        "proximity_interval_lower": 38.84913463759676,
+        "proximity_interval_upper": 38.849134637725186
+      },
+      {
+        "approximate_eigenvalue": 38.86785359468293,
+        "directed_inverse_mass_residual_upper": 6.432006470960974e-11,
+        "directed_residual_l2_upper": 5.561096696068413e-13,
+        "eigenvalue_proximity_radius": 6.432006470982743e-11,
+        "index": 82,
+        "proximity_interval_lower": 38.8678535946186,
+        "proximity_interval_upper": 38.86785359474725
+      },
+      {
+        "approximate_eigenvalue": 39.824465961918776,
+        "directed_inverse_mass_residual_upper": 6.51961839819684e-11,
+        "directed_residual_l2_upper": 6.734093262926447e-13,
+        "eigenvalue_proximity_radius": 6.519618398218906e-11,
+        "index": 83,
+        "proximity_interval_lower": 39.82446596185357,
+        "proximity_interval_upper": 39.82446596198398
+      },
+      {
+        "approximate_eigenvalue": 40.565156446657745,
+        "directed_inverse_mass_residual_upper": 6.451903783101096e-11,
+        "directed_residual_l2_upper": 4.637865131874272e-13,
+        "eigenvalue_proximity_radius": 6.451903783122932e-11,
+        "index": 84,
+        "proximity_interval_lower": 40.56515644659322,
+        "proximity_interval_upper": 40.56515644672227
+      },
+      {
+        "approximate_eigenvalue": 40.75191926941305,
+        "directed_inverse_mass_residual_upper": 6.378119273545391e-11,
+        "directed_residual_l2_upper": 4.3561333110003005e-13,
+        "eigenvalue_proximity_radius": 6.378119273566978e-11,
+        "index": 85,
+        "proximity_interval_lower": 40.751919269349266,
+        "proximity_interval_upper": 40.751919269476836
+      },
+      {
+        "approximate_eigenvalue": 41.25267734615531,
+        "directed_inverse_mass_residual_upper": 6.468581889027415e-11,
+        "directed_residual_l2_upper": 6.204367241594107e-13,
+        "eigenvalue_proximity_radius": 6.468581889049308e-11,
+        "index": 86,
+        "proximity_interval_lower": 41.252677346090614,
+        "proximity_interval_upper": 41.252677346220004
+      },
+      {
+        "approximate_eigenvalue": 41.884438323823936,
+        "directed_inverse_mass_residual_upper": 6.543316072743031e-11,
+        "directed_residual_l2_upper": 5.722757248610681e-13,
+        "eigenvalue_proximity_radius": 6.543316072765176e-11,
+        "index": 87,
+        "proximity_interval_lower": 41.884438323758495,
+        "proximity_interval_upper": 41.88443832388938
+      },
+      {
+        "approximate_eigenvalue": 42.28913898649163,
+        "directed_inverse_mass_residual_upper": 6.452763311318432e-11,
+        "directed_residual_l2_upper": 5.373952782901629e-13,
+        "eigenvalue_proximity_radius": 6.452763311340271e-11,
+        "index": 88,
+        "proximity_interval_lower": 42.2891389864271,
+        "proximity_interval_upper": 42.28913898655616
+      },
+      {
+        "approximate_eigenvalue": 42.71853992414679,
+        "directed_inverse_mass_residual_upper": 6.414790291563605e-11,
+        "directed_residual_l2_upper": 5.883194136359712e-13,
+        "eigenvalue_proximity_radius": 6.414790291585316e-11,
+        "index": 89,
+        "proximity_interval_lower": 42.718539924082634,
+        "proximity_interval_upper": 42.718539924210944
+      },
+      {
+        "approximate_eigenvalue": 42.92357535304192,
+        "directed_inverse_mass_residual_upper": 6.481772579603553e-11,
+        "directed_residual_l2_upper": 5.077843853479458e-13,
+        "eigenvalue_proximity_radius": 6.48177257962549e-11,
+        "index": 90,
+        "proximity_interval_lower": 42.923575352977096,
+        "proximity_interval_upper": 42.92357535310674
+      },
+      {
+        "approximate_eigenvalue": 43.15393895348979,
+        "directed_inverse_mass_residual_upper": 6.466455336696834e-11,
+        "directed_residual_l2_upper": 5.11302117444011e-13,
+        "eigenvalue_proximity_radius": 6.466455336718719e-11,
+        "index": 91,
+        "proximity_interval_lower": 43.15393895342512,
+        "proximity_interval_upper": 43.153938953554466
+      },
+      {
+        "approximate_eigenvalue": 43.855455997168086,
+        "directed_inverse_mass_residual_upper": 6.447974800625607e-11,
+        "directed_residual_l2_upper": 5.33379022182984e-13,
+        "eigenvalue_proximity_radius": 6.447974800647431e-11,
+        "index": 92,
+        "proximity_interval_lower": 43.8554559971036,
+        "proximity_interval_upper": 43.855455997232575
+      },
+      {
+        "approximate_eigenvalue": 44.13527544045626,
+        "directed_inverse_mass_residual_upper": 6.550725671540793e-11,
+        "directed_residual_l2_upper": 6.416657947579299e-13,
+        "eigenvalue_proximity_radius": 6.550725671562964e-11,
+        "index": 93,
+        "proximity_interval_lower": 44.13527544039075,
+        "proximity_interval_upper": 44.135275440521774
+      },
+      {
+        "approximate_eigenvalue": 44.341101989365406,
+        "directed_inverse_mass_residual_upper": 6.430305628423034e-11,
+        "directed_residual_l2_upper": 5.361364830770051e-13,
+        "eigenvalue_proximity_radius": 6.430305628444798e-11,
+        "index": 94,
+        "proximity_interval_lower": 44.341101989301094,
+        "proximity_interval_upper": 44.34110198942972
+      },
+      {
+        "approximate_eigenvalue": 45.422326500450545,
+        "directed_inverse_mass_residual_upper": 6.473529782888314e-11,
+        "directed_residual_l2_upper": 4.616222307205574e-13,
+        "eigenvalue_proximity_radius": 6.473529782910224e-11,
+        "index": 95,
+        "proximity_interval_lower": 45.4223265003858,
+        "proximity_interval_upper": 45.42232650051529
+      },
+      {
+        "approximate_eigenvalue": 45.49834211845765,
+        "directed_inverse_mass_residual_upper": 6.524699864282963e-11,
+        "directed_residual_l2_upper": 4.857427686050427e-13,
+        "eigenvalue_proximity_radius": 6.524699864305046e-11,
+        "index": 96,
+        "proximity_interval_lower": 45.498342118392394,
+        "proximity_interval_upper": 45.498342118522906
+      },
+      {
+        "approximate_eigenvalue": 46.03351278664256,
+        "directed_inverse_mass_residual_upper": 6.523296107110914e-11,
+        "directed_residual_l2_upper": 5.828642138176032e-13,
+        "eigenvalue_proximity_radius": 6.523296107132992e-11,
+        "index": 97,
+        "proximity_interval_lower": 46.03351278657732,
+        "proximity_interval_upper": 46.0335127867078
+      },
+      {
+        "approximate_eigenvalue": 46.9735169176791,
+        "directed_inverse_mass_residual_upper": 6.53083941981205e-11,
+        "directed_residual_l2_upper": 6.097491247180081e-13,
+        "eigenvalue_proximity_radius": 6.530839419834154e-11,
+        "index": 98,
+        "proximity_interval_lower": 46.973516917613786,
+        "proximity_interval_upper": 46.97351691774441
+      },
+      {
+        "approximate_eigenvalue": 47.281388941285726,
+        "directed_inverse_mass_residual_upper": 6.446601613263173e-11,
+        "directed_residual_l2_upper": 6.169189885514716e-13,
+        "eigenvalue_proximity_radius": 6.446601613284991e-11,
+        "index": 99,
+        "proximity_interval_lower": 47.28138894122125,
+        "proximity_interval_upper": 47.2813889413502
+      },
+      {
+        "approximate_eigenvalue": 47.48308782582367,
+        "directed_inverse_mass_residual_upper": 6.579532355714496e-11,
+        "directed_residual_l2_upper": 4.765056428322167e-13,
+        "eigenvalue_proximity_radius": 6.579532355736764e-11,
+        "index": 100,
+        "proximity_interval_lower": 47.48308782575786,
+        "proximity_interval_upper": 47.48308782588947
+      },
+      {
+        "approximate_eigenvalue": 47.760575170703305,
+        "directed_inverse_mass_residual_upper": 6.501108575619553e-11,
+        "directed_residual_l2_upper": 4.789623596543029e-13,
+        "eigenvalue_proximity_radius": 6.501108575641556e-11,
+        "index": 101,
+        "proximity_interval_lower": 47.76057517063829,
+        "proximity_interval_upper": 47.76057517076832
+      },
+      {
+        "approximate_eigenvalue": 47.819304607334246,
+        "directed_inverse_mass_residual_upper": 6.522170672981767e-11,
+        "directed_residual_l2_upper": 5.935669134380626e-13,
+        "eigenvalue_proximity_radius": 6.522170673003841e-11,
+        "index": 102,
+        "proximity_interval_lower": 47.81930460726902,
+        "proximity_interval_upper": 47.819304607399474
+      },
+      {
+        "approximate_eigenvalue": 48.78409731477129,
+        "directed_inverse_mass_residual_upper": 6.58939819586666e-11,
+        "directed_residual_l2_upper": 5.446916588644032e-13,
+        "eigenvalue_proximity_radius": 6.589398195888962e-11,
+        "index": 103,
+        "proximity_interval_lower": 48.784097314705384,
+        "proximity_interval_upper": 48.78409731483719
+      },
+      {
+        "approximate_eigenvalue": 49.67073748083932,
+        "directed_inverse_mass_residual_upper": 6.5036383251192e-11,
+        "directed_residual_l2_upper": 5.24823988887339e-13,
+        "eigenvalue_proximity_radius": 6.503638325141213e-11,
+        "index": 104,
+        "proximity_interval_lower": 49.67073748077428,
+        "proximity_interval_upper": 49.670737480904364
+      },
+      {
+        "approximate_eigenvalue": 49.94932643713074,
+        "directed_inverse_mass_residual_upper": 6.525766165375331e-11,
+        "directed_residual_l2_upper": 4.938043286853311e-13,
+        "eigenvalue_proximity_radius": 6.525766165397418e-11,
+        "index": 105,
+        "proximity_interval_lower": 49.94932643706548,
+        "proximity_interval_upper": 49.94932643719601
+      },
+      {
+        "approximate_eigenvalue": 50.05680870102412,
+        "directed_inverse_mass_residual_upper": 6.678900845706868e-11,
+        "directed_residual_l2_upper": 5.743801726657582e-13,
+        "eigenvalue_proximity_radius": 6.678900845729472e-11,
+        "index": 106,
+        "proximity_interval_lower": 50.05680870095732,
+        "proximity_interval_upper": 50.056808701090915
+      },
+      {
+        "approximate_eigenvalue": 50.480393988869984,
+        "directed_inverse_mass_residual_upper": 6.535059488416809e-11,
+        "directed_residual_l2_upper": 5.391135292251345e-13,
+        "eigenvalue_proximity_radius": 6.535059488438927e-11,
+        "index": 107,
+        "proximity_interval_lower": 50.48039398880463,
+        "proximity_interval_upper": 50.48039398893534
+      },
+      {
+        "approximate_eigenvalue": 50.827612677907744,
+        "directed_inverse_mass_residual_upper": 6.552461872065797e-11,
+        "directed_residual_l2_upper": 4.78678600339622e-13,
+        "eigenvalue_proximity_radius": 6.552461872087974e-11,
+        "index": 108,
+        "proximity_interval_lower": 50.82761267784221,
+        "proximity_interval_upper": 50.82761267797328
+      },
+      {
+        "approximate_eigenvalue": 50.922213036482525,
+        "directed_inverse_mass_residual_upper": 6.522567781239557e-11,
+        "directed_residual_l2_upper": 5.307938895333469e-13,
+        "eigenvalue_proximity_radius": 6.522567781261632e-11,
+        "index": 109,
+        "proximity_interval_lower": 50.92221303641729,
+        "proximity_interval_upper": 50.92221303654776
+      },
+      {
+        "approximate_eigenvalue": 51.31107720330256,
+        "directed_inverse_mass_residual_upper": 6.572519344139017e-11,
+        "directed_residual_l2_upper": 6.423254301332191e-13,
+        "eigenvalue_proximity_radius": 6.572519344161261e-11,
+        "index": 110,
+        "proximity_interval_lower": 51.31107720323683,
+        "proximity_interval_upper": 51.31107720336829
+      },
+      {
+        "approximate_eigenvalue": 51.57322270092381,
+        "directed_inverse_mass_residual_upper": 6.47971771212713e-11,
+        "directed_residual_l2_upper": 4.748894080353022e-13,
+        "eigenvalue_proximity_radius": 6.47971771214906e-11,
+        "index": 111,
+        "proximity_interval_lower": 51.573222700859006,
+        "proximity_interval_upper": 51.57322270098861
+      },
+      {
+        "approximate_eigenvalue": 52.52495509078914,
+        "directed_inverse_mass_residual_upper": 6.569425386295089e-11,
+        "directed_residual_l2_upper": 5.621486658609615e-13,
+        "eigenvalue_proximity_radius": 6.569425386317323e-11,
+        "index": 112,
+        "proximity_interval_lower": 52.52495509072344,
+        "proximity_interval_upper": 52.524955090854846
+      },
+      {
+        "approximate_eigenvalue": 52.55426152898616,
+        "directed_inverse_mass_residual_upper": 6.517224635597204e-11,
+        "directed_residual_l2_upper": 5.814819382570494e-13,
+        "eigenvalue_proximity_radius": 6.517224635619262e-11,
+        "index": 113,
+        "proximity_interval_lower": 52.55426152892098,
+        "proximity_interval_upper": 52.55426152905134
+      },
+      {
+        "approximate_eigenvalue": 53.057398981784985,
+        "directed_inverse_mass_residual_upper": 6.500795280738247e-11,
+        "directed_residual_l2_upper": 5.72762329926439e-13,
+        "eigenvalue_proximity_radius": 6.500795280760249e-11,
+        "index": 114,
+        "proximity_interval_lower": 53.05739898171997,
+        "proximity_interval_upper": 53.05739898185
+      },
+      {
+        "approximate_eigenvalue": 53.99691851984932,
+        "directed_inverse_mass_residual_upper": 6.516547132855509e-11,
+        "directed_residual_l2_upper": 5.341830736897907e-13,
+        "eigenvalue_proximity_radius": 6.516547132877564e-11,
+        "index": 115,
+        "proximity_interval_lower": 53.996918519784145,
+        "proximity_interval_upper": 53.99691851991449
+      },
+      {
+        "approximate_eigenvalue": 54.6462615531358,
+        "directed_inverse_mass_residual_upper": 6.576953170702914e-11,
+        "directed_residual_l2_upper": 4.824174020263804e-13,
+        "eigenvalue_proximity_radius": 6.576953170725174e-11,
+        "index": 116,
+        "proximity_interval_lower": 54.646261553070026,
+        "proximity_interval_upper": 54.646261553201576
+      },
+      {
+        "approximate_eigenvalue": 54.860045282960805,
+        "directed_inverse_mass_residual_upper": 6.475869269090252e-11,
+        "directed_residual_l2_upper": 5.382579430982239e-13,
+        "eigenvalue_proximity_radius": 6.475869269112169e-11,
+        "index": 117,
+        "proximity_interval_lower": 54.86004528289604,
+        "proximity_interval_upper": 54.86004528302557
+      },
+      {
+        "approximate_eigenvalue": 54.984350198579136,
+        "directed_inverse_mass_residual_upper": 6.543476438179025e-11,
+        "directed_residual_l2_upper": 5.098815504050377e-13,
+        "eigenvalue_proximity_radius": 6.543476438201171e-11,
+        "index": 118,
+        "proximity_interval_lower": 54.984350198513695,
+        "proximity_interval_upper": 54.98435019864458
+      },
+      {
+        "approximate_eigenvalue": 55.40239529523875,
+        "directed_inverse_mass_residual_upper": 6.556260169810467e-11,
+        "directed_residual_l2_upper": 6.030419774216182e-13,
+        "eigenvalue_proximity_radius": 6.556260169832657e-11,
+        "index": 119,
+        "proximity_interval_lower": 55.40239529517318,
+        "proximity_interval_upper": 55.402395295304316
+      },
+      {
+        "approximate_eigenvalue": 56.38307583872588,
+        "directed_inverse_mass_residual_upper": 6.533526527431887e-11,
+        "directed_residual_l2_upper": 5.60823745905905e-13,
+        "eigenvalue_proximity_radius": 6.533526527454e-11,
+        "index": 120,
+        "proximity_interval_lower": 56.38307583866054,
+        "proximity_interval_upper": 56.38307583879122
+      },
+      {
+        "approximate_eigenvalue": 56.736656539704825,
+        "directed_inverse_mass_residual_upper": 6.599288774724384e-11,
+        "directed_residual_l2_upper": 5.733084011957148e-13,
+        "eigenvalue_proximity_radius": 6.59928877474672e-11,
+        "index": 121,
+        "proximity_interval_lower": 56.73665653963882,
+        "proximity_interval_upper": 56.73665653977083
+      },
+      {
+        "approximate_eigenvalue": 56.77768443666988,
+        "directed_inverse_mass_residual_upper": 6.672470212272308e-11,
+        "directed_residual_l2_upper": 6.404364664797364e-13,
+        "eigenvalue_proximity_radius": 6.672470212294891e-11,
+        "index": 122,
+        "proximity_interval_lower": 56.777684436603145,
+        "proximity_interval_upper": 56.777684436736614
+      },
+      {
+        "approximate_eigenvalue": 57.871587900296724,
+        "directed_inverse_mass_residual_upper": 6.54377406417986e-11,
+        "directed_residual_l2_upper": 5.944685924963006e-13,
+        "eigenvalue_proximity_radius": 6.543774064202008e-11,
+        "index": 123,
+        "proximity_interval_lower": 57.871587900231276,
+        "proximity_interval_upper": 57.87158790036217
+      },
+      {
+        "approximate_eigenvalue": 57.8923062592192,
+        "directed_inverse_mass_residual_upper": 6.516285798114481e-11,
+        "directed_residual_l2_upper": 5.554356450648351e-13,
+        "eigenvalue_proximity_radius": 6.516285798136536e-11,
+        "index": 124,
+        "proximity_interval_lower": 57.892306259154026,
+        "proximity_interval_upper": 57.89230625928437
+      },
+      {
+        "approximate_eigenvalue": 57.92829606740281,
+        "directed_inverse_mass_residual_upper": 6.605047296897335e-11,
+        "directed_residual_l2_upper": 5.79898551839846e-13,
+        "eigenvalue_proximity_radius": 6.60504729691969e-11,
+        "index": 125,
+        "proximity_interval_lower": 57.92829606733675,
+        "proximity_interval_upper": 57.92829606746887
+      },
+      {
+        "approximate_eigenvalue": 58.60668879011074,
+        "directed_inverse_mass_residual_upper": 6.583899799584996e-11,
+        "directed_residual_l2_upper": 4.31441482938746e-13,
+        "eigenvalue_proximity_radius": 6.58389979960728e-11,
+        "index": 126,
+        "proximity_interval_lower": 58.60668879004489,
+        "proximity_interval_upper": 58.606688790176584
+      },
+      {
+        "approximate_eigenvalue": 58.87935463895413,
+        "directed_inverse_mass_residual_upper": 6.487417937673917e-11,
+        "directed_residual_l2_upper": 4.58467709748332e-13,
+        "eigenvalue_proximity_radius": 6.487417937695874e-11,
+        "index": 127,
+        "proximity_interval_lower": 58.879354638889254,
+        "proximity_interval_upper": 58.87935463901901
+      },
+      {
+        "approximate_eigenvalue": 59.572443694643304,
+        "directed_inverse_mass_residual_upper": 6.643173741754714e-11,
+        "directed_residual_l2_upper": 6.229939710443661e-13,
+        "eigenvalue_proximity_radius": 6.643173741777197e-11,
+        "index": 128,
+        "proximity_interval_lower": 59.57244369457687,
+        "proximity_interval_upper": 59.57244369470974
+      },
+      {
+        "approximate_eigenvalue": 60.26883528858007,
+        "directed_inverse_mass_residual_upper": 6.626427789587311e-11,
+        "directed_residual_l2_upper": 5.579597041868705e-13,
+        "eigenvalue_proximity_radius": 6.626427789609738e-11,
+        "index": 129,
+        "proximity_interval_lower": 60.2688352885138,
+        "proximity_interval_upper": 60.26883528864634
+      },
+      {
+        "approximate_eigenvalue": 60.88774895841959,
+        "directed_inverse_mass_residual_upper": 6.59410298722678e-11,
+        "directed_residual_l2_upper": 5.600309936704579e-13,
+        "eigenvalue_proximity_radius": 6.594102987249097e-11,
+        "index": 130,
+        "proximity_interval_lower": 60.88774895835365,
+        "proximity_interval_upper": 60.88774895848554
+      },
+      {
+        "approximate_eigenvalue": 61.12186700526178,
+        "directed_inverse_mass_residual_upper": 6.582757013928968e-11,
+        "directed_residual_l2_upper": 5.238461957129594e-13,
+        "eigenvalue_proximity_radius": 6.582757013951248e-11,
+        "index": 131,
+        "proximity_interval_lower": 61.121867005195945,
+        "proximity_interval_upper": 61.12186700532761
+      },
+      {
+        "approximate_eigenvalue": 61.2734691307682,
+        "directed_inverse_mass_residual_upper": 6.690626068834773e-11,
+        "directed_residual_l2_upper": 5.003933766880919e-13,
+        "eigenvalue_proximity_radius": 6.690626068857417e-11,
+        "index": 132,
+        "proximity_interval_lower": 61.27346913070129,
+        "proximity_interval_upper": 61.27346913083511
+      },
+      {
+        "approximate_eigenvalue": 61.349120011404345,
+        "directed_inverse_mass_residual_upper": 6.608031650195154e-11,
+        "directed_residual_l2_upper": 5.822826365031845e-13,
+        "eigenvalue_proximity_radius": 6.608031650217519e-11,
+        "index": 133,
+        "proximity_interval_lower": 61.34912001133826,
+        "proximity_interval_upper": 61.34912001147043
+      },
+      {
+        "approximate_eigenvalue": 61.96890233898088,
+        "directed_inverse_mass_residual_upper": 6.635678627064955e-11,
+        "directed_residual_l2_upper": 5.22705872693121e-13,
+        "eigenvalue_proximity_radius": 6.635678627087413e-11,
+        "index": 134,
+        "proximity_interval_lower": 61.96890233891452,
+        "proximity_interval_upper": 61.96890233904725
+      },
+      {
+        "approximate_eigenvalue": 62.11089863951731,
+        "directed_inverse_mass_residual_upper": 6.585545307724723e-11,
+        "directed_residual_l2_upper": 5.863017573682219e-13,
+        "eigenvalue_proximity_radius": 6.585545307747012e-11,
+        "index": 135,
+        "proximity_interval_lower": 62.11089863945145,
+        "proximity_interval_upper": 62.11089863958317
+      },
+      {
+        "approximate_eigenvalue": 63.06430103311085,
+        "directed_inverse_mass_residual_upper": 6.664981855296641e-11,
+        "directed_residual_l2_upper": 6.082079057834755e-13,
+        "eigenvalue_proximity_radius": 6.664981855319198e-11,
+        "index": 136,
+        "proximity_interval_lower": 63.064301033044195,
+        "proximity_interval_upper": 63.06430103317751
+      },
+      {
+        "approximate_eigenvalue": 63.62000749168216,
+        "directed_inverse_mass_residual_upper": 6.612035861346078e-11,
+        "directed_residual_l2_upper": 6.332457516253698e-13,
+        "eigenvalue_proximity_radius": 6.612035861368456e-11,
+        "index": 137,
+        "proximity_interval_lower": 63.62000749161603,
+        "proximity_interval_upper": 63.62000749174829
+      },
+      {
+        "approximate_eigenvalue": 63.70296825731608,
+        "directed_inverse_mass_residual_upper": 6.676988522565953e-11,
+        "directed_residual_l2_upper": 5.811418807652182e-13,
+        "eigenvalue_proximity_radius": 6.676988522588551e-11,
+        "index": 138,
+        "proximity_interval_lower": 63.7029682572493,
+        "proximity_interval_upper": 63.70296825738286
+      },
+      {
+        "approximate_eigenvalue": 63.768772817812255,
+        "directed_inverse_mass_residual_upper": 6.540385806983142e-11,
+        "directed_residual_l2_upper": 5.601444153395521e-13,
+        "eigenvalue_proximity_radius": 6.540385807005278e-11,
+        "index": 139,
+        "proximity_interval_lower": 63.76877281774684,
+        "proximity_interval_upper": 63.76877281787767
+      },
+      {
+        "approximate_eigenvalue": 64.03272039174892,
+        "directed_inverse_mass_residual_upper": 6.58091167026143e-11,
+        "directed_residual_l2_upper": 5.745444889562808e-13,
+        "eigenvalue_proximity_radius": 6.580911670283704e-11,
+        "index": 140,
+        "proximity_interval_lower": 64.0327203916831,
+        "proximity_interval_upper": 64.03272039181475
+      },
+      {
+        "approximate_eigenvalue": 65.29558840765569,
+        "directed_inverse_mass_residual_upper": 6.597383542471948e-11,
+        "directed_residual_l2_upper": 5.171705732953972e-13,
+        "eigenvalue_proximity_radius": 6.597383542494277e-11,
+        "index": 141,
+        "proximity_interval_lower": 65.2955884075897,
+        "proximity_interval_upper": 65.29558840772167
+      },
+      {
+        "approximate_eigenvalue": 65.4122016842116,
+        "directed_inverse_mass_residual_upper": 6.658882146774197e-11,
+        "directed_residual_l2_upper": 5.415421639965375e-13,
+        "eigenvalue_proximity_radius": 6.658882146796733e-11,
+        "index": 142,
+        "proximity_interval_lower": 65.41220168414499,
+        "proximity_interval_upper": 65.4122016842782
+      },
+      {
+        "approximate_eigenvalue": 65.47967015397107,
+        "directed_inverse_mass_residual_upper": 6.609369707210141e-11,
+        "directed_residual_l2_upper": 6.124445631449491e-13,
+        "eigenvalue_proximity_radius": 6.60936970723251e-11,
+        "index": 143,
+        "proximity_interval_lower": 65.47967015390496,
+        "proximity_interval_upper": 65.47967015403718
+      },
+      {
+        "approximate_eigenvalue": 65.8627348206333,
+        "directed_inverse_mass_residual_upper": 6.688994503264361e-11,
+        "directed_residual_l2_upper": 4.959232352219009e-13,
+        "eigenvalue_proximity_radius": 6.688994503287e-11,
+        "index": 144,
+        "proximity_interval_lower": 65.8627348205664,
+        "proximity_interval_upper": 65.86273482070021
+      },
+      {
+        "approximate_eigenvalue": 66.65848877515099,
+        "directed_inverse_mass_residual_upper": 6.604410637929392e-11,
+        "directed_residual_l2_upper": 5.054163085903529e-13,
+        "eigenvalue_proximity_radius": 6.604410637951744e-11,
+        "index": 145,
+        "proximity_interval_lower": 66.65848877508493,
+        "proximity_interval_upper": 66.65848877521704
+      },
+      {
+        "approximate_eigenvalue": 67.42297311153304,
+        "directed_inverse_mass_residual_upper": 6.651605801129143e-11,
+        "directed_residual_l2_upper": 6.396593833609419e-13,
+        "eigenvalue_proximity_radius": 6.651605801151656e-11,
+        "index": 146,
+        "proximity_interval_lower": 67.4229731114665,
+        "proximity_interval_upper": 67.42297311159957
+      },
+      {
+        "approximate_eigenvalue": 68.25306463323484,
+        "directed_inverse_mass_residual_upper": 6.756686403781607e-11,
+        "directed_residual_l2_upper": 6.382384483427086e-13,
+        "eigenvalue_proximity_radius": 6.756686403804474e-11,
+        "index": 147,
+        "proximity_interval_lower": 68.25306463316726,
+        "proximity_interval_upper": 68.25306463330243
+      },
+      {
+        "approximate_eigenvalue": 68.31292475521973,
+        "directed_inverse_mass_residual_upper": 6.62962568843412e-11,
+        "directed_residual_l2_upper": 5.245576323284406e-13,
+        "eigenvalue_proximity_radius": 6.629625688456557e-11,
+        "index": 148,
+        "proximity_interval_lower": 68.31292475515342,
+        "proximity_interval_upper": 68.31292475528603
+      },
+      {
+        "approximate_eigenvalue": 69.04675692123368,
+        "directed_inverse_mass_residual_upper": 6.754605796644949e-11,
+        "directed_residual_l2_upper": 6.638864499386642e-13,
+        "eigenvalue_proximity_radius": 6.75460579666781e-11,
+        "index": 149,
+        "proximity_interval_lower": 69.04675692116612,
+        "proximity_interval_upper": 69.04675692130124
+      },
+      {
+        "approximate_eigenvalue": 69.16907632771746,
+        "directed_inverse_mass_residual_upper": 6.629588720817606e-11,
+        "directed_residual_l2_upper": 6.741618819172316e-13,
+        "eigenvalue_proximity_radius": 6.629588720840043e-11,
+        "index": 150,
+        "proximity_interval_lower": 69.16907632765115,
+        "proximity_interval_upper": 69.16907632778377
+      },
+      {
+        "approximate_eigenvalue": 70.11334915980663,
+        "directed_inverse_mass_residual_upper": 6.67762329711633e-11,
+        "directed_residual_l2_upper": 5.367951398594227e-13,
+        "eigenvalue_proximity_radius": 6.67762329713893e-11,
+        "index": 151,
+        "proximity_interval_lower": 70.11334915973984,
+        "proximity_interval_upper": 70.11334915987342
+      },
+      {
+        "approximate_eigenvalue": 70.21594362628846,
+        "directed_inverse_mass_residual_upper": 6.612788060420392e-11,
+        "directed_residual_l2_upper": 5.695598073218669e-13,
+        "eigenvalue_proximity_radius": 6.612788060442772e-11,
+        "index": 152,
+        "proximity_interval_lower": 70.21594362622233,
+        "proximity_interval_upper": 70.2159436263546
+      },
+      {
+        "approximate_eigenvalue": 70.49226929884465,
+        "directed_inverse_mass_residual_upper": 6.797696492496339e-11,
+        "directed_residual_l2_upper": 6.60945237927627e-13,
+        "eigenvalue_proximity_radius": 6.797696492519346e-11,
+        "index": 153,
+        "proximity_interval_lower": 70.49226929877666,
+        "proximity_interval_upper": 70.49226929891263
+      },
+      {
+        "approximate_eigenvalue": 70.53463249280205,
+        "directed_inverse_mass_residual_upper": 6.641600012421084e-11,
+        "directed_residual_l2_upper": 5.957446787485198e-13,
+        "eigenvalue_proximity_radius": 6.641600012443563e-11,
+        "index": 154,
+        "proximity_interval_lower": 70.53463249273561,
+        "proximity_interval_upper": 70.53463249286848
+      },
+      {
+        "approximate_eigenvalue": 71.09517599392767,
+        "directed_inverse_mass_residual_upper": 6.678493300462183e-11,
+        "directed_residual_l2_upper": 5.188164475798406e-13,
+        "eigenvalue_proximity_radius": 6.678493300484786e-11,
+        "index": 155,
+        "proximity_interval_lower": 71.09517599386086,
+        "proximity_interval_upper": 71.09517599399447
+      },
+      {
+        "approximate_eigenvalue": 71.21588279442491,
+        "directed_inverse_mass_residual_upper": 6.668157343657814e-11,
+        "directed_residual_l2_upper": 6.040693718558929e-13,
+        "eigenvalue_proximity_radius": 6.668157343680382e-11,
+        "index": 156,
+        "proximity_interval_lower": 71.21588279435822,
+        "proximity_interval_upper": 71.2158827944916
+      },
+      {
+        "approximate_eigenvalue": 71.35111414942352,
+        "directed_inverse_mass_residual_upper": 6.585245598622026e-11,
+        "directed_residual_l2_upper": 5.823029315067242e-13,
+        "eigenvalue_proximity_radius": 6.585245598644314e-11,
+        "index": 157,
+        "proximity_interval_lower": 71.35111414935766,
+        "proximity_interval_upper": 71.35111414948939
+      },
+      {
+        "approximate_eigenvalue": 71.59014349658766,
+        "directed_inverse_mass_residual_upper": 6.627660427380046e-11,
+        "directed_residual_l2_upper": 4.983001451845333e-13,
+        "eigenvalue_proximity_radius": 6.627660427402477e-11,
+        "index": 158,
+        "proximity_interval_lower": 71.59014349652136,
+        "proximity_interval_upper": 71.59014349665395
+      },
+      {
+        "approximate_eigenvalue": 72.46572448314537,
+        "directed_inverse_mass_residual_upper": 6.719839275666149e-11,
+        "directed_residual_l2_upper": 6.155587112500469e-13,
+        "eigenvalue_proximity_radius": 6.719839275688892e-11,
+        "index": 159,
+        "proximity_interval_lower": 72.46572448307815,
+        "proximity_interval_upper": 72.46572448321258
+      },
+      {
+        "approximate_eigenvalue": 73.12203260025491,
+        "directed_inverse_mass_residual_upper": 6.729994235329888e-11,
+        "directed_residual_l2_upper": 5.807306836375485e-13,
+        "eigenvalue_proximity_radius": 6.729994235352665e-11,
+        "index": 160,
+        "proximity_interval_lower": 73.1220326001876,
+        "proximity_interval_upper": 73.12203260032223
+      },
+      {
+        "approximate_eigenvalue": 73.33602779977042,
+        "directed_inverse_mass_residual_upper": 6.52281325953113e-11,
+        "directed_residual_l2_upper": 5.906075253304693e-13,
+        "eigenvalue_proximity_radius": 6.522813259553207e-11,
+        "index": 161,
+        "proximity_interval_lower": 73.33602779970518,
+        "proximity_interval_upper": 73.33602779983566
+      },
+      {
+        "approximate_eigenvalue": 73.46925038105543,
+        "directed_inverse_mass_residual_upper": 6.564355254168438e-11,
+        "directed_residual_l2_upper": 6.370739189552513e-13,
+        "eigenvalue_proximity_radius": 6.564355254190656e-11,
+        "index": 162,
+        "proximity_interval_lower": 73.46925038098978,
+        "proximity_interval_upper": 73.46925038112109
+      },
+      {
+        "approximate_eigenvalue": 73.61738969485936,
+        "directed_inverse_mass_residual_upper": 6.668726323183111e-11,
+        "directed_residual_l2_upper": 5.978832409654446e-13,
+        "eigenvalue_proximity_radius": 6.668726323205682e-11,
+        "index": 163,
+        "proximity_interval_lower": 73.61738969479265,
+        "proximity_interval_upper": 73.61738969492606
+      },
+      {
+        "approximate_eigenvalue": 73.68336470273285,
+        "directed_inverse_mass_residual_upper": 6.673179057254711e-11,
+        "directed_residual_l2_upper": 4.741059827880284e-13,
+        "eigenvalue_proximity_radius": 6.673179057277297e-11,
+        "index": 164,
+        "proximity_interval_lower": 73.6833647026661,
+        "proximity_interval_upper": 73.6833647027996
+      },
+      {
+        "approximate_eigenvalue": 73.69606544052733,
+        "directed_inverse_mass_residual_upper": 6.608824777263869e-11,
+        "directed_residual_l2_upper": 4.747209722008093e-13,
+        "eigenvalue_proximity_radius": 6.608824777286237e-11,
+        "index": 165,
+        "proximity_interval_lower": 73.69606544046123,
+        "proximity_interval_upper": 73.69606544059344
+      },
+      {
+        "approximate_eigenvalue": 75.07692555649011,
+        "directed_inverse_mass_residual_upper": 6.74179078622062e-11,
+        "directed_residual_l2_upper": 6.121128354820577e-13,
+        "eigenvalue_proximity_radius": 6.741790786243438e-11,
+        "index": 166,
+        "proximity_interval_lower": 75.07692555642268,
+        "proximity_interval_upper": 75.07692555655754
+      },
+      {
+        "approximate_eigenvalue": 76.79171528545898,
+        "directed_inverse_mass_residual_upper": 6.69708215127782e-11,
+        "directed_residual_l2_upper": 7.382170893529546e-13,
+        "eigenvalue_proximity_radius": 6.697082151300486e-11,
+        "index": 167,
+        "proximity_interval_lower": 76.79171528539199,
+        "proximity_interval_upper": 76.79171528552597
+      },
+      {
+        "approximate_eigenvalue": 77.08988664829032,
+        "directed_inverse_mass_residual_upper": 6.724878274047321e-11,
+        "directed_residual_l2_upper": 6.648172852859957e-13,
+        "eigenvalue_proximity_radius": 6.724878274070081e-11,
+        "index": 168,
+        "proximity_interval_lower": 77.08988664822306,
+        "proximity_interval_upper": 77.08988664835758
+      },
+      {
+        "approximate_eigenvalue": 77.93582979967633,
+        "directed_inverse_mass_residual_upper": 6.725763223239276e-11,
+        "directed_residual_l2_upper": 5.641749094605821e-13,
+        "eigenvalue_proximity_radius": 6.725763223262039e-11,
+        "index": 169,
+        "proximity_interval_lower": 77.93582979960905,
+        "proximity_interval_upper": 77.9358297997436
+      },
+      {
+        "approximate_eigenvalue": 78.02536044298364,
+        "directed_inverse_mass_residual_upper": 6.734303940721682e-11,
+        "directed_residual_l2_upper": 6.884877829439472e-13,
+        "eigenvalue_proximity_radius": 6.734303940744474e-11,
+        "index": 170,
+        "proximity_interval_lower": 78.02536044291628,
+        "proximity_interval_upper": 78.025360443051
+      },
+      {
+        "approximate_eigenvalue": 78.02544256502114,
+        "directed_inverse_mass_residual_upper": 6.551472380036438e-11,
+        "directed_residual_l2_upper": 4.654428177216883e-13,
+        "eigenvalue_proximity_radius": 6.551472380058612e-11,
+        "index": 171,
+        "proximity_interval_lower": 78.02544256495561,
+        "proximity_interval_upper": 78.02544256508666
+      },
+      {
+        "approximate_eigenvalue": 78.04816732061386,
+        "directed_inverse_mass_residual_upper": 6.749912836516865e-11,
+        "directed_residual_l2_upper": 6.638863799196964e-13,
+        "eigenvalue_proximity_radius": 6.74991283653971e-11,
+        "index": 172,
+        "proximity_interval_lower": 78.04816732054634,
+        "proximity_interval_upper": 78.04816732068137
+      },
+      {
+        "approximate_eigenvalue": 78.23828475470874,
+        "directed_inverse_mass_residual_upper": 6.666039854523e-11,
+        "directed_residual_l2_upper": 5.117600655980543e-13,
+        "eigenvalue_proximity_radius": 6.666039854545562e-11,
+        "index": 173,
+        "proximity_interval_lower": 78.23828475464207,
+        "proximity_interval_upper": 78.23828475477542
+      },
+      {
+        "approximate_eigenvalue": 79.25494730753051,
+        "directed_inverse_mass_residual_upper": 6.686354986762411e-11,
+        "directed_residual_l2_upper": 5.47054462184723e-13,
+        "eigenvalue_proximity_radius": 6.686354986785041e-11,
+        "index": 174,
+        "proximity_interval_lower": 79.25494730746364,
+        "proximity_interval_upper": 79.25494730759739
+      },
+      {
+        "approximate_eigenvalue": 79.39125892634661,
+        "directed_inverse_mass_residual_upper": 6.658621420285526e-11,
+        "directed_residual_l2_upper": 5.843345555747682e-13,
+        "eigenvalue_proximity_radius": 6.658621420308062e-11,
+        "index": 175,
+        "proximity_interval_lower": 79.39125892628,
+        "proximity_interval_upper": 79.39125892641322
+      },
+      {
+        "approximate_eigenvalue": 79.77682080972767,
+        "directed_inverse_mass_residual_upper": 6.736855725069815e-11,
+        "directed_residual_l2_upper": 6.302059547501979e-13,
+        "eigenvalue_proximity_radius": 6.736855725092615e-11,
+        "index": 176,
+        "proximity_interval_lower": 79.77682080966028,
+        "proximity_interval_upper": 79.77682080979505
+      },
+      {
+        "approximate_eigenvalue": 80.4001090416783,
+        "directed_inverse_mass_residual_upper": 6.617980421244804e-11,
+        "directed_residual_l2_upper": 5.527253979095231e-13,
+        "eigenvalue_proximity_radius": 6.617980421267203e-11,
+        "index": 177,
+        "proximity_interval_lower": 80.40010904161211,
+        "proximity_interval_upper": 80.4001090417445
+      },
+      {
+        "approximate_eigenvalue": 80.51546191910344,
+        "directed_inverse_mass_residual_upper": 6.738147786580775e-11,
+        "directed_residual_l2_upper": 5.741022199405884e-13,
+        "eigenvalue_proximity_radius": 6.73814778660358e-11,
+        "index": 178,
+        "proximity_interval_lower": 80.51546191903604,
+        "proximity_interval_upper": 80.51546191917085
+      },
+      {
+        "approximate_eigenvalue": 81.16432786999844,
+        "directed_inverse_mass_residual_upper": 6.660469278137951e-11,
+        "directed_residual_l2_upper": 6.37396322677812e-13,
+        "eigenvalue_proximity_radius": 6.660469278160493e-11,
+        "index": 179,
+        "proximity_interval_lower": 81.16432786993182,
+        "proximity_interval_upper": 81.16432787006507
+      },
+      {
+        "approximate_eigenvalue": 81.7218149387505,
+        "directed_inverse_mass_residual_upper": 6.739724550621234e-11,
+        "directed_residual_l2_upper": 5.88303777656714e-13,
+        "eigenvalue_proximity_radius": 6.739724550644045e-11,
+        "index": 180,
+        "proximity_interval_lower": 81.72181493868308,
+        "proximity_interval_upper": 81.72181493881791
+      },
+      {
+        "approximate_eigenvalue": 82.7085622487532,
+        "directed_inverse_mass_residual_upper": 6.799047331744082e-11,
+        "directed_residual_l2_upper": 5.406892613236865e-13,
+        "eigenvalue_proximity_radius": 6.799047331767093e-11,
+        "index": 181,
+        "proximity_interval_lower": 82.7085622486852,
+        "proximity_interval_upper": 82.7085622488212
+      },
+      {
+        "approximate_eigenvalue": 82.83676258677608,
+        "directed_inverse_mass_residual_upper": 6.694589109053091e-11,
+        "directed_residual_l2_upper": 6.214865993005096e-13,
+        "eigenvalue_proximity_radius": 6.694589109075749e-11,
+        "index": 182,
+        "proximity_interval_lower": 82.83676258670911,
+        "proximity_interval_upper": 82.83676258684304
+      },
+      {
+        "approximate_eigenvalue": 82.98068244897527,
+        "directed_inverse_mass_residual_upper": 6.742252418052472e-11,
+        "directed_residual_l2_upper": 5.394242079162497e-13,
+        "eigenvalue_proximity_radius": 6.74225241807529e-11,
+        "index": 183,
+        "proximity_interval_lower": 82.98068244890784,
+        "proximity_interval_upper": 82.9806824490427
+      },
+      {
+        "approximate_eigenvalue": 82.99913135074362,
+        "directed_inverse_mass_residual_upper": 6.847058040434116e-11,
+        "directed_residual_l2_upper": 5.479756067549084e-13,
+        "eigenvalue_proximity_radius": 6.84705804045729e-11,
+        "index": 184,
+        "proximity_interval_lower": 82.99913135067514,
+        "proximity_interval_upper": 82.9991313508121
+      },
+      {
+        "approximate_eigenvalue": 83.74963391641054,
+        "directed_inverse_mass_residual_upper": 6.692980910783545e-11,
+        "directed_residual_l2_upper": 6.048788604638564e-13,
+        "eigenvalue_proximity_radius": 6.692980910806197e-11,
+        "index": 185,
+        "proximity_interval_lower": 83.7496339163436,
+        "proximity_interval_upper": 83.74963391647749
+      },
+      {
+        "approximate_eigenvalue": 83.75818782097333,
+        "directed_inverse_mass_residual_upper": 6.673360477507551e-11,
+        "directed_residual_l2_upper": 4.590571932657447e-13,
+        "eigenvalue_proximity_radius": 6.673360477530137e-11,
+        "index": 186,
+        "proximity_interval_lower": 83.75818782090658,
+        "proximity_interval_upper": 83.75818782104008
+      },
+      {
+        "approximate_eigenvalue": 83.81388902971129,
+        "directed_inverse_mass_residual_upper": 6.670462207335597e-11,
+        "directed_residual_l2_upper": 4.3809964265875123e-13,
+        "eigenvalue_proximity_radius": 6.670462207358173e-11,
+        "index": 187,
+        "proximity_interval_lower": 83.81388902964457,
+        "proximity_interval_upper": 83.81388902977801
+      },
+      {
+        "approximate_eigenvalue": 84.37370564175599,
+        "directed_inverse_mass_residual_upper": 6.804100450429879e-11,
+        "directed_residual_l2_upper": 6.192406063368593e-13,
+        "eigenvalue_proximity_radius": 6.804100450452907e-11,
+        "index": 188,
+        "proximity_interval_lower": 84.37370564168793,
+        "proximity_interval_upper": 84.37370564182405
+      },
+      {
+        "approximate_eigenvalue": 84.61406798492216,
+        "directed_inverse_mass_residual_upper": 6.812067038147164e-11,
+        "directed_residual_l2_upper": 6.136950091481394e-13,
+        "eigenvalue_proximity_radius": 6.812067038170219e-11,
+        "index": 189,
+        "proximity_interval_lower": 84.61406798485402,
+        "proximity_interval_upper": 84.6140679849903
+      },
+      {
+        "approximate_eigenvalue": 85.8438184782801,
+        "directed_inverse_mass_residual_upper": 6.853807185890994e-11,
+        "directed_residual_l2_upper": 6.269562612231126e-13,
+        "eigenvalue_proximity_radius": 6.85380718591419e-11,
+        "index": 190,
+        "proximity_interval_lower": 85.84381847821155,
+        "proximity_interval_upper": 85.84381847834865
+      },
+      {
+        "approximate_eigenvalue": 85.87223037794968,
+        "directed_inverse_mass_residual_upper": 6.828151274973614e-11,
+        "directed_residual_l2_upper": 6.191996275047615e-13,
+        "eigenvalue_proximity_radius": 6.828151274996723e-11,
+        "index": 191,
+        "proximity_interval_lower": 85.87223037788138,
+        "proximity_interval_upper": 85.87223037801797
+      },
+      {
+        "approximate_eigenvalue": 86.29814575527615,
+        "directed_inverse_mass_residual_upper": 6.898858274996957e-11,
+        "directed_residual_l2_upper": 5.686048636625544e-13,
+        "eigenvalue_proximity_radius": 6.898858275020305e-11,
+        "index": 192,
+        "proximity_interval_lower": 86.29814575520714,
+        "proximity_interval_upper": 86.29814575534516
+      },
+      {
+        "approximate_eigenvalue": 86.59718844553649,
+        "directed_inverse_mass_residual_upper": 6.743201491000222e-11,
+        "directed_residual_l2_upper": 5.095064609617388e-13,
+        "eigenvalue_proximity_radius": 6.743201491023044e-11,
+        "index": 193,
+        "proximity_interval_lower": 86.59718844546904,
+        "proximity_interval_upper": 86.59718844560393
+      },
+      {
+        "approximate_eigenvalue": 86.97409318999728,
+        "directed_inverse_mass_residual_upper": 6.699128216397213e-11,
+        "directed_residual_l2_upper": 5.810703200401876e-13,
+        "eigenvalue_proximity_radius": 6.699128216419885e-11,
+        "index": 194,
+        "proximity_interval_lower": 86.97409318993027,
+        "proximity_interval_upper": 86.97409319006428
+      },
+      {
+        "approximate_eigenvalue": 87.1404611255927,
+        "directed_inverse_mass_residual_upper": 6.604281369107939e-11,
+        "directed_residual_l2_upper": 5.824540066531713e-13,
+        "eigenvalue_proximity_radius": 6.604281369130291e-11,
+        "index": 195,
+        "proximity_interval_lower": 87.14046112552664,
+        "proximity_interval_upper": 87.14046112565875
+      },
+      {
+        "approximate_eigenvalue": 87.84057425579046,
+        "directed_inverse_mass_residual_upper": 6.765492746114257e-11,
+        "directed_residual_l2_upper": 6.017516891155357e-13,
+        "eigenvalue_proximity_radius": 6.765492746137154e-11,
+        "index": 196,
+        "proximity_interval_lower": 87.84057425572279,
+        "proximity_interval_upper": 87.84057425585813
+      },
+      {
+        "approximate_eigenvalue": 88.54930798219442,
+        "directed_inverse_mass_residual_upper": 6.878725511857318e-11,
+        "directed_residual_l2_upper": 6.078053624149569e-13,
+        "eigenvalue_proximity_radius": 6.878725511880599e-11,
+        "index": 197,
+        "proximity_interval_lower": 88.54930798212563,
+        "proximity_interval_upper": 88.54930798226322
+      },
+      {
+        "approximate_eigenvalue": 88.98733728710614,
+        "directed_inverse_mass_residual_upper": 6.805244554458287e-11,
+        "directed_residual_l2_upper": 5.4567505284879e-13,
+        "eigenvalue_proximity_radius": 6.805244554481319e-11,
+        "index": 198,
+        "proximity_interval_lower": 88.98733728703807,
+        "proximity_interval_upper": 88.98733728717421
+      },
+      {
+        "approximate_eigenvalue": 89.72915711629847,
+        "directed_inverse_mass_residual_upper": 6.753513230581154e-11,
+        "directed_residual_l2_upper": 6.172401606126926e-13,
+        "eigenvalue_proximity_radius": 6.753513230604012e-11,
+        "index": 199,
+        "proximity_interval_lower": 89.72915711623092,
+        "proximity_interval_upper": 89.72915711636601
+      },
+      {
+        "approximate_eigenvalue": 90.01788947908767,
+        "directed_inverse_mass_residual_upper": 6.713297382404527e-11,
+        "directed_residual_l2_upper": 5.679102553711714e-13,
+        "eigenvalue_proximity_radius": 6.713297382427249e-11,
+        "index": 200,
+        "proximity_interval_lower": 90.01788947902052,
+        "proximity_interval_upper": 90.01788947915482
+      },
+      {
+        "approximate_eigenvalue": 90.6635487402904,
+        "directed_inverse_mass_residual_upper": 6.750942145958967e-11,
+        "directed_residual_l2_upper": 6.348022874676849e-13,
+        "eigenvalue_proximity_radius": 6.750942145981815e-11,
+        "index": 201,
+        "proximity_interval_lower": 90.66354874022286,
+        "proximity_interval_upper": 90.66354874035792
+      },
+      {
+        "approximate_eigenvalue": 91.44359379015714,
+        "directed_inverse_mass_residual_upper": 6.774242900377391e-11,
+        "directed_residual_l2_upper": 5.773007755839631e-13,
+        "eigenvalue_proximity_radius": 6.774242900400318e-11,
+        "index": 202,
+        "proximity_interval_lower": 91.44359379008938,
+        "proximity_interval_upper": 91.4435937902249
+      },
+      {
+        "approximate_eigenvalue": 91.77170157907622,
+        "directed_inverse_mass_residual_upper": 6.768410289333261e-11,
+        "directed_residual_l2_upper": 5.821664113981247e-13,
+        "eigenvalue_proximity_radius": 6.768410289356168e-11,
+        "index": 203,
+        "proximity_interval_lower": 91.77170157900852,
+        "proximity_interval_upper": 91.77170157914392
+      },
+      {
+        "approximate_eigenvalue": 92.00676560770182,
+        "directed_inverse_mass_residual_upper": 6.81967203661181e-11,
+        "directed_residual_l2_upper": 5.437994706516559e-13,
+        "eigenvalue_proximity_radius": 6.819672036634891e-11,
+        "index": 204,
+        "proximity_interval_lower": 92.00676560763361,
+        "proximity_interval_upper": 92.00676560777003
+      },
+      {
+        "approximate_eigenvalue": 92.05489863428738,
+        "directed_inverse_mass_residual_upper": 6.698371744059626e-11,
+        "directed_residual_l2_upper": 4.973797967232192e-13,
+        "eigenvalue_proximity_radius": 6.698371744082296e-11,
+        "index": 205,
+        "proximity_interval_lower": 92.05489863422038,
+        "proximity_interval_upper": 92.05489863435439
+      },
+      {
+        "approximate_eigenvalue": 92.12431205084648,
+        "directed_inverse_mass_residual_upper": 6.953403050123103e-11,
+        "directed_residual_l2_upper": 5.542373017239663e-13,
+        "eigenvalue_proximity_radius": 6.953403050146636e-11,
+        "index": 206,
+        "proximity_interval_lower": 92.12431205077694,
+        "proximity_interval_upper": 92.12431205091603
+      },
+      {
+        "approximate_eigenvalue": 92.40506004234705,
+        "directed_inverse_mass_residual_upper": 6.797875017166281e-11,
+        "directed_residual_l2_upper": 6.295545759129196e-13,
+        "eigenvalue_proximity_radius": 6.797875017189288e-11,
+        "index": 207,
+        "proximity_interval_lower": 92.40506004227905,
+        "proximity_interval_upper": 92.40506004241504
+      },
+      {
+        "approximate_eigenvalue": 92.90090872382231,
+        "directed_inverse_mass_residual_upper": 6.738931761737128e-11,
+        "directed_residual_l2_upper": 6.192236302222179e-13,
+        "eigenvalue_proximity_radius": 6.738931761759936e-11,
+        "index": 208,
+        "proximity_interval_lower": 92.90090872375491,
+        "proximity_interval_upper": 92.90090872388971
+      },
+      {
+        "approximate_eigenvalue": 93.98522828900205,
+        "directed_inverse_mass_residual_upper": 6.853081526990076e-11,
+        "directed_residual_l2_upper": 6.087607025585393e-13,
+        "eigenvalue_proximity_radius": 6.85308152701327e-11,
+        "index": 209,
+        "proximity_interval_lower": 93.98522828893351,
+        "proximity_interval_upper": 93.98522828907059
+      },
+      {
+        "approximate_eigenvalue": 94.76635153230615,
+        "directed_inverse_mass_residual_upper": 6.740981811777319e-11,
+        "directed_residual_l2_upper": 6.170180027647291e-13,
+        "eigenvalue_proximity_radius": 6.740981811800134e-11,
+        "index": 210,
+        "proximity_interval_lower": 94.76635153223872,
+        "proximity_interval_upper": 94.76635153237358
+      },
+      {
+        "approximate_eigenvalue": 94.95426567304887,
+        "directed_inverse_mass_residual_upper": 6.786742031460635e-11,
+        "directed_residual_l2_upper": 6.031017880924587e-13,
+        "eigenvalue_proximity_radius": 6.786742031483605e-11,
+        "index": 211,
+        "proximity_interval_lower": 94.95426567298098,
+        "proximity_interval_upper": 94.95426567311675
+      },
+      {
+        "approximate_eigenvalue": 96.21592479768707,
+        "directed_inverse_mass_residual_upper": 6.980012552568033e-11,
+        "directed_residual_l2_upper": 6.354371183839457e-13,
+        "eigenvalue_proximity_radius": 6.980012552591657e-11,
+        "index": 212,
+        "proximity_interval_lower": 96.21592479761725,
+        "proximity_interval_upper": 96.21592479775688
+      },
+      {
+        "approximate_eigenvalue": 96.85969885095984,
+        "directed_inverse_mass_residual_upper": 6.950807341030796e-11,
+        "directed_residual_l2_upper": 6.501578092338365e-13,
+        "eigenvalue_proximity_radius": 6.95080734105432e-11,
+        "index": 213,
+        "proximity_interval_lower": 96.85969885089033,
+        "proximity_interval_upper": 96.85969885102936
+      },
+      {
+        "approximate_eigenvalue": 96.90328791872508,
+        "directed_inverse_mass_residual_upper": 6.96798591032388e-11,
+        "directed_residual_l2_upper": 5.956956347720919e-13,
+        "eigenvalue_proximity_radius": 6.967985910347462e-11,
+        "index": 214,
+        "proximity_interval_lower": 96.9032879186554,
+        "proximity_interval_upper": 96.90328791879477
+      },
+      {
+        "approximate_eigenvalue": 97.15467632790313,
+        "directed_inverse_mass_residual_upper": 6.934363478210335e-11,
+        "directed_residual_l2_upper": 6.079655227568405e-13,
+        "eigenvalue_proximity_radius": 6.934363478233803e-11,
+        "index": 215,
+        "proximity_interval_lower": 97.15467632783377,
+        "proximity_interval_upper": 97.1546763279725
+      },
+      {
+        "approximate_eigenvalue": 97.22001352590927,
+        "directed_inverse_mass_residual_upper": 7.096139760882545e-11,
+        "directed_residual_l2_upper": 6.081021632107333e-13,
+        "eigenvalue_proximity_radius": 7.096139760906561e-11,
+        "index": 216,
+        "proximity_interval_lower": 97.2200135258383,
+        "proximity_interval_upper": 97.22001352598024
+      },
+      {
+        "approximate_eigenvalue": 97.75038895674463,
+        "directed_inverse_mass_residual_upper": 7.067197763186887e-11,
+        "directed_residual_l2_upper": 6.122705510438492e-13,
+        "eigenvalue_proximity_radius": 7.067197763210805e-11,
+        "index": 217,
+        "proximity_interval_lower": 97.75038895667394,
+        "proximity_interval_upper": 97.75038895681531
+      },
+      {
+        "approximate_eigenvalue": 98.11308514059586,
+        "directed_inverse_mass_residual_upper": 6.94162464945193e-11,
+        "directed_residual_l2_upper": 5.98951755933374e-13,
+        "eigenvalue_proximity_radius": 6.941624649475423e-11,
+        "index": 218,
+        "proximity_interval_lower": 98.11308514052642,
+        "proximity_interval_upper": 98.11308514066529
+      },
+      {
+        "approximate_eigenvalue": 98.22819969092836,
+        "directed_inverse_mass_residual_upper": 7.10732370527328e-11,
+        "directed_residual_l2_upper": 5.033611264910445e-13,
+        "eigenvalue_proximity_radius": 7.107323705297334e-11,
+        "index": 219,
+        "proximity_interval_lower": 98.22819969085728,
+        "proximity_interval_upper": 98.22819969099945
+      },
+      {
+        "approximate_eigenvalue": 98.29878999437716,
+        "directed_inverse_mass_residual_upper": 7.128899828553203e-11,
+        "directed_residual_l2_upper": 5.912108709110347e-13,
+        "eigenvalue_proximity_radius": 7.128899828577331e-11,
+        "index": 220,
+        "proximity_interval_lower": 98.29878999430585,
+        "proximity_interval_upper": 98.29878999444847
+      },
+      {
+        "approximate_eigenvalue": 98.90849762043409,
+        "directed_inverse_mass_residual_upper": 7.028976811714389e-11,
+        "directed_residual_l2_upper": 5.866814962265903e-13,
+        "eigenvalue_proximity_radius": 7.028976811738178e-11,
+        "index": 221,
+        "proximity_interval_lower": 98.90849762036379,
+        "proximity_interval_upper": 98.90849762050439
+      },
+      {
+        "approximate_eigenvalue": 99.11664173332615,
+        "directed_inverse_mass_residual_upper": 7.23642645874831e-11,
+        "directed_residual_l2_upper": 5.823995084524619e-13,
+        "eigenvalue_proximity_radius": 7.236426458772801e-11,
+        "index": 222,
+        "proximity_interval_lower": 99.11664173325377,
+        "proximity_interval_upper": 99.11664173339852
+      },
+      {
+        "approximate_eigenvalue": 99.46516571758849,
+        "directed_inverse_mass_residual_upper": 7.243486890612706e-11,
+        "directed_residual_l2_upper": 6.654930123429769e-13,
+        "eigenvalue_proximity_radius": 7.243486890637222e-11,
+        "index": 223,
+        "proximity_interval_lower": 99.46516571751604,
+        "proximity_interval_upper": 99.46516571766094
+      },
+      {
+        "approximate_eigenvalue": 99.82298038974128,
+        "directed_inverse_mass_residual_upper": 6.989975528670642e-11,
+        "directed_residual_l2_upper": 6.125134842392133e-13,
+        "eigenvalue_proximity_radius": 6.989975528694299e-11,
+        "index": 224,
+        "proximity_interval_lower": 99.82298038967136,
+        "proximity_interval_upper": 99.82298038981119
+      },
+      {
+        "approximate_eigenvalue": 100.67061332694624,
+        "directed_inverse_mass_residual_upper": 7.207891865442037e-11,
+        "directed_residual_l2_upper": 6.101477490729983e-13,
+        "eigenvalue_proximity_radius": 7.207891865466432e-11,
+        "index": 225,
+        "proximity_interval_lower": 100.67061332687415,
+        "proximity_interval_upper": 100.67061332701833
+      },
+      {
+        "approximate_eigenvalue": 101.26520605093675,
+        "directed_inverse_mass_residual_upper": 7.500945661342741e-11,
+        "directed_residual_l2_upper": 5.729552152132851e-13,
+        "eigenvalue_proximity_radius": 7.500945661368128e-11,
+        "index": 226,
+        "proximity_interval_lower": 101.26520605086174,
+        "proximity_interval_upper": 101.26520605101177
+      },
+      {
+        "approximate_eigenvalue": 101.33627358344415,
+        "directed_inverse_mass_residual_upper": 7.136853243199585e-11,
+        "directed_residual_l2_upper": 4.893974882989533e-13,
+        "eigenvalue_proximity_radius": 7.13685324322374e-11,
+        "index": 227,
+        "proximity_interval_lower": 101.33627358337277,
+        "proximity_interval_upper": 101.33627358351553
+      },
+      {
+        "approximate_eigenvalue": 101.61706674525033,
+        "directed_inverse_mass_residual_upper": 7.541469516727855e-11,
+        "directed_residual_l2_upper": 7.595999996836146e-13,
+        "eigenvalue_proximity_radius": 7.541469516753379e-11,
+        "index": 228,
+        "proximity_interval_lower": 101.6170667451749,
+        "proximity_interval_upper": 101.61706674532576
+      },
+      {
+        "approximate_eigenvalue": 101.80006559265716,
+        "directed_inverse_mass_residual_upper": 7.166325293509928e-11,
+        "directed_residual_l2_upper": 6.421518922228575e-13,
+        "eigenvalue_proximity_radius": 7.166325293534182e-11,
+        "index": 229,
+        "proximity_interval_lower": 101.80006559258548,
+        "proximity_interval_upper": 101.80006559272884
+      },
+      {
+        "approximate_eigenvalue": 102.23912677674096,
+        "directed_inverse_mass_residual_upper": 7.200226768867344e-11,
+        "directed_residual_l2_upper": 6.787998628681472e-13,
+        "eigenvalue_proximity_radius": 7.200226768891713e-11,
+        "index": 230,
+        "proximity_interval_lower": 102.23912677666894,
+        "proximity_interval_upper": 102.23912677681298
+      },
+      {
+        "approximate_eigenvalue": 102.88042459910122,
+        "directed_inverse_mass_residual_upper": 7.256568879988113e-11,
+        "directed_residual_l2_upper": 6.682177099878884e-13,
+        "eigenvalue_proximity_radius": 7.256568880012672e-11,
+        "index": 231,
+        "proximity_interval_lower": 102.88042459902864,
+        "proximity_interval_upper": 102.8804245991738
+      },
+      {
+        "approximate_eigenvalue": 103.66041167122472,
+        "directed_inverse_mass_residual_upper": 7.127173721447493e-11,
+        "directed_residual_l2_upper": 6.601381378196782e-13,
+        "eigenvalue_proximity_radius": 7.127173721471615e-11,
+        "index": 232,
+        "proximity_interval_lower": 103.66041167115344,
+        "proximity_interval_upper": 103.660411671296
+      },
+      {
+        "approximate_eigenvalue": 104.24766227074956,
+        "directed_inverse_mass_residual_upper": 7.157766093046684e-11,
+        "directed_residual_l2_upper": 6.030466432241483e-13,
+        "eigenvalue_proximity_radius": 7.157766093070908e-11,
+        "index": 233,
+        "proximity_interval_lower": 104.24766227067796,
+        "proximity_interval_upper": 104.24766227082115
+      },
+      {
+        "approximate_eigenvalue": 104.7646233714848,
+        "directed_inverse_mass_residual_upper": 7.158222667739637e-11,
+        "directed_residual_l2_upper": 5.807362383872601e-13,
+        "eigenvalue_proximity_radius": 7.158222667763864e-11,
+        "index": 234,
+        "proximity_interval_lower": 104.76462337141321,
+        "proximity_interval_upper": 104.7646233715564
+      },
+      {
+        "approximate_eigenvalue": 105.42810851698263,
+        "directed_inverse_mass_residual_upper": 7.220469593374516e-11,
+        "directed_residual_l2_upper": 6.856189069141236e-13,
+        "eigenvalue_proximity_radius": 7.220469593398954e-11,
+        "index": 235,
+        "proximity_interval_lower": 105.42810851691041,
+        "proximity_interval_upper": 105.42810851705485
+      },
+      {
+        "approximate_eigenvalue": 105.48337405172471,
+        "directed_inverse_mass_residual_upper": 7.295857756137258e-11,
+        "directed_residual_l2_upper": 6.41585786886252e-13,
+        "eigenvalue_proximity_radius": 7.295857756161951e-11,
+        "index": 236,
+        "proximity_interval_lower": 105.48337405165174,
+        "proximity_interval_upper": 105.48337405179768
+      },
+      {
+        "approximate_eigenvalue": 105.85495122937888,
+        "directed_inverse_mass_residual_upper": 7.308532222863465e-11,
+        "directed_residual_l2_upper": 6.650166694354471e-13,
+        "eigenvalue_proximity_radius": 7.3085322228882e-11,
+        "index": 237,
+        "proximity_interval_lower": 105.85495122930578,
+        "proximity_interval_upper": 105.85495122945198
+      },
+      {
+        "approximate_eigenvalue": 106.28293536876616,
+        "directed_inverse_mass_residual_upper": 7.094371932665238e-11,
+        "directed_residual_l2_upper": 5.788746791771762e-13,
+        "eigenvalue_proximity_radius": 7.094371932689248e-11,
+        "index": 238,
+        "proximity_interval_lower": 106.2829353686952,
+        "proximity_interval_upper": 106.28293536883712
+      },
+      {
+        "approximate_eigenvalue": 106.41622375897119,
+        "directed_inverse_mass_residual_upper": 6.781616590110959e-11,
+        "directed_residual_l2_upper": 5.507688311137199e-13,
+        "eigenvalue_proximity_radius": 6.781616590133911e-11,
+        "index": 239,
+        "proximity_interval_lower": 106.41622375890336,
+        "proximity_interval_upper": 106.41622375903901
+      },
+      {
+        "approximate_eigenvalue": 107.01775717785013,
+        "directed_inverse_mass_residual_upper": 7.163656205704065e-11,
+        "directed_residual_l2_upper": 6.841851831299925e-13,
+        "eigenvalue_proximity_radius": 7.16365620572831e-11,
+        "index": 240,
+        "proximity_interval_lower": 107.01775717777848,
+        "proximity_interval_upper": 107.01775717792178
+      }
+    ],
+    "reason_inclusions_remain_open": "Residual proximity proves that each approximate value is close to some stored-matrix eigenvalue, but indexed inclusions and a complete eigenvalue count below the retained cutoff still need a verified inertia or equivalent block argument.",
+    "residual_frobenius_upper": 8.768743308525066e-12,
+    "retained_cutoff_proximity_interval_separation": 0.6015334187394926,
+    "stiffness_maximum_row_nonzeros": 10,
+    "values_strictly_increasing": true
+  },
+  "reference_pair_count": 241,
+  "restricted_modified_factorization": {
+    "cholesky_reconstruction_frobenius_upper": 1.7417789381624251e-12,
+    "cholesky_reconstruction_maximum_entry_upper": 1.1444269665813672e-13,
+    "congruence_reconstruction_frobenius_upper": 2.13372803218599e-10,
+    "congruence_reconstruction_maximum_entry_upper": 2.3248064636172632e-11,
+    "minimum_cholesky_diagonal": 1.0005287253871993
+  },
+  "retained_mode_count": 240,
+  "roundoff_model": "IEEE binary64 gamma_n bounds with outward nextafter inflation",
+  "scope": "The audit encloses residual and orthogonality evaluation roundoff relative to stored binary64 matrices and cached vectors. It does not yet convert residuals into eigenvalue/eigenspace inclusions or enclose finite-element assembly.",
+  "spacing": 0.06,
+  "state_count": 15211,
+  "stored_mass_row_lumped_coercivity_proved": true,
+  "stored_matrix_eigenpair_residuals_directed_enclosed": true,
+  "stored_matrix_orthogonality_defects_directed_enclosed": true
+}

@@ -1,0 +1,51 @@
+{
+  "all_checks_pass": true,
+  "artifacts": {
+    "higher_precision_result": "work/ns_collision/results/neutral_strip_h006_hypercircle_standalone_residual63680_p100_v1.json",
+    "higher_precision_result_sha256": "82d08d1327a19a0e25511626ab55a776a673c3c03bddb3a2b7af421926610fd5",
+    "lower_precision_result": "work/ns_collision/results/neutral_strip_h006_hypercircle_standalone_residual63680_v1.json",
+    "lower_precision_result_sha256": "054c5864f309922316e03785a3a48d3ba62fe9df2ebcb337541605ac72c945e5"
+  },
+  "checks": {
+    "all_higher_precision_upper_bounds_not_larger": true,
+    "both_residual_certificates_close": true,
+    "dimension_and_reference_structure_equal": true,
+    "frozen_preparation_hashes_equal": true,
+    "full_inertia_claim_remains_false": true,
+    "maximum_residual_coordinate_equal": true,
+    "minimum_reference_diagonal_equal": true,
+    "proof_basis_and_validated_assumptions_equal": true,
+    "reference_factor_hashes_equal": true,
+    "reference_signs_equal": true,
+    "requested_precisions_match": true,
+    "validation_modes_equal": true,
+    "validation_provenance_equal": true
+  },
+  "comparison": {
+    "dimension": 63680,
+    "higher_bound_to_diagonal_ratio_upper_decimal": "0.0002461745390467909253534533381160702800825110179079567772309204718019991498936116943033891945759560368",
+    "higher_precision": 100,
+    "higher_transformed_residual_two_norm_upper_decimal": "2.006518676834501338780517452972504667590223200461416116832799045906036467136591695839248037086417673E-7",
+    "lower_bound_to_diagonal_ratio_upper_decimal": "0.000246174539046790925353453338116070280082511017907956777230927",
+    "lower_precision": 60,
+    "lower_transformed_residual_two_norm_upper_decimal": "2.00651867683450133878051745297250466759022320046141611683285E-7",
+    "minimum_absolute_reference_diagonal_decimal": "0.0008150796928894088466677203542",
+    "reference_diagonal_signs": {
+      "negative": 32392,
+      "positive": 31288,
+      "zero": 0
+    },
+    "validation_mode": "standalone_hash_bound"
+  },
+  "kind": "hypercircle-congruence-residual-precision-crosscheck",
+  "scope": "Cross-precision replay of the independent bounded-prefix congruence-residual certificate. It does not certify any unprocessed pivot, full inertia, or continuum transfer.",
+  "status": "pass",
+  "upper_bound_nesting_checks": {
+    "absolute_L_inverse_infinity_norm_upper_decimal": true,
+    "absolute_L_inverse_one_norm_upper_decimal": true,
+    "maximum_residual_entry_upper_decimal": true,
+    "residual_infinity_norm_upper_decimal": true,
+    "transformed_bound_to_minimum_diagonal_upper_decimal": true,
+    "transformed_residual_two_norm_upper_decimal": true
+  }
+}

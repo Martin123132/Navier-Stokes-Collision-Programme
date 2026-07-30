@@ -1,0 +1,245 @@
+{
+  "archive_asset_bytes": 298785480,
+  "archive_count": 5,
+  "archived_file_count": 29,
+  "archived_source_bytes": 1193144876,
+  "archives": [
+    {
+      "asset": "research-data-2026-07-30-hypercircle-transition-32064.zip",
+      "asset_bytes": 57775837,
+      "asset_sha256": "71a138d964d377ea85ab5da17115ed649c23c0f0ab3b80807bd12c59b9d9e42f",
+      "file_count": 4,
+      "files": [
+        {
+          "bytes": 61871633,
+          "path": "work/ns_collision/results/neutral_strip_h006_hypercircle_directed_ldl_transition32064_audit_v1.json",
+          "sha256": "4109dcc39fdce8b2c7dd272f9209c21420c21c8f2f0108bb8593c00cb880fee6"
+        },
+        {
+          "bytes": 69407649,
+          "path": "work/ns_collision/results/neutral_strip_h006_hypercircle_directed_ldl_transition32064_checkpoint_v1.json",
+          "sha256": "6b8c76d3e6c4f2a086e5d8e9724aad4702a24e5a5f4845adf57d6dcdfed9d66e"
+        },
+        {
+          "bytes": 73429193,
+          "path": "work/ns_collision/results/neutral_strip_h006_hypercircle_directed_ldl_transition32064_p80_audit_v1.json",
+          "sha256": "5a7ad3e28cfa5894904a0c42d665cf46394a8d9db22398744261fc6a0a1dcb11"
+        },
+        {
+          "bytes": 90418391,
+          "path": "work/ns_collision/results/neutral_strip_h006_hypercircle_directed_ldl_transition32064_p80_checkpoint_v1.json",
+          "sha256": "df76e70d0c944d5ab013b0b1a1c46e4f0df8b1b7a3dc6b692cce4fb0ddc6e197"
+        }
+      ],
+      "group": "hypercircle-transition-32064",
+      "source_bytes": 295126866
+    },
+    {
+      "asset": "research-data-2026-07-30-hypercircle-transition-33280.zip",
+      "asset_bytes": 60806990,
+      "asset_sha256": "0b88c296261f1774695b85a9e15f36ccef15e7b11eea07054bd8d27d3c47e375",
+      "file_count": 4,
+      "files": [
+        {
+          "bytes": 64341012,
+          "path": "work/ns_collision/results/neutral_strip_h006_hypercircle_directed_ldl_transition33280_audit_v1.json",
+          "sha256": "6d7c45754193c75626d0f0293b30189764f464e4386bce462d3d4fd23a5a1932"
+        },
+        {
+          "bytes": 72334863,
+          "path": "work/ns_collision/results/neutral_strip_h006_hypercircle_directed_ldl_transition33280_checkpoint_v1.json",
+          "sha256": "adc0c89e6d19f840c84d16dfc5952e8156c255d1bd4843d67640223beb72197d"
+        },
+        {
+          "bytes": 76408411,
+          "path": "work/ns_collision/results/neutral_strip_h006_hypercircle_directed_ldl_transition33280_p80_audit_v1.json",
+          "sha256": "89a2cb2139a944e42057ec20cd4de031265046275009b05251ccc87de37933d5"
+        },
+        {
+          "bytes": 94296553,
+          "path": "work/ns_collision/results/neutral_strip_h006_hypercircle_directed_ldl_transition33280_p80_checkpoint_v1.json",
+          "sha256": "ef80a4307549876c1a9c88da0d12eadfd4c062cce773284600b8fefc805d6102"
+        }
+      ],
+      "group": "hypercircle-transition-33280",
+      "source_bytes": 307380839
+    },
+    {
+      "asset": "research-data-2026-07-30-sparse-inertia.zip",
+      "asset_bytes": 54047604,
+      "asset_sha256": "91bc7fd0fe4b9fa5c9f550a2931e0becf48eaec3a608ad81519e5a34798d4210",
+      "file_count": 9,
+      "files": [
+        {
+          "bytes": 656712,
+          "path": "work/ns_collision/results/neutral_strip_h006_q12_k240_binary64_sparse_inertia_negative_pivots_v1.npz",
+          "sha256": "493ae37dff63e5b1f83e58abfd51b58e5fdcc668bbdedcc0c098f8f1c34b3020"
+        },
+        {
+          "bytes": 25300576,
+          "path": "work/ns_collision/results/neutral_strip_h006_q12_k240_decimal_p100_sparse_inertia_negative_pivots_v1.npz",
+          "sha256": "0afad2f2532a107c5a3b3eb4bf92a51cdcf4cff01aa9960a5ea66b2c924fbc2e"
+        },
+        {
+          "bytes": 45238848,
+          "path": "work/ns_collision/results/neutral_strip_h006_q12_k240_decimal_p180_sparse_inertia_negative_pivots_v1.npz",
+          "sha256": "5279b057524ed26db7b25ef9da9e6c8d059602c6b9c96774a554aadd70932162"
+        },
+        {
+          "bytes": 45238848,
+          "path": "work/ns_collision/results/neutral_strip_h006_q12_k240_decimal_p180_sparse_inertia_negative_row_checkpoint_v1.npz",
+          "sha256": "5279b057524ed26db7b25ef9da9e6c8d059602c6b9c96774a554aadd70932162"
+        },
+        {
+          "bytes": 13047837,
+          "path": "work/ns_collision/results/neutral_strip_h006_q12_k240_decimal_p50_sparse_inertia_negative_pivots_v1.npz",
+          "sha256": "592d5627aa4a7dc8d898bfe7b69cb5415d36e208d3028602b541e8e5c40a17e2"
+        },
+        {
+          "bytes": 64893316,
+          "path": "work/ns_collision/results/neutral_strip_h006_q12_k240_sparse_inertia_p260_crosscheck_pivots_v1.npz",
+          "sha256": "d3c8f161d3de55706b15e7d9bede499ac194658597722715203cd4e514629545"
+        },
+        {
+          "bytes": 64893316,
+          "path": "work/ns_collision/results/neutral_strip_h006_q12_k240_sparse_inertia_p260_crosscheck_row_checkpoint_v1.npz",
+          "sha256": "d3c8f161d3de55706b15e7d9bede499ac194658597722715203cd4e514629545"
+        },
+        {
+          "bytes": 55158276,
+          "path": "work/ns_collision/results/neutral_strip_h006_q12_k240_sparse_inertia_pivots_v1.npz",
+          "sha256": "08f396f8f384a57dadbfa8619086b0dd1e052a821647f5aa5ba280607b21727a"
+        },
+        {
+          "bytes": 55158276,
+          "path": "work/ns_collision/results/neutral_strip_h006_q12_k240_sparse_inertia_row_checkpoint_v1.npz",
+          "sha256": "08f396f8f384a57dadbfa8619086b0dd1e052a821647f5aa5ba280607b21727a"
+        }
+      ],
+      "group": "sparse-inertia",
+      "source_bytes": 369586005
+    },
+    {
+      "asset": "research-data-2026-07-30-reference-eigensystems.zip",
+      "asset_bytes": 65593354,
+      "asset_sha256": "4c8857fda7481881bacc68cab769bce88fe21502c4c6701b3bca00eb740d81fc",
+      "file_count": 4,
+      "files": [
+        {
+          "bytes": 29331118,
+          "path": "work/ns_collision/results/neutral_strip_h006_q12_k241_reference_eigensystem_v1.npz",
+          "sha256": "8994f7b90409db710a69bda72073dacf83722c790384d1f6bb4fcfc468e6c66e"
+        },
+        {
+          "bytes": 18511182,
+          "path": "work/ns_collision/results/neutral_strip_h0075_q12_k241_reference_eigensystem_v1.npz",
+          "sha256": "ff75b72244745c9717d204a0d9b791bd2ab2d16e4854a32e5a74670e15b3cb55"
+        },
+        {
+          "bytes": 12777310,
+          "path": "work/ns_collision/results/neutral_strip_h009_q12_k241_reference_eigensystem_v1.npz",
+          "sha256": "038071b903f90437c943fee29d78ea68eaaec2e8e01a80d3f475c7f23f520333"
+        },
+        {
+          "bytes": 7211174,
+          "path": "work/ns_collision/results/neutral_strip_h012_q12_k241_reference_eigensystem_v1.npz",
+          "sha256": "377b5f88e99f2215e26ea9ec15ab189528b48be09917b443de383a367aaae6c5"
+        }
+      ],
+      "group": "reference-eigensystems",
+      "source_bytes": 67830784
+    },
+    {
+      "asset": "research-data-2026-07-30-neutral-strip-support.zip",
+      "asset_bytes": 60561695,
+      "asset_sha256": "7e485c102a4fb9490d3cf469358a73ccd1d475bbc2422f094d89c3c39387f515",
+      "file_count": 8,
+      "files": [
+        {
+          "bytes": 13844908,
+          "path": "work/ns_collision/results/neutral_strip_h006_boundary_leakage_chebyshev_pilot_checkpoint_v1.npz",
+          "sha256": "ad262c34faa2cabcdab126b5eef71ad0dfda1508940fee9aed9c96e5aa932bde"
+        },
+        {
+          "bytes": 27259820,
+          "path": "work/ns_collision/results/neutral_strip_h006_chebyshev_recurrence_roundoff_v1.npz",
+          "sha256": "7773d53b1e68abbd7cdb7317a7032c5bacf3f0b25ea1c4387386803849c41818"
+        },
+        {
+          "bytes": 17383670,
+          "path": "work/ns_collision/results/neutral_strip_h006_gaussian_assembly_interval_checkpoint_v1.npz",
+          "sha256": "60276e13ecb0de15099fea1bd7369597e589a9e95f0193bd133e48f0c0c4fcd5"
+        },
+        {
+          "bytes": 27518017,
+          "path": "work/ns_collision/results/neutral_strip_h006_modified_complement_inertia_lower_v1.npz",
+          "sha256": "3c416c89935d9283bef16672920d7acdb7f8d3172786afeb691edb53281a907d"
+        },
+        {
+          "bytes": 27518017,
+          "path": "work/ns_collision/results/neutral_strip_h006_modified_complement_inertia_upper_v1.npz",
+          "sha256": "7040ac97942cb62d52bcd366a4565e2abe7ebaf976891121c535826e69f12cfb"
+        },
+        {
+          "bytes": 14409334,
+          "path": "work/ns_collision/results/neutral_strip_h006_positive_exponential_assembly_checkpoint_v1.npz",
+          "sha256": "5190a21d4b2b746fbf0867842b05d7a487e1a1ba146cf592ae07619a79f9fa43"
+        },
+        {
+          "bytes": 11441700,
+          "path": "work/ns_collision/results/neutral_strip_h006_positive_exponential_assembly_matrices_v1.npz",
+          "sha256": "c2ab8e9f0ffaa217abdc8b6c48dccc54e57e98daeb353f21df8be60906bd376b"
+        },
+        {
+          "bytes": 13844916,
+          "path": "work/ns_collision/results/neutral_strip_h006_within_window_source_grid_checkpoint_v1.npz",
+          "sha256": "47ddd27d07b13fbfed223debd61b7dae1ff006addffbe1b4c1ea21dfec9ea8a4"
+        }
+      ],
+      "group": "neutral-strip-support",
+      "source_bytes": 153220382
+    }
+  ],
+  "build_runtime": {
+    "active_worker_count": 1,
+    "below_normal_priority_set": true
+  },
+  "checkpoint_date": "2026-07-30",
+  "excluded_from_git": [
+    "work/ns_collision/results/neutral_strip_h006_boundary_leakage_chebyshev_pilot_checkpoint_v1.npz",
+    "work/ns_collision/results/neutral_strip_h006_chebyshev_recurrence_roundoff_v1.npz",
+    "work/ns_collision/results/neutral_strip_h006_gaussian_assembly_interval_checkpoint_v1.npz",
+    "work/ns_collision/results/neutral_strip_h006_hypercircle_directed_ldl_transition32064_audit_v1.json",
+    "work/ns_collision/results/neutral_strip_h006_hypercircle_directed_ldl_transition32064_checkpoint_v1.json",
+    "work/ns_collision/results/neutral_strip_h006_hypercircle_directed_ldl_transition32064_p80_audit_v1.json",
+    "work/ns_collision/results/neutral_strip_h006_hypercircle_directed_ldl_transition32064_p80_checkpoint_v1.json",
+    "work/ns_collision/results/neutral_strip_h006_hypercircle_directed_ldl_transition33280_audit_v1.json",
+    "work/ns_collision/results/neutral_strip_h006_hypercircle_directed_ldl_transition33280_checkpoint_v1.json",
+    "work/ns_collision/results/neutral_strip_h006_hypercircle_directed_ldl_transition33280_p80_audit_v1.json",
+    "work/ns_collision/results/neutral_strip_h006_hypercircle_directed_ldl_transition33280_p80_checkpoint_v1.json",
+    "work/ns_collision/results/neutral_strip_h006_modified_complement_inertia_lower_v1.npz",
+    "work/ns_collision/results/neutral_strip_h006_modified_complement_inertia_upper_v1.npz",
+    "work/ns_collision/results/neutral_strip_h006_positive_exponential_assembly_checkpoint_v1.npz",
+    "work/ns_collision/results/neutral_strip_h006_positive_exponential_assembly_matrices_v1.npz",
+    "work/ns_collision/results/neutral_strip_h006_q12_k240_binary64_sparse_inertia_negative_pivots_v1.npz",
+    "work/ns_collision/results/neutral_strip_h006_q12_k240_decimal_p100_sparse_inertia_negative_pivots_v1.npz",
+    "work/ns_collision/results/neutral_strip_h006_q12_k240_decimal_p180_sparse_inertia_negative_pivots_v1.npz",
+    "work/ns_collision/results/neutral_strip_h006_q12_k240_decimal_p180_sparse_inertia_negative_row_checkpoint_v1.npz",
+    "work/ns_collision/results/neutral_strip_h006_q12_k240_decimal_p50_sparse_inertia_negative_pivots_v1.npz",
+    "work/ns_collision/results/neutral_strip_h006_q12_k240_sparse_inertia_p260_crosscheck_pivots_v1.npz",
+    "work/ns_collision/results/neutral_strip_h006_q12_k240_sparse_inertia_p260_crosscheck_row_checkpoint_v1.npz",
+    "work/ns_collision/results/neutral_strip_h006_q12_k240_sparse_inertia_pivots_v1.npz",
+    "work/ns_collision/results/neutral_strip_h006_q12_k240_sparse_inertia_row_checkpoint_v1.npz",
+    "work/ns_collision/results/neutral_strip_h006_q12_k241_reference_eigensystem_v1.npz",
+    "work/ns_collision/results/neutral_strip_h006_within_window_source_grid_checkpoint_v1.npz",
+    "work/ns_collision/results/neutral_strip_h0075_q12_k241_reference_eigensystem_v1.npz",
+    "work/ns_collision/results/neutral_strip_h009_q12_k241_reference_eigensystem_v1.npz",
+    "work/ns_collision/results/neutral_strip_h012_q12_k241_reference_eigensystem_v1.npz"
+  ],
+  "kind": "navier_stokes_research_data_release_manifest",
+  "large_threshold_bytes": 10485760,
+  "release_tag": "research-data-2026-07-30",
+  "repository": "Martin123132/Navier-Stokes-Collision-Programme",
+  "schema_version": 1,
+  "selection_rule": "all work/ns_collision/results/*.npz files and every result file larger than 10 MiB"
+}

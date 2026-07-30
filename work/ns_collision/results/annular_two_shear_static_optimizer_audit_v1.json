@@ -1,0 +1,613 @@
+{
+  "algorithm_revision": "annular-two-shear-static-optimizer-v1",
+  "all_positive_checks_pass": true,
+  "certification_flags": {
+    "HLL_and_high_low_Fisher_support_gaps_checked": true,
+    "Navier_Stokes_global_regularity_proved": false,
+    "complete_HHL_finite_replay_included": true,
+    "complete_finite_first_jet_ported": false,
+    "complete_finite_second_jet_ported": false,
+    "critical_L3_control_proved": false,
+    "exact_coefficient_penalty_included": true,
+    "exact_two_shear_complete_self_flux_enumerated": true,
+    "exact_two_shear_low_Fisher_enumerated": true,
+    "exact_two_shear_pressure_self_flux_enumerated": true,
+    "finite_static_optimizer_exists": false,
+    "finite_time_blowup_proved": false,
+    "joint_static_supremum_is_infinite": true,
+    "old_restart_scaling_ports_unchanged": false,
+    "phase_cancellation_gate_proved": false,
+    "pressure_HHL_finite_replay_included": true
+  },
+  "coefficient_penalty_certificate": {
+    "all_penalty_checks_pass": true,
+    "common_exact_value": "75/256",
+    "delta_vertex_energies": {
+      "+++": "75/256",
+      "++-": "75/256",
+      "+-+": "75/256",
+      "+--": "75/256",
+      "-++": "75/256",
+      "-+-": "75/256",
+      "--+": "75/256",
+      "---": "75/256"
+    },
+    "formula": "Q(w)=sum_j mean[H_j D_j^2]",
+    "objective_penalty": "-(nu/16)t^3 Q(delta_+++)"
+  },
+  "exact_symbolic_low_field_certificate": {
+    "Fourier_convention": "Uhat(+ell)=-i*d and Uhat(-ell)=+i*d, with |d|=1",
+    "all_symbolic_checks_pass": true,
+    "by_vertex": {
+      "+++": {
+        "combined_Fisher": "17/16",
+        "complete_flux_load": "-sqrt(2)/12",
+        "cross_Fisher": "1/16",
+        "kinetic_flux_load": "-sqrt(2)/16",
+        "pressure_flux_load": "-sqrt(2)/48",
+        "xy_Fisher": "1/2",
+        "yz_Fisher": "1/2"
+      },
+      "++-": {
+        "combined_Fisher": "15/16",
+        "complete_flux_load": "0",
+        "cross_Fisher": "-1/16",
+        "kinetic_flux_load": "0",
+        "pressure_flux_load": "0",
+        "xy_Fisher": "1/2",
+        "yz_Fisher": "1/2"
+      },
+      "+-+": {
+        "combined_Fisher": "17/16",
+        "complete_flux_load": "sqrt(2)/12",
+        "cross_Fisher": "1/16",
+        "kinetic_flux_load": "sqrt(2)/16",
+        "pressure_flux_load": "sqrt(2)/48",
+        "xy_Fisher": "1/2",
+        "yz_Fisher": "1/2"
+      },
+      "+--": {
+        "combined_Fisher": "15/16",
+        "complete_flux_load": "0",
+        "cross_Fisher": "-1/16",
+        "kinetic_flux_load": "0",
+        "pressure_flux_load": "0",
+        "xy_Fisher": "1/2",
+        "yz_Fisher": "1/2"
+      },
+      "-++": {
+        "combined_Fisher": "15/16",
+        "complete_flux_load": "0",
+        "cross_Fisher": "-1/16",
+        "kinetic_flux_load": "0",
+        "pressure_flux_load": "0",
+        "xy_Fisher": "1/2",
+        "yz_Fisher": "1/2"
+      },
+      "-+-": {
+        "combined_Fisher": "17/16",
+        "complete_flux_load": "sqrt(2)/12",
+        "cross_Fisher": "1/16",
+        "kinetic_flux_load": "sqrt(2)/16",
+        "pressure_flux_load": "sqrt(2)/48",
+        "xy_Fisher": "1/2",
+        "yz_Fisher": "1/2"
+      },
+      "--+": {
+        "combined_Fisher": "15/16",
+        "complete_flux_load": "0",
+        "cross_Fisher": "-1/16",
+        "kinetic_flux_load": "0",
+        "pressure_flux_load": "0",
+        "xy_Fisher": "1/2",
+        "yz_Fisher": "1/2"
+      },
+      "---": {
+        "combined_Fisher": "17/16",
+        "complete_flux_load": "-sqrt(2)/12",
+        "cross_Fisher": "1/16",
+        "kinetic_flux_load": "-sqrt(2)/16",
+        "pressure_flux_load": "-sqrt(2)/48",
+        "xy_Fisher": "1/2",
+        "yz_Fisher": "1/2"
+      }
+    },
+    "checks": {
+      "combined_L2_mass_exact": true,
+      "combined_plus_Fisher_exact": true,
+      "combined_plus_complete_load_exact": true,
+      "combined_plus_kinetic_load_exact": true,
+      "combined_plus_pressure_load_exact": true,
+      "complete_is_kinetic_plus_pressure": true,
+      "each_shear_has_zero_complete_flux": true
+    },
+    "combined_L2_mass": "4",
+    "combined_low_field": "U_*=U_yz+U_xy",
+    "plus_vertex_exact": {
+      "complete_flux_load": "-sqrt(2)/12",
+      "favorable_complete_cubic_coefficient": "sqrt(2)/12",
+      "favorable_pressure_cubic_coefficient": "sqrt(2)/48",
+      "kinetic_flux_load": "-sqrt(2)/16",
+      "pressure_flux_load": "-sqrt(2)/48",
+      "weighted_Fisher_mass": "17/16"
+    }
+  },
+  "finite_amplitude_equals_N_summary": {
+    "complete_positive_sizes": [
+      9,
+      13,
+      17,
+      25,
+      33,
+      49
+    ],
+    "first_complete_positive_size": 9,
+    "first_pressure_positive_size": 49,
+    "pressure_positive_sizes": [
+      49
+    ]
+  },
+  "finite_annular_rows": [
+    {
+      "HHL_components": {
+        "complete": -0.011980918941817431,
+        "kinetic": -0.0005794667111721817,
+        "maximum_imaginary_residual": 0.0,
+        "pressure": -0.011401452230645249,
+        "pressure_cross": 6.647360436572641e-05,
+        "pressure_high_high": -0.011467925835010976
+      },
+      "all_finite_checks_pass": true,
+      "amplitude_equals_N_replay": {
+        "amplitude": 3.0,
+        "complete_coefficient_optimization": {
+          "optimal_coefficient_scale": 0.0,
+          "optimized_objective": 0.0,
+          "positive_margin": false
+        },
+        "complete_linear_margin": -6.398183692336971,
+        "pressure_coefficient_optimization": {
+          "optimal_coefficient_scale": 0.0,
+          "optimized_objective": 0.0,
+          "positive_margin": false
+        },
+        "pressure_linear_margin": -8.786407478975086
+      },
+      "complete_HHL_load_over_N": -0.003993639647272477,
+      "high_plus_Fisher": 0.053606964501888704,
+      "high_plus_Fisher_times_N_cubed": 1.447388041550995,
+      "maximum_divergence_residual": 0.0,
+      "positive_mode_count": 27,
+      "pressure_HHL_load_over_N": -0.0038004840768817495,
+      "pressure_HH_load_over_N": -0.0038226419450036585,
+      "size": 3
+    },
+    {
+      "HHL_components": {
+        "complete": -0.013345072153582134,
+        "kinetic": -0.0001458619464404674,
+        "maximum_imaginary_residual": 0.0,
+        "pressure": -0.013199210207141666,
+        "pressure_cross": 4.718621077157412e-06,
+        "pressure_high_high": -0.013203928828218822
+      },
+      "all_finite_checks_pass": true,
+      "amplitude_equals_N_replay": {
+        "amplitude": 5.0,
+        "complete_coefficient_optimization": {
+          "optimal_coefficient_scale": 0.0,
+          "optimized_objective": 0.0,
+          "positive_margin": false
+        },
+        "complete_linear_margin": -11.781618419052238,
+        "pressure_coefficient_optimization": {
+          "optimal_coefficient_scale": 0.0,
+          "optimized_objective": 0.0,
+          "positive_margin": false
+        },
+        "pressure_linear_margin": -22.83089118482425
+      },
+      "complete_HHL_load_over_N": -0.002669014430716427,
+      "high_plus_Fisher": 0.017235054539891062,
+      "high_plus_Fisher_times_N_cubed": 2.154381817486383,
+      "maximum_divergence_residual": 0.0,
+      "positive_mode_count": 125,
+      "pressure_HHL_load_over_N": -0.0026398420414283333,
+      "pressure_HH_load_over_N": -0.002640785765643764,
+      "size": 5
+    },
+    {
+      "HHL_components": {
+        "complete": -0.0182472351580248,
+        "kinetic": -1.4753749258343898e-05,
+        "maximum_imaginary_residual": 0.0,
+        "pressure": -0.018232481408766456,
+        "pressure_cross": 1.6122054509998179e-07,
+        "pressure_high_high": -0.018232642629311555
+      },
+      "all_finite_checks_pass": true,
+      "amplitude_equals_N_replay": {
+        "amplitude": 9.0,
+        "complete_coefficient_optimization": {
+          "optimal_coefficient_scale": 0.45419061778567493,
+          "optimized_objective": 0.003431198057443492,
+          "positive_margin": true
+        },
+        "complete_linear_margin": 0.011331799655522445,
+        "pressure_coefficient_optimization": {
+          "optimal_coefficient_scale": 0.0,
+          "optimized_objective": 0.0,
+          "positive_margin": false
+        },
+        "pressure_linear_margin": -64.42390641971195
+      },
+      "complete_HHL_load_over_N": -0.0020274705731138667,
+      "high_plus_Fisher": 0.0038672309322376384,
+      "high_plus_Fisher_times_N_cubed": 2.8192113496012383,
+      "maximum_divergence_residual": 1.3877787807814457e-17,
+      "positive_mode_count": 729,
+      "pressure_HHL_load_over_N": -0.0020258312676407174,
+      "pressure_HH_load_over_N": -0.002025849181034617,
+      "size": 9
+    },
+    {
+      "HHL_components": {
+        "complete": -0.023671385472045756,
+        "kinetic": -2.9402385020547983e-06,
+        "maximum_imaginary_residual": 0.0,
+        "pressure": -0.0236684452335437,
+        "pressure_cross": 1.794019765152026e-08,
+        "pressure_high_high": -0.023668463173741352
+      },
+      "all_finite_checks_pass": true,
+      "amplitude_equals_N_replay": {
+        "amplitude": 13.0,
+        "complete_coefficient_optimization": {
+          "optimal_coefficient_scale": 38.08170031874223,
+          "optimized_objective": 2022.4616919995235,
+          "positive_margin": true
+        },
+        "complete_linear_margin": 79.66273860167499,
+        "pressure_coefficient_optimization": {
+          "optimal_coefficient_scale": 0.0,
+          "optimized_objective": 0.0,
+          "positive_margin": false
+        },
+        "pressure_linear_margin": -114.52649940478115
+      },
+      "complete_HHL_load_over_N": -0.0018208758055419812,
+      "high_plus_Fisher": 0.0014224539357635328,
+      "high_plus_Fisher_times_N_cubed": 3.1251312968724814,
+      "maximum_divergence_residual": 1.3877787807814457e-17,
+      "positive_mode_count": 2197,
+      "pressure_HHL_load_over_N": -0.0018206496333495156,
+      "pressure_HH_load_over_N": -0.0018206510133647194,
+      "size": 13
+    },
+    {
+      "HHL_components": {
+        "complete": -0.029211912042225455,
+        "kinetic": -8.616006818527866e-07,
+        "maximum_imaginary_residual": 0.0,
+        "pressure": -0.029211050441543603,
+        "pressure_cross": 3.552239232055182e-09,
+        "pressure_high_high": -0.029211053993782835
+      },
+      "all_finite_checks_pass": true,
+      "amplitude_equals_N_replay": {
+        "amplitude": 17.0,
+        "complete_coefficient_optimization": {
+          "optimal_coefficient_scale": 70.42404872702373,
+          "optimized_objective": 12790.699005482029,
+          "positive_margin": true
+        },
+        "complete_linear_margin": 272.436033642309,
+        "pressure_coefficient_optimization": {
+          "optimal_coefficient_scale": 0.0,
+          "optimized_objective": 0.0,
+          "positive_margin": false
+        },
+        "pressure_linear_margin": -161.81593300109125
+      },
+      "complete_HHL_load_over_N": -0.0017183477671897326,
+      "high_plus_Fisher": 0.0006715239936730642,
+      "high_plus_Fisher_times_N_cubed": 3.2991973809157646,
+      "maximum_divergence_residual": 1.3877787807814457e-17,
+      "positive_mode_count": 4913,
+      "pressure_HHL_load_over_N": -0.0017182970847966824,
+      "pressure_HH_load_over_N": -0.0017182972937519313,
+      "size": 17
+    },
+    {
+      "HHL_components": {
+        "complete": -0.04040697696331683,
+        "kinetic": -1.4040444520566076e-07,
+        "maximum_imaginary_residual": 0.0,
+        "pressure": -0.040406836558871624,
+        "pressure_cross": 3.4263529181470013e-10,
+        "pressure_high_high": -0.04040683690150691
+      },
+      "all_finite_checks_pass": true,
+      "amplitude_equals_N_replay": {
+        "amplitude": 25.0,
+        "complete_coefficient_optimization": {
+          "optimal_coefficient_scale": 146.4636335964521,
+          "optimized_objective": 115059.03411854531,
+          "positive_margin": true
+        },
+        "complete_linear_margin": 1178.3713604521602,
+        "pressure_coefficient_optimization": {
+          "optimal_coefficient_scale": 0.0,
+          "optimized_objective": 0.0,
+          "positive_margin": false
+        },
+        "pressure_linear_margin": -202.69657506292663
+      },
+      "complete_HHL_load_over_N": -0.0016162790785326734,
+      "high_plus_Fisher": 0.00022331189029856031,
+      "high_plus_Fisher_times_N_cubed": 3.489248285915005,
+      "maximum_divergence_residual": 1.3877787807814457e-17,
+      "positive_mode_count": 15625,
+      "pressure_HHL_load_over_N": -0.001616273462354865,
+      "pressure_HH_load_over_N": -0.0016162734760602766,
+      "size": 25
+    },
+    {
+      "HHL_components": {
+        "complete": -0.05165966684727146,
+        "kinetic": -3.708765989457463e-08,
+        "maximum_imaginary_residual": 0.0,
+        "pressure": -0.05165962975961157,
+        "pressure_cross": 6.351871906555711e-11,
+        "pressure_high_high": -0.05165962982313029
+      },
+      "all_finite_checks_pass": true,
+      "amplitude_equals_N_replay": {
+        "amplitude": 33.0,
+        "complete_coefficient_optimization": {
+          "optimal_coefficient_scale": 236.78494068651284,
+          "optimized_objective": 486176.03299903666,
+          "positive_margin": true
+        },
+        "complete_linear_margin": 3079.8582350051183,
+        "pressure_coefficient_optimization": {
+          "optimal_coefficient_scale": 0.0,
+          "optimized_objective": 0.0,
+          "positive_margin": false
+        },
+        "pressure_linear_margin": -96.55381565639459
+      },
+      "complete_HHL_load_over_N": -0.001565444449917317,
+      "high_plus_Fisher": 9.991766850714642e-05,
+      "high_plus_Fisher_times_N_cubed": 3.5907412531413208,
+      "maximum_divergence_residual": 1.3877787807814457e-17,
+      "positive_mode_count": 35937,
+      "pressure_HHL_load_over_N": -0.0015654433260488354,
+      "pressure_HH_load_over_N": -0.0015654433279736451,
+      "size": 33
+    },
+    {
+      "HHL_components": {
+        "complete": -0.0742239892723974,
+        "kinetic": -5.4381950956305936e-09,
+        "maximum_imaginary_residual": 0.0,
+        "pressure": -0.07422398383420231,
+        "pressure_cross": 5.77726652600272e-12,
+        "pressure_high_high": -0.07422398383997958
+      },
+      "all_finite_checks_pass": true,
+      "amplitude_equals_N_replay": {
+        "amplitude": 49.0,
+        "complete_coefficient_optimization": {
+          "optimal_coefficient_scale": 453.9068033593503,
+          "optimized_objective": 3424769.819554838,
+          "positive_margin": true
+        },
+        "complete_linear_margin": 11317.642060688082,
+        "pressure_coefficient_optimization": {
+          "optimal_coefficient_scale": 129.33288936660998,
+          "optimized_objective": 79224.27093278982,
+          "positive_margin": true
+        },
+        "pressure_linear_margin": 918.8413479445921
+      },
+      "complete_HHL_load_over_N": -0.0015147752912734163,
+      "high_plus_Fisher": 3.1422289120079804e-05,
+      "high_plus_Fisher_times_N_cubed": 3.6968008926882687,
+      "maximum_divergence_residual": 1.3877787807814457e-17,
+      "positive_mode_count": 117649,
+      "pressure_HHL_load_over_N": -0.001514775180289843,
+      "pressure_HH_load_over_N": -0.0015147751804077466,
+      "size": 49
+    }
+  ],
+  "full_field_support_replay": {
+    "all_support_replay_checks_pass": true,
+    "amplitude_rows": [
+      {
+        "Fisher_residual": 8.881784197001252e-16,
+        "complete_load": 0.9667708794656976,
+        "complete_residual": 1.1102230246251565e-16,
+        "expected_complete_load": 0.9667708794656975,
+        "expected_pressure_load": 0.2585051648568063,
+        "expected_weighted_Fisher": 4.3036069645018875,
+        "low_field_factor": -2.0,
+        "pressure_load": 0.25850516485680614,
+        "pressure_residual": 1.6653345369377348e-16,
+        "weighted_Fisher": 4.303606964501888
+      },
+      {
+        "Fisher_residual": 4.440892098500626e-16,
+        "complete_load": 0.12983204913957552,
+        "complete_residual": 2.498001805406602e-16,
+        "expected_complete_load": 0.12983204913957527,
+        "expected_pressure_load": 0.04086423478008472,
+        "expected_weighted_Fisher": 1.1161069645018884,
+        "low_field_factor": -1.0,
+        "pressure_load": 0.04086423478008472,
+        "pressure_residual": 0.0,
+        "weighted_Fisher": 1.1161069645018888
+      },
+      {
+        "Fisher_residual": 2.636779683484747e-16,
+        "complete_load": 0.0,
+        "complete_residual": 0.0,
+        "expected_complete_load": -0.0,
+        "expected_pressure_load": -0.0,
+        "expected_weighted_Fisher": 0.053606964501888704,
+        "low_field_factor": 0.0,
+        "pressure_load": 0.0,
+        "pressure_residual": 0.0,
+        "weighted_Fisher": 0.05360696450188897
+      },
+      {
+        "Fisher_residual": 4.440892098500626e-16,
+        "complete_load": -0.12983204913957552,
+        "complete_residual": 2.498001805406602e-16,
+        "expected_complete_load": -0.12983204913957527,
+        "expected_pressure_load": -0.04086423478008472,
+        "expected_weighted_Fisher": 1.1161069645018884,
+        "low_field_factor": 1.0,
+        "pressure_load": -0.04086423478008472,
+        "pressure_residual": 0.0,
+        "weighted_Fisher": 1.1161069645018888
+      },
+      {
+        "Fisher_residual": 8.881784197001252e-16,
+        "complete_load": -0.9667708794656976,
+        "complete_residual": 1.1102230246251565e-16,
+        "expected_complete_load": -0.9667708794656975,
+        "expected_pressure_load": -0.2585051648568063,
+        "expected_weighted_Fisher": 4.3036069645018875,
+        "low_field_factor": 2.0,
+        "pressure_load": -0.25850516485680614,
+        "pressure_residual": 1.6653345369377348e-16,
+        "weighted_Fisher": 4.303606964501888
+      }
+    ],
+    "complete_HHL_components": {
+      "complete": -0.011980918941817431,
+      "kinetic": -0.0005794667111721817,
+      "maximum_imaginary_residual": 0.0,
+      "pressure": -0.011401452230645249,
+      "pressure_cross": 6.647360436572641e-05,
+      "pressure_high_high": -0.011467925835010976
+    },
+    "high_weighted_Fisher": 0.053606964501888704,
+    "low_first_coordinate_set": "[-1,0,1]",
+    "maximum_Fisher_polynomial_residual": 8.881784197001252e-16,
+    "maximum_complete_polynomial_residual": 2.498001805406602e-16,
+    "maximum_pressure_polynomial_residual": 1.6653345369377348e-16,
+    "positive_high_first_coordinate_interval": "[6,8]",
+    "replay_size": 3,
+    "support_gaps": {
+      "HHH": "Every mixed-sign HHH output has |k_x|>=N+1>1; same-sign outputs are farther away.",
+      "HLL": "|k_x|>=2N-2>1 for N>=3.",
+      "high_low_Fisher": "|Delta k_x|>=2N-1>1 for N>=3."
+    },
+    "unit_low_complete_load": -0.11785113019775784,
+    "unit_low_pressure_load": -0.029462782549439473,
+    "unit_low_weighted_Fisher": 1.0624999999999998
+  },
+  "kind": "annular_two_shear_static_optimizer_audit",
+  "next_theorem_target": "Classify the phase and relative-polarization dependence of the two-shear low self-flux jointly with the static and four-high sign matrices. Seek an exact self-flux-zero point inside the strict negative-square region.",
+  "optimizer_and_scaling_certificate": {
+    "all_optimizer_scaling_checks_pass": true,
+    "carrier_power_table": {
+      "HHL_and_self_flux_same_power_if": "alpha=1/2",
+      "HHL_dominates_self_flux_only_if": "alpha<1/2",
+      "HHL_power_in_margin": "N^(alpha+1)",
+      "assumption": "a_N=kappa N^alpha with fixed kappa>0",
+      "high_Fisher_power_in_margin": "N^(-3)",
+      "low_Fisher_power_in_margin": "N^(2alpha)",
+      "low_self_flux_power_in_margin": "N^(3alpha)",
+      "old_amplitude_alpha_one": {
+        "bounded_t_objective": "Theta(N^3)",
+        "margin": "Theta(N^3), dominated by low self-flux",
+        "old_t_Theta_N_objective": "Theta(N^4)",
+        "optimized_objective": "Theta(N^(9/2))",
+        "optimized_t": "Theta(N^(3/2))"
+      },
+      "self_flux_dominates_HHL_if": "alpha>1/2"
+    },
+    "checks": {
+      "coefficient_penalty_positive": true,
+      "complete_gamma_positive": true,
+      "continuum_HHL_reference_negative": true,
+      "pressure_constants_are_complete_constants_divided_by_four": true,
+      "pressure_gamma_positive": true,
+      "profile_convergence_port_available": true
+    },
+    "continuum_HHL_certificate": {
+      "formula": "B_p,N/N -> -(sqrt(2)/20)||b||_L2(D)^2<0",
+      "pressure_HH_limit": -0.0014140889924061505,
+      "profile_error_bound": "||b_N-b||_1+||b_N-b||_2<=256/N",
+      "role": "The HHL sign remains favorable, but it is not the leading large-amplitude mechanism after the two-shear replacement."
+    },
+    "exact_complete_objective": "J_comp,N(a,t)=t[-a B_comp,N+(sqrt(2)/12)a^3-nu(D_N+(17/16)a^2)]-(nu/16)(75/256)t^3",
+    "exact_rho_zero_pressure_objective": "J_p,N(a,t)=t[-a B_p,N+(sqrt(2)/48)a^3-nu(D_N+(17/16)a^2)]-(nu/16)(75/256)t^3",
+    "favorable_orientation": "u_N=h_N-a U_*, a>=0",
+    "finite_N_joint_optimization": {
+      "complete_leading_term": "t*(sqrt(2)/12)*a^3",
+      "finite_stationary_optimizer_exists": false,
+      "joint_supremum": "+infinity",
+      "pressure_leading_term": "t*(sqrt(2)/48)*a^3",
+      "result": "For every fixed N>=3 and every fixed t>0, both objectives tend to +infinity as a tends to +infinity."
+    },
+    "fixed_amplitude_coefficient_optimization": {
+      "complete_large_a_scale": "t_*(a)~sqrt(1024sqrt(2)/(675nu))*a^(3/2)",
+      "complete_objective_numeric_constant": 0.11507953107136558,
+      "complete_objective_scale": "max_t J_comp,N=Theta(a^(9/2))",
+      "complete_scale_numeric_constant": 1.4647233023339505,
+      "margin_definition": "A_N(a) is the square bracket multiplying t.",
+      "positive_margin_optimum": "t_*(a)=sqrt(16 A_N(a)/(3nu Q)), max_t J=(2/3)A_N(a)t_*(a)",
+      "pressure_large_a_scale": "t_*(a)~sqrt(256sqrt(2)/(675nu))*a^(3/2)",
+      "pressure_objective_numeric_constant": 0.014384941383920697,
+      "pressure_objective_scale": "max_t J_p,N=Theta(a^(9/2))",
+      "pressure_scale_numeric_constant": 0.7323616511669753
+    },
+    "restart_scaling_decision": {
+      "available_norm_only_deficit_bound": "Delta_s>=(1/2)(sqrt(||h_N||_2^2+4a^2)-5t/16)_+^3",
+      "next_required_gate": "Determine whether a phase/polarization modification can cancel the low self-flux while preserving the strict two-shear four-high square. If not, port the exact backward-adjoint restart with the self-flux and actual low-mode evolution retained.",
+      "old_Omega_N3_reset_tax_claim_ports_unchanged": false,
+      "old_Omega_N5_average_generator_gate_ports_unchanged": false,
+      "old_a_and_t_Theta_N_scaling_ports_unchanged": false,
+      "old_finite_optimizer_ports_unchanged": false,
+      "reason": "The two-shear low field is not a plane shear. Its exact self-flux adds a favorable cubic in a, destroys the finite low-amplitude optimizer, and changes the coefficient scale before any restart deficit is applied.",
+      "two_shear_low_L2_mass": "4"
+    }
+  },
+  "prerequisite_audit": {
+    "all_prerequisite_checks_pass": true,
+    "rows": [
+      {
+        "actual_sha256": "7aca1d4c57ce970db5872979449368e65fb6add48c4ccd39b8f875cc1669f923",
+        "expected_sha256": "7aca1d4c57ce970db5872979449368e65fb6add48c4ccd39b8f875cc1669f923",
+        "matches": true,
+        "path": "work/ns_collision/results/annular_two_shear_square_gate_audit_v1.json"
+      },
+      {
+        "actual_sha256": "af0039698cdbd5442be629b23ea259e97556c978a0f0d91e94e9e0d658b1f32f",
+        "expected_sha256": "af0039698cdbd5442be629b23ea259e97556c978a0f0d91e94e9e0d658b1f32f",
+        "matches": true,
+        "path": "work/ns_collision/results/annular_two_shear_full_c1_port_audit_v1.json"
+      },
+      {
+        "actual_sha256": "fffa314fc9fa516dc0c8f6ac010392d438845912f6d4bc2d16cc1f2dc02b83e0",
+        "expected_sha256": "fffa314fc9fa516dc0c8f6ac010392d438845912f6d4bc2d16cc1f2dc02b83e0",
+        "matches": true,
+        "path": "work/ns_collision/results/compatible_edge_annular_escape_audit_v1.json"
+      },
+      {
+        "actual_sha256": "2f32255887eb18ec0aa22dadfacf681b930434e73f0c457041d65a66e8c04e6d",
+        "expected_sha256": "2f32255887eb18ec0aa22dadfacf681b930434e73f0c457041d65a66e8c04e6d",
+        "matches": true,
+        "path": "work/ns_collision/results/deficit_retaining_annular_restart_gate_audit_v1.json"
+      }
+    ]
+  },
+  "route_decision": "Do not import the old optimizer, reset tax, or N^5 restart gate. First test whether phase or polarization freedom can remove the low self-flux without losing the strict four-high square; otherwise retain the self-flux and exact low-mode dynamics in the backward-adjoint restart.",
+  "scope": "The complete compatible +++ static bracket and the pressure-only rho=0 restart generator for the modified annular high packet plus the exact two-shear low field.",
+  "status": "complete_two_shear_static_optimizer_route_guard",
+  "theorem": "The modified two-shear low field has exact +++ weighted Fisher mass 17/16 and exact complete and pressure-only self-flux loads -sqrt(2)/12 and -sqrt(2)/48. Consequently, for u_N=h_N-aU_* and every fixed N>=3, both static objectives are unbounded above in a for every fixed coefficient t>0. The former finite a,t=Theta(N) optimizer and its restart scaling do not port unchanged."
+}

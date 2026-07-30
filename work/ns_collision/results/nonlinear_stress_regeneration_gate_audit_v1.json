@@ -1,0 +1,417 @@
+{
+  "HHH_pressure_strain_obstruction": {
+    "all_checks_pass": true,
+    "limiting_projected_Frobenius_norm": 2.2765386916926222,
+    "limiting_projected_matrix_imag": [
+      [
+        0.9882295067429426,
+        0.0,
+        -0.8719939374237399
+      ],
+      [
+        0.0,
+        -0.9882295067429425,
+        0.9243068876112639
+      ],
+      [
+        -0.8719939374237399,
+        0.9243068876112639,
+        5.551115123125783e-17
+      ]
+    ],
+    "limiting_projected_matrix_real": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "limiting_projected_trace": 1.6653345369377348e-16,
+    "limiting_raw_transport_norm": 2.1499376424746292e-16,
+    "mechanism": "The cubic transport contribution is a low-output divergence after all three legs are paired. Leray pressure redistribution preserves the trace cancellation but leaves an anisotropic pressure-strain tensor of carrier size.",
+    "polarization_base_vectors": [
+      [
+        -0.7922066267434329,
+        -0.6709649945533196,
+        0.22001412501321357
+      ],
+      [
+        -1.2839004904845104,
+        -0.5044083969043172,
+        0.9915689496084047
+      ],
+      [
+        -0.6133558507091309,
+        1.4851434655757754,
+        0.2335923087273042
+      ]
+    ],
+    "rows": [
+      {
+        "all_checks_pass": true,
+        "carrier": 16,
+        "normalized_residual_from_limit": 0.16938718416861304,
+        "projected_forcing_Frobenius_norm": 35.67692239826134,
+        "projected_norm_over_carrier": 2.2298076498913337,
+        "projected_trace_over_carrier": 0.080655646618216,
+        "raw_transport_forcing_norm": 4.340711004029704,
+        "raw_transport_norm_over_carrier": 0.2712944377518565
+      },
+      {
+        "all_checks_pass": true,
+        "carrier": 32,
+        "normalized_residual_from_limit": 0.0866122163401214,
+        "projected_forcing_Frobenius_norm": 72.3308643827637,
+        "projected_norm_over_carrier": 2.260339511961366,
+        "projected_trace_over_carrier": 0.035830096684621615,
+        "raw_transport_forcing_norm": 4.234024275304207,
+        "raw_transport_norm_over_carrier": 0.13231325860325646
+      },
+      {
+        "all_checks_pass": true,
+        "carrier": 64,
+        "normalized_residual_from_limit": 0.043926254682068,
+        "projected_forcing_Frobenius_norm": 145.28202953434007,
+        "projected_norm_over_carrier": 2.2700317114740636,
+        "projected_trace_over_carrier": 0.01691559173351298,
+        "raw_transport_forcing_norm": 4.181187519772358,
+        "raw_transport_norm_over_carrier": 0.0653310549964431
+      },
+      {
+        "all_checks_pass": true,
+        "carrier": 128,
+        "normalized_residual_from_limit": 0.022131153699797904,
+        "projected_forcing_Frobenius_norm": 291.0285693762709,
+        "projected_norm_over_carrier": 2.2736606982521166,
+        "projected_trace_over_carrier": 0.008222461574695139,
+        "raw_transport_forcing_norm": 4.155053562429599,
+        "raw_transport_norm_over_carrier": 0.03246135595648124
+      },
+      {
+        "all_checks_pass": true,
+        "carrier": 256,
+        "normalized_residual_from_limit": 0.011108971331297755,
+        "projected_forcing_Frobenius_norm": 582.4488576018784,
+        "projected_norm_over_carrier": 2.2751908500073377,
+        "projected_trace_over_carrier": 0.004054142386141213,
+        "raw_transport_forcing_norm": 4.142071884054074,
+        "raw_transport_norm_over_carrier": 0.016179968297086227
+      },
+      {
+        "all_checks_pass": true,
+        "carrier": 512,
+        "normalized_residual_from_limit": 0.0055654943320537905,
+        "projected_forcing_Frobenius_norm": 1165.2542597781307,
+        "projected_norm_over_carrier": 2.2758872261291616,
+        "projected_trace_over_carrier": 0.002013012766246547,
+        "raw_transport_forcing_norm": 4.135603877672888,
+        "raw_transport_norm_over_carrier": 0.008077351323579859
+      },
+      {
+        "all_checks_pass": true,
+        "carrier": 1024,
+        "normalized_residual_from_limit": 0.0027855185355940147,
+        "projected_forcing_Frobenius_norm": 2330.847776182819,
+        "projected_norm_over_carrier": 2.276218531428534,
+        "projected_trace_over_carrier": 0.0010030182057021997,
+        "raw_transport_forcing_norm": 4.13237575641193,
+        "raw_transport_norm_over_carrier": 0.0040355231996210255
+      },
+      {
+        "all_checks_pass": true,
+        "carrier": 2048,
+        "normalized_residual_from_limit": 0.0013934544615008969,
+        "projected_forcing_Frobenius_norm": 4662.026239079655,
+        "projected_norm_over_carrier": 2.276379999550613,
+        "projected_trace_over_carrier": 0.0005006403446612961,
+        "raw_transport_forcing_norm": 4.130763187112116,
+        "raw_transport_norm_over_carrier": 0.002016974212457088
+      }
+    ],
+    "scope": "This falsifies extending the HHL low-factor commutator theorem to every HHH tensor channel. It does not falsify viscous time payment, trace/local-energy cancellation, or a signed annular pressure theorem.",
+    "selected_polarization_candidate": 175,
+    "theorem": "The complete HHH tensor-stress forcing can retain an O(H) traceless term. In this family G_H/H converges to the displayed nonzero matrix, while the unprojected transport part divided by H and the trace divided by H vanish.",
+    "wave_family": "a_H=(H,0,0), b_H=(-H,H,0), c_H=(1,1-H,0), so a_H+b_H+c_H=q=(1,1,0)."
+  },
+  "HHL_sweeping_commutator": {
+    "all_checks_pass": true,
+    "carriers": [
+      16,
+      32,
+      64,
+      128,
+      256,
+      512,
+      1024,
+      2048
+    ],
+    "interpretation": "A single unpaired generated mode has an O(H) derivative, but the paired high-stress evolution is a Galilean/sweeping commutator and retains only the low scale.",
+    "maximum_divergence_residual": 1.3989920333301598e-12,
+    "maximum_random_forcing_over_low_scale": 2.996490243791285,
+    "paired_forcing": "G_HHL=B(a,c) symtensor U_b+B(b,c) symtensor U_a, where B is the Leray-projected Navier-Stokes bilinear symbol.",
+    "proof": "Before Leray projection, the two sweeping terms combine as (U_c dot (a+b))(U_a symtensor U_b)=(U_c dot q)(U_a symtensor U_b). The strain terms already differentiate c. For k=a+c=q-b, ||(P_k-I)U_a||<=|c|||U_a||/(H-L); multiplying by the apparent O(H) sweeping coefficient costs only O(L). The same holds for b+c. Frobenius triangle bounds give a constant below 17; 18 is retained.",
+    "rows": [
+      {
+        "all_checks_pass": true,
+        "analytic_bound_constant": 18.0,
+        "carrier": 16,
+        "maximum_random_forcing_over_low_scale": 2.917307190200208,
+        "special_paired_norm": 2.8009935683241167,
+        "special_paired_over_unpaired": 0.0440651004375901,
+        "special_unpaired_sum_norm": 63.56489694812328
+      },
+      {
+        "all_checks_pass": true,
+        "analytic_bound_constant": 18.0,
+        "carrier": 32,
+        "maximum_random_forcing_over_low_scale": 2.671283449937037,
+        "special_paired_norm": 2.821533570259148,
+        "special_paired_over_unpaired": 0.022080915045046133,
+        "special_unpaired_sum_norm": 127.7815509231879
+      },
+      {
+        "all_checks_pass": true,
+        "analytic_bound_constant": 18.0,
+        "carrier": 64,
+        "maximum_random_forcing_over_low_scale": 2.4344771103561205,
+        "special_paired_norm": 2.8267015271516045,
+        "special_paired_over_unpaired": 0.011046520798403726,
+        "special_unpaired_sum_norm": 255.8906626564335
+      },
+      {
+        "all_checks_pass": true,
+        "analytic_bound_constant": 18.0,
+        "carrier": 128,
+        "maximum_random_forcing_over_low_scale": 2.8818255919947076,
+        "special_paired_norm": 2.8279955871116553,
+        "special_paired_over_unpaired": 0.0055240188591485625,
+        "special_unpaired_sum_norm": 511.94531720833857
+      },
+      {
+        "all_checks_pass": true,
+        "analytic_bound_constant": 18.0,
+        "carrier": 256,
+        "maximum_random_forcing_over_low_scale": 2.5849456610339163,
+        "special_paired_norm": 2.8283192316950734,
+        "special_paired_over_unpaired": 0.0027621042542554197,
+        "special_unpaired_sum_norm": 1023.9726568385825
+      },
+      {
+        "all_checks_pass": true,
+        "analytic_bound_constant": 18.0,
+        "carrier": 512,
+        "maximum_random_forcing_over_low_scale": 2.6069509545956318,
+        "special_paired_norm": 2.8284001509432133,
+        "special_paired_over_unpaired": 0.0013810639807498607,
+        "special_unpaired_sum_norm": 2047.986328198574
+      },
+      {
+        "all_checks_pass": true,
+        "analytic_bound_constant": 18.0,
+        "carrier": 1024,
+        "maximum_random_forcing_over_low_scale": 2.8453006207974627,
+        "special_paired_norm": 2.8284203812616826,
+        "special_paired_over_unpaired": 0.0006905334720944797,
+        "special_unpaired_sum_norm": 4095.993164071697
+      },
+      {
+        "all_checks_pass": true,
+        "analytic_bound_constant": 18.0,
+        "carrier": 2048,
+        "maximum_random_forcing_over_low_scale": 2.996490243791285,
+        "special_paired_norm": 2.8284254388729533,
+        "special_paired_over_unpaired": 0.000345266921262708,
+        "special_unpaired_sum_norm": 8191.9965820324
+      }
+    ],
+    "theorem": "||G_HHL||_F<=18 L ||U_a||||U_b||||U_c||. The constant is independent of the high carrier H.",
+    "triad_geometry": "High waves a,b and low wave c satisfy a+b+c=q, H<=|a|,|b|<=2H, |c|,|q|<=L, and H>=4L."
+  },
+  "all_positive_checks_pass": true,
+  "assumption_scope": "Smooth finite-Fourier divergence-free fields on the torus; exact Navier-Stokes bilinear symbols; triad-level stress regeneration; and a sparse one-triad-per-shell parabolic scaling model.",
+  "certification_flags": {
+    "HHH_anisotropic_pressure_strain_carrier_witness_proved": true,
+    "HHL_leading_carrier_terms_cancel_proved": true,
+    "HHL_regeneration_low_factor_bound_proved": true,
+    "Navier_Stokes_global_regularity_proved": false,
+    "all_regeneration_low_factor_bound_proved": false,
+    "critical_signed_large_data_bound_proved": false,
+    "dense_packet_multiplicity_control_proved": false,
+    "exact_projected_stress_evolution_derived": true,
+    "exceptional_set_upgrade_proved": false,
+    "full_Navier_Stokes_regeneration_norm_from_Leray_proved": false,
+    "low_regularity_passage_proved": false,
+    "pointwise_energy_only_forcing_bound_falsified_sparse": true,
+    "sparse_parabolic_forcing_summability_proved": true
+  },
+  "kind": "nonlinear_stress_regeneration_gate_audit",
+  "next_theorem_target": "Construct a divergence-free dense annular HHH packet whose triads feed one fixed low Fourier/tensor/Walsh channel. Normalize shell energy, measure the nonlinear stress forcing against shell radius and mode count, and compare its parabolic L2-time cost with integrated enstrophy. Prove a trilinear square-function estimate if multiplicity cancels; otherwise certify the sharp loss and identify whether trace, Walsh, or signed annular pressure structure removes it.",
+  "positive_checks": {
+    "HHH_pressure_strain_carrier_witness_passes": true,
+    "HHL_low_factor_commutator_bound_passes": true,
+    "HHL_paired_regeneration_reconstruction_passes": true,
+    "projected_stress_evolution_identity_passes": true,
+    "sparse_parabolic_pulse_summability_passes": true
+  },
+  "projected_stress_evolution": {
+    "Fourier_Navier_Stokes_equation": "dot uhat(k)+nu|k|^2 uhat(k)=Nhat(k), where Nhat(k)=-i P_k sum_(a+b=k)[(uhat(a) dot b)uhat(b)].",
+    "all_checks_pass": true,
+    "first_generated_pair_output": [
+      1,
+      1,
+      0
+    ],
+    "first_unpaired_e11": 127.93753050268424,
+    "pair_channel": "C_(k,q)=uhat(k) tensor uhat(q-k). Then (d/dt+nu[|k|^2+|q-k|^2])C_(k,q)=Nhat(k) tensor uhat(q-k)+uhat(k) tensor Nhat(q-k).",
+    "paired_e11": 1.5247619558067527e-05,
+    "paired_e11_formula": 1.5247619554738538e-05,
+    "paired_e11_formula_residual": 3.328988560508117e-15,
+    "second_generated_pair_output": [
+      1,
+      1,
+      0
+    ],
+    "second_unpaired_e11": -127.93751525506468,
+    "shell_channel": "Summing C_(k,q) over the selected high annulus gives the exact low-output Reynolds-stress evolution. The viscous rates remain pairwise until a heat-envelope bound is taken.",
+    "test_output_wave": [
+      1,
+      1,
+      0
+    ],
+    "unpaired_to_paired_e11_ratio": 16781310.996336162
+  },
+  "route_decision": "The nonlinear gate splits cleanly. HHL regeneration is not the feared carrier-size forcing: paired high legs convert it to a low-scale sweeping/Leray commutator. HHH anisotropic pressure-strain can retain O(H), so a universal low-factor claim is false. The exact parabolic pulse scaling nevertheless makes sparse HHH forcing square-summable in time at finite enstrophy cost. The next decisive test is mode multiplicity: a dense annular packet must determine whether the full HHH forcing square function has a Leray-paid bound or incurs the Bernstein H^(3/2) loss.",
+  "schema_version": 1,
+  "sparse_parabolic_pulse_test": {
+    "all_checks_pass": true,
+    "conditional_sparse_bound": "For one normalized HHH triad per shell with natural lifetime H^(-2), sum_H||f_H||_(L2_t)^2<=C E_*^2 sum_H(enstrophy time cost), because A_H^6<=E_*^2 A_H^2.",
+    "energy_increment_ratio_max": 0.39685026299204995,
+    "enstrophy_increment_ratio_max": 0.40568357493239093,
+    "forcing_increment_ratio_max": 0.06477524488332254,
+    "maximum_cumulative_energy_proxy": 1.5642482882467361,
+    "maximum_cumulative_enstrophy_time_cost": 2.044478742808008,
+    "maximum_cumulative_forcing_L2_time_norm_squared": 0.02076436461660821,
+    "pointwise_effect": "Since ||G_H||~H A_H^3, every instantaneous shell forcing has a common nonzero limit. Their coherent sum over shell square function grows like sqrt(N), even though sum_H A_H^2 is finite.",
+    "rows": [
+      {
+        "all_checks_pass": true,
+        "carrier": 16,
+        "coherent_sum_over_shell_square_function": 1.0,
+        "cumulative_energy_proxy": 0.9449407874211551,
+        "cumulative_enstrophy_time_cost": 1.2230093003862346,
+        "cumulative_forcing_L2_time_norm_squared": 0.01942203966997623,
+        "instantaneous_forcing_norm": 2.229807649891334,
+        "mode_amplitude": 0.3968502629920499,
+        "parabolic_duration": 0.00390625,
+        "shell_count": 1,
+        "shell_energy_proxy": 0.9449407874211551,
+        "shell_enstrophy_time_cost": 1.2230093003862346,
+        "shell_forcing_L2_time_norm_squared": 0.01942203966997623
+      },
+      {
+        "all_checks_pass": true,
+        "carrier": 64,
+        "coherent_sum_over_shell_square_function": 1.4136556552522186,
+        "cumulative_energy_proxy": 1.319940787421155,
+        "cumulative_enstrophy_time_cost": 1.7191640855424846,
+        "cumulative_forcing_L2_time_norm_squared": 0.020680107045732546,
+        "instantaneous_forcing_norm": 2.2700317114740636,
+        "mode_amplitude": 0.25,
+        "parabolic_duration": 0.000244140625,
+        "shell_count": 2,
+        "shell_energy_proxy": 0.375,
+        "shell_enstrophy_time_cost": 0.49615478515625,
+        "shell_forcing_L2_time_norm_squared": 0.001258067375756315
+      },
+      {
+        "all_checks_pass": true,
+        "carrier": 256,
+        "coherent_sum_over_shell_square_function": 1.7312546622166018,
+        "cumulative_energy_proxy": 1.4687596360431738,
+        "cumulative_enstrophy_time_cost": 1.9172031818171695,
+        "cumulative_forcing_L2_time_norm_squared": 0.02075909406666695,
+        "instantaneous_forcing_norm": 2.2751908500073377,
+        "mode_amplitude": 0.15749013123685915,
+        "parabolic_duration": 1.52587890625e-05,
+        "shell_count": 3,
+        "shell_energy_proxy": 0.14881884862201872,
+        "shell_enstrophy_time_cost": 0.19803909627468488,
+        "shell_forcing_L2_time_norm_squared": 7.898702093440417e-05
+      },
+      {
+        "all_checks_pass": true,
+        "carrier": 1024,
+        "coherent_sum_over_shell_square_function": 1.9991242800178946,
+        "cumulative_energy_proxy": 1.5278184352569961,
+        "cumulative_enstrophy_time_cost": 1.995909835245101,
+        "cumulative_forcing_L2_time_norm_squared": 0.02076403521619051,
+        "instantaneous_forcing_norm": 2.276218531428535,
+        "mode_amplitude": 0.09921256574801247,
+        "parabolic_duration": 9.5367431640625e-07,
+        "shell_count": 4,
+        "shell_energy_proxy": 0.05905879921382219,
+        "shell_enstrophy_time_cost": 0.0787066534279314,
+        "shell_forcing_L2_time_norm_squared": 4.9411495235621234e-06
+      },
+      {
+        "all_checks_pass": true,
+        "carrier": 4096,
+        "coherent_sum_over_shell_square_function": 2.2351775818569375,
+        "cumulative_energy_proxy": 1.5512559352569961,
+        "cumulative_enstrophy_time_cost": 2.027156021479158,
+        "cumulative_forcing_L2_time_norm_squared": 0.020764344103477245,
+        "instantaneous_forcing_norm": 2.2764596919781517,
+        "mode_amplitude": 0.06250000000000001,
+        "parabolic_duration": 5.960464477539063e-08,
+        "shell_count": 5,
+        "shell_energy_proxy": 0.02343750000000001,
+        "shell_enstrophy_time_cost": 0.031246186234056963,
+        "shell_forcing_L2_time_norm_squared": 3.0888728673465614e-07
+      },
+      {
+        "all_checks_pass": true,
+        "carrier": 16384,
+        "coherent_sum_over_shell_square_function": 2.448610475095324,
+        "cumulative_energy_proxy": 1.5605571132958722,
+        "cumulative_enstrophy_time_cost": 2.0395572137548563,
+        "cumulative_forcing_L2_time_norm_squared": 0.020764363409938712,
+        "instantaneous_forcing_norm": 2.276519006635833,
+        "mode_amplitude": 0.039372532809214794,
+        "parabolic_duration": 3.725290298461914e-09,
+        "shell_count": 6,
+        "shell_energy_proxy": 0.009301178038876172,
+        "shell_enstrophy_time_cost": 0.012401192275698013,
+        "shell_forcing_L2_time_norm_squared": 1.930646146675274e-08
+      },
+      {
+        "all_checks_pass": true,
+        "carrier": 65536,
+        "coherent_sum_over_shell_square_function": 2.6448931440271197,
+        "cumulative_energy_proxy": 1.5642482882467361,
+        "cumulative_enstrophy_time_cost": 2.044478742808008,
+        "cumulative_forcing_L2_time_norm_squared": 0.02076436461660821,
+        "instantaneous_forcing_norm": 2.2765337744805723,
+        "mode_amplitude": 0.024803141437003122,
+        "parabolic_duration": 2.3283064365386963e-10,
+        "shell_count": 7,
+        "shell_energy_proxy": 0.003691174950863888,
+        "shell_enstrophy_time_cost": 0.004921529053151484,
+        "shell_forcing_L2_time_norm_squared": 1.2066694969196714e-09
+      }
+    ],
+    "scaling": "Use carrier H_j=16*4^j, mode amplitude A_H=H^(-1/3), and parabolic duration tau_H=H^(-2).",
+    "scope_limit": "This is a scaling certificate for sparse coherent triads, not a bound for the full Navier-Stokes convolution. A dense same-shell packet may carry a mode-multiplicity factor and must be tested next.",
+    "time_effect": "The shell enstrophy cost is comparable to A_H^2 and the shell forcing L2-time norm squared is comparable to A_H^6. Both are geometrically summable. Parabolic duration removes the instantaneous many-shell obstruction in this sparse triad model."
+  },
+  "status": "HHL_regeneration_commutator_certified_HHH_pressure_strain_obstruction_exhibited"
+}

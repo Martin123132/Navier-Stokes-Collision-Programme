@@ -1,0 +1,19 @@
+{
+  "date": "2026-07-17",
+  "generator_seed": 20260717,
+  "status": "historical empirical audit; positivity was later disproved by an exact sparse two-mode field",
+  "total_samples": 480,
+  "negative_samples": 0,
+  "families": [
+    {"family": "full_K1", "heat_scale": 0.005, "samples": 40, "minimum": 0.04786704541944431, "maximum": 0.36213290476441173, "negative": 0},
+    {"family": "full_K1", "heat_scale": 0.02, "samples": 40, "minimum": 0.4952977445640041, "maximum": 3.9963008664273474, "negative": 0},
+    {"family": "full_K1", "heat_scale": 0.1, "samples": 40, "minimum": 10.604649773609943, "maximum": 81.95843665973808, "negative": 0},
+    {"family": "full_K1", "heat_scale": 0.5, "samples": 40, "minimum": 131.36929826647338, "maximum": 691.7737268670413, "negative": 0},
+    {"family": "full_K1", "heat_scale": 2.0, "samples": 40, "minimum": 150.4271447368345, "maximum": 2116.690564789916, "negative": 0},
+    {"family": "full_K1", "heat_scale": 10.0, "samples": 40, "minimum": 171.03281602050188, "maximum": 1566.6399495093276, "negative": 0},
+    {"family": "sparse_K2_3", "heat_scale": 0.5, "samples": 60, "minimum": 2.278943695881745, "maximum": 340.9508360853498, "negative": 0},
+    {"family": "sparse_K2_4", "heat_scale": 0.5, "samples": 60, "minimum": 10.13686053915503, "maximum": 426.0261159266311, "negative": 0},
+    {"family": "sparse_K2_5", "heat_scale": 0.5, "samples": 60, "minimum": 24.678884994562914, "maximum": 1633.9779294071582, "negative": 0},
+    {"family": "sparse_K2_7", "heat_scale": 0.5, "samples": 60, "minimum": 92.73302576096268, "maximum": 1712.630048753934, "negative": 0}
+  ]
+}

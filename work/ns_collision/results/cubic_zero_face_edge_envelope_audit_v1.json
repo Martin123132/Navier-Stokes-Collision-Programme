@@ -1,0 +1,223 @@
+{
+  "all_positive_checks_pass": true,
+  "assumption_scope": "Smooth periodic velocity and pressure, nonnegative conditional face coefficients, and the cosine partition at frequency m. The global L3/2 pressure reduction uses an L-infinity velocity envelope. Directionwise optimization is a valid upper bound but relaxes compatibility among all edges of one global partition coefficient vector.",
+  "certification_flags": {
+    "Navier_Stokes_global_regularity_proved": false,
+    "critical_signed_bound_proved": false,
+    "cubic_edge_ratio_is_local_Reynolds_power_3_over_2": true,
+    "edge_remainder_reduced_to_pressure_L32": true,
+    "exceptional_set_upgrade_proved": false,
+    "full_nonnegative_directionwise_edge_supremum_preserved": true,
+    "globally_compatible_partition_supremum_evaluated": false,
+    "low_regularity_passage_proved": false,
+    "pressure_L32_remainder_absorbed": false,
+    "sharp_zero_face_edge_supremum_derived": true,
+    "signed_inter_edge_Carleson_cancellation_proved": false,
+    "zero_face_reciprocal_singularity_removed": true
+  },
+  "conditional_pressure_L32_reduction": {
+    "all_checks_pass": true,
+    "conditional_Holder": "|e_j|^(3/2)<=U^(3/2)m^(3/2)/sqrt(6pi) mean_(x_j)|p|^(3/2)",
+    "conditional_edge_density": "e_j(x_hat_j)=mean_(x_j)[p u_j partial_j phi_+(m x_j)]",
+    "interpretation": "The zero-face supremum is finite and critical, but the remaining U^2||u||_3^3/nu coefficient is not controlled by the Leray energy inequality. Intrinsic localization or signed inter-edge cancellation is still required.",
+    "intrinsic_m_equals_U_over_nu": "4*sqrt(2)*U**2/(3*sqrt(pi)*nu)",
+    "partition_derivative_cube_mean": "m**3/(6*pi)",
+    "per_direction_remainder": "8/(9sqrt(2pi)) U^(3/2)sqrt(m/nu) integral|p|^(3/2)",
+    "per_direction_symbolic_constant": "4*sqrt(2)*U**(3/2)*sqrt(m)/(9*sqrt(pi)*sqrt(nu))",
+    "pressure_L32_reduction": "Using ||p||_(3/2)<=C_R||u||_3^2 gives a remainder <=8 C_R^(3/2)/(3sqrt(2pi)) (U^2/nu)||u||_3^3 at m=U/nu.",
+    "three_direction_remainder": "8/(3sqrt(2pi)) U^(3/2)sqrt(m/nu) integral|p|^(3/2)",
+    "three_direction_symbolic_constant": "4*sqrt(2)*U**(3/2)*sqrt(m)/(3*sqrt(pi)*sqrt(nu))"
+  },
+  "kind": "cubic_zero_face_edge_envelope_audit",
+  "next_theorem_target": "Evaluate the globally compatible nonnegative coefficient supremum on the eight-cell partition rather than optimizing each edge independently. Derive its homogeneous cubic graph reduction, retain antisymmetric edge cancellation, and test whether 2:1 balance plus the intrinsic pressure-tail estimate lowers the directionwise L3/2 envelope enough to fit the available velocity Fisher budget.",
+  "positive_checks": {
+    "Taylor_Green_edge_stress_passes": true,
+    "conditional_pressure_reduction_passes": true,
+    "scale_homogeneity_passes": true,
+    "sharp_edge_optimization_passes": true
+  },
+  "route_decision": "Replace the reciprocal e^2/H Young remainder by the sharp cubic |e|^(3/2) envelope whenever taking the full nonnegative edge supremum. The zero-face singularity is not fundamental. The live obstruction is now quantitative control of the pressure L3/2 edge measure and compatibility/cancellation across the balanced dyadic graph.",
+  "scale_homogeneity": {
+    "all_checks_pass": true,
+    "conditional_edge_density_scale": "a^3 m",
+    "coscaling": "u_(a,m)=a u(mx), p_(a,m)=a^2p(mx), lambda_(a,m)=a lambda(mx)",
+    "cubic_zero_face_envelope_scale": "a**(9/2)*sqrt(m)/sqrt(nu)",
+    "envelope_to_Fisher_ratio": "a**(3/2)/(m**(3/2)*nu**(3/2))",
+    "fixed_frequency_uniform_absorption_possible": false,
+    "intrinsic_frequency_makes_ratio_scale_invariant": true,
+    "local_Reynolds_power": "(a/(nu m))^(3/2)",
+    "symbolic_residual": "0",
+    "velocity_and_weight_Fisher_scale": "nu a^3 m^2"
+  },
+  "schema_version": 1,
+  "sharp_cubic_edge_envelope": {
+    "Navier_Stokes_edge_penalty": "c=nu m^2/16",
+    "all_checks_pass": true,
+    "cubic_domination": "H D^2>=|D|^3",
+    "edge_objective": "D e-c H D^2",
+    "face_variables": "H=A+B, D=A-B, with A,B>=0",
+    "feasible_cone": "H>=|D|>=0",
+    "maximum_random_residual": 1.1368683772161603e-13,
+    "optimal_difference": "sqrt(3)*sqrt(y)/(3*sqrt(c))",
+    "optimizer_geometry": "H=|D| and sign(D)=sign(e), so one of A,B is exactly zero",
+    "random_rows": [
+      {
+        "edge_flux_size": 17.904382184874077,
+        "envelope": 5.331020689735207,
+        "objective": 5.331020689735208,
+        "optimal_face_difference": 0.44662423712997,
+        "penalty_coefficient": 29.91944341365489,
+        "residual": 8.881784197001252e-16
+      },
+      {
+        "edge_flux_size": 3.2627390751277043,
+        "envelope": 0.9360275786850452,
+        "objective": 0.9360275786850452,
+        "optimal_face_difference": 0.43032597326913524,
+        "penalty_coefficient": 5.87308072334256,
+        "residual": 0.0
+      },
+      {
+        "edge_flux_size": 22.04301126924489,
+        "envelope": 57.74309124393092,
+        "objective": 57.74309124393093,
+        "optimal_face_difference": 3.929346848665086,
+        "penalty_coefficient": 0.4758925822040202,
+        "residual": 7.105427357601002e-15
+      },
+      {
+        "edge_flux_size": 24.934395170714815,
+        "envelope": 39.955306139617626,
+        "objective": 39.95530613961763,
+        "optimal_face_difference": 2.40362594717425,
+        "penalty_coefficient": 1.4386124558101983,
+        "residual": 7.105427357601002e-15
+      },
+      {
+        "edge_flux_size": 0.08713048364894711,
+        "envelope": 0.004432871360000347,
+        "objective": 0.004432871360000346,
+        "optimal_face_difference": 0.076314359355457,
+        "penalty_coefficient": 4.9869652790407555,
+        "residual": 8.673617379884035e-19
+      },
+      {
+        "edge_flux_size": 32.163781009536734,
+        "envelope": 46.24363719059155,
+        "objective": 46.243637190591556,
+        "optimal_face_difference": 2.1566325105036652,
+        "penalty_coefficient": 2.3051200394748634,
+        "residual": 7.105427357601002e-15
+      },
+      {
+        "edge_flux_size": 5.800962185396526,
+        "envelope": 26.13597722753204,
+        "objective": 26.135977227532045,
+        "optimal_face_difference": 6.758183313104681,
+        "penalty_coefficient": 0.042336879482955635,
+        "residual": 3.552713678800501e-15
+      },
+      {
+        "edge_flux_size": 0.0567173126998914,
+        "envelope": 0.0017431669358058575,
+        "objective": 0.0017431669358058581,
+        "optimal_face_difference": 0.04610145084877749,
+        "penalty_coefficient": 8.895394318605442,
+        "residual": 6.505213034913027e-19
+      },
+      {
+        "edge_flux_size": 0.0014786507573369774,
+        "envelope": 6.604320601571958e-05,
+        "objective": 6.604320601571957e-05,
+        "optimal_face_difference": 0.06699675939840809,
+        "penalty_coefficient": 0.10980870305734008,
+        "residual": 1.3552527156068805e-20
+      },
+      {
+        "edge_flux_size": 6.6435248534637354,
+        "envelope": 13.12690266422724,
+        "objective": 13.126902664227242,
+        "optimal_face_difference": 2.963841399054133,
+        "penalty_coefficient": 0.252096832726183,
+        "residual": 1.7763568394002505e-15
+      },
+      {
+        "edge_flux_size": 0.45877961978370924,
+        "envelope": 0.048159191038495044,
+        "objective": 0.048159191038495044,
+        "optimal_face_difference": 0.1574585780244541,
+        "penalty_coefficient": 6.168083044116302,
+        "residual": 0.0
+      },
+      {
+        "edge_flux_size": 37.37147015919666,
+        "envelope": 723.0119359707452,
+        "objective": 723.0119359707453,
+        "optimal_face_difference": 29.01994220019282,
+        "penalty_coefficient": 0.014791964027632373,
+        "residual": 1.1368683772161603e-13
+      },
+      {
+        "edge_flux_size": 0.015104584509485047,
+        "envelope": 0.002291123692028609,
+        "objective": 0.0022911236920286093,
+        "optimal_face_difference": 0.22752598960168807,
+        "penalty_coefficient": 0.09725803811186665,
+        "residual": 4.336808689942018e-19
+      },
+      {
+        "edge_flux_size": 8.146695153863114,
+        "envelope": 1.8120179080663583,
+        "objective": 1.8120179080663585,
+        "optimal_face_difference": 0.3336355185465195,
+        "penalty_coefficient": 24.395833051971614,
+        "residual": 2.220446049250313e-16
+      },
+      {
+        "edge_flux_size": 0.01615584127004863,
+        "envelope": 0.0002608188754868111,
+        "objective": 0.0002608188754868111,
+        "optimal_face_difference": 0.024215904742485687,
+        "penalty_coefficient": 9.183472371000194,
+        "residual": 0.0
+      },
+      {
+        "edge_flux_size": 27.333449748138978,
+        "envelope": 271.7218598757731,
+        "objective": 271.72185987577313,
+        "optimal_face_difference": 14.911501971733749,
+        "penalty_coefficient": 0.04097608028795,
+        "residual": 5.684341886080802e-14
+      }
+    ],
+    "sharp_general_supremum": "2*sqrt(3)*y**(3/2)/(9*sqrt(c))",
+    "sharp_pressure_constant": "8*sqrt(3)/(9*m*sqrt(nu))",
+    "sharp_pressure_edge_envelope": "sup_(A,B>=0)[(A-B)e-(nu m^2/16)(A+B)(A-B)^2]=8|e|^(3/2)/(3sqrt(3) m sqrt(nu))",
+    "sharp_scalar_reduction": "D e-c H D^2<=x|e|-c x^3, x=|D|",
+    "symbolic_optimum_residual": "0"
+  },
+  "status": "zero_face_singularity_removed_critical_L32_pressure_remainder_open",
+  "taylor_green_edge_stress": {
+    "all_checks_pass": true,
+    "edge_x_formula": "cos(y)[1/32-cos(2y)/16]",
+    "edge_y_formula": "-cos(x)[1/32-cos(2x)/16]",
+    "edge_z_formula": "0",
+    "field": "u=(sin x cos y,-cos x sin y,0), p=(cos 2x+cos 2y)/4",
+    "grid_size": 8192,
+    "partition_frequency": 1,
+    "scope": "The directionwise optimizer permits independent conditional face values and therefore upper-bounds, but need not equal, the globally compatible eight-cell coefficient supremum.",
+    "summed_sharp_envelope": 0.009464860586856291,
+    "x_direction": {
+      "maximum_face_difference": 0.408248290463863,
+      "maximum_pointwise_residual": 3.469446951953614e-18,
+      "mean_envelope": 0.004732430293428146,
+      "mean_objective": 0.004732430293428146
+    },
+    "y_direction": {
+      "maximum_face_difference": 0.408248290463863,
+      "maximum_pointwise_residual": 3.469446951953614e-18,
+      "mean_envelope": 0.004732430293428146,
+      "mean_objective": 0.004732430293428146
+    }
+  }
+}
